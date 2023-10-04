@@ -1,0 +1,12 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+}
+.team-photo {
+    max-width: 100%;
+}
