@@ -1,0 +1,32 @@
+
+
+@font-face {
+	font-family: GothamPro;
+	font-style: normal;
+	font-weight: 400;
+	src: url(gothaproreg.eot?#iefix) format(embedded-opentype),
+		url(gothaproreg.woff) format(woff), 
+		url(gothaproreg.ttf) format(truetype),
+		url(gothaproreg.svg#gothaproreg) format(svg);
+	}
+
+body {
+	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	font-size:16px;
+	line-height:1.4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: GothamPro;
+	text-rendering: optimizelegibility;
+}
+
+header h1 {
+	letter-spacing: 2px;
+    color: #fff;
+    text-align: left;
+    line-height: 40px;
+    font-size: 30px;
+    font-family: GothamPro;
+    font-weight: bold;
+}
