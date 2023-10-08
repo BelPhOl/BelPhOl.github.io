@@ -1,0 +1,109 @@
+/* Reset some styles and apply mobile-first approach */
+body {
+    background: #f5f5f5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container,
+footer {
+    background: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+header h1 {
+    margin: 0;
+    padding: 10px;
+    background: #3b59f2;
+    position: relative;
+    left: 0;
+    text-align: center; /* Center the text */
+}
+
+header h1 {
+    margin: 0;
+    padding: 10px;
+    background: #3b59f2;
+    position: relative;
+    left: 0;
+}
+
+/* Hide nav on smaller screens */
+@media screen and (max-width: 768px) {
+    nav {
+        display: none;
+    }
+}
+
+/* Back to top button */
+.back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #eee;
+    color: #999;
+    padding: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+/* Apply styles when the button is visible */
+.back-to-top.visible {
+    display: block;
+}
+
+/* Section styles */
+#main {
+    margin: 20px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#main h2,
+#main h3 {
+    margin: 10px 0;
+}
+
+/* Horizontal rule styles */
+hr {
+    border: none;
+    height: 2px;
+    background: #ccc;
+    margin: 20px 0;
+}
+
+/* Odd and even horizontal rule styles */
+.odd hr {
+    background: #82d120;
+}
+
+.even hr {
+    background: #3b59f2;
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    #main {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    hr {
+        margin: 10px 0;
+    }
+
+    .back-to-top {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
