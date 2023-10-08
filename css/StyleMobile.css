@@ -39,22 +39,29 @@ header h1 {
 }
 
 /* Back to top button */
-.back-to-top {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #eee;
-    color: #999;
-    padding: 10px;
-    border-radius: 4px;
-    text-decoration: none;
-}
-
-/* Apply styles when the button is visible */
-.back-to-top.visible {
+  .back-to-top {
     display: block;
-}
+    float: left;
+    padding: 7px 15px;
+    font-weight: 500;
+    color: #999;
+    background-color: #eee;
+    border-radius: 4px;
+  }
+
+
+  .back-to-top.affix {
+    position: fixed;
+    z-index: 200;
+    right:  15px;
+    bottom: 15px;
+  }
+
+  .back-to-top:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #999;
+  }
 
 /* Section styles */
 #main {
@@ -71,12 +78,21 @@ header h1 {
 }
 
 /* Horizontal rule styles */
-hr {
+/*hr {
     border: none;
     height: 2px;
     background: #ccc;
     margin: 20px 0;
-}
+}*/
+
+hr {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    height: 4px;
+    margin-left: -30px;
+  }
 
 /* Odd and even horizontal rule styles */
 .odd hr {
