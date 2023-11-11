@@ -139,3 +139,9 @@ hr {
 .even hr {
   background: #3b59f2;
 }
+.back-to-top.affix-top {
+  color: #ffffff;
+  background-color: #ffffff;
+  padding: 0;
+  height:0;
+} 

@@ -123,3 +123,10 @@ hr {
         padding: 8px;
     }
 }
+
+.back-to-top.affix-top {
+  color: #ffffff;
+  background-color: #ffffff;
+  padding: 0;
+  height:0;
+} 
