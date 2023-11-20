@@ -144,4 +144,11 @@ hr {
   background-color: #ffffff;
   padding: 0;
   height:0;
+}
+
+.nav-container {
+   display: flex;
+   margin: auto;
+   margin: 0;
+   padding: 0;
 } 
