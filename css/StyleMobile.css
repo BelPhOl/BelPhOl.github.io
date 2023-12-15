@@ -141,3 +141,11 @@ hr {
 .col-lg-12 {
    padding-bottom: 10;
 }
+
+.col-lg-6 {
+    padding-left: 3%;
+}
+
+h4{
+    padding-left: 4%;
+}
