@@ -77,7 +77,7 @@
 }
 #wm-ipp a {
   display: inline;
-}    
+}
 #wm-ipp a:hover{
   text-decoration:underline;
 }
@@ -207,7 +207,7 @@ div#wm-ipp-sparkline {
   z-index:9013 !important;
   background-color:#ec008c !important;
   top: 0;
-}  
+}
 #wm-ipp .r {
     margin-left: 4px;
 }
@@ -306,7 +306,7 @@ div#wm-ipp-sparkline {
 /* time coherence */
 html.wb-highlight {
   box-shadow: inset 0 0 0 3px #a50e3a !important;
-}    
+}
 .wb-highlight {
   outline: 3px solid #a50e3a !important;
 }
