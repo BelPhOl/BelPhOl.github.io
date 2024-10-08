@@ -196,6 +196,9 @@ h4{
   header h1 {
     top: 202px;
   }
+  #main{
+    left: -30px;
+  }
 }
 
 
@@ -216,4 +219,19 @@ h4{
   header h1 {
     top: 333px;
   }
+}
+
+#main{
+    background: #fffffe;
+}
+
+.contents{
+    margin-left: 20px;
+}
+
+.nav-item {
+    width: 120px;
+    text-align: center; /* Center text within the item */
+    padding: 15px; /* Padding for a better look */
+    padding: 0 0 15px 0;
 }
