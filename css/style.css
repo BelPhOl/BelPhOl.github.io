@@ -188,23 +188,15 @@ h4{
   }
 }
 
-@media screen and (min-width: 768px) {
-  .flash{
-    max-height:219px;
-    background-size: 130%;
-  }
-  header h1 {
-    top: 202px;
-  }
-  #main{
-    left: -30px;
-  }
-}
+
 
 
 @media screen and (min-width: 992px) {
   .flash{
     max-height:283px;
+    /* height: 320px; */
+    /* max-height: 500px; */
+    background-size: 100%;
   }
   header h1 {
     top: 255px;
