@@ -24,6 +24,27 @@
    <link rel="icon" href="img/logo.png" type="image/png" />
    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
    <script src="js/jquery-1.10.1.min.js"></script>
+   <style>
+      .snowflake {
+         position: fixed;
+         top: -10px;
+         z-index: 9999;
+         user-select: none;
+         pointer-events: none;
+         font-size: 1em;
+         color: white;
+         animation: fall linear infinite;
+      }
+
+      @keyframes fall {
+         0% {
+            transform: translateY(0);
+         }
+         100% {
+            transform: translateY(100vh);
+         }
+      }
+   </style>
 </head>
 
 <body style="">
@@ -1792,6 +1813,28 @@
          font-family: 'Arial', sans-serif;
       }
    </style>
+   <script>
+     function createSnowflake() {
+       const snowflake = document.createElement('div');
+       snowflake.classList.add('snowflake');
+       snowflake.textContent = '❄';
+       snowflake.style.left = Math.random() * window.innerWidth + 'px';
+       snowflake.style.animationDuration = Math.random() * 3 + 2 + 's';
+       snowflake.style.opacity = Math.random();
+       snowflake.style.fontSize = Math.random() * 10 + 10 + 'px';
+
+       document.body.appendChild(snowflake);
+
+       setTimeout(() => {
+         snowflake.remove();
+       }, 5000);
+     }
+
+     setInterval(createSnowflake, 100);
+   </script>
+   <div style="background-color: #ff0000; color: white; text-align: center; padding: 10px; font-size: 20px;">
+      🎄 Merry Christmas and Happy Holidays! 🎅
+   </div>
 </body>
 
 </html>
