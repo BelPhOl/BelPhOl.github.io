@@ -15,10 +15,12 @@ footer {
 
 .flash {
     background: url(../img/flashNewYear2025.png);
-    margin: -30px 0 40px 0;
+    margin: 0px 0 40px 0;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 120%;
+    height: auto;
+    max-height: none;
 }
 
 header h1 {
@@ -160,7 +162,7 @@ h4{
 }
 
 .flash {
-    margin: -30px 0 20px 0;
+    margin: -12px 0 20px 0;
     border: 1px solid #ddd;
     /* border-radius:   5px; */
 }
@@ -170,7 +172,8 @@ h4{
     height: 130px;
     max-height: 130px;
     background-size: 155%;
-    background-position: bottom;
+    background-position: top;
+    max-height: none;
 }
 
 header h1 {
@@ -182,16 +185,16 @@ header h1 {
 
 @media screen and (max-width: 360px) {
 	.flash {
-		height: 150px;
-		max-height: 180px;
-		background-size: 145%;
+		height: 129px;
+        background-size: 440px;
 	}
 	header h1 {
+        padding-top: 2px;
         white-space: normal;
         line-height: 16px;
         max-width: 230px;
 		font-size: 12px;
-		top: 130px;
+		top: 105px;
 		left: -10px;
 	}
 }
@@ -199,72 +202,68 @@ header h1 {
 
 @media screen and (min-width: 360px) {
 	.flash {
-		height: 148px;
-		max-height: 180px;
-		background-size: 130%;
+		height: 140px;
+        background-size: 520px;
 	}
 
 	header h1 {
         line-height: 24px;
 		font-size: 12px;
-		top: 130px;
+		top: 128px;
 		left: -10px;
 	}
 }
 
 @media screen and (min-width: 420px) {
 	.flash {
-        height: 170px;
-		max-height: 170px;
-		background-size: 130%;
+		height: 176px;
+        background-size: 580px;
 	}
 
 	header h1 {
 		font-size: 13.2px;
-		top: 148px;
+		top: 158px;
 		left: -10px;
 	}
 }
 
 @media screen and (min-width: 480px) {
 	.flash {
-		height: 190px;
-		max-height: 190px;
-		background-size: 126%;
+		height: 195px;
+        background-size: 650px;
 	}
 
 	header h1 {
 		font-size: 16px;
-		top: 168px;
+		top: 180px;
 		left: 0px;
 	}
 }
 
 
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 620px) {
 	.flash {
-		height: 200px;
-		max-height: 200px;
-		background-size: 120%;
+		height: 272px;
+        background-size: 900px;
         margin-bottom: 10px;
 	}
 
 	header h1 {
         line-height: 33px;
 		font-size: 18px;
-		top: 180px;
+		top: 250px;
 		left: 0px;
 	}
 }
 
 @media screen and (min-width: 768px) {
     .flash{
-        height: 210px;
-        max-height: 500px;
-        background-size: 100%;
+        margin-top: -20px;
+		height: 260px;
+        background-size: 892px;
     }
     header h1 {
-      top: 190px;
+      top: 238px;
     }
     #main{
       left: -30px;
