@@ -149,6 +149,78 @@
             box-shadow: 0px 4.66667px 24px 3px rgba(247, 0, 148, 0.2);
          }
       }
+
+      .snowflakes {
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         pointer-events: none;
+         z-index: 1000;
+      }
+
+      .snowflake {
+         position: absolute;
+         top: -10px;
+         color: white;
+         font-size: 1em;
+         user-select: none;
+         opacity: 0; /* Initially invisible */
+         animation: fallAndDrift 5s linear infinite;
+      }
+
+      @keyframes fallAndDrift {
+         0% {
+            transform: translate(0, 0); /* Starting position */
+            opacity: 0; /* Invisible at the start */
+         }
+         10% {
+            opacity: 1; /* Fade in shortly after appearing */
+         }
+         50% {
+            transform: translate(25px, 40vh); /* Drift right while falling halfway */
+            opacity: 0.8; /* Slightly reduced opacity */
+         }
+         100% {
+            transform: translate(25px, 80vh); /* Drift left while reaching the bottom */
+            opacity: 0; /* Fade out before disappearing */
+         }
+      }
+
+      .flash {
+         position: relative; 
+         overflow: visible; /* Allow overflow for the header */
+      }
+
+      .flash header {
+         overflow: visible; /* Specifically allow overflow for h1 */
+      }
+
+      .snowflakes {
+         overflow: hidden; /* Ensure overflow is hidden for snowflakes */
+      }
+
+      .snowflakes {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         pointer-events: none;
+         z-index: 1000;
+      }
+
+      .snowflake {
+         position: absolute;
+         top: -10px;
+         color: white;
+         font-size: 1em;
+         user-select: none;
+         opacity: 0; /* Initially invisible */
+         animation: fallAndDrift 5s linear infinite;
+      }
+
    </style>
 </head>
 
@@ -198,9 +270,12 @@
    </ul>
    <div class="container row">
       <div class="col flash">
-         <header>
+         <header style="overflow: hidden;">
             <h1>Белорусские физические олимпиады</h1>
          </header>
+         <div class="snowflakes" aria-hidden="true">
+            <div class="snowflake">❄</div>
+         </div>
       </div>
       <aside class="col col-lg-3 contents-flex">
          <nav>
@@ -1967,6 +2042,54 @@
    <div style="background-color: #ff0000; color: white; text-align: center; padding: 10px; font-size: 20px;">
       🎄 Merry Christmas and Happy Holidays! 🎅
    </div>
+   <script>
+      const snowflakesContainer = document.querySelector('.flash .snowflakes');
+      let snowflakeCount = 0;
+      const maxSnowflakes = 50; // Set the maximum number of snowflakes
+
+      const createSnowflake = () => {
+         if (snowflakeCount >= maxSnowflakes) return; // Stop creating new snowflakes if the limit is reached
+
+         const snowflake = document.createElement('div');
+         snowflake.classList.add('snowflake');
+
+         // Create an SVG element for the snowflake
+         const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+         const randomSize = Math.random() * 20 + 10; // Random size between 10 and 30
+         svg.setAttribute("viewBox", "0 0 24 24");
+         svg.setAttribute("width", randomSize);
+         svg.setAttribute("height", randomSize);
+
+         // Define SVG paths for different snowflake designs
+         const paths = [
+            // Replace the existing path with a new SVG path for a snowflake
+            '<path d="M12 2V18M12 22V18M12 18L15 21M12 18L9 21M15 3L12 6L9 3" stroke="white" stroke-width="1.5" stroke-linecap="round"/><path d="M3.33978 7.00042L6.80389 9.00042M6.80389 9.00042L17.1962 15.0004M6.80389 9.00042L5.70581 4.90234M6.80389 9.00042L2.70581 10.0985M17.1962 15.0004L20.6603 17.0004M17.1962 15.0004L21.2943 13.9023M17.1962 15.0004L18.2943 19.0985" stroke="white" stroke-width="1.5" stroke-linecap="round"/><path d="M20.66 7.00042L17.1959 9.00042M17.1959 9.00042L6.80364 15.0004M17.1959 9.00042L18.294 4.90234M17.1959 9.00042L21.294 10.0985M6.80364 15.0004L3.33954 17.0004M6.80364 15.0004L2.70557 13.9023M6.80364 15.0004L5.70557 19.0985" stroke="white" stroke-width="1.5" stroke-linecap="round"/>',
+         ];
+
+         // Randomly select a path for the snowflake
+         const path = paths[Math.floor(Math.random() * paths.length)];
+         svg.innerHTML = path;
+
+         snowflake.appendChild(svg);
+         snowflake.style.left = `${Math.random() * 100}%`;
+         snowflake.style.fontSize = `${Math.random() * 1.5 + 0.5}em`;
+         snowflake.style.animationDuration = `${Math.random() * 3 + 2}s`; // Random fall duration
+         snowflake.style.animationDelay = `${Math.random() * 5}s`; // Random delay
+         snowflakesContainer.appendChild(snowflake);
+
+         snowflakeCount++; // Increment the snowflake count
+
+         // Remove snowflake after animation ends
+         snowflake.addEventListener('animationend', () => {
+            snowflake.remove();
+            snowflakeCount--; // Decrement the snowflake count when one is removed
+         });
+      };
+
+      // Generate snowflakes at regular intervals
+      setInterval(createSnowflake, 200);
+   </script>
+   
 </body>
 
 </html>
