@@ -14,7 +14,7 @@ footer {
 }
 
 .flash {
-    background: url(../img/flashNewYear2025.png);
+    background: url(../img/flash.png);
     margin: 0px 0 40px 0;
     background-position: center;
     background-repeat: no-repeat;
@@ -172,7 +172,7 @@ h4{
     height: 130px;
     max-height: 130px;
     background-size: 155%;
-    background-position: top;
+    background-position: calc(50% + 10px) top;
     max-height: none;
 }
 
@@ -186,7 +186,7 @@ header h1 {
 @media screen and (max-width: 360px) {
 	.flash {
 		height: 129px;
-        background-size: 440px;
+        background-size: 420px;
 	}
 	header h1 {
         padding-top: 2px;
@@ -203,7 +203,7 @@ header h1 {
 @media screen and (min-width: 360px) {
 	.flash {
 		height: 140px;
-        background-size: 520px;
+        background-size: 480px;
 	}
 
 	header h1 {
@@ -217,7 +217,7 @@ header h1 {
 @media screen and (min-width: 420px) {
 	.flash {
 		height: 176px;
-        background-size: 580px;
+        background-size: 560px;
 	}
 
 	header h1 {
@@ -230,7 +230,7 @@ header h1 {
 @media screen and (min-width: 480px) {
 	.flash {
 		height: 195px;
-        background-size: 650px;
+        background-size: 600px;
 	}
 
 	header h1 {
@@ -244,7 +244,7 @@ header h1 {
 @media screen and (min-width: 620px) {
 	.flash {
 		height: 272px;
-        background-size: 900px;
+        background-size: 850px;
         margin-bottom: 10px;
 	}
 

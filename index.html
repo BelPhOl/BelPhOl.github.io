@@ -26,6 +26,7 @@
    <script src="js/jquery-1.10.1.min.js"></script>
    <style>
       .lightrope {
+         display: none; /* Make the lightrope invisible */
          text-align: center;
          white-space: nowrap;
          overflow: hidden;
@@ -221,6 +222,124 @@
          animation: fallAndDrift 5s linear infinite;
       }
 
+      #container {
+         /* position: absolute; */
+         margin-top: 50px;
+         margin-bottom: 15px;
+         /* margin-left: 30%; */
+         margin-left: 0;
+         padding-left: 0;
+         top: 50%;
+         left: 50%;
+         -webkit-transform: translate(0, -50%); 
+         transform: translate(0, -50%);
+      }
+
+      .loader {
+         display: flex;
+      }
+
+      .carrot {
+         position: absolute;
+         top: 20px;
+         animation: growing-carrot 6s linear 0s infinite;
+      }
+      .carrot-container:nth-of-type(2) .carrot {
+         animation: growing-carrot 6s linear 1s infinite;
+      }
+      .carrot-container:nth-of-type(3) .carrot {
+         animation: growing-carrot 6s linear 2s infinite;
+      }
+
+      .carrot-container {
+         background-color: #503f28;
+         border: none;
+         border-top: 5px solid #3b2f1e;
+         border-radius: 100%;
+         box-sizing: border-box;
+         height: 20px;
+         margin-right: 55px;
+         width: 35px;
+      }
+      .carrot-container:last-of-type {
+         margin-right: 0;
+      }
+
+      .carrot-item--leaves {
+         background-color: #2c5845;
+         border-radius: 200% 20%;
+         height: 30px;
+         position: relative;
+         transform: translate(100%, 0);
+         left: 50%;
+         width: 10px;
+         z-index: 100;
+      }
+      .carrot-item--leaves::before,
+      .carrot-item--leaves::after {
+         content: "";
+         position: absolute;
+      }
+      .carrot-item--leaves::before {
+         background-color: #33644f;
+         border-radius: 20% 200%;
+         bottom: 0;
+         left: -5px;
+         height: 15px;
+         width: 10px;
+      }
+      .carrot-item--leaves::after {
+         background-color: #3a745b;
+         border-radius: 300% 30%;
+         height: 20px;
+         width: 7px;
+         right: -2px;
+         bottom: -2px;
+         transform: rotate(30deg);
+      }
+
+      .carrot-item--root {
+         border: none;
+         border-top: 5px solid #b66802;
+         border-radius: 100% 100% 0 0;
+         height: 25px;
+         top: 25px;
+         left: 0;
+         width: 35px;
+         background-color: #ec8702;
+         position: absolute;
+         box-sizing: border-box;
+      }
+
+      .carrot-hole {
+         position: absolute;
+         height: 70px;
+         overflow: hidden;
+         transform: translate(calc(-50% + 18px), 5px);
+         width: 135px;
+         z-index: 200;
+      }
+      .carrot-hole::before {
+         border-radius: 100%;
+         box-shadow: 0 0 0 55px #f9f9f9;
+         content: "";
+         height: 20px;
+         position: absolute;
+         transform: translate(calc(100% + 15px), -50%);
+         width: 35px;
+         z-index: 200;
+      }
+
+      @keyframes growing-carrot {
+         0% {top: 20px}
+         8% {top: -30px}
+         9% {top: -24px}
+         10% {top: -27px}
+         11% {top: -24px}
+         66% {top: -24px}
+         70% {top: 20px}
+         100% {top: 20px}
+      }
    </style>
 </head>
 
@@ -470,10 +589,53 @@
                </div>
             </div>
          </div>
-
+         
          <div id="y2024" class="row odd">
             <div class="col col-lg-12">
                <hr style="background:#ff9500" class="pc-vis">
+               
+               <h3 style="font-family: 'Roboto', sans-serif; font-size: 24px; color: #333;">
+                  Республиканская олимпиада 2025 года
+               </h3>
+               <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 20px; background-color: #f9f9f9; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden;">
+                  <h4 style="font-size: 20px; color: #555;">
+                     До начала теоретического тура: 
+                  </h4>
+                  <h4 style="font-size: 18px; font-style: oblique; color: #777;" id="countdown">Загрузка..</h4>
+                  <!-- Insert the loading animation here -->
+                   
+                  <div id="container">
+                      <div class="loader">
+                          <div class="carrot-container">
+                              <div class="carrot">
+                                  <div class="carrot-item carrot-item--leaves"></div>
+                                  <div class="carrot-item--root"></div>
+                              </div>
+                              <div class="carrot-hole"></div>
+                          </div>
+                          <div class="carrot-container">
+                              <div class="carrot">
+                                  <div class="carrot-item carrot-item--leaves"></div>
+                                  <div class="carrot-item--root"></div>
+                              </div>
+                              <div class="carrot-hole"></div>
+                          </div>
+                          <div class="carrot-container">
+                              <div class="carrot">
+                                  <div class="carrot-item carrot-item--leaves"></div>
+                                  <div class="carrot-item--root"></div>
+                              </div>
+                              <div class="carrot-hole"></div>
+                          </div>
+                      </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div id="y2024" class="row even">
+            <div class="col col-lg-12">
+               <hr>
                
                <h3>
                   Республиканская олимпиада 2024 года
