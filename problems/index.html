@@ -54,18 +54,10 @@
             width: 100%;
             height: 100%;
             background: 
-                radial-gradient(circle at 25% 25%, rgba(37, 99, 235, 0.05) 0%, transparent 50%),
-                radial-gradient(circle at 75% 75%, rgba(245, 158, 11, 0.05) 0%, transparent 50%),
-                radial-gradient(circle at 50% 50%, rgba(16, 185, 129, 0.03) 0%, transparent 50%);
+                radial-gradient(circle at 25% 25%, rgba(37, 99, 235, 0.03) 0%, transparent 50%),
+                radial-gradient(circle at 75% 75%, rgba(245, 158, 11, 0.03) 0%, transparent 50%);
             pointer-events: none;
             z-index: -1;
-            animation: backgroundFlow 20s ease-in-out infinite;
-        }
-
-        @keyframes backgroundFlow {
-            0%, 100% { transform: rotate(0deg) scale(1); }
-            33% { transform: rotate(1deg) scale(1.02); }
-            66% { transform: rotate(-1deg) scale(0.98); }
         }
 
         .container {
@@ -109,7 +101,7 @@
         }
 
         .logo:hover .logo-img {
-            transform: rotate(360deg) scale(1.1);
+            transform: scale(1.1);
         }
 
         .nav-links {
@@ -142,21 +134,14 @@
         .hero::before {
             content: '';
             position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             background: url('../img/flash.png') no-repeat center;
-            background-size: 120px 120px;
+            background-size: cover;
             opacity: 0.1;
-            animation: float 6s ease-in-out infinite;
             pointer-events: none;
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translate(0, 0) rotate(0deg); }
-            33% { transform: translate(30px, -30px) rotate(120deg); }
-            66% { transform: translate(-20px, 20px) rotate(240deg); }
         }
 
         .hero h1 {
@@ -193,25 +178,9 @@
             overflow: hidden;
         }
 
-        .stat-card::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
-            transform: scale(0);
-            transition: transform 0.6s ease;
-        }
-
-        .stat-card:hover::before {
-            transform: scale(1);
-        }
-
         .stat-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2);
         }
 
         .stat-number {
@@ -349,34 +318,18 @@
             transform: translateY(20px);
         }
 
-        .tag::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-            transition: left 0.5s ease;
-        }
-
-        .tag:hover::before {
-            left: 100%;
-        }
-
         .tag:hover {
             background: var(--primary-color);
             color: white;
             border-color: var(--primary-color);
-            transform: translateY(-2px) scale(1.05);
-            box-shadow: 0 8px 25px rgba(37, 99, 235, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
         }
 
         .tag.active {
             background: var(--primary-color);
             color: white;
             border-color: var(--primary-color);
-            transform: scale(1.05);
             box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
         }
 
@@ -435,21 +388,7 @@
             overflow: hidden;
         }
 
-        .progress-fill::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-            animation: shimmer 2s infinite;
-        }
 
-        @keyframes shimmer {
-            0% { transform: translateX(-100%); }
-            100% { transform: translateX(100%); }
-        }
 
         .progress-stats {
             display: flex;
@@ -481,13 +420,7 @@
         }
 
         .quick-stat:hover .quick-stat-number {
-            transform: scale(1.2);
-            animation: pulse 1s infinite;
-        }
-
-        @keyframes pulse {
-            0%, 100% { transform: scale(1.2); }
-            50% { transform: scale(1.3); }
+            transform: scale(1.1);
         }
 
         .quick-stat-label {
@@ -525,6 +458,28 @@
             gap: 24px;
         }
 
+        .problems-grid.list-view {
+            grid-template-columns: 1fr;
+        }
+
+        .problems-grid.list-view .problem-card {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 24px;
+            align-items: center;
+        }
+
+        .problems-grid.list-view .problem-header {
+            grid-column: 1 / -1;
+        }
+
+        .problems-grid.list-view .problem-actions {
+            grid-column: 2;
+            grid-row: 2 / -1;
+            flex-direction: column;
+            gap: 8px;
+        }
+
         .problem-card {
             background: var(--surface-color);
             border-radius: 16px;
@@ -547,7 +502,7 @@
             width: 100%;
             height: 2px;
             background: var(--gradient-primary);
-            transition: left 0.6s ease;
+            transition: left 0.3s ease;
         }
 
         .problem-card:hover::before {
@@ -556,12 +511,8 @@
 
         .problem-card:hover {
             box-shadow: var(--shadow-xl);
-            transform: translateY(-8px) rotateY(2deg);
+            transform: translateY(-4px);
             border-color: var(--primary-color);
-        }
-
-        .problem-card:nth-child(even):hover {
-            transform: translateY(-8px) rotateY(-2deg);
         }
 
         .problem-card.loaded {
@@ -670,8 +621,21 @@
             border: 1px solid rgba(37, 99, 235, 0.2);
         }
 
+        .problem-tag.expand-tags {
+            background: var(--accent-color);
+            color: white;
+            font-weight: 600;
+            border-color: var(--accent-color);
+            cursor: pointer;
+        }
+
+        .problem-tag.expand-tags:hover {
+            background: var(--warning-color);
+            border-color: var(--warning-color);
+        }
+
         .problem-tag:hover {
-            transform: scale(1.1);
+            transform: scale(1.05);
             background: var(--primary-color);
             color: white;
         }
@@ -1091,6 +1055,7 @@
         const problemsPerPage = 12;
         let selectedTags = [];
         let userProgress = JSON.parse(localStorage.getItem('userProgress')) || {};
+        let currentView = 'grid';
 
         // DOM Elements
         const searchInput = document.getElementById('searchInput');
@@ -1113,7 +1078,7 @@
                 "number": 3,
                 "title": "Давление света",
                 "source": "Республиканская физическая олимпиада",
-                "pdf": "pdfs/2018_final_11_3_light_pressure.pdf",
+                "pdf": "pdfs/2018_Final_11_3_problem.pdf",
                 "tags": ["Давление света", "Электромагнитные волны", "Электрическое поле", "Магнитное поле", "Энергия электрического поля"],
                 "difficulty": "advanced",
                 "target": "high_school",
@@ -1128,7 +1093,7 @@
                 "number": 2,
                 "title": "Опыт Физо",
                 "source": "Республиканская физическая олимпиада",
-                "pdf": "pdfs/2018_final_11_2_fizeau_experiment.pdf",
+                "pdf": "pdfs/2018_Final_11_2_problem.pdf",
                 "tags": ["Интерференция", "Оптика", "Преломление", "Свет", "Длина волны"],
                 "difficulty": "advanced",
                 "target": "high_school",
@@ -1143,7 +1108,7 @@
                 "number": 1,
                 "title": "Шарики на спице и как ломаются трубы",
                 "source": "Республиканская физическая олимпиада",
-                "pdf": "pdfs/2018_final_11_1_rods_and_balls.pdf",
+                "pdf": "pdfs/2018_Final_11_1_problem.pdf",
                 "tags": ["Механика", "Вращение твердого тела", "ЗСЭ", "Центростремительное ускорение"],
                 "difficulty": "advanced",
                 "target": "high_school",
@@ -1158,7 +1123,7 @@
                 "number": 3,
                 "title": "Опыты Ш. Кулона",
                 "source": "Республиканская физическая олимпиада",
-                "pdf": "pdfs/2018_final_10_3_coulomb_experiments.pdf",
+                "pdf": "pdfs/2018_Final_10_3_problem.pdf",
                 "tags": ["Электростатика", "Закон Кулона", "Электрическое поле", "Заряд"],
                 "difficulty": "advanced",
                 "target": "high_school",
@@ -1173,7 +1138,7 @@
                 "number": 2,
                 "title": "«Закон Ома» для теплопередачи",
                 "source": "Республиканская физическая олимпиада",
-                "pdf": "pdfs/2018_final_10_2_thermal_ohm_law.pdf",
+                "pdf": "pdfs/2018_Final_10_2_problem.pdf",
                 "tags": ["Теплопередача", "Закон Фурье", "Закон Ома", "Коэффициент теплопроводности"],
                 "difficulty": "intermediate",
                 "target": "high_school",
@@ -1188,7 +1153,7 @@
                 "number": 1,
                 "title": "Разминка",
                 "source": "Республиканская физическая олимпиада",
-                "pdf": "pdfs/2018_final_10_1_warmup.pdf",
+                "pdf": "pdfs/2018_Final_10_1_problem.pdf",
                 "tags": ["Электрические цепи", "Правила Кирхгофа", "ЭДС", "Механика"],
                 "difficulty": "mixed",
                 "target": "high_school",
@@ -1203,7 +1168,7 @@
                 "number": 3,
                 "title": "Опыты Георга Ома",
                 "source": "Республиканская физическая олимпиада",
-                "pdf": "pdfs/2018_final_9_3_ohm_experiment.pdf",
+                "pdf": "pdfs/2018_Final_9_3_problem.pdf",
                 "tags": ["Закон Ома", "История физики", "Экспериментальная физика", "Электрические цепи"],
                 "difficulty": "intermediate",
                 "target": "high_school",
@@ -1218,7 +1183,7 @@
                 "number": 2,
                 "title": "Графен, графит, алмаз",
                 "source": "Республиканская физическая олимпиада",
-                "pdf": "pdfs/2018_final_9_2_carbon_allotropes.pdf",
+                "pdf": "pdfs/2018_Final_9_2_problem.pdf",
                 "tags": ["Графен", "Графит", "Алмаз", "Кристаллическая решетка", "Поверхностная плотность"],
                 "difficulty": "intermediate",
                 "target": "high_school",
@@ -1233,7 +1198,7 @@
                 "number": 1,
                 "title": "Разминка",
                 "source": "Республиканская физическая олимпиада",
-                "pdf": "pdfs/2018_final_9_1_warmup.pdf",
+                "pdf": "pdfs/2018_Final_9_1_problem.pdf",
                 "tags": ["Механика", "Система блоков", "Золотое правило механики", "Кинематика"],
                 "difficulty": "mixed",
                 "target": "high_school",
@@ -1248,7 +1213,7 @@
                 "number": 1,
                 "title": "Разминка",
                 "source": "Республиканская физическая олимпиада",
-                "pdf": "pdfs/2017_final_11_1_warmup.pdf",
+                "pdf": "pdfs/2017_Final_11_1_problem.pdf",
                 "tags": ["Крутильный маятник", "Электростатика", "Электрическое поле", "Гармонические колебания"],
                 "difficulty": "intermediate",
                 "target": "high_school",
@@ -1361,16 +1326,7 @@
 
         // Get most popular tags based on analytics data
         function populateTopTags() {
-            // Top tags from analytics (most frequent ones)
-            const priorityTags = [
-                'Механика', 'Электрическое поле', 'Электростатика', 'Закон Ома', 
-                'Кинематика', 'Термодинамика', 'Мощность', 'Энергия', 'Симметрия',
-                'История физики', 'Температура', 'Электрические цепи', 'Идеальный газ',
-                'Колебания', 'Геометрическая оптика', 'Изотермический процесс', 
-                'Электричество', 'Интерференция', 'Центростремительное ускорение', 'Угловая скорость'
-            ];
-
-            // Also get actual counts from data
+            // Get actual counts from data
             const tagCounts = {};
             allProblems.forEach(problem => {
                 problem.tags.forEach(tag => {
@@ -1378,24 +1334,17 @@
                 });
             });
 
-            // Merge priority tags with actual data, prioritizing frequent ones
+            // Sort by frequency and take top 30
             const topTags = Object.entries(tagCounts)
                 .sort((a, b) => b[1] - a[1])
-                .slice(0, 25)
+                .slice(0, 30)
                 .map(([tag]) => tag);
-
-            // Add priority tags that might not be in top due to small sample
-            priorityTags.forEach(tag => {
-                if (!topTags.includes(tag) && topTags.length < 30) {
-                    topTags.push(tag);
-                }
-            });
 
             topTags.forEach((tag, index) => {
                 const tagElement = document.createElement('div');
                 tagElement.className = 'tag';
                 tagElement.textContent = tag;
-                tagElement.style.animationDelay = `${index * 0.1}s`;
+                tagElement.style.animationDelay = `${index * 0.05}s`;
                 tagElement.addEventListener('click', () => toggleTag(tag));
                 tagsContainer.appendChild(tagElement);
             });
@@ -1471,6 +1420,16 @@
             updateResultsInfo();
         }
 
+        // Generate PDF path based on problem data
+        function generatePdfPath(problem, type = 'problem') {
+            const stage = problem.stage === '3rd' ? '3rd' : 'Final';
+            const grade = problem.grade;
+            const number = problem.number;
+            const year = problem.year;
+            const suffix = type === 'solution' ? 'solution' : 'problem';
+            return `pdfs/${year}_${stage}_${grade}_${number}_${suffix}.pdf`;
+        }
+
         // Render problems
         function renderProblems() {
             const startIndex = (currentPage - 1) * problemsPerPage;
@@ -1488,50 +1447,68 @@
                 return;
             }
 
-            problemsGrid.innerHTML = problemsToShow.map((problem, index) => `
-                <div class="problem-card" data-id="${problem.id}" style="animation-delay: ${index * 0.1}s">
-                    <div class="problem-header">
-                        <div class="problem-year">${problem.year}</div>
-                        <div class="problem-difficulty difficulty-${problem.difficulty}">
-                            ${getDifficultyLabel(problem.difficulty)}
+            problemsGrid.innerHTML = problemsToShow.map((problem, index) => {
+                // Sort tags by frequency (most frequent first)
+                const tagCounts = {};
+                allProblems.forEach(p => {
+                    p.tags.forEach(tag => {
+                        tagCounts[tag] = (tagCounts[tag] || 0) + 1;
+                    });
+                });
+                
+                const sortedTags = problem.tags.sort((a, b) => (tagCounts[b] || 0) - (tagCounts[a] || 0));
+                const visibleTags = sortedTags.slice(0, 5);
+                const hiddenCount = problem.tags.length - 5;
+                
+                return `
+                    <div class="problem-card" data-id="${problem.id}" style="animation-delay: ${index * 0.05}s">
+                        <div class="problem-header">
+                            <div class="problem-year">${problem.year}</div>
+                            <div class="problem-difficulty difficulty-${problem.difficulty}">
+                                ${getDifficultyLabel(problem.difficulty)}
+                            </div>
+                        </div>
+                        
+                        <h3 class="problem-title">${problem.title}</h3>
+                        
+                        <div class="problem-meta">
+                            <span><i class="fas fa-graduation-cap"></i> ${problem.grade} класс</span>
+                            <span><i class="fas fa-trophy"></i> ${getStageLabel(problem.stage)}</span>
+                            <span><i class="fas fa-hashtag"></i> №${problem.number}</span>
+                        </div>
+                        
+                        <div class="problem-tags" data-problem-id="${problem.id}">
+                            ${visibleTags.map(tag => {
+                                const isPopular = ['Механика', 'Электрическое поле', 'Электростатика', 'Закон Ома', 'Кинематика', 'Термодинамика', 'Мощность', 'Энергия'].includes(tag);
+                                return `<span class="problem-tag ${isPopular ? 'popular' : ''}" onclick="toggleTag('${tag}')">${tag}</span>`;
+                            }).join('')}
+                            ${hiddenCount > 0 ? `<span class="problem-tag expand-tags" onclick="expandTags('${problem.id}')">+${hiddenCount}</span>` : ''}
+                        </div>
+                        
+                        <div class="problem-actions">
+                            <a href="${generatePdfPath(problem, 'problem')}" class="btn btn-primary" target="_blank">
+                                <i class="fas fa-file-pdf"></i>
+                                Задача
+                            </a>
+                            <a href="${generatePdfPath(problem, 'solution')}" class="btn btn-secondary" target="_blank">
+                                <i class="fas fa-lightbulb"></i>
+                                Решение
+                            </a>
+                            <button class="btn btn-secondary" onclick="toggleSolved('${problem.id}')">
+                                <i class="fas ${userProgress[problem.id] ? 'fa-check' : 'fa-plus'}"></i>
+                                ${userProgress[problem.id] ? 'Решено' : 'Решить'}
+                            </button>
                         </div>
                     </div>
-                    
-                    <h3 class="problem-title">${problem.title}</h3>
-                    
-                    <div class="problem-meta">
-                        <span><i class="fas fa-graduation-cap"></i> ${problem.grade} класс</span>
-                        <span><i class="fas fa-trophy"></i> ${getStageLabel(problem.stage)}</span>
-                        <span><i class="fas fa-hashtag"></i> №${problem.number}</span>
-                    </div>
-                    
-                                         <div class="problem-tags">
-                         ${problem.tags.slice(0, 5).map(tag => {
-                             const isPopular = ['Механика', 'Электрическое поле', 'Электростатика', 'Закон Ома', 'Кинематика', 'Термодинамика', 'Мощность', 'Энергия'].includes(tag);
-                             return `<span class="problem-tag ${isPopular ? 'popular' : ''}">${tag}</span>`;
-                         }).join('')}
-                         ${problem.tags.length > 5 ? `<span class="problem-tag">+${problem.tags.length - 5}</span>` : ''}
-                     </div>
-                    
-                    <div class="problem-actions">
-                        <a href="${problem.pdf}" class="btn btn-primary" target="_blank">
-                            <i class="fas fa-file-pdf"></i>
-                            Открыть PDF
-                        </a>
-                        <button class="btn btn-secondary" onclick="toggleSolved('${problem.id}')">
-                            <i class="fas ${userProgress[problem.id] ? 'fa-check' : 'fa-plus'}"></i>
-                            ${userProgress[problem.id] ? 'Решено' : 'Решить'}
-                        </button>
-                    </div>
-                                 </div>
-             `).join('');
+                `;
+            }).join('');
 
-             // Trigger animations after a small delay
-             setTimeout(() => {
-                 document.querySelectorAll('.problem-card').forEach(card => {
-                     card.classList.add('loaded');
-                 });
-             }, 50);
+            // Trigger animations after a small delay
+            setTimeout(() => {
+                document.querySelectorAll('.problem-card').forEach(card => {
+                    card.classList.add('loaded');
+                });
+            }, 50);
         }
 
         // Render pagination
@@ -1693,6 +1670,30 @@
             `).join('');
         }
 
+        // Expand tags for a specific problem
+        function expandTags(problemId) {
+            const problem = allProblems.find(p => p.id === problemId);
+            if (!problem) return;
+            
+            const tagsContainer = document.querySelector(`[data-problem-id="${problemId}"]`);
+            if (!tagsContainer) return;
+            
+            // Get tag counts for sorting
+            const tagCounts = {};
+            allProblems.forEach(p => {
+                p.tags.forEach(tag => {
+                    tagCounts[tag] = (tagCounts[tag] || 0) + 1;
+                });
+            });
+            
+            const sortedTags = problem.tags.sort((a, b) => (tagCounts[b] || 0) - (tagCounts[a] || 0));
+            
+            tagsContainer.innerHTML = sortedTags.map(tag => {
+                const isPopular = ['Механика', 'Электрическое поле', 'Электростатика', 'Закон Ома', 'Кинематика', 'Термодинамика', 'Мощность', 'Энергия'].includes(tag);
+                return `<span class="problem-tag ${isPopular ? 'popular' : ''}" onclick="toggleTag('${tag}')">${tag}</span>`;
+            }).join('');
+        }
+
         // Toggle solved status
         function toggleSolved(problemId) {
             userProgress[problemId] = !userProgress[problemId];
@@ -1722,6 +1723,23 @@
             return labels[stage] || stage;
         }
 
+        // Switch view mode
+        function switchView(view) {
+            currentView = view;
+            const problemsGrid = document.getElementById('problemsGrid');
+            
+            if (view === 'list') {
+                problemsGrid.classList.add('list-view');
+            } else {
+                problemsGrid.classList.remove('list-view');
+            }
+            
+            // Update view buttons
+            document.querySelectorAll('.view-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.view === view);
+            });
+        }
+
         // Add event listeners
         function addEventListeners() {
             searchInput.addEventListener('input', debounce(applyFilters, 300));
@@ -1733,9 +1751,8 @@
             // View controls
             document.querySelectorAll('.view-btn').forEach(btn => {
                 btn.addEventListener('click', (e) => {
-                    document.querySelectorAll('.view-btn').forEach(b => b.classList.remove('active'));
-                    e.target.classList.add('active');
-                    // Add view switching logic here
+                    const view = e.currentTarget.dataset.view;
+                    switchView(view);
                 });
             });
         }
