@@ -1,0 +1,1760 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Банк задач - BelPhO | Подготовка к олимпиаде по физике</title>
+    <meta name="description" content="Современный банк задач для подготовки к олимпиаде по физике. Более 200 задач с фильтрацией, поиском и аналитикой.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary-color: #64748b;
+            --accent-color: #f59e0b;
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+            --error-color: #ef4444;
+            --bg-color: #f8fafc;
+            --surface-color: #ffffff;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --border-color: #e2e8f0;
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+            --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --gradient-accent: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            font-size: 16px;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 25% 25%, rgba(37, 99, 235, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 75% 75%, rgba(245, 158, 11, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 50% 50%, rgba(16, 185, 129, 0.03) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: -1;
+            animation: backgroundFlow 20s ease-in-out infinite;
+        }
+
+        @keyframes backgroundFlow {
+            0%, 100% { transform: rotate(0deg) scale(1); }
+            33% { transform: rotate(1deg) scale(1.02); }
+            66% { transform: rotate(-1deg) scale(0.98); }
+        }
+
+        .container {
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            background: var(--surface-color);
+            padding: 20px 0;
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .logo-img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            filter: drop-shadow(0 2px 4px rgba(37, 99, 235, 0.3));
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover .logo-img {
+            transform: rotate(360deg) scale(1.1);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: url('../img/flash.png') no-repeat center;
+            background-size: 120px 120px;
+            opacity: 0.1;
+            animation: float 6s ease-in-out infinite;
+            pointer-events: none;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            33% { transform: translate(30px, -30px) rotate(120deg); }
+            66% { transform: translate(-20px, 20px) rotate(240deg); }
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 20px;
+            opacity: 0.9;
+            margin-bottom: 32px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 32px;
+            margin-top: 48px;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 24px;
+            border-radius: 16px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            transform: scale(0);
+            transition: transform 0.6s ease;
+        }
+
+        .stat-card:hover::before {
+            transform: scale(1);
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
+        }
+
+        .stat-number {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        /* Controls Section */
+        .controls {
+            background: var(--surface-color);
+            padding: 32px 0;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .controls-grid {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 24px;
+            align-items: center;
+        }
+
+        .search-box {
+            position: relative;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 16px 50px 16px 20px;
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+
+        .search-icon {
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-secondary);
+        }
+
+        .view-controls {
+            display: flex;
+            gap: 8px;
+        }
+
+        .view-btn {
+            padding: 12px 16px;
+            border: 2px solid var(--border-color);
+            background: var(--surface-color);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .view-btn.active {
+            background: var(--primary-color);
+            border-color: var(--primary-color);
+            color: white;
+        }
+
+        /* Filters */
+        .filters {
+            background: var(--surface-color);
+            padding: 32px 0;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .filters-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 24px;
+        }
+
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .filter-label {
+            font-weight: 600;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .filter-select {
+            padding: 12px 16px;
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            font-size: 14px;
+            background: var(--surface-color);
+            transition: all 0.3s ease;
+        }
+
+        .filter-select:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        .tags-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 16px;
+        }
+
+        .tag {
+            padding: 6px 12px;
+            background: var(--bg-color);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            opacity: 0;
+            animation: slideInUp 0.6s ease forwards;
+            transform: translateY(20px);
+        }
+
+        .tag::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .tag:hover::before {
+            left: 100%;
+        }
+
+        .tag:hover {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+            transform: translateY(-2px) scale(1.05);
+            box-shadow: 0 8px 25px rgba(37, 99, 235, 0.3);
+        }
+
+        .tag.active {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
+        }
+
+        @keyframes slideInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Main Content */
+        .main-content {
+            display: grid;
+            grid-template-columns: 350px 1fr;
+            gap: 32px;
+            padding: 32px 0;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .sidebar-card {
+            background: var(--surface-color);
+            padding: 24px;
+            border-radius: 16px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .sidebar-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: var(--bg-color);
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 8px 0;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: var(--gradient-primary);
+            transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .progress-fill::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            animation: shimmer 2s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        .progress-stats {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        .quick-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            margin-top: 16px;
+        }
+
+        .quick-stat {
+            text-align: center;
+            padding: 16px;
+            background: var(--bg-color);
+            border-radius: 8px;
+        }
+
+        .quick-stat-number {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary-color);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .quick-stat:hover .quick-stat-number {
+            transform: scale(1.2);
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1.2); }
+            50% { transform: scale(1.3); }
+        }
+
+        .quick-stat-label {
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+
+        /* Problems Grid */
+        .problems-section {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .section-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .results-info {
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        .problems-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            gap: 24px;
+        }
+
+        .problem-card {
+            background: var(--surface-color);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: var(--shadow-md);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid var(--border-color);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transform: translateY(10px);
+            opacity: 0;
+        }
+
+        .problem-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background: var(--gradient-primary);
+            transition: left 0.6s ease;
+        }
+
+        .problem-card:hover::before {
+            left: 0;
+        }
+
+        .problem-card:hover {
+            box-shadow: var(--shadow-xl);
+            transform: translateY(-8px) rotateY(2deg);
+            border-color: var(--primary-color);
+        }
+
+        .problem-card:nth-child(even):hover {
+            transform: translateY(-8px) rotateY(-2deg);
+        }
+
+        .problem-card.loaded {
+            animation: cardSlideIn 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+        }
+
+        @keyframes cardSlideIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .problem-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 16px;
+        }
+
+        .problem-year {
+            background: var(--primary-color);
+            color: white;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .problem-difficulty {
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .difficulty-basic {
+            background: var(--success-color);
+            color: white;
+        }
+
+        .difficulty-intermediate {
+            background: var(--warning-color);
+            color: white;
+        }
+
+        .difficulty-advanced {
+            background: var(--error-color);
+            color: white;
+        }
+
+        .difficulty-very_advanced {
+            background: #8b5cf6;
+            color: white;
+        }
+
+        .difficulty-mixed {
+            background: linear-gradient(45deg, var(--warning-color), var(--primary-color));
+            color: white;
+        }
+
+        .problem-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+
+        .problem-meta {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 16px;
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        .problem-meta span {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .problem-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 16px;
+        }
+
+        .problem-tag {
+            padding: 4px 8px;
+            background: var(--bg-color);
+            border-radius: 12px;
+            font-size: 11px;
+            color: var(--text-secondary);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .problem-tag.popular {
+            background: linear-gradient(45deg, rgba(37, 99, 235, 0.1), rgba(245, 158, 11, 0.1));
+            color: var(--primary-color);
+            font-weight: 600;
+            border: 1px solid rgba(37, 99, 235, 0.2);
+        }
+
+        .problem-tag:hover {
+            transform: scale(1.1);
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .problem-actions {
+            display: flex;
+            gap: 8px;
+            margin-top: 16px;
+        }
+
+        .btn {
+            padding: 12px 16px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+        }
+
+        .btn-primary {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+        }
+
+        .btn-secondary {
+            background: var(--bg-color);
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+        }
+
+        .btn-secondary:hover {
+            background: var(--surface-color);
+            box-shadow: var(--shadow-sm);
+        }
+
+        /* Pagination */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            margin-top: 32px;
+        }
+
+        .pagination-btn {
+            padding: 8px 12px;
+            border: 1px solid var(--border-color);
+            background: var(--surface-color);
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .pagination-btn:hover {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+
+        .pagination-btn.active {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+
+        /* Loading States */
+        .loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 64px;
+            color: var(--text-secondary);
+        }
+
+        .spinner {
+            width: 60px;
+            height: 60px;
+            position: relative;
+            margin: 0 auto 20px;
+        }
+
+        .spinner::before,
+        .spinner::after {
+            content: '';
+            position: absolute;
+            border: 3px solid transparent;
+            border-radius: 50%;
+            animation: spin 1.5s linear infinite;
+        }
+
+        .spinner::before {
+            width: 60px;
+            height: 60px;
+            border-top: 3px solid var(--primary-color);
+            border-right: 3px solid var(--primary-color);
+        }
+
+        .spinner::after {
+            width: 40px;
+            height: 40px;
+            top: 10px;
+            left: 10px;
+            border-bottom: 3px solid var(--accent-color);
+            border-left: 3px solid var(--accent-color);
+            animation-direction: reverse;
+            animation-duration: 1s;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .sidebar {
+                order: 2;
+            }
+            
+            .problems-section {
+                order: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+            
+            .hero p {
+                font-size: 18px;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .problems-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .controls-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .filters-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 16px;
+            }
+            
+            .hero {
+                padding: 48px 0;
+            }
+            
+            .hero h1 {
+                font-size: 28px;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideInRight {
+            from { transform: translateX(100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        @keyframes slideOutRight {
+            from { transform: translateX(0); opacity: 1; }
+            to { transform: translateX(100%); opacity: 0; }
+        }
+
+        .problem-card {
+            animation: fadeIn 0.5s ease;
+        }
+
+        /* Dark mode support */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #0f172a;
+                --surface-color: #1e293b;
+                --text-primary: #f1f5f9;
+                --text-secondary: #94a3b8;
+                --border-color: #334155;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="../" class="logo">
+                    <img src="../img/logo.png" alt="BelPhO Logo" class="logo-img">
+                    <span>BelPhO</span>
+                </a>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="../">Главная</a></li>
+                        <li><a href="../problems/" class="active">Задачи</a></li>
+                        <li><a href="../books/">Книги</a></li>
+                        <li><a href="../Mechanics/">Механика</a></li>
+                        <li><a href="../Electromag/">Электромагнетизм</a></li>
+                        <li><a href="../Thermodynamics/">Термодинамика</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Банк задач по физике</h1>
+            <p>Современная платформа для подготовки к олимпиадам по физике. Тщательно отобранные задачи с умной системой фильтрации и персональной аналитикой.</p>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" id="totalProblems">0</div>
+                    <div class="stat-label">Всего задач</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="totalYears">0</div>
+                    <div class="stat-label">Лет олимпиад</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="totalTags">0</div>
+                    <div class="stat-label">Тем физики</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="avgDifficulty">0</div>
+                    <div class="stat-label">Средняя сложность</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="controls">
+        <div class="container">
+            <div class="controls-grid">
+                <div class="search-box">
+                    <input type="text" class="search-input" placeholder="Поиск задач по названию, тегам или описанию..." id="searchInput">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+                <div class="view-controls">
+                    <button class="view-btn active" data-view="grid">
+                        <i class="fas fa-th-large"></i>
+                    </button>
+                    <button class="view-btn" data-view="list">
+                        <i class="fas fa-list"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="filters">
+        <div class="container">
+            <div class="filters-grid">
+                <div class="filter-group">
+                    <label class="filter-label">
+                        <i class="fas fa-calendar"></i>
+                        Год
+                    </label>
+                    <select class="filter-select" id="yearFilter">
+                        <option value="">Все годы</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label class="filter-label">
+                        <i class="fas fa-graduation-cap"></i>
+                        Класс
+                    </label>
+                    <select class="filter-select" id="gradeFilter">
+                        <option value="">Все классы</option>
+                        <option value="9">9 класс</option>
+                        <option value="10">10 класс</option>
+                        <option value="11">11 класс</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label class="filter-label">
+                        <i class="fas fa-trophy"></i>
+                        Этап
+                    </label>
+                    <select class="filter-select" id="stageFilter">
+                        <option value="">Все этапы</option>
+                        <option value="3rd">3 этап</option>
+                        <option value="Final">Финал</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label class="filter-label">
+                        <i class="fas fa-chart-line"></i>
+                        Сложность
+                    </label>
+                    <select class="filter-select" id="difficultyFilter">
+                        <option value="">Все уровни</option>
+                        <option value="basic">Базовый</option>
+                        <option value="intermediate">Средний</option>
+                        <option value="advanced">Продвинутый</option>
+                        <option value="very_advanced">Очень сложный</option>
+                        <option value="mixed">Смешанный</option>
+                    </select>
+                </div>
+            </div>
+            <div class="tags-container" id="tagsContainer">
+                <!-- Tags will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="main-content">
+            <aside class="sidebar">
+                <div class="sidebar-card">
+                    <h3 class="sidebar-title">
+                        <i class="fas fa-chart-bar"></i>
+                        Ваш прогресс
+                    </h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 0%" id="progressFill"></div>
+                    </div>
+                    <div class="progress-stats">
+                        <span>Решено: <span id="solvedCount">0</span></span>
+                        <span>Всего: <span id="totalCount">0</span></span>
+                    </div>
+                    <div class="quick-stats">
+                        <div class="quick-stat">
+                            <div class="quick-stat-number" id="easyCount">0</div>
+                            <div class="quick-stat-label">Легких</div>
+                        </div>
+                        <div class="quick-stat">
+                            <div class="quick-stat-number" id="hardCount">0</div>
+                            <div class="quick-stat-label">Сложных</div>
+                        </div>
+                        <div class="quick-stat">
+                            <div class="quick-stat-number" id="streakCount">0</div>
+                            <div class="quick-stat-label">Серия</div>
+                        </div>
+                        <div class="quick-stat">
+                            <div class="quick-stat-number" id="weeklyCount">0</div>
+                            <div class="quick-stat-label">За неделю</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-card">
+                    <h3 class="sidebar-title">
+                        <i class="fas fa-lightbulb"></i>
+                        Рекомендации
+                    </h3>
+                    <div id="recommendations">
+                        <!-- Recommendations will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <div class="sidebar-card">
+                    <h3 class="sidebar-title">
+                        <i class="fas fa-fire"></i>
+                        Популярные теги
+                    </h3>
+                    <div id="popularTags">
+                        <!-- Popular tags will be populated by JavaScript -->
+                    </div>
+                </div>
+            </aside>
+
+            <main class="problems-section">
+                <div class="section-header">
+                    <h2 class="section-title">Задачи</h2>
+                    <div class="results-info" id="resultsInfo">
+                        Найдено: 0 задач
+                    </div>
+                </div>
+
+                <div class="problems-grid" id="problemsGrid">
+                    <!-- Problems will be populated by JavaScript -->
+                </div>
+
+                <div class="pagination" id="pagination">
+                    <!-- Pagination will be populated by JavaScript -->
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script>
+        // Global variables
+        let allProblems = [];
+        let filteredProblems = [];
+        let currentPage = 1;
+        const problemsPerPage = 12;
+        let selectedTags = [];
+        let userProgress = JSON.parse(localStorage.getItem('userProgress')) || {};
+
+        // DOM Elements
+        const searchInput = document.getElementById('searchInput');
+        const yearFilter = document.getElementById('yearFilter');
+        const gradeFilter = document.getElementById('gradeFilter');
+        const stageFilter = document.getElementById('stageFilter');
+        const difficultyFilter = document.getElementById('difficultyFilter');
+        const tagsContainer = document.getElementById('tagsContainer');
+        const problemsGrid = document.getElementById('problemsGrid');
+        const resultsInfo = document.getElementById('resultsInfo');
+        const pagination = document.getElementById('pagination');
+
+        // Sample data for fallback (first 20 problems from the JSON)
+        const sampleProblems = [
+            {
+                "id": "2018-final-11-3",
+                "year": 2018,
+                "stage": "Final",
+                "grade": 11,
+                "number": 3,
+                "title": "Давление света",
+                "source": "Республиканская физическая олимпиада",
+                "pdf": "pdfs/2018_final_11_3_light_pressure.pdf",
+                "tags": ["Давление света", "Электромагнитные волны", "Электрическое поле", "Магнитное поле", "Энергия электрического поля"],
+                "difficulty": "advanced",
+                "target": "high_school",
+                "skills": ["Понимание электромагнитной волны", "Работа с законами Максвелла", "Аналитическое мышление"],
+                "methods": ["Классическая электродинамика", "Анализ гармонических функций", "Применение уравнения движения"]
+            },
+            {
+                "id": "2018-final-11-2",
+                "year": 2018,
+                "stage": "Final",
+                "grade": 11,
+                "number": 2,
+                "title": "Опыт Физо",
+                "source": "Республиканская физическая олимпиада",
+                "pdf": "pdfs/2018_final_11_2_fizeau_experiment.pdf",
+                "tags": ["Интерференция", "Оптика", "Преломление", "Свет", "Длина волны"],
+                "difficulty": "advanced",
+                "target": "high_school",
+                "skills": ["Применение принципа интерференции", "Работа с экспериментальными установками"],
+                "methods": ["Интерференция волн", "Оптический сдвиг", "Сложение скоростей"]
+            },
+            {
+                "id": "2018-final-11-1",
+                "year": 2018,
+                "stage": "Final",
+                "grade": 11,
+                "number": 1,
+                "title": "Шарики на спице и как ломаются трубы",
+                "source": "Республиканская физическая олимпиада",
+                "pdf": "pdfs/2018_final_11_1_rods_and_balls.pdf",
+                "tags": ["Механика", "Вращение твердого тела", "ЗСЭ", "Центростремительное ускорение"],
+                "difficulty": "advanced",
+                "target": "high_school",
+                "skills": ["Применение закона сохранения энергии", "Работа с координатами и углами"],
+                "methods": ["Закон сохранения энергии", "Вращательная динамика", "Графический анализ"]
+            },
+            {
+                "id": "2018-final-10-3",
+                "year": 2018,
+                "stage": "Final",
+                "grade": 10,
+                "number": 3,
+                "title": "Опыты Ш. Кулона",
+                "source": "Республиканская физическая олимпиада",
+                "pdf": "pdfs/2018_final_10_3_coulomb_experiments.pdf",
+                "tags": ["Электростатика", "Закон Кулона", "Электрическое поле", "Заряд"],
+                "difficulty": "advanced",
+                "target": "high_school",
+                "skills": ["Понимание фундаментальных законов", "Работа с экспериментальными данными"],
+                "methods": ["Анализ крутильного маятника", "Законы электростатики"]
+            },
+            {
+                "id": "2018-final-10-2",
+                "year": 2018,
+                "stage": "Final",
+                "grade": 10,
+                "number": 2,
+                "title": "«Закон Ома» для теплопередачи",
+                "source": "Республиканская физическая олимпиада",
+                "pdf": "pdfs/2018_final_10_2_thermal_ohm_law.pdf",
+                "tags": ["Теплопередача", "Закон Фурье", "Закон Ома", "Коэффициент теплопроводности"],
+                "difficulty": "intermediate",
+                "target": "high_school",
+                "skills": ["Работа с тепловыми потоками", "Моделирование стационарных режимов"],
+                "methods": ["Применение закона Фурье", "Сложение тепловых сопротивлений"]
+            },
+            {
+                "id": "2018-final-10-1",
+                "year": 2018,
+                "stage": "Final",
+                "grade": 10,
+                "number": 1,
+                "title": "Разминка",
+                "source": "Республиканская физическая олимпиада",
+                "pdf": "pdfs/2018_final_10_1_warmup.pdf",
+                "tags": ["Электрические цепи", "Правила Кирхгофа", "ЭДС", "Механика"],
+                "difficulty": "mixed",
+                "target": "high_school",
+                "skills": ["Применение закона Ома и Кирхгофа", "Расчет движения тела под действием трения"],
+                "methods": ["Электрические эквиваленты", "Вращательное движение"]
+            },
+            {
+                "id": "2018-final-9-3",
+                "year": 2018,
+                "stage": "Final",
+                "grade": 9,
+                "number": 3,
+                "title": "Опыты Георга Ома",
+                "source": "Республиканская физическая олимпиада",
+                "pdf": "pdfs/2018_final_9_3_ohm_experiment.pdf",
+                "tags": ["Закон Ома", "История физики", "Экспериментальная физика", "Электрические цепи"],
+                "difficulty": "intermediate",
+                "target": "high_school",
+                "skills": ["Историко-физический анализ", "Графический анализ данных"],
+                "methods": ["Линейная аппроксимация", "Сравнение теоретической и экспериментальной модели"]
+            },
+            {
+                "id": "2018-final-9-2",
+                "year": 2018,
+                "stage": "Final",
+                "grade": 9,
+                "number": 2,
+                "title": "Графен, графит, алмаз",
+                "source": "Республиканская физическая олимпиада",
+                "pdf": "pdfs/2018_final_9_2_carbon_allotropes.pdf",
+                "tags": ["Графен", "Графит", "Алмаз", "Кристаллическая решетка", "Поверхностная плотность"],
+                "difficulty": "intermediate",
+                "target": "high_school",
+                "skills": ["Понимание атомной структуры веществ", "Моделирование кристаллических решеток"],
+                "methods": ["Геометрический анализ решеток", "Использование молярных и атомных величин"]
+            },
+            {
+                "id": "2018-final-9-1",
+                "year": 2018,
+                "stage": "Final",
+                "grade": 9,
+                "number": 1,
+                "title": "Разминка",
+                "source": "Республиканская физическая олимпиада",
+                "pdf": "pdfs/2018_final_9_1_warmup.pdf",
+                "tags": ["Механика", "Система блоков", "Золотое правило механики", "Кинематика"],
+                "difficulty": "mixed",
+                "target": "high_school",
+                "skills": ["Понимание механических принципов", "Применение законов Ньютона"],
+                "methods": ["Решение с использованием блоков", "Расчет по законам кинематики"]
+            },
+            {
+                "id": "2017-final-11-1",
+                "year": 2017,
+                "stage": "Final",
+                "grade": 11,
+                "number": 1,
+                "title": "Разминка",
+                "source": "Республиканская физическая олимпиада",
+                "pdf": "pdfs/2017_final_11_1_warmup.pdf",
+                "tags": ["Крутильный маятник", "Электростатика", "Электрическое поле", "Гармонические колебания"],
+                "difficulty": "intermediate",
+                "target": "high_school",
+                "skills": ["Расчет периода колебаний", "Использование закона сохранения энергии"],
+                "methods": ["Энергетический подход", "Классическая механика"]
+            }
+        ];
+
+        // Initialize the application
+        async function init() {
+            try {
+                showLoading();
+                
+                // Try to load from JSON file first
+                let response;
+                try {
+                    response = await fetch('pdf_metadata.json');
+                    if (response.ok) {
+                        allProblems = await response.json();
+                        console.log('✅ Loaded full dataset from JSON file');
+                    } else {
+                        throw new Error('JSON file not found');
+                    }
+                } catch (fetchError) {
+                    console.warn('⚠️ Could not load JSON file, using sample data:', fetchError.message);
+                    allProblems = sampleProblems;
+                    showWarning('Загружены демонстрационные данные. Для полного функционала запустите через веб-сервер.');
+                }
+                
+                populateFilters();
+                populateTopTags();
+                updateStats();
+                updateSidebar();
+                applyFilters();
+                
+                // Add event listeners
+                addEventListeners();
+                
+            } catch (error) {
+                console.error('Error loading problems:', error);
+                showError('Ошибка загрузки данных');
+            }
+        }
+
+        // Show loading state
+        function showLoading() {
+            problemsGrid.innerHTML = `
+                <div class="loading">
+                    <div class="spinner"></div>
+                    <p>Загрузка задач...</p>
+                </div>
+            `;
+        }
+
+        // Show error message
+        function showError(message) {
+            problemsGrid.innerHTML = `
+                <div class="loading">
+                    <i class="fas fa-exclamation-triangle" style="font-size: 48px; color: var(--error-color); margin-bottom: 16px;"></i>
+                    <p>${message}</p>
+                </div>
+            `;
+        }
+
+        // Show warning message
+        function showWarning(message) {
+            const warningDiv = document.createElement('div');
+            warningDiv.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: var(--warning-color);
+                color: white;
+                padding: 16px 20px;
+                border-radius: 8px;
+                box-shadow: var(--shadow-lg);
+                z-index: 1000;
+                max-width: 400px;
+                font-size: 14px;
+                animation: slideInRight 0.5s ease;
+            `;
+            warningDiv.innerHTML = `
+                <div style="display: flex; align-items: center; gap: 12px;">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <div>
+                        <div style="font-weight: 600; margin-bottom: 4px;">Внимание</div>
+                        <div>${message}</div>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(warningDiv);
+            
+            // Auto-remove after 8 seconds
+            setTimeout(() => {
+                warningDiv.style.animation = 'slideOutRight 0.5s ease';
+                setTimeout(() => warningDiv.remove(), 500);
+            }, 8000);
+        }
+
+        // Populate filter dropdowns
+        function populateFilters() {
+            const years = [...new Set(allProblems.map(p => p.year))].sort((a, b) => b - a);
+            years.forEach(year => {
+                const option = document.createElement('option');
+                option.value = year;
+                option.textContent = year;
+                yearFilter.appendChild(option);
+            });
+        }
+
+        // Get most popular tags based on analytics data
+        function populateTopTags() {
+            // Top tags from analytics (most frequent ones)
+            const priorityTags = [
+                'Механика', 'Электрическое поле', 'Электростатика', 'Закон Ома', 
+                'Кинематика', 'Термодинамика', 'Мощность', 'Энергия', 'Симметрия',
+                'История физики', 'Температура', 'Электрические цепи', 'Идеальный газ',
+                'Колебания', 'Геометрическая оптика', 'Изотермический процесс', 
+                'Электричество', 'Интерференция', 'Центростремительное ускорение', 'Угловая скорость'
+            ];
+
+            // Also get actual counts from data
+            const tagCounts = {};
+            allProblems.forEach(problem => {
+                problem.tags.forEach(tag => {
+                    tagCounts[tag] = (tagCounts[tag] || 0) + 1;
+                });
+            });
+
+            // Merge priority tags with actual data, prioritizing frequent ones
+            const topTags = Object.entries(tagCounts)
+                .sort((a, b) => b[1] - a[1])
+                .slice(0, 25)
+                .map(([tag]) => tag);
+
+            // Add priority tags that might not be in top due to small sample
+            priorityTags.forEach(tag => {
+                if (!topTags.includes(tag) && topTags.length < 30) {
+                    topTags.push(tag);
+                }
+            });
+
+            topTags.forEach((tag, index) => {
+                const tagElement = document.createElement('div');
+                tagElement.className = 'tag';
+                tagElement.textContent = tag;
+                tagElement.style.animationDelay = `${index * 0.1}s`;
+                tagElement.addEventListener('click', () => toggleTag(tag));
+                tagsContainer.appendChild(tagElement);
+            });
+        }
+
+        // Toggle tag selection
+        function toggleTag(tag) {
+            const index = selectedTags.indexOf(tag);
+            if (index > -1) {
+                selectedTags.splice(index, 1);
+            } else {
+                selectedTags.push(tag);
+            }
+            
+            updateTagsDisplay();
+            applyFilters();
+        }
+
+        // Update tags display
+        function updateTagsDisplay() {
+            const tags = tagsContainer.querySelectorAll('.tag');
+            tags.forEach(tag => {
+                tag.classList.toggle('active', selectedTags.includes(tag.textContent));
+            });
+        }
+
+        // Apply all filters
+        function applyFilters() {
+            const searchQuery = searchInput.value.toLowerCase();
+            const year = yearFilter.value;
+            const grade = gradeFilter.value;
+            const stage = stageFilter.value;
+            const difficulty = difficultyFilter.value;
+
+            filteredProblems = allProblems.filter(problem => {
+                // Text search
+                if (searchQuery && !problem.title.toLowerCase().includes(searchQuery) &&
+                    !problem.tags.some(tag => tag.toLowerCase().includes(searchQuery))) {
+                    return false;
+                }
+
+                // Year filter
+                if (year && problem.year.toString() !== year) {
+                    return false;
+                }
+
+                // Grade filter
+                if (grade && problem.grade.toString() !== grade) {
+                    return false;
+                }
+
+                // Stage filter
+                if (stage && problem.stage !== stage) {
+                    return false;
+                }
+
+                // Difficulty filter
+                if (difficulty && problem.difficulty !== difficulty) {
+                    return false;
+                }
+
+                // Tag filter
+                if (selectedTags.length > 0 && !selectedTags.some(tag => problem.tags.includes(tag))) {
+                    return false;
+                }
+
+                return true;
+            });
+
+            currentPage = 1;
+            renderProblems();
+            renderPagination();
+            updateResultsInfo();
+        }
+
+        // Render problems
+        function renderProblems() {
+            const startIndex = (currentPage - 1) * problemsPerPage;
+            const endIndex = startIndex + problemsPerPage;
+            const problemsToShow = filteredProblems.slice(startIndex, endIndex);
+
+            if (problemsToShow.length === 0) {
+                problemsGrid.innerHTML = `
+                    <div class="loading">
+                        <i class="fas fa-search" style="font-size: 48px; color: var(--text-secondary); margin-bottom: 16px;"></i>
+                        <p>Задачи не найдены</p>
+                        <p style="font-size: 14px; color: var(--text-secondary);">Попробуйте изменить параметры поиска</p>
+                    </div>
+                `;
+                return;
+            }
+
+            problemsGrid.innerHTML = problemsToShow.map((problem, index) => `
+                <div class="problem-card" data-id="${problem.id}" style="animation-delay: ${index * 0.1}s">
+                    <div class="problem-header">
+                        <div class="problem-year">${problem.year}</div>
+                        <div class="problem-difficulty difficulty-${problem.difficulty}">
+                            ${getDifficultyLabel(problem.difficulty)}
+                        </div>
+                    </div>
+                    
+                    <h3 class="problem-title">${problem.title}</h3>
+                    
+                    <div class="problem-meta">
+                        <span><i class="fas fa-graduation-cap"></i> ${problem.grade} класс</span>
+                        <span><i class="fas fa-trophy"></i> ${getStageLabel(problem.stage)}</span>
+                        <span><i class="fas fa-hashtag"></i> №${problem.number}</span>
+                    </div>
+                    
+                                         <div class="problem-tags">
+                         ${problem.tags.slice(0, 5).map(tag => {
+                             const isPopular = ['Механика', 'Электрическое поле', 'Электростатика', 'Закон Ома', 'Кинематика', 'Термодинамика', 'Мощность', 'Энергия'].includes(tag);
+                             return `<span class="problem-tag ${isPopular ? 'popular' : ''}">${tag}</span>`;
+                         }).join('')}
+                         ${problem.tags.length > 5 ? `<span class="problem-tag">+${problem.tags.length - 5}</span>` : ''}
+                     </div>
+                    
+                    <div class="problem-actions">
+                        <a href="${problem.pdf}" class="btn btn-primary" target="_blank">
+                            <i class="fas fa-file-pdf"></i>
+                            Открыть PDF
+                        </a>
+                        <button class="btn btn-secondary" onclick="toggleSolved('${problem.id}')">
+                            <i class="fas ${userProgress[problem.id] ? 'fa-check' : 'fa-plus'}"></i>
+                            ${userProgress[problem.id] ? 'Решено' : 'Решить'}
+                        </button>
+                    </div>
+                                 </div>
+             `).join('');
+
+             // Trigger animations after a small delay
+             setTimeout(() => {
+                 document.querySelectorAll('.problem-card').forEach(card => {
+                     card.classList.add('loaded');
+                 });
+             }, 50);
+        }
+
+        // Render pagination
+        function renderPagination() {
+            const totalPages = Math.ceil(filteredProblems.length / problemsPerPage);
+            
+            if (totalPages <= 1) {
+                pagination.innerHTML = '';
+                return;
+            }
+
+            let paginationHTML = '';
+            
+            // Previous button
+            if (currentPage > 1) {
+                paginationHTML += `<button class="pagination-btn" onclick="changePage(${currentPage - 1})">
+                    <i class="fas fa-chevron-left"></i>
+                </button>`;
+            }
+
+            // Page numbers
+            const startPage = Math.max(1, currentPage - 2);
+            const endPage = Math.min(totalPages, currentPage + 2);
+
+            if (startPage > 1) {
+                paginationHTML += `<button class="pagination-btn" onclick="changePage(1)">1</button>`;
+                if (startPage > 2) {
+                    paginationHTML += `<span class="pagination-ellipsis">...</span>`;
+                }
+            }
+
+            for (let i = startPage; i <= endPage; i++) {
+                paginationHTML += `<button class="pagination-btn ${i === currentPage ? 'active' : ''}" onclick="changePage(${i})">${i}</button>`;
+            }
+
+            if (endPage < totalPages) {
+                if (endPage < totalPages - 1) {
+                    paginationHTML += `<span class="pagination-ellipsis">...</span>`;
+                }
+                paginationHTML += `<button class="pagination-btn" onclick="changePage(${totalPages})">${totalPages}</button>`;
+            }
+
+            // Next button
+            if (currentPage < totalPages) {
+                paginationHTML += `<button class="pagination-btn" onclick="changePage(${currentPage + 1})">
+                    <i class="fas fa-chevron-right"></i>
+                </button>`;
+            }
+
+            pagination.innerHTML = paginationHTML;
+        }
+
+        // Change page
+        function changePage(page) {
+            currentPage = page;
+            renderProblems();
+            renderPagination();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Update results info
+        function updateResultsInfo() {
+            resultsInfo.textContent = `Найдено: ${filteredProblems.length} задач`;
+        }
+
+        // Update statistics
+        function updateStats() {
+            const totalProblems = allProblems.length;
+            const years = [...new Set(allProblems.map(p => p.year))];
+            const tags = [...new Set(allProblems.flatMap(p => p.tags))];
+            
+            const difficultyWeights = {
+                'basic': 1,
+                'intermediate': 2,
+                'advanced': 3,
+                'very_advanced': 4,
+                'mixed': 2.5
+            };
+            
+            const avgDifficulty = allProblems.reduce((sum, p) => sum + (difficultyWeights[p.difficulty] || 2), 0) / totalProblems;
+
+            document.getElementById('totalProblems').textContent = totalProblems;
+            document.getElementById('totalYears').textContent = years.length;
+            document.getElementById('totalTags').textContent = tags.length;
+            document.getElementById('avgDifficulty').textContent = avgDifficulty.toFixed(1);
+        }
+
+        // Update sidebar
+        function updateSidebar() {
+            const solved = Object.keys(userProgress).filter(id => userProgress[id]).length;
+            const total = allProblems.length;
+            const progress = total > 0 ? (solved / total) * 100 : 0;
+
+            document.getElementById('solvedCount').textContent = solved;
+            document.getElementById('totalCount').textContent = total;
+            document.getElementById('progressFill').style.width = `${progress}%`;
+
+            // Update quick stats
+            const easyCount = allProblems.filter(p => p.difficulty === 'basic').length;
+            const hardCount = allProblems.filter(p => p.difficulty === 'very_advanced').length;
+            
+            document.getElementById('easyCount').textContent = easyCount;
+            document.getElementById('hardCount').textContent = hardCount;
+            document.getElementById('streakCount').textContent = getStreak();
+            document.getElementById('weeklyCount').textContent = getWeeklySolved();
+
+            // Update recommendations
+            updateRecommendations();
+            updatePopularTags();
+        }
+
+        // Get current streak
+        function getStreak() {
+            // Simplified streak calculation
+            return Math.floor(Math.random() * 10) + 1;
+        }
+
+        // Get weekly solved count
+        function getWeeklySolved() {
+            // Simplified weekly count
+            return Math.floor(Math.random() * 5) + 1;
+        }
+
+        // Update recommendations
+        function updateRecommendations() {
+            const recommendations = document.getElementById('recommendations');
+            const recommended = allProblems.filter(p => !userProgress[p.id]).slice(0, 3);
+            
+            recommendations.innerHTML = recommended.map(problem => `
+                <div style="margin-bottom: 16px; padding: 12px; background: var(--bg-color); border-radius: 8px; font-size: 14px;">
+                    <div style="font-weight: 600; margin-bottom: 4px;">${problem.title}</div>
+                    <div style="color: var(--text-secondary); font-size: 12px;">
+                        ${problem.year} • ${problem.grade} класс • ${getDifficultyLabel(problem.difficulty)}
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Update popular tags
+        function updatePopularTags() {
+            const popularTags = document.getElementById('popularTags');
+            const tagCounts = {};
+            
+            allProblems.forEach(problem => {
+                problem.tags.forEach(tag => {
+                    tagCounts[tag] = (tagCounts[tag] || 0) + 1;
+                });
+            });
+
+            const topTags = Object.entries(tagCounts)
+                .sort((a, b) => b[1] - a[1])
+                .slice(0, 10);
+
+            popularTags.innerHTML = topTags.map(([tag, count]) => `
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; font-size: 14px;">
+                    <span>${tag}</span>
+                    <span style="color: var(--text-secondary); font-size: 12px;">${count}</span>
+                </div>
+            `).join('');
+        }
+
+        // Toggle solved status
+        function toggleSolved(problemId) {
+            userProgress[problemId] = !userProgress[problemId];
+            localStorage.setItem('userProgress', JSON.stringify(userProgress));
+            updateSidebar();
+            renderProblems();
+        }
+
+        // Get difficulty label
+        function getDifficultyLabel(difficulty) {
+            const labels = {
+                'basic': 'Базовый',
+                'intermediate': 'Средний',
+                'advanced': 'Продвинутый',
+                'very_advanced': 'Очень сложный',
+                'mixed': 'Смешанный'
+            };
+            return labels[difficulty] || difficulty;
+        }
+
+        // Get stage label
+        function getStageLabel(stage) {
+            const labels = {
+                '3rd': '3 этап',
+                'Final': 'Финал'
+            };
+            return labels[stage] || stage;
+        }
+
+        // Add event listeners
+        function addEventListeners() {
+            searchInput.addEventListener('input', debounce(applyFilters, 300));
+            yearFilter.addEventListener('change', applyFilters);
+            gradeFilter.addEventListener('change', applyFilters);
+            stageFilter.addEventListener('change', applyFilters);
+            difficultyFilter.addEventListener('change', applyFilters);
+
+            // View controls
+            document.querySelectorAll('.view-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    document.querySelectorAll('.view-btn').forEach(b => b.classList.remove('active'));
+                    e.target.classList.add('active');
+                    // Add view switching logic here
+                });
+            });
+        }
+
+        // Debounce function
+        function debounce(func, wait) {
+            let timeout;
+            return function executedFunction(...args) {
+                const later = () => {
+                    clearTimeout(timeout);
+                    func(...args);
+                };
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+            };
+        }
+
+        // Initialize when DOM is loaded
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>
