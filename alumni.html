@@ -294,6 +294,20 @@
             color: var(--text-primary);
         }
 
+        .detail-row .detail-value {
+            text-align: right;
+        }
+
+        .detail-value.rank {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .detail-value.total-score {
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
         .achievements {
             margin-top: 16px;
             padding-top: 16px;
@@ -394,27 +408,27 @@
         <div class="container">
             <div class="stats-grid">
                 <div class="stat-card">
-                    <div class="stat-number">122</div>
+                    <div class="stat-number" id="total-participants">-</div>
                     <div class="stat-label">Участников IPhO</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-number">13</div>
+                    <div class="stat-number" id="gold-medals">-</div>
                     <div class="stat-label">Золотых медалей</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-number">34</div>
+                    <div class="stat-number" id="silver-medals">-</div>
                     <div class="stat-label">Серебряных медалей</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-number">50</div>
+                    <div class="stat-number" id="bronze-medals">-</div>
                     <div class="stat-label">Бронзовых медалей</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-number">25</div>
+                    <div class="stat-number" id="mentions">-</div>
                     <div class="stat-label">Похвальных отзывов</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-number">30</div>
+                    <div class="stat-number" id="unique-schools">-</div>
                     <div class="stat-label">Учебных заведений</div>
                 </div>
             </div>
@@ -448,14 +462,18 @@
     <script>
         // Alumni data based on the provided PDF documents
         const alumniData = [
-            // 1995 - First participation
+            // 1995 – first participation
             {
                 name: "Игорь Варакса",
                 school: "Лицей БГУ (Минск)",
                 year: 1995,
                 ipho: "26th IPhO, Австралия",
                 award: "mention",
-                points: "46/100",
+                rank: 142,
+                theory: null,
+                experiment: null,
+                total: 46,
+                totalContestants: 151,
                 achievements: ["Первый участник IPhO от Беларуси"]
             },
             {
@@ -464,27 +482,39 @@
                 year: 1995,
                 ipho: "26th IPhO, Австралия",
                 award: "mention",
-                points: "46/100",
+                rank: 140,
+                theory: null,
+                experiment: null,
+                total: 46,
+                totalContestants: 151,
                 achievements: ["Первый участник IPhO от Беларуси"]
             },
 
-            // 1996 - First medals
+            // 1996 – first medals
             {
                 name: "Иван Кознатчеев",
-                school: "Областной лицей № 1 (Могилев)",
+                school: "Областной лицей № 1 (Могилёв)",
                 year: 1996,
                 ipho: "27th IPhO, Норвегия",
                 award: "silver",
-                points: "37.5/50",
+                rank: 36,
+                theory: null,
+                experiment: null,
+                total: 37.5,
+                totalContestants: 155,
                 achievements: ["Первая серебряная медаль Беларуси"]
             },
             {
                 name: "Юлиан Ванне",
-                school: "Областной лицей № 1 (Могилев)",
+                school: "Областной лицей № 1 (Могилёв)",
                 year: 1996,
                 ipho: "27th IPhO, Норвегия",
                 award: "bronze",
-                points: "33.0/50",
+                rank: 63,
+                theory: null,
+                experiment: null,
+                total: 33.0,
+                totalContestants: 155,
                 achievements: ["Первая бронзовая медаль Беларуси"]
             },
             {
@@ -493,7 +523,11 @@
                 year: 1996,
                 ipho: "27th IPhO, Норвегия",
                 award: "bronze",
-                points: "32.0/50",
+                rank: 70,
+                theory: null,
+                experiment: null,
+                total: 32.0,
+                totalContestants: 155,
                 achievements: []
             },
             {
@@ -502,7 +536,11 @@
                 year: 1996,
                 ipho: "27th IPhO, Норвегия",
                 award: "mention",
-                points: "28.5/50",
+                rank: 103,
+                theory: null,
+                experiment: null,
+                total: 28.5,
+                totalContestants: 155,
                 achievements: []
             },
 
@@ -513,16 +551,24 @@
                 year: 1997,
                 ipho: "28th IPhO, Канада",
                 award: "bronze",
-                points: "35.25/50",
+                rank: 57,
+                theory: null,
+                experiment: null,
+                total: 35.25,
+                totalContestants: 165,
                 achievements: []
             },
             {
                 name: "Андрей Кузьмин",
-                school: "Областной лицей № 1 (Могилев)",
+                school: "Областной лицей № 1 (Могилёв)",
                 year: 1997,
                 ipho: "28th IPhO, Канада",
                 award: "bronze",
-                points: "35.00/50",
+                rank: 60,
+                theory: null,
+                experiment: null,
+                total: 35.00,
+                totalContestants: 165,
                 achievements: []
             },
             {
@@ -531,7 +577,11 @@
                 year: 1997,
                 ipho: "28th IPhO, Канада",
                 award: "mention",
-                points: "27.75/50",
+                rank: 125,
+                theory: null,
+                experiment: null,
+                total: 27.75,
+                totalContestants: 165,
                 achievements: []
             },
             {
@@ -540,18 +590,26 @@
                 year: 1997,
                 ipho: "28th IPhO, Канада",
                 award: "mention",
-                points: "24.25/50",
+                rank: 149,
+                theory: null,
+                experiment: null,
+                total: 24.25,
+                totalContestants: 165,
                 achievements: []
             },
 
             // 1998
             {
                 name: "Дмитрий Андреев",
-                school: "Областной лицей № 1 (Могилев)",
+                school: "Областной лицей № 1 (Могилёв)",
                 year: 1998,
                 ipho: "29th IPhO, Исландия",
                 award: "bronze",
-                points: "32.8/50",
+                rank: 44,
+                theory: null,
+                experiment: null,
+                total: 32.8,
+                totalContestants: 130,
                 achievements: []
             },
             {
@@ -560,7 +618,11 @@
                 year: 1998,
                 ipho: "29th IPhO, Исландия",
                 award: "bronze",
-                points: "30.0/50",
+                rank: 69,
+                theory: null,
+                experiment: null,
+                total: 30.0,
+                totalContestants: 130,
                 achievements: []
             },
             {
@@ -569,7 +631,11 @@
                 year: 1998,
                 ipho: "29th IPhO, Исландия",
                 award: "mention",
-                points: "25.8/50",
+                rank: 100,
+                theory: null,
+                experiment: null,
+                total: 25.8,
+                totalContestants: 130,
                 achievements: []
             },
             {
@@ -578,18 +644,26 @@
                 year: 1998,
                 ipho: "29th IPhO, Исландия",
                 award: "mention",
-                points: "25.2/50",
+                rank: 104,
+                theory: null,
+                experiment: null,
+                total: 25.2,
+                totalContestants: 130,
                 achievements: []
             },
 
-            // 1999 - First Gold
+            // 1999 – first gold
             {
                 name: "Андрей Малашевич",
                 school: "Лицей БГУ (Минск)",
                 year: 1999,
                 ipho: "30th IPhO, Италия",
                 award: "gold",
-                points: "46.9/50",
+                rank: 6,
+                theory: null,
+                experiment: null,
+                total: 46.9,
+                totalContestants: 217,
                 achievements: ["Первая золотая медаль Беларуси"]
             },
             {
@@ -598,7 +672,11 @@
                 year: 1999,
                 ipho: "30th IPhO, Италия",
                 award: "silver",
-                points: "41.2/50",
+                rank: 41,
+                theory: null,
+                experiment: null,
+                total: 41.2,
+                totalContestants: 217,
                 achievements: []
             },
             {
@@ -607,7 +685,11 @@
                 year: 1999,
                 ipho: "30th IPhO, Италия",
                 award: "silver",
-                points: "40.5/50",
+                rank: 52,
+                theory: null,
+                experiment: null,
+                total: 40.5,
+                totalContestants: 217,
                 achievements: []
             },
             {
@@ -616,7 +698,11 @@
                 year: 1999,
                 ipho: "30th IPhO, Италия",
                 award: "silver",
-                points: "40.2/50",
+                rank: 54,
+                theory: null,
+                experiment: null,
+                total: 40.2,
+                totalContestants: 217,
                 achievements: []
             },
             {
@@ -625,7 +711,11 @@
                 year: 1999,
                 ipho: "30th IPhO, Италия",
                 award: "bronze",
-                points: "34.1/50",
+                rank: 120,
+                theory: null,
+                experiment: null,
+                total: 34.1,
+                totalContestants: 217,
                 achievements: []
             },
 
@@ -636,7 +726,11 @@
                 year: 2000,
                 ipho: "31st IPhO, Великобритания",
                 award: "mention",
-                points: "26.50/50",
+                rank: 71,
+                theory: null,
+                experiment: null,
+                total: 26.5,
+                totalContestants: 133,
                 achievements: []
             },
             {
@@ -645,16 +739,24 @@
                 year: 2000,
                 ipho: "31st IPhO, Великобритания",
                 award: "mention",
-                points: "21.80/50",
+                rank: 109,
+                theory: null,
+                experiment: null,
+                total: 21.8,
+                totalContestants: 133,
                 achievements: []
             },
             {
                 name: "Виктор Дедов",
-                school: "Областной лицей № 1 (Могилев)",
+                school: "Областной лицей № 1 (Могилёв)",
                 year: 2000,
                 ipho: "31st IPhO, Великобритания",
                 award: "mention",
-                points: "21.30/50",
+                rank: 113,
+                theory: null,
+                experiment: null,
+                total: 21.3,
+                totalContestants: 133,
                 achievements: []
             },
             {
@@ -663,27 +765,39 @@
                 year: 2000,
                 ipho: "31st IPhO, Великобритания",
                 award: "mention",
-                points: "21.00/50",
+                rank: 117,
+                theory: null,
+                experiment: null,
+                total: 21.0,
+                totalContestants: 133,
                 achievements: []
             },
 
             // 2001
             {
                 name: "Александр Ермалицкий",
-                school: "Областной лицей № 1 (Могилев)",
+                school: "Областной лицей № 1 (Могилёв)",
                 year: 2001,
                 ipho: "32nd IPhO, Турция",
                 award: "gold",
-                points: "46.10/50",
+                rank: 3,
+                theory: null,
+                experiment: null,
+                total: 46.10,
+                totalContestants: 167,
                 achievements: []
             },
             {
                 name: "Сергей Максимов",
-                school: "Областной лицей № 1 (Могилев)",
+                school: "Областной лицей № 1 (Могилёв)",
                 year: 2001,
                 ipho: "32nd IPhO, Турция",
                 award: "silver",
-                points: "40.40/50",
+                rank: 35,
+                theory: null,
+                experiment: null,
+                total: 40.40,
+                totalContestants: 167,
                 achievements: []
             },
             {
@@ -692,7 +806,11 @@
                 year: 2001,
                 ipho: "32nd IPhO, Турция",
                 award: "bronze",
-                points: "35.35/50",
+                rank: 65,
+                theory: null,
+                experiment: null,
+                total: 35.35,
+                totalContestants: 167,
                 achievements: []
             },
             {
@@ -701,7 +819,11 @@
                 year: 2001,
                 ipho: "32nd IPhO, Турция",
                 award: "bronze",
-                points: "35.20/50",
+                rank: 67,
+                theory: null,
+                experiment: null,
+                total: 35.20,
+                totalContestants: 167,
                 achievements: []
             },
             {
@@ -710,7 +832,11 @@
                 year: 2001,
                 ipho: "32nd IPhO, Турция",
                 award: "bronze",
-                points: "32.40/50",
+                rank: 98,
+                theory: null,
+                experiment: null,
+                total: 32.40,
+                totalContestants: 167,
                 achievements: []
             },
 
@@ -721,7 +847,11 @@
                 year: 2002,
                 ipho: "33rd IPhO, Индонезия",
                 award: "silver",
-                points: "34.8/50",
+                rank: 49,
+                theory: null,
+                experiment: null,
+                total: 34.8,
+                totalContestants: 208,
                 achievements: []
             },
             {
@@ -730,7 +860,11 @@
                 year: 2002,
                 ipho: "33rd IPhO, Индонезия",
                 award: "silver",
-                points: "33.5/50",
+                rank: 62,
+                theory: null,
+                experiment: null,
+                total: 33.5,
+                totalContestants: 208,
                 achievements: []
             },
             {
@@ -739,7 +873,11 @@
                 year: 2002,
                 ipho: "33rd IPhO, Индонезия",
                 award: "bronze",
-                points: "27.3/50",
+                rank: 104,
+                theory: null,
+                experiment: null,
+                total: 27.3,
+                totalContestants: 208,
                 achievements: []
             },
             {
@@ -748,7 +886,11 @@
                 year: 2002,
                 ipho: "33rd IPhO, Индонезия",
                 award: "bronze",
-                points: "27.1/50",
+                rank: 107,
+                theory: null,
+                experiment: null,
+                total: 27.1,
+                totalContestants: 208,
                 achievements: []
             },
             {
@@ -757,7 +899,11 @@
                 year: 2002,
                 ipho: "33rd IPhO, Индонезия",
                 award: "bronze",
-                points: "24.3/50",
+                rank: 131,
+                theory: null,
+                experiment: null,
+                total: 24.3,
+                totalContestants: 208,
                 achievements: []
             },
 
@@ -768,7 +914,11 @@
                 year: 2003,
                 ipho: "34th IPhO, Тайвань",
                 award: "silver",
-                points: "27.3/50",
+                rank: 52,
+                theory: null,
+                experiment: null,
+                total: 27.3,
+                totalContestants: 158,
                 achievements: ["Будущий абсолютный победитель IPhO-2004"]
             },
             {
@@ -777,16 +927,24 @@
                 year: 2003,
                 ipho: "34th IPhO, Тайвань",
                 award: "bronze",
-                points: "24.9/50",
+                rank: 67,
+                theory: null,
+                experiment: null,
+                total: 24.9,
+                totalContestants: 158,
                 achievements: []
             },
             {
                 name: "Сергей Коваль",
-                school: "Областной лицей № 3 (Могилев)",
+                school: "Областной лицей № 3 (Могилёв)",
                 year: 2003,
                 ipho: "34th IPhO, Тайвань",
                 award: "mention",
-                points: "21.1/50",
+                rank: 103,
+                theory: null,
+                experiment: null,
+                total: 21.1,
+                totalContestants: 158,
                 achievements: []
             },
             {
@@ -795,27 +953,39 @@
                 year: 2003,
                 ipho: "34th IPhO, Тайвань",
                 award: "mention",
-                points: "17.7/50",
+                rank: 137,
+                theory: null,
+                experiment: null,
+                total: 17.7,
+                totalContestants: 158,
                 achievements: []
             },
 
-            // 2004 - Historic achievement
+            // 2004 – historic achievement
             {
                 name: "Александр Михалычев",
                 school: "Школа № 51 (Минск)",
                 year: 2004,
                 ipho: "35th IPhO, Южная Корея",
                 award: "gold",
-                points: "47.7/50",
+                rank: 1,
+                theory: null,
+                experiment: null,
+                total: 47.7,
+                totalContestants: 219,
                 achievements: ["Абсолютный победитель IPhO-2004", "Рекорд Беларуси"]
             },
             {
                 name: "Руслан Сакович",
-                school: "Областной лицей № 1 (Могилев)",
+                school: "Областной лицей № 1 (Могилёв)",
                 year: 2004,
                 ipho: "35th IPhO, Южная Корея",
                 award: "gold",
-                points: "39.0/50",
+                rank: "≥2",
+                theory: null,
+                experiment: null,
+                total: 39.0,
+                totalContestants: 219,
                 achievements: ["Первые две золотые медали в одном году"]
             },
             {
@@ -824,7 +994,11 @@
                 year: 2004,
                 ipho: "35th IPhO, Южная Корея",
                 award: "silver",
-                points: "37.3/50",
+                rank: "≥32",
+                theory: null,
+                experiment: null,
+                total: 37.3,
+                totalContestants: 219,
                 achievements: []
             },
             {
@@ -833,7 +1007,11 @@
                 year: 2004,
                 ipho: "35th IPhO, Южная Корея",
                 award: "silver",
-                points: "34.3/50",
+                rank: "≥32",
+                theory: null,
+                experiment: null,
+                total: 34.3,
+                totalContestants: 219,
                 achievements: []
             },
             {
@@ -842,47 +1020,1224 @@
                 year: 2004,
                 ipho: "35th IPhO, Южная Корея",
                 award: "bronze",
-                points: "26.3/50",
+                rank: "≥67",
+                theory: null,
+                experiment: null,
+                total: 26.3,
+                totalContestants: 219,
                 achievements: []
             },
 
-            // Continue with more years...
-            // 2005-2021 data would continue here with similar structure
-            // For brevity, I'll add a few more key participants
+            // 2005
+            {
+                name: "Андрей Гилевский",
+                school: "Школа № 51 (Минск)",
+                year: 2005,
+                ipho: "36th IPhO, Испания",
+                award: "silver",
+                rank: 64,
+                theory: null,
+                experiment: null,
+                total: 41.6,
+                totalContestants: 236,
+                achievements: []
+            },
+            {
+                name: "Константин Сахарчук",
+                school: "Лицей БГУ (Минск)",
+                year: 2005,
+                ipho: "36th IPhO, Испания",
+                award: "bronze",
+                rank: 135,
+                theory: null,
+                experiment: null,
+                total: 33.0,
+                totalContestants: 236,
+                achievements: []
+            },
+            {
+                name: "Максим Глод",
+                school: "Гимназия № 3 (Гродно)",
+                year: 2005,
+                ipho: "36th IPhO, Испания",
+                award: "mention",
+                rank: 155,
+                theory: null,
+                experiment: null,
+                total: 29.8,
+                totalContestants: 236,
+                achievements: []
+            },
+            {
+                name: "Денис Хмялнюк",
+                school: "Лицей БГУ (Минск)",
+                year: 2005,
+                ipho: "36th IPhO, Испания",
+                award: "mention",
+                rank: 162,
+                theory: null,
+                experiment: null,
+                total: 29.4,
+                totalContestants: 236,
+                achievements: []
+            },
+            {
+                name: "Андрей Полаз",
+                school: "Лицей БГУ (Минск)",
+                year: 2005,
+                ipho: "36th IPhO, Испания",
+                award: "mention",
+                rank: 174,
+                theory: null,
+                experiment: null,
+                total: 27.5,
+                totalContestants: 236,
+                achievements: []
+            },
 
-            // 2015 - Strong performance
+            // 2006
+            {
+                name: "Александр Жухро",
+                school: "Школа № 51 (Минск)",
+                year: 2006,
+                ipho: "37th IPhO, Сингапур",
+                award: "bronze",
+                rank: 94,
+                theory: null,
+                experiment: null,
+                total: 27.35,
+                totalContestants: 254,
+                achievements: []
+            },
+            {
+                name: "Владимир Сакович",
+                school: "Школа № 51 (Минск)",
+                year: 2006,
+                ipho: "37th IPhO, Сингапур",
+                award: "bronze",
+                rank: 114,
+                theory: null,
+                experiment: null,
+                total: 24.50,
+                totalContestants: 254,
+                achievements: []
+            },
+            {
+                name: "Дмитрий Комар",
+                school: "Школа № 51 (Минск)",
+                year: 2006,
+                ipho: "37th IPhO, Сингапур",
+                award: "bronze",
+                rank: 116,
+                theory: null,
+                experiment: null,
+                total: 24.40,
+                totalContestants: 254,
+                achievements: []
+            },
+            {
+                name: "Денис Каляда",
+                school: "Минский колледж радиотехники",
+                year: 2006,
+                ipho: "37th IPhO, Сингапур",
+                award: "bronze",
+                rank: 117,
+                theory: null,
+                experiment: null,
+                total: 24.20,
+                totalContestants: 254,
+                achievements: []
+            },
+            {
+                name: "Андрей Полаз",
+                school: "Лицей БГУ (Минск)",
+                year: 2006,
+                ipho: "37th IPhO, Сингапур",
+                award: "mention",
+                rank: 202,
+                theory: null,
+                experiment: null,
+                total: 16.75,
+                totalContestants: 254,
+                achievements: []
+            },
+
+            // 2007
+            {
+                name: "Максим Севелев",
+                school: "Лицей БГУ (Минск)",
+                year: 2007,
+                ipho: "38th IPhO, Иран",
+                award: "gold",
+                rank: 35,
+                theory: null,
+                experiment: null,
+                total: 44.1,
+                totalContestants: 219,
+                achievements: []
+            },
+            {
+                name: "Александр Глымбицкий",
+                school: "Лицей БГУ (Минск)",
+                year: 2007,
+                ipho: "38th IPhO, Иран",
+                award: "silver",
+                rank: 51,
+                theory: null,
+                experiment: null,
+                total: 40.5,
+                totalContestants: 219,
+                achievements: []
+            },
+            {
+                name: "Павел Гулевич",
+                school: "Лицей БГУ (Минск)",
+                year: 2007,
+                ipho: "38th IPhO, Иран",
+                award: "bronze",
+                rank: 94,
+                theory: null,
+                experiment: null,
+                total: 36.2,
+                totalContestants: 219,
+                achievements: []
+            },
+            {
+                name: "Виталий Ляучук",
+                school: "Гимназия № 5 (Барановичи)",
+                year: 2007,
+                ipho: "38th IPhO, Иран",
+                award: "bronze",
+                rank: 100,
+                theory: null,
+                experiment: null,
+                total: 35.7,
+                totalContestants: 219,
+                achievements: []
+            },
+            {
+                name: "Андрей Малиновский",
+                school: "Школа № 51 (Минск)",
+                year: 2007,
+                ipho: "38th IPhO, Иран",
+                award: "bronze",
+                rank: 107,
+                theory: null,
+                experiment: null,
+                total: 34.7,
+                totalContestants: 219,
+                achievements: []
+            },
+
+            // 2008
+            {
+                name: "Дмитрий Пратасения",
+                school: "Лицей БГУ (Минск)",
+                year: 2008,
+                ipho: "39th IPhO, Вьетнам",
+                award: "silver",
+                rank: 90,
+                theory: null,
+                experiment: null,
+                total: 26.80,
+                totalContestants: 261,
+                achievements: []
+            },
+            {
+                name: "Евгений Арлоу",
+                school: "Хальхалицкая школа (Борисовский р-н)",
+                year: 2008,
+                ipho: "39th IPhO, Вьетнам",
+                award: "bronze",
+                rank: 122,
+                theory: null,
+                experiment: null,
+                total: 23.35,
+                totalContestants: 261,
+                achievements: []
+            },
+            {
+                name: "Егор Гончаров",
+                school: "Школа № 51 (Минск)",
+                year: 2008,
+                ipho: "39th IPhO, Вьетнам",
+                award: "bronze",
+                rank: 142,
+                theory: null,
+                experiment: null,
+                total: 22.25,
+                totalContestants: 261,
+                achievements: []
+            },
+            {
+                name: "Анастасия Карпович",
+                school: "Школа № 51 (Минск)",
+                year: 2008,
+                ipho: "39th IPhO, Вьетнам",
+                award: "mention",
+                rank: 194,
+                theory: null,
+                experiment: null,
+                total: 17.90,
+                totalContestants: 261,
+                achievements: []
+            },
+            {
+                name: "Алексей Сытов",
+                school: "Школа № 51 (Минск)",
+                year: 2008,
+                ipho: "39th IPhO, Вьетнам",
+                award: "mention",
+                rank: 254,
+                theory: null,
+                experiment: null,
+                total: 14.10,
+                totalContestants: 261,
+                achievements: []
+            },
+
+            // 2009
+            {
+                name: "Игорь Каргин",
+                school: "Гимназия № 1 (Борисов)",
+                year: 2009,
+                ipho: "40th IPhO, Мексика",
+                award: "silver",
+                rank: 53,
+                theory: null,
+                experiment: null,
+                total: 30.05,
+                totalContestants: 237,
+                achievements: []
+            },
+            {
+                name: "Максим Горлач",
+                school: "Лицей БГУ (Минск)",
+                year: 2009,
+                ipho: "40th IPhO, Мексика",
+                award: "silver",
+                rank: 91,
+                theory: null,
+                experiment: null,
+                total: 26.05,
+                totalContestants: 237,
+                achievements: []
+            },
+            {
+                name: "Антон Дашкевич",
+                school: "Гимназия № 29 (Минск)",
+                year: 2009,
+                ipho: "40th IPhO, Мексика",
+                award: "silver",
+                rank: 104,
+                theory: null,
+                experiment: null,
+                total: 25.30,
+                totalContestants: 237,
+                achievements: []
+            },
+            {
+                name: "Анна Мицковец",
+                school: "Лицей БГУ (Минск)",
+                year: 2009,
+                ipho: "40th IPhO, Мексика",
+                award: "bronze",
+                rank: 126,
+                theory: null,
+                experiment: null,
+                total: 21.75,
+                totalContestants: 237,
+                achievements: []
+            },
+            {
+                name: "Михаил Гущин",
+                school: "Областной лицей № 1 (Могилёв)",
+                year: 2009,
+                ipho: "40th IPhO, Мексика",
+                award: "bronze",
+                rank: 155,
+                theory: null,
+                experiment: null,
+                total: 19.5,
+                totalContestants: 237,
+                achievements: []
+            },
+
+            // 2010
+            {
+                name: "Андрей Клишин",
+                school: "Гимназия № 29 (Минск)",
+                year: 2010,
+                ipho: "41st IPhO, Хорватия",
+                award: "gold",
+                rank: 33,
+                theory: null,
+                experiment: null,
+                total: 38.45,
+                totalContestants: 268,
+                achievements: []
+            },
+            {
+                name: "Юрий Рыжиков",
+                school: "Лицей БГУ (Минск)",
+                year: 2010,
+                ipho: "41st IPhO, Хорватия",
+                award: "bronze",
+                rank: 127,
+                theory: null,
+                experiment: null,
+                total: 28.15,
+                totalContestants: 268,
+                achievements: []
+            },
+            {
+                name: "Юрий Хаританович",
+                school: "Гимназия № 29 (Минск)",
+                year: 2010,
+                ipho: "41st IPhO, Хорватия",
+                award: "bronze",
+                rank: 176,
+                theory: null,
+                experiment: null,
+                total: 26.45,
+                totalContestants: 268,
+                achievements: []
+            },
+            {
+                name: "Елена Шилько",
+                school: "Гимназия № 12 (Минск)",
+                year: 2010,
+                ipho: "41st IPhO, Хорватия",
+                award: "mention",
+                rank: 223,
+                theory: null,
+                experiment: null,
+                total: 17.5,
+                totalContestants: 268,
+                achievements: []
+            },
+            {
+                name: "Андрей Цишкович",
+                school: "Лицей Гомельского инженерного института МЧС",
+                year: 2010,
+                ipho: "41st IPhO, Хорватия",
+                award: "mention",
+                rank: 242,
+                theory: null,
+                experiment: null,
+                total: 18.75,
+                totalContestants: 268,
+                achievements: []
+            },
+
+            // 2011
+            {
+                name: "Константин Мартынов",
+                school: "Гимназия № 7 (Витебск)",
+                year: 2011,
+                ipho: "42nd IPhO, Таиланд",
+                award: "gold",
+                rank: 40,
+                theory: null,
+                experiment: null,
+                total: 41.82,
+                totalContestants: 282,
+                achievements: []
+            },
+            {
+                name: "Дмитрий Ашкинадзе",
+                school: "Гимназия № 50 (Минск)",
+                year: 2011,
+                ipho: "42nd IPhO, Таиланд",
+                award: "silver",
+                rank: 87,
+                theory: null,
+                experiment: null,
+                total: 36.34,
+                totalContestants: 282,
+                achievements: []
+            },
+            {
+                name: "Алексей Михуцкий",
+                school: "Гимназия № 1 (Борисов)",
+                year: 2011,
+                ipho: "42nd IPhO, Таиланд",
+                award: "silver",
+                rank: 90,
+                theory: null,
+                experiment: null,
+                total: 36.10,
+                totalContestants: 282,
+                achievements: []
+            },
+            {
+                name: "Владислав Цыханок",
+                school: "Лицей БГУ (Минск)",
+                year: 2011,
+                ipho: "42nd IPhO, Таиланд",
+                award: "bronze",
+                rank: 161,
+                theory: null,
+                experiment: null,
+                total: 30.84,
+                totalContestants: 282,
+                achievements: []
+            },
+            {
+                name: "Антон Сакович",
+                school: "Гимназия № 29 (Минск)",
+                year: 2011,
+                ipho: "42nd IPhO, Таиланд",
+                award: "bronze",
+                rank: 139,
+                theory: null,
+                experiment: null,
+                total: 28.62,
+                totalContestants: 282,
+                achievements: []
+            },
+
+            // 2012 – first year with theory/exp split
+            {
+                name: "Альберт Самойленко",
+                school: "Гимназия № 29 (Минск)",
+                year: 2012,
+                ipho: "43rd IPhO, Эстония",
+                award: "gold",
+                rank: 29,
+                theory: 22.30,
+                experiment: 10.40,
+                total: 32.70,
+                totalContestants: 378,
+                achievements: []
+            },
+            {
+                name: "Игорь Лобач",
+                school: "Гимназия № 29 (Минск)",
+                year: 2012,
+                ipho: "43rd IPhO, Эстония",
+                award: "gold",
+                rank: 35,
+                theory: 21.00,
+                experiment: 11.00,
+                total: 32.00,
+                totalContestants: 378,
+                achievements: []
+            },
+            {
+                name: "Алексей Хацкевич",
+                school: "Лицей БГУ (Минск)",
+                year: 2012,
+                ipho: "43rd IPhO, Эстония",
+                award: "silver",
+                rank: 68,
+                theory: 16.20,
+                experiment: 11.50,
+                total: 27.70,
+                totalContestants: 378,
+                achievements: []
+            },
+            {
+                name: "Вадим Реут",
+                school: "Гимназия № 29 (Минск)",
+                year: 2012,
+                ipho: "43rd IPhO, Эстония",
+                award: "silver",
+                rank: 74,
+                theory: 16.00,
+                experiment: 10.90,
+                total: 26.90,
+                totalContestants: 378,
+                achievements: []
+            },
+            {
+                name: "Александр Янковский",
+                school: "Лицей БГУ (Минск)",
+                year: 2012,
+                ipho: "43rd IPhO, Эстония",
+                award: "bronze",
+                rank: 156,
+                theory: 11.10,
+                experiment: 9.20,
+                total: 20.30,
+                totalContestants: 378,
+                achievements: []
+            },
+
+            // 2013
+            {
+                name: "Александр Гончарук",
+                school: "Гимназия № 3 (Гродно)",
+                year: 2013,
+                ipho: "44th IPhO, Дания",
+                award: "silver",
+                rank: 70,
+                theory: null,
+                experiment: null,
+                total: 30.1,
+                totalContestants: 374,
+                achievements: []
+            },
+            {
+                name: "Иван Мицковец",
+                school: "Лицей БГУ (Минск)",
+                year: 2013,
+                ipho: "44th IPhO, Дания",
+                award: "silver",
+                rank: 73,
+                theory: null,
+                experiment: null,
+                total: 28.2,
+                totalContestants: 374,
+                achievements: []
+            },
+            {
+                name: "Максим Лицкевич",
+                school: "Школа № 2 (Каменец)",
+                year: 2013,
+                ipho: "44th IPhO, Дания",
+                award: "silver",
+                rank: 102,
+                theory: null,
+                experiment: null,
+                total: 26.2,
+                totalContestants: 374,
+                achievements: []
+            },
+            {
+                name: "Алексей Дудук",
+                school: "Лицей БГУ (Минск)",
+                year: 2013,
+                ipho: "44th IPhO, Дания",
+                award: "bronze",
+                rank: 118,
+                theory: null,
+                experiment: null,
+                total: 22.0,
+                totalContestants: 374,
+                achievements: []
+            },
+            {
+                name: "Джеймс Аквух",
+                school: "Гимназия № 1 им. Ф. Скорины (Полоцк)",
+                year: 2013,
+                ipho: "44th IPhO, Дания",
+                award: "bronze",
+                rank: 152,
+                theory: null,
+                experiment: null,
+                total: 21.0,
+                totalContestants: 374,
+                achievements: []
+            },
+
+            // 2014
+            {
+                name: "Стасяс Чучурка",
+                school: "Лицей БГУ (Минск)",
+                year: 2014,
+                ipho: "45th IPhO, Казахстан",
+                award: "silver",
+                rank: 56,
+                theory: null,
+                experiment: null,
+                total: 19.45,
+                totalContestants: 374,
+                achievements: []
+            },
+            {
+                name: "Илья Перепечка",
+                school: "Гимназия № 3 (Солигорск)",
+                year: 2014,
+                ipho: "45th IPhO, Казахстан",
+                award: "silver",
+                rank: 67,
+                theory: null,
+                experiment: null,
+                total: 22.70,
+                totalContestants: 374,
+                achievements: []
+            },
+            {
+                name: "Антон Хвалюк",
+                school: "Гимназия № 29 (Минск)",
+                year: 2014,
+                ipho: "45th IPhO, Казахстан",
+                award: "silver",
+                rank: 93,
+                theory: null,
+                experiment: null,
+                total: 24.60,
+                totalContestants: 374,
+                achievements: []
+            },
+            {
+                name: "Алексей Горлач",
+                school: "Лицей БГУ (Минск)",
+                year: 2014,
+                ipho: "45th IPhO, Казахстан",
+                award: "silver",
+                rank: 101,
+                theory: null,
+                experiment: null,
+                total: 20.00,
+                totalContestants: 374,
+                achievements: []
+            },
+            {
+                name: "Егор Макович",
+                school: "Областной лицей № 3 (Могилёв)",
+                year: 2014,
+                ipho: "45th IPhO, Казахстан",
+                award: "mention",
+                rank: 271,
+                theory: null,
+                experiment: null,
+                total: 9.30,
+                totalContestants: 374,
+                achievements: []
+            },
+
+            // 2015
             {
                 name: "Антон Талкачов",
                 school: "Гимназия № 14 (Гомель)",
                 year: 2015,
                 ipho: "46th IPhO, Индия",
                 award: "gold",
-                points: "42.4/50",
+                rank: 34,
+                theory: 25.30,
+                experiment: 17.10,
+                total: 42.40,
+                totalContestants: 264,
+                achievements: []
+            },
+            {
+                name: "Богдан Звяжинский",
+                school: "Лицей БГУ (Минск)",
+                year: 2015,
+                ipho: "46th IPhO, Индия",
+                award: "silver",
+                rank: 76,
+                theory: 23.70,
+                experiment: 12.50,
+                total: 36.20,
+                totalContestants: 264,
+                achievements: []
+            },
+            {
+                name: "Евгений Шурыгин",
+                school: "Лицей БГУ (Минск)",
+                year: 2015,
+                ipho: "46th IPhO, Индия",
+                award: "bronze",
+                rank: 132,
+                theory: 14.50,
+                experiment: 14.80,
+                total: 29.30,
+                totalContestants: 264,
+                achievements: []
+            },
+            {
+                name: "Артём Пиваварчик",
+                school: "Лицей БГУ (Минск)",
+                year: 2015,
+                ipho: "46th IPhO, Индия",
+                award: "bronze",
+                rank: 150,
+                theory: 15.00,
+                experiment: 12.30,
+                total: 27.30,
+                totalContestants: 264,
+                achievements: []
+            },
+            {
+                name: "Владислав Климашонок",
+                school: "Гимназия № 1 (Борисов)",
+                year: 2015,
+                ipho: "46th IPhO, Индия",
+                award: "bronze",
+                rank: 185,
+                theory: 17.30,
+                experiment: 6.90,
+                total: 24.20,
+                totalContestants: 264,
                 achievements: []
             },
 
-            // 2019 - 50th anniversary
+            // 2016
+            {
+                name: "Эрик Камлык",
+                school: "Гродненская городская гимназия",
+                year: 2016,
+                ipho: "47th IPhO, Швейцария",
+                award: "gold",
+                rank: 26,
+                theory: 25.00,
+                experiment: 17.20,
+                total: 42.20,
+                totalContestants: 284,
+                achievements: []
+            },
+            {
+                name: "Ян Лаговский",
+                school: "Лицей БГУ (Минск)",
+                year: 2016,
+                ipho: "47th IPhO, Швейцария",
+                award: "silver",
+                rank: 101,
+                theory: 15.40,
+                experiment: 16.10,
+                total: 31.50,
+                totalContestants: 284,
+                achievements: []
+            },
+            {
+                name: "Виталий Вистунов",
+                school: "Школа № 16 (Полоцк)",
+                year: 2016,
+                ipho: "47th IPhO, Швейцария",
+                award: "bronze",
+                rank: 165,
+                theory: 13.30,
+                experiment: 12.70,
+                total: 26.00,
+                totalContestants: 284,
+                achievements: []
+            },
+            {
+                name: "Павел Цай",
+                school: "Гимназия № 29 (Минск)",
+                year: 2016,
+                ipho: "47th IPhO, Швейцария",
+                award: "bronze",
+                rank: 202,
+                theory: 8.90,
+                experiment: 14.30,
+                total: 23.20,
+                totalContestants: 284,
+                achievements: []
+            },
+            {
+                name: "Андрей Крыштопик",
+                school: "Лицей БГУ (Минск)",
+                year: 2016,
+                ipho: "47th IPhO, Швейцария",
+                award: "mention",
+                rank: 258,
+                theory: 11.40,
+                experiment: 7.40,
+                total: 18.80,
+                totalContestants: 284,
+                achievements: []
+            },
+
+            // 2017 – ranks approximate (‘≥’)
+            {
+                name: "Никита Игнацюк",
+                school: "Лицей № 1 им. А. Пушкина (Брест)",
+                year: 2017,
+                ipho: "48th IPhO, Индонезия",
+                award: "silver",
+                rank: "≥65",
+                theory: null,
+                experiment: null,
+                total: 21.4,
+                totalContestants: 311,
+                achievements: []
+            },
+            {
+                name: "Евгений Шарамед",
+                school: "Гимназия № 10 (Минск)",
+                year: 2017,
+                ipho: "48th IPhO, Индонезия",
+                award: "silver",
+                rank: "≥65",
+                theory: null,
+                experiment: null,
+                total: 21.3,
+                totalContestants: 311,
+                achievements: []
+            },
+            {
+                name: "Павел Курач",
+                school: "Лицей № 1 им. А. Пушкина (Брест)",
+                year: 2017,
+                ipho: "48th IPhO, Индонезия",
+                award: "bronze",
+                rank: "≥137",
+                theory: null,
+                experiment: null,
+                total: 16.8,
+                totalContestants: 311,
+                achievements: []
+            },
+            {
+                name: "Валентин Дарафеев",
+                school: "Областной лицей № 3 (Могилёв)",
+                year: 2017,
+                ipho: "48th IPhO, Индонезия",
+                award: "bronze",
+                rank: "≥137",
+                theory: null,
+                experiment: null,
+                total: 16.0,
+                totalContestants: 311,
+                achievements: []
+            },
+            {
+                name: "Никита Стрыжак",
+                school: "Лицей БГУ (Минск)",
+                year: 2017,
+                ipho: "48th IPhO, Индонезия",
+                award: "bronze",
+                rank: "≥137",
+                theory: null,
+                experiment: null,
+                total: 15.8,
+                totalContestants: 311,
+                achievements: []
+            },
+
+            // 2018
+            {
+                name: "Евгений Ханкович",
+                school: "Лицей БГУ (Минск)",
+                year: 2018,
+                ipho: "49th IPhO, Португалия",
+                award: "silver",
+                rank: 88,
+                theory: 20.90,
+                experiment: 7.85,
+                total: 28.75,
+                totalContestants: 277,
+                achievements: []
+            },
+            {
+                name: "Евгений Дядьков",
+                school: "Гимназия № 1 (Борисов)",
+                year: 2018,
+                ipho: "49th IPhO, Португалия",
+                award: "silver",
+                rank: 106,
+                theory: 19.90,
+                experiment: 7.50,
+                total: 27.40,
+                totalContestants: 277,
+                achievements: []
+            },
+            {
+                name: "Владислав Фядурка",
+                school: "Лицей БГУ (Минск)",
+                year: 2018,
+                ipho: "49th IPhO, Португалия",
+                award: "bronze",
+                rank: 185,
+                theory: 12.80,
+                experiment: 6.40,
+                total: 19.20,
+                totalContestants: 277,
+                achievements: []
+            },
+            {
+                name: "Николай Зуников",
+                school: "Гомельский городской лицей № 1",
+                year: 2018,
+                ipho: "49th IPhO, Португалия",
+                award: "bronze",
+                rank: 186,
+                theory: 10.60,
+                experiment: 8.45,
+                total: 19.05,
+                totalContestants: 277,
+                achievements: []
+            },
+            {
+                name: "Кырам Аль-Харба",
+                school: "Гимназия № 3 (Борисов)",
+                year: 2018,
+                ipho: "49th IPhO, Португалия",
+                award: "mention",
+                rank: 231,
+                theory: 11.30,
+                experiment: 4.90,
+                total: 16.20,
+                totalContestants: 277,
+                achievements: []
+            },
+
+            // 2019 – 50th anniversary
             {
                 name: "Евгений Дядьков",
                 school: "Гимназия № 1 (Борисов)",
                 year: 2019,
                 ipho: "50th IPhO, Израиль",
                 award: "gold",
-                points: "28.2/50",
+                rank: 28,
+                theory: null,
+                experiment: null,
+                total: 28.2,
+                totalContestants: 251,
                 achievements: ["Участник юбилейной 50-й IPhO"]
             },
+            {
+                name: "Александр Каленчиц",
+                school: "Лицей БГУ (Минск)",
+                year: 2019,
+                ipho: "50th IPhO, Израиль",
+                award: "bronze",
+                rank: 122,
+                theory: null,
+                experiment: null,
+                total: 14.7,
+                totalContestants: 251,
+                achievements: []
+            },
+            {
+                name: "Михаил Макей",
+                school: "Лицей БГУ (Минск)",
+                year: 2019,
+                ipho: "50th IPhO, Израиль",
+                award: "bronze",
+                rank: 145,
+                theory: null,
+                experiment: null,
+                total: 12.9,
+                totalContestants: 251,
+                achievements: []
+            },
+            {
+                name: "Андрей Кацевич",
+                school: "Лицей № 1 им. А. Пушкина (Брест)",
+                year: 2019,
+                ipho: "50th IPhO, Израиль",
+                award: "bronze",
+                rank: 145,
+                theory: null,
+                experiment: null,
+                total: 12.9,
+                totalContestants: 251,
+                achievements: []
+            },
+            {
+                name: "Алексей Быков",
+                school: "Лицей БГУ (Минск)",
+                year: 2019,
+                ipho: "50th IPhO, Израиль",
+                award: "bronze",
+                rank: 160,
+                theory: null,
+                experiment: null,
+                total: 12.5,
+                totalContestants: 251,
+                achievements: []
+            },
 
-            // 2021 - Latest achievement
+            // 2020 – IPhO not held (COVID-19)
+
+            // 2021 – online edition
             {
                 name: "Михаил Хартон",
                 school: "Лицей БГУ (Минск)",
                 year: 2021,
                 ipho: "51st IPhO, Литва (онлайн)",
                 award: "gold",
-                points: "33.72/50",
-                achievements: ["Участник онлайн олимпиады COVID-19"]
+                rank: 39,
+                theory: 23.10,
+                experiment: 10.62,
+                total: 33.72,
+                totalContestants: 262,
+                achievements: ["Участник онлайн-олимпиады COVID-19"]
+            },
+            {
+                name: "Денис Дядьков",
+                school: "Гимназия № 1 (Борисов)",
+                year: 2021,
+                ipho: "51st IPhO, Литва (онлайн)",
+                award: "silver",
+                rank: 98,
+                theory: 15.50,
+                experiment: 9.10,
+                total: 24.60,
+                totalContestants: 262,
+                achievements: ["Участник онлайн-олимпиады COVID-19"]
+            },
+            {
+                name: "Тимур Голубович",
+                school: "Лицей БГУ (Минск)",
+                year: 2021,
+                ipho: "51st IPhO, Литва (онлайн)",
+                award: "bronze",
+                rank: 133,
+                theory: 11.10,
+                experiment: 8.44,
+                total: 19.54,
+                totalContestants: 262,
+                achievements: ["Участник онлайн-олимпиады COVID-19"]
+            },
+            {
+                name: "Никита Цыбленко",
+                school: "Мозырская гимназия им. Я. Купалы",
+                year: 2021,
+                ipho: "51st IPhO, Литва (онлайн)",
+                award: "bronze",
+                rank: 142,
+                theory: 13.80,
+                experiment: 5.05,
+                total: 18.85,
+                totalContestants: 262,
+                achievements: ["Участник онлайн-олимпиады COVID-19"]
+            },
+            {
+                name: "Ольга Турчина",
+                school: "Гимназия № 3 (Борисов)",
+                year: 2021,
+                ipho: "51st IPhO, Литва (онлайн)",
+                award: "mention",
+                rank: 219,
+                theory: 9.50,
+                experiment: 2.26,
+                total: 11.76,
+                totalContestants: 262,
+                achievements: ["Участник онлайн-олимпиады COVID-19"]
+            },
+
+            // 2022 – 52nd IPhO, Switzerland (online)
+            {
+                name: "Максим Баринин",
+                school: "—",
+                year: 2022,
+                ipho: "52nd IPhO, Швейцария (онлайн)",
+                award: "silver",
+                rank: 98,
+                theory: 5.30,
+                experiment: 11.15,
+                total: 16.45,
+                totalContestants: 302,
+                achievements: []
+            },
+            {
+                name: "Владислав Багинский",
+                school: "—",
+                year: 2022,
+                ipho: "52nd IPhO, Швейцария (онлайн)",
+                award: "bronze",
+                rank: 170,
+                theory: 4.60,
+                experiment: 7.95,
+                total: 12.55,
+                totalContestants: 302,
+                achievements: []
+            },
+            {
+                name: "Александр Копертехов",
+                school: "—",
+                year: 2022,
+                ipho: "52nd IPhO, Швейцария (онлайн)",
+                award: "bronze",
+                rank: 186,
+                theory: 3.90,
+                experiment: 8.10,
+                total: 12.00,
+                totalContestants: 302,
+                achievements: []
+            },
+            {
+                name: "Ростислав Климко",
+                school: "—",
+                year: 2022,
+                ipho: "52nd IPhO, Швейцария (онлайн)",
+                award: "bronze",
+                rank: 191,
+                theory: 2.00,
+                experiment: 9.95,
+                total: 11.95,
+                totalContestants: 302,
+                achievements: []
+            },
+            {
+                name: "Яна Пигунова",
+                school: "—",
+                year: 2022,
+                ipho: "52nd IPhO, Швейцария (онлайн)",
+                award: "mention",
+                rank: 244,
+                theory: 4.40,
+                experiment: 4.65,
+                total: 9.05,
+                totalContestants: 302,
+                achievements: []
+            },
+
+            // 2023 – 53rd IPhO (Tokyo) — Беларусь не участвовала
+
+            // 2024 – 54th IPhO, Isfahan (Iran)
+            {
+                name: "Алина Полонская",
+                school: "Областной лицей № 1 (Могилёв)",
+                year: 2024,
+                ipho: "54th IPhO, Иран",
+                award: "gold",
+                rank: 18,
+                theory: 21.50,
+                experiment: 12.42,
+                total: 33.92,
+                totalContestants: 135,
+                achievements: []
+            },
+            {
+                name: "Михаил Хурсин",
+                school: "Гимназия № 41 (Минск)",
+                year: 2024,
+                ipho: "54th IPhO, Иран",
+                award: "silver",
+                rank: 40,
+                theory: 13.60,
+                experiment: 8.38,
+                total: 21.98,
+                totalContestants: 135,
+                achievements: []
+            },
+            {
+                name: "Андрей Ёрш",
+                school: "Лицей БГУ (Минск)",
+                year: 2024,
+                ipho: "54th IPhO, Иран",
+                award: "bronze",
+                rank: 55,
+                theory: 10.00,
+                experiment: 9.15,
+                total: 19.15,
+                totalContestants: 135,
+                achievements: []
+            },
+            {
+                name: "Артём Левко",
+                school: "Лицей БГУ (Минск)",
+                year: 2024,
+                ipho: "54th IPhO, Иран",
+                award: "bronze",
+                rank: 59,
+                theory: 11.00,
+                experiment: 7.42,
+                total: 18.42,
+                totalContestants: 135,
+                achievements: []
+            },
+            {
+                name: "Илья Иванов",
+                school: "Лицей БГУ (Минск)",
+                year: 2024,
+                ipho: "54th IPhO, Иран",
+                award: "bronze",
+                rank: 66,
+                theory: 7.90,
+                experiment: 9.15,
+                total: 17.05,
+                totalContestants: 135,
+                achievements: []
             }
-        ];
+            ];
 
         // Function to render alumni cards
         function renderAlumni(data) {
@@ -924,9 +2279,25 @@
                                             <span class="detail-value">${alumni.ipho}</span>
                                         </div>
                                         <div class="detail-row">
-                                            <span class="detail-label">Результат:</span>
-                                            <span class="detail-value">${alumni.points}</span>
+                                            <span class="detail-label">Место:</span>
+                                            <span class="detail-value rank">${alumni.rank} из ${alumni.totalContestants}</span>
                                         </div>
+                                        <div class="detail-row">
+                                            <span class="detail-label">Общий балл:</span>
+                                            <span class="detail-value total-score">${alumni.total}</span>
+                                        </div>
+                                        ${alumni.theory !== null ? `
+                                            <div class="detail-row">
+                                                <span class="detail-label">Теория:</span>
+                                                <span class="detail-value">${alumni.theory}</span>
+                                            </div>
+                                        ` : ''}
+                                        ${alumni.experiment !== null ? `
+                                            <div class="detail-row">
+                                                <span class="detail-label">Эксперимент:</span>
+                                                <span class="detail-value">${alumni.experiment}</span>
+                                            </div>
+                                        ` : ''}
                                     </div>
                                     
                                     ${alumni.achievements.length > 0 ? `
@@ -992,11 +2363,33 @@
                 }
             }
             
+            updateStats(filteredData);
             renderAlumni(filteredData);
+        }
+
+        // Function to update statistics
+        function updateStats(data) {
+            const totalParticipants = data.length;
+            const goldMedals = data.filter(alumni => alumni.award === 'gold').length;
+            const silverMedals = data.filter(alumni => alumni.award === 'silver').length;
+            const bronzeMedals = data.filter(alumni => alumni.award === 'bronze').length;
+            const mentions = data.filter(alumni => alumni.award === 'mention').length;
+            
+            // Count unique schools
+            const uniqueSchools = new Set(data.map(alumni => alumni.school)).size;
+            
+            // Update DOM
+            document.getElementById('total-participants').textContent = totalParticipants;
+            document.getElementById('gold-medals').textContent = goldMedals;
+            document.getElementById('silver-medals').textContent = silverMedals;
+            document.getElementById('bronze-medals').textContent = bronzeMedals;
+            document.getElementById('mentions').textContent = mentions;
+            document.getElementById('unique-schools').textContent = uniqueSchools;
         }
 
         // Initialize
         document.addEventListener('DOMContentLoaded', () => {
+            updateStats(alumniData);
             renderAlumni(alumniData);
             setupFilters();
         });
