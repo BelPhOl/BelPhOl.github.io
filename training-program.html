@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Программа подготовки к олимпиадам - BelPhO</title>
+    <meta name="description" content="Подробная программа подготовки к белорусским физическим олимпиадам: от школьного до международного уровня">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="img/logo.png" type="image/png" />
+    
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary-color: #64748b;
+            --accent-color: #f59e0b;
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+            --error-color: #ef4444;
+            --bg-color: #f8fafc;
+            --surface-color: #ffffff;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --border-color: #e2e8f0;
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+            --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            background: var(--surface-color);
+            padding: 20px 0;
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .logo-img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            filter: drop-shadow(0 2px 4px rgba(37, 99, 235, 0.3));
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover .logo-img {
+            transform: scale(1.1);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('img/flash.png') no-repeat center;
+            background-size: cover;
+            opacity: 0.1;
+            pointer-events: none;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 20px;
+            opacity: 0.9;
+            margin-bottom: 32px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Section */
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            font-size: 36px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+
+        .section-subtitle {
+            font-size: 18px;
+            text-align: center;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto 48px;
+        }
+
+        /* Stage Cards */
+        .stages-grid {
+            display: grid;
+            gap: 32px;
+            margin-top: 48px;
+        }
+
+        .stage-card {
+            background: var(--surface-color);
+            border-radius: 16px;
+            padding: 32px;
+            box-shadow: var(--shadow-md);
+            border-left: 4px solid var(--primary-color);
+            transition: all 0.3s ease;
+        }
+
+        .stage-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .stage-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .stage-number {
+            width: 48px;
+            height: 48px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .stage-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .stage-subtitle {
+            color: var(--text-secondary);
+            font-size: 16px;
+        }
+
+        .stage-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+            margin-top: 24px;
+        }
+
+        .stage-info {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .info-icon {
+            width: 20px;
+            height: 20px;
+            color: var(--primary-color);
+            margin-top: 2px;
+        }
+
+        .info-text {
+            flex: 1;
+        }
+
+        .info-label {
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+
+        .info-value {
+            color: var(--text-secondary);
+        }
+
+        /* Tips */
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin-top: 48px;
+        }
+
+        .tip-card {
+            background: var(--surface-color);
+            padding: 24px;
+            border-radius: 12px;
+            border-left: 4px solid var(--accent-color);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .tip-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .tip-content {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* Stats */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 24px;
+            margin-top: 32px;
+        }
+
+        .stat-card {
+            background: var(--surface-color);
+            padding: 24px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .stat-number {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 8px;
+        }
+
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 36px;
+            }
+            
+            .stage-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="./" class="logo">
+                    <img src="img/logo.png" alt="BelPhO Logo" class="logo-img">
+                    <span>BelPhO</span>
+                </a>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="./">Главная</a></li>
+                        <li><a href="problems/">Задачи</a></li>
+                        <li><a href="books/">Книги</a></li>
+                        <li><a href="Mechanics/">Механика</a></li>
+                        <li><a href="Electromag/">Электромагнетизм</a></li>
+                        <li><a href="Thermodynamics/">Термодинамика</a></li>
+                        <li><a href="Other/">Другое</a></li>
+                        <li><a href="training-program.html" class="active">Программа подготовки</a></li>
+                        <li><a href="alumni.html">Выпускники</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Программа подготовки к олимпиадам</h1>
+            <p>Подробное руководство по системе белорусских физических олимпиад: от школьного этапа до международной арены. Узнайте, как пройти каждый этап отбора и подготовиться к успешному участию.</p>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Общая информация о системе</h2>
+            <p class="section-subtitle">Белорусская система физических олимпиад состоит из 6 основных этапов, каждый из которых имеет свои особенности и требования</p>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">6</div>
+                    <div class="stat-label">Этапов отбора</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">Участников в сборной</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">97</div>
+                    <div class="stat-label">Медалей на IPhO</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">1995</div>
+                    <div class="stat-label">Год первого участия</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stages Section -->
+    <section class="section" style="background: var(--surface-color);">
+        <div class="container">
+            <h2 class="section-title">Детальное описание этапов</h2>
+            
+            <div class="stages-grid">
+                <!-- Stage 1 -->
+                <div class="stage-card">
+                    <div class="stage-header">
+                        <div class="stage-number">1</div>
+                        <div>
+                            <div class="stage-title">Школьная олимпиада</div>
+                            <div class="stage-subtitle">Сентябрь - Октябрь</div>
+                        </div>
+                    </div>
+                    
+                    <div class="stage-content">
+                        <div class="stage-info">
+                            <div class="info-item">
+                                <i class="fas fa-users info-icon"></i>
+                                <div class="info-text">
+                                    <div class="info-label">Участники</div>
+                                    <div class="info-value">Учащиеся 7-11 классов всех школ Беларуси</div>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-clock info-icon"></i>
+                                <div class="info-text">
+                                    <div class="info-label">Продолжительность</div>
+                                    <div class="info-value">3-4 часа (в зависимости от класса)</div>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-tasks info-icon"></i>
+                                <div class="info-text">
+                                    <div class="info-label">Количество задач</div>
+                                    <div class="info-value">4-5 теоретических задач</div>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt info-icon"></i>
+                                <div class="info-text">
+                                    <div class="info-label">Место проведения</div>
+                                    <div class="info-value">В своей школе</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="stage-info">
+                            <div class="info-item">
+                                <i class="fas fa-lightbulb info-icon"></i>
+                                <div class="info-text">
+                                    <div class="info-label">Подготовка</div>
+                                    <div class="info-value">Изучение школьной программы по физике, решение задач повышенной сложности</div>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-trophy info-icon"></i>
+                                <div class="info-text">
+                                    <div class="info-label">Критерии отбора</div>
+                                    <div class="info-value">1-3 лучших участника от школы проходят на районный этап</div>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-info-circle info-icon"></i>
+                                <div class="info-text">
+                                    <div class="info-label">Особенности</div>
+                                    <div class="info-value">Первый обязательный этап для всех желающих участвовать в олимпиаде</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stage 2 -->
+                <div class="stage-card">
+                    <div class="stage-header">
+                        <div class="stage-number">2</div>
+                        <div>
+                            <div class="stage-title">Районная олимпиада</div>
+                            <div class="stage-subtitle">Ноябрь - Декабрь</div>
+                        </div>
+                    </div>
+                    
+                    <div class="stage-content">
+                        <div class="stage-info">
+                            <div class="info-item">
+                                <i class="fas fa-users info-icon"></i>
+                                <div class="info-text">
+                                    <div class="info-label">Участники</div>
+                                    <div class="info-value">Победители школьного этапа от всех школ района</div>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-clock info-icon"></i>
+                                <div class="info-text">
+                                    <div class="info-label">Продолжительность</div>
+                                    <div class="info-value">Теоретический тур: 4-5 часов<br>Экспериментальный тур: 2-3 часа</div>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-tasks info-icon"></i>
+                                <div class="info-text">
+                                    <div class="info-label">Структура</div>
+                                    <div class="info-value">4-5 теоретических задач + 1-2 экспериментальные задачи</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="stage-info">
+                            <div class="info-item">
+                                <i class="fas fa-lightbulb info-icon"></i>
+                                <div class="info-text">
+                                    <div class="info-label">Подготовка</div>
+                                    <div class="info-value">Углубленное изучение физики, практика экспериментальных задач</div>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-trophy info-icon"></i>
+                                <div class="info-text">
+                                    <div class="info-label">Отбор</div>
+                                    <div class="info-value">Лучшие участники проходят на областной этап</div>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-flask info-icon"></i>
+                                <div class="info-text">
+                                    <div class="info-label">Эксперимент</div>
+                                    <div class="info-value">Первое знакомство с экспериментальными заданиями</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stage 3 -->
+                <div class="stage-card">
+                    <div class="stage-header">
+                        <div class="stage-number">3</div>
+                        <div>
+                            <div class="stage-title">Областная олимпиада</div>
+                            <div class="stage-subtitle">Январь (10-е числа)</div>
+                        </div>
+                    </div>
+                    
+                    <div class="stage-content">
+                        <div class="stage-info">
+                            <div class="info-item">
+                                <i class="fas fa-users info-icon"></i>
+                                <div class="info-text">
+                                    <div class="info-label">Участники</div>
+                                    <div class="info-value">Лучшие участники районных олимпиад области</div>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-clock info-icon"></i>
+                                <div class="info-text">
+                                    <div class="info-label">Продолжительность</div>
+                                    <div class="info-value">2 тура по 5 часов каждый</div>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-tasks info-icon"></i>
+                                <div class="info-text">
+                                    <div class="info-label">Структура</div>
+                                    <div class="info-value">Теоретический тур: 3 задачи<br>Экспериментальный тур: 2 задачи</div>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-exclamation-triangle info-icon"></i>
+                                <div class="info-text">
+                                    <div class="info-label">Важно для 7-8 классов</div>
+                                    <div class="info-value">Это финальный этап для учащихся 7-8 классов</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="stage-info">
+                            <div class="info-item">
+                                <i class="fas fa-lightbulb info-icon"></i>
+                                <div class="info-text">
+                                    <div class="info-label">Подготовка</div>
+                                    <div class="info-value">Решение задач олимпиадного уровня, изучение методов экспериментальной физики</div>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-trophy info-icon"></i>
+                                <div class="info-text">
+                                    <div class="info-label">Отбор</div>
+                                    <div class="info-value">Формируется областная сборная для республиканского этапа</div>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-calendar info-icon"></i>
+                                <div class="info-text">
+                                    <div class="info-label">График</div>
+                                    <div class="info-value">Понедельник: теория, Вторник: эксперимент, Среда: апелляции</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stage 4 -->
+                <div class="stage-card">
+                    <div class="stage-header">
+                        <div class="stage-number">4</div>
+                        <div>
+                            <div class="stage-title">Республиканская олимпиада</div>
+                            <div class="stage-subtitle">Март - Апрель (весенние каникулы)</div>
+                        </div>
+                    </div>
+                    
+                    <div class="stage-content">
+                        <div class="stage-info">
+                            <div class="info-item">
+                                <i class="fas fa-users info-icon"></i>
+                                <div class="info-text">
+                                    <div class="info-label">Участники</div>
+                                    <div class="info-value">Областные сборные (9-11 классы) + команда г. Минска</div>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt info-icon"></i>
+                                <div class="info-text">
+                                    <div class="info-label">Место проведения</div>
+                                    <div class="info-value">Разные города Беларуси каждый год</div>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-calendar-week info-icon"></i>
+                                <div class="info-text">
+                                    <div class="info-label">Программа</div>
+                                    <div class="info-value">5 дней: приезд, открытие, туры, апелляции, награждение</div>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-medal info-icon"></i>
+                                <div class="info-text">
+                                    <div class="info-label">Награды</div>
+                                    <div class="info-value">Дипломы I, II, III степени от Министерства образования</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="stage-info">
+                            <div class="info-item">
+                                <i class="fas fa-gift info-icon"></i>
+                                <div class="info-text">
+                                    <div class="info-label">Льготы</div>
+                                    <div class="info-value">100 баллов по физике в ЦТ, поступление без экзаменов</div>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-star info-icon"></i>
+                                <div class="info-text">
+                                    <div class="info-label">Отбор в сборную</div>
+                                    <div class="info-value">10 лучших учащихся 10-11 классов приглашаются на сборы</div>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-handshake info-icon"></i>
+                                <div class="info-text">
+                                    <div class="info-label">Церемония</div>
+                                    <div class="info-value">Торжественное открытие и закрытие с культурной программой</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stage 5 -->
+                <div class="stage-card">
+                    <div class="stage-header">
+                        <div class="stage-number">5</div>
+                        <div>
+                            <div class="stage-title">Квалификационные сборы</div>
+                            <div class="stage-subtitle">После республиканской олимпиады</div>
+                        </div>
+                    </div>
+                    
+                    <div class="stage-content">
+                        <div class="stage-info">
+                            <div class="info-item">
+                                <i class="fas fa-users info-icon"></i>
+                                <div class="info-text">
+                                    <div class="info-label">Участники</div>
+                                    <div class="info-value">10 лучших участников республиканской олимпиады</div>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-university info-icon"></i>
+                                <div class="info-text">
+                                    <div class="info-label">Место проведения</div>
+                                    <div class="info-value">Лицей БГУ, физический факультет БГУ</div>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-clock info-icon"></i>
+                                <div class="info-text">
+                                    <div class="info-label">Продолжительность</div>
+                                    <div class="info-value">2 недели интенсивной подготовки</div>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-user-tie info-icon"></i>
+                                <div class="info-text">
+                                    <div class="info-label">Руководитель</div>
+                                    <div class="info-value">Л.Г. Маркович, заведующий кафедрой физики Лицея БГУ</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="stage-info">
+                            <div class="info-item">
+                                <i class="fas fa-tasks info-icon"></i>
+                                <div class="info-text">
+                                    <div class="info-label">Программа</div>
+                                    <div class="info-value">Задачи IPhO прошлых лет, высшая математика, экспериментальные задания</div>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-home info-icon"></i>
+                                <div class="info-text">
+                                    <div class="info-label">Проживание</div>
+                                    <div class="info-value">Общежитие №2 БГУ (3-й этаж)</div>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-trophy info-icon"></i>
+                                <div class="info-text">
+                                    <div class="info-label">Результат</div>
+                                    <div class="info-value">Формируется сборная из 5 человек + 1 запасной</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stage 6 -->
+                <div class="stage-card">
+                    <div class="stage-header">
+                        <div class="stage-number">6</div>
+                        <div>
+                            <div class="stage-title">Международная олимпиада (IPhO)</div>
+                            <div class="stage-subtitle">Июль</div>
+                        </div>
+                    </div>
+                    
+                    <div class="stage-content">
+                        <div class="stage-info">
+                            <div class="info-item">
+                                <i class="fas fa-globe info-icon"></i>
+                                <div class="info-text">
+                                    <div class="info-label">Масштаб</div>
+                                    <div class="info-value">Более 90 стран мира, ~400 участников</div>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-users info-icon"></i>
+                                <div class="info-text">
+                                    <div class="info-label">Команда Беларуси</div>
+                                    <div class="info-value">5 участников + 2 руководителя команды</div>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-calendar-week info-icon"></i>
+                                <div class="info-text">
+                                    <div class="info-label">Программа</div>
+                                    <div class="info-value">10 дней: экскурсии, 2 тура по 5 часов, культурная программа</div>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-medal info-icon"></i>
+                                <div class="info-text">
+                                    <div class="info-label">Достижения Беларуси</div>
+                                    <div class="info-value">97 медалей за 1995-2021 гг: 13 золотых, 34 серебряных, 50 бронзовых</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="stage-info">
+                            <div class="info-item">
+                                <i class="fas fa-star info-icon"></i>
+                                <div class="info-text">
+                                    <div class="info-label">Рекорд</div>
+                                    <div class="info-value">А. Михалычев - абсолютный победитель IPhO-2004 (47,7 из 50 баллов)</div>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-plane info-icon"></i>
+                                <div class="info-text">
+                                    <div class="info-label">Подготовка к поездке</div>
+                                    <div class="info-value">Дополнительные сборы, изучение английского языка</div>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-trophy info-icon"></i>
+                                <div class="info-text">
+                                    <div class="info-label">Престиж</div>
+                                    <div class="info-value">Представление страны на высшем международном уровне</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Советы по подготовке</h2>
+            <p class="section-subtitle">Рекомендации от опытных преподавателей и бывших участников олимпиад</p>
+            
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <div class="tip-title">
+                        <i class="fas fa-book"></i>
+                        Теоретическая подготовка
+                    </div>
+                    <div class="tip-content">
+                        Изучайте физику глубже школьной программы. Решайте задачи прошлых олимпиад, изучайте дополнительную литературу. Особое внимание уделите методам решения нестандартных задач.
+                    </div>
+                </div>
+                
+                <div class="tip-card">
+                    <div class="tip-title">
+                        <i class="fas fa-flask"></i>
+                        Экспериментальные навыки
+                    </div>
+                    <div class="tip-content">
+                        Практикуйтесь в проведении физических экспериментов. Учитесь работать с измерительными приборами, анализировать погрешности и оформлять результаты.
+                    </div>
+                </div>
+                
+                <div class="tip-card">
+                    <div class="tip-title">
+                        <i class="fas fa-clock"></i>
+                        Управление временем
+                    </div>
+                    <div class="tip-content">
+                        Тренируйтесь решать задачи в ограниченное время. На олимпиаде важно не только знать, как решать, но и успеть это сделать качественно.
+                    </div>
+                </div>
+                
+                <div class="tip-card">
+                    <div class="tip-title">
+                        <i class="fas fa-language"></i>
+                        Английский язык
+                    </div>
+                    <div class="tip-content">
+                        Для участия в IPhO необходимо знание английского языка. Изучайте физическую терминологию на английском, читайте задачи международных олимпиад.
+                    </div>
+                </div>
+                
+                <div class="tip-card">
+                    <div class="tip-title">
+                        <i class="fas fa-users"></i>
+                        Командная работа
+                    </div>
+                    <div class="tip-content">
+                        Обсуждайте задачи с одноклассниками и учителями. Объяснение решений другим помогает лучше понять материал и найти ошибки в своих рассуждениях.
+                    </div>
+                </div>
+                
+                <div class="tip-card">
+                    <div class="tip-title">
+                        <i class="fas fa-heart"></i>
+                        Мотивация
+                    </div>
+                    <div class="tip-content">
+                        Помните: олимпиада - это не только соревнование, но и возможность глубже изучить физику, познакомиться с единомышленниками и открыть новые горизонты.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html> 
