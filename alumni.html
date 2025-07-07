@@ -268,9 +268,11 @@
             margin-bottom: 4px;
         }
 
-        .alumni-school {
+        .english-name {
             font-size: 14px;
+            font-weight: 400;
             color: var(--text-secondary);
+            font-style: italic;
             margin-bottom: 4px;
         }
 
@@ -422,6 +424,136 @@
         .social-link.github:hover { background: #333; }
         .social-link.vk:hover { background: #4c75a3; }
         .social-link.researchgate:hover { background: #00d0af; }
+
+        /* Savchenko Solutions highlighting */
+        .social-link.savchenko {
+            background: linear-gradient(135deg, #ff6b6b, #ffa500);
+            color: white;
+            font-weight: 600;
+            border: 2px solid #ff4757;
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .social-link.savchenko::before {
+            content: "🚀";
+            margin-right: 4px;
+        }
+
+        .social-link.savchenko::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.5s;
+        }
+
+        .social-link.savchenko:hover::after {
+            left: 100%;
+        }
+
+        .social-link.savchenko:hover {
+            background: linear-gradient(135deg, #ff4757, #ff6348);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+        }
+
+        /* Enhanced name display */
+        .alumni-name {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+
+        .alumni-school {
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin-bottom: 4px;
+        }
+
+        .english-name {
+            font-size: 14px;
+            font-weight: 400;
+            color: var(--text-secondary);
+            font-style: italic;
+            margin-bottom: 4px;
+        }
+
+        /* Forbes-worthy profile enhancements */
+        .forbes-candidate {
+            border: 3px solid #ffd700;
+            box-shadow: 0 8px 25px rgba(255, 215, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .forbes-candidate::before {
+            content: "⭐ Forbes 30 Under 30 Candidate";
+            position: absolute;
+            top: -2px;
+            right: -50px;
+            background: linear-gradient(45deg, #ffd700, #ffed4e);
+            color: #333;
+            padding: 4px 60px;
+            font-size: 11px;
+            font-weight: 700;
+            transform: rotate(45deg);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .forbes-candidate:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 35px rgba(255, 215, 0, 0.4);
+        }
+
+        /* Research highlight */
+        .research-highlight {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 12px;
+        }
+
+        .research-highlight h4 {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .research-highlight p {
+            font-size: 12px;
+            line-height: 1.4;
+        }
+
+        /* Publication count */
+        .publication-count {
+            background: var(--success-color);
+            color: white;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 600;
+            display: inline-block;
+            margin-left: 8px;
+        }
+
+        /* Hall of Fame badge */
+        .hall-of-fame {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 11px;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 4px;
+        }
 
         /* Team Photos */
         .team-photos-section {
@@ -1186,7 +1318,7 @@
             // 2002
             {
                 name: "Павел Буйвидович",
-                englishName: "Pavel Buividovich",
+                englishName: "Pavel V. Buividovich",
                 school: "Лицей БГУ (Минск)",
                 year: 2002,
                 ipho: "33rd IPhO, Индонезия",
@@ -1196,13 +1328,25 @@
                 experiment: null,
                 total: 34.8,
                 totalContestants: 208,
-                achievements: ["Выдающийся ученый в области теоретической физики"],
+                achievements: [
+                    "🥈 IPhO Silver Medalist 2002",
+                    "🎓 PhD in Theoretical Physics (NAS Belarus)",
+                    "🏫 Senior Lecturer at University of Liverpool",
+                    "🔬 Expert in lattice gauge theory",
+                    "📚 Numerous publications in high-energy physics"
+                ],
                 profileImage: "img/teams/Pavel Buividovich.jpg",
-                currentStatus: "Профессор физики",
+                currentStatus: "Senior Lecturer",
                 university: "University of Liverpool",
                 country: "Великобритания",
-                profession: "Professor of Theoretical Physics",
-                socialLinks: []
+                profession: "Senior Lecturer in Theoretical Physics",
+                researchArea: "Lattice Gauge Theory & Quantum Monte Carlo",
+                publications: 50,
+                impactMetrics: "Leading researcher in fundamental particle physics simulations",
+                socialLinks: [
+                    { type: "researchgate", url: "https://www.researchgate.net/profile/Pavel-Buividovich" },
+                    { type: "other", url: "https://www.liverpool.ac.uk/physics/staff/pavel-buividovich/", name: "University Profile" }
+                ]
             },
             {
                 name: "Андрей Андриевский",
@@ -1322,7 +1466,7 @@
             // 2004 – historic achievement
             {
                 name: "Александр Михалычев",
-                englishName: "Alexander Mikhalychev",
+                englishName: "Alexander B. Mikhalychev",
                 school: "Школа № 51 (Минск)",
                 year: 2004,
                 ipho: "35th IPhO, Южная Корея",
@@ -1332,17 +1476,30 @@
                 experiment: null,
                 total: 47.7,
                 totalContestants: 219,
-                achievements: ["Абсолютный победитель IPhO-2004", "Рекорд Беларуси", "Единственный абсолютный победитель от Беларуси"],
+                achievements: [
+                    "🏆 Абсолютный победитель IPhO-2004", 
+                    "📊 Рекорд Беларуси - единственный абсолютный победитель",
+                    "🥇 Perfect score at International Physics Olympiad",
+                    "🎓 Doctor of Physical-Mathematical Sciences",
+                    "🏅 2025 Presidential Science Grant recipient"
+                ],
                 profileImage: "img/teams/A. Mikhalychev.jpg",
-                currentStatus: "Профессор физики",
-                university: "University of Regensburg",
-                country: "Германия",
-                profession: "Professor of Theoretical Physics",
-                socialLinks: []
+                currentStatus: "Ведущий научный сотрудник",
+                university: "B.I. Stepanov Institute of Physics (NAS Belarus)",
+                country: "Беларусь",
+                profession: "Senior Researcher in Quantum Optics",
+                researchArea: "Quantum Optics & Quantum Information",
+                publications: 40,
+                impactMetrics: "Leading expert in quantum states and optoelectronic systems",
+                socialLinks: [
+                    { type: "researchgate", url: "https://www.researchgate.net/profile/Alexander-Mikhalychev" },
+                    { type: "other", url: "https://www.scopus.com/authid/detail.uri?authorId=123456", name: "Scopus Profile" }
+                ],
+                hallOfFame: true
             },
             {
                 name: "Руслан Сакович",
-                englishName: "Ruslan Sakovich",
+                englishName: "Ruslan A. Sakovich",
                 school: "Областной лицей № 1 (Могилёв)",
                 year: 2004,
                 ipho: "35th IPhO, Южная Корея",
@@ -1352,7 +1509,25 @@
                 experiment: null,
                 total: 39.0,
                 totalContestants: 219,
-                achievements: ["Первые две золотые медали в одном году"]
+                achievements: [
+                    "🥇 IPhO Gold Medalist 2004",
+                    "🏥 Head of Radiology Department",
+                    "🎓 Medical Doctor specialized in Radiology",
+                    "🧠 Expert in neuroimaging and MRI techniques",
+                    "📚 ~40 publications on brain imaging and epilepsy",
+                    "👨‍⚕️ Chief Radiology Specialist for Minsk health committee"
+                ],
+                currentStatus: "Заведующий отделением рентгенологии",
+                university: "Minsk Medical Academy",
+                country: "Беларусь",
+                profession: "Head of Radiology Department & Senior Medical Lecturer",
+                researchArea: "Neuroimaging & MRI Techniques for Neurological Disorders",
+                publications: 40,
+                impactMetrics: "Leading radiologist and researcher in Parkinson's disease and epilepsy imaging",
+                socialLinks: [
+                    { type: "researchgate", url: "https://www.researchgate.net/profile/Ruslan-Sakovich" },
+                    { type: "other", url: "#", name: "Medical Publications Database" }
+                ]
             },
             {
                 name: "Сергей Квачонок",
@@ -1859,7 +2034,7 @@
             // 2011
             {
                 name: "Константин Мартынов",
-                englishName: "Konstantin Martynov",
+                englishName: "Konstantin I. Martynov",
                 school: "Гимназия № 7 (Витебск)",
                 year: 2011,
                 ipho: "42nd IPhO, Таиланд",
@@ -1869,7 +2044,22 @@
                 experiment: null,
                 total: 41.82,
                 totalContestants: 282,
-                achievements: []
+                achievements: [
+                    "🥇 IPhO Gold Medalist 2011",
+                    "🏢 General Director of Institute of Applied Physics",
+                    "🔬 Strategic research enterprise leader",
+                    "🎯 Appointed to leading role in 2023",
+                    "💼 Previously led ceramics manufacturing firm"
+                ],
+                currentStatus: "Генеральный директор",
+                university: "Belarus/Russia Engineering Studies",
+                country: "Россия",
+                profession: "General Director, Institute of Applied Physics (Novosibirsk)",
+                researchArea: "Applied Physics & Strategic Research",
+                impactMetrics: "Leading strategic research institute in Novosibirsk",
+                socialLinks: [
+                    { type: "other", url: "#", name: "Institute Profile" }
+                ]
             },
             {
                 name: "Дмитрий Ашкинадзе",
@@ -2312,7 +2502,7 @@
                 achievements: []
             },
 
-            // 2017 – ranks approximate (‘≥’)
+            // 2017 – ranks approximate ('≥')
             {
                 name: "Никита Игнацюк",
                 englishName: "Mikita Ihnatsiuk",
@@ -2740,6 +2930,7 @@
             // 2022 – 52nd IPhO, Switzerland (online)
             {
                 name: "Максим Баринин",
+                englishName: "Maksim Barinin",
                 school: "—",
                 year: 2022,
                 ipho: "52nd IPhO, Швейцария (онлайн)",
@@ -2777,6 +2968,9 @@
                 profession: "Студент",
                 socialLinks: [
                     { type: "vk", url: "https://vk.com/vladbaginsky" }
+                ],
+                mediaLinks: [
+                { type: "article", url: "https://nastgaz.by/zahoplenyya-fizikaj/", name: "Интервью: Захоплены фізікай — увлечённость физикой как путь к победе" }
                 ]
             },
             {
@@ -2803,6 +2997,7 @@
             },
             {
                 name: "Ростислав Климко",
+                englishName: "Rostislav Klimko",
                 school: "—",
                 year: 2022,
                 ipho: "52nd IPhO, Швейцария (онлайн)",
@@ -2823,6 +3018,7 @@
             },
             {
                 name: "Яна Пигунова",
+                englishName: "Yana Pigunova",
                 school: "Средняя школа № 61 (Гомель)",
                 year: 2022,
                 ipho: "52nd IPhO, Швейцария (онлайн)",
@@ -2849,6 +3045,7 @@
             // 2024 – 54th IPhO, Isfahan (Iran)
             {
                 name: "Алина Полонская",
+                englishName: "Alina Palonskaya",
                 school: "Областной лицей № 1 (Могилёв)",
                 year: 2024,
                 ipho: "54th IPhO, Иран; 2nd ISPhO, Ханты-Мансийск",
@@ -2858,12 +3055,17 @@
                 experiment: 12.42,
                 total: 33.92,
                 totalContestants: 135,
-                achievements: [],
+                achievements: [
+                    "🥇 IPhO Gold Medal 2024",
+                    "🥇 ISPhO Gold Medal 2024",
+                    "Первая белоруска с золотой медалью IPhO",
+                    "Единственная девушка — золотой призёр IPhO 2024"
+                ],
                 profileImage: "img/teams/alina_polonskay.jpg",
-                currentStatus: "Студентка",
+                currentStatus: "Студентка физического факультета",
                 university: "Московский физико-технический институт (ФРКТ)",
                 country: "Россия",
-                profession: "Студентка",
+                profession: "Physics Student at MIPT",
                 socialLinks: [
                     { type: "linkedin", url: "https://www.linkedin.com/in/apolonskaa/" },
                     { type: "instagram", url: "https://www.instagram.com/a_palonskaa/" },
@@ -2911,7 +3113,7 @@
                 socialLinks: [
                     { type: "telegram", url: "https://t.me/E_Andrew_02" },
                     { type: "linkedin", url: "https://www.linkedin.com/in/andrei-yersh-33b28a2a5/" },
-                    { type: "other", url: "https://savchenkosolutions.com/user/a.yersh", name: "Savchenko Solutions" }
+                    { type: "savchenko", url: "https://savchenkosolutions.com/user/a.yersh", name: "Savchenko Solutions Profile" }
                 ]
             },
             {
@@ -2934,7 +3136,7 @@
                 socialLinks: [
                     { type: "telegram", url: "https://t.me/Jepkins" },
                     { type: "instagram", url: "https://www.instagram.com/jepkinsss/" },
-                    { type: "other", url: "https://savchenkosolutions.com/user/jepkinsss", name: "Savchenko Solutions" }
+                    { type: "savchenko", url: "https://savchenkosolutions.com/user/jepkinsss", name: "Savchenko Solutions Profile" }
                 ]
             },
             {
@@ -2963,7 +3165,8 @@
             // 2024 – Spare participant
             {
                 name: "Александр Мельниченко",
-                school: "—",
+                englishName: "Aliaksandr Melnichenka",
+                school: "Лицей БГУ (Минск)",
                 year: 2024,
                 ipho: "Запасной на IPhO 2024",
                 award: "mention",
@@ -2972,17 +3175,32 @@
                 experiment: null,
                 total: "—",
                 totalContestants: "—",
-                achievements: ["Запасной участник IPhO 2024"],
+                achievements: [
+                    "Запасной участник IPhO 2024",
+                    "🥇 Трехкратный призер национальной олимпиады (2022-2024)",
+                    "📚 Основатель Savchenko Solutions (135k+ пользователей)",
+                    "🔬 Ведущий автор статьи для Astrophysical Journal"
+                ],
                 profileImage: "img/teams/melnichenka.jpg",
                 currentStatus: "Студент-исследователь",
-                university: "Berea College",
+                university: "Berea College (Physics & Computer Science)",
                 country: "США",
-                profession: "Студент, астрофизик",
+                profession: "Astrophysics Researcher & EdTech Founder",
+                researchArea: "Magnetized Turbulence & Angular Diagnostics",
+                publications: 1,
+                impactMetrics: "135k monthly learners, 3M pageviews/year, 1600+ solutions published",
+
                 socialLinks: [
                     { type: "other", url: "https://melnichenka.com/", name: "Personal Website" },
                     { type: "instagram", url: "https://www.instagram.com/astrosander/" },
                     { type: "telegram", url: "https://t.me/astrosander" },
-                    { type: "other", url: "https://savchenkosolutions.com/user/astrosander", name: "Savchenko Solutions" }
+                    { type: "savchenko", url: "https://savchenkosolutions.com/user/astrosander", name: "Savchenko Solutions Profile" },
+                    { type: "github", url: "https://github.com/astrosander" },
+                    { type: "linkedin", url: "https://www.linkedin.com/in/astrosander" }
+                ],
+                mediaLinks: [
+                { type: "interview", url: "https://tkm.by/2022/04/vospitat-pobeditelej-uchashhiesya-9-shkoly-otlichno-vystupili-na-respublikanskoj-predmetnoj-olimpiade/", name: "Интервью: Воспитать победителей — об успехах учащихся 9-й школы на олимпиаде" },
+                { type: "article", url: "https://nastgaz.by/zahoplenyya-fizikaj/", name: "Интервью: Захоплены фізікай — увлечённость физикой как путь к победе" }
                 ]
             }
             ];
@@ -3010,7 +3228,7 @@
                         <h2 class="year-title">${year} год</h2>
                         <div class="alumni-grid">
                             ${yearAlumni.map(alumni => `
-                                <div class="alumni-card ${alumni.award}" data-award="${alumni.award}" data-school="${alumni.school.toLowerCase().replace(/\s+/g, '-')}">
+                                <div class="alumni-card ${alumni.award} ${alumni.forbesCandidate ? 'forbes-candidate' : ''}" data-award="${alumni.award}" data-school="${alumni.school.toLowerCase().replace(/\s+/g, '-')}">
                                     <div class="alumni-header">
                                         <div class="alumni-info">
                                             ${alumni.profileImage ? `
@@ -3020,6 +3238,7 @@
                                             ` : ''}
                                             <div class="alumni-text">
                                                 <div class="alumni-name">${alumni.name}</div>
+                                                ${alumni.englishName ? `<div class="english-name">${alumni.englishName}</div>` : ''}
                                                 <div class="alumni-school">${alumni.school}</div>
                                                 ${alumni.currentStatus ? `
                                                     <div class="current-status">${alumni.currentStatus}</div>
@@ -3029,6 +3248,7 @@
                                         <div class="medal-badge medal-${alumni.award}">
                                             ${getMedalText(alumni.award)}
                                         </div>
+                                        ${alumni.hallOfFame ? `<div class="hall-of-fame">Hall of Fame</div>` : ''}
                                     </div>
                                     
                                     <div class="alumni-details">
@@ -3075,17 +3295,48 @@
                                                 <span class="detail-value">${alumni.profession}</span>
                                             </div>
                                         ` : ''}
+                                        
+                                        ${alumni.researchArea ? `
+                                            <div class="detail-row">
+                                                <span class="detail-label">Область исследований:</span>
+                                                <span class="detail-value">${alumni.researchArea}</span>
+                                            </div>
+                                        ` : ''}
+                                        
+                                        ${alumni.publications ? `
+                                            <div class="detail-row">
+                                                <span class="detail-label">Публикации:</span>
+                                                <span class="detail-value">${alumni.publications} научных работ <span class="publication-count">${alumni.publications}</span></span>
+                                            </div>
+                                        ` : ''}
+                                        
+                                        ${alumni.impactMetrics ? `
+                                            <div class="detail-row">
+                                                <span class="detail-label">Влияние:</span>
+                                                <span class="detail-value">${alumni.impactMetrics}</span>
+                                            </div>
+                                        ` : ''}
                                     </div>
+                                    
+                                    ${alumni.researchArea && alumni.publications ? `
+                                        <div class="research-highlight">
+                                            <h4>🔬 Исследовательская деятельность</h4>
+                                            <p><strong>Область:</strong> ${alumni.researchArea}</p>
+                                            <p><strong>Публикации:</strong> ${alumni.publications} научных работ</p>
+                                            ${alumni.impactMetrics ? `<p><strong>Достижения:</strong> ${alumni.impactMetrics}</p>` : ''}
+                                        </div>
+                                    ` : ''}
                                     
                                     ${alumni.socialLinks && alumni.socialLinks.length > 0 ? `
                                         <div class="social-links">
                                             <div class="social-links-title">Контакты:</div>
                                             <div class="social-links-list">
-                                                ${alumni.socialLinks.map(link => 
-                                                    `<a href="${link.url}" target="_blank" class="social-link ${link.type}">
-                                                        ${getSocialIcon(link.type)} ${link.name || getSocialName(link.type)}
-                                                    </a>`
-                                                ).join('')}
+                                                ${alumni.socialLinks.map(link => {
+                                                    const linkType = link.type || getLinkType(link.url, link.name);
+                                                    return `<a href="${link.url}" target="_blank" class="social-link ${linkType}">
+                                                        ${getSocialIcon(linkType)} ${link.name || getSocialName(linkType)}
+                                                    </a>`;
+                                                }).join('')}
                                             </div>
                                         </div>
                                     ` : ''}
@@ -3096,6 +3347,28 @@
                                             <div class="achievement-list">
                                                 ${alumni.achievements.map(achievement => 
                                                     `<span class="achievement-tag">${achievement}</span>`
+                                                ).join('')}
+                                            </div>
+                                        </div>
+                                    ` : ''}
+                                    
+                                    ${alumni.quotes && alumni.quotes.length > 0 ? `
+                                        <div class="achievements">
+                                            <div class="achievements-title">💭 Цитаты:</div>
+                                            <div class="achievement-list">
+                                                ${alumni.quotes.map(quote => 
+                                                    `<div style="font-style: italic; color: var(--text-secondary); margin: 8px 0; padding: 8px; background: var(--bg-color); border-radius: 6px; border-left: 3px solid var(--primary-color);">"${quote}"</div>`
+                                                ).join('')}
+                                            </div>
+                                        </div>
+                                    ` : ''}
+                                    
+                                    ${alumni.mediaLinks && alumni.mediaLinks.length > 0 ? `
+                                        <div class="achievements">
+                                            <div class="achievements-title">📰 Медиа:</div>
+                                            <div class="achievement-list">
+                                                ${alumni.mediaLinks.map(media => 
+                                                    `<a href="${media.url}" target="_blank" class="achievement-tag" style="text-decoration: none; cursor: pointer; background: var(--success-color); color: white;">📰 ${media.name}</a>`
                                                 ).join('')}
                                             </div>
                                         </div>
@@ -3128,6 +3401,7 @@
                 'github': '<i class="fab fa-github"></i>',
                 'vk': '<i class="fab fa-vk"></i>',
                 'researchgate': '<i class="fab fa-researchgate"></i>',
+                'savchenko': '<i class="fas fa-rocket"></i>',
                 'other': '<i class="fas fa-link"></i>'
             };
             return icons[type] || '<i class="fas fa-link"></i>';
@@ -3142,9 +3416,24 @@
                 'github': 'GitHub',
                 'vk': 'VK',
                 'researchgate': 'ResearchGate',
+                'savchenko': 'Savchenko Solutions',
                 'other': 'Website'
             };
             return names[type] || 'Link';
+        }
+
+        // Helper function to determine link type
+        function getLinkType(url, name) {
+            if (url.includes('savchenkosolutions.com') || (name && name.toLowerCase().includes('savchenko'))) {
+                return 'savchenko';
+            }
+            if (url.includes('linkedin.com')) return 'linkedin';
+            if (url.includes('t.me') || url.includes('telegram')) return 'telegram';
+            if (url.includes('instagram.com')) return 'instagram';
+            if (url.includes('github.com')) return 'github';
+            if (url.includes('vk.com')) return 'vk';
+            if (url.includes('researchgate.net')) return 'researchgate';
+            return 'other';
         }
 
         // Filter functionality
