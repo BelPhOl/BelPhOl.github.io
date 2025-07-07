@@ -235,6 +235,32 @@
             margin-bottom: 16px;
         }
 
+        .alumni-info {
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+            flex: 1;
+        }
+
+        .profile-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            flex-shrink: 0;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .alumni-text {
+            flex: 1;
+        }
+
         .alumni-name {
             font-size: 18px;
             font-weight: 600;
@@ -245,6 +271,17 @@
         .alumni-school {
             font-size: 14px;
             color: var(--text-secondary);
+            margin-bottom: 4px;
+        }
+
+        .current-status {
+            font-size: 12px;
+            color: var(--primary-color);
+            font-weight: 500;
+            background: var(--bg-color);
+            padding: 2px 6px;
+            border-radius: 4px;
+            display: inline-block;
         }
 
         .medal-badge {
@@ -335,6 +372,167 @@
             color: var(--text-secondary);
         }
 
+        /* Social Links */
+        .social-links {
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .social-links-title {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+
+        .social-links-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 4px 8px;
+            background: var(--bg-color);
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 12px;
+            color: var(--text-secondary);
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-color);
+        }
+
+        .social-link:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateY(-1px);
+        }
+
+        .social-link i {
+            font-size: 14px;
+        }
+
+        .social-link.linkedin:hover { background: #0077b5; }
+        .social-link.telegram:hover { background: #0088cc; }
+        .social-link.instagram:hover { background: #e4405f; }
+        .social-link.github:hover { background: #333; }
+        .social-link.vk:hover { background: #4c75a3; }
+        .social-link.researchgate:hover { background: #00d0af; }
+
+        /* Team Photos */
+        .team-photos-section {
+            padding: 60px 0;
+            background: var(--surface-color);
+        }
+
+        .section-title {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--text-primary);
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .team-photos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 32px;
+            margin-bottom: 48px;
+        }
+
+        .team-photo-card {
+            background: var(--bg-color);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s ease;
+        }
+
+        .team-photo-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .team-photo {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .team-photo-caption {
+            padding: 24px;
+        }
+
+        .team-photo-caption h3 {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .team-photo-caption p {
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+
+        .training-camps-section {
+            border-top: 2px solid var(--border-color);
+            padding-top: 48px;
+        }
+
+        .subsection-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .training-photos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+
+        .training-photo-card {
+            background: var(--surface-color);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s ease;
+        }
+
+        .training-photo-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .training-photo {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .training-photo-caption {
+            padding: 16px;
+        }
+
+        .training-photo-caption h4 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+
+        .training-photo-caption p {
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
         /* Year sections */
         .year-section {
             margin-bottom: 48px;
@@ -365,6 +563,38 @@
             
             .filter-controls {
                 justify-content: flex-start;
+            }
+            
+            .team-photos-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .training-photos-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 16px;
+            }
+            
+            .alumni-info {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            
+            .profile-image {
+                width: 80px;
+                height: 80px;
+            }
+            
+            .section-title {
+                font-size: 24px;
+            }
+            
+            .team-photo-caption h3 {
+                font-size: 18px;
             }
         }
     </style>
@@ -431,6 +661,18 @@
                     <div class="stat-number" id="unique-schools">-</div>
                     <div class="stat-label">Учебных заведений</div>
                 </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="abroad-alumni">-</div>
+                    <div class="stat-label">Работают за границей</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="professors">-</div>
+                    <div class="stat-label">Профессоров</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="it-specialists">-</div>
+                    <div class="stat-label">IT-специалистов</div>
+                </div>
             </div>
         </div>
     </section>
@@ -446,6 +688,77 @@
                 <button class="filter-btn" data-filter="mention">Похвальные отзывы</button>
                 <button class="filter-btn" data-filter="bsu-lyceum">Лицей БГУ</button>
                 <button class="filter-btn" data-filter="gymnasium-29">Гимназия №29</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Photos -->
+    <section class="team-photos-section">
+        <div class="container">
+            <h2 class="section-title">Команды IPhO по годам</h2>
+            <div class="team-photos-grid">
+                <div class="team-photo-card">
+                    <img src="img/ipho_2024.jpg" alt="Команда IPhO 2024" class="team-photo">
+                    <div class="team-photo-caption">
+                        <h3>IPhO 2024 - Иран</h3>
+                        <p>Алина Полонская (золото), Михаил Хурсин (серебро), Андрей Ёрш, Артём Левко, Илья Иванов (бронза)</p>
+                    </div>
+                </div>
+                <div class="team-photo-card">
+                    <img src="img/ipho_2019.jpg" alt="Команда IPhO 2019" class="team-photo">
+                    <div class="team-photo-caption">
+                        <h3>IPhO 2019 - Израиль (50-я юбилейная)</h3>
+                        <p>Евгений Дядьков (золото), Александр Каленчиц, Михаил Макей, Андрей Кацевич, Алексей Быков (бронза)</p>
+                    </div>
+                </div>
+                <div class="team-photo-card">
+                    <img src="img/ipho_2018.jpg" alt="Команда IPhO 2018" class="team-photo">
+                    <div class="team-photo-caption">
+                        <h3>IPhO 2018 - Португалия</h3>
+                        <p>Евгений Ханкович, Евгений Дядьков (серебро), Владислав Фядурка, Николай Зуников (бронза), Кырам Аль-Харба</p>
+                    </div>
+                </div>
+                <div class="team-photo-card">
+                    <img src="img/ipho_2015.jpg" alt="Команда IPhO 2015" class="team-photo">
+                    <div class="team-photo-caption">
+                        <h3>IPhO 2015 - Индия</h3>
+                        <p>Антон Талкачов (золото), Богдан Звяжинский (серебро), Евгений Шурыгин, Артём Пиваварчик, Владислав Климашонок (бронза)</p>
+                    </div>
+                </div>
+                <div class="team-photo-card">
+                    <img src="img/ipho_2004.jpg" alt="Команда IPhO 2004" class="team-photo">
+                    <div class="team-photo-caption">
+                        <h3>IPhO 2004 - Южная Корея (Исторический успех)</h3>
+                        <p>Александр Михалычев (1-е место, золото), Руслан Сакович (золото), Сергей Квачонок, Алексей Бобрик (серебро), Александр Плехов (бронза)</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="training-camps-section">
+                <h3 class="subsection-title">Тренировочные сборы</h3>
+                <div class="training-photos-grid">
+                    <div class="training-photo-card">
+                        <img src="img/training_camp_2025.jpg" alt="Тренировочный сбор 2025" class="training-photo">
+                        <div class="training-photo-caption">
+                            <h4>Тренировочный сбор 2025</h4>
+                            <p>Подготовка к IPhO 2025</p>
+                        </div>
+                    </div>
+                    <div class="training-photo-card">
+                        <img src="img/training_camp_2024.jpg" alt="Тренировочный сбор 2024" class="training-photo">
+                        <div class="training-photo-caption">
+                            <h4>Тренировочный сбор 2024</h4>
+                            <p>Подготовка к IPhO 2024</p>
+                        </div>
+                    </div>
+                    <div class="training-photo-card">
+                        <img src="img/belpho_2022_open.jpg" alt="BelPhO 2022" class="training-photo">
+                        <div class="training-photo-caption">
+                            <h4>BelPhO 2022 - Открытие</h4>
+                            <p>Торжественное открытие белорусской физической олимпиады</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -852,7 +1165,13 @@
                 experiment: null,
                 total: 34.8,
                 totalContestants: 208,
-                achievements: []
+                achievements: ["Выдающийся ученый в области теоретической физики"],
+                profileImage: "img/Pavel Buividovich.jpg",
+                currentStatus: "Профессор физики",
+                university: "University of Liverpool",
+                country: "Великобритания",
+                profession: "Professor of Theoretical Physics",
+                socialLinks: []
             },
             {
                 name: "Андрей Андриевский",
@@ -973,7 +1292,13 @@
                 experiment: null,
                 total: 47.7,
                 totalContestants: 219,
-                achievements: ["Абсолютный победитель IPhO-2004", "Рекорд Беларуси"]
+                achievements: ["Абсолютный победитель IPhO-2004", "Рекорд Беларуси", "Единственный абсолютный победитель от Беларуси"],
+                profileImage: "img/A. Mikhalychev.jpg",
+                currentStatus: "Профессор физики",
+                university: "University of Regensburg",
+                country: "Германия",
+                profession: "Professor of Theoretical Physics",
+                socialLinks: []
             },
             {
                 name: "Руслан Сакович",
@@ -1241,7 +1566,12 @@
                 experiment: null,
                 total: 26.80,
                 totalContestants: 261,
-                achievements: []
+                achievements: [],
+                currentStatus: "Специалист в области ИТ",
+                university: "—",
+                country: "Беларусь",
+                profession: "Software Engineer",
+                socialLinks: []
             },
             {
                 name: "Евгений Арлоу",
@@ -1254,7 +1584,12 @@
                 experiment: null,
                 total: 23.35,
                 totalContestants: 261,
-                achievements: []
+                achievements: [],
+                currentStatus: "Специалист в области ИТ",
+                university: "—",
+                country: "Беларусь",
+                profession: "Software Developer",
+                socialLinks: []
             },
             {
                 name: "Егор Гончаров",
@@ -1267,7 +1602,12 @@
                 experiment: null,
                 total: 22.25,
                 totalContestants: 261,
-                achievements: []
+                achievements: [],
+                currentStatus: "Специалист в области ИТ",
+                university: "—",
+                country: "Беларусь",
+                profession: "Software Engineer",
+                socialLinks: []
             },
             {
                 name: "Анастасия Карпович",
@@ -1280,7 +1620,13 @@
                 experiment: null,
                 total: 17.90,
                 totalContestants: 261,
-                achievements: []
+                achievements: [],
+                profileImage: "img/Anastasiya Karpovich.jpg",
+                currentStatus: "Специалист в области ИТ",
+                university: "—",
+                country: "Беларусь",
+                profession: "Software Developer",
+                socialLinks: []
             },
             {
                 name: "Алексей Сытов",
@@ -1293,7 +1639,13 @@
                 experiment: null,
                 total: 14.10,
                 totalContestants: 261,
-                achievements: []
+                achievements: [],
+                profileImage: "img/Alexei Sytov.jpeg",
+                currentStatus: "Специалист в области ИТ",
+                university: "—",
+                country: "Беларусь",
+                profession: "Software Engineer",
+                socialLinks: []
             },
 
             // 2009
@@ -1509,7 +1861,13 @@
                 experiment: 10.40,
                 total: 32.70,
                 totalContestants: 378,
-                achievements: []
+                achievements: [],
+                profileImage: "img/Albert Samoilenka.jpg",
+                currentStatus: "Специалист в области ИТ",
+                university: "—",
+                country: "Беларусь",
+                profession: "Software Engineer",
+                socialLinks: []
             },
             {
                 name: "Игорь Лобач",
@@ -1522,7 +1880,13 @@
                 experiment: 11.00,
                 total: 32.00,
                 totalContestants: 378,
-                achievements: []
+                achievements: [],
+                profileImage: "img/Ihar Lobach.png",
+                currentStatus: "Специалист в области ИТ",
+                university: "—",
+                country: "Беларусь",
+                profession: "Software Engineer",
+                socialLinks: []
             },
             {
                 name: "Алексей Хацкевич",
@@ -1643,7 +2007,13 @@
                 experiment: null,
                 total: 19.45,
                 totalContestants: 374,
-                achievements: []
+                achievements: [],
+                profileImage: "img/Stasis Chuchurka.jpg",
+                currentStatus: "Специалист в области ИТ",
+                university: "—",
+                country: "Беларусь",
+                profession: "Software Developer",
+                socialLinks: []
             },
             {
                 name: "Илья Перепечка",
@@ -1656,7 +2026,13 @@
                 experiment: null,
                 total: 22.70,
                 totalContestants: 374,
-                achievements: []
+                achievements: [],
+                profileImage: "img/Ilya Perapechka.png",
+                currentStatus: "Специалист в области ИТ",
+                university: "—",
+                country: "Беларусь",
+                profession: "Software Engineer",
+                socialLinks: []
             },
             {
                 name: "Антон Хвалюк",
@@ -1844,7 +2220,12 @@
                 experiment: null,
                 total: 21.4,
                 totalContestants: 311,
-                achievements: []
+                achievements: [],
+                currentStatus: "Студент",
+                university: "Skoltech (Applied Mathematics and Physics)",
+                country: "Россия",
+                profession: "Студент",
+                socialLinks: []
             },
             {
                 name: "Евгений Шарамед",
@@ -1857,7 +2238,15 @@
                 experiment: null,
                 total: 21.3,
                 totalContestants: 311,
-                achievements: []
+                achievements: [],
+                profileImage: "img/Yauheni Sharamed.jpg",
+                currentStatus: "Студент",
+                university: "—",
+                country: "Беларусь",
+                profession: "Студент",
+                socialLinks: [
+                    { type: "telegram", url: "https://t.me/sharamed" }
+                ]
             },
             {
                 name: "Павел Курач",
@@ -1870,7 +2259,13 @@
                 experiment: null,
                 total: 16.8,
                 totalContestants: 311,
-                achievements: []
+                achievements: [],
+                profileImage: "img/Pavel Kurach.jpg",
+                currentStatus: "Студент",
+                university: "—",
+                country: "Беларусь",
+                profession: "Студент",
+                socialLinks: []
             },
             {
                 name: "Валентин Дарафеев",
@@ -1883,7 +2278,12 @@
                 experiment: null,
                 total: 16.0,
                 totalContestants: 311,
-                achievements: []
+                achievements: [],
+                currentStatus: "Студент",
+                university: "—",
+                country: "Беларусь",
+                profession: "Студент",
+                socialLinks: []
             },
             {
                 name: "Никита Стрыжак",
@@ -1896,7 +2296,16 @@
                 experiment: null,
                 total: 15.8,
                 totalContestants: 311,
-                achievements: []
+                achievements: [],
+                profileImage: "img/Mikita Stryzhak.jpg",
+                currentStatus: "Software Developer",
+                university: "—",
+                country: "Беларусь",
+                profession: "Software Developer",
+                socialLinks: [
+                    { type: "github", url: "https://github.com/mikitas" },
+                    { type: "linkedin", url: "https://www.linkedin.com/in/mikita-stryzhak-6aba50158" }
+                ]
             },
 
             // 2018
@@ -1911,7 +2320,15 @@
                 experiment: 7.85,
                 total: 28.75,
                 totalContestants: 277,
-                achievements: []
+                achievements: [],
+                profileImage: "img/Yauheni Hankovich.jpg",
+                currentStatus: "Студент университета",
+                university: "—",
+                country: "Беларусь",
+                profession: "Студент",
+                socialLinks: [
+                    { type: "linkedin", url: "https://www.linkedin.com/in/yauheni-hankovich-7310591b8/?originalSubdomain=by" }
+                ]
             },
             {
                 name: "Евгений Дядьков",
@@ -1924,7 +2341,12 @@
                 experiment: 7.50,
                 total: 27.40,
                 totalContestants: 277,
-                achievements: []
+                achievements: [],
+                currentStatus: "Студент университета",
+                university: "—",
+                country: "Беларусь",
+                profession: "Студент",
+                socialLinks: []
             },
             {
                 name: "Владислав Фядурка",
@@ -1937,7 +2359,13 @@
                 experiment: 6.40,
                 total: 19.20,
                 totalContestants: 277,
-                achievements: []
+                achievements: [],
+                profileImage: "img/ULADZISLAU FIADURKA.png",
+                currentStatus: "Студент университета",
+                university: "—",
+                country: "Беларусь",
+                profession: "Студент",
+                socialLinks: []
             },
             {
                 name: "Николай Зуников",
@@ -1950,7 +2378,15 @@
                 experiment: 8.45,
                 total: 19.05,
                 totalContestants: 277,
-                achievements: []
+                achievements: [],
+                profileImage: "img/NIKOLAY ZUNIKOV.png",
+                currentStatus: "Исследователь",
+                university: "Russian Quantum Center",
+                country: "Россия",
+                profession: "Physics Researcher",
+                socialLinks: [
+                    { type: "researchgate", url: "https://www.researchgate.net/profile/Nikolay-Zunikov" }
+                ]
             },
             {
                 name: "Кырам Аль-Харба",
@@ -1963,7 +2399,15 @@
                 experiment: 4.90,
                 total: 16.20,
                 totalContestants: 277,
-                achievements: []
+                achievements: [],
+                profileImage: "img/KIRAM AL-KHARBA.jpg",
+                currentStatus: "Студент",
+                university: "—",
+                country: "Беларусь",
+                profession: "Студент",
+                socialLinks: [
+                    { type: "telegram", url: "https://t.me/al_kharba" }
+                ]
             },
 
             // 2019 – 50th anniversary
@@ -1978,7 +2422,13 @@
                 experiment: null,
                 total: 28.2,
                 totalContestants: 251,
-                achievements: ["Участник юбилейной 50-й IPhO"]
+                achievements: ["Участник юбилейной 50-й IPhO", "Золотая медаль IPhO"],
+                profileImage: "img/YAUHENI DZIADKOU.jpg",
+                currentStatus: "Студент университета",
+                university: "—",
+                country: "Беларусь",
+                profession: "Студент",
+                socialLinks: []
             },
             {
                 name: "Александр Каленчиц",
@@ -1991,7 +2441,15 @@
                 experiment: null,
                 total: 14.7,
                 totalContestants: 251,
-                achievements: []
+                achievements: [],
+                profileImage: "img/Александр Каленчиц.jpg",
+                currentStatus: "Студент университета",
+                university: "—",
+                country: "Беларусь",
+                profession: "Студент",
+                socialLinks: [
+                    { type: "linkedin", url: "https://www.linkedin.com/in/aleksandr-kalenchits/" }
+                ]
             },
             {
                 name: "Михаил Макей",
@@ -2004,7 +2462,14 @@
                 experiment: null,
                 total: 12.9,
                 totalContestants: 251,
-                achievements: []
+                achievements: [],
+                currentStatus: "Студент университета",
+                university: "—",
+                country: "Беларусь",
+                profession: "Студент",
+                socialLinks: [
+                    { type: "linkedin", url: "https://www.linkedin.com/in/mihail-makei-430b681a9/" }
+                ]
             },
             {
                 name: "Андрей Кацевич",
@@ -2017,7 +2482,13 @@
                 experiment: null,
                 total: 12.9,
                 totalContestants: 251,
-                achievements: []
+                achievements: [],
+                profileImage: "img/Andrei Katsevich.jpg",
+                currentStatus: "Студент университета",
+                university: "—",
+                country: "Беларусь",
+                profession: "Студент",
+                socialLinks: []
             },
             {
                 name: "Алексей Быков",
@@ -2030,7 +2501,12 @@
                 experiment: null,
                 total: 12.5,
                 totalContestants: 251,
-                achievements: []
+                achievements: [],
+                currentStatus: "Студент университета",
+                university: "—",
+                country: "Беларусь",
+                profession: "Студент",
+                socialLinks: []
             },
 
             // 2020 – IPhO not held (COVID-19)
@@ -2047,7 +2523,16 @@
                 experiment: 10.62,
                 total: 33.72,
                 totalContestants: 262,
-                achievements: ["Участник онлайн-олимпиады COVID-19"]
+                achievements: ["Участник онлайн-олимпиады COVID-19", "Золотая медаль IPhO"],
+                profileImage: "img/Michael Kharton.jpg",
+                currentStatus: "Студент университета",
+                university: "БГУ",
+                country: "Беларусь",
+                profession: "Студент физического факультета",
+                socialLinks: [
+                    { type: "telegram", url: "https://t.me/MichelKharton" },
+                    { type: "instagram", url: "https://www.instagram.com/michelkharton/" }
+                ]
             },
             {
                 name: "Денис Дядьков",
@@ -2060,7 +2545,15 @@
                 experiment: 9.10,
                 total: 24.60,
                 totalContestants: 262,
-                achievements: ["Участник онлайн-олимпиады COVID-19"]
+                achievements: ["Участник онлайн-олимпиады COVID-19"],
+                profileImage: "img/Dzianis Dziadkou.jpg",
+                currentStatus: "Разработчик",
+                university: "—",
+                country: "Беларусь",
+                profession: "Software Developer",
+                socialLinks: [
+                    { type: "github", url: "https://github.com/DziadkouDzianis" }
+                ]
             },
             {
                 name: "Тимур Голубович",
@@ -2073,7 +2566,13 @@
                 experiment: 8.44,
                 total: 19.54,
                 totalContestants: 262,
-                achievements: ["Участник онлайн-олимпиады COVID-19"]
+                achievements: ["Участник онлайн-олимпиады COVID-19"],
+                profileImage: "img/Timur Golubovich.jpg",
+                currentStatus: "Студент",
+                university: "—",
+                country: "Беларусь",
+                profession: "Студент",
+                socialLinks: []
             },
             {
                 name: "Никита Цыбленко",
@@ -2086,7 +2585,13 @@
                 experiment: 5.05,
                 total: 18.85,
                 totalContestants: 262,
-                achievements: ["Участник онлайн-олимпиады COVID-19"]
+                achievements: ["Участник онлайн-олимпиады COVID-19"],
+                profileImage: "img/Mikita Tsybliyenka.jpg",
+                currentStatus: "Студент",
+                university: "—",
+                country: "Беларусь",
+                profession: "Студент",
+                socialLinks: []
             },
             {
                 name: "Ольга Турчина",
@@ -2099,7 +2604,13 @@
                 experiment: 2.26,
                 total: 11.76,
                 totalContestants: 262,
-                achievements: ["Участник онлайн-олимпиады COVID-19"]
+                achievements: ["Участник онлайн-олимпиады COVID-19"],
+                profileImage: "img/Volha Turchyna.jpg",
+                currentStatus: "Студентка",
+                university: "—",
+                country: "Беларусь",
+                profession: "Студентка",
+                socialLinks: []
             },
 
             // 2022 – 52nd IPhO, Switzerland (online)
@@ -2114,7 +2625,14 @@
                 experiment: 11.15,
                 total: 16.45,
                 totalContestants: 302,
-                achievements: []
+                achievements: [],
+                currentStatus: "Студент",
+                university: "—",
+                country: "Беларусь",
+                profession: "Студент",
+                socialLinks: [
+                    { type: "vk", url: "https://vk.com/id260816896" }
+                ]
             },
             {
                 name: "Владислав Багинский",
@@ -2127,7 +2645,13 @@
                 experiment: 7.95,
                 total: 12.55,
                 totalContestants: 302,
-                achievements: []
+                achievements: [],
+                profileImage: "img/baginski_kapiarsehau.jpg",
+                currentStatus: "Студент",
+                university: "—",
+                country: "Беларусь",
+                profession: "Студент",
+                socialLinks: []
             },
             {
                 name: "Александр Копертехов",
@@ -2140,7 +2664,12 @@
                 experiment: 8.10,
                 total: 12.00,
                 totalContestants: 302,
-                achievements: []
+                achievements: [],
+                currentStatus: "Студент",
+                university: "—",
+                country: "Беларусь",
+                profession: "Студент",
+                socialLinks: []
             },
             {
                 name: "Ростислав Климко",
@@ -2153,7 +2682,14 @@
                 experiment: 9.95,
                 total: 11.95,
                 totalContestants: 302,
-                achievements: []
+                achievements: [],
+                currentStatus: "Студент",
+                university: "—",
+                country: "Беларусь",
+                profession: "Студент",
+                socialLinks: [
+                    { type: "vk", url: "https://vk.com/rawstickk" }
+                ]
             },
             {
                 name: "Яна Пигунова",
@@ -2166,7 +2702,15 @@
                 experiment: 4.65,
                 total: 9.05,
                 totalContestants: 302,
-                achievements: []
+                achievements: [],
+                profileImage: "img/yana.jpg",
+                currentStatus: "Студентка",
+                university: "—",
+                country: "Беларусь",
+                profession: "Студентка",
+                socialLinks: [
+                    { type: "vk", url: "https://vk.com/id557414088" }
+                ]
             },
 
             // 2023 – 53rd IPhO (Tokyo) — Беларусь не участвовала
@@ -2183,7 +2727,17 @@
                 experiment: 12.42,
                 total: 33.92,
                 totalContestants: 135,
-                achievements: []
+                achievements: [],
+                profileImage: "img/alina_polonskay.jpg",
+                currentStatus: "Студентка",
+                university: "В процессе поступления",
+                country: "Беларусь",
+                profession: "Студентка",
+                socialLinks: [
+                    { type: "linkedin", url: "https://www.linkedin.com/in/apolonskaa/" },
+                    { type: "instagram", url: "https://www.instagram.com/a_palonskaa/" },
+                    { type: "telegram", url: "https://t.me/a_palonskaa" }
+                ]
             },
             {
                 name: "Михаил Хурсин",
@@ -2196,7 +2750,15 @@
                 experiment: 8.38,
                 total: 21.98,
                 totalContestants: 135,
-                achievements: []
+                achievements: [],
+                profileImage: "img/hursin_2024.jpg",
+                currentStatus: "Студент",
+                university: "В процессе поступления",
+                country: "Беларусь",
+                profession: "Студент",
+                socialLinks: [
+                    { type: "telegram", url: "https://t.me/sarkilb" }
+                ]
             },
             {
                 name: "Андрей Ёрш",
@@ -2209,7 +2771,17 @@
                 experiment: 9.15,
                 total: 19.15,
                 totalContestants: 135,
-                achievements: []
+                achievements: [],
+                profileImage: "img/ersh_2024.jpg",
+                currentStatus: "Студент",
+                university: "В процессе поступления",
+                country: "Беларусь",
+                profession: "Студент",
+                socialLinks: [
+                    { type: "telegram", url: "https://t.me/E_Andrew_02" },
+                    { type: "linkedin", url: "https://www.linkedin.com/in/andrei-yersh-33b28a2a5/" },
+                    { type: "other", url: "https://savchenkosolutions.com/user/a.yersh", name: "Savchenko Solutions" }
+                ]
             },
             {
                 name: "Артём Левко",
@@ -2222,7 +2794,17 @@
                 experiment: 7.42,
                 total: 18.42,
                 totalContestants: 135,
-                achievements: []
+                achievements: [],
+                profileImage: "img/ivanov_levko_ersh_2024.jpg",
+                currentStatus: "Студент",
+                university: "В процессе поступления",
+                country: "Беларусь",
+                profession: "Студент",
+                socialLinks: [
+                    { type: "telegram", url: "https://t.me/Jepkins" },
+                    { type: "instagram", url: "https://www.instagram.com/jepkinsss/" },
+                    { type: "other", url: "https://savchenkosolutions.com/user/jepkinsss", name: "Savchenko Solutions" }
+                ]
             },
             {
                 name: "Илья Иванов",
@@ -2235,7 +2817,42 @@
                 experiment: 9.15,
                 total: 17.05,
                 totalContestants: 135,
-                achievements: []
+                achievements: [],
+                profileImage: "img/ivanov_levko_ersh_2024.jpg",
+                currentStatus: "Студент",
+                university: "В процессе поступления",
+                country: "Беларусь",
+                profession: "Студент",
+                socialLinks: [
+                    { type: "telegram", url: "https://t.me/serkanchn" },
+                    { type: "instagram", url: "https://www.instagram.com/serkanch_/" }
+                ]
+            },
+
+            // 2024 – Spare participant
+            {
+                name: "Александр Мельниченко",
+                school: "—",
+                year: 2024,
+                ipho: "Запасной на IPhO 2024",
+                award: "mention",
+                rank: "—",
+                theory: null,
+                experiment: null,
+                total: "—",
+                totalContestants: "—",
+                achievements: ["Запасной участник IPhO 2024"],
+                profileImage: "img/melnichenka.png",
+                currentStatus: "Студент-исследователь",
+                university: "—",
+                country: "Беларусь",
+                profession: "Студент, астрофизик",
+                socialLinks: [
+                    { type: "other", url: "https://melnichenka.com/", name: "Personal Website" },
+                    { type: "instagram", url: "https://www.instagram.com/astrosander/" },
+                    { type: "telegram", url: "https://t.me/astrosander" },
+                    { type: "other", url: "https://savchenkosolutions.com/user/astrosander", name: "Savchenko Solutions" }
+                ]
             }
             ];
 
@@ -2264,9 +2881,19 @@
                             ${yearAlumni.map(alumni => `
                                 <div class="alumni-card ${alumni.award}" data-award="${alumni.award}" data-school="${alumni.school.toLowerCase().replace(/\s+/g, '-')}">
                                     <div class="alumni-header">
-                                        <div>
-                                            <div class="alumni-name">${alumni.name}</div>
-                                            <div class="alumni-school">${alumni.school}</div>
+                                        <div class="alumni-info">
+                                            ${alumni.profileImage ? `
+                                                <div class="profile-image">
+                                                    <img src="${alumni.profileImage}" alt="${alumni.name}" onerror="this.style.display='none'">
+                                                </div>
+                                            ` : ''}
+                                            <div class="alumni-text">
+                                                <div class="alumni-name">${alumni.name}</div>
+                                                <div class="alumni-school">${alumni.school}</div>
+                                                ${alumni.currentStatus ? `
+                                                    <div class="current-status">${alumni.currentStatus}</div>
+                                                ` : ''}
+                                            </div>
                                         </div>
                                         <div class="medal-badge medal-${alumni.award}">
                                             ${getMedalText(alumni.award)}
@@ -2298,7 +2925,39 @@
                                                 <span class="detail-value">${alumni.experiment}</span>
                                             </div>
                                         ` : ''}
+                                        
+                                        ${alumni.university ? `
+                                            <div class="detail-row">
+                                                <span class="detail-label">Университет:</span>
+                                                <span class="detail-value">${alumni.university}</span>
+                                            </div>
+                                        ` : ''}
+                                        ${alumni.country ? `
+                                            <div class="detail-row">
+                                                <span class="detail-label">Страна:</span>
+                                                <span class="detail-value">${alumni.country}</span>
+                                            </div>
+                                        ` : ''}
+                                        ${alumni.profession ? `
+                                            <div class="detail-row">
+                                                <span class="detail-label">Профессия:</span>
+                                                <span class="detail-value">${alumni.profession}</span>
+                                            </div>
+                                        ` : ''}
                                     </div>
+                                    
+                                    ${alumni.socialLinks && alumni.socialLinks.length > 0 ? `
+                                        <div class="social-links">
+                                            <div class="social-links-title">Контакты:</div>
+                                            <div class="social-links-list">
+                                                ${alumni.socialLinks.map(link => 
+                                                    `<a href="${link.url}" target="_blank" class="social-link ${link.type}">
+                                                        ${getSocialIcon(link.type)} ${link.name || getSocialName(link.type)}
+                                                    </a>`
+                                                ).join('')}
+                                            </div>
+                                        </div>
+                                    ` : ''}
                                     
                                     ${alumni.achievements.length > 0 ? `
                                         <div class="achievements">
@@ -2327,6 +2986,34 @@
                 'mention': 'Отзыв'
             };
             return medals[award] || award;
+        }
+
+        // Helper function to get social icons
+        function getSocialIcon(type) {
+            const icons = {
+                'linkedin': '<i class="fab fa-linkedin"></i>',
+                'telegram': '<i class="fab fa-telegram"></i>',
+                'instagram': '<i class="fab fa-instagram"></i>',
+                'github': '<i class="fab fa-github"></i>',
+                'vk': '<i class="fab fa-vk"></i>',
+                'researchgate': '<i class="fab fa-researchgate"></i>',
+                'other': '<i class="fas fa-link"></i>'
+            };
+            return icons[type] || '<i class="fas fa-link"></i>';
+        }
+
+        // Helper function to get social names
+        function getSocialName(type) {
+            const names = {
+                'linkedin': 'LinkedIn',
+                'telegram': 'Telegram',
+                'instagram': 'Instagram',
+                'github': 'GitHub',
+                'vk': 'VK',
+                'researchgate': 'ResearchGate',
+                'other': 'Website'
+            };
+            return names[type] || 'Link';
         }
 
         // Filter functionality
@@ -2378,6 +3065,14 @@
             // Count unique schools
             const uniqueSchools = new Set(data.map(alumni => alumni.school)).size;
             
+            // Count career statistics
+            const abroadAlumni = data.filter(alumni => alumni.country && alumni.country !== 'Беларусь').length;
+            const professors = data.filter(alumni => alumni.profession && alumni.profession.toLowerCase().includes('professor')).length;
+            const itSpecialists = data.filter(alumni => alumni.profession && 
+                (alumni.profession.toLowerCase().includes('software') || 
+                 alumni.profession.toLowerCase().includes('developer') || 
+                 alumni.profession.toLowerCase().includes('engineer'))).length;
+            
             // Update DOM
             document.getElementById('total-participants').textContent = totalParticipants;
             document.getElementById('gold-medals').textContent = goldMedals;
@@ -2385,6 +3080,9 @@
             document.getElementById('bronze-medals').textContent = bronzeMedals;
             document.getElementById('mentions').textContent = mentions;
             document.getElementById('unique-schools').textContent = uniqueSchools;
+            document.getElementById('abroad-alumni').textContent = abroadAlumni;
+            document.getElementById('professors').textContent = professors;
+            document.getElementById('it-specialists').textContent = itSpecialists;
         }
 
         // Initialize
