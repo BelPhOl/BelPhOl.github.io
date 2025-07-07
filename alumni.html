@@ -427,18 +427,42 @@
 
         /* Savchenko Solutions highlighting */
         .social-link.savchenko {
-            background: linear-gradient(135deg, #ff6b6b, #ffa500);
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
             color: white;
             font-weight: 600;
-            border: 2px solid #ff4757;
-            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 4px 20px rgba(99, 102, 241, 0.3);
             position: relative;
             overflow: hidden;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .social-link.savchenko .savchenko-logo {
+            width: 18px;
+            height: 18px;
+            flex-shrink: 0;
+            filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1));
+        }
+
+        .social-link.savchenko .savchenko-logo svg {
+            width: 100%;
+            height: 100%;
         }
 
         .social-link.savchenko::before {
-            content: "🚀";
-            margin-right: 4px;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+            opacity: 0;
+            transition: opacity 0.3s ease;
         }
 
         .social-link.savchenko::after {
@@ -449,7 +473,11 @@
             width: 100%;
             height: 100%;
             background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-            transition: left 0.5s;
+            transition: left 0.6s ease;
+        }
+
+        .social-link.savchenko:hover::before {
+            opacity: 1;
         }
 
         .social-link.savchenko:hover::after {
@@ -457,9 +485,13 @@
         }
 
         .social-link.savchenko:hover {
-            background: linear-gradient(135deg, #ff4757, #ff6348);
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+            background: linear-gradient(135deg, #7c3aed, #a855f7);
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 8px 25px rgba(99, 102, 241, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.1);
+        }
+
+        .social-link.savchenko:active {
+            transform: translateY(-1px) scale(0.98);
         }
 
         /* Enhanced name display */
@@ -3401,7 +3433,7 @@
                 'github': '<i class="fab fa-github"></i>',
                 'vk': '<i class="fab fa-vk"></i>',
                 'researchgate': '<i class="fab fa-researchgate"></i>',
-                'savchenko': '<i class="fas fa-rocket"></i>',
+                'savchenko': '<div class="savchenko-logo"><svg class="fill-current" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>Savchenko Solutions</title><g transform="matrix(0.10267875,0,0,0.10222214,16.9286,-6.6555498)" id="g1" style="opacity:0.99; fill:currentColor; stroke:currentColor;"><path class="inverse-fill" d="M -159,108.001 C -159,87.5658 -142.434,71 -121.999,71 H 25.9991 C 46.4341,71 63,87.5658 63,108.001 V 256.999 C 63,277.434 46.4341,294 25.9991,294 H -121.999 C -142.434,294 -159,277.434 -159,256.999 Z"></path></g><g id="g3268" transform="matrix(0.02423146,0,0,-0.01971197,4.6430382,16.968136)"><path id="path3270" d="m 609,722 c 0,-30 -22,-43 -42,-43 -19,0 -41,13 -41,42 0,14 8,37 37,41 -22,19 -53,21 -63,21 -45,0 -79,-25 -93,-209 L 388,325 c -8,-111 -44,-402 -57,-454 -22,-90 -70,-177 -165,-177 -60,0 -110,35 -110,83 0,30 22,43 42,43 19,0 41,-13 41,-42 0,-14 -8,-37 -37,-41 21,-18 51,-21 64,-21 57,0 93,45 106,209 l 19,249 c 9,121 45,403 57,458 17,76 56,173 151,173 60,0 110,-35 110,-83 z" style="fill:gray"></path></g></svg></div>',
                 'other': '<i class="fas fa-link"></i>'
             };
             return icons[type] || '<i class="fas fa-link"></i>';
