@@ -1,38 +1,47 @@
 import os
 import json
+import shutil
 
-def rename_pdfs_from_metadata(metadata_path):
-    with open(metadata_path, 'r', encoding='utf-8') as f:
-        data = json.load(f)
+# Define paths
+pdf_dir = "pdfs"
+metadata_file = "pdf_metadata.json"
 
-    for item in data:
-        original_pdf = item.get("pdf")
-        if not original_pdf or not os.path.exists(original_pdf):
-            print(f"Skipping missing file: {original_pdf}")
-            continue
+# Load the metadata JSON
+with open(metadata_file, 'r', encoding='utf-8') as f:
+    metadata = json.load(f)
 
-        base, ext = os.path.splitext(original_pdf)
-        new_problem = f"{base}_problem{ext}"
-        new_solution = f"{base}_solution{ext}"
+pdf_dir = "pdfs"
+pdf_files = [f for f in os.listdir(pdf_dir) if f.endswith(".pdf")]
 
-        # Rename original PDF to _problem
-        try:
-            os.rename(original_pdf, new_problem)
-            print(f"Renamed: {original_pdf} → {new_problem}")
-        except Exception as e:
-            print(f"Error renaming to problem: {e}")
 
-        # Copy or create _solution version
-        try:
-            if os.path.exists(new_solution):
-                print(f"Solution already exists: {new_solution}")
-            else:
-                # Duplicate the problem file as a placeholder for the solution
-                with open(new_problem, 'rb') as src, open(new_solution, 'wb') as dst:
-                    dst.write(src.read())
-                print(f"Created dummy solution file: {new_solution}")
-        except Exception as e:
-            print(f"Error creating solution: {e}")
+for i in metadata:
+    # print(i)
+    s1 = f"{i["year"]}_{i["stage"]}_{i["grade"]}_{i["number"]}_problem.pdf"
+    s2 = f"{i["year"]}_{i["stage"]}_{i["grade"]}_{i["number"]}_solution.pdf"
 
-# Example usage:
-rename_pdfs_from_metadata("pdf_metadata.json")
+    if s1 in pdf_files:
+        pdf_files.remove(s1)
+
+    if s2 in pdf_files:
+        pdf_files.remove(s2)
+        
+    # if s1 not in pdf_files and s2 not in pdf_files:
+    #     print(s1, s2)
+    #     pass
+
+output_dir = "filtered_pdfs"
+
+# Create output directory if it doesn't exist
+os.makedirs(output_dir, exist_ok=True)
+
+for filename in os.listdir(output_dir):
+    file_path = os.path.join(output_dir, filename)
+    if os.path.isfile(file_path):
+        os.remove(file_path)
+        
+# Copy remaining files
+for i in pdf_files:
+    src = os.path.join(pdf_dir, i)
+    dst = os.path.join(output_dir, i)
+    shutil.copy2(src, dst)
+    print(f"Copied: {i}")
