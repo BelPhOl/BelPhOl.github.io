@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>BelPhO-2022: Первая международная олимпиада по физике</title>
+   <meta name="keywords" content="BelPhO-2022, международная олимпиада, физика, школьники, научное образование">
+   <meta name="description" content="Историческое событие: первая международная Белорусская физическая олимпиада объединила 94 участника из 9 стран мира">
+   <meta http-equiv="content-language" content="ru">
+   
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+   <link rel="icon" href="../img/logo.png" type="image/png" />
+   
+   <style>
+      :root {
+         --primary-color: #2563eb;
+         --primary-dark: #1d4ed8;
+         --secondary-color: #64748b;
+         --accent-color: #f59e0b;
+         --success-color: #10b981;
+         --bg-color: #f8fafc;
+         --surface-color: #ffffff;
+         --text-primary: #1e293b;
+         --text-secondary: #64748b;
+         --border-color: #e2e8f0;
+         --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+         --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+         --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+         --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      }
+
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      }
+
+      body {
+         font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+         background: var(--bg-color);
+         color: var(--text-primary);
+         line-height: 1.6;
+      }
+
+      .container {
+         max-width: 1000px;
+         margin: 0 auto;
+         padding: 0 20px;
+      }
+
+      .header {
+         background: var(--surface-color);
+         padding: 20px 0;
+         box-shadow: var(--shadow-sm);
+         position: sticky;
+         top: 0;
+         z-index: 100;
+      }
+
+      .header-content {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+      }
+
+      .links-section {
+         background: var(--surface-color);
+         padding: 40px;
+         border-radius: 16px;
+         margin: 40px 0;
+         border: 1px solid var(--border-color);
+      }
+
+      .links-grid {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+         gap: 20px;
+         margin-top: 24px;
+      }
+
+      .link-item {
+         display: flex;
+         align-items: center;
+         gap: 12px;
+         padding: 16px 20px;
+         background: var(--bg-color);
+         border-radius: 8px;
+         text-decoration: none;
+         color: var(--text-primary);
+         transition: all 0.3s ease;
+         border: 1px solid var(--border-color);
+      }
+
+      .link-item:hover {
+         background: var(--primary-color);
+         color: white;
+         transform: translateY(-2px);
+         box-shadow: var(--shadow-md);
+      }
+
+      .logo {
+         display: flex;
+         align-items: center;
+         gap: 12px;
+         font-size: 24px;
+         font-weight: 700;
+         color: var(--primary-color);
+         text-decoration: none;
+      }
+
+      .logo-img {
+         width: 40px;
+         height: 40px;
+         object-fit: contain;
+      }
+
+      .breadcrumb {
+         color: var(--text-secondary);
+         font-size: 14px;
+         margin-bottom: 32px;
+      }
+
+      .breadcrumb a {
+         color: var(--primary-color);
+         text-decoration: none;
+      }
+
+      .article-header {
+         text-align: center;
+         padding: 48px 0;
+         background: var(--gradient-primary);
+         color: white;
+         margin-bottom: 48px;
+      }
+
+      .article-title {
+         font-size: 42px;
+         font-weight: 700;
+         margin-bottom: 16px;
+         line-height: 1.2;
+      }
+
+      .article-subtitle {
+         font-size: 20px;
+         opacity: 0.9;
+         margin-bottom: 24px;
+      }
+
+      .article-meta {
+         display: flex;
+         justify-content: center;
+         gap: 32px;
+         font-size: 14px;
+         opacity: 0.8;
+      }
+
+      .article-content {
+         background: var(--surface-color);
+         padding: 48px;
+         border-radius: 16px;
+         box-shadow: var(--shadow-md);
+         margin-bottom: 48px;
+      }
+
+      .article-content h2 {
+         font-size: 28px;
+         font-weight: 600;
+         color: var(--text-primary);
+         margin: 32px 0 16px 0;
+         border-left: 4px solid var(--primary-color);
+         padding-left: 16px;
+      }
+
+      .article-content h3 {
+         font-size: 22px;
+         font-weight: 600;
+         color: var(--text-primary);
+         margin: 24px 0 12px 0;
+      }
+
+      .article-content p {
+         margin-bottom: 16px;
+         font-size: 16px;
+         line-height: 1.7;
+      }
+
+      .stats-grid {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+         gap: 24px;
+         margin: 32px 0;
+         padding: 32px;
+         background: var(--bg-color);
+         border-radius: 12px;
+      }
+
+      .stat-card {
+         text-align: center;
+         padding: 20px;
+         background: var(--surface-color);
+         border-radius: 8px;
+         box-shadow: var(--shadow-sm);
+      }
+
+      .stat-number {
+         font-size: 32px;
+         font-weight: 700;
+         color: var(--primary-color);
+         margin-bottom: 8px;
+      }
+
+      .stat-label {
+         color: var(--text-secondary);
+         font-size: 14px;
+      }
+
+      .image-gallery {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+         gap: 24px;
+         margin: 32px 0;
+      }
+
+      .image-item {
+         background: var(--surface-color);
+         border-radius: 12px;
+         overflow: hidden;
+         box-shadow: var(--shadow-md);
+      }
+
+      .image-item img {
+         width: 100%;
+         height: 200px;
+         object-fit: cover;
+      }
+
+      .image-caption {
+         padding: 16px;
+         font-size: 14px;
+         color: var(--text-secondary);
+         text-align: center;
+      }
+
+      .winners-section {
+         background: var(--bg-color);
+         padding: 32px;
+         border-radius: 12px;
+         margin: 32px 0;
+      }
+
+      .winners-grid {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+         gap: 24px;
+         margin-top: 24px;
+      }
+
+      .winner-card {
+         background: var(--surface-color);
+         padding: 20px;
+         border-radius: 8px;
+         box-shadow: var(--shadow-sm);
+         border-left: 4px solid var(--accent-color);
+      }
+
+      .winner-card.gold {
+         border-left-color: #ffd700;
+      }
+
+      .winner-card.silver {
+         border-left-color: #c0c0c0;
+      }
+
+      .winner-card.bronze {
+         border-left-color: #cd7f32;
+      }
+
+      .winner-name {
+         font-weight: 600;
+         color: var(--text-primary);
+         margin-bottom: 4px;
+      }
+
+      .winner-school {
+         font-size: 14px;
+         color: var(--text-secondary);
+         margin-bottom: 8px;
+      }
+
+      .winner-medal {
+         font-size: 12px;
+         padding: 4px 8px;
+         border-radius: 4px;
+         font-weight: 500;
+      }
+
+      .medal-gold {
+         background: #ffd700;
+         color: #8b4513;
+      }
+
+      .medal-silver {
+         background: #c0c0c0;
+         color: #2f2f2f;
+      }
+
+      .medal-bronze {
+         background: #cd7f32;
+         color: white;
+      }
+
+      .video-section {
+         text-align: center;
+         margin: 32px 0;
+         padding: 32px;
+         background: var(--surface-color);
+         border-radius: 12px;
+         box-shadow: var(--shadow-md);
+      }
+
+      .video-links {
+         display: flex;
+         justify-content: center;
+         gap: 24px;
+         margin-top: 24px;
+         flex-wrap: wrap;
+      }
+
+      .video-link {
+         display: inline-flex;
+         align-items: center;
+         gap: 8px;
+         background: var(--primary-color);
+         color: white;
+         padding: 12px 24px;
+         border-radius: 8px;
+         text-decoration: none;
+         font-weight: 500;
+         transition: background-color 0.3s ease;
+      }
+
+      .video-link:hover {
+         background: var(--primary-dark);
+      }
+
+      .back-link {
+         display: inline-flex;
+         align-items: center;
+         gap: 8px;
+         color: var(--primary-color);
+         text-decoration: none;
+         font-weight: 500;
+         margin-bottom: 32px;
+         transition: color 0.3s ease;
+      }
+
+      .back-link:hover {
+         color: var(--primary-dark);
+      }
+
+      @media (max-width: 768px) {
+         .article-title {
+            font-size: 32px;
+         }
+         
+         .article-content {
+            padding: 24px;
+         }
+         
+         .stats-grid {
+            grid-template-columns: repeat(2, 1fr);
+         }
+         
+         .image-gallery {
+            grid-template-columns: 1fr;
+         }
+      }
+   </style>
+</head>
+
+<body>
+   <header class="header">
+      <div class="container">
+         <div class="header-content">
+            <a href="../../" class="logo">
+               <img src="../../img/logo.png" alt="BelPhO Logo" class="logo-img">
+               <span>BelPhO</span>
+            </a>
+         </div>
+      </div>
+   </header>
+
+   <main class="container">
+      <nav class="breadcrumb">
+         <a href="../../">Главная</a> / <a href="../">Новости</a> / BelPhO-2022: Первая международная олимпиада
+      </nav>
+
+      <a href="./" class="back-link">
+         <i class="fas fa-arrow-left"></i>
+         Назад к новостям
+      </a>
+
+      <article>
+         <header class="article-header">
+            <h1 class="article-title">🌍 BelPhO-2022: Историческая веха международного научного сотрудничества</h1>
+            <p class="article-subtitle">Первая международная Белорусская физическая олимпиада объединила 94 талантливых школьника из 9 стран мира</p>
+            <div class="article-meta">
+               <span><i class="fas fa-calendar"></i> 20-26 ноября 2022</span>
+               <span><i class="fas fa-map-marker-alt"></i> Минск, Лицей БГУ</span>
+               <span><i class="fas fa-clock"></i> 8 минут чтения</span>
+            </div>
+         </header>
+
+         <div class="article-content">
+            <div class="stats-grid">
+               <div class="stat-card">
+                  <div class="stat-number">94</div>
+                  <div class="stat-label">Участника</div>
+               </div>
+               <div class="stat-card">
+                  <div class="stat-number">9</div>
+                  <div class="stat-label">Стран</div>
+               </div>
+               <div class="stat-card">
+                  <div class="stat-number">2</div>
+                  <div class="stat-label">Возрастные группы</div>
+               </div>
+               <div class="stat-card">
+                  <div class="stat-number">2</div>
+                  <div class="stat-label">Языка проведения</div>
+               </div>
+            </div>
+
+            <p>20 ноября 2022 года в Лицее Белорусского государственного университета состоялось открытие исторического события — первой Открытой Белорусской физической олимпиады школьников. Это мероприятие стало важной вехой для международного научного сообщества, объединив молодые таланты из девяти стран мира.</p>
+
+            <h2>🌟 Международное участие</h2>
+            <p>В олимпиаде приняли участие команды из следующих стран:</p>
+            <ul style="margin: 16px 0 16px 32px; line-height: 1.8;">
+               <li>🇧🇾 Республика Беларусь</li>
+               <li>🇷🇺 Российская Федерация</li>
+               <li>🇦🇲 Республика Армения</li>
+               <li>🇰🇿 Республика Казахстан</li>
+               <li>🇰🇬 Кыргызская Республика</li>
+               <li>🇸🇾 Сирийская Арабская Республика</li>
+               <li>🇹🇯 Республика Таджикистан</li>
+               <li>🇹🇷 Турецкая Республика</li>
+               <li>🇺🇿 Республика Узбекистан</li>
+            </ul>
+
+            <p>Каждая страна представила по 10 участников в двух возрастных группах, что составило общее количество в 94 человека. Олимпиада проводилась на русском и английском языках, что обеспечило комфортные условия для всех участников.</p>
+
+            <div class="image-gallery">
+               <div class="image-item">
+                  <img src="opening_ceremony.jpg" alt="Церемония открытия">
+                  <div class="image-caption">Торжественная церемония открытия BelPhO-2022</div>
+               </div>
+               <div class="image-item">
+                  <img src="belpho_banner.jpg" alt="Баннер олимпиады">
+                  <div class="image-caption">Официальный баннер первой международной BelPhO</div>
+               </div>
+               <div class="image-item">
+                  <img src="BelPhO_logo_2022.png" alt="Логотип BelPhO-2022">
+                  <div class="image-caption">Логотип BelPhO-2022</div>
+               </div>
+            </div>
+
+            <h2>🏆 Формат и структура соревнования</h2>
+            <p>Олимпиада проходила в инновационном дистанционном формате для двух возрастных групп:</p>
+            <ul style="margin: 16px 0 16px 32px; line-height: 1.8;">
+               <li><strong>Младшая группа:</strong> участники от 13 до 15 лет</li>
+               <li><strong>Старшая группа:</strong> участники от 16 до 18 лет</li>
+            </ul>
+
+            <p>Соревнование включало два основных тура:</p>
+            
+            <h3>📚 Теоретический тур</h3>
+            <p>Участники решали обширные задания из различных разделов школьной физики. На выполнение заданий отводилось до пяти часов, что позволило школьникам продемонстрировать глубокие знания и аналитические способности.</p>
+
+            <h3>🔬 Экспериментальный тур</h3>
+            <p>Уникальность экспериментального тура заключалась в том, что задания были составлены таким образом, чтобы участники могли провести опыты без специального оборудования. Как отметил председатель жюри, заведующий кафедрой общей физики БГУ Анатолий Слободянюк: "В задании описаны реальные эксперименты, ученики должны разобраться в них. Основная задача – понять суть исследуемого явления и обработать имеющийся результат: посчитать, построить графики, высказать гипотезы."</p>
+
+            <div class="image-gallery">
+               <div class="image-item">
+                  <img src="belarus_physics_team_during_theoretical_stage.JPG" alt="Команда Беларуси во время теоретического тура">
+                  <div class="image-caption">Белорусская команда во время теоретического тура</div>
+               </div>
+               <div class="image-item">
+                  <img src="program_belpho.png" alt="Программа олимпиады">
+                  <div class="image-caption">Программа проведения BelPhO-2022</div>
+               </div>
+               <div class="image-item">
+                  <img src="macro_plan_everyone_technopark.jpg" alt="Посещение технопарка">
+                  <div class="image-caption">Участники в Национальном детском технопарке</div>
+               </div>
+            </div>
+
+            <div class="links-section">
+               <h2><i class="fas fa-file-download"></i> Материалы и документы</h2>
+               <p>Все материалы BelPhO-2022 доступны для изучения и использования в образовательных целях:</p>
+               
+               <div class="links-grid">
+                  <a href="../../problems/fifth/5_etap_2023_theoretical_problems.pdf" class="link-item" target="_blank">
+                     <i class="fas fa-file-alt"></i>
+                     <span>Условия теоретического тура</span>
+                  </a>
+                  <a href="../../problems/fifth/5_etap_2023_theoretical_solutions.pdf" class="link-item" target="_blank">
+                     <i class="fas fa-check-circle"></i>
+                     <span>Решения теоретического тура</span>
+                  </a>
+                  <a href="../../problems/fifth/5_etap_2023_expiremental_problems.pdf" class="link-item" target="_blank">
+                     <i class="fas fa-flask"></i>
+                     <span>Условия экспериментального тура</span>
+                  </a>
+                  <a href="../../problems/fifth/5_etap_2023_expiremental_solutions.pdf" class="link-item" target="_blank">
+                     <i class="fas fa-lightbulb"></i>
+                     <span>Решения экспериментального тура</span>
+                  </a>
+                  <a href="../../problems/fifth/5_etap_2023_theoretical_shemes.pdf" class="link-item" target="_blank">
+                     <i class="fas fa-drafting-compass"></i>
+                     <span>Схемы оценивания теории</span>
+                  </a>
+                  <a href="../../problems/fifth/5_etap_2023_expiremental_shemes.pdf" class="link-item" target="_blank">
+                     <i class="fas fa-ruler-combined"></i>
+                     <span>Схемы оценивания эксперимента</span>
+                  </a>
+               </div>
+            </div>
+
+            <h2>👥 Организация и жюри</h2>
+            <p>Организатором Открытой Белорусской физической олимпиады выступил оргкомитет Международной олимпиады по физике 2022 года. Международное жюри включало представителей научного сообщества из Беларуси, Армении и Казахстана, что обеспечило объективность и высокий уровень оценки работ участников.</p>
+
+            <div class="image-gallery">
+               <div class="image-item">
+                  <img src="organization_commite.JPG" alt="Оргкомитет">
+                  <div class="image-caption">Члены организационного комитета</div>
+               </div>
+               <div class="image-item">
+                  <img src="organization_commite_2.JPG" alt="Оргкомитет 2">
+                  <div class="image-caption">Работа организационного комитета</div>
+               </div>
+               <div class="image-item">
+                  <img src="анатолий_слободянюк.JPG" alt="Анатолий Слободянюк">
+                  <div class="image-caption">Анатолий Слободянюк, председатель жюри</div>
+               </div>
+            </div>
+
+            <h2>🎯 Руководство команд</h2>
+            <p>Руководитель белорусской команды Артем Пивоварчик отметил уникальность олимпиады: "Каждая страна свои национальные олимпиады проводит с учетом специфики своей школьной программы. Наша школьная программа достаточно широкая, она освещает практически все темы, которые есть в глобальной международной олимпиаде по физике. Для младшей возрастной группы наша олимпиада уникальна, потому что это в принципе единственная международная олимпиада для младших классов."</p>
+
+            <div class="image-gallery">
+               <div class="image-item">
+                  <img src="artem_pivovarchic.png" alt="Артем Пивоварчик">
+                  <div class="image-caption">Артем Пивоварчик, руководитель белорусской команды</div>
+               </div>
+               <div class="image-item">
+                  <img src="opening_ceremony_belarus_team_leaders.jpg" alt="Руководители белорусской команды">
+                  <div class="image-caption">Руководители белорусской команды на церемонии открытия</div>
+               </div>
+            </div>
+
+            <h2>🏅 Результаты и победители</h2>
+            
+            <div class="winners-section">
+               <h3>🥇 Победители от Беларуси</h3>
+               
+               <div class="winners-grid">
+                  <div class="winner-card gold">
+                     <div class="winner-name">Михаил Хурсин</div>
+                     <div class="winner-school">Гимназия №41 г. Минска им. В. Серебряного, X класс</div>
+                     <span class="winner-medal medal-gold">Золотая медаль (младшая группа)</span>
+                  </div>
+                  
+                  <div class="winner-card gold">
+                     <div class="winner-name">Адриан Ревковский</div>
+                     <div class="winner-school">Гимназия №1 им. академика Е.Ф. Карского, г. Гродно, IX класс</div>
+                     <span class="winner-medal medal-gold">Золотая медаль (младшая группа)</span>
+                  </div>
+                  
+                  <div class="winner-card gold">
+                     <div class="winner-name">Роман Плаксенок</div>
+                     <div class="winner-school">Лицей БГУ, XI класс</div>
+                     <span class="winner-medal medal-gold">Золотая медаль (старшая группа)</span>
+                  </div>
+                  
+                  <div class="winner-card silver">
+                     <div class="winner-name">Алина Полонская</div>
+                     <div class="winner-school">Могилевский государственный областной лицей №1, X класс</div>
+                     <span class="winner-medal medal-silver">Серебряная медаль (младшая группа)</span>
+                  </div>
+                  
+                  <div class="winner-card silver">
+                     <div class="winner-name">Ярослав Пряткин</div>
+                     <div class="winner-school">Гимназия №41 г. Минска им. В. Серебряного, IX класс</div>
+                     <span class="winner-medal medal-silver">Серебряная медаль (младшая группа)</span>
+                  </div>
+                  
+                  <div class="winner-card silver">
+                     <div class="winner-name">Денис Кагукин</div>
+                     <div class="winner-school">Полоцкая государственная гимназия №1 им. Ф. Скорины, XI класс</div>
+                     <span class="winner-medal medal-silver">Серебряная медаль (старшая группа)</span>
+                  </div>
+                  
+                  <div class="winner-card silver">
+                     <div class="winner-name">Екатерина Постнова</div>
+                     <div class="winner-school">Лицей БГУ, XI класс</div>
+                     <span class="winner-medal medal-silver">Серебряная медаль (старшая группа)</span>
+                  </div>
+                  
+                  <div class="winner-card silver">
+                     <div class="winner-name">Леонид Кузьменков</div>
+                     <div class="winner-school">Гимназия №14 г. Гомеля, XI класс</div>
+                     <span class="winner-medal medal-silver">Серебряная медаль (старшая группа)</span>
+                  </div>
+                  
+                  <div class="winner-card bronze">
+                     <div class="winner-name">Мартин Лозовский</div>
+                     <div class="winner-school">Гимназия №1 им. академика Е.Ф. Карского, г. Гродно, X класс</div>
+                     <span class="winner-medal medal-bronze">Бронзовая медаль (младшая группа)</span>
+                  </div>
+                  
+                  <div class="winner-card bronze">
+                     <div class="winner-name">Олег Лашкевич</div>
+                     <div class="winner-school">Гимназия №14 г. Гомеля, XI класс</div>
+                     <span class="winner-medal medal-bronze">Бронзовая медаль (старшая группа)</span>
+                  </div>
+               </div>
+            </div>
+
+            <div class="image-gallery">
+               <div class="image-item">
+                  <img src="adrian.jpg" alt="Адриан Ревковский">
+                  <div class="image-caption">Адриан Ревковский, золотая медаль (младшая группа)</div>
+               </div>
+               <div class="image-item">
+                  <img src="polonskay-silver-2022-11-01.jpg" alt="Алина Полонская">
+                  <div class="image-caption">Алина Полонская, серебряная медаль (младшая группа)</div>
+               </div>
+               <div class="image-item">
+                  <img src="denys_kagykin.jpeg" alt="Денис Кагукин">
+                  <div class="image-caption">Денис Кагукин, серебряная медаль (старшая группа)</div>
+               </div>
+            </div>
+
+            <p>Российская команда также показала выдающиеся результаты, завоевав 10 медалей – 6 золотых и 4 серебряных. Особенно отличились учащиеся Физтех-лицея им. П.Л. Капицы и Республиканского лицея для одаренных детей из Саранска.</p>
+
+            <div class="image-gallery">
+               <div class="image-item">
+                  <img src="russian_team.jpg" alt="Российская команда">
+                  <div class="image-caption">Российская команда на олимпиаде</div>
+               </div>
+               <div class="image-item">
+                  <img src="russian_team_2.jpg" alt="Российская команда 2">
+                  <div class="image-caption">Участники российской команды</div>
+               </div>
+               <div class="image-item">
+                  <img src="leanid_kuzmenkou.JPG" alt="Леонид Кузьменков">
+                  <div class="image-caption">Леонид Кузьменков, серебряная медаль (старшая группа)</div>
+               </div>
+            </div>
+
+            <h2>🎭 Культурная программа</h2>
+            <p>Параллельно с соревновательной частью для участников была организована насыщенная культурная программа. Школьники посетили Национальный детский технопарк, Национальный академический Большой театр оперы и балета. Для иностранных участников была подготовлена виртуальная культурная программа, которая помогла им ближе познакомиться с историей и культурой Беларуси.</p>
+
+            <p>Особенно запомнился участникам челлендж, запущенный белорусской командой: необходимо было заснять видеоролик, на котором ребята произносят фразу на белорусском языке «Шчыра вітаем!» ("Искренне приветствуем!").</p>
+
+            <div class="image-gallery">
+               <div class="image-item">
+                  <img src="opening_ceremony_belarus_team_students.jpg" alt="Белорусская команда на открытии">
+                  <div class="image-caption">Белорусская команда на церемонии открытия</div>
+               </div>
+               <div class="image-item">
+                  <img src="opening_ceremony_belarus_team_students_anthem.jpg" alt="Исполнение гимна">
+                  <div class="image-caption">Исполнение национального гимна</div>
+               </div>
+               <div class="image-item">
+                  <img src="martsin_lazouski.jpg" alt="Мартин Лозовский">
+                  <div class="image-caption">Мартин Лозовский, бронзовая медаль (младшая группа)</div>
+               </div>
+            </div>
+
+            <h2>🌍 Международное значение</h2>
+            <p>Первая Открытая Белорусская физическая олимпиада стала важным шагом в развитии международного сотрудничества в области физического образования. Это событие продемонстрировало возможности дистанционного проведения международных научных соревнований и открыло новые перспективы для обмена опытом между странами.</p>
+
+            <p>Олимпиада показала высокий уровень подготовки участников из всех стран и подтвердила важность международного сотрудничества в области образования. Успешное проведение мероприятия заложило основу для дальнейшего развития международных связей в сфере физического образования.</p>
+
+            <div class="image-gallery">
+               <div class="image-item">
+                  <img src="organization_commite_3.JPG" alt="Оргкомитет 3">
+                  <div class="image-caption">Международная работа организационного комитета</div>
+               </div>
+               <div class="image-item">
+                  <img src="organization_commite_4.JPG" alt="Оргкомитет 4">
+                  <div class="image-caption">Координация международного участия</div>
+               </div>
+               <div class="image-item">
+                  <img src="organization_commite_5.JPG" alt="Оргкомитет 5">
+                  <div class="image-caption">Прокторинг олимпиады</div>
+               </div>
+            </div>
+
+            <div class="video-section">
+               <h3>📹 Видеоматериалы</h3>
+               <p>Церемонии открытия и закрытия олимпиады были записаны и доступны для просмотра:</p>
+               <div class="video-links">
+                  <a href="https://www.youtube.com/watch?v=NlEHbnlAN9k" class="video-link" target="_blank">
+                     <i class="fab fa-youtube"></i>
+                     Церемония открытия
+                  </a>
+                  <a href="https://www.youtube.com/watch?v=Kb5JyO6Ca1k" class="video-link" target="_blank">
+                     <i class="fab fa-youtube"></i>
+                     Церемония закрытия
+                  </a>
+               </div>                  
+               <div style="padding: 20px;">
+                  <div style="background: var(--bg-color); border-radius: 8px; overflow: hidden;">
+                     <video src="shcury_vitaem_2022.mp4" controls style="width: 100%; height: 400px; object-fit: cover;"></video>
+                  </div>
+                  <p style="font-size: 14px; color: var(--text-secondary); margin-top: 12px; text-align: center;">
+                     Участники произносят "Шчыра вітаем!" на белорусском языке
+                  </p>
+               </div>
+            </div>
+
+            <h2>🚀 Наследие и перспективы</h2>
+            <p>Результаты олимпиады подтвердили высокий уровень физического образования во всех странах-участницах и показали важность поддержки талантливой молодежи в области естественных наук. Многие участники олимпиады продолжили свое участие в международных соревнованиях, а победители старшей группы стали кандидатами в национальные сборные для участия в Международной олимпиаде по физике.</p>
+
+            <div class="image-gallery">
+               <div class="image-item">
+                  <img src="fizicheskaya_olimpiada_shkolnikov_20_11_2022_4.png" alt="Итоги олимпиады">
+                  <div class="image-caption">Интервью с участницей Екатериной Постновой</div>
+               </div>
+               <div class="image-item">
+                  <img src="denys_kagykin_1.jpeg" alt="Денис Кагукин интервью">
+                  <div class="image-caption">Денис Кагукин, серебряная медаль (старшая группа)</div>
+               </div>
+            </div>
+
+         </div>
+      </article>
+   </main>
+</body>
+</html> 

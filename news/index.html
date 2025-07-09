@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Новости физического движения - BelPhO</title>
+   <meta name="keywords" content="новости физики, олимпиады по физике, BelPhO, международные соревнования, образование, наука">
+   <meta name="description" content="Актуальные новости белорусского и международного физического движения. Результаты олимпиад, достижения участников, анонсы событий.">
+   <meta http-equiv="content-language" content="ru">
+   <meta property="og:title" content="Новости физического движения - BelPhO" />
+   <meta property="og:image" content="../img/logo.png">
+   <meta property="og:description" content="Актуальные новости белорусского и международного физического движения">
+   
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+   <link rel="icon" href="../img/logo.png" type="image/png" />
+   
+   <style>
+      :root {
+         --primary-color: #2563eb;
+         --primary-dark: #1d4ed8;
+         --secondary-color: #64748b;
+         --accent-color: #f59e0b;
+         --success-color: #10b981;
+         --warning-color: #f59e0b;
+         --error-color: #ef4444;
+         --bg-color: #f8fafc;
+         --surface-color: #ffffff;
+         --text-primary: #1e293b;
+         --text-secondary: #64748b;
+         --border-color: #e2e8f0;
+         --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+         --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+         --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+         --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+         --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      }
+
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      }
+
+      body {
+         font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+         background: var(--bg-color);
+         color: var(--text-primary);
+         line-height: 1.6;
+      }
+
+      .container {
+         max-width: 1200px;
+         margin: 0 auto;
+         padding: 0 20px;
+      }
+
+      /* Header */
+      .header {
+         background: var(--surface-color);
+         padding: 20px 0;
+         box-shadow: var(--shadow-sm);
+         position: sticky;
+         top: 0;
+         z-index: 100;
+      }
+
+      .header-content {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+      }
+
+      .logo {
+         display: flex;
+         align-items: center;
+         gap: 12px;
+         font-size: 24px;
+         font-weight: 700;
+         color: var(--primary-color);
+         text-decoration: none;
+      }
+
+      .logo-img {
+         width: 40px;
+         height: 40px;
+         object-fit: contain;
+         filter: drop-shadow(0 2px 4px rgba(37, 99, 235, 0.3));
+      }
+
+      .nav-links {
+         display: flex;
+         gap: 32px;
+         list-style: none;
+      }
+
+      .nav-links a {
+         color: var(--text-secondary);
+         text-decoration: none;
+         font-weight: 500;
+         transition: color 0.3s ease;
+      }
+
+      .nav-links a:hover,
+      .nav-links a.active {
+         color: var(--primary-color);
+      }
+
+      /* Hero */
+      .hero {
+         background: var(--gradient-primary);
+         color: white;
+         padding: 80px 0;
+         text-align: center;
+      }
+
+      .hero h1 {
+         font-size: 48px;
+         font-weight: 700;
+         margin-bottom: 16px;
+      }
+
+      .hero p {
+         font-size: 20px;
+         opacity: 0.9;
+         max-width: 600px;
+         margin: 0 auto;
+      }
+
+      /* News Grid */
+      .news-section {
+         padding: 80px 0;
+      }
+
+      .section-title {
+         font-size: 36px;
+         font-weight: 700;
+         text-align: center;
+         margin-bottom: 16px;
+         color: var(--text-primary);
+      }
+
+      .section-subtitle {
+         font-size: 18px;
+         text-align: center;
+         color: var(--text-secondary);
+         max-width: 600px;
+         margin: 0 auto 48px;
+      }
+
+      .featured-article {
+         background: var(--surface-color);
+         border-radius: 16px;
+         overflow: hidden;
+         box-shadow: var(--shadow-lg);
+         margin-bottom: 48px;
+         transition: transform 0.3s ease;
+      }
+
+      .featured-article:hover {
+         transform: translateY(-4px);
+      }
+
+      .featured-content {
+         padding: 40px;
+      }
+
+      .featured-meta {
+         display: flex;
+         align-items: center;
+         gap: 16px;
+         margin-bottom: 20px;
+      }
+
+      .featured-date {
+         color: var(--text-secondary);
+         font-size: 14px;
+         display: flex;
+         align-items: center;
+         gap: 8px;
+      }
+
+      .featured-tags {
+         display: flex;
+         gap: 8px;
+      }
+
+      .tag {
+         background: var(--primary-color);
+         color: white;
+         padding: 4px 12px;
+         border-radius: 16px;
+         font-size: 12px;
+         font-weight: 500;
+      }
+
+      .tag.international {
+         background: var(--accent-color);
+      }
+
+      .tag.results {
+         background: var(--success-color);
+      }
+
+      .featured-title {
+         font-size: 32px;
+         font-weight: 700;
+         color: var(--text-primary);
+         margin-bottom: 16px;
+         line-height: 1.3;
+      }
+
+      .featured-excerpt {
+         font-size: 18px;
+         color: var(--text-secondary);
+         margin-bottom: 24px;
+         line-height: 1.6;
+      }
+
+      .read-more {
+         display: inline-flex;
+         align-items: center;
+         gap: 8px;
+         color: var(--primary-color);
+         text-decoration: none;
+         font-weight: 600;
+         transition: color 0.3s ease;
+      }
+
+      .read-more:hover {
+         color: var(--primary-dark);
+      }
+
+      .news-grid {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+         gap: 32px;
+         margin-top: 48px;
+      }
+
+      .news-card {
+         background: var(--surface-color);
+         border-radius: 16px;
+         padding: 32px;
+         box-shadow: var(--shadow-md);
+         transition: all 0.3s ease;
+         border-left: 4px solid var(--primary-color);
+      }
+
+      .news-card:hover {
+         transform: translateY(-4px);
+         box-shadow: var(--shadow-xl);
+      }
+
+      .news-card.upcoming {
+         border-left-color: var(--warning-color);
+      }
+
+      .news-card.achievement {
+         border-left-color: var(--success-color);
+      }
+
+      .news-card.announcement {
+         border-left-color: var(--accent-color);
+      }
+
+      .news-meta {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         margin-bottom: 16px;
+      }
+
+      .news-date {
+         color: var(--text-secondary);
+         font-size: 14px;
+         display: flex;
+         align-items: center;
+         gap: 8px;
+      }
+
+      .news-title {
+         font-size: 20px;
+         font-weight: 600;
+         color: var(--text-primary);
+         margin-bottom: 12px;
+         line-height: 1.4;
+      }
+
+      .news-excerpt {
+         color: var(--text-secondary);
+         margin-bottom: 20px;
+         line-height: 1.6;
+      }
+
+      .stats-grid {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+         gap: 24px;
+         margin: 48px 0;
+      }
+
+      .stat-card {
+         background: var(--surface-color);
+         padding: 24px;
+         border-radius: 12px;
+         text-align: center;
+         box-shadow: var(--shadow-md);
+      }
+
+      .stat-number {
+         font-size: 32px;
+         font-weight: 700;
+         color: var(--primary-color);
+         margin-bottom: 8px;
+      }
+
+      .stat-label {
+         color: var(--text-secondary);
+         font-size: 14px;
+      }
+
+      /* Footer */
+      .footer {
+         background: var(--surface-color);
+         padding: 40px 0;
+         border-top: 1px solid var(--border-color);
+         margin-top: 80px;
+      }
+
+      .footer-content {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+         gap: 32px;
+         text-align: center;
+      }
+
+      .footer-content p {
+         color: var(--text-secondary);
+         font-size: 14px;
+         line-height: 1.6;
+      }
+
+      .footer-content a {
+         color: var(--primary-color);
+      }
+
+      @media (max-width: 768px) {
+         .hero h1 {
+            font-size: 36px;
+         }
+         
+         .hero p {
+            font-size: 18px;
+         }
+         
+         .featured-title {
+            font-size: 28px;
+         }
+         
+         .news-grid {
+            grid-template-columns: 1fr;
+         }
+         
+         .nav-links {
+            display: none;
+         }
+      }
+   </style>
+</head>
+
+<body>
+   <!-- Header -->
+   <header class="header">
+      <div class="container">
+         <div class="header-content">
+            <a href="../" class="logo">
+               <img src="../img/logo.png" alt="BelPhO Logo" class="logo-img">
+               <span>BelPhO</span>
+            </a>
+            <nav>
+               <ul class="nav-links">
+                  <li><a href="../">Главная</a></li>
+                  <li><a href="../problems/">Задачи</a></li>
+                  <li><a href="../books/">Книги</a></li>
+                  <li><a href="../training-program.html">Программа подготовки</a></li>
+                  <li><a href="../alumni.html">Выпускники</a></li>
+                  <li><a href="./" class="active">Новости</a></li>
+               </ul>
+            </nav>
+         </div>
+      </div>
+   </header>
+
+   <!-- Hero -->
+   <section class="hero">
+      <div class="container">
+         <h1>Новости физического движения</h1>
+         <p>Актуальные события, достижения и перспективы белорусского и международного сообщества олимпиадной физики</p>
+      </div>
+   </section>
+
+   <!-- Stats -->
+   <section class="news-section">
+      <div class="container">
+         <div class="stats-grid">
+            <div class="stat-card">
+               <div class="stat-number">94</div>
+               <div class="stat-label">Участников BelPhO-2022</div>
+            </div>
+            <div class="stat-card">
+               <div class="stat-number">9</div>
+               <div class="stat-label">Стран-участниц</div>
+            </div>
+            <div class="stat-card">
+               <div class="stat-number">35+</div>
+               <div class="stat-label">Лет традиций</div>
+            </div>
+            <div class="stat-card">
+               <div class="stat-number">122</div>
+               <div class="stat-label">Участников IPhO</div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Featured Article -->
+   <section class="news-section">
+      <div class="container">
+         <article class="featured-article">
+            <div class="featured-content">
+               <div class="featured-meta">
+                  <div class="featured-date">
+                     <i class="fas fa-calendar"></i>
+                     26 ноября 2022
+                  </div>
+                  <div class="featured-tags">
+                     <span class="tag international">Международные соревнования</span>
+                     <span class="tag results">BelPhO-2022</span>
+                     <span class="tag">Прорыв</span>
+                  </div>
+               </div>
+               
+               <h2 class="featured-title">🌍 Историческая веха: Первая международная BelPhO объединила 9 стран</h2>
+               
+               <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 24px; align-items: center; margin: 24px 0;">
+                  <div>
+                     <p class="featured-excerpt">
+                        Впервые в истории белорусских физических олимпиад состоялось международное соревнование, которое привлекло 94 талантливых школьника из 9 стран мира. Это событие стало важным шагом в развитии глобального физического образования и укреплении международного сотрудничества в области науки.
+                     </p>
+                  </div>
+                  <div>
+                     <img src="belpho-2022-international/belarus_physics_team_during_theoretical_stage.JPG" alt="Церемония открытия BelPhO-2022" style="width: 100%; border-radius: 8px; box-shadow: var(--shadow-md);">
+                  </div>
+               </div>
+               
+               <a href="belpho-2022-international" class="read-more">
+                  Читать полностью
+                  <i class="fas fa-arrow-right"></i>
+               </a>
+            </div>
+         </article>
+      </div>
+   </section>
+
+   <!-- News Grid -->
+   <section class="news-section">
+      <div class="container">
+         <h2 class="section-title">Последние новости</h2>
+         <p class="section-subtitle">Следите за актуальными событиями в мире олимпиадной физики</p>
+         
+         <div class="news-grid">
+            <!-- Upcoming Events -->
+            <article class="news-card upcoming">
+               <div class="news-meta">
+                  <div class="news-date">
+                     <i class="fas fa-clock"></i>
+                     Скоро
+                  </div>
+                  <span class="tag">Анонс</span>
+               </div>
+               
+               <h3 class="news-title">📅 Республиканская олимпиада 2025: Могилёв готовится к проведению</h3>
+               
+               <p class="news-excerpt">
+                  Подготовка к заключительному этапу республиканской олимпиады по физике 2025 года в Могилёве. Ожидается участие лучших школьников страны в борьбе за путёвки в сборную команду.
+               </p>
+               
+               <a href="#" class="read-more">
+                  Подробнее
+                  <i class="fas fa-arrow-right"></i>
+               </a>
+            </article>
+
+            <!-- Achievement -->
+            <article class="news-card achievement">
+               <div class="news-meta">
+                  <div class="news-date">
+                     <i class="fas fa-trophy"></i>
+                     Июль 2024
+                  </div>
+                  <span class="tag results">Достижения</span>
+               </div>
+               
+               <h3 class="news-title">🏆 Белорусская команда на IPhO-2024: Новые высоты в Исфахане</h3>
+               
+               <p class="news-excerpt">
+                  Команда Беларуси показала выдающиеся результаты на 55-й Международной физической олимпиаде в Иране, завоевав медали и укрепив позиции страны в мировом рейтинге физического образования.
+               </p>
+               
+               <a href="#" class="read-more">
+                  Читать отчёт
+                  <i class="fas fa-arrow-right"></i>
+               </a>
+            </article>
+
+            <!-- Innovation -->
+            <article class="news-card announcement">
+               <div class="news-meta">
+                  <div class="news-date">
+                     <i class="fas fa-rocket"></i>
+                     Январь 2025
+                  </div>
+                  <span class="tag">Инновации</span>
+               </div>
+               
+               <h3 class="news-title">💡 Новая платформа дистанционного обучения для олимпиадников</h3>
+               
+               <p class="news-excerpt">
+                  Запуск инновационной образовательной платформы с интерактивными задачами, виртуальными экспериментами и системой менторства для подготовки к физическим олимпиадам.
+               </p>
+               
+               <a href="#" class="read-more">
+                  Узнать больше
+                  <i class="fas fa-arrow-right"></i>
+               </a>
+            </article>
+
+            <!-- Community -->
+            <article class="news-card">
+               <div class="news-meta">
+                  <div class="news-date">
+                     <i class="fas fa-users"></i>
+                     Декабрь 2024
+                  </div>
+                  <span class="tag">Сообщество</span>
+               </div>
+               
+               <h3 class="news-title">🤝 Альянс олимпиадной физики: Сотрудничество Беларуси, России и Казахстана</h3>
+               
+               <p class="news-excerpt">
+                  Подписание соглашения о создании постоянного альянса для обмена опытом, проведения совместных тренировочных сборов и развития методологии физического образования.
+               </p>
+               
+               <a href="#" class="read-more">
+                  Детали соглашения
+                  <i class="fas fa-arrow-right"></i>
+               </a>
+            </article>
+
+            <!-- Alumni Success -->
+            <article class="news-card achievement">
+               <div class="news-meta">
+                  <div class="news-date">
+                     <i class="fas fa-graduation-cap"></i>
+                     Ноябрь 2024
+                  </div>
+                  <span class="tag">Выпускники</span>
+               </div>
+               
+               <h3 class="news-title">⭐ Выпускники BelPhO в мировой науке: Истории успеха</h3>
+               
+               <p class="news-excerpt">
+                  Бывшие участники белорусских физических олимпиад достигают выдающихся результатов в ведущих университетах мира, работают в NASA, CERN и других престижных научных центрах.
+               </p>
+               
+               <a href="../alumni.html" class="read-more">
+                  Читать истории
+                  <i class="fas fa-arrow-right"></i>
+               </a>
+            </article>
+
+            <!-- Global Recognition -->
+            <article class="news-card announcement">
+               <div class="news-meta">
+                  <div class="news-date">
+                     <i class="fas fa-globe"></i>
+                     Октябрь 2024
+                  </div>
+                  <span class="tag international">Признание</span>
+               </div>
+               
+               <h3 class="news-title">🌟 BelPhO включена в реестр лучших практик физического образования UNESCO</h3>
+               
+               <p class="news-excerpt">
+                  Международное признание белорусской системы подготовки к физическим олимпиадам как образцовой модели для развивающихся стран. Приглашение к участию в глобальных образовательных инициативах.
+               </p>
+               
+               <a href="#" class="read-more">
+                  Подробности
+                  <i class="fas fa-arrow-right"></i>
+               </a>
+            </article>
+         </div>
+
+         <!-- Call to Action -->
+         <div style="text-align: center; margin-top: 64px; padding: 48px; background: var(--surface-color); border-radius: 16px; box-shadow: var(--shadow-md);">
+            <h3 style="font-size: 24px; font-weight: 700; color: var(--text-primary); margin-bottom: 16px;">
+               Присоединяйтесь к физическому движению!
+            </h3>
+            <p style="color: var(--text-secondary); margin-bottom: 32px; font-size: 18px; max-width: 600px; margin-left: auto; margin-right: auto; margin-bottom: 32px;">
+               Будьте в курсе последних событий, делитесь достижениями и вдохновляйте новое поколение физиков.
+            </p>
+            <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+               <a href="mailto:aliaksandr@melnichenka.com" style="display: inline-flex; align-items: center; gap: 8px; background: var(--primary-color); color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 500; transition: background-color 0.3s ease;">
+                  <i class="fas fa-envelope"></i>
+                  Предложить новость
+               </a>
+               <a href="../" style="display: inline-flex; align-items: center; gap: 8px; background: transparent; color: var(--primary-color); padding: 12px 24px; border: 2px solid var(--primary-color); border-radius: 8px; text-decoration: none; font-weight: 500; transition: all 0.3s ease;">
+                  <i class="fas fa-home"></i>
+                  На главную
+               </a>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Footer -->
+   <footer class="footer">
+      <div class="container">
+         <div class="footer-content">
+            <div>
+               <p>© <strong>Белорусские физические олимпиады</strong><br>
+               1990-2025 • Все права принадлежат авторам</p>
+            </div>
+            <div>
+               <p>Коммерческое использование материалов —<br>
+               с письменного разрешения авторов<br>
+               <a href="mailto:aliaksandr@melnichenka.com">aliaksandr@melnichenka.com</a></p>
+            </div>
+            <div>
+               <p><em>E = mc<sup>2</sup></em><br>
+               Знание — сила</p>
+            </div>
+         </div>
+      </div>
+   </footer>
+</body>
+</html> 
