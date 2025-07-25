@@ -58,11 +58,12 @@
       /* Header */
       .header {
          background: var(--surface-color);
-         padding: 20px 0;
+         padding: 16px 0;
          box-shadow: var(--shadow-sm);
          position: sticky;
          top: 0;
          z-index: 100;
+         backdrop-filter: blur(10px);
       }
 
       .header-content {
@@ -85,7 +86,23 @@
          width: 40px;
          height: 40px;
          object-fit: contain;
-         filter: drop-shadow(0 2px 4px rgba(37, 99, 235, 0.3));
+      }
+
+      .breadcrumb {
+         display: flex;
+         align-items: center;
+         gap: 8px;
+         font-size: 14px;
+         color: var(--text-secondary);
+      }
+
+      .breadcrumb a {
+         color: var(--primary-color);
+         text-decoration: none;
+      }
+
+      .breadcrumb a:hover {
+         text-decoration: underline;
       }
 
       .nav-links {
@@ -323,26 +340,9 @@
       /* Footer */
       .footer {
          background: var(--surface-color);
-         padding: 40px 0;
+         padding: 60px 0 40px;
          border-top: 1px solid var(--border-color);
          margin-top: 80px;
-      }
-
-      .footer-content {
-         display: grid;
-         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-         gap: 32px;
-         text-align: center;
-      }
-
-      .footer-content p {
-         color: var(--text-secondary);
-         font-size: 14px;
-         line-height: 1.6;
-      }
-
-      .footer-content a {
-         color: var(--primary-color);
       }
 
       @media (max-width: 768px) {
@@ -378,15 +378,10 @@
                <img src="../img/logo.png" alt="BelPhO Logo" class="logo-img">
                <span>BelPhO</span>
             </a>
-            <nav>
-               <ul class="nav-links">
-                  <li><a href="../">Главная</a></li>
-                  <li><a href="../problems/">Задачи</a></li>
-                  <li><a href="../books/">Книги</a></li>
-                  <li><a href="../training-program.html">Программа подготовки</a></li>
-                  <li><a href="../alumni.html">Выпускники</a></li>
-                  <li><a href="./" class="active">Новости</a></li>
-               </ul>
+            <nav class="breadcrumb">
+               <a href="../">Главная</a>
+               <i class="fas fa-chevron-right"></i>
+               <span>Новости</span>
             </nav>
          </div>
       </div>
@@ -405,20 +400,20 @@
       <div class="container">
          <div class="stats-grid">
             <div class="stat-card">
-               <div class="stat-number">94</div>
-               <div class="stat-label">Участников BelPhO-2022</div>
+               <div class="stat-number">127</div>
+               <div class="stat-label">Участников IPhO всего</div>
             </div>
             <div class="stat-card">
-               <div class="stat-number">9</div>
-               <div class="stat-label">Стран-участниц</div>
+               <div class="stat-number">5</div>
+               <div class="stat-label">Медалей IPhO 2025</div>
             </div>
             <div class="stat-card">
                <div class="stat-number">35+</div>
                <div class="stat-label">Лет традиций</div>
             </div>
             <div class="stat-card">
-               <div class="stat-number">122</div>
-               <div class="stat-label">Участников IPhO</div>
+               <div class="stat-number">102</div>
+               <div class="stat-label">Медалей IPhO</div>
             </div>
          </div>
       </div>
@@ -432,30 +427,30 @@
                <div class="featured-meta">
                   <div class="featured-date">
                      <i class="fas fa-calendar"></i>
-                     26 ноября 2022
+                     25 июля 2025
                   </div>
                   <div class="featured-tags">
-                     <span class="tag international">Международные соревнования</span>
-                     <span class="tag results">BelPhO-2022</span>
-                     <span class="tag">Прорыв</span>
+                     <span class="tag international">IPhO 2025</span>
+                     <span class="tag results">4 медали</span>
+                     <span class="tag">Триумф</span>
                   </div>
                </div>
                
-               <h2 class="featured-title">🌍 Историческая веха: Первая международная BelPhO объединила 9 стран</h2>
+               <h2 class="featured-title">🏆 Триумф в Париже: Белорусская команда завоевала 4 серебряные медали на IPhO 2025</h2>
                
                <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 24px; align-items: center; margin: 24px 0;">
                   <div>
                      <p class="featured-excerpt">
-                        Впервые в истории белорусских физических олимпиад состоялось международное соревнование, которое привлекло 94 талантливых школьника из 9 стран мира. Это событие стало важным шагом в развитии глобального физического образования и укреплении международного сотрудничества в области науки.
+                        На 55-й Международной олимпиаде по физике в Париже белорусская команда продемонстрировала выдающиеся результаты, завоевав 4 серебряные медали и 1 похвальный отзыв среди 418 участников из 89 стран мира. Это исторический успех, подтверждающий высокий уровень белорусского физического образования на международной арене.
                      </p>
                   </div>
                   <div>
-                     <img src="belpho-2022-international/belarus_physics_team_during_theoretical_stage.JPG" alt="Церемония открытия BelPhO-2022" style="width: 100%; border-radius: 8px; box-shadow: var(--shadow-md);">
+                     <img src="ipho-2025/belarus_physics_team_with_leaders_official.jpg" alt="Белорусская команда на IPhO 2025" style="width: 100%; border-radius: 8px; box-shadow: var(--shadow-md);">
                   </div>
                </div>
                
-               <a href="belpho-2022-international" class="read-more">
-                  Читать полностью
+               <a href="ipho-2025" class="read-more">
+                  Читать полный репортаж
                   <i class="fas fa-arrow-right"></i>
                </a>
             </div>
@@ -497,19 +492,19 @@
                <div class="news-meta">
                   <div class="news-date">
                      <i class="fas fa-trophy"></i>
-                     Июль 2024
+                     Июль 2025
                   </div>
                   <span class="tag results">Достижения</span>
                </div>
                
-               <h3 class="news-title">🏆 Белорусская команда на IPhO-2024: Новые высоты в Исфахане</h3>
+               <h3 class="news-title">🌟 Медалисты IPhO 2025: Знакомство с героями белорусской физики</h3>
                
                <p class="news-excerpt">
-                  Команда Беларуси показала выдающиеся результаты на 55-й Международной физической олимпиаде в Иране, завоевав медали и укрепив позиции страны в мировом рейтинге физического образования.
+                  Вячеслав Клеукин, Адриан Ревковский, Арсений Кузнецов и Илья Пластинин завоевали серебряные медали, а Константин Шмерко получил похвальный отзыв на 55-й IPhO в Париже.
                </p>
                
-               <a href="#" class="read-more">
-                  Читать отчёт
+               <a href="ipho-2025" class="read-more">
+                  Читать профили
                   <i class="fas fa-arrow-right"></i>
                </a>
             </article>
@@ -580,24 +575,25 @@
                </a>
             </article>
 
-            <!-- Global Recognition -->
-            <article class="news-card announcement">
+
+            <!-- Historical BelPhO -->
+            <article class="news-card">
                <div class="news-meta">
                   <div class="news-date">
-                     <i class="fas fa-globe"></i>
-                     Октябрь 2024
+                     <i class="fas fa-history"></i>
+                     Ноябрь 2022
                   </div>
-                  <span class="tag international">Признание</span>
+                  <span class="tag international">История</span>
                </div>
                
-               <h3 class="news-title">🌟 BelPhO включена в реестр лучших практик физического образования UNESCO</h3>
+               <h3 class="news-title">🌍 Первая международная BelPhO: Объединяя 9 стран</h3>
                
                <p class="news-excerpt">
-                  Международное признание белорусской системы подготовки к физическим олимпиадам как образцовой модели для развивающихся стран. Приглашение к участию в глобальных образовательных инициативах.
+                  Историческое событие — первая международная белорусская физическая олимпиада, которая привлекла 94 участника из 9 стран мира и стала важным шагом в развитии глобального физического образования.
                </p>
                
-               <a href="#" class="read-more">
-                  Подробности
+               <a href="belpho-2022-international" class="read-more">
+                  Читать подробности
                   <i class="fas fa-arrow-right"></i>
                </a>
             </article>
@@ -628,20 +624,29 @@
    <!-- Footer -->
    <footer class="footer">
       <div class="container">
-         <div class="footer-content">
+         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 32px;">
             <div>
-               <p>© <strong>Белорусские физические олимпиады</strong><br>
-               1990-2025 • Все права принадлежат авторам</p>
+               <h4 style="font-size: 16px; font-weight: 600; margin-bottom: 16px; color: var(--text-primary);">Контактная информация</h4>
+               <p style="margin-bottom: 8px; font-size: 14px; color: var(--text-secondary);">Белорусский государственный университет</p>
+               <p style="margin-bottom: 8px; font-size: 14px; color: var(--text-secondary);">Физический факультет</p>
+               <p style="margin-bottom: 8px; font-size: 14px; color: var(--text-secondary);">220030, г. Минск, пр. Независимости, 4</p>
             </div>
             <div>
-               <p>Коммерческое использование материалов —<br>
-               с письменного разрешения авторов<br>
-               <a href="mailto:aliaksandr@melnichenka.com">aliaksandr@melnichenka.com</a></p>
+               <h4 style="font-size: 16px; font-weight: 600; margin-bottom: 16px; color: var(--text-primary);">Навигация</h4>
+               <div style="display: flex; flex-direction: column; gap: 8px;">
+                  <a href="../" style="color: var(--text-secondary); text-decoration: none; font-size: 14px;">Главная</a>
+                  <a href="../problems/" style="color: var(--text-secondary); text-decoration: none; font-size: 14px;">Задачи олимпиад</a>
+                  <a href="../alumni.html" style="color: var(--text-secondary); text-decoration: none; font-size: 14px;">Выпускники</a>
+                  <a href="./" style="color: var(--text-secondary); text-decoration: none; font-size: 14px;">Новости</a>
+               </div>
             </div>
             <div>
-               <p><em>E = mc<sup>2</sup></em><br>
-               Знание — сила</p>
+               <h4 style="font-size: 16px; font-weight: 600; margin-bottom: 16px; color: var(--text-primary);">О проекте</h4>
+               <p style="font-size: 14px; line-height: 1.6; color: var(--text-secondary);">Официальный информационный ресурс белорусских физических олимпиад, поддерживаемый физическим факультетом БГУ и сообществом выпускников.</p>
             </div>
+         </div>
+         <div style="border-top: 1px solid var(--border-color); padding-top: 24px; text-align: center;">
+            <p style="font-size: 14px; color: var(--text-secondary);">&copy; 1990-2025 Белорусские физические олимпиады. Все права защищены.</p>
          </div>
       </div>
    </footer>

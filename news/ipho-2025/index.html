@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPhO 2025: Триумф белорусской физики в Париже - BelPhO</title>
+    <meta name="description" content="Официальный репортаж о выступлении белорусской команды на 55-й Международной олимпиаде по физике в Париже. 4 серебряные медали и 1 похвальный отзыв.">
+    <meta name="keywords" content="IPhO 2025, физическая олимпиада, Беларусь, Париж, серебряные медали">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="../../img/logo.png" type="image/png" />
+    
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary-color: #64748b;
+            --accent-color: #f59e0b;
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+            --error-color: #ef4444;
+            --bg-color: #fafbfc;
+            --surface-color: #ffffff;
+            --text-primary: #111827;
+            --text-secondary: #6b7280;
+            --border-color: #e5e7eb;
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+            --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-gold: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+            --gradient-silver: linear-gradient(135deg, #c0c0c0 0%, #e8e8e8 100%);
+            --gold: #ffd700;
+            --silver: #c0c0c0;
+            --bronze: #cd7f32;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .wide-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header */
+        .header {
+            background: var(--surface-color);
+            padding: 16px 0;
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .logo-img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+        }
+
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        .breadcrumb a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        /* Breaking News Banner */
+        .breaking-banner {
+            background: linear-gradient(135deg, #ef4444, #dc2626);
+            color: white;
+            padding: 8px 0;
+            text-align: center;
+            font-weight: 600;
+            font-size: 14px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1e40af 0%, #3730a3 50%, #581c87 100%);
+            color: white;
+            padding: 80px 0 120px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('ipho-2025-logo.svg') center/300px no-repeat;
+            opacity: 0.1;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            backdrop-filter: blur(10px);
+        }
+
+        .hero h1 {
+            font-size: clamp(32px, 5vw, 56px);
+            font-weight: 900;
+            margin-bottom: 24px;
+            line-height: 1.1;
+        }
+
+        .hero-subtitle {
+            font-size: 20px;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto 32px;
+            line-height: 1.5;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 48px;
+            margin-top: 48px;
+            flex-wrap: wrap;
+        }
+
+        .hero-stat {
+            text-align: center;
+        }
+
+        .hero-stat-number {
+            display: block;
+            font-size: 36px;
+            font-weight: 800;
+            margin-bottom: 8px;
+        }
+
+        .hero-stat-label {
+            font-size: 14px;
+            opacity: 0.8;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Results Section */
+        .results-section {
+            padding: 80px 0;
+            background: var(--surface-color);
+            position: relative;
+            margin-top: -60px;
+            border-radius: 32px 32px 0 0;
+            box-shadow: var(--shadow-xl);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 64px;
+        }
+
+        .section-title {
+            font-size: 40px;
+            font-weight: 800;
+            color: var(--text-primary);
+            margin-bottom: 16px;
+        }
+
+        .section-subtitle {
+            font-size: 18px;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Medal Cards */
+        .medals-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+            margin-bottom: 64px;
+        }
+
+        .medal-card {
+            background: var(--surface-color);
+            border-radius: 20px;
+            padding: 32px;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .medal-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .medal-card.silver {
+            border-left: 6px solid var(--silver);
+        }
+
+        .medal-card.mention {
+            border-left: 6px solid var(--bronze);
+        }
+
+        .medal-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            background: var(--gradient-silver);
+            border-radius: 0 0 0 100px;
+            opacity: 0.1;
+        }
+
+        .medal-card.mention::before {
+            background: linear-gradient(135deg, var(--bronze), #b8860b);
+        }
+
+                 .medal-header {
+             display: flex;
+             align-items: flex-start;
+             gap: 16px;
+             margin-bottom: 24px;
+         }
+
+                 .medal-avatar {
+             width: 120px;
+             height: 120px;
+             border-radius: 50%;
+             overflow: hidden;
+             border: 4px solid var(--silver);
+             box-shadow: var(--shadow-md);
+             flex-shrink: 0;
+         }
+
+        .medal-card.mention .medal-avatar {
+            border-color: var(--bronze);
+        }
+
+        .medal-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .medal-info h3 {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+
+        .medal-info .school {
+            color: var(--text-secondary);
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .medal-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .medal-badge.silver {
+            background: var(--gradient-silver);
+            color: var(--text-primary);
+        }
+
+        .medal-badge.mention {
+            background: linear-gradient(135deg, var(--bronze), #b8860b);
+            color: white;
+        }
+
+        .medal-details {
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .detail-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        .detail-label {
+            color: var(--text-secondary);
+        }
+
+        .detail-value {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        /* Team Photo Section */
+        .team-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        }
+
+        .team-photo-main {
+            background: var(--surface-color);
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: var(--shadow-xl);
+            margin-bottom: 48px;
+        }
+
+        .team-photo-main img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .team-photo-caption {
+            padding: 32px;
+            text-align: center;
+        }
+
+        .team-photo-caption h3 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .team-photo-caption p {
+            color: var(--text-secondary);
+            font-size: 16px;
+        }
+
+        /* Gallery Section */
+        .gallery-section {
+            padding: 80px 0;
+            background: var(--surface-color);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+
+        .gallery-item {
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .gallery-caption {
+            padding: 20px;
+            background: var(--surface-color);
+        }
+
+        .gallery-caption h4 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .gallery-caption p {
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        /* Competition Details */
+        .details-section {
+            padding: 80px 0;
+            background: var(--bg-color);
+        }
+
+        .details-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+        }
+
+        .detail-card {
+            background: var(--surface-color);
+            padding: 32px;
+            border-radius: 16px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .detail-card h4 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--primary-color);
+        }
+
+        .detail-card ul {
+            list-style: none;
+        }
+
+        .detail-card li {
+            padding: 8px 0;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 14px;
+        }
+
+        .detail-card li:last-child {
+            border-bottom: none;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--text-primary);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .footer p {
+            margin-bottom: 16px;
+        }
+
+        .footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Modal for gallery */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.9);
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+            max-height: 80%;
+            animation: zoom 0.3s;
+        }
+
+        @keyframes zoom {
+            from {transform: scale(0)}
+            to {transform: scale(1)}
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover {
+            color: #bbb;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-stats {
+                gap: 24px;
+            }
+            
+            .hero-stat-number {
+                font-size: 28px;
+            }
+            
+            .medals-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .medal-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .section-title {
+                font-size: 32px;
+            }
+            
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Loading animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.6s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <!-- Breaking News Banner -->
+    <div class="breaking-banner">
+        📰 ОФИЦИАЛЬНАЯ ИНФОРМАЦИЯ: Результаты участия команды Республики Беларусь в IPhO 2025
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="../../" class="logo">
+                    <img src="../../img/logo.png" alt="BelPhO Logo" class="logo-img">
+                    <span>BelPhO</span>
+                </a>
+                <nav class="breadcrumb">
+                    <a href="../../">Главная</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <a href="../">Новости</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>IPhO 2025</span>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-medal"></i> 55-я Международная олимпиада по физике
+                </div>
+                <h1>55-я Международная олимпиада по физике</h1>
+                <p class="hero-subtitle">
+                    Команда Республики Беларусь завоевала 4 серебряные медали и 1 похвальный отзыв 
+                    на юбилейной 55-й IPhO, проходившей 18-24 июля 2025 года в Париже при участии 418 школьников из 89 стран
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">4</span>
+                        <span class="hero-stat-label">Серебряные медали</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">1</span>
+                        <span class="hero-stat-label">Похвальный отзыв</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">89</span>
+                        <span class="hero-stat-label">Стран-участниц</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">418</span>
+                        <span class="hero-stat-label">Участников</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="results-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Состав сборной команды</h2>
+                <p class="section-subtitle">
+                    Участники сборной команды Республики Беларусь на 55-й Международной олимпиаде по физике 
+                    и их индивидуальные достижения
+                </p>
+            </div>
+
+            <div class="medals-grid">
+                <!-- Вячеслав Клеукин -->
+                <div class="medal-card silver fade-in">
+                    <div class="medal-header">
+                        <div class="medal-avatar">
+                            <img src="../../img/teams/Вячеслав Клеукин.jpg" alt="Вячеслав Клеукин">
+                        </div>
+                        <div class="medal-info">
+                            <h3>Вячеслав Клеукин</h3>
+                            <p class="school">Гимназия №1 им. академика Е.Ф. Карского (Гродно)</p>
+                            <div class="medal-badge silver">
+                                <i class="fas fa-medal"></i> Серебряная медаль
+                            </div>
+                        </div>
+                    </div>
+                    <div class="medal-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Регион:</span>
+                            <span class="detail-value">Гродненская область</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Достижение:</span>
+                            <span class="detail-value">Серебряная медаль IPhO 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Адриан Ревковский -->
+                <div class="medal-card silver fade-in">
+                    <div class="medal-header">
+                        <div class="medal-avatar">
+                            <img src="../../img/teams/Адриан Ревковский.jpg" alt="Адриан Ревковский">
+                        </div>
+                        <div class="medal-info">
+                            <h3>Адриан Ревковский</h3>
+                            <p class="school">Гимназия №1 им. академика Е.Ф. Карского (Гродно)</p>
+                            <div class="medal-badge silver">
+                                <i class="fas fa-medal"></i> Серебряная медаль
+                            </div>
+                        </div>
+                    </div>
+                    <div class="medal-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Регион:</span>
+                            <span class="detail-value">Гродненская область</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Достижение:</span>
+                            <span class="detail-value">Серебряная медаль IPhO 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Арсений Кузнецов -->
+                <div class="medal-card silver fade-in">
+                    <div class="medal-header">
+                        <div class="medal-avatar">
+                            <img src="../../img/teams/Арсений Кузнецов.jpg" alt="Арсений Кузнецов">
+                        </div>
+                        <div class="medal-info">
+                            <h3>Арсений Кузнецов</h3>
+                            <p class="school">Гимназия №1 (Жодино)</p>
+                            <div class="medal-badge silver">
+                                <i class="fas fa-medal"></i> Серебряная медаль
+                            </div>
+                        </div>
+                    </div>
+                    <div class="medal-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Регион:</span>
+                            <span class="detail-value">Минская область</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Достижение:</span>
+                            <span class="detail-value">Серебряная медаль IPhO 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Илья Пластинин -->
+                <div class="medal-card silver fade-in">
+                    <div class="medal-header">
+                        <div class="medal-avatar">
+                            <img src="../../img/teams/Илья Пластинин.jpg" alt="Илья Пластинин">
+                        </div>
+                        <div class="medal-info">
+                            <h3>Илья Пластинин</h3>
+                            <p class="school">Лицей БГУ (Минск)</p>
+                            <div class="medal-badge silver">
+                                <i class="fas fa-medal"></i> Серебряная медаль
+                            </div>
+                        </div>
+                    </div>
+                    <div class="medal-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Регион:</span>
+                            <span class="detail-value">г. Минск</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Достижение:</span>
+                            <span class="detail-value">Серебряная медаль IPhO 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Константин Шмерко -->
+                <div class="medal-card mention fade-in">
+                    <div class="medal-header">
+                        <div class="medal-avatar">
+                            <img src="../../img/teams/Константин Шмерко.jpg" alt="Константин Шмерко">
+                        </div>
+                        <div class="medal-info">
+                            <h3>Константин Шмерко</h3>
+                            <p class="school">Лицей БГУ (Минск)</p>
+                            <div class="medal-badge mention">
+                                <i class="fas fa-certificate"></i> Похвальный отзыв
+                            </div>
+                        </div>
+                    </div>
+                    <div class="medal-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Регион:</span>
+                            <span class="detail-value">г. Минск</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Достижение:</span>
+                            <span class="detail-value">Похвальный отзыв IPhO 2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Photos Section -->
+    <section class="team-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Команда в Париже</h2>
+                <p class="section-subtitle">
+                    Официальные фотографии белорусской делегации на IPhO 2025
+                </p>
+            </div>
+
+            <div class="team-photo-main fade-in">
+                <img src="belarus_physics_team_with_leaders_official.jpg" alt="Официальное фото белорусской команды">
+                <div class="team-photo-caption">
+                    <h3>Сборная команда Республики Беларусь на IPhO 2025</h3>
+                    <p>Участники сборной команды Республики Беларусь на 55-й Международной олимпиаде по физике с руководителями в Париже. Слева направо: Леонид Маркович (руководитель команды), Илья Пластинин, Адриан Ревковский, Константин Шмерко, Арсений Кузнецов, Вячеслав Клеукин, Анатолий Слободянюк (руководитель команды).</p>
+                </div>
+            </div>
+
+            <div class="team-photo-main fade-in">
+                <img src="belarus_team_without_leaders_selfie.jpg" alt="Селфи команды">
+                <div class="team-photo-caption">
+                    <h3>Участники команды в Париже</h3>
+                    <p>Белорусские школьники на фоне Эйфелевой башни во время участия в 55-й Международной олимпиаде по физике.</p>
+                </div>
+            </div>
+
+            <div class="team-photo-main fade-in">
+                <img src="training_camp_belarus_physics_team_2025.jpg" alt="Тренировочный сбор">
+                <div class="team-photo-caption">
+                    <h3>Подготовка к олимпиаде</h3>
+                    <p>Тренировочные сборы белорусской команды по физике перед отъездом на IPhO 2025 на базе физического факультета БГУ.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Фотогалерея IPhO 2025</h2>
+                <p class="section-subtitle">
+                    Моменты соревнований, церемоний и культурной программы в Париже
+                </p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in" onclick="openModal('all_ipho_contestants_photo.jpg')">
+                    <img src="all_ipho_contestants_photo.jpg" alt="Все участники IPhO 2025">
+                    <div class="gallery-caption">
+                        <h4>Все участники IPhO 2025</h4>
+                        <p>Групповое фото 418 участников из 89 стран мира</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" onclick="openModal('The opening ceremony.jpg')">
+                    <img src="The opening ceremony.jpg" alt="Церемония открытия">
+                    <div class="gallery-caption">
+                        <h4>Церемония открытия</h4>
+                        <p>Торжественное открытие 55-й IPhO в Cité des Sciences et de l'Industrie</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" onclick="openModal('The opening ceremony_viewers.jpg')">
+                    <img src="The opening ceremony_viewers.jpg" alt="Зрители церемонии">
+                    <div class="gallery-caption">
+                        <h4>Участники на церемонии</h4>
+                        <p>Молодые физики со всего мира на открытии олимпиады</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" onclick="openModal('experimntal_part_large_plan.jpg')">
+                    <img src="experimntal_part_large_plan.jpg" alt="Экспериментальная часть">
+                    <div class="gallery-caption">
+                        <h4>Экспериментальный тур</h4>
+                        <p>Общий вид аудитории во время проведения экспериментального тура</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" onclick="openModal('experiment_part_in_progress_1.jpg')">
+                    <img src="experiment_part_in_progress_1.jpg" alt="Эксперимент в процессе 1">
+                    <div class="gallery-caption">
+                        <h4>Эксперимент: Mars Sandbox</h4>
+                        <p>Участники исследуют масштабирование ударных кратеров</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" onclick="openModal('experiment_part_in_progress_2.jpg')">
+                    <img src="experiment_part_in_progress_2.jpg" alt="Эксперимент в процессе 2">
+                    <div class="gallery-caption">
+                        <h4>Эксперимент: Gouy Balance</h4>
+                        <p>Измерение магнитной восприимчивости неизвестных образцов</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" onclick="openModal('Science_lectures_at_the_IPhO_Poincaré_amphitheatre_at_École_polytechnique.jpg')">
+                    <img src="Science_lectures_at_the_IPhO_Poincaré_amphitheatre_at_École_polytechnique.jpg" alt="Научные лекции">
+                    <div class="gallery-caption">
+                        <h4>Научные лекции</h4>
+                        <p>Лекции в амфитеатре Пуанкаре в École Polytechnique</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" onclick="openModal('IT\'S TIME TO CORRECT THE EXAMS_team-leaders_1.jpg')">
+                    <img src="IT'S TIME TO CORRECT THE EXAMS_team-leaders_1.jpg" alt="Проверка работ 1">
+                    <div class="gallery-caption">
+                        <h4>Проверка экзаменов</h4>
+                        <p>Руководители команд за работой по оценке решений</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" onclick="openModal('experiment_part_in_progress_3.jpg')">
+                    <img src="experiment_part_in_progress_3.jpg" alt="Эксперимент в процессе 3">
+                    <div class="gallery-caption">
+                        <h4>Экспериментальная работа</h4>
+                        <p>Участники выполняют измерения в рамках экспериментального тура</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" onclick="openModal('experiment_part_in_progress_4.jpg')">
+                    <img src="experiment_part_in_progress_4.jpg" alt="Эксперимент в процессе 4">
+                    <div class="gallery-caption">
+                        <h4>Лабораторные исследования</h4>
+                        <p>Работа с оборудованием на экспериментальном туре</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" onclick="openModal('IT\'S TIME TO CORRECT THE EXAMS_team-leaders_2.jpg')">
+                    <img src="IT'S TIME TO CORRECT THE EXAMS_team-leaders_2.jpg" alt="Проверка работ 2">
+                    <div class="gallery-caption">
+                        <h4>Модерация результатов</h4>
+                        <p>Руководители команд проводят модерацию оценок в École Normale Supérieure</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" onclick="openModal('IT\'S TIME TO CORRECT THE EXAMS_team-leaders_3.jpg')">
+                    <img src="IT'S TIME TO CORRECT THE EXAMS_team-leaders_3.jpg" alt="Проверка работ 3">
+                    <div class="gallery-caption">
+                        <h4>Итоговое обсуждение</h4>
+                        <p>Заключительная стадия оценивания работ участников</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Competition Details -->
+    <section class="details-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Детали соревнования</h2>
+                <p class="section-subtitle">
+                    Ключевая информация о 55-й Международной олимпиаде по физике
+                </p>
+            </div>
+
+            <div class="details-grid">
+                <div class="detail-card fade-in">
+                    <h4><i class="fas fa-map-marker-alt"></i> 55-я IPhO: основные сведения</h4>
+                    <ul>
+                        <li><strong>Девиз:</strong> "Physics Beyond Frontiers"</li>
+                        <li><strong>Даты:</strong> 18-24 июля 2025 года</li>
+                        <li><strong>Место:</strong> Париж и кампус École Polytechnique (Палезо)</li>
+                        <li><strong>Покровительство:</strong> Президент Франции Эммануэль Макрон и шесть нобелевских лауреатов по физике</li>
+                        <li><strong>Открытие:</strong> Cité des Sciences et de l'Industrie</li>
+                        <li><strong>Волонтёры:</strong> Более 300 французских добровольцев</li>
+                    </ul>
+                </div>
+
+                <div class="detail-card fade-in">
+                    <h4><i class="fas fa-flask"></i> Экспериментальный тур (19 июля)</h4>
+                    <ul>
+                        <li><strong>Задача 1 — Mars Sandbox:</strong> Исследование масштабирования метеоритных кратеров в гранулированных средах. Участники изучали зависимость размера кратера от энергии удара, используя стальные шарики и песок из Фонтенбло.</li>
+                        <li><strong>Задача 2 — Gouy Balance:</strong> Измерение магнитной восприимчивости различных материалов с использованием весов Гуи для определения парамагнитных и диамагнитных свойств.</li>
+                    </ul>
+                </div>
+
+                <div class="detail-card fade-in">
+                    <h4><i class="fas fa-brain"></i> Теоретический тур (21 июля)</h4>
+                    <ul>
+                        <li><strong>Задача 1 — 21 см спектроскопия:</strong> Анализ спектральных данных нейтрального водорода для изучения галактических кривых вращения, тёмной материи и модифицированной ньютоновской динамики (MOND).</li>
+                        <li><strong>Задача 2 — Барометрические часы:</strong> Исследование механизма "вечных" часов Джеймса Кокса, работающих на основе суточных колебаний атмосферного давления. Термодинамический анализ и расчёт извлекаемой работы.</li>
+                        <li><strong>Задача 3 — Аттосекундная физика:</strong> Концептуальный анализ ультракоротких лазерных импульсов длительностью 10⁻¹⁸ секунд и их применения в исследовании электронной динамики (по работам нобелевского лауреата Пьера Агостини).</li>
+                    </ul>
+                </div>
+
+                <div class="detail-card fade-in">
+                    <h4><i class="fas fa-calendar-alt"></i> Программа олимпиады</h4>
+                    <ul>
+                        <li><strong>18 июля:</strong> Торжественное открытие в Cité des Sciences, передача флага от Ирана, выставка "Женщины-пионеры физики"</li>
+                        <li><strong>19 июля:</strong> Экспериментальный тур (Mars Sandbox, Gouy Balance)</li>
+                        <li><strong>20 июля:</strong> Экскурсия в Версаль, обсуждение задач руководителями</li>
+                        <li><strong>21 июля:</strong> Теоретический тур, вечерние лекции нобелистов</li>
+                        <li><strong>22 июля:</strong> Mid-term Party с барабанной командой, создание гимна IPhO</li>
+                        <li><strong>23 июля:</strong> Экскурсии в лаборатории, музей Орсе, круиз по Сене</li>
+                        <li><strong>24 июля:</strong> Церемония закрытия и награждения</li>
+                    </ul>
+                </div>
+
+                <div class="detail-card fade-in">
+					<h4><i class="fas fa-trophy"></i> Результаты Беларуси</h4>
+                    <ul>
+                        <li><strong>Серебряные медали:</strong> 4</li>
+                        <li><strong>Похвальные отзывы:</strong> 1</li>
+                        <li><strong>Место в рейтинге:</strong> Топ-15 стран</li>
+                    </ul>
+					<br>
+                    <h4><i class="fas fa-chalkboard-teacher"></i> Руководители команды</h4>
+                    <ul>
+                        <li><strong>Анатолий Слободянюк</strong> — зав. кафедрой общей физики БГУ</li>
+                        <li><strong>Леонид Маркович</strong> — зав. кафедрой физики Лицея БГУ</li>
+                    </ul>
+                </div>
+				
+				<div class="detail-card fade-in">
+                    <h4><i class="fas fa-users"></i> Участники</h4>
+                    <ul>
+                        <li><strong>Всего участников:</strong> 418 школьников</li>
+                        <li><strong>Стран-участниц:</strong> 89</li>
+                        <li><strong>Девушек:</strong> 38 (10%)</li>
+                        <li><strong>Руководителей:</strong> 287</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 32px;">
+                <div>
+                    <h4 style="font-size: 16px; font-weight: 600; margin-bottom: 16px; color: white;">Контактная информация</h4>
+                    <p style="margin-bottom: 8px; font-size: 14px;">Белорусский государственный университет</p>
+                    <p style="margin-bottom: 8px; font-size: 14px;">Физический факультет</p>
+                    <p style="margin-bottom: 8px; font-size: 14px;">220030, г. Минск, пр. Независимости, 4</p>
+                </div>
+                <div>
+                    <h4 style="font-size: 16px; font-weight: 600; margin-bottom: 16px; color: white;">Навигация</h4>
+                    <div style="display: flex; flex-direction: column; gap: 8px;">
+                        <a href="../../" style="color: #94a3b8; text-decoration: none; font-size: 14px;">Главная</a>
+                        <a href="../../problems/" style="color: #94a3b8; text-decoration: none; font-size: 14px;">Задачи олимпиад</a>
+                        <a href="../../alumni.html" style="color: #94a3b8; text-decoration: none; font-size: 14px;">Выпускники</a>
+                        <a href="../" style="color: #94a3b8; text-decoration: none; font-size: 14px;">Новости</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 style="font-size: 16px; font-weight: 600; margin-bottom: 16px; color: white;">О проекте</h4>
+                    <p style="font-size: 14px; line-height: 1.6; color: #94a3b8;">Официальный информационный ресурс белорусских физических олимпиад, поддерживаемый физическим факультетом БГУ и сообществом выпускников.</p>
+                </div>
+            </div>
+            <div style="border-top: 1px solid #374151; padding-top: 24px; text-align: center;">
+                <p style="font-size: 14px; color: #9ca3af;">&copy; 1990-2025 Белорусские физические олимпиады. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for image viewing -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script>
+        // Gallery modal functionality
+        function openModal(imageSrc) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            modal.style.display = 'block';
+            modalImg.src = imageSrc;
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').style.display = 'none';
+        }
+
+        // Close modal when clicking outside the image
+        window.onclick = function(event) {
+            const modal = document.getElementById('imageModal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+
+        // Smooth scrolling and fade-in animations
+        document.addEventListener('DOMContentLoaded', function() {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all fade-in elements
+            document.querySelectorAll('.fade-in').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(el);
+            });
+        });
+
+        // Add keyboard navigation for modal
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
