@@ -62,6 +62,8 @@ for year in years_for_stage(third):
 			list_to_copy.append(f"third/{i}")
 			
 			if not f:
+				for j in range(len(temp_list)):
+					temp_list[j] = year+"_"+temp_list[j]
 				print(f"{i}\t{temp_list}\n")
 				f = True
 
@@ -81,6 +83,8 @@ for year in years_for_stage(final):
 			list_to_copy.append(f"final/{i}")
 			
 			if not f:
+				for j in range(len(temp_list)):
+					temp_list[j] = year+"_"+temp_list[j]
 				print(f"{i}\t{temp_list}\n")
 				f = True
 
