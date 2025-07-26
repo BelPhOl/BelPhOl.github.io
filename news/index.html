@@ -88,27 +88,37 @@
          object-fit: contain;
       }
 
-      .breadcrumb {
-         display: flex;
-         align-items: center;
-         gap: 8px;
-         font-size: 14px;
-         color: var(--text-secondary);
-      }
-
-      .breadcrumb a {
-         color: var(--primary-color);
-         text-decoration: none;
-      }
-
-      .breadcrumb a:hover {
-         text-decoration: underline;
-      }
-
       .nav-links {
          display: flex;
          gap: 32px;
          list-style: none;
+      }
+
+      .nav-links a {
+         color: var(--text-secondary);
+         text-decoration: none;
+         font-weight: 500;
+         transition: color 0.3s ease;
+      }
+
+      .nav-links a:hover,
+      .nav-links a.active {
+         color: var(--primary-color);
+      }
+
+      /* Mobile Navigation */
+      .mobile-nav {
+         display: none;
+      }
+
+      @media (max-width: 768px) {
+         .nav-links {
+            display: none;
+         }
+         
+         .mobile-nav {
+            display: block;
+         }
       }
 
       .nav-links a {
@@ -378,11 +388,19 @@
                <img src="../img/logo.png" alt="BelPhO Logo" class="logo-img">
                <span>BelPhO</span>
             </a>
-            <nav class="breadcrumb">
-               <a href="../">Главная</a>
-               <i class="fas fa-chevron-right"></i>
-               <span>Новости</span>
+            <nav>
+               <ul class="nav-links">
+                  <li><a href="../">Главная</a></li>
+                  <li><a href="../problems/">Задачи</a></li>
+                  <li><a href="../books/">Книги</a></li>
+                  <li><a href="../training-program.html">Программа подготовки</a></li>
+                  <li><a href="../alumni.html">Выпускники</a></li>
+                  <li><a href="../news/" class="active">Новости</a></li>
+               </ul>
             </nav>
+            <div class="mobile-nav">
+               <i class="fas fa-bars"></i>
+            </div>
          </div>
       </div>
    </header>
@@ -622,33 +640,34 @@
    </section>
 
    <!-- Footer -->
-   <footer class="footer">
+   <footer style="background: var(--surface-color); padding: 40px 0; border-top: 1px solid var(--border-color); margin-top: 80px;">
       <div class="container">
-         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 32px;">
+         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 32px; text-align: center;">
             <div>
-               <h4 style="font-size: 16px; font-weight: 600; margin-bottom: 16px; color: var(--text-primary);">Контактная информация</h4>
-               <p style="margin-bottom: 8px; font-size: 14px; color: var(--text-secondary);">Белорусский государственный университет</p>
-               <p style="margin-bottom: 8px; font-size: 14px; color: var(--text-secondary);">Физический факультет</p>
-               <p style="margin-bottom: 8px; font-size: 14px; color: var(--text-secondary);">220030, г. Минск, пр. Независимости, 4</p>
+               <p style="color: var(--text-secondary); font-size: 14px; line-height: 1.6;">
+                  © <strong>Белорусские физические олимпиады</strong><br>
+                  1990-2025 • Все права принадлежат авторам
+               </p>
             </div>
             <div>
-               <h4 style="font-size: 16px; font-weight: 600; margin-bottom: 16px; color: var(--text-primary);">Навигация</h4>
-               <div style="display: flex; flex-direction: column; gap: 8px;">
-                  <a href="../" style="color: var(--text-secondary); text-decoration: none; font-size: 14px;">Главная</a>
-                  <a href="../problems/" style="color: var(--text-secondary); text-decoration: none; font-size: 14px;">Задачи олимпиад</a>
-                  <a href="../alumni.html" style="color: var(--text-secondary); text-decoration: none; font-size: 14px;">Выпускники</a>
-                  <a href="./" style="color: var(--text-secondary); text-decoration: none; font-size: 14px;">Новости</a>
-               </div>
+               <p style="color: var(--text-secondary); font-size: 14px; line-height: 1.6;">
+                  Коммерческое использование материалов —<br>
+                  с письменного разрешения авторов<br>
+                  <a href="mailto:aliaksandr@melnichenka.com" style="color: var(--primary-color);">aliaksandr@melnichenka.com</a>
+               </p>
             </div>
             <div>
-               <h4 style="font-size: 16px; font-weight: 600; margin-bottom: 16px; color: var(--text-primary);">О проекте</h4>
-               <p style="font-size: 14px; line-height: 1.6; color: var(--text-secondary);">Официальный информационный ресурс белорусских физических олимпиад, поддерживаемый физическим факультетом БГУ и сообществом выпускников.</p>
+               <p style="color: var(--text-secondary); font-size: 14px; line-height: 1.6;">
+                  <em>E = mc<sup>2</sup></em><br>
+                  Знание — сила
+               </p>
             </div>
-         </div>
-         <div style="border-top: 1px solid var(--border-color); padding-top: 24px; text-align: center;">
-            <p style="font-size: 14px; color: var(--text-secondary);">&copy; 1990-2025 Белорусские физические олимпиады. Все права защищены.</p>
          </div>
       </div>
+
+      <p style="font-size:12px;color:var(--text-tertiary); opacity: 0.85;margin-top:16px;text-align: center;">
+         Создано командой выпускников. Координатор проекта — Aliaksandr Melnichenka.
+      </p>
    </footer>
 </body>
 </html> 

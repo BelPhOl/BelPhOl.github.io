@@ -50,7 +50,7 @@
       }
 
       .container {
-         max-width: 1200px;
+         max-width: 1440px;
          margin: 0 auto;
          padding: 0 20px;
       }
@@ -58,7 +58,7 @@
       /* Header */
       .header {
          background: var(--surface-color);
-         padding: 16px 0;
+         padding: 20px 0;
          box-shadow: var(--shadow-sm);
          position: sticky;
          top: 0;
@@ -85,6 +85,30 @@
          width: 40px;
          height: 40px;
          object-fit: contain;
+         filter: drop-shadow(0 2px 4px rgba(37, 99, 235, 0.3));
+         transition: transform 0.3s ease;
+      }
+
+      .logo:hover .logo-img {
+         transform: scale(1.1);
+      }
+
+      .nav-links {
+         display: flex;
+         gap: 32px;
+         list-style: none;
+      }
+
+      .nav-links a {
+         color: var(--text-secondary);
+         text-decoration: none;
+         font-weight: 500;
+         transition: color 0.3s ease;
+      }
+
+      .nav-links a:hover,
+      .nav-links a.active {
+         color: var(--primary-color);
       }
 
       .breadcrumb {
@@ -102,6 +126,21 @@
 
       .breadcrumb a:hover {
          text-decoration: underline;
+      }
+
+      /* Mobile Navigation */
+      .mobile-nav {
+         display: none;
+      }
+
+      @media (max-width: 768px) {
+         .nav-links {
+            display: none;
+         }
+         
+         .mobile-nav {
+            display: block;
+         }
       }
 
       /* Hero Section */
@@ -406,14 +445,23 @@
                <img src="../img/logo.png" alt="BelPhO Logo" class="logo-img">
                <span>BelPhO</span>
             </a>
-            <nav class="breadcrumb">
-               <a href="../">Главная</a>
-               <i class="fas fa-chevron-right"></i>
-               <span>Полезные ресурсы</span>
+            <nav>
+               <ul class="nav-links">
+                  <li><a href="../">Главная</a></li>
+                  <li><a href="../problems/">Задачи</a></li>
+                  <li><a href="../books/" class="active">Книги</a></li>
+                  <li><a href="../training-program.html">Программа подготовки</a></li>
+                  <li><a href="../alumni.html">Выпускники</a></li>
+                  <li><a href="../news/">Новости</a></li>
+               </ul>
             </nav>
+            <div class="mobile-nav">
+               <i class="fas fa-bars"></i>
+            </div>
          </div>
       </div>
    </header>
+
 
    <!-- Hero -->
    <section class="hero">
@@ -642,10 +690,15 @@
       <div class="container">
          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 32px;">
             <div>
-               <h4 style="font-size: 16px; font-weight: 600; margin-bottom: 16px; color: var(--text-primary);">Контактная информация</h4>
-               <p style="margin-bottom: 8px; font-size: 14px; color: var(--text-secondary);">Белорусский государственный университет</p>
-               <p style="margin-bottom: 8px; font-size: 14px; color: var(--text-secondary);">Физический факультет</p>
-               <p style="margin-bottom: 8px; font-size: 14px; color: var(--text-secondary);">220030, г. Минск, пр. Независимости, 4</p>
+               <h4 style="font-size:16px;font-weight:600;margin-bottom:16px;color:var(--text-primary);">
+                  Белорусские физические олимпиады
+                </h4>
+                <p style="font-size:14px;margin-bottom:8px;color:var(--text-secondary);">
+                  Минск • работает по всей Беларуси
+                </p>
+                <p style="font-size:14px;margin-bottom:8px;color:var(--text-secondary);">
+                  aliaksandr@melnichenka.com
+                </p>        
             </div>
             <div>
                <h4 style="font-size: 16px; font-weight: 600; margin-bottom: 16px; color: var(--text-primary);">Навигация</h4>
@@ -657,13 +710,24 @@
                </div>
             </div>
             <div>
-               <h4 style="font-size: 16px; font-weight: 600; margin-bottom: 16px; color: var(--text-primary);">О проекте</h4>
-               <p style="font-size: 14px; line-height: 1.6; color: var(--text-secondary);">Официальный информационный ресурс белорусских физических олимпиад, поддерживаемый физическим факультетом БГУ и сообществом выпускников.</p>
+               <h4 style="font-size: 16px; font-weight: 600; margin-bottom: 16px; color: var(--text-primary);">О платформе</h4>
+               <p style="font-size:14px;line-height:1.6;color:var(--text-secondary);">
+                  «BelPhO» — независимая некоммерческая платформа, объединяющая
+                  школьников, преподавателей и выпускников для подготовки к физическим
+                  олимпиадам. Её материалами ежедневно пользуются классы всех регионов
+                  страны. Архив задач пополняется волонтёрской редакцией авторов‑энтузиастов.
+                </p>        
             </div>
          </div>
-         <div style="border-top: 1px solid var(--border-color); padding-top: 24px; text-align: center;">
-            <p style="font-size: 14px; color: var(--text-secondary);">&copy; 1990-2025 Белорусские физические олимпиады. Все права защищены.</p>
-         </div>
+         <div style="border-top:1px solid var(--border-color);padding-top:24px;text-align:center;">
+            <p style="font-size:14px;color:var(--text-secondary);">
+              © 1990–2025 Национальный образовательный центр «BelPhO». Все права защищены.
+            </p>
+            <p style="font-size:12px;color:var(--text-tertiary);margin-top:4px;">
+              Создано командой выпускников. Координатор проекта — Aliaksandr Melnichenka.
+            </p>
+          </div>
+        </div>
       </div>
    </footer>
 </body>

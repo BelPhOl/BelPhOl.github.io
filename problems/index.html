@@ -117,8 +117,32 @@
             transition: color 0.3s ease;
         }
 
-        .nav-links a:hover {
+        .nav-links a:hover,
+        .nav-links a.active {
             color: var(--primary-color);
+        }
+
+        /* Mobile Navigation */
+        .mobile-nav {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-nav {
+                display: block;
+            }
+            
+            .hero h1 {
+                font-size: 36px;
+            }
+            
+            .hero p {
+                font-size: 18px;
+            }
         }
 
         /* Hero Section */
@@ -862,11 +886,14 @@
                         <li><a href="../">Главная</a></li>
                         <li><a href="../problems/" class="active">Задачи</a></li>
                         <li><a href="../books/">Книги</a></li>
-                        <li><a href="../Mechanics/">Механика</a></li>
-                        <li><a href="../Electromag/">Электромагнетизм</a></li>
-                        <li><a href="../Thermodynamics/">Термодинамика</a></li>
+                        <li><a href="../training-program.html">Программа подготовки</a></li>
+                        <li><a href="../alumni.html">Выпускники</a></li>
+                        <li><a href="../news/">Новости</a></li>
                     </ul>
                 </nav>
+                <div class="mobile-nav">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
         </div>
     </header>
@@ -1773,5 +1800,36 @@
         // Initialize when DOM is loaded
         document.addEventListener('DOMContentLoaded', init);
     </script>
+
+    <!-- Footer -->
+    <footer style="background: var(--surface-color); padding: 40px 0; border-top: 1px solid var(--border-color); margin-top: 80px;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 32px; text-align: center;">
+                <div>
+                    <p style="color: var(--text-secondary); font-size: 14px; line-height: 1.6;">
+                        © <strong>Белорусские физические олимпиады</strong><br>
+                        1990-2025 • Все права принадлежат авторам
+                    </p>
+                </div>
+                <div>
+                    <p style="color: var(--text-secondary); font-size: 14px; line-height: 1.6;">
+                        Коммерческое использование материалов —<br>
+                        с письменного разрешения авторов<br>
+                        <a href="mailto:aliaksandr@melnichenka.com" style="color: var(--primary-color);">aliaksandr@melnichenka.com</a>
+                    </p>
+                </div>
+                <div>
+                    <p style="color: var(--text-secondary); font-size: 14px; line-height: 1.6;">
+                        <em>E = mc<sup>2</sup></em><br>
+                        Знание — сила
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <p style="font-size:12px;color:var(--text-tertiary); opacity: 0.85;margin-top:16px;text-align: center;">
+            Создано командой выпускников. Координатор проекта — Aliaksandr Melnichenka.
+        </p>
+    </footer>
 </body>
 </html>
