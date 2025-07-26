@@ -211,18 +211,19 @@
       /* Resource Grid */
       .resource-grid {
          display: grid;
-         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-         gap: 32px;
+         grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+         gap: 40px;
          margin-top: 48px;
       }
 
       .resource-card {
          background: var(--surface-color);
-         border-radius: 16px;
-         padding: 32px;
+         border-radius: 20px;
+         padding: 40px;
          box-shadow: var(--shadow-md);
          transition: all 0.3s ease;
          border-left: 4px solid var(--accent-color);
+         min-height: 400px;
       }
 
       .resource-card:hover {
@@ -281,6 +282,67 @@
       .resource-list a:hover {
          color: var(--primary-dark);
          text-decoration: underline;
+      }
+
+      /* Special Horizontal Section for Alina */
+      .alina-full-section {
+         grid-column: 1 / -1;
+         background: linear-gradient(135deg, rgba(254, 252, 232, 0.8) 0%, rgba(254, 249, 195, 0.6) 50%, rgba(252, 211, 77, 0.4) 100%);
+         border: 2px solid rgba(180, 83, 9, 0.6);
+         border-radius: 24px;
+         padding: 48px;
+         margin: 24px 0;
+         position: relative;
+         overflow: hidden;
+         box-shadow: 0 10px 30px rgba(180, 83, 9, 0.12);
+      }
+
+      .alina-full-section::before {
+         content: '';
+         position: absolute;
+         top: 20px;
+         right: 30px;
+         width: 60px;
+         height: 60px;
+         background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23b45309" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>') no-repeat center;
+         background-size: contain;
+         opacity: 0.25;
+      }
+
+      .alina-subjects-grid {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+         gap: 32px;
+         margin-top: 32px;
+      }
+
+      .alina-subject-card {
+         background: rgba(255, 255, 255, 0.85);
+         border-radius: 16px;
+         padding: 24px;
+         border-left: 4px solid rgba(146, 64, 14, 0.8);
+         box-shadow: 0 4px 12px rgba(146, 64, 14, 0.12);
+      }
+
+      .alina-subject-card h4 {
+         color: rgba(120, 53, 15, 0.9);
+         font-size: 20px;
+         margin-bottom: 16px;
+         display: flex;
+         align-items: center;
+         gap: 8px;
+      }
+
+      .study-time {
+         background: rgba(217, 119, 6, 0.15);
+         color: rgba(146, 64, 14, 0.9);
+         padding: 6px 12px;
+         border-radius: 8px;
+         font-size: 12px;
+         font-weight: 600;
+         margin-bottom: 12px;
+         display: inline-block;
+         border: 1px solid rgba(217, 119, 6, 0.3);
       }
 
       /* Savchenko Featured Section */
@@ -427,6 +489,25 @@
          
          .resource-grid {
             grid-template-columns: 1fr;
+            gap: 24px;
+         }
+
+         .resource-card {
+            padding: 24px;
+            min-height: auto;
+         }
+
+         .alina-full-section {
+            padding: 32px 24px;
+         }
+
+         .alina-subjects-grid {
+            grid-template-columns: 1fr;
+            gap: 24px;
+         }
+
+         .alina-subject-card {
+            padding: 20px;
          }
          
          .book-covers {
@@ -488,13 +569,169 @@
    </section>
 
    <!-- Resources Grid -->
-   <section class="section" style="background: var(--surface-color); padding-top: 0;">
+   <section class="section" style="background: var(--surface-color); padding-top: 0;" id="alina-guide">
       <div class="container">
          <div class="resource-grid">
+            
+            <!-- Alina Polonskaya's Complete Study Guides - FULL WIDTH SECTION -->
+            <div class="alina-full-section">
+               <h3 style="color: rgba(120, 53, 15, 0.95); font-size: 32px; font-weight: 800; margin-bottom: 16px;">
+                  <i class="fas fa-star" style="color: rgba(146, 64, 14, 0.8);"></i> Полные методики подготовки Алины Полонской
+               </h3>
+               <p style="color: rgba(92, 64, 14, 0.85); font-size: 18px; font-weight: 600; margin-bottom: 24px; line-height: 1.6;">
+                  Комплексные программы подготовки по всем разделам физики от золотой медалистки IPhO 2024 (Беларусь). 
+                  Структурированные планы с точным указанием времени освоения и практическими рекомендациями.
+               </p>
+               
+               <div class="alina-subjects-grid">
+                  <!-- Mechanics -->
+                  <div class="alina-subject-card">
+                     <h4><i class="fas fa-cogs"></i> Механика</h4>
+                     <div class="study-time">Общее время: 8 недель</div>
+                     
+                     <h5 style="color: rgba(146, 64, 14, 0.85); margin: 16px 0 8px 0; font-weight: 600;">Введение (3 недели):</h5>
+                     <ul style="font-size: 13px; margin-bottom: 12px; padding-left: 20px;">
+                        <li>Мякишев Г.Я. — Физика. Механика. 10 класс</li>
+                        <li>Бутиков Е.И., Кондратьев А.С. — Физика. Механика</li>
+                        <li>Меледин Г.Ф. — Физика в задачах (182 задачи по механике)</li>
+                     </ul>
+                     
+                     <h5 style="color: rgba(146, 64, 14, 0.85); margin: 16px 0 8px 0; font-weight: 600;">Основная теория (3 недели):</h5>
+                     <ul style="font-size: 13px; margin-bottom: 12px; padding-left: 20px;">
+                        <li>Иродов И.Е. — Основные законы механики</li>
+                        <li>Сивухин Д.В. — Общий курс физики. Механика. т.I</li>
+                        <li>Паршаков — Механика, Колебания, Акустика</li>
+                        <li>Бутиков Е.И., Быков А.А., Кондратьев А.С. — Физика в примерах и задачах (Механика)</li>
+                     </ul>
+                     
+                     <h5 style="color: rgba(146, 64, 14, 0.85); margin: 16px 0 8px 0; font-weight: 600;">Колебания (1 неделя):</h5>
+                     <ul style="font-size: 13px; margin-bottom: 12px; padding-left: 20px;">
+                        <li>Перунова М.Н. — Колебания и волны</li>
+                        <li>Mathus — Уравнение колебаний. 1, 2</li>
+                     </ul>
+                     
+                     <h5 style="color: rgba(146, 64, 14, 0.85); margin: 16px 0 8px 0; font-weight: 600;">Практика (4 недели):</h5>
+                     <ul style="font-size: 13px; padding-left: 20px;">
+                        <li>Буздин А.И., Ильин В.А. — Задачи Московских Физических Олимпиад (116 задач)</li>
+                        <li>Буздин А.И., Зильберман А.Р. — Раз задача, Два задача... (86 задач)</li>
+                        <li>Задачи московских городских олимпиад по физике 1986-2005 (254 задачи)</li>
+                        <li>200 Интригующих задач по физике (121 задача)</li>
+                        <li>Гориковский В. — Польские Физические Олимпиады (56 задач)</li>
+                        <li>Слободецкий И.Ш., Асламазов Л.Г. — Задачи по физике (69 задач)</li>
+                     </ul>
+                  </div>
+                  
+                  <!-- Electrodynamics -->
+                  <div class="alina-subject-card">
+                     <h4><i class="fas fa-bolt"></i> Электродинамика</h4>
+                     <div class="study-time">Общее время: 8 недель</div>
+                     
+                                           <h5 style="color: rgba(146, 64, 14, 0.85); margin: 16px 0 8px 0; font-weight: 600;">Введение (2 недели):</h5>
+                      <ul style="font-size: 13px; margin-bottom: 12px; padding-left: 20px;">
+                         <li>Мякишев Г.Я., Синяков А.З., Слободсков Б.А. — Электродинамика. 10-11 классы</li>
+                         <li>Бутиков Е.И., Кондратьев А.С. — Электродинамика. Оптика</li>
+                         <li>Меледин Г.Ф. — Физика в задачах (128 задач)</li>
+                         <li><em>Практика:</em> Рисование магнитных линий соленоидов, намагниченных предметов</li>
+                      </ul>
+                      
+                      <h5 style="color: rgba(146, 64, 14, 0.85); margin: 16px 0 8px 0; font-weight: 600;">Основная теория (4 недели):</h5>
+                      <ul style="font-size: 13px; margin-bottom: 12px; padding-left: 20px;">
+                         <li>Сивухин Д.В. — Электричество</li>
+                         <li>Иродов И.Е. — Основные законы электромагнетизма</li>
+                         <li>Паршаков А.Н. — Электромагнетизм в ключевых задачах</li>
+                         <li>Бутиков Е.И., Быков А.А., Кондратьев А.С. — Физика в примерах и задачах</li>
+                         <li>Берклеевский курс физики. Том II. Электричество и Магнетизм</li>
+                         <li><em>Важно:</em> Геометрический смысл grad, div, rot, уравнений Максвелла</li>
+                      </ul>
+                      
+                      <h5 style="color: rgba(146, 64, 14, 0.85); margin: 16px 0 8px 0; font-weight: 600;">Практика (2 недели):</h5>
+                     <ul style="font-size: 13px; padding-left: 20px;">
+                        <li>Буздин А.И., Ильин В.А. — Задачи Московских Физических Олимпиад (62 задачи)</li>
+                        <li>Буздин А.И., Зильберман А.Р. — Раз задача, Два задача... (80 задач)</li>
+                        <li>Задачи московских городских олимпиад по физике 1986-2005 (96 задач)</li>
+                        <li>200 Интригующих задач по физике (62 задачи)</li>
+                        <li>Гориковский В. — Польские Физические Олимпиады (25 задач)</li>
+                        <li>Иродов И.Е. — Задачи по общей физике (выборочно)</li>
+                     </ul>
+                  </div>
+                  
+                  <!-- Thermodynamics -->
+                  <div class="alina-subject-card">
+                     <h4><i class="fas fa-thermometer-half"></i> Термодинамика</h4>
+                     <div class="study-time">Общее время: 6 недель</div>
+                     
+                                           <h5 style="color: rgba(146, 64, 14, 0.85); margin: 16px 0 8px 0; font-weight: 600;">Введение (2 недели):</h5>
+                      <ul style="font-size: 13px; margin-bottom: 12px; padding-left: 20px;">
+                         <li>Мякишев Г.Я. — Молекулярная физика. Термодинамика</li>
+                         <li>Бутиков Е.И., Кондратьев А.С. — Строение и свойства вещества</li>
+                         <li>Меледин Г.Ф. — Физика в задачах (65 задач по тепловым явлениям)</li>
+                      </ul>
+                      
+                      <h5 style="color: rgba(146, 64, 14, 0.85); margin: 16px 0 8px 0; font-weight: 600;">Основная теория (3 недели):</h5>
+                      <ul style="font-size: 13px; margin-bottom: 12px; padding-left: 20px;">
+                         <li>Сивухин Д.В. — Общий курс физики. Термодинамика и молекулярная физика</li>
+                         <li>Бутиков Е.И., Быков А.А., Кондратьев А.С. — Физика в примерах и задачах (Термодинамика)</li>
+                         <li>Паршаков — Тепловые явления и молекулярная физика</li>
+                         <li>Иродов И.Е. — Физика макросистем. Основные законы</li>
+                      </ul>
+                      
+                      <h5 style="color: rgba(146, 64, 14, 0.85); margin: 16px 0 8px 0; font-weight: 600;">Практика (2 недели):</h5>
+                     <ul style="font-size: 13px; padding-left: 20px;">
+                        <li>Буздин А.И., Ильин В.А. — Задачи Московских Физических Олимпиад (42 задачи)</li>
+                        <li>Буздин А.И., Зильберман А.Р. — Раз задача, Два задача... (55 задач)</li>
+                        <li>Задачи московских городских олимпиад по физике 1986-2005 (79 задач)</li>
+                        <li>200 Интригующих задач по физике (23 задачи)</li>
+                        <li>Слободецкий И.Ш., Асламазов Л.Г. — Задачи по физике (30 задач)</li>
+                     </ul>
+                  </div>
+                  
+                  <!-- Optics & Quantum -->
+                  <div class="alina-subject-card">
+                     <h4><i class="fas fa-eye"></i> Оптика и квантовая механика</h4>
+                     <div class="study-time">Фокус: визуализация и схемы</div>
+                     
+                                           <h5 style="color: rgba(146, 64, 14, 0.85); margin: 16px 0 8px 0; font-weight: 600;">Теоретическая база:</h5>
+                      <ul style="font-size: 13px; margin-bottom: 12px; padding-left: 20px;">
+                         <li>Мякишев Г.Я., Синяков А.З. — Оптика. Квантовая физика. 11 класс</li>
+                         <li>Савельев И.В. — Курс общей физики, том III</li>
+                         <li>Бутиков Е.И., Кондратьев А.С. — Электродинамика. Оптика</li>
+                         <li>Иродов И.Е. — Волновые процессы. Основные законы</li>
+                         <li>Иродов И.Е. — Квантовая физика. Основные законы</li>
+                         <li>Паршаков А.Н. — Оптика в ключевых задачах</li>
+                         <li>Паршаков А.Н. — Квантовая физика в избранных задачах</li>
+                         <li>Бутиков Е.И., Быков А.А., Кондратьев А.С. — Физика в примерах и задачах</li>
+                         <li><em>Особое внимание:</em> Оптические приборы, векторные способы расчета интерференции</li>
+                      </ul>
+                      
+                      <h5 style="color: rgba(146, 64, 14, 0.85); margin: 16px 0 8px 0; font-weight: 600;">Практика:</h5>
+                      <ul style="font-size: 13px; padding-left: 20px;">
+                         <li>Меледин Г.Ф. — Физика в задачах (52 задачи)</li>
+                         <li>Буздин А.И., Ильин В.А. — Задачи Московских Физических Олимпиад (20 задач)</li>
+                         <li>Буздин А.И., Зильберман А.Р. — Раз задача, Два задача... (26 задач)</li>
+                         <li>Задачи московских городских олимпиад по физике 1986-2005 (46 задач)</li>
+                         <li>Иродов И.Е. — Задачи по общей физике (250 оптика + 245 кванты)</li>
+                         <li>200 + Ещё 200 интригующих задач по физике (22 задачи)</li>
+                         <li>Готтлиб М.А., Пфайффер Р. — Задачи к Фейнмановским лекциям</li>
+                         <li>Гориковский В. — Польские Физические Олимпиады (9 задач)</li>
+                         <li><em>Дополнительно:</em> Kevin Zhou handouts, статьи в "Квантах", math.us и pho.rs</li>
+                      </ul>
+                      
+                      <h5 style="color: rgba(146, 64, 14, 0.85); margin: 16px 0 8px 0; font-weight: 600;">Дополнительные темы:</h5>
+                     <ul style="font-size: 13px; padding-left: 20px;">
+                        <li>Инвариант Аббе</li>
+                        <li>Применение уравнения Шрёдингера</li>
+                        <li>Микроскопы, телескопы, разрешающая способность</li>
+                        <li>Поляризаторы, четвертьволновые/полуволновые пластинки</li>
+                        <li>Индикатриса рассеяния</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+
             <!-- Слободянюк Books -->
             <div class="resource-card">
                <h3><i class="fas fa-book"></i> Книги А.И. Слободянюка</h3>
-               <p>Фундаментальные пособия по всем разделам физики от ведущего методиста белорусских физических олимпиад</p>
+               <p>Фундаментальные пособия по всем разделам физики от ведущего методиста белорусских физических олимпиад. Основа для экспериментального тура на всех уровнях.</p>
                
                <div class="book-covers">
                   <div class="book-cover">
@@ -524,34 +761,58 @@
                </ul>
             </div>
 
-            <!-- Savchenko Solutions Featured -->
-            <div class="resource-card savchenko-featured">
-               <h3><i class="fas fa-star"></i> Savchenko Solutions</h3>
-               <p>Первая глобальная платформа с полными решениями всех 2,023 задач из легендарного сборника Савченко О.Я.</p>
+            <!-- Theory Textbooks -->
+            <div class="resource-card">
+               <h3><i class="fas fa-graduation-cap"></i> Фундаментальные учебники</h3>
+               <p>Классические учебники по общей физике для глубокого понимания теоретических основ</p>
                
-               <div class="platform-benefits">
-                  <h4>Преимущества платформы:</h4>
-                  <ul>
-                     <li>Более 1200 опубликованных решений</li>
-                     <li>Поддержка нескольких языков</li>
-                     <li>Международное сообщество учащихся</li>
-                     <li>Строгое рецензирование решений</li>
-                     <li>Интуитивно понятный интерфейс</li>
-                  </ul>
+               <div class="book-covers">
+                  <div class="book-cover">
+                     <img src="Сивухин Д.В. – Электричество.jpg" alt="Сивухин">
+                     <p>Сивухин</p>
+                  </div>
+                  <div class="book-cover">
+                     <img src="Иродов И.Е. – Основы электромагнетизма Задачи по общей физике.jpg" alt="Иродов">
+                     <p>Иродов</p>
+                  </div>
+                  <div class="book-cover">
+                     <img src="Савельев – Курс общей физики.jpg" alt="Савельев">
+                     <p>Савельев</p>
+                  </div>
+                  <div class="book-cover">
+                     <img src="Фейнмановские лекции по физике.jpg" alt="Фейнман">
+                     <p>Фейнмановские лекции</p>
+                  </div>
                </div>
-               
-               <p style="font-style: italic; margin-top: 16px;">За 30 лет сборник задач Савченко бросал вызов студентам по всему постсоветскому пространству. Теперь впервые доступен полный архив решений благодаря международным усилиям студентов.</p>
-               
+
+               <h4>Серия Д.В. Сивухина:</h4>
                <ul class="resource-list">
-                  <li><a href="https://savchenkosolutions.com/ru/" target="_blank" style="font-weight: 700; color: #1e40af;">Savchenko Solutions — решение задач из сборника Савченко О.Я.</a></li>
-                  <li><a href="https://mathus.ru/phys/book.pdf" target="_blank">Полный курс физики от mathus</a></li>
+                  <li>Общий курс физики. Механика. Том I</li>
+                  <li>Электричество</li>
+                  <li>Общий курс физики. Термодинамика и молекулярная физика</li>
+               </ul>
+
+               <h4>Серия И.Е. Иродова:</h4>
+               <ul class="resource-list">
+                  <li>Основные законы механики</li>
+                  <li>Основные законы электромагнетизма</li>
+                  <li>Волновые процессы. Основные законы</li>
+                  <li>Квантовая физика. Основные законы</li>
+                  <li>Физика макросистем. Основные законы</li>
+               </ul>
+
+               <h4>Другие фундаментальные учебники:</h4>
+               <ul class="resource-list">
+                  <li>Савельев И.В. — Курс общей физики, том III</li>
+                  <li>Берклеевский курс физики. Том II. Электричество и Магнетизм</li>
+                  <li>Перунова М.Н. — Колебания и волны</li>
                </ul>
             </div>
 
             <!-- Problem Collections -->
             <div class="resource-card">
-               <h3><i class="fas fa-puzzle-piece"></i> Сборники задач</h3>
-               <p>Тщательно отобранные коллекции задач различной сложности для систематической подготовки</p>
+               <h3><i class="fas fa-puzzle-piece"></i> Классические сборники задач</h3>
+               <p>Проверенные временем коллекции задач различной сложности для систематической подготовки</p>
                
                <div class="book-covers">
                   <div class="book-cover">
@@ -563,123 +824,108 @@
                      <p>Бутиков</p>
                   </div>
                   <div class="book-cover">
-                     <img src="Фейнмановские лекции по физике.jpg" alt="Фейнман">
-                     <p>Фейнмановские лекции</p>
+                     <img src="very_long_problems.jpg" alt="Длинные задачи">
+                     <p>Очень длинные физические задачи</p>
                   </div>
                   <div class="book-cover">
-                     <img src="very_long_problems.jpg" alt="Кузнецов">
-                     <p>Очень длинные физические задачи</p>
+                     <img src="Паршаков – Оптика Квантовая физика в задачах.jpg" alt="Паршаков">
+                     <p>Паршаков</p>
                   </div>
                </div>
 
+               <h4>Сборники задач Бутикова, Быкова, Кондратьева:</h4>
+               <ul class="resource-list">
+                  <li><a href="Fizika_v_primerah)i_zadachah.pdf" target="_blank">Физика в примерах и задачах</a> — все разделы физики</li>
+                  <li>Физика. Механика</li>
+                  <li>Строение и свойства вещества</li>
+                  <li>Электродинамика. Оптика</li>
+               </ul>
+
+               <h4>Сборники А.Н. Паршакова:</h4>
+               <ul class="resource-list">
+                  <li>Механика, Колебания, Акустика</li>
+                  <li>Электромагнетизм в ключевых задачах</li>
+                  <li>Тепловые явления и молекулярная физика</li>
+                  <li>Оптика в ключевых задачах</li>
+                  <li>Квантовая физика в избранных задачах</li>
+               </ul>
+
+               <h4>Олимпиадные сборники:</h4>
                <ul class="resource-list">
                   <li>Очень длинные физические задачи (<a href="LongProblemsPart1.pdf" target="_blank">Часть 1</a>, <a href="LongProblemsPart2.pdf" target="_blank">Часть 2</a>) — Слободянюк А.И.</li>
-                  <li><a href="Fizika_v_primerah)i_zadachah.pdf" target="_blank">Физика в примерах и задачах</a> — Бутиков Е.И., Быков А.А., Кондратьев А.С.</li>
+                  <li>Буздин А.И., Ильин В.А. — Задачи Московских Физических Олимпиад</li>
+                  <li>Буздин А.И., Зильберман А.Р. — Раз задача, Два задача...</li>
+                  <li>Задачи московских городских олимпиад по физике 1986-2005</li>
+                  <li>Гориковский В. — Польские Физические Олимпиады</li>
+                  <li>200 + Ещё 200 интригующих задач по физике</li>
+                  <li>Слободецкий И.Ш., Асламазов Л.Г. — Задачи по физике</li>
+                  <li>Меледин Г.Ф. — Физика в задачах: экзаменационные задачи с решениями</li>
+                  <li>Готтлиб М.А., Пфайффер Р. — Задачи к Фейнмановским лекциям по физике</li>
+               </ul>
+            </div>
+
+            <!-- Savchenko Solutions -->
+            <div class="resource-card savchenko-featured">
+               <h3><i class="fas fa-star"></i> Savchenko Solutions</h3>
+               <p>Платформа с решениями задач из сборника Савченко О.Я. — первый в мире полный архив решений для этого классического задачника.</p>
+               
+               <div class="platform-benefits">
+                  <h4>Особенности:</h4>
+                  <ul>
+                     <li>Более 1200 опубликованных решений</li>
+                     <li>Поддержка нескольких языков</li>
+                     <li>Строгое рецензирование решений</li>
+                  </ul>
+               </div>
+               
+               <ul class="resource-list">
+                  <li><a href="https://savchenkosolutions.com/ru/" target="_blank" style="font-weight: 700; color: #1e40af;">Savchenko Solutions — решения задач из сборника Савченко О.Я.</a></li>
+                  <li><a href="https://mathus.ru/phys/book.pdf" target="_blank">Полный курс физики от mathus</a></li>
+               </ul>
+            </div>
+
+            <!-- School Textbooks -->
+            <div class="resource-card">
+               <h3><i class="fas fa-school"></i> Школьные учебники углубленного уровня</h3>
+               <p>Учебники для школ с углубленным изучением физики и профильных классов</p>
+               
+               <h4>Серия под редакцией Мякишева Г.Я.:</h4>
+               <ul class="resource-list">
+                  <li>Физика. Механика. 10 класс</li>
+                  <li>Молекулярная физика. Термодинамика</li>
+                  <li>Электродинамика. 10-11 классы</li>
+                  <li>Оптика. Квантовая физика. 11 класс</li>
+               </ul>
+
+               <h4>Дополнительные школьные пособия:</h4>
+               <ul class="resource-list">
+                  <li>Мякишев Г.Я., Синяков А.З., Слободсков Б.А. — различные тома</li>
+                  <li>Mathus — Уравнение колебаний. 1, 2</li>
                </ul>
             </div>
 
             <!-- International Resources -->
             <div class="resource-card">
-               <h3><i class="fas fa-globe"></i> Международные олимпиады</h3>
-               <p>Ресурсы для подготовки к IPhO и другим международным соревнованиям по физике</p>
+               <h3><i class="fas fa-globe"></i> Международные ресурсы</h3>
+               <p>Материалы для подготовки к IPhO и изучения международного опыта олимпиадного движения</p>
                
                <ul class="resource-list">
-                  <li><a href="https://knzhou.github.io/" target="_blank">Дополнительные материалы от Kevin Zhou</a></li>
-                  <li><a href="https://www.ioc.ee/~kalda/ipho/" target="_blank">Учебные пособия для IPhO-s от Jaan Kalda</a></li>
-                  <li><a href="https://pho.rs/" target="_blank">pho.rs сайт сборной России</a></li>
+                  <li><a href="https://knzhou.github.io/" target="_blank">Kevin Zhou handouts — дополнительные материалы</a></li>
+                  <li><a href="https://www.ioc.ee/~kalda/ipho/" target="_blank">Jaan Kalda — учебные пособия для IPhO</a></li>
+                  <li><a href="https://pho.rs/" target="_blank">pho.rs — сайт сборной России</a></li>
+                  <li><a href="https://mathus.ru/phys/" target="_blank">mathus — дополнительные материалы и подборки</a></li>
                   <li><a href="https://www.ipho-new.org/documentations/#past-ipho-problems-and-solutions" target="_blank">Условия задач IPhO прошлых лет</a></li>
                   <li><a href="https://ipho-unofficial.org/countries/" target="_blank">Сайты национальных олимпиад разных стран</a></li>
-                  <li><a href="https://mathus.ru/phys/" target="_blank">Дополнительные материалы от mathus</a></li>
                </ul>
-            </div>
 
-            <!-- Alina's Guide: Electromagnetism -->
-            <div class="resource-card alina-guide">
-               <h3><i class="fas fa-bolt"></i> Путеводитель по электромагнетизму</h3>
-               <p><em>По материалам Алины Полонской (золотая медаль IPhO 2024, Беларусь)</em></p>
-               
-               <div class="topic-section">
-                  <h4>Теоретическая база</h4>
-                  <span class="time-estimate">Время освоения: 2 недели</span>
-                  <ul class="resource-list">
-                     <li>Электродинамика. 10-11 классы — Мякишев Г.Я., Синяков А.З., Слободсков Б.А.</li>
-                     <li>Электродинамика. Оптика — Е.И.Бутиков, А.С.Кондратьев</li>
-                  </ul>
-                  <p><strong>Практические навыки:</strong> Рисование магнитных линий различных соленоидов, намагниченных предметов.</p>
-               </div>
-
-               <div class="topic-section">
-                  <h4>Основная теория</h4>
-                  <span class="time-estimate">Время освоения: 4 недели</span>
-                  <ul class="resource-list">
-                     <li>Электричество — Сивухин Д.В.</li>
-                     <li>Основные законы электромагнетизма — Иродов И.Е.</li>
-                     <li>Электромагнетизм в ключевых задачах — Паршаков А.Н.</li>
-                     <li>Берклеевский курс физики. Том II. Электричество и Магнетизм</li>
-                  </ul>
-                  <p><strong>Важно:</strong> Разобраться с геометрическим смыслом grad, div, rot, уравнений Максвелла.</p>
-               </div>
-
-               <div class="topic-section">
-                  <h4>Практика</h4>
-                  <span class="time-estimate">Время освоения: 2 недели</span>
-                  <ul class="resource-list">
-                     <li>Задачи московских городских олимпиад по физике 1986-2005 (96 задач)</li>
-                     <li>200 Интригующих задач по физике (62 задачи)</li>
-                     <li>Польские Физические Олимпиады — В.Гориковский (25 задач)</li>
-                  </ul>
-                  <p><strong>Темы:</strong> Электростатика, Магнитостатика, Электрические цепи, Электромагнетизм</p>
-               </div>
-            </div>
-
-            <!-- Alina's Guide: Optics & Quantum -->
-            <div class="resource-card alina-guide">
-               <h3><i class="fas fa-eye"></i> Оптика и квантовая механика</h3>
-               <p><em>По материалам Алины Полонской (золотая медаль IPhO 2024, Беларусь)</em></p>
-               
-               <div class="book-covers">
-                  <div class="book-cover">
-                     <img src="Паршаков – Оптика Квантовая физика в задачах.jpg" alt="Паршаков">
-                     <p>Паршаков</p>
-                  </div>
-                  <div class="book-cover">
-                     <img src="Савельев – Курс общей физики.jpg" alt="Савельев">
-                     <p>Савельев</p>
-                  </div>
-               </div>
-
-               <div class="topic-section">
-                  <h4>Теоретическая база</h4>
-                  <p><strong>Особый фокус:</strong> Визуальная интерпретация, оптические схемы</p>
-                  <ul class="resource-list">
-                     <li>Оптика. Квантовая физика. 11 класс — Мякишев Г.Я., Синяков А.З.</li>
-                     <li>Курс общей физики, том III — И.В.Савельев</li>
-                     <li>Волновые процессы. Основные законы — Иродов И.Е.</li>
-                     <li>Квантовая физика. Основные законы — Иродов И.Е.</li>
-                  </ul>
-                  <p><strong>Особое внимание:</strong> Описание оптических приборов и векторные способы расчета интерференционной картины.</p>
-               </div>
-
-               <div class="topic-section">
-                  <h4>Практика</h4>
-                  <p><strong>Дополнительные источники:</strong> Kevin Zhou handouts, статьи в "Квантах", math.us и pho.rs</p>
-                  <ul class="resource-list">
-                     <li>Физика в задачах: экзаменационные задачи с решениями — Г.Ф.Меледин (52 задачи)</li>
-                     <li>Задачи Московских Физических Олимпиад — А.И.Буздин, В.А.Ильин (20 задач)</li>
-                     <li>Задачи к Фейнмановским лекциям по физике</li>
-                     <li>Польские Физические Олимпиады — В.Гориковский (9 задач)</li>
-                  </ul>
-               </div>
-
-               <div class="topic-section">
-                  <h4>Дополнительные темы</h4>
-                  <ul class="resource-list">
-                     <li>Инвариант Аббе</li>
-                     <li>Применение уравнения Шрёдингера</li>
-                     <li>Микроскопы, телескопы, их разрешающая способность</li>
-                     <li>Поляризаторы. Четвертьволновые, полуволновые пластинки</li>
-                  </ul>
-               </div>
+               <h4>Статьи и дополнительные материалы:</h4>
+               <ul class="resource-list">
+                  <li>Статьи в журнале "Квант" по геометрической оптике</li>
+                  <li>Статьи в "Квантах" по различным разделам физики</li>
+                  <li>Плейлист "Электромагнитная индукция" — канал GetAClass</li>
+                  <li>Лабораторные работы по квантовой физике</li>
+                  <li>Материалы российских сборов (Квалификационные сборы)</li>
+               </ul>
             </div>
          </div>
       </div>
