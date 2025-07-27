@@ -213,17 +213,43 @@
 
         .alumni-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 24px;
+            grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+            gap: 20px;
+        }
+
+        @media (min-width: 1200px) {
+            .alumni-grid {
+                grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+                gap: 24px;
+            }
+        }
+
+        @media (min-width: 1600px) {
+            .alumni-grid {
+                grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+                gap: 28px;
+            }
         }
 
         .alumni-card {
             background: var(--surface-color);
             border-radius: 16px;
-            padding: 24px;
+            padding: 20px;
             box-shadow: var(--shadow-md);
             transition: all 0.3s ease;
             border-left: 4px solid var(--primary-color);
+        }
+
+        @media (min-width: 1200px) {
+            .alumni-card {
+                padding: 22px;
+            }
+        }
+
+        @media (min-width: 1600px) {
+            .alumni-card {
+                padding: 24px;
+            }
         }
 
         .alumni-card:hover {
@@ -258,12 +284,26 @@
         }
 
         .profile-image {
-            width: 60px;
-            height: 60px;
+            width: 70px;
+            height: 70px;
             border-radius: 50%;
             overflow: hidden;
             flex-shrink: 0;
             box-shadow: var(--shadow-sm);
+        }
+
+        @media (min-width: 1200px) {
+            .profile-image {
+                width: 75px;
+                height: 75px;
+            }
+        }
+
+        @media (min-width: 1600px) {
+            .profile-image {
+                width: 80px;
+                height: 80px;
+            }
         }
 
         .profile-image img {
@@ -301,6 +341,48 @@
             display: inline-block;
         }
 
+        .teacher-info {
+            font-size: 12px;
+            color: var(--text-secondary);
+            margin-bottom: 4px;
+            font-style: italic;
+        }
+
+        .university-with-emblem {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .university-emblem {
+            max-width: 24px;
+            max-height: 20px;
+            width: auto;
+            height: auto;
+            border-radius: 2px;
+            object-fit: contain;
+        }
+
+        .forbes-candidate {
+            border-left-color: #ff6b35 !important;
+        }
+
+        .forbes-candidate .medal-badge {
+            background: linear-gradient(45deg, #ff6b35, #f7931e);
+            color: white;
+        }
+
+        .platform-founder {
+            border-left-color: #ff6b35 !important;
+            background: linear-gradient(135deg, rgba(247, 147, 30, 0.05), rgba(255, 107, 53, 0.05));
+        }
+
+        .platform-founder .medal-badge {
+            background: linear-gradient(45deg, #ff6b35, #f7931e);
+            color: white;
+            box-shadow: 0 2px 8px rgba(255, 107, 53, 0.3);
+        }
+
         .medal-badge {
             padding: 4px 8px;
             border-radius: 6px;
@@ -327,9 +409,21 @@
             background: var(--secondary-color);
         }
 
+        .medal-founder {
+            background: linear-gradient(45deg, #ff6b35, #f7931e);
+            color: white;
+            font-weight: bold;
+        }
+
         .alumni-details {
             display: grid;
-            gap: 12px;
+            gap: 10px;
+        }
+
+        @media (min-width: 1200px) {
+            .alumni-details {
+                gap: 12px;
+            }
         }
 
         .detail-row {
@@ -894,7 +988,7 @@
                     <img src="img/teams/ipho_2019.jpg" alt="Команда IPhO 2019" class="team-photo">
                     <div class="team-photo-caption">
                         <h3>IPhO 2019 - Израиль (50-я юбилейная)</h3>
-                        <p>Евгений Дедков (золото), Александр Каленчиц, Михаил Макей, Андрей Кацевич, Алексей Быков (бронза)</p>
+                        <p>Евгений Дедков (золото), Александр Каленчиц, Михаил Макей, Андрей Коцевич, Алексей Быков (бронза)</p>
                     </div>
                 </div>
                 <div class="team-photo-card">
@@ -2375,6 +2469,7 @@
                 name: "Максим Лицкевич",
                 englishName: "Maksim Litskevich",
                 school: "Школа № 2 (Каменец)",
+                teacher: "Михаил Михайлович Макоед",
                 year: 2013,
                 ipho: "44th IPhO, Дания",
                 award: "silver",
@@ -2386,16 +2481,18 @@
                 achievements: [
                     "🥈 IPhO Silver Medalist 2013",
                     "🎓 PhD from Princeton University (2024)",
-                    "🔬 Physics Research"
+                    "🔬 Постдок в Syracuse University",
+                    "📚 Выпускник МФТИ (бакалавриат)"
                 ],
-                currentStatus: "PhD выпускник",
-                university: "Princeton University",
+                currentStatus: "Постдок",
+                university: "Syracuse University",
                 country: "США",
                 profileImage: "img/teams/Maksim Litskevich.jpeg",
-                profession: "Physics PhD (Princeton, 2024)",
+                profession: "Research Associate (Postdoc) in Physics",
                 researchArea: "Physics",
                 socialLinks: [
-                    { type: "linkedin", url: "https://www.linkedin.com/in/maksim-litskevich-igorevich" }
+                    { type: "linkedin", url: "https://www.linkedin.com/in/maksim-litskevich-igorevich" },
+                    { type: "other", url: "https://artsandsciences.syracuse.edu/people/research-associates/maksim-litskevich/", name: "Syracuse University Profile" }
                 ]
             },
             {
@@ -2725,6 +2822,7 @@
                 name: "Никита Игнатюк",
                 englishName: "Mikita Ihnatsiuk",
                 school: "Лицей № 1 им. А. Пушкина (Брест)",
+                teacher: "Михаил Михайлович Макоед",
                 year: 2017,
                 ipho: "48th IPhO, Индонезия",
                 award: "silver",
@@ -2769,6 +2867,7 @@
                 name: "Павел Курач",
                 englishName: "Pavel Kurach",
                 school: "Лицей № 1 им. А. Пушкина (Брест)",
+                teacher: "Михаил Михайлович Макоед",
                 year: 2017,
                 ipho: "48th IPhO, Индонезия",
                 award: "bronze",
@@ -2777,13 +2876,20 @@
                 experiment: null,
                 total: 16.8,
                 totalContestants: 311,
-                achievements: [],
+                achievements: [
+                    "🥉 Бронзовая медаль IPhO 2017",
+                    "🎓 Выпускник École Polytechnique",
+                    "🎓 Выпускник МФТИ",
+                    "🇫🇷 Работает во Франции"
+                ],
                 profileImage: "img/teams/Pavel Kurach.jpg",
-                currentStatus: "Студент",
-                university: "—",
-                country: "Беларусь",
-                profession: "Студент",
-                socialLinks: []
+                currentStatus: "Специалист",
+                university: "École Polytechnique / МФТИ",
+                country: "Франция",
+                profession: "Специалист",
+                socialLinks: [
+                    { type: "linkedin", url: "https://fr.linkedin.com/in/pavelkurach" }
+                ]
             },
             {
                 name: "Валентин Дарафеев",
@@ -2871,7 +2977,7 @@
                 achievements: [],
                 profileImage: "img/teams/YAUHENI DZIADKOU.jpg",
                 currentStatus: "Студент университета",
-                university: "—",
+                university: "Московский физико-технический институт (ФРКТ)",
                 country: "Беларусь",
                 profession: "Студент",
                 socialLinks: []
@@ -2962,7 +3068,7 @@
                 achievements: ["Участник юбилейной 50-й IPhO", "Золотая медаль IPhO"],
                 profileImage: "img/teams/YAUHENI DZIADKOU.jpg",
                 currentStatus: "Студент университета",
-                university: "—",
+                university: "Московский физико-технический институт (ФРКТ)",
                 country: "Беларусь",
                 profession: "Студент",
                 socialLinks: []
@@ -3018,6 +3124,7 @@
                 name: "Андрей Коцевич",
                 englishName: "Andrei Katsevich",
                 school: "Лицей № 1 им. А. Пушкина (Брест)",
+                teacher: "Михаил Михайлович Макоед",
                 year: 2019,
                 ipho: "50th IPhO, Израиль",
                 award: "bronze",
@@ -3042,6 +3149,10 @@
                 researchArea: "Theoretical High-Energy Physics (hep-th), Quantum Field Theory",
                 publications: 4,
                 impactMetrics: "Theoretical physicist working on sphere free energy, minimal models, and Ginzburg-Landau descriptions",
+                mediaLinks: [
+                    { type: "youtube", url: "https://youtu.be/ojWP3pbIt2o?list=PLd-SlYibHtlF4f99DODQDYAsl0wtxSQZd", name: "Интервью об олимпиадной физике" },
+                    { type: "news", url: "https://brestcity.com/blog/vypusknik-liceya-1-iz-bresta-vzyal-bronzu-na-mezhdunarodnoj-olimpiade-po-fizike", name: "Статья о бронзе на IPhO" }
+                ],
                 socialLinks: [
                     { type: "other", url: "https://inspirehep.net/authors/2693595", name: "InspireHEP Publications" },
                     { type: "github", url: "https://github.com/Andrew-Kot" },
@@ -3620,7 +3731,7 @@
                         <h2 class="year-title">${year} год</h2>
                         <div class="alumni-grid">
                             ${yearAlumni.map(alumni => `
-                                <div class="alumni-card ${alumni.award} ${alumni.forbesCandidate ? 'forbes-candidate' : ''}" data-award="${alumni.award}" data-school="${alumni.school.toLowerCase().replace(/\s+/g, '-')}">
+                                <div class="alumni-card ${alumni.award} ${alumni.forbesCandidate ? 'forbes-candidate' : ''} ${alumni.platformFounder ? 'platform-founder' : ''}" data-award="${alumni.award}" data-school="${alumni.school.toLowerCase().replace(/\s+/g, '-')}">
                                     <div class="alumni-header">
                                         <div class="alumni-info">
                                             ${alumni.profileImage ? `
@@ -3632,6 +3743,9 @@
                                                 <div class="alumni-name">${alumni.name}</div>
                                                 ${alumni.englishName ? `<div class="english-name">${alumni.englishName}</div>` : ''}
                                                 <div class="alumni-school">${alumni.school}</div>
+                                                ${alumni.teacher ? `
+                                                    <div class="teacher-info">👨‍🏫 ${alumni.teacher}</div>
+                                                ` : ''}
                                                 ${alumni.currentStatus ? `
                                                     <div class="current-status">${alumni.currentStatus}</div>
                                                 ` : ''}
@@ -3648,14 +3762,18 @@
                                             <span class="detail-label">Олимпиада:</span>
                                             <span class="detail-value">${alumni.ipho}</span>
                                         </div>
-                                        <div class="detail-row">
-                                            <span class="detail-label">Место:</span>
-                                            <span class="detail-value rank">${alumni.rank} из ${alumni.totalContestants}</span>
-                                        </div>
-                                        <div class="detail-row">
-                                            <span class="detail-label">Общий балл:</span>
-                                            <span class="detail-value total-score">${alumni.total}</span>
-                                        </div>
+                                        ${alumni.rank !== null ? `
+                                            <div class="detail-row">
+                                                <span class="detail-label">Место:</span>
+                                                <span class="detail-value rank">${alumni.rank} из ${alumni.totalContestants}</span>
+                                            </div>
+                                        ` : ''}
+                                        ${alumni.total !== null ? `
+                                            <div class="detail-row">
+                                                <span class="detail-label">Общий балл:</span>
+                                                <span class="detail-value total-score">${alumni.total}</span>
+                                            </div>
+                                        ` : ''}
                                         ${alumni.theory !== null ? `
                                             <div class="detail-row">
                                                 <span class="detail-label">Теория:</span>
@@ -3672,7 +3790,7 @@
                                         ${alumni.university ? `
                                             <div class="detail-row">
                                                 <span class="detail-label">Университет:</span>
-                                                <span class="detail-value">${alumni.university}</span>
+                                                <span class="detail-value">${formatUniversityWithEmblem(alumni.university)}</span>
                                             </div>
                                         ` : ''}
                                         ${alumni.country ? `
@@ -3779,7 +3897,8 @@
                 'gold': 'Золото',
                 'silver': 'Серебро',
                 'bronze': 'Бронза',
-                'mention': 'Отзыв'
+                'mention': 'Отзыв',
+                'founder': 'Основатель'
             };
             return medals[award] || award;
         }
@@ -3812,6 +3931,40 @@
                 'other': 'Website'
             };
             return names[type] || 'Link';
+        }
+
+        // Helper function to get university emblems
+        function getUniversityEmblem(university) {
+            const emblems = {
+                'MIT': 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/MIT_logo.svg/240px-MIT_logo.svg.png',
+                'Princeton University': 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Princeton_seal.svg/120px-Princeton_seal.svg.png',
+                'Caltech': 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Caltech_logo.png/120px-Caltech_logo.png',
+                'Stanford University': 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Seal_of_Leland_Stanford_Junior_University.svg/120px-Seal_of_Leland_Stanford_Junior_University.svg.png',
+                'Harvard University': 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Harvard_University_coat_of_arms.svg/120px-Harvard_University_coat_of_arms.svg.png',
+                'Cambridge University': 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/University_of_Cambridge_coat_of_arms_official.svg/120px-University_of_Cambridge_coat_of_arms_official.svg.png',
+                'Oxford University': 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Oxford-University-Circlet.svg/120px-Oxford-University-Circlet.svg.png',
+                'МФТИ': 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Mipt_logo.svg/120px-Mipt_logo.svg.png'
+            };
+            
+            // Check if university name contains any of the emblem keys
+            for (const [key, emblem] of Object.entries(emblems)) {
+                if (university && university.includes(key)) {
+                    return emblem;
+                }
+            }
+            return null;
+        }
+
+        // Helper function to format university with emblem
+        function formatUniversityWithEmblem(university) {
+            const emblem = getUniversityEmblem(university);
+            if (emblem) {
+                return `<div class="university-with-emblem">
+                    <img src="${emblem}" alt="${university}" class="university-emblem" onerror="this.style.display='none'">
+                    <span>${university}</span>
+                </div>`;
+            }
+            return university;
         }
 
         // Helper function to determine link type
