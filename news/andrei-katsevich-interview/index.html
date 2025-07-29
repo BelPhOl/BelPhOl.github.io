@@ -4,51 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Интервью с Андреем Коцевичем - Путь от БелФО до Princeton University</title>
-    <link rel="stylesheet" href="../../css/bootstrap.css">
-    <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="../../css/fonts.css">
-    <link rel="icon" type="image/x-icon" href="../../img/favicon.ico">
+    <meta name="description" content="Эксклюзивное интервью с Андреем Коцевичем - от белорусских олимпиад до Princeton University. Опыт участия в IPhO, поступления в зарубежные вузы и научной карьеры.">
+    <meta name="keywords" content="Андрей Коцевич, БелФО, IPhO, физическая олимпиада, Princeton University, МФТИ">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="../../img/logo.png" type="image/png" />
+    
     <style>
-        /* Modern Styling */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
+        :root {
+            --primary-color: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary-color: #64748b;
+            --accent-color: #f59e0b;
+            --success-color: #10b981;
+            --bg-color: #fafbfc;
+            --surface-color: #ffffff;
+            --text-primary: #111827;
+            --text-secondary: #6b7280;
+            --border-color: #e5e7eb;
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
         }
-        
-        /* Navigation Header */
-        .news-header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 15px 0;
-            margin-bottom: 0;
-        }
-        
-        .news-header h4 {
+
+        * {
             margin: 0;
-            font-weight: 300;
-        }
-        
-        .news-header .breadcrumb {
-            background: none;
-            margin: 5px 0 0 0;
             padding: 0;
+            box-sizing: border-box;
         }
-        
-        .news-header .breadcrumb > li + li:before {
-            color: rgba(255,255,255,0.7);
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
         }
-        
-        .news-header .breadcrumb a {
-            color: rgba(255,255,255,0.8);
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header - matching ipho-2025 */
+        .header {
+            background: var(--surface-color);
+            padding: 16px 0;
+            box-shadow: var(--shadow-sm);
+            position: static;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary-color);
             text-decoration: none;
         }
-        
-        .news-header .breadcrumb a:hover {
-            color: white;
+
+        .logo-img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
         }
-        
-        /* Hero Header */
+
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        .breadcrumb a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Header - keeping the beautiful gradient */
         .hero-header {
             position: relative;
             height: 500px;
@@ -105,144 +150,237 @@
             opacity: 0.95;
             text-shadow: 0 1px 2px rgba(0,0,0,0.3);
         }
-        
-        /* Content Section */
-        .content-section {
-            padding: 60px 0;
-            background: #fff;
-        }
-        
+
+        /* Introduction Section - clean newspaper style */
         .intro-section {
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            background: var(--surface-color);
             padding: 60px 0;
+            border-bottom: 1px solid var(--border-color);
         }
         
         .intro-card {
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            padding: 40px;
-            margin: 30px 0;
+            background: var(--surface-color);
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            max-width: 900px;
+            margin: 0 auto;
         }
-        
+
+        .intro-image {
+            flex: 0 0 300px;
+        }
+
+        .intro-content {
+            flex: 1;
+        }
+
         .profile-image {
-            border-radius: 15px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-            transition: transform 0.3s ease;
-        }
-        
-        .profile-image:hover {
-            transform: translateY(-5px);
-        }
-        
-        /* Typography */
-        .section-title {
-            color: #2c3e50;
-            font-weight: 300;
-            margin: 50px 0 30px 0;
-            padding-bottom: 15px;
-            border-bottom: 3px solid #667eea;
-            display: inline-block;
-        }
-        
-        .question {
-            color: #34495e;
-            font-weight: 600;
-            margin: 30px 0 15px 0;
-            font-size: 1.1rem;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        
-        .answer {
-            margin-bottom: 25px;
-            text-align: justify;
-            font-size: 1.05rem;
-            line-height: 1.7;
-        }
-        
-        /* Image Cards */
-        .image-card {
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            padding: 20px;
-            margin: 20px 0;
-            text-align: center;
-        }
-        
-        .image-card img {
+            width: 100%;
+            height: auto;
             border-radius: 8px;
-            max-height: 300px;
-            object-fit: cover;
         }
-        
-        /* Table of Contents */
+
+        /* Table of Contents - compact newspaper style */
+        .toc-section {
+            background: var(--bg-color);
+            padding: 40px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
         .toc {
-            background: #f8f9fa;
-            border-left: 4px solid #667eea;
-            padding: 25px;
-            margin: 40px 0;
-            border-radius: 0 10px 10px 0;
+            background: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 30px;
+            max-width: 900px;
+            margin: 0 auto;
         }
-        
+
         .toc h4 {
-            color: #2c3e50;
+            color: var(--text-primary);
             margin-bottom: 20px;
+            font-size: 1.25rem;
+            font-weight: 600;
         }
-        
+
+        .toc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
         .toc ul {
             list-style: none;
-            padding-left: 0;
+            padding: 0;
+            margin: 0;
         }
-        
+
         .toc li {
+            margin: 6px 0;
+            padding: 4px 0;
+        }
+
+        .toc a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 1.4;
+            transition: color 0.2s ease;
+        }
+
+        .toc a:hover {
+            color: var(--primary-dark);
+            text-decoration: underline;
+        }
+
+        /* Main Content - readable newspaper typography */
+        .content-section {
+            background: var(--surface-color);
+            padding: 60px 0;
+        }
+
+        .article-content {
+            max-width: 950px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            color: var(--text-primary);
+            font-weight: 600;
+            font-size: 1.65rem;
+            margin: 40px 0 25px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        .question {
+            color: var(--text-primary);
+            font-weight: 600;
+            margin: 25px 0 12px 0;
+            font-size: 1.1rem;
+            line-height: 1.4;
+        }
+
+        .answer {
+            color: var(--text-primary);
+            margin-bottom: 18px;
+            font-size: 1rem;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .answer strong {
+            font-weight: 600;
+        }
+
+        .answer em {
+            font-style: italic;
+        }
+
+        .answer ul {
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+
+        .answer li {
             margin: 8px 0;
         }
-        
-        .toc a {
-            color: #667eea;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        
-        .toc a:hover {
-            color: #764ba2;
-        }
-        
-        /* Footer */
-        .footer {
-            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
-            color: white;
-            padding: 50px 0 30px 0;
-        }
-        
-        .footer h5 {
-            color: #ecf0f1;
-            margin-bottom: 20px;
-        }
-        
-        .footer a {
-            color: #bdc3c7;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        
-        .footer a:hover {
-            color: #ecf0f1;
-        }
-        
-        .footer-bottom {
-            border-top: 1px solid rgba(255,255,255,0.1);
-            margin-top: 30px;
-            padding-top: 20px;
+
+        /* Image Cards - clean newspaper style */
+        .image-card {
+            background: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 30px 0;
             text-align: center;
-            color: #95a5a6;
         }
-        
-        /* Responsive */
+
+        .image-card img {
+            border-radius: 4px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .image-card p {
+            margin: 15px 0 0 0;
+            color: var(--text-secondary);
+            font-size: 14px;
+            font-style: italic;
+        }
+
+        /* Final Section */
+        .final-section {
+            background: var(--bg-color);
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .final-card {
+            background: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 40px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Footer - matching ipho-2025 */
+        .footer {
+            background: var(--text-primary);
+            color: white;
+            padding: 40px 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 32px;
+        }
+
+        .footer h4 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: white;
+        }
+
+        .footer p {
+            margin-bottom: 8px;
+            font-size: 14px;
+            color: #94a3b8;
+        }
+
+        .footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-nav {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #374151;
+            padding-top: 24px;
+            text-align: center;
+        }
+
+        .footer-bottom p {
+            font-size: 14px;
+            color: #9ca3af;
+        }
+
+        /* Responsive Design */
         @media (max-width: 768px) {
             .hero-title {
                 font-size: 2.5rem;
@@ -251,41 +389,45 @@
             .hero-subtitle {
                 font-size: 1.2rem;
             }
-            
+
             .intro-card {
-                padding: 25px;
+                flex-direction: column;
+                text-align: center;
             }
-        }
-        
-        /* Scroll animations */
-        .fade-in {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.6s ease;
-        }
-        
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
+
+            .intro-image {
+                flex: none;
+            }
+
+            .toc-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                padding: 0 16px;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- Navigation Header -->
-    <div class="news-header">
+    <!-- Header -->
+    <header class="header">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h4>Новости белорусской физики</h4>
-                    <ol class="breadcrumb">
-                        <li><a href="../../index.html">Главная</a></li>
-                        <li><a href="../index.html">Новости</a></li>
-                        <li class="active">Интервью с Андреем Коцевичем</li>
-                    </ol>
-                </div>
+            <div class="header-content">
+                <a href="../../index.html" class="logo">
+                    <img src="../../img/logo.png" alt="BelPhO" class="logo-img">
+                    BelPhO
+                </a>
+                <nav class="breadcrumb">
+                    <a href="../../index.html">Главная</a>
+                    <span>/</span>
+                    <a href="../index.html">Новости</a>
+                    <span>/</span>
+                    <span>Интервью с Андреем Коцевичем</span>
+                </nav>
             </div>
         </div>
-    </div>
+    </header>
 
     <!-- Hero Header -->
     <div class="hero-header">
@@ -296,96 +438,95 @@
     </div>
 
     <!-- Introduction Section -->
-    <div class="intro-section">
+    <section class="intro-section">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="intro-card fade-in">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <img src="Andrei Katsevich_official.jpg" class="img-responsive profile-image" alt="Андрей Коцевич">
-                            </div>
-                            <div class="col-md-8">
-                                <h3 style="color: #2c3e50; margin-top: 0;">О собеседнике</h3>
-                                <p class="lead" style="color: #34495e;">
-                                    <strong>Андрей Коцевич</strong> — выпускник Брестского государственного областного лицея, 
-                                    участник международных физических олимпиад, выпускник МФТИ и аспирант 
-                                    Princeton University. В этом интервью он делится своим уникальным опытом 
-                                    подготовки к олимпиадам, учебы в ведущих вузах мира и дает ценные советы 
-                                    будущим олимпиадникам.
-                                </p>
-                                <p style="color: #7f8c8d;">
-                                    Интервью раскрывает не только технические аспекты подготовки к олимпиадам, 
-                                    но и личную историю становления ученого, включая вызовы поступления в зарубежные университеты, 
-                                    особенности жизни в США и перспективы развития физического образования в Беларуси.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="intro-card">
+                <div class="intro-image">
+                    <img src="Andrei Katsevich_official.jpg" class="profile-image" alt="Андрей Коцевич">
+                </div>
+                <div class="intro-content">
+                    <h3 style="color: var(--text-primary); margin-top: 0; font-size: 1.5rem; font-weight: 600;">О собеседнике</h3>
+                    <p style="color: var(--text-primary); margin-bottom: 15px; font-size: 1rem; line-height: 1.6;">
+                        <strong>Андрей Коцевич</strong> — выпускник Брестского государственного областного лицея, 
+                        участник международных физических олимпиад, выпускник МФТИ и аспирант 
+                        Princeton University. В этом интервью он делится своим уникальным опытом 
+                        подготовки к олимпиадам, учебы в ведущих вузах мира и дает ценные советы 
+                        будущим олимпиадникам.
+                    </p>
+                    <p style="color: var(--text-secondary); margin-bottom: 0; font-size: 0.95rem; line-height: 1.6;">
+                        Интервью раскрывает не только технические аспекты подготовки к олимпиадам, 
+                        но и личную историю становления ученого, включая вызовы поступления в зарубежные университеты, 
+                        особенности жизни в США и перспективы развития физического образования в Беларуси.
+                    </p>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Table of Contents -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="toc fade-in">
-                    <h4>Содержание интервью</h4>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <ul>
-                                <li><a href="#school-years">Школьные годы и первые шаги</a></li>
-                                <li><a href="#republic-olympiad">Республиканская олимпиада и сборы</a></li>
-                                <li><a href="#international">Международная олимпиада</a></li>
-                                <li><a href="#mipt">Поступление и учеба в МФТИ</a></li>
-                                <li><a href="#princeton">Решение уехать и Princeton</a></li>
-                                <li><a href="#advisor">О научном руководителе</a></li>
-                                <li><a href="#visa-issues">Визовые вопросы и документы</a></li>
-                                <li><a href="#princeton-life">Жизнь в Princeton</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6">
-                            <ul>
-                                <li><a href="#research">Научная работа и публикации</a></li>
-                                <li><a href="#additional-olympiads">Дополнительные олимпиады</a></li>
-                                <li><a href="#recommendations">Рекомендации олимпиадникам</a></li>
-                                <li><a href="#application-advice">Советы по поступлению</a></li>
-                                <li><a href="#practical-application-advice">Практические советы для поступающих</a></li>
-                                <li><a href="#belarus-state">Состояние движения в Беларуси</a></li>
-                                <li><a href="#science-systems-comparison">Сравнение научных систем</a></li>
-                                <li><a href="#theory-practical-applications">Связь теории с практикой</a></li>
-                                <li><a href="#string-theory">Введение в теорию струн</a></li>
-                                <li><a href="#ai-discussion">ИИ и решение задач</a></li>
-                                <li><a href="#teachers">О преподавателях и методике</a></li>
-                                <li><a href="#education-systems">Сравнение образовательных систем</a></li>
-                                <li><a href="#belarus-state-extended">Дополнительные размышления</a></li>
-                                <li><a href="#katsevich-meeting">Встреча с Максимом Лискевичем</a></li>
-                                <li><a href="#travel-stories">Путешествия по Америке</a></li>
-                                <li><a href="#russian-speaking-life">Жизнь русскоговорящих в Princeton</a></li>
-                                <li><a href="#us-olympiad-development">Развитие олимпиад в США</a></li>
-                                <li><a href="#material-recommendations">Рекомендации по материалам</a></li>
-                                <li><a href="#belarus-students-us">Белорусские студенты в США</a></li>
-                                <li><a href="#task-analysis">Анализ задач сборов</a></li>
-                                <li><a href="#complex-tasks">Сложные задачи и их анализ</a></li>
-                                <li><a href="#youtube-courses">Образовательные курсы</a></li>
-                                <li><a href="#task-collection">Коллекционирование задач</a></li>
-                                <li><a href="#olympiad-future">Будущее олимпиадного движения</a></li>
-                            </ul>
-                        </div>
+    <section class="toc-section">
+        <div class="container">
+            <div class="toc">
+                <h4><i class="fas fa-list"></i> Содержание интервью</h4>
+                <div class="toc-grid">
+                    <div>
+                        <ul>
+                            <li><a href="#school-years">Школьные годы и первые шаги</a></li>
+                            <li><a href="#republic-olympiad">Республиканская олимпиада и сборы</a></li>
+                            <li><a href="#international">Международная олимпиада</a></li>
+                            <li><a href="#mipt">Поступление и учеба в МФТИ</a></li>
+                            <li><a href="#princeton">Решение уехать и Princeton</a></li>
+                            <li><a href="#advisor">О научном руководителе</a></li>
+                            <li><a href="#visa-issues">Визовые вопросы и документы</a></li>
+                            <li><a href="#princeton-life">Жизнь в Princeton</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="#research">Научная работа и публикации</a></li>
+                            <li><a href="#additional-olympiads">Дополнительные олимпиады</a></li>
+                            <li><a href="#recommendations">Рекомендации олимпиадникам</a></li>
+                            <li><a href="#application-advice">Советы по поступлению</a></li>
+                            <li><a href="#practical-application-advice">Практические советы</a></li>
+                            <li><a href="#belarus-state">Состояние движения в Беларуси</a></li>
+                            <li><a href="#science-systems-comparison">Сравнение научных систем</a></li>
+                            <li><a href="#theory-practical-applications">Связь теории с практикой</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="#string-theory">Введение в теорию струн</a></li>
+                            <li><a href="#ai-discussion">ИИ и решение задач</a></li>
+                            <li><a href="#teachers">О преподавателях и методике</a></li>
+                            <li><a href="#education-systems">Сравнение образовательных систем</a></li>
+                            <li><a href="#belarus-state-extended">Дополнительные размышления</a></li>
+                            <li><a href="#katsevich-meeting">Встреча с Максимом Лискевичем</a></li>
+                            <li><a href="#travel-stories">Путешествия по Америке</a></li>
+                            <li><a href="#russian-speaking-life">Жизнь в Princeton</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="#us-olympiad-development">Развитие олимпиад в США</a></li>
+                            <li><a href="#material-recommendations">Рекомендации по материалам</a></li>
+                            <li><a href="#belarus-students-us">Белорусские студенты в США</a></li>
+                            <li><a href="#task-analysis">Анализ задач сборов</a></li>
+                            <li><a href="#complex-tasks">Сложные задачи и их анализ</a></li>
+                            <li><a href="#youtube-courses">Образовательные курсы</a></li>
+                            <li><a href="#task-collection">Коллекционирование задач</a></li>
+                            <li><a href="#olympiad-future">Будущее олимпиадного движения</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- Main Content -->
-    <div class="content-section">
+        <!-- Main Content -->
+    <section class="content-section">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <section id="school-years" class="fade-in">
+            <div class="article-content">
+                <section id="school-years">
                     <h3 class="section-title">Школьные годы и первые шаги в олимпиадной физике</h3>
                     
                     <p class="question">Расскажите о своих школьных годах. Откуда вы родом и как попали в олимпиадную физику?</p>
@@ -402,7 +543,7 @@
                     Я просто старался подробно всё расписать, потому что в 9 классе меня однажды сняли за то, что я не написал фразу «по закону Ома». Представляете? Всё решил верно, а эти слова забыл — и всё, сняли. С тех пор я старался писать подробно. Но всё равно проверка была ужасная.</p>
                     </section>
 
-                    <section id="republic-olympiad" class="fade-in">
+                    <section id="republic-olympiad">
                     <h3 class="section-title">Республиканская олимпиада и сборы</h3>
 
                     <p class="question">Как проходили сборы и отбор в сборную команду?</p>
@@ -422,7 +563,7 @@
                     <p class="answer">И ещё помню, была одна экспериментальная задача — я получил за неё, кажется, 0,05 балла. Хотя, как мне казалось, всё сделал правильно: коэффициент преломления у меня сходился до сотой или даже тысячной. Я уже было обрадовался, думал, что будет хороший балл — хотя бы 5 или 7. А в итоге — 0,05. До сих пор помню.</p>
                     </section>
 
-                    <section id="mipt" class="fade-in">
+                    <section id="mipt">
                         <h3 class="section-title">Поступление и учеба в МФТИ</h3>
 
                     <p class="question">Почему вы выбрали МФТИ для дальнейшего обучения?</p>
@@ -972,84 +1113,68 @@
                         <p class="answer">Мы на сборах постоянно обсуждали задачи. Помню, как сидели до 4 утра, разбирали, как выразить корни в одной степени через ряд Тейлора, упрощали формулы... Это была настоящая страсть и мотивация.</p>
                     </section>
 
-                    <section id="final-section" class="fade-in">
-
-                        <div class="image-card fade-in">
-                            <img src="Andrei Katsevich_official.jpg" class="img-responsive" alt="Андрей Коцевич">
-                            <p><em>Андрей Коцевич — от брестского школьника до Princeton PhD</em></p>
-                        </div>
-
-                        <div style="background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); padding: 30px; border-radius: 10px; margin: 40px 0;">
-                            <p class="text-center" style="font-style: italic; color: #2c3e50; font-size: 1.1rem; margin: 0;">
-                                <strong>Полное интервью записано в июле 2025 года.</strong><br>
-                                Андрей Коцевич — выпускник Брестского областного лицея, участник IPhO 2019, 
-                                выпускник МФТИ, аспирант Princeton University.<br>
-                                Благодарим его за открытость и готовность поделиться бесценным опытом 
-                                с будущими поколениями белорусских олимпиадников.
-                            </p>
-                        </div>
-                    </section>
-
-                </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Final Section -->
+    <section class="final-section">
+        <div class="container">
+            <div class="final-card">
+                <div class="image-card">
+                    <img src="Andrei Katsevich_official.jpg" alt="Андрей Коцевич" style="max-height: 200px;">
+                    <p><em>Андрей Коцевич — от брестского школьника до Princeton PhD</em></p>
+                </div>
+                <p style="font-style: italic; color: var(--text-primary); font-size: 1rem; margin: 20px 0 0 0; text-align: center;">
+                    <strong>Полное интервью записано в июле 2025 года.</strong><br>
+                    Андрей Коцевич — выпускник Брестского областного лицея, участник IPhO 2019, 
+                    выпускник МФТИ, аспирант Princeton University.<br>
+                    Благодарим его за открытость и готовность поделиться бесценным опытом 
+                    с будущими поколениями белорусских олимпиадников.
+                </p>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h5>Белорусские физические олимпиады</h5>
-                    <p>Официальный сайт, посвящённый развитию олимпиадного движения по физике в Республике Беларусь.</p>
-                    <p>Здесь вы найдёте задачи, решения, новости и интервью с участниками олимпиад.</p>
+            <div class="footer-grid">
+                <div>
+                    <h4>Контактная информация</h4>
+                    <p><a href="mailto:aliaksandr@melnichenka.com">aliaksandr@melnichenka.com</a></p>
+                    <p>Минск • работает по всей Беларуси</p>
                 </div>
-                <div class="col-md-4">
-                    <h5>Полезные ссылки</h5>
-                    <ul style="list-style: none; padding: 0;">
-                        <li><a href="../../index.html">Главная</a></li>
-                        <li><a href="../../problems/index.html">Задачи и решения</a></li>
-                        <li><a href="../../books/index.html">Рекомендуемая литература</a></li>
-                        <li><a href="../index.html">Новости</a></li>
-                        <li><a href="../../training-program.html">Программа подготовки</a></li>
-                    </ul>
+                <div>
+                    <h4>Навигация</h4>
+                    <div class="footer-nav">
+                        <a href="../../">Главная</a>
+                        <a href="../../problems/">Задачи олимпиад</a>
+                        <a href="../../alumni.html">Выпускники</a>
+                        <a href="../">Новости</a>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <h5>Международные олимпиады</h5>
-                    <ul style="list-style: none; padding: 0;">
-                        <li><a href="https://www.jyu.fi/tdk/kastdk/olympiads/" target="_blank">IPhO - Международная олимпиада</a></li>
-                        <li><a href="https://euso.science/" target="_blank">EUSO - Европейская олимпиада</a></li>
-                        <li><a href="https://ipho-unofficial.org/" target="_blank">Неофициальная статистика IPhO</a></li>
-                    </ul>
+                <div>
+                    <h4>О проекте</h4>
+                    <p>«BelPhO» — независимая некоммерческая платформа, объединяющая 
+                    школьников, преподавателей и выпускников для подготовки к физическим 
+                    олимпиадам. Её материалами ежедневно пользуются классы всех регионов 
+                    страны. Архив задач пополняется волонтёрской редакцией авторов‑энтузиастов.</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Белорусские физические олимпиады. Создано для популяризации физики и науки в Беларуси.</p>
+                <p>&copy; 1990-2025 Белорусские физические олимпиады. Все права защищены.</p>
             </div>
         </div>
     </footer>
-
-    <!-- JavaScript for animations -->
     <script>
-        // Fade in animation on scroll
-        function revealOnScroll() {
-            const reveals = document.querySelectorAll('.fade-in');
-            
-            for (let i = 0; i < reveals.length; i++) {
-                const windowHeight = window.innerHeight;
-                const elementTop = reveals[i].getBoundingClientRect().top;
-                const elementVisible = 150;
-                
-                if (elementTop < windowHeight - elementVisible) {
-                    reveals[i].classList.add('visible');
-                }
-            }
-        }
-        
-        window.addEventListener('scroll', revealOnScroll);
-        
-        // Initial check
-        revealOnScroll();
+        // Remove all fade-in classes to eliminate distracting animations
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeInElements = document.querySelectorAll('.fade-in');
+            fadeInElements.forEach(element => {
+                element.classList.remove('fade-in');
+            });
+        });
     </script>
 </body>
 </html>
