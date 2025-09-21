@@ -1,0 +1,444 @@
+/* Profile Page Styles - Modern & Credible Design */
+
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --success-color: #27ae60;
+    --warning-color: #f39c12;
+    --info-color: #17a2b8;
+    --light-color: #f8f9fa;
+    --dark-color: #343a40;
+    --text-primary: #2c3e50;
+    --text-secondary: #6c757d;
+    --text-muted: #adb5bd;
+    --border-color: #dee2e6;
+    --shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    --shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    --border-radius: 0.5rem;
+    --transition: all 0.3s ease;
+}
+
+/* Base Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: var(--text-primary);
+    background-color: #f8f9fa;
+    margin: 0;
+    padding-top: 76px; /* Account for fixed navbar */
+}
+
+/* Navigation */
+.navbar {
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(10px);
+    background-color: rgba(44, 62, 80, 0.95) !important;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 4rem 0 3rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+    opacity: 0.3;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-subtitle {
+    margin-bottom: 1.5rem;
+}
+
+.year-badge {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    margin-right: 1rem;
+    backdrop-filter: blur(10px);
+}
+
+.award-badge {
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.award-badge.gold {
+    background: linear-gradient(45deg, #ffd700, #ffed4e);
+    color: #8b5a00;
+}
+
+.award-badge.silver {
+    background: linear-gradient(45deg, #c0c0c0, #e5e5e5);
+    color: #4a4a4a;
+}
+
+.award-badge.bronze {
+    background: linear-gradient(45deg, #cd7f32, #daa520);
+    color: #5d4e37;
+}
+
+.award-badge.mention {
+    background: linear-gradient(45deg, #6c5ce7, #a29bfe);
+    color: white;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 1rem;
+}
+
+.current-status, .university {
+    font-size: 1.1rem;
+    opacity: 0.95;
+    margin-bottom: 0.5rem;
+}
+
+/* Profile Image */
+.profile-image-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    transition: var(--transition);
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 48px rgba(0, 0, 0, 0.4);
+}
+
+.profile-placeholder {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.profile-placeholder i {
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.medal-overlay {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.medal {
+    font-size: 1.5rem;
+}
+
+/* Main Content */
+.main-content {
+    padding: 3rem 0;
+}
+
+.content-card {
+    background: white;
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.content-card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Competition Stats */
+.competition-stats {
+    background: var(--light-color);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+}
+
+.stat-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.stat-item:last-child {
+    border-bottom: none;
+}
+
+.stat-label {
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+.stat-value {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.stat-value.rank-gold {
+    color: var(--warning-color);
+}
+
+.stat-value.rank-silver {
+    color: #6c757d;
+}
+
+.stat-value.rank-bronze {
+    color: #cd7f32;
+}
+
+.stat-value.total-score {
+    color: var(--success-color);
+    font-size: 1.2rem;
+}
+
+/* Achievements */
+.achievements-list {
+    display: grid;
+    gap: 1rem;
+}
+
+.achievement-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--light-color);
+    border-radius: var(--border-radius);
+    border-left: 4px solid var(--success-color);
+    transition: var(--transition);
+}
+
+.achievement-item:hover {
+    background: #e8f5e8;
+    transform: translateX(5px);
+}
+
+.achievement-item i {
+    color: var(--success-color);
+    margin-top: 0.2rem;
+    flex-shrink: 0;
+}
+
+/* Sidebar */
+.sidebar-card {
+    background: white;
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border-color);
+}
+
+.sidebar-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.fact-list {
+    display: grid;
+    gap: 1rem;
+}
+
+.fact-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.fact-item:last-child {
+    border-bottom: none;
+}
+
+.fact-label {
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+.fact-value {
+    font-weight: 600;
+    text-align: right;
+}
+
+.fact-value.award-gold {
+    color: var(--warning-color);
+}
+
+.fact-value.award-silver {
+    color: #6c757d;
+}
+
+.fact-value.award-bronze {
+    color: #cd7f32;
+}
+
+.fact-value.award-mention {
+    color: var(--info-color);
+}
+
+/* Social Links */
+.social-links {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    background: var(--light-color);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: var(--transition);
+}
+
+.social-link:hover {
+    background: var(--secondary-color);
+    color: white;
+    transform: translateX(5px);
+}
+
+.social-link i {
+    width: 20px;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    background: var(--dark-color);
+    color: white;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+.footer-link {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .profile-image,
+    .profile-placeholder {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .content-card,
+    .sidebar-card {
+        padding: 1.5rem;
+    }
+    
+    .fact-item {
+        grid-template-columns: 1fr;
+        gap: 0.25rem;
+    }
+    
+    .fact-value {
+        text-align: left;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .navbar,
+    .footer {
+        display: none;
+    }
+    
+    .hero-section {
+        background: none;
+        color: black;
+    }
+    
+    .content-card,
+    .sidebar-card {
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+}

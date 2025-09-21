@@ -1,0 +1,262 @@
+/* Featured Profile Styles - Special styling for highlighted alumni */
+
+/* Featured Hero Section */
+.hero-section.featured-hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section.featured-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><radialGradient id="shine" cx="50%" cy="50%" r="50%"><stop offset="0%" style="stop-color:rgba(255,255,255,0.3);stop-opacity:1" /><stop offset="100%" style="stop-color:rgba(255,255,255,0);stop-opacity:0" /></radialGradient></defs><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.4)"/><circle cx="20" cy="20" r="1" fill="rgba(255,255,255,0.3)"/><circle cx="80" cy="30" r="1.5" fill="rgba(255,255,255,0.3)"/><circle cx="70" cy="80" r="1" fill="rgba(255,255,255,0.3)"/><circle cx="30" cy="70" r="1.2" fill="rgba(255,255,255,0.3)"/></svg>');
+    animation: sparkle 3s ease-in-out infinite;
+}
+
+@keyframes sparkle {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.6; }
+}
+
+/* Featured Badge */
+.featured-badge {
+    display: inline-block;
+    background: linear-gradient(45deg, #ff6b6b, #feca57);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from { box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3); }
+    to { box-shadow: 0 8px 25px rgba(255, 107, 107, 0.5); }
+}
+
+/* Featured Profile Image */
+.profile-image-container.featured .profile-image {
+    border: 4px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+    animation: pulse 3s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+}
+
+.profile-image-container.featured .medal-overlay {
+    background: linear-gradient(45deg, #ff6b6b, #feca57);
+    animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Featured Achievements */
+.achievement-item.featured-achievement {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-left: 4px solid #feca57;
+    position: relative;
+    overflow: hidden;
+}
+
+.achievement-item.featured-achievement::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    animation: shine 3s infinite;
+}
+
+@keyframes shine {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+.achievement-item.featured-achievement:hover {
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+    transform: translateX(10px) scale(1.02);
+}
+
+/* Featured CTA */
+.sidebar-card.featured-cta {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.sidebar-card.featured-cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23dots)"/></svg>');
+    opacity: 0.5;
+}
+
+.sidebar-card.featured-cta .sidebar-title,
+.sidebar-card.featured-cta .cta-text {
+    position: relative;
+    z-index: 2;
+}
+
+.cta-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    opacity: 0.95;
+}
+
+.cta-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    position: relative;
+    z-index: 2;
+}
+
+.cta-stat {
+    text-align: center;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius);
+    backdrop-filter: blur(10px);
+    transition: var(--transition);
+}
+
+.cta-stat:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.cta-number {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #feca57;
+    margin-bottom: 0.25rem;
+}
+
+.cta-label {
+    font-size: 0.8rem;
+    opacity: 0.9;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* MIT-specific styling */
+.mit-highlight {
+    background: linear-gradient(45deg, #8b0000, #a31621);
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-weight: 600;
+}
+
+/* Featured content cards */
+.content-card.featured {
+    border: 2px solid transparent;
+    background: linear-gradient(white, white) padding-box,
+                linear-gradient(135deg, #667eea, #764ba2) border-box;
+    position: relative;
+}
+
+.content-card.featured::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: var(--border-radius);
+    z-index: -1;
+    animation: borderGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes borderGlow {
+    from { opacity: 0.5; }
+    to { opacity: 1; }
+}
+
+/* Special highlighting for key metrics */
+.featured-metric {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    margin: 1rem 0;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+}
+
+.featured-metric .metric-number {
+    font-size: 2rem;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.featured-metric .metric-label {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Responsive adjustments for featured elements */
+@media (max-width: 768px) {
+    .featured-badge {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+    
+    .cta-stats {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+    
+    .cta-number {
+        font-size: 1.3rem;
+    }
+    
+    .featured-metric .metric-number {
+        font-size: 1.5rem;
+    }
+}
+
+/* Print styles for featured content */
+@media print {
+    .featured-badge,
+    .sidebar-card.featured-cta {
+        background: #333 !important;
+        color: white !important;
+    }
+    
+    .achievement-item.featured-achievement {
+        background: #f8f9fa !important;
+        color: black !important;
+        border-left: 4px solid #333 !important;
+    }
+}

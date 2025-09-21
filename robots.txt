@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://belpho.by/sitemap.xml
+
+# Crawl delay (be respectful)
+Crawl-delay: 1
+
+# Disallow temporary files
+Disallow: /temp/
+Disallow: /*.tmp
+Disallow: /*.bak
+
+# Allow all profile pages
+Allow: /ipho/
+Allow: /profiles/

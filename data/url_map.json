@@ -1,0 +1,1886 @@
+{
+  "description": "URL mapping for BelPhO Alumni profiles",
+  "base_url": "https://belpho.by",
+  "routes": {
+    "igor-varaxa": {
+      "name": "Igor Varaxa",
+      "year": 1995,
+      "award": "mention",
+      "urls": {
+        "main": "/ipho/igor-varaxa",
+        "english": "/ipho/igor-varaxa/en",
+        "russian": "/ipho/igor-varaxa/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/igor-varaxa.html",
+        "english": "/profiles/ipho/igor-varaxa-en.html",
+        "russian": "/profiles/ipho/igor-varaxa-ru.html"
+      }
+    },
+    "alexei-poliukh": {
+      "name": "Alexei Poliukh",
+      "year": 1995,
+      "award": "mention",
+      "urls": {
+        "main": "/ipho/alexei-poliukh",
+        "english": "/ipho/alexei-poliukh/en",
+        "russian": "/ipho/alexei-poliukh/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/alexei-poliukh.html",
+        "english": "/profiles/ipho/alexei-poliukh-en.html",
+        "russian": "/profiles/ipho/alexei-poliukh-ru.html"
+      }
+    },
+    "julian-vanne": {
+      "name": "Julian Vanne",
+      "year": 1996,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/julian-vanne",
+        "english": "/ipho/julian-vanne/en",
+        "russian": "/ipho/julian-vanne/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/julian-vanne.html",
+        "english": "/profiles/ipho/julian-vanne-en.html",
+        "russian": "/profiles/ipho/julian-vanne-ru.html"
+      }
+    },
+    "vladimir-makarenko": {
+      "name": "Vladimir Makarenko",
+      "year": 1996,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/vladimir-makarenko",
+        "english": "/ipho/vladimir-makarenko/en",
+        "russian": "/ipho/vladimir-makarenko/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/vladimir-makarenko.html",
+        "english": "/profiles/ipho/vladimir-makarenko-en.html",
+        "russian": "/profiles/ipho/vladimir-makarenko-ru.html"
+      }
+    },
+    "mikhail-chwarts": {
+      "name": "Mikhail Chwarts",
+      "year": 1996,
+      "award": "mention",
+      "urls": {
+        "main": "/ipho/mikhail-chwarts",
+        "english": "/ipho/mikhail-chwarts/en",
+        "russian": "/ipho/mikhail-chwarts/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/mikhail-chwarts.html",
+        "english": "/profiles/ipho/mikhail-chwarts-en.html",
+        "russian": "/profiles/ipho/mikhail-chwarts-ru.html"
+      }
+    },
+    "andrei-kuzmin": {
+      "name": "Andrei Kuzmin",
+      "year": 1997,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/andrei-kuzmin",
+        "english": "/ipho/andrei-kuzmin/en",
+        "russian": "/ipho/andrei-kuzmin/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/andrei-kuzmin.html",
+        "english": "/profiles/ipho/andrei-kuzmin-en.html",
+        "russian": "/profiles/ipho/andrei-kuzmin-ru.html"
+      }
+    },
+    "vasili-vyazhevich": {
+      "name": "Vasili Vyazhevich",
+      "year": 1997,
+      "award": "mention",
+      "urls": {
+        "main": "/ipho/vasili-vyazhevich",
+        "english": "/ipho/vasili-vyazhevich/en",
+        "russian": "/ipho/vasili-vyazhevich/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/vasili-vyazhevich.html",
+        "english": "/profiles/ipho/vasili-vyazhevich-en.html",
+        "russian": "/profiles/ipho/vasili-vyazhevich-ru.html"
+      }
+    },
+    "uladzimir-kukhta": {
+      "name": "Uladzimir Kukhta",
+      "year": 1997,
+      "award": "mention",
+      "urls": {
+        "main": "/ipho/uladzimir-kukhta",
+        "english": "/ipho/uladzimir-kukhta/en",
+        "russian": "/ipho/uladzimir-kukhta/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/uladzimir-kukhta.html",
+        "english": "/profiles/ipho/uladzimir-kukhta-en.html",
+        "russian": "/profiles/ipho/uladzimir-kukhta-ru.html"
+      }
+    },
+    "siutsou-ivan": {
+      "name": "Siutsou Ivan",
+      "year": 1998,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/siutsou-ivan",
+        "english": "/ipho/siutsou-ivan/en",
+        "russian": "/ipho/siutsou-ivan/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/siutsou-ivan.html",
+        "english": "/profiles/ipho/siutsou-ivan-en.html",
+        "russian": "/profiles/ipho/siutsou-ivan-ru.html"
+      }
+    },
+    "sakovich-viktar": {
+      "name": "Sakovich Viktar",
+      "year": 1998,
+      "award": "mention",
+      "urls": {
+        "main": "/ipho/sakovich-viktar",
+        "english": "/ipho/sakovich-viktar/en",
+        "russian": "/ipho/sakovich-viktar/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/sakovich-viktar.html",
+        "english": "/profiles/ipho/sakovich-viktar-en.html",
+        "russian": "/profiles/ipho/sakovich-viktar-ru.html"
+      }
+    },
+    "marmysh-viktar": {
+      "name": "Marmysh Viktar",
+      "year": 1998,
+      "award": "mention",
+      "urls": {
+        "main": "/ipho/marmysh-viktar",
+        "english": "/ipho/marmysh-viktar/en",
+        "russian": "/ipho/marmysh-viktar/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/marmysh-viktar.html",
+        "english": "/profiles/ipho/marmysh-viktar-en.html",
+        "russian": "/profiles/ipho/marmysh-viktar-ru.html"
+      }
+    },
+    "leanid-klimovich": {
+      "name": "Leanid Klimovich",
+      "year": 1999,
+      "award": "silver",
+      "urls": {
+        "main": "/ipho/leanid-klimovich",
+        "english": "/ipho/leanid-klimovich/en",
+        "russian": "/ipho/leanid-klimovich/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/leanid-klimovich.html",
+        "english": "/profiles/ipho/leanid-klimovich-en.html",
+        "russian": "/profiles/ipho/leanid-klimovich-ru.html"
+      }
+    },
+    "artur-shvedau": {
+      "name": "Artur Shvedau",
+      "year": 1999,
+      "award": "silver",
+      "urls": {
+        "main": "/ipho/artur-shvedau",
+        "english": "/ipho/artur-shvedau/en",
+        "russian": "/ipho/artur-shvedau/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/artur-shvedau.html",
+        "english": "/profiles/ipho/artur-shvedau-en.html",
+        "russian": "/profiles/ipho/artur-shvedau-ru.html"
+      }
+    },
+    "dzmitry-shyroki": {
+      "name": "Dzmitry Shyroki",
+      "year": 1999,
+      "award": "silver",
+      "urls": {
+        "main": "/ipho/dzmitry-shyroki",
+        "english": "/ipho/dzmitry-shyroki/en",
+        "russian": "/ipho/dzmitry-shyroki/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/dzmitry-shyroki.html",
+        "english": "/profiles/ipho/dzmitry-shyroki-en.html",
+        "russian": "/profiles/ipho/dzmitry-shyroki-ru.html"
+      }
+    },
+    "anatol-pomazau": {
+      "name": "Anatol Pomazau",
+      "year": 1999,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/anatol-pomazau",
+        "english": "/ipho/anatol-pomazau/en",
+        "russian": "/ipho/anatol-pomazau/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/anatol-pomazau.html",
+        "english": "/profiles/ipho/anatol-pomazau-en.html",
+        "russian": "/profiles/ipho/anatol-pomazau-ru.html"
+      }
+    },
+    "nickolay-levkovich": {
+      "name": "Nickolay Levkovich",
+      "year": 2000,
+      "award": "mention",
+      "urls": {
+        "main": "/ipho/nickolay-levkovich",
+        "english": "/ipho/nickolay-levkovich/en",
+        "russian": "/ipho/nickolay-levkovich/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/nickolay-levkovich.html",
+        "english": "/profiles/ipho/nickolay-levkovich-en.html",
+        "russian": "/profiles/ipho/nickolay-levkovich-ru.html"
+      }
+    },
+    "victor-dedov": {
+      "name": "Victor Dedov",
+      "year": 2000,
+      "award": "mention",
+      "urls": {
+        "main": "/ipho/victor-dedov",
+        "english": "/ipho/victor-dedov/en",
+        "russian": "/ipho/victor-dedov/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/victor-dedov.html",
+        "english": "/profiles/ipho/victor-dedov-en.html",
+        "russian": "/profiles/ipho/victor-dedov-ru.html"
+      }
+    },
+    "mikhail-yakutovich": {
+      "name": "Mikhail Yakutovich",
+      "year": 2000,
+      "award": "mention",
+      "urls": {
+        "main": "/ipho/mikhail-yakutovich",
+        "english": "/ipho/mikhail-yakutovich/en",
+        "russian": "/ipho/mikhail-yakutovich/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/mikhail-yakutovich.html",
+        "english": "/profiles/ipho/mikhail-yakutovich-en.html",
+        "russian": "/profiles/ipho/mikhail-yakutovich-ru.html"
+      }
+    },
+    "siarhei-maksimau": {
+      "name": "Siarhei Maksimau",
+      "year": 2001,
+      "award": "silver",
+      "urls": {
+        "main": "/ipho/siarhei-maksimau",
+        "english": "/ipho/siarhei-maksimau/en",
+        "russian": "/ipho/siarhei-maksimau/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/siarhei-maksimau.html",
+        "english": "/profiles/ipho/siarhei-maksimau-en.html",
+        "russian": "/profiles/ipho/siarhei-maksimau-ru.html"
+      }
+    },
+    "tatijana-burankova": {
+      "name": "Tatijana Burankova",
+      "year": 2001,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/tatijana-burankova",
+        "english": "/ipho/tatijana-burankova/en",
+        "russian": "/ipho/tatijana-burankova/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/tatijana-burankova.html",
+        "english": "/profiles/ipho/tatijana-burankova-en.html",
+        "russian": "/profiles/ipho/tatijana-burankova-ru.html"
+      }
+    },
+    "michail-makovskij": {
+      "name": "Michail Makovskij",
+      "year": 2001,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/michail-makovskij",
+        "english": "/ipho/michail-makovskij/en",
+        "russian": "/ipho/michail-makovskij/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/michail-makovskij.html",
+        "english": "/profiles/ipho/michail-makovskij-en.html",
+        "russian": "/profiles/ipho/michail-makovskij-ru.html"
+      }
+    },
+    "yuri-deshko": {
+      "name": "Yuri Deshko",
+      "year": 2001,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/yuri-deshko",
+        "english": "/ipho/yuri-deshko/en",
+        "russian": "/ipho/yuri-deshko/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/yuri-deshko.html",
+        "english": "/profiles/ipho/yuri-deshko-en.html",
+        "russian": "/profiles/ipho/yuri-deshko-ru.html"
+      }
+    },
+    "university-profile": {
+      "name": "University Profile",
+      "year": null,
+      "award": null,
+      "urls": {
+        "main": "/ipho/university-profile",
+        "english": "/ipho/university-profile/en",
+        "russian": "/ipho/university-profile/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/university-profile.html",
+        "english": "/profiles/ipho/university-profile-en.html",
+        "russian": "/profiles/ipho/university-profile-ru.html"
+      }
+    },
+    "andrei-andryieuski": {
+      "name": "Andrei Andryieuski",
+      "year": 2002,
+      "award": "silver",
+      "urls": {
+        "main": "/ipho/andrei-andryieuski",
+        "english": "/ipho/andrei-andryieuski/en",
+        "russian": "/ipho/andrei-andryieuski/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/andrei-andryieuski.html",
+        "english": "/profiles/ipho/andrei-andryieuski-en.html",
+        "russian": "/profiles/ipho/andrei-andryieuski-ru.html"
+      }
+    },
+    "anton-shashok": {
+      "name": "Anton Shashok",
+      "year": 2002,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/anton-shashok",
+        "english": "/ipho/anton-shashok/en",
+        "russian": "/ipho/anton-shashok/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/anton-shashok.html",
+        "english": "/profiles/ipho/anton-shashok-en.html",
+        "russian": "/profiles/ipho/anton-shashok-ru.html"
+      }
+    },
+    "yauheni-aliashkevich": {
+      "name": "Yauheni Aliashkevich",
+      "year": 2002,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/yauheni-aliashkevich",
+        "english": "/ipho/yauheni-aliashkevich/en",
+        "russian": "/ipho/yauheni-aliashkevich/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/yauheni-aliashkevich.html",
+        "english": "/profiles/ipho/yauheni-aliashkevich-en.html",
+        "russian": "/profiles/ipho/yauheni-aliashkevich-ru.html"
+      }
+    },
+    "anton-mishchuk": {
+      "name": "Anton Mishchuk",
+      "year": 2002,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/anton-mishchuk",
+        "english": "/ipho/anton-mishchuk/en",
+        "russian": "/ipho/anton-mishchuk/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/anton-mishchuk.html",
+        "english": "/profiles/ipho/anton-mishchuk-en.html",
+        "russian": "/profiles/ipho/anton-mishchuk-ru.html"
+      }
+    },
+    "aliaksandr-tarasenka": {
+      "name": "Aliaksandr Tarasenka",
+      "year": 2003,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/aliaksandr-tarasenka",
+        "english": "/ipho/aliaksandr-tarasenka/en",
+        "russian": "/ipho/aliaksandr-tarasenka/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/aliaksandr-tarasenka.html",
+        "english": "/profiles/ipho/aliaksandr-tarasenka-en.html",
+        "russian": "/profiles/ipho/aliaksandr-tarasenka-ru.html"
+      }
+    },
+    "siarhei-koval": {
+      "name": "Siarhei Koval",
+      "year": 2003,
+      "award": "mention",
+      "urls": {
+        "main": "/ipho/siarhei-koval",
+        "english": "/ipho/siarhei-koval/en",
+        "russian": "/ipho/siarhei-koval/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/siarhei-koval.html",
+        "english": "/profiles/ipho/siarhei-koval-en.html",
+        "russian": "/profiles/ipho/siarhei-koval-ru.html"
+      }
+    },
+    "andrei-benediktovitch": {
+      "name": "Andrei Benediktovitch",
+      "year": 2003,
+      "award": "mention",
+      "urls": {
+        "main": "/ipho/andrei-benediktovitch",
+        "english": "/ipho/andrei-benediktovitch/en",
+        "russian": "/ipho/andrei-benediktovitch/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/andrei-benediktovitch.html",
+        "english": "/profiles/ipho/andrei-benediktovitch-en.html",
+        "russian": "/profiles/ipho/andrei-benediktovitch-ru.html"
+      }
+    },
+    "scopus-profile": {
+      "name": "Scopus Profile",
+      "year": null,
+      "award": null,
+      "urls": {
+        "main": "/ipho/scopus-profile",
+        "english": "/ipho/scopus-profile/en",
+        "russian": "/ipho/scopus-profile/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/scopus-profile.html",
+        "english": "/profiles/ipho/scopus-profile-en.html",
+        "russian": "/profiles/ipho/scopus-profile-ru.html"
+      }
+    },
+    "ruslan-a-sakovich": {
+      "name": "Ruslan A. Sakovich",
+      "year": 2004,
+      "award": "gold",
+      "urls": {
+        "main": "/ipho/ruslan-a-sakovich",
+        "english": "/ipho/ruslan-a-sakovich/en",
+        "russian": "/ipho/ruslan-a-sakovich/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/ruslan-a-sakovich.html",
+        "english": "/profiles/ipho/ruslan-a-sakovich-en.html",
+        "russian": "/profiles/ipho/ruslan-a-sakovich-ru.html"
+      }
+    },
+    "medical-publications-database": {
+      "name": "Medical Publications Database",
+      "year": null,
+      "award": null,
+      "urls": {
+        "main": "/ipho/medical-publications-database",
+        "english": "/ipho/medical-publications-database/en",
+        "russian": "/ipho/medical-publications-database/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/medical-publications-database.html",
+        "english": "/profiles/ipho/medical-publications-database-en.html",
+        "russian": "/profiles/ipho/medical-publications-database-ru.html"
+      }
+    },
+    "sergej-kvachonok": {
+      "name": "Sergej Kvachonok",
+      "year": 2004,
+      "award": "silver",
+      "urls": {
+        "main": "/ipho/sergej-kvachonok",
+        "english": "/ipho/sergej-kvachonok/en",
+        "russian": "/ipho/sergej-kvachonok/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/sergej-kvachonok.html",
+        "english": "/profiles/ipho/sergej-kvachonok-en.html",
+        "russian": "/profiles/ipho/sergej-kvachonok-ru.html"
+      }
+    },
+    "aliaksei-bobryk": {
+      "name": "Aliaksei Bobryk",
+      "year": 2004,
+      "award": "silver",
+      "urls": {
+        "main": "/ipho/aliaksei-bobryk",
+        "english": "/ipho/aliaksei-bobryk/en",
+        "russian": "/ipho/aliaksei-bobryk/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/aliaksei-bobryk.html",
+        "english": "/profiles/ipho/aliaksei-bobryk-en.html",
+        "russian": "/profiles/ipho/aliaksei-bobryk-ru.html"
+      }
+    },
+    "aliaksandr-plekhau": {
+      "name": "Aliaksandr Plekhau",
+      "year": 2004,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/aliaksandr-plekhau",
+        "english": "/ipho/aliaksandr-plekhau/en",
+        "russian": "/ipho/aliaksandr-plekhau/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/aliaksandr-plekhau.html",
+        "english": "/profiles/ipho/aliaksandr-plekhau-en.html",
+        "russian": "/profiles/ipho/aliaksandr-plekhau-ru.html"
+      }
+    },
+    "kanstantsin-sakharchuk": {
+      "name": "Kanstantsin Sakharchuk",
+      "year": 2005,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/kanstantsin-sakharchuk",
+        "english": "/ipho/kanstantsin-sakharchuk/en",
+        "russian": "/ipho/kanstantsin-sakharchuk/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/kanstantsin-sakharchuk.html",
+        "english": "/profiles/ipho/kanstantsin-sakharchuk-en.html",
+        "russian": "/profiles/ipho/kanstantsin-sakharchuk-ru.html"
+      }
+    },
+    "maksim-hlod": {
+      "name": "Maksim Hlod",
+      "year": 2005,
+      "award": "mention",
+      "urls": {
+        "main": "/ipho/maksim-hlod",
+        "english": "/ipho/maksim-hlod/en",
+        "russian": "/ipho/maksim-hlod/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/maksim-hlod.html",
+        "english": "/profiles/ipho/maksim-hlod-en.html",
+        "russian": "/profiles/ipho/maksim-hlod-ru.html"
+      }
+    },
+    "dzianis-khmialniuk": {
+      "name": "Dzianis Khmialniuk",
+      "year": 2005,
+      "award": "mention",
+      "urls": {
+        "main": "/ipho/dzianis-khmialniuk",
+        "english": "/ipho/dzianis-khmialniuk/en",
+        "russian": "/ipho/dzianis-khmialniuk/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/dzianis-khmialniuk.html",
+        "english": "/profiles/ipho/dzianis-khmialniuk-en.html",
+        "russian": "/profiles/ipho/dzianis-khmialniuk-ru.html"
+      }
+    },
+    "andrei-polaz": {
+      "name": "Andrei Polaz",
+      "year": 2006,
+      "award": "mention",
+      "urls": {
+        "main": "/ipho/andrei-polaz",
+        "english": "/ipho/andrei-polaz/en",
+        "russian": "/ipho/andrei-polaz/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/andrei-polaz.html",
+        "english": "/profiles/ipho/andrei-polaz-en.html",
+        "russian": "/profiles/ipho/andrei-polaz-ru.html"
+      }
+    },
+    "uladzimir-sakovich": {
+      "name": "Uladzimir Sakovich",
+      "year": 2006,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/uladzimir-sakovich",
+        "english": "/ipho/uladzimir-sakovich/en",
+        "russian": "/ipho/uladzimir-sakovich/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/uladzimir-sakovich.html",
+        "english": "/profiles/ipho/uladzimir-sakovich-en.html",
+        "russian": "/profiles/ipho/uladzimir-sakovich-ru.html"
+      }
+    },
+    "dzmitry-komar": {
+      "name": "Dzmitry Komar",
+      "year": 2006,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/dzmitry-komar",
+        "english": "/ipho/dzmitry-komar/en",
+        "russian": "/ipho/dzmitry-komar/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/dzmitry-komar.html",
+        "english": "/profiles/ipho/dzmitry-komar-en.html",
+        "russian": "/profiles/ipho/dzmitry-komar-ru.html"
+      }
+    },
+    "dzianis-kaliada": {
+      "name": "Dzianis Kaliada",
+      "year": 2006,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/dzianis-kaliada",
+        "english": "/ipho/dzianis-kaliada/en",
+        "russian": "/ipho/dzianis-kaliada/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/dzianis-kaliada.html",
+        "english": "/profiles/ipho/dzianis-kaliada-en.html",
+        "russian": "/profiles/ipho/dzianis-kaliada-ru.html"
+      }
+    },
+    "aliaksandr-a-hlymbotski": {
+      "name": "Aliaksandr A. Hlymbotski",
+      "year": 2007,
+      "award": "silver",
+      "urls": {
+        "main": "/ipho/aliaksandr-a-hlymbotski",
+        "english": "/ipho/aliaksandr-a-hlymbotski/en",
+        "russian": "/ipho/aliaksandr-a-hlymbotski/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/aliaksandr-a-hlymbotski.html",
+        "english": "/profiles/ipho/aliaksandr-a-hlymbotski-en.html",
+        "russian": "/profiles/ipho/aliaksandr-a-hlymbotski-ru.html"
+      }
+    },
+    "pavel-m-hulevich": {
+      "name": "Pavel M. Hulevich",
+      "year": 2007,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/pavel-m-hulevich",
+        "english": "/ipho/pavel-m-hulevich/en",
+        "russian": "/ipho/pavel-m-hulevich/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/pavel-m-hulevich.html",
+        "english": "/profiles/ipho/pavel-m-hulevich-en.html",
+        "russian": "/profiles/ipho/pavel-m-hulevich-ru.html"
+      }
+    },
+    "vitali-a-liauchuk": {
+      "name": "Vitali A. Liauchuk",
+      "year": 2007,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/vitali-a-liauchuk",
+        "english": "/ipho/vitali-a-liauchuk/en",
+        "russian": "/ipho/vitali-a-liauchuk/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/vitali-a-liauchuk.html",
+        "english": "/profiles/ipho/vitali-a-liauchuk-en.html",
+        "russian": "/profiles/ipho/vitali-a-liauchuk-ru.html"
+      }
+    },
+    "andrei-i-malinouski": {
+      "name": "Andrei I. Malinouski",
+      "year": 2007,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/andrei-i-malinouski",
+        "english": "/ipho/andrei-i-malinouski/en",
+        "russian": "/ipho/andrei-i-malinouski/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/andrei-i-malinouski.html",
+        "english": "/profiles/ipho/andrei-i-malinouski-en.html",
+        "russian": "/profiles/ipho/andrei-i-malinouski-ru.html"
+      }
+    },
+    "yauheni-arlou": {
+      "name": "Yauheni Arlou",
+      "year": 2008,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/yauheni-arlou",
+        "english": "/ipho/yauheni-arlou/en",
+        "russian": "/ipho/yauheni-arlou/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/yauheni-arlou.html",
+        "english": "/profiles/ipho/yauheni-arlou-en.html",
+        "russian": "/profiles/ipho/yauheni-arlou-ru.html"
+      }
+    },
+    "yegor-goncharov": {
+      "name": "Yegor Goncharov",
+      "year": 2008,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/yegor-goncharov",
+        "english": "/ipho/yegor-goncharov/en",
+        "russian": "/ipho/yegor-goncharov/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/yegor-goncharov.html",
+        "english": "/profiles/ipho/yegor-goncharov-en.html",
+        "russian": "/profiles/ipho/yegor-goncharov-ru.html"
+      }
+    },
+    "anastasiya-karpovich": {
+      "name": "Anastasiya Karpovich",
+      "year": 2008,
+      "award": "mention",
+      "urls": {
+        "main": "/ipho/anastasiya-karpovich",
+        "english": "/ipho/anastasiya-karpovich/en",
+        "russian": "/ipho/anastasiya-karpovich/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/anastasiya-karpovich.html",
+        "english": "/profiles/ipho/anastasiya-karpovich-en.html",
+        "russian": "/profiles/ipho/anastasiya-karpovich-ru.html"
+      }
+    },
+    "alexei-sytov": {
+      "name": "Alexei Sytov",
+      "year": 2008,
+      "award": "mention",
+      "urls": {
+        "main": "/ipho/alexei-sytov",
+        "english": "/ipho/alexei-sytov/en",
+        "russian": "/ipho/alexei-sytov/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/alexei-sytov.html",
+        "english": "/profiles/ipho/alexei-sytov-en.html",
+        "russian": "/profiles/ipho/alexei-sytov-ru.html"
+      }
+    },
+    "maxim-gorlach": {
+      "name": "Maxim Gorlach",
+      "year": 2009,
+      "award": "silver",
+      "urls": {
+        "main": "/ipho/maxim-gorlach",
+        "english": "/ipho/maxim-gorlach/en",
+        "russian": "/ipho/maxim-gorlach/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/maxim-gorlach.html",
+        "english": "/profiles/ipho/maxim-gorlach-en.html",
+        "russian": "/profiles/ipho/maxim-gorlach-ru.html"
+      }
+    },
+    "anton-dashkevich": {
+      "name": "Anton Dashkevich",
+      "year": 2009,
+      "award": "silver",
+      "urls": {
+        "main": "/ipho/anton-dashkevich",
+        "english": "/ipho/anton-dashkevich/en",
+        "russian": "/ipho/anton-dashkevich/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/anton-dashkevich.html",
+        "english": "/profiles/ipho/anton-dashkevich-en.html",
+        "russian": "/profiles/ipho/anton-dashkevich-ru.html"
+      }
+    },
+    "anna-mitskovets": {
+      "name": "Anna Mitskovets",
+      "year": 2009,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/anna-mitskovets",
+        "english": "/ipho/anna-mitskovets/en",
+        "russian": "/ipho/anna-mitskovets/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/anna-mitskovets.html",
+        "english": "/profiles/ipho/anna-mitskovets-en.html",
+        "russian": "/profiles/ipho/anna-mitskovets-ru.html"
+      }
+    },
+    "caltech": {
+      "name": "Caltech",
+      "year": null,
+      "award": null,
+      "urls": {
+        "main": "/ipho/caltech",
+        "english": "/ipho/caltech/en",
+        "russian": "/ipho/caltech/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/caltech.html",
+        "english": "/profiles/ipho/caltech-en.html",
+        "russian": "/profiles/ipho/caltech-ru.html"
+      }
+    },
+    "mikhail-hushchyn": {
+      "name": "Mikhail Hushchyn",
+      "year": 2009,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/mikhail-hushchyn",
+        "english": "/ipho/mikhail-hushchyn/en",
+        "russian": "/ipho/mikhail-hushchyn/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/mikhail-hushchyn.html",
+        "english": "/profiles/ipho/mikhail-hushchyn-en.html",
+        "russian": "/profiles/ipho/mikhail-hushchyn-ru.html"
+      }
+    },
+    "yury-ryzhykau": {
+      "name": "Yury Ryzhykau",
+      "year": 2010,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/yury-ryzhykau",
+        "english": "/ipho/yury-ryzhykau/en",
+        "russian": "/ipho/yury-ryzhykau/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/yury-ryzhykau.html",
+        "english": "/profiles/ipho/yury-ryzhykau-en.html",
+        "russian": "/profiles/ipho/yury-ryzhykau-ru.html"
+      }
+    },
+    "yury-kharytanovich": {
+      "name": "Yury Kharytanovich",
+      "year": 2010,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/yury-kharytanovich",
+        "english": "/ipho/yury-kharytanovich/en",
+        "russian": "/ipho/yury-kharytanovich/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/yury-kharytanovich.html",
+        "english": "/profiles/ipho/yury-kharytanovich-en.html",
+        "russian": "/profiles/ipho/yury-kharytanovich-ru.html"
+      }
+    },
+    "elena-shylko": {
+      "name": "Elena Shylko",
+      "year": 2010,
+      "award": "mention",
+      "urls": {
+        "main": "/ipho/elena-shylko",
+        "english": "/ipho/elena-shylko/en",
+        "russian": "/ipho/elena-shylko/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/elena-shylko.html",
+        "english": "/profiles/ipho/elena-shylko-en.html",
+        "russian": "/profiles/ipho/elena-shylko-ru.html"
+      }
+    },
+    "andrei-tsishkovich": {
+      "name": "Andrei Tsishkovich",
+      "year": 2010,
+      "award": "mention",
+      "urls": {
+        "main": "/ipho/andrei-tsishkovich",
+        "english": "/ipho/andrei-tsishkovich/en",
+        "russian": "/ipho/andrei-tsishkovich/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/andrei-tsishkovich.html",
+        "english": "/profiles/ipho/andrei-tsishkovich-en.html",
+        "russian": "/profiles/ipho/andrei-tsishkovich-ru.html"
+      }
+    },
+    "dzmitry-ashkinadze": {
+      "name": "Dzmitry Ashkinadze",
+      "year": 2011,
+      "award": "silver",
+      "urls": {
+        "main": "/ipho/dzmitry-ashkinadze",
+        "english": "/ipho/dzmitry-ashkinadze/en",
+        "russian": "/ipho/dzmitry-ashkinadze/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/dzmitry-ashkinadze.html",
+        "english": "/profiles/ipho/dzmitry-ashkinadze-en.html",
+        "russian": "/profiles/ipho/dzmitry-ashkinadze-ru.html"
+      }
+    },
+    "aliaksei-mihutski": {
+      "name": "Aliaksei Mihutski",
+      "year": 2011,
+      "award": "silver",
+      "urls": {
+        "main": "/ipho/aliaksei-mihutski",
+        "english": "/ipho/aliaksei-mihutski/en",
+        "russian": "/ipho/aliaksei-mihutski/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/aliaksei-mihutski.html",
+        "english": "/profiles/ipho/aliaksei-mihutski-en.html",
+        "russian": "/profiles/ipho/aliaksei-mihutski-ru.html"
+      }
+    },
+    "uladzislau-tsyhanok": {
+      "name": "Uladzislau Tsyhanok",
+      "year": 2011,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/uladzislau-tsyhanok",
+        "english": "/ipho/uladzislau-tsyhanok/en",
+        "russian": "/ipho/uladzislau-tsyhanok/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/uladzislau-tsyhanok.html",
+        "english": "/profiles/ipho/uladzislau-tsyhanok-en.html",
+        "russian": "/profiles/ipho/uladzislau-tsyhanok-ru.html"
+      }
+    },
+    "anton-sakovich": {
+      "name": "Anton Sakovich",
+      "year": 2011,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/anton-sakovich",
+        "english": "/ipho/anton-sakovich/en",
+        "russian": "/ipho/anton-sakovich/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/anton-sakovich.html",
+        "english": "/profiles/ipho/anton-sakovich-en.html",
+        "russian": "/profiles/ipho/anton-sakovich-ru.html"
+      }
+    },
+    "ihar-lobach": {
+      "name": "Ihar Lobach",
+      "year": 2012,
+      "award": "gold",
+      "urls": {
+        "main": "/ipho/ihar-lobach",
+        "english": "/ipho/ihar-lobach/en",
+        "russian": "/ipho/ihar-lobach/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/ihar-lobach.html",
+        "english": "/profiles/ipho/ihar-lobach-en.html",
+        "russian": "/profiles/ipho/ihar-lobach-ru.html"
+      }
+    },
+    "aliaksey-khatskevich": {
+      "name": "Aliaksey Khatskevich",
+      "year": 2012,
+      "award": "silver",
+      "urls": {
+        "main": "/ipho/aliaksey-khatskevich",
+        "english": "/ipho/aliaksey-khatskevich/en",
+        "russian": "/ipho/aliaksey-khatskevich/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/aliaksey-khatskevich.html",
+        "english": "/profiles/ipho/aliaksey-khatskevich-en.html",
+        "russian": "/profiles/ipho/aliaksey-khatskevich-ru.html"
+      }
+    },
+    "vadzim-reut": {
+      "name": "Vadzim Reut",
+      "year": 2012,
+      "award": "silver",
+      "urls": {
+        "main": "/ipho/vadzim-reut",
+        "english": "/ipho/vadzim-reut/en",
+        "russian": "/ipho/vadzim-reut/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/vadzim-reut.html",
+        "english": "/profiles/ipho/vadzim-reut-en.html",
+        "russian": "/profiles/ipho/vadzim-reut-ru.html"
+      }
+    },
+    "aliaksandr-yankouski": {
+      "name": "Aliaksandr Yankouski",
+      "year": 2012,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/aliaksandr-yankouski",
+        "english": "/ipho/aliaksandr-yankouski/en",
+        "russian": "/ipho/aliaksandr-yankouski/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/aliaksandr-yankouski.html",
+        "english": "/profiles/ipho/aliaksandr-yankouski-en.html",
+        "russian": "/profiles/ipho/aliaksandr-yankouski-ru.html"
+      }
+    },
+    "ivan-mitskovets": {
+      "name": "Ivan Mitskovets",
+      "year": 2013,
+      "award": "silver",
+      "urls": {
+        "main": "/ipho/ivan-mitskovets",
+        "english": "/ipho/ivan-mitskovets/en",
+        "russian": "/ipho/ivan-mitskovets/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/ivan-mitskovets.html",
+        "english": "/profiles/ipho/ivan-mitskovets-en.html",
+        "russian": "/profiles/ipho/ivan-mitskovets-ru.html"
+      }
+    },
+    "maksim-litskevich": {
+      "name": "Maksim Litskevich",
+      "year": 2013,
+      "award": "silver",
+      "urls": {
+        "main": "/ipho/maksim-litskevich",
+        "english": "/ipho/maksim-litskevich/en",
+        "russian": "/ipho/maksim-litskevich/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/maksim-litskevich.html",
+        "english": "/profiles/ipho/maksim-litskevich-en.html",
+        "russian": "/profiles/ipho/maksim-litskevich-ru.html"
+      }
+    },
+    "syracuse-university-profile": {
+      "name": "Syracuse University Profile",
+      "year": null,
+      "award": null,
+      "urls": {
+        "main": "/ipho/syracuse-university-profile",
+        "english": "/ipho/syracuse-university-profile/en",
+        "russian": "/ipho/syracuse-university-profile/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/syracuse-university-profile.html",
+        "english": "/profiles/ipho/syracuse-university-profile-en.html",
+        "russian": "/profiles/ipho/syracuse-university-profile-ru.html"
+      }
+    },
+    "aliaksei-duduk": {
+      "name": "Aliaksei Duduk",
+      "year": 2013,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/aliaksei-duduk",
+        "english": "/ipho/aliaksei-duduk/en",
+        "russian": "/ipho/aliaksei-duduk/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/aliaksei-duduk.html",
+        "english": "/profiles/ipho/aliaksei-duduk-en.html",
+        "russian": "/profiles/ipho/aliaksei-duduk-ru.html"
+      }
+    },
+    "akvukh-jeims-aye": {
+      "name": "Akvukh Jeims Aye",
+      "year": 2013,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/akvukh-jeims-aye",
+        "english": "/ipho/akvukh-jeims-aye/en",
+        "russian": "/ipho/akvukh-jeims-aye/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/akvukh-jeims-aye.html",
+        "english": "/profiles/ipho/akvukh-jeims-aye-en.html",
+        "russian": "/profiles/ipho/akvukh-jeims-aye-ru.html"
+      }
+    },
+    "ilya-perapechka": {
+      "name": "Ilya Perapechka",
+      "year": 2014,
+      "award": "silver",
+      "urls": {
+        "main": "/ipho/ilya-perapechka",
+        "english": "/ipho/ilya-perapechka/en",
+        "russian": "/ipho/ilya-perapechka/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/ilya-perapechka.html",
+        "english": "/profiles/ipho/ilya-perapechka-en.html",
+        "russian": "/profiles/ipho/ilya-perapechka-ru.html"
+      }
+    },
+    "anton-khvalyuk": {
+      "name": "Anton Khvalyuk",
+      "year": 2014,
+      "award": "silver",
+      "urls": {
+        "main": "/ipho/anton-khvalyuk",
+        "english": "/ipho/anton-khvalyuk/en",
+        "russian": "/ipho/anton-khvalyuk/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/anton-khvalyuk.html",
+        "english": "/profiles/ipho/anton-khvalyuk-en.html",
+        "russian": "/profiles/ipho/anton-khvalyuk-ru.html"
+      }
+    },
+    "aliaksei-horlach": {
+      "name": "Aliaksei Horlach",
+      "year": 2014,
+      "award": "silver",
+      "urls": {
+        "main": "/ipho/aliaksei-horlach",
+        "english": "/ipho/aliaksei-horlach/en",
+        "russian": "/ipho/aliaksei-horlach/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/aliaksei-horlach.html",
+        "english": "/profiles/ipho/aliaksei-horlach-en.html",
+        "russian": "/profiles/ipho/aliaksei-horlach-ru.html"
+      }
+    },
+    "yahor-makovich": {
+      "name": "Yahor Makovich",
+      "year": 2014,
+      "award": "mention",
+      "urls": {
+        "main": "/ipho/yahor-makovich",
+        "english": "/ipho/yahor-makovich/en",
+        "russian": "/ipho/yahor-makovich/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/yahor-makovich.html",
+        "english": "/profiles/ipho/yahor-makovich-en.html",
+        "russian": "/profiles/ipho/yahor-makovich-ru.html"
+      }
+    },
+    "bahdan-andreevich-zviazhynski": {
+      "name": "Bahdan Andreevich Zviazhynski",
+      "year": 2015,
+      "award": "silver",
+      "urls": {
+        "main": "/ipho/bahdan-andreevich-zviazhynski",
+        "english": "/ipho/bahdan-andreevich-zviazhynski/en",
+        "russian": "/ipho/bahdan-andreevich-zviazhynski/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/bahdan-andreevich-zviazhynski.html",
+        "english": "/profiles/ipho/bahdan-andreevich-zviazhynski-en.html",
+        "russian": "/profiles/ipho/bahdan-andreevich-zviazhynski-ru.html"
+      }
+    },
+    "evgeni-aleksandrovich-shurygin": {
+      "name": "Evgeni Aleksandrovich Shurygin",
+      "year": 2015,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/evgeni-aleksandrovich-shurygin",
+        "english": "/ipho/evgeni-aleksandrovich-shurygin/en",
+        "russian": "/ipho/evgeni-aleksandrovich-shurygin/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/evgeni-aleksandrovich-shurygin.html",
+        "english": "/profiles/ipho/evgeni-aleksandrovich-shurygin-en.html",
+        "russian": "/profiles/ipho/evgeni-aleksandrovich-shurygin-ru.html"
+      }
+    },
+    "artsiom-maksimovich-pivavarchyk": {
+      "name": "Artsiom Maksimovich Pivavarchyk",
+      "year": 2015,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/artsiom-maksimovich-pivavarchyk",
+        "english": "/ipho/artsiom-maksimovich-pivavarchyk/en",
+        "russian": "/ipho/artsiom-maksimovich-pivavarchyk/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/artsiom-maksimovich-pivavarchyk.html",
+        "english": "/profiles/ipho/artsiom-maksimovich-pivavarchyk-en.html",
+        "russian": "/profiles/ipho/artsiom-maksimovich-pivavarchyk-ru.html"
+      }
+    },
+    "uladzislau-viktorovich-klimashonak": {
+      "name": "Uladzislau Viktorovich Klimashonak",
+      "year": 2015,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/uladzislau-viktorovich-klimashonak",
+        "english": "/ipho/uladzislau-viktorovich-klimashonak/en",
+        "russian": "/ipho/uladzislau-viktorovich-klimashonak/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/uladzislau-viktorovich-klimashonak.html",
+        "english": "/profiles/ipho/uladzislau-viktorovich-klimashonak-en.html",
+        "russian": "/profiles/ipho/uladzislau-viktorovich-klimashonak-ru.html"
+      }
+    },
+    "учись-у-эрика": {
+      "name": "Учись у Эрика",
+      "year": null,
+      "award": null,
+      "urls": {
+        "main": "/ipho/учись-у-эрика",
+        "english": "/ipho/учись-у-эрика/en",
+        "russian": "/ipho/учись-у-эрика/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/учись-у-эрика.html",
+        "english": "/profiles/ipho/учись-у-эрика-en.html",
+        "russian": "/profiles/ipho/учись-у-эрика-ru.html"
+      }
+    },
+    "в-гродненской-городской-гимназии-чествовали-победителя-международной-физической-олимпиады": {
+      "name": "В Гродненской городской гимназии чествовали победителя Международной физической олимпиады",
+      "year": null,
+      "award": null,
+      "urls": {
+        "main": "/ipho/в-гродненской-городской-гимназии-чествовали-победителя-международной-физической-олимпиады",
+        "english": "/ipho/в-гродненской-городской-гимназии-чествовали-победителя-международной-физической-олимпиады/en",
+        "russian": "/ipho/в-гродненской-городской-гимназии-чествовали-победителя-международной-физической-олимпиады/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/в-гродненской-городской-гимназии-чествовали-победителя-международной-физической-олимпиады.html",
+        "english": "/profiles/ipho/в-гродненской-городской-гимназии-чествовали-победителя-международной-физической-олимпиады-en.html",
+        "russian": "/profiles/ipho/в-гродненской-городской-гимназии-чествовали-победителя-международной-физической-олимпиады-ru.html"
+      }
+    },
+    "гимназист-из-гродно-показал-блестящие-знания-на-международной-физической-олимпиаде": {
+      "name": "Гимназист из Гродно показал блестящие знания на Международной физической олимпиаде",
+      "year": null,
+      "award": null,
+      "urls": {
+        "main": "/ipho/гимназист-из-гродно-показал-блестящие-знания-на-международной-физической-олимпиаде",
+        "english": "/ipho/гимназист-из-гродно-показал-блестящие-знания-на-международной-физической-олимпиаде/en",
+        "russian": "/ipho/гимназист-из-гродно-показал-блестящие-знания-на-международной-физической-олимпиаде/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/гимназист-из-гродно-показал-блестящие-знания-на-международной-физической-олимпиаде.html",
+        "english": "/profiles/ipho/гимназист-из-гродно-показал-блестящие-знания-на-международной-физической-олимпиаде-en.html",
+        "russian": "/profiles/ipho/гимназист-из-гродно-показал-блестящие-знания-на-международной-физической-олимпиаде-ru.html"
+      }
+    },
+    "yan-lahouski": {
+      "name": "Yan Lahouski",
+      "year": 2016,
+      "award": "silver",
+      "urls": {
+        "main": "/ipho/yan-lahouski",
+        "english": "/ipho/yan-lahouski/en",
+        "russian": "/ipho/yan-lahouski/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/yan-lahouski.html",
+        "english": "/profiles/ipho/yan-lahouski-en.html",
+        "russian": "/profiles/ipho/yan-lahouski-ru.html"
+      }
+    },
+    "vitali-vistunou": {
+      "name": "Vitali Vistunou",
+      "year": 2016,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/vitali-vistunou",
+        "english": "/ipho/vitali-vistunou/en",
+        "russian": "/ipho/vitali-vistunou/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/vitali-vistunou.html",
+        "english": "/profiles/ipho/vitali-vistunou-en.html",
+        "russian": "/profiles/ipho/vitali-vistunou-ru.html"
+      }
+    },
+    "pavel-tsai": {
+      "name": "Pavel Tsai",
+      "year": 2016,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/pavel-tsai",
+        "english": "/ipho/pavel-tsai/en",
+        "russian": "/ipho/pavel-tsai/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/pavel-tsai.html",
+        "english": "/profiles/ipho/pavel-tsai-en.html",
+        "russian": "/profiles/ipho/pavel-tsai-ru.html"
+      }
+    },
+    "andrei-kryshtopik": {
+      "name": "Andrei Kryshtopik",
+      "year": 2016,
+      "award": "mention",
+      "urls": {
+        "main": "/ipho/andrei-kryshtopik",
+        "english": "/ipho/andrei-kryshtopik/en",
+        "russian": "/ipho/andrei-kryshtopik/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/andrei-kryshtopik.html",
+        "english": "/profiles/ipho/andrei-kryshtopik-en.html",
+        "russian": "/profiles/ipho/andrei-kryshtopik-ru.html"
+      }
+    },
+    "yauheni-sharamed": {
+      "name": "Yauheni Sharamed",
+      "year": 2017,
+      "award": "silver",
+      "urls": {
+        "main": "/ipho/yauheni-sharamed",
+        "english": "/ipho/yauheni-sharamed/en",
+        "russian": "/ipho/yauheni-sharamed/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/yauheni-sharamed.html",
+        "english": "/profiles/ipho/yauheni-sharamed-en.html",
+        "russian": "/profiles/ipho/yauheni-sharamed-ru.html"
+      }
+    },
+    "pavel-kurach": {
+      "name": "Pavel Kurach",
+      "year": 2017,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/pavel-kurach",
+        "english": "/ipho/pavel-kurach/en",
+        "russian": "/ipho/pavel-kurach/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/pavel-kurach.html",
+        "english": "/profiles/ipho/pavel-kurach-en.html",
+        "russian": "/profiles/ipho/pavel-kurach-ru.html"
+      }
+    },
+    "valiantsin-darafeyeu": {
+      "name": "Valiantsin Darafeyeu",
+      "year": 2017,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/valiantsin-darafeyeu",
+        "english": "/ipho/valiantsin-darafeyeu/en",
+        "russian": "/ipho/valiantsin-darafeyeu/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/valiantsin-darafeyeu.html",
+        "english": "/profiles/ipho/valiantsin-darafeyeu-en.html",
+        "russian": "/profiles/ipho/valiantsin-darafeyeu-ru.html"
+      }
+    },
+    "mikita-srtryzhak": {
+      "name": "Mikita Srtryzhak",
+      "year": 2017,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/mikita-srtryzhak",
+        "english": "/ipho/mikita-srtryzhak/en",
+        "russian": "/ipho/mikita-srtryzhak/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/mikita-srtryzhak.html",
+        "english": "/profiles/ipho/mikita-srtryzhak-en.html",
+        "russian": "/profiles/ipho/mikita-srtryzhak-ru.html"
+      }
+    },
+    "yauheni-hankovich": {
+      "name": "Yauheni Hankovich",
+      "year": 2018,
+      "award": "silver",
+      "urls": {
+        "main": "/ipho/yauheni-hankovich",
+        "english": "/ipho/yauheni-hankovich/en",
+        "russian": "/ipho/yauheni-hankovich/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/yauheni-hankovich.html",
+        "english": "/profiles/ipho/yauheni-hankovich-en.html",
+        "russian": "/profiles/ipho/yauheni-hankovich-ru.html"
+      }
+    },
+    "yauheni-dziadkou": {
+      "name": "Yauheni Dziadkou",
+      "year": 2019,
+      "award": "gold",
+      "urls": {
+        "main": "/ipho/yauheni-dziadkou",
+        "english": "/ipho/yauheni-dziadkou/en",
+        "russian": "/ipho/yauheni-dziadkou/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/yauheni-dziadkou.html",
+        "english": "/profiles/ipho/yauheni-dziadkou-en.html",
+        "russian": "/profiles/ipho/yauheni-dziadkou-ru.html"
+      }
+    },
+    "uladzislau-fiadurka": {
+      "name": "Uladzislau Fiadurka",
+      "year": 2018,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/uladzislau-fiadurka",
+        "english": "/ipho/uladzislau-fiadurka/en",
+        "russian": "/ipho/uladzislau-fiadurka/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/uladzislau-fiadurka.html",
+        "english": "/profiles/ipho/uladzislau-fiadurka-en.html",
+        "russian": "/profiles/ipho/uladzislau-fiadurka-ru.html"
+      }
+    },
+    "nikolay-zunikov": {
+      "name": "Nikolay Zunikov",
+      "year": 2018,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/nikolay-zunikov",
+        "english": "/ipho/nikolay-zunikov/en",
+        "russian": "/ipho/nikolay-zunikov/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/nikolay-zunikov.html",
+        "english": "/profiles/ipho/nikolay-zunikov-en.html",
+        "russian": "/profiles/ipho/nikolay-zunikov-ru.html"
+      }
+    },
+    "гомельский-лицеист-николай-зуников-стал-студентом-мфти": {
+      "name": "Гомельский лицеист Николай Зуников стал студентом МФТИ",
+      "year": null,
+      "award": null,
+      "urls": {
+        "main": "/ipho/гомельский-лицеист-николай-зуников-стал-студентом-мфти",
+        "english": "/ipho/гомельский-лицеист-николай-зуников-стал-студентом-мфти/en",
+        "russian": "/ipho/гомельский-лицеист-николай-зуников-стал-студентом-мфти/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/гомельский-лицеист-николай-зуников-стал-студентом-мфти.html",
+        "english": "/profiles/ipho/гомельский-лицеист-николай-зуников-стал-студентом-мфти-en.html",
+        "russian": "/profiles/ipho/гомельский-лицеист-николай-зуников-стал-студентом-мфти-ru.html"
+      }
+    },
+    "kiram-al-kharba": {
+      "name": "Kiram Al-Kharba",
+      "year": 2018,
+      "award": "mention",
+      "urls": {
+        "main": "/ipho/kiram-al-kharba",
+        "english": "/ipho/kiram-al-kharba/en",
+        "russian": "/ipho/kiram-al-kharba/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/kiram-al-kharba.html",
+        "english": "/profiles/ipho/kiram-al-kharba-en.html",
+        "russian": "/profiles/ipho/kiram-al-kharba-ru.html"
+      }
+    },
+    "aleksandr-kalenchits": {
+      "name": "Aleksandr Kalenchits",
+      "year": 2019,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/aleksandr-kalenchits",
+        "english": "/ipho/aleksandr-kalenchits/en",
+        "russian": "/ipho/aleksandr-kalenchits/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/aleksandr-kalenchits.html",
+        "english": "/profiles/ipho/aleksandr-kalenchits-en.html",
+        "russian": "/profiles/ipho/aleksandr-kalenchits-ru.html"
+      }
+    },
+    "mihail-makei": {
+      "name": "Mihail Makei",
+      "year": 2019,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/mihail-makei",
+        "english": "/ipho/mihail-makei/en",
+        "russian": "/ipho/mihail-makei/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/mihail-makei.html",
+        "english": "/profiles/ipho/mihail-makei-en.html",
+        "russian": "/profiles/ipho/mihail-makei-ru.html"
+      }
+    },
+    "andrei-katsevich": {
+      "name": "Andrei Katsevich",
+      "year": 2019,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/andrei-katsevich",
+        "english": "/ipho/andrei-katsevich/en",
+        "russian": "/ipho/andrei-katsevich/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/andrei-katsevich.html",
+        "english": "/profiles/ipho/andrei-katsevich-en.html",
+        "russian": "/profiles/ipho/andrei-katsevich-ru.html"
+      }
+    },
+    "интервью-об-олимпиадной-физике": {
+      "name": "Интервью об олимпиадной физике",
+      "year": null,
+      "award": null,
+      "urls": {
+        "main": "/ipho/интервью-об-олимпиадной-физике",
+        "english": "/ipho/интервью-об-олимпиадной-физике/en",
+        "russian": "/ipho/интервью-об-олимпиадной-физике/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/интервью-об-олимпиадной-физике.html",
+        "english": "/profiles/ipho/интервью-об-олимпиадной-физике-en.html",
+        "russian": "/profiles/ipho/интервью-об-олимпиадной-физике-ru.html"
+      }
+    },
+    "статья-о-бронзе-на-ipho": {
+      "name": "Статья о бронзе на IPhO",
+      "year": null,
+      "award": null,
+      "urls": {
+        "main": "/ipho/статья-о-бронзе-на-ipho",
+        "english": "/ipho/статья-о-бронзе-на-ipho/en",
+        "russian": "/ipho/статья-о-бронзе-на-ipho/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/статья-о-бронзе-на-ipho.html",
+        "english": "/profiles/ipho/статья-о-бронзе-на-ipho-en.html",
+        "russian": "/profiles/ipho/статья-о-бронзе-на-ipho-ru.html"
+      }
+    },
+    "aleksei-bykov": {
+      "name": "Aleksei Bykov",
+      "year": 2019,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/aleksei-bykov",
+        "english": "/ipho/aleksei-bykov/en",
+        "russian": "/ipho/aleksei-bykov/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/aleksei-bykov.html",
+        "english": "/profiles/ipho/aleksei-bykov-en.html",
+        "russian": "/profiles/ipho/aleksei-bykov-ru.html"
+      }
+    },
+    "dzianis-dziadkou": {
+      "name": "Dzianis Dziadkou",
+      "year": 2021,
+      "award": "silver",
+      "urls": {
+        "main": "/ipho/dzianis-dziadkou",
+        "english": "/ipho/dzianis-dziadkou/en",
+        "russian": "/ipho/dzianis-dziadkou/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/dzianis-dziadkou.html",
+        "english": "/profiles/ipho/dzianis-dziadkou-en.html",
+        "russian": "/profiles/ipho/dzianis-dziadkou-ru.html"
+      }
+    },
+    "timur-golubovich": {
+      "name": "Timur Golubovich",
+      "year": 2021,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/timur-golubovich",
+        "english": "/ipho/timur-golubovich/en",
+        "russian": "/ipho/timur-golubovich/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/timur-golubovich.html",
+        "english": "/profiles/ipho/timur-golubovich-en.html",
+        "russian": "/profiles/ipho/timur-golubovich-ru.html"
+      }
+    },
+    "mikita-tsybliyenka": {
+      "name": "Mikita Tsybliyenka",
+      "year": 2021,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/mikita-tsybliyenka",
+        "english": "/ipho/mikita-tsybliyenka/en",
+        "russian": "/ipho/mikita-tsybliyenka/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/mikita-tsybliyenka.html",
+        "english": "/profiles/ipho/mikita-tsybliyenka-en.html",
+        "russian": "/profiles/ipho/mikita-tsybliyenka-ru.html"
+      }
+    },
+    "volha-turchyna": {
+      "name": "Volha Turchyna",
+      "year": 2021,
+      "award": "mention",
+      "urls": {
+        "main": "/ipho/volha-turchyna",
+        "english": "/ipho/volha-turchyna/en",
+        "russian": "/ipho/volha-turchyna/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/volha-turchyna.html",
+        "english": "/profiles/ipho/volha-turchyna-en.html",
+        "russian": "/profiles/ipho/volha-turchyna-ru.html"
+      }
+    },
+    "владислав-багинский": {
+      "name": "Владислав Багинский",
+      "year": 2022,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/владислав-багинский",
+        "english": "/ipho/владислав-багинский/en",
+        "russian": "/ipho/владислав-багинский/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/владислав-багинский.html",
+        "english": "/profiles/ipho/владислав-багинский-en.html",
+        "russian": "/profiles/ipho/владислав-багинский-ru.html"
+      }
+    },
+    "александр-копертехов": {
+      "name": "Александр Копертехов",
+      "year": 2022,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/александр-копертехов",
+        "english": "/ipho/александр-копертехов/en",
+        "russian": "/ipho/александр-копертехов/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/александр-копертехов.html",
+        "english": "/profiles/ipho/александр-копертехов-en.html",
+        "russian": "/profiles/ipho/александр-копертехов-ru.html"
+      }
+    },
+    "rostislav-klimko": {
+      "name": "Rostislav Klimko",
+      "year": 2022,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/rostislav-klimko",
+        "english": "/ipho/rostislav-klimko/en",
+        "russian": "/ipho/rostislav-klimko/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/rostislav-klimko.html",
+        "english": "/profiles/ipho/rostislav-klimko-en.html",
+        "russian": "/profiles/ipho/rostislav-klimko-ru.html"
+      }
+    },
+    "yana-pigunova": {
+      "name": "Yana Pigunova",
+      "year": 2022,
+      "award": "mention",
+      "urls": {
+        "main": "/ipho/yana-pigunova",
+        "english": "/ipho/yana-pigunova/en",
+        "russian": "/ipho/yana-pigunova/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/yana-pigunova.html",
+        "english": "/profiles/ipho/yana-pigunova-en.html",
+        "russian": "/profiles/ipho/yana-pigunova-ru.html"
+      }
+    },
+    "alina-palonskaya": {
+      "name": "Alina Palonskaya",
+      "year": 2024,
+      "award": "gold",
+      "urls": {
+        "main": "/ipho/alina-palonskaya",
+        "english": "/ipho/alina-palonskaya/en",
+        "russian": "/ipho/alina-palonskaya/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/alina-palonskaya.html",
+        "english": "/profiles/ipho/alina-palonskaya-en.html",
+        "russian": "/profiles/ipho/alina-palonskaya-ru.html"
+      }
+    },
+    "михаил-хурсин": {
+      "name": "Михаил Хурсин",
+      "year": 2024,
+      "award": "silver",
+      "urls": {
+        "main": "/ipho/михаил-хурсин",
+        "english": "/ipho/михаил-хурсин/en",
+        "russian": "/ipho/михаил-хурсин/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/михаил-хурсин.html",
+        "english": "/profiles/ipho/михаил-хурсин-en.html",
+        "russian": "/profiles/ipho/михаил-хурсин-ru.html"
+      }
+    },
+    "андрей-ёрш": {
+      "name": "Андрей Ёрш",
+      "year": 2024,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/андрей-ёрш",
+        "english": "/ipho/андрей-ёрш/en",
+        "russian": "/ipho/андрей-ёрш/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/андрей-ёрш.html",
+        "english": "/profiles/ipho/андрей-ёрш-en.html",
+        "russian": "/profiles/ipho/андрей-ёрш-ru.html"
+      }
+    },
+    "savchenko-solutions-profile": {
+      "name": "Savchenko Solutions Profile",
+      "year": null,
+      "award": null,
+      "urls": {
+        "main": "/ipho/savchenko-solutions-profile",
+        "english": "/ipho/savchenko-solutions-profile/en",
+        "russian": "/ipho/savchenko-solutions-profile/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/savchenko-solutions-profile.html",
+        "english": "/profiles/ipho/savchenko-solutions-profile-en.html",
+        "russian": "/profiles/ipho/savchenko-solutions-profile-ru.html"
+      }
+    },
+    "артём-левко": {
+      "name": "Артём Левко",
+      "year": 2024,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/артём-левко",
+        "english": "/ipho/артём-левко/en",
+        "russian": "/ipho/артём-левко/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/артём-левко.html",
+        "english": "/profiles/ipho/артём-левко-en.html",
+        "russian": "/profiles/ipho/артём-левко-ru.html"
+      }
+    },
+    "илья-иванов": {
+      "name": "Илья Иванов",
+      "year": 2024,
+      "award": "bronze",
+      "urls": {
+        "main": "/ipho/илья-иванов",
+        "english": "/ipho/илья-иванов/en",
+        "russian": "/ipho/илья-иванов/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/илья-иванов.html",
+        "english": "/profiles/ipho/илья-иванов-en.html",
+        "russian": "/profiles/ipho/илья-иванов-ru.html"
+      }
+    },
+    "aliaksandr-melnichenka": {
+      "name": "Aliaksandr Melnichenka",
+      "year": 2024,
+      "award": "mention",
+      "urls": {
+        "main": "/ipho/aliaksandr-melnichenka",
+        "english": "/ipho/aliaksandr-melnichenka/en",
+        "russian": "/ipho/aliaksandr-melnichenka/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/aliaksandr-melnichenka.html",
+        "english": "/profiles/ipho/aliaksandr-melnichenka-en.html",
+        "russian": "/profiles/ipho/aliaksandr-melnichenka-ru.html"
+      },
+      "special_urls": [
+        "/melnichenka",
+        "/featured"
+      ]
+    },
+    "интервью-воспитать-победителей-об-успехах-учащихся-9-й-школы-на-олимпиаде": {
+      "name": "Интервью: Воспитать победителей — об успехах учащихся 9-й школы на олимпиаде",
+      "year": null,
+      "award": null,
+      "urls": {
+        "main": "/ipho/интервью-воспитать-победителей-об-успехах-учащихся-9-й-школы-на-олимпиаде",
+        "english": "/ipho/интервью-воспитать-победителей-об-успехах-учащихся-9-й-школы-на-олимпиаде/en",
+        "russian": "/ipho/интервью-воспитать-победителей-об-успехах-учащихся-9-й-школы-на-олимпиаде/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/интервью-воспитать-победителей-об-успехах-учащихся-9-й-школы-на-олимпиаде.html",
+        "english": "/profiles/ipho/интервью-воспитать-победителей-об-успехах-учащихся-9-й-школы-на-олимпиаде-en.html",
+        "russian": "/profiles/ipho/интервью-воспитать-победителей-об-успехах-учащихся-9-й-школы-на-олимпиаде-ru.html"
+      }
+    },
+    "adrian-grzegorz-rewkowskij": {
+      "name": "Adrian Grzegorz Rewkowskij",
+      "year": 2025,
+      "award": "silver",
+      "urls": {
+        "main": "/ipho/adrian-grzegorz-rewkowskij",
+        "english": "/ipho/adrian-grzegorz-rewkowskij/en",
+        "russian": "/ipho/adrian-grzegorz-rewkowskij/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/adrian-grzegorz-rewkowskij.html",
+        "english": "/profiles/ipho/adrian-grzegorz-rewkowskij-en.html",
+        "russian": "/profiles/ipho/adrian-grzegorz-rewkowskij-ru.html"
+      }
+    },
+    "viachaslau-kleukin": {
+      "name": "Viachaslau Kleukin",
+      "year": 2025,
+      "award": "silver",
+      "urls": {
+        "main": "/ipho/viachaslau-kleukin",
+        "english": "/ipho/viachaslau-kleukin/en",
+        "russian": "/ipho/viachaslau-kleukin/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/viachaslau-kleukin.html",
+        "english": "/profiles/ipho/viachaslau-kleukin-en.html",
+        "russian": "/profiles/ipho/viachaslau-kleukin-ru.html"
+      }
+    },
+    "ilya-plastsinin": {
+      "name": "Ilya Plastsinin",
+      "year": 2025,
+      "award": "silver",
+      "urls": {
+        "main": "/ipho/ilya-plastsinin",
+        "english": "/ipho/ilya-plastsinin/en",
+        "russian": "/ipho/ilya-plastsinin/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/ilya-plastsinin.html",
+        "english": "/profiles/ipho/ilya-plastsinin-en.html",
+        "russian": "/profiles/ipho/ilya-plastsinin-ru.html"
+      }
+    },
+    "arseny-kuzniatsou": {
+      "name": "Arseny Kuzniatsou",
+      "year": 2025,
+      "award": "silver",
+      "urls": {
+        "main": "/ipho/arseny-kuzniatsou",
+        "english": "/ipho/arseny-kuzniatsou/en",
+        "russian": "/ipho/arseny-kuzniatsou/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/arseny-kuzniatsou.html",
+        "english": "/profiles/ipho/arseny-kuzniatsou-en.html",
+        "russian": "/profiles/ipho/arseny-kuzniatsou-ru.html"
+      }
+    },
+    "kanstantsin-shmiarko": {
+      "name": "Kanstantsin Shmiarko",
+      "year": 2025,
+      "award": "mention",
+      "urls": {
+        "main": "/ipho/kanstantsin-shmiarko",
+        "english": "/ipho/kanstantsin-shmiarko/en",
+        "russian": "/ipho/kanstantsin-shmiarko/ru"
+      },
+      "files": {
+        "main": "/profiles/ipho/kanstantsin-shmiarko.html",
+        "english": "/profiles/ipho/kanstantsin-shmiarko-en.html",
+        "russian": "/profiles/ipho/kanstantsin-shmiarko-ru.html"
+      }
+    }
+  },
+  "featured_alumni": "aliaksandr-melnichenka"
+}
