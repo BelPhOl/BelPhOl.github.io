@@ -126,7 +126,7 @@
       .hero {
          background: var(--gradient-primary);
          color: white;
-         padding: 80px 0;
+         padding: 50px 0;
          text-align: center;
          position: relative;
          overflow: hidden;
@@ -155,7 +155,7 @@
       .hero p {
          font-size: 20px;
          opacity: 0.9;
-         margin-bottom: 32px;
+         margin-bottom: 24px;
          max-width: 600px;
          margin-left: auto;
          margin-right: auto;
@@ -166,7 +166,7 @@
          gap: 16px;
          justify-content: center;
          flex-wrap: wrap;
-         margin-top: 32px;
+         margin-top: 24px;
       }
 
       .btn {
@@ -207,7 +207,7 @@
 
       /* Features Section */
       .features {
-         padding: 80px 0;
+         padding: 50px 0;
          background: var(--surface-color);
       }
 
@@ -215,11 +215,11 @@
          display: grid;
          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
          gap: 32px;
-         margin-top: 48px;
+         margin-top: 28px;
       }
 
       .feature-card {
-         padding: 32px;
+         padding: 24px;
          border-radius: 16px;
          background: var(--bg-color);
          border: 1px solid var(--border-color);
@@ -241,7 +241,7 @@
          display: flex;
          align-items: center;
          justify-content: center;
-         margin: 0 auto 24px;
+         margin: 0 auto 16px;
          font-size: 24px;
          color: white;
       }
@@ -260,14 +260,14 @@
 
       /* Section Title */
       .section {
-         padding: 80px 0;
+         padding: 50px 0;
       }
 
       .section-title {
          font-size: 36px;
          font-weight: 700;
          text-align: center;
-         margin-bottom: 16px;
+         margin-bottom: 12px;
          color: var(--text-primary);
       }
 
@@ -276,7 +276,7 @@
          text-align: center;
          color: var(--text-secondary);
          max-width: 600px;
-         margin: 0 auto 48px;
+         margin: 0 auto 28px;
       }
 
       /* Timeline */
@@ -299,7 +299,7 @@
 
       .timeline-item {
          position: relative;
-         margin-bottom: 40px;
+         margin-bottom: 20px;
          display: flex;
          align-items: center;
       }
@@ -310,20 +310,20 @@
 
       .timeline-content {
          background: var(--surface-color);
-         padding: 24px;
+         padding: 18px 20px;
          border-radius: 12px;
          box-shadow: var(--shadow-md);
          border: 1px solid var(--border-color);
-         width: 45%;
+         width: 48%;
          position: relative;
       }
 
       .timeline-item:nth-child(even) .timeline-content {
-         margin-right: 10%;
+         margin-right: 4%;
       }
 
       .timeline-item:nth-child(odd) .timeline-content {
-         margin-left: 10%;
+         margin-left: 4%;
       }
 
       .timeline-marker {
@@ -341,19 +341,21 @@
       .timeline-title {
          font-size: 18px;
          font-weight: 600;
-         margin-bottom: 8px;
+         margin-bottom: 6px;
          color: var(--primary-color);
       }
 
       .timeline-date {
-         font-size: 14px;
+         font-size: 13px;
          color: var(--text-secondary);
-         margin-bottom: 12px;
+         margin-bottom: 8px;
+         font-weight: 500;
       }
 
       .timeline-description {
          color: var(--text-primary);
-         line-height: 1.6;
+         line-height: 1.5;
+         font-size: 14px;
       }
 
       /* Years Grid */
@@ -361,7 +363,7 @@
          display: grid;
          grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
          gap: 16px;
-         margin-top: 32px;
+         margin-top: 24px;
       }
 
       .year-card {
@@ -399,13 +401,13 @@
       .info-cards {
          display: grid;
          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-         gap: 24px;
-         margin-top: 32px;
+         gap: 20px;
+         margin-top: 20px;
       }
 
       .info-card {
          background: var(--surface-color);
-         padding: 24px;
+         padding: 18px 20px;
          border-radius: 12px;
          border-left: 4px solid var(--accent-color);
          box-shadow: var(--shadow-sm);
@@ -424,15 +426,16 @@
       }
 
       .info-card-title {
-         font-size: 16px;
+         font-size: 15px;
          font-weight: 600;
-         margin-bottom: 8px;
+         margin-bottom: 6px;
          color: var(--text-primary);
       }
 
       .info-card-content {
          color: var(--text-secondary);
-         line-height: 1.6;
+         line-height: 1.5;
+         font-size: 14px;
       }
 
       /* Mobile Navigation */
@@ -714,39 +717,6 @@
       </div>
    </section>
 
-   <!-- Recent Years Section -->
-   <section class="section">
-      <div class="container">
-         <h2 class="section-title">Последние олимпиады</h2>
-         <p class="section-subtitle">Актуальные задания и результаты республиканских олимпиад</p>
-         
-         <div class="years-grid">
-            <a href="#y2025" class="year-card">
-               <div class="year-title">2025</div>
-               <div class="year-info">Могилёв • Актуальные задания</div>
-            </a>
-            <a href="#y2024" class="year-card">
-               <div class="year-title">2024</div>
-               <div class="year-info">Гомель • Полный архив</div>
-            </a>
-            <a href="#y2023" class="year-card">
-               <div class="year-title">2023</div>
-               <div class="year-info">Минск • Полный архив</div>
-            </a>
-            <a href="#y2022" class="year-card">
-               <div class="year-title">2022</div>
-               <div class="year-info">Гродно • BelPhO-2022</div>
-            </a>
-         </div>
-         
-         <div style="text-align: center; margin-top: 32px;">
-            <a href="#all-years" class="btn btn-primary">
-               <i class="fas fa-archive"></i>
-               Посмотреть все годы (1990-2025)
-            </a>
-         </div>
-      </div>
-   </section>
 
    <!-- All Years Archive -->
    <section id="all-years" class="section" style="background: var(--surface-color);">
@@ -759,43 +729,46 @@
          <style>
             .modern-years-grid {
                display: grid;
-               grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-               gap: 24px;
-               margin-top: 32px;
+               grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+               gap: 16px;
+               margin-top: 20px;
+               margin-left: -20px;
+               margin-right: -20px;
+               padding-left: 0;
+               padding-right: 0;
             }
             
             .modern-year-card {
                background: var(--surface-color);
-               border-radius: 16px;
-               padding: 24px;
+               border-radius: 12px;
+               padding: 16px;
                box-shadow: var(--shadow-md);
                border-left: 4px solid var(--primary-color);
-               transition: all 0.3s ease;
+               transition: box-shadow 0.3s ease;
             }
             
             .modern-year-card:hover {
-               transform: translateY(-4px);
-               box-shadow: var(--shadow-xl);
+               box-shadow: var(--shadow-lg);
             }
             
             .year-header {
                display: flex;
                justify-content: space-between;
                align-items: center;
-               margin-bottom: 16px;
+               margin-bottom: 12px;
             }
             
             .year-number {
-               font-size: 28px;
+               font-size: 24px;
                font-weight: 700;
                color: var(--primary-color);
             }
             
             .year-city {
-               padding: 6px 12px;
+               padding: 4px 10px;
                background: var(--bg-color);
-               border-radius: 8px;
-               font-size: 14px;
+               border-radius: 6px;
+               font-size: 13px;
                color: var(--text-secondary);
                font-weight: 500;
             }
@@ -803,29 +776,29 @@
             .year-links {
                display: flex;
                flex-direction: column;
-               gap: 8px;
+               gap: 6px;
             }
             
             .year-section-title {
-               font-size: 16px;
+               font-size: 15px;
                font-weight: 600;
                color: var(--text-primary);
-               margin-bottom: 8px;
+               margin-bottom: 6px;
                border-bottom: 1px solid var(--border-color);
-               padding-bottom: 4px;
+               padding-bottom: 3px;
             }
             
             .year-link {
                display: flex;
                align-items: center;
                gap: 8px;
-               padding: 8px 12px;
+               padding: 6px 10px;
                background: var(--bg-color);
-               border-radius: 8px;
+               border-radius: 6px;
                text-decoration: none;
                color: var(--text-primary);
-               transition: all 0.3s ease;
-               font-size: 14px;
+               transition: background-color 0.2s ease, color 0.2s ease;
+               font-size: 13px;
             }
             
             .year-link:hover {
@@ -876,7 +849,7 @@
                      Решения Экспериментального Тура
                   </a>
                   
-                  <div class="year-section-title" style="margin-top: 16px;">III этап</div>
+                  <div class="year-section-title" style="margin-top: 10px;">III этап</div>
                   <a href="problems/third/2025/9_grade_3_etap_2024_theoretical_solutions.pdf" class="year-link" target="_blank">
                      <i class="fas fa-graduation-cap"></i>
                      Теоретический тур 9 класс
@@ -938,7 +911,7 @@
                      Схемы Экспериментального Тура
                   </a>
                   
-                  <div class="year-section-title" style="margin-top: 16px;">III этап</div>
+                  <div class="year-section-title" style="margin-top: 10px;">III этап</div>
                   <a href="problems/third/3_etap_2024_theoretical_problems.pdf" class="year-link" target="_blank">
                      <i class="fas fa-file-alt"></i>
                      Условия Теоретического Тура
@@ -997,7 +970,7 @@
                      Схемы Экспериментального Тура
                   </a>
                   
-                  <div class="year-section-title" style="margin-top: 16px;">III этап</div>
+                  <div class="year-section-title" style="margin-top: 10px;">III этап</div>
                   <a href="problems/third/3_etap_2023_theoretical_problems.pdf" class="year-link" target="_blank">
                      <i class="fas fa-file-alt"></i>
                      Условия Теоретического Тура
@@ -1047,7 +1020,7 @@
                      Решения Экспериментального Тура
                   </a>
                   
-                  <div class="year-section-title" style="margin-top: 16px;">III этап</div>
+                  <div class="year-section-title" style="margin-top: 10px;">III этап</div>
                   <a href="problems/third/3_etap_2022_theoretical_problems.pdf" class="year-link" target="_blank">
                      <i class="fas fa-file-alt"></i>
                      Условия Теоретического Тура
@@ -1065,7 +1038,7 @@
                      Решения Экспериментального Тура
                   </a>
                   
-                  <div class="year-section-title" style="margin-top: 16px; color: var(--accent-color);">BelPhO-2022 (Международная)</div>
+                  <div class="year-section-title" style="margin-top: 10px; color: var(--accent-color);">BelPhO-2022 (Международная)</div>
                   <a href="problems/fifth/5_etap_2023_theoretical_problems.pdf" class="year-link" target="_blank">
                      <i class="fas fa-file-alt"></i>
                      Условия Теоретического Тура
@@ -1091,10 +1064,10 @@
                      Схемы Экспериментального Тура
                   </a>
                   
-                  <div style="margin-top: 16px; padding: 12px; background: #fff8dc; border-radius: 8px; border-left: 4px solid var(--accent-color);">
-                     <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.5; margin: 0;">
-                        <i class="fas fa-history" style="margin-right: 6px;"></i>
-                        <strong>Историческая справка:</strong> С 20 по 26 ноября 2022 года проходила Открытая Белорусская Физическая Олимпиада школьников BelPhO-2022. Вместе с белорусской командой в олимпиаде приняли участие представители из России, Армении, Казахстана, Кыргызстана, Сирии, Таджикистана, Турции и Узбекистана – всего 94 человека. Мероприятие проходило в два тура (теоретический и экспериментальный) в двух возрастных категориях: 13–15 и 16–18 лет.
+                  <div style="margin: 0; padding: 0; background: transparent; border-radius: 0; opacity: 1.0;">
+                     <p style="font-size: 9px; color: var(--text-primary); line-height: 1.3; margin: 0; padding: 0;">
+                        <i class="fas fa-history" style="margin-right: 4px; font-size: 8px;"></i>
+                        <strong style="font-weight: 500;">Историческая справка:</strong> С 20 по 26 ноября 2022 года проходила Открытая Белорусская Физическая Олимпиада школьников BelPhO-2022. Вместе с белорусской командой в олимпиаде приняли участие представители из России, Армении, Казахстана, Кыргызстана, Сирии, Таджикистана, Турции и Узбекистана – всего 94 человека. Мероприятие проходило в два тура (теоретический и экспериментальный) в двух возрастных категориях: 13–15 и 16–18 лет.
                      </p>
                   </div>
                </div>
@@ -1126,7 +1099,7 @@
                      Решения Экспериментального Тура
                   </a>
                   
-                  <div class="year-section-title" style="margin-top: 16px;">III этап</div>
+                  <div class="year-section-title" style="margin-top: 10px;">III этап</div>
                   <a href="problems/third/3_etap_2021_theoretical_problems.pdf" class="year-link" target="_blank">
                      <i class="fas fa-file-alt"></i>
                      Условия Теоретического Тура
@@ -1171,7 +1144,7 @@
                      Решения Экспериментального Тура
                   </a>
                   
-                  <div class="year-section-title" style="margin-top: 16px;">III этап</div>
+                  <div class="year-section-title" style="margin-top: 10px;">III этап</div>
                   <a href="problems/third/3_etap_2020_theoretical_problems.pdf" class="year-link" target="_blank">
                      <i class="fas fa-file-alt"></i>
                      Условия Теоретического Тура
@@ -1189,10 +1162,10 @@
                      Решения Экспериментального Тура
                   </a>
                   
-                  <div style="margin-top: 16px; padding: 12px; background: #fff0f0; border-radius: 8px; border-left: 4px solid #ff6b6b;">
-                     <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.5; margin: 0;">
-                        <i class="fas fa-info-circle" style="margin-right: 6px;"></i>
-                        <strong>Особенности года:</strong> В связи с ограничениями, продиктованными эпидемиологической обстановкой, в 2020 году Заключительный этап Республиканской олимпиады по учебному предмету "Физика" проводился только для учащихся 11-х классов.
+                  <div style="margin: 0; padding: 0; background: transparent; border-radius: 0; opacity: 1.0;">
+                     <p style="font-size: 9px; color: var(--text-primary); line-height: 1.3; margin: 0; padding: 0;">
+                        <i class="fas fa-info-circle" style="margin-right: 4px; font-size: 8px;"></i>
+                        <strong style="font-weight: 500;">Особенности года:</strong> В связи с ограничениями, продиктованными эпидемиологической обстановкой, в 2020 году Заключительный этап Республиканской олимпиады по учебному предмету "Физика" проводился только для учащихся 11-х классов.
                      </p>
                   </div>
                </div>
@@ -1223,7 +1196,7 @@
                      Решения Экспериментального Тура
                   </a>
                   
-                  <div class="year-section-title" style="margin-top: 16px;">III этап</div>
+                  <div class="year-section-title" style="margin-top: 10px;">III этап</div>
                   <a href="problems/third/3_etap_2019_theoretical_problems.pdf" class="year-link" target="_blank">
                      <i class="fas fa-file-alt"></i>
                      Условия Теоретического Тура
@@ -1264,7 +1237,7 @@
                      Условия Экспериментального Тура
                   </a>
                   
-                  <div class="year-section-title" style="margin-top: 16px;">III этап</div>
+                  <div class="year-section-title" style="margin-top: 10px;">III этап</div>
                   <a href="problems/third/3_etap_2018_theoretical_problems.pdf" class="year-link" target="_blank">
                      <i class="fas fa-file-alt"></i>
                      Условия Теоретического Тура
@@ -1309,7 +1282,7 @@
                      Решения Экспериментального Тура
                   </a>
                   
-                  <div class="year-section-title" style="margin-top: 16px;">III этап</div>
+                  <div class="year-section-title" style="margin-top: 10px;">III этап</div>
                   <a href="problems/third/3_etap_2017_theoretical_problems.pdf" class="year-link" target="_blank">
                      <i class="fas fa-file-alt"></i>
                      Условия Теоретического Тура
@@ -1354,7 +1327,7 @@
                      Решения Экспериментального Тура
                   </a>
                   
-                  <div class="year-section-title" style="margin-top: 16px;">III этап</div>
+                  <div class="year-section-title" style="margin-top: 10px;">III этап</div>
                   <a href="problems/third/3_etap_2016_theoretical_problems.pdf" class="year-link" target="_blank">
                      <i class="fas fa-file-alt"></i>
                      Условия Теоретического Тура
@@ -1399,7 +1372,7 @@
                      Решения Экспериментального Тура
                   </a>
                   
-                  <div class="year-section-title" style="margin-top: 16px;">III этап</div>
+                  <div class="year-section-title" style="margin-top: 10px;">III этап</div>
                   <a href="problems/third/3_etap_2015_theoretical_problems.pdf" class="year-link" target="_blank">
                      <i class="fas fa-file-alt"></i>
                      Условия Теоретического Тура
@@ -1444,7 +1417,7 @@
                      Решения Экспериментального Тура
                   </a>
                   
-                  <div class="year-section-title" style="margin-top: 16px;">III этап</div>
+                  <div class="year-section-title" style="margin-top: 10px;">III этап</div>
                   <a href="problems/third/3_etap_2014_theoretical_problems.pdf" class="year-link" target="_blank">
                      <i class="fas fa-file-alt"></i>
                      Условия Теоретического Тура
@@ -1497,7 +1470,7 @@
                      Схемы Экспериментального Тура
                   </a>
                   
-                  <div class="year-section-title" style="margin-top: 16px;">III этап</div>
+                  <div class="year-section-title" style="margin-top: 10px;">III этап</div>
                   <a href="problems/third/3_etap_2013_theoretical_problems.pdf" class="year-link" target="_blank">
                      <i class="fas fa-file-alt"></i>
                      Условия Теоретического Тура
@@ -1546,7 +1519,7 @@
                      Решения Экспериментального Тура
                   </a>
                   
-                  <div class="year-section-title" style="margin-top: 16px;">III этап</div>
+                  <div class="year-section-title" style="margin-top: 10px;">III этап</div>
                   <a href="problems/third/3_etap_2012_theoretical_problems.pdf" class="year-link" target="_blank">
                      <i class="fas fa-file-alt"></i>
                      Условия Теоретического Тура
@@ -1591,7 +1564,7 @@
                      Решения Экспериментального Тура
                   </a>
                   
-                  <div class="year-section-title" style="margin-top: 16px;">III этап</div>
+                  <div class="year-section-title" style="margin-top: 10px;">III этап</div>
                   <a href="problems/third/3_etap_2011_theoretical_problems.pdf" class="year-link" target="_blank">
                      <i class="fas fa-file-alt"></i>
                      Условия Теоретического Тура
@@ -1636,7 +1609,7 @@
                      Решения Экспериментального Тура
                   </a>
                   
-                  <div class="year-section-title" style="margin-top: 16px;">III этап</div>
+                  <div class="year-section-title" style="margin-top: 10px;">III этап</div>
                   <a href="problems/third/3_etap_2010_theoretical_problems.pdf" class="year-link" target="_blank">
                      <i class="fas fa-file-alt"></i>
                      Условия Теоретического Тура
@@ -1681,7 +1654,7 @@
                      Решения Экспериментального Тура
                   </a>
                   
-                  <div class="year-section-title" style="margin-top: 16px;">III этап</div>
+                  <div class="year-section-title" style="margin-top: 10px;">III этап</div>
                   <a href="problems/third/3_etap_2009_theoretical_problems.pdf" class="year-link" target="_blank">
                      <i class="fas fa-file-alt"></i>
                      Условия Теоретического Тура
@@ -1726,7 +1699,7 @@
                      Решения Экспериментального Тура
                   </a>
                   
-                  <div class="year-section-title" style="margin-top: 16px;">III этап</div>
+                  <div class="year-section-title" style="margin-top: 10px;">III этап</div>
                   <a href="problems/third/3_etap_2008_theoretical_problems.pdf" class="year-link" target="_blank">
                      <i class="fas fa-file-alt"></i>
                      Условия Теоретического Тура
@@ -1763,7 +1736,7 @@
                      Решения Теоретического Тура
                   </a>
                   
-                  <div class="year-section-title" style="margin-top: 16px;">III этап</div>
+                  <div class="year-section-title" style="margin-top: 10px;">III этап</div>
                   <a href="problems/third/3_etap_2007_theoretical_problems.pdf" class="year-link" target="_blank">
                      <i class="fas fa-file-alt"></i>
                      Условия Теоретического Тура
@@ -1800,7 +1773,7 @@
                      Решения Теоретического Тура
                   </a>
                   
-                  <div class="year-section-title" style="margin-top: 16px;">III этап</div>
+                  <div class="year-section-title" style="margin-top: 10px;">III этап</div>
                   <a href="problems/third/3_etap_2006_problems.pdf" class="year-link" target="_blank">
                      <i class="fas fa-file-alt"></i>
                      Условия Теоретического Тура
@@ -1829,7 +1802,7 @@
                      Решения Теоретического Тура
                   </a>
                   
-                  <div class="year-section-title" style="margin-top: 16px;">III этап</div>
+                  <div class="year-section-title" style="margin-top: 10px;">III этап</div>
                   <a href="problems/third/3_etap_2005_problems.pdf" class="year-link" target="_blank">
                      <i class="fas fa-file-alt"></i>
                      Условия Теоретического Тура
@@ -1858,7 +1831,7 @@
                      Решения Теоретического Тура
                   </a>
                   
-                  <div class="year-section-title" style="margin-top: 16px;">III этап</div>
+                  <div class="year-section-title" style="margin-top: 10px;">III этап</div>
                   <a href="problems/third/3_etap_2004_problems.pdf" class="year-link" target="_blank">
                      <i class="fas fa-file-alt"></i>
                      Условия Теоретического Тура
@@ -1887,7 +1860,7 @@
                      Решения Теоретического Тура
                   </a>
                   
-                  <div class="year-section-title" style="margin-top: 16px;">III этап</div>
+                  <div class="year-section-title" style="margin-top: 10px;">III этап</div>
                   <a href="problems/third/3_etap_2003_problems.pdf" class="year-link" target="_blank">
                      <i class="fas fa-file-alt"></i>
                      Условия Теоретического Тура
@@ -1916,7 +1889,7 @@
                      Решения Теоретического Тура
                   </a>
                   
-                  <div class="year-section-title" style="margin-top: 16px;">III этап</div>
+                  <div class="year-section-title" style="margin-top: 10px;">III этап</div>
                   <a href="problems/third/3_etap_2002_problems.pdf" class="year-link" target="_blank">
                      <i class="fas fa-file-alt"></i>
                      Условия Теоретического Тура
@@ -1945,7 +1918,7 @@
                      Решения Теоретического Тура
                   </a>
                   
-                  <div class="year-section-title" style="margin-top: 16px;">III этап</div>
+                  <div class="year-section-title" style="margin-top: 10px;">III этап</div>
                   <a href="problems/third/3_etap_2001_problems.pdf" class="year-link" target="_blank">
                      <i class="fas fa-file-alt"></i>
                      Условия Теоретического Тура
@@ -1974,7 +1947,7 @@
                      Решения Теоретического Тура
                   </a>
                   
-                  <div class="year-section-title" style="margin-top: 16px;">III этап</div>
+                  <div class="year-section-title" style="margin-top: 10px;">III этап</div>
                   <a href="problems/third/3_etap_2000_problems.pdf" class="year-link" target="_blank">
                      <i class="fas fa-file-alt"></i>
                      Условия Теоретического Тура
@@ -2318,7 +2291,7 @@
                display: grid;
                grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
                gap: 32px;
-               margin-top: 32px;
+               margin-top: 24px;
             }
             
             .news-card {
@@ -2556,20 +2529,11 @@
             </div>
          </div>
          
-         <div style="text-align: center; margin-top: 48px;">
-            <p style="color: var(--text-secondary); font-size: 16px; margin-bottom: 16px;">
-               Следите за обновлениями и не пропускайте важные события!
-            </p>
-            <a href="mailto:aliaksandr@melnichenka.com" class="btn btn-primary">
-               <i class="fas fa-envelope"></i>
-               Предложить новость
-            </a>
-         </div>
       </div>
    </section>
    
    <!-- Footer -->
-   <footer style="background: var(--surface-color); padding: 40px 0; border-top: 1px solid var(--border-color); margin-top: 80px;">
+   <footer style="background: var(--surface-color); padding: 40px 0; border-top: 1px solid var(--border-color); margin-top: 40px;">
       <div class="container">
          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 32px; text-align: center;">
             <div>
