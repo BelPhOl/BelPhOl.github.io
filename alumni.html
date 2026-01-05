@@ -998,6 +998,13 @@
                     </div>
                 </div>
                 <div class="team-photo-card">
+                    <img src="img/teams/ipho_2013.jpg" alt="Команда IPhO 2013" class="team-photo">
+                    <div class="team-photo-caption">
+                        <h3>IPhO 2013 - Дания</h3>
+                        <p>Александр Гончарук, Иван Мицковец, Максим Лицкевич (серебро), Алексей Дудук, Джеймс Аквух (бронза)</p>
+                    </div>
+                </div>
+                <div class="team-photo-card">
                     <img src="img/teams/ipho_2004.jpg" alt="Команда IPhO 2004" class="team-photo">
                     <div class="team-photo-caption">
                         <h3>IPhO 2004 - Южная Корея (Исторический успех)</h3>
@@ -4153,7 +4160,9 @@
             const uniqueSchools = new Set(data.map(alumni => alumni.school)).size;
             
             // Count career statistics
+            const knownCountryAlumni = data.filter(alumni => alumni.country).length;
             const abroadAlumni = data.filter(alumni => alumni.country && alumni.country !== 'Беларусь').length;
+            const abroadPercentage = knownCountryAlumni > 0 ? Math.round((abroadAlumni / knownCountryAlumni) * 100) : 0;
             const professors = data.filter(alumni => alumni.profession && alumni.profession.toLowerCase().includes('professor')).length;
             const itSpecialists = data.filter(alumni => alumni.profession && 
                 (alumni.profession.toLowerCase().includes('software') || 
@@ -4167,7 +4176,7 @@
             document.getElementById('bronze-medals').textContent = bronzeMedals;
             document.getElementById('mentions').textContent = mentions;
             document.getElementById('unique-schools').textContent = uniqueSchools;
-            document.getElementById('abroad-alumni').textContent = abroadAlumni;
+            document.getElementById('abroad-alumni').textContent = knownCountryAlumni > 0 ? `${abroadPercentage}%` : '-';
             document.getElementById('professors').textContent = professors;
             document.getElementById('it-specialists').textContent = itSpecialists;
         }
