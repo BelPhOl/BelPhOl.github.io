@@ -26,7 +26,7 @@
          --success-color: #10b981;
          --warning-color: #f59e0b;
          --error-color: #ef4444;
-         --bg-color: #f8fafc;
+         --bg-color: #ffffff;
          --surface-color: #ffffff;
          --text-primary: #1e293b;
          --text-secondary: #64748b;
@@ -35,7 +35,7 @@
          --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
          --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
          --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-         --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+         --gradient-primary: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #06b6d4 100%);
          --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
          --gradient-accent: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
       }
@@ -77,7 +77,7 @@
       /* Header */
       .header {
          background: var(--surface-color);
-         padding: 20px 0;
+         padding: 8px 0;
          box-shadow: var(--shadow-sm);
          position: static;
       }
@@ -92,15 +92,15 @@
          display: flex;
          align-items: center;
          gap: 12px;
-         font-size: 24px;
+         font-size: 28px;
          font-weight: 700;
          color: var(--primary-color);
          text-decoration: none;
       }
 
       .logo-img {
-         width: 40px;
-         height: 40px;
+         width: 44px;
+         height: 44px;
          object-fit: contain;
       }
 
@@ -124,12 +124,13 @@
 
       /* Hero Section */
       .hero {
-         background: var(--gradient-primary);
+         background: linear-gradient(135deg, rgba(99, 102, 241, 0.75) 0%, rgba(59, 130, 246, 0.75) 50%, rgba(251, 191, 36, 0.75) 100%);
          color: white;
-         padding: 50px 0;
+         padding: 40px 0;
          text-align: center;
          position: relative;
          overflow: hidden;
+         /* min-height: 500px; */
       }
 
       .hero::before {
@@ -141,8 +142,9 @@
          height: 100%;
          background: url('img/flashNewYear2025.png') no-repeat center;
          background-size: cover;
-         opacity: 0.1;
+         opacity: 0.35;
          pointer-events: none;
+         z-index: 1;
       }
 
       /* Christmas Decorations */
@@ -167,125 +169,235 @@
          }
       }
 
-      /* Countdown Timer */
+      /* Countdown Timer - Scientific Instrument Style with Apple Glass Effect */
       .countdown-container {
-         margin: 24px auto;
+         margin: 12px auto;
          max-width: 600px;
-         padding: 20px;
-         background: rgba(255, 255, 255, 0.15);
-         backdrop-filter: blur(10px);
-         border-radius: 16px;
-         border: 2px solid rgba(255, 255, 255, 0.3);
-         box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+         padding: 12px 20px;
+         background: 
+            linear-gradient(135deg, rgba(99, 102, 241, 0.25) 0%, rgba(59, 130, 246, 0.25) 50%, rgba(251, 191, 36, 0.2) 100%),
+            repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255, 255, 255, 0.05) 2px, rgba(255, 255, 255, 0.05) 4px),
+            repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(255, 255, 255, 0.05) 2px, rgba(255, 255, 255, 0.05) 4px);
+         backdrop-filter: blur(20px) saturate(150%);
+         -webkit-backdrop-filter: blur(20px) saturate(150%);
+         border-radius: 12px;
+         border: 1px solid rgba(255, 255, 255, 0.25);
+         box-shadow: 
+            0 8px 32px rgba(0, 0, 0, 0.15),
+            0 2px 8px rgba(0, 0, 0, 0.1),
+            inset 0 1px 0 rgba(255, 255, 255, 0.2),
+            inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+         position: relative;
+         overflow: hidden;
+      }
+
+      .countdown-container::before {
+         content: 'E=mc²  Δt  ∇²  ℏ  c  G';
+         position: absolute;
+         top: 8px;
+         left: 12px;
+         font-size: 10px;
+         color: rgba(148, 163, 184, 0.3);
+         font-family: 'Courier New', monospace;
+         letter-spacing: 2px;
+         pointer-events: none;
+      }
+
+      .countdown-container::after {
+         content: '';
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         background: 
+            radial-gradient(circle at 20% 30%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+            radial-gradient(circle at 80% 70%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
+         pointer-events: none;
       }
 
       .countdown-title {
-         font-size: 18px;
-         font-weight: 600;
-         margin-bottom: 16px;
-         color: white;
-         text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+         font-size: 12px;
+         font-weight: 500;
+         margin-bottom: 10px;
+         color: rgba(255, 255, 255, 0.95);
+         text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+         letter-spacing: 1px;
+         text-transform: uppercase;
+         font-family: 'Courier New', monospace;
+         text-align: center;
+         position: relative;
+         z-index: 1;
       }
 
       .countdown-grid {
          display: grid;
          grid-template-columns: repeat(4, 1fr);
-         gap: 12px;
+         gap: 8px;
+         position: relative;
+         z-index: 1;
       }
 
       .countdown-item {
-         background: rgba(255, 255, 255, 0.2);
-         border-radius: 12px;
-         padding: 16px;
+         background: rgba(255, 255, 255, 0.15);
+         backdrop-filter: blur(15px) saturate(120%);
+         -webkit-backdrop-filter: blur(15px) saturate(120%);
+         border-radius: 8px;
+         padding: 8px 6px;
          text-align: center;
-         border: 1px solid rgba(255, 255, 255, 0.3);
+         border: 1px solid rgba(255, 255, 255, 0.25);
+         box-shadow: 
+            0 4px 16px rgba(0, 0, 0, 0.1),
+            inset 0 1px 0 rgba(255, 255, 255, 0.2),
+            inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+         position: relative;
+      }
+
+      .countdown-item::before {
+         content: '';
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         height: 1px;
+         background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.5), transparent);
       }
 
       .countdown-value {
-         font-size: 32px;
-         font-weight: 700;
-         color: white;
-         text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+         font-size: 24px;
+         font-weight: 600;
+         color: #ffffff;
+         text-shadow: 
+            0 2px 8px rgba(0, 0, 0, 0.4),
+            0 0 12px rgba(255, 255, 255, 0.3);
          line-height: 1;
-         margin-bottom: 4px;
+         margin-bottom: 2px;
+         font-family: 'Courier New', 'Consolas', 'Monaco', monospace;
+         letter-spacing: 2px;
+      }
+
+      .countdown-value#seconds {
+         animation: pulse 1s ease-in-out infinite;
+      }
+
+      @keyframes pulse {
+         0%, 100% {
+            opacity: 1;
+            text-shadow: 
+               0 2px 8px rgba(0, 0, 0, 0.4),
+               0 0 12px rgba(255, 255, 255, 0.3);
+         }
+         50% {
+            opacity: 0.9;
+            text-shadow: 
+               0 2px 12px rgba(0, 0, 0, 0.5),
+               0 0 18px rgba(255, 255, 255, 0.5);
+         }
       }
 
       .countdown-label {
-         font-size: 12px;
-         color: rgba(255, 255, 255, 0.9);
+         font-size: 8px;
+         color: rgba(255, 255, 255, 0.85);
          text-transform: uppercase;
-         letter-spacing: 0.5px;
+         letter-spacing: 1px;
          font-weight: 500;
+         font-family: 'Courier New', monospace;
       }
 
       @media (max-width: 768px) {
+         .countdown-container {
+            padding: 10px 16px;
+         }
+
          .countdown-grid {
             grid-template-columns: repeat(2, 1fr);
          }
          
          .countdown-value {
-            font-size: 24px;
+            font-size: 20px;
+         }
+
+         .countdown-item {
+            padding: 6px 4px;
          }
       }
 
+      .hero > * {
+         position: relative;
+         z-index: 2;
+      }
+
       .hero h1 {
-         font-size: 48px;
+         font-size: 42px;
          font-weight: 700;
-         margin-bottom: 16px;
+         margin-bottom: 10px;
          line-height: 1.2;
+         text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+         letter-spacing: -0.5px;
       }
 
       .hero p {
-         font-size: 20px;
-         opacity: 0.9;
-         margin-bottom: 24px;
+         font-size: 18px;
+         opacity: 0.95;
+         margin-bottom: 14px;
          max-width: 600px;
          margin-left: auto;
          margin-right: auto;
+         text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+         font-weight: 400;
+         letter-spacing: 0.2px;
       }
 
       .hero-actions {
          display: flex;
-         gap: 16px;
+         gap: 12px;
          justify-content: center;
          flex-wrap: wrap;
-         margin-top: 24px;
+         margin-top: 16px;
       }
 
       .btn {
-         padding: 12px 24px;
+         padding: 8px 20px;
          border: none;
          border-radius: 8px;
-         font-weight: 500;
+         font-weight: 600;
          cursor: pointer;
          transition: all 0.3s ease;
          text-decoration: none;
          display: inline-flex;
          align-items: center;
-         gap: 8px;
-         font-size: 16px;
+         gap: 6px;
+         font-size: 14px;
+         text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+         letter-spacing: 0.2px;
       }
 
       .btn-primary {
-         background: rgba(255, 255, 255, 0.2);
+         background: rgba(255, 255, 255, 0.25);
          color: white;
-         border: 2px solid rgba(255, 255, 255, 0.3);
+         border: 2px solid rgba(255, 255, 255, 0.4);
+         backdrop-filter: blur(10px);
       }
 
       .btn-primary:hover {
-         background: rgba(255, 255, 255, 0.3);
+         background: rgba(255, 255, 255, 0.35);
+         border-color: rgba(255, 255, 255, 0.6);
          transform: translateY(-2px);
+         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
       }
 
       .btn-secondary {
-         background: transparent;
+         background: rgba(255, 255, 255, 0.1);
          color: white;
-         border: 2px solid rgba(255, 255, 255, 0.5);
+         border: 2px solid rgba(255, 255, 255, 0.6);
+         backdrop-filter: blur(10px);
       }
 
       .btn-secondary:hover {
-         background: rgba(255, 255, 255, 0.1);
+         background: rgba(255, 255, 255, 0.2);
+         border-color: rgba(255, 255, 255, 0.8);
          transform: translateY(-2px);
+         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
       }
 
       /* Features Section */
@@ -536,11 +648,11 @@
          }
          
          .hero h1 {
-            font-size: 36px;
+            font-size: 32px;
          }
          
          .hero p {
-            font-size: 18px;
+            font-size: 16px;
          }
          
          #training-program {
@@ -582,6 +694,15 @@
 
       .featured-article:hover {
          transform: translateY(-4px);
+      }
+
+      /* Disable animations for announcement sections */
+      .section .featured-article[style*="margin-bottom: 0"] {
+         transition: none !important;
+      }
+
+      .section .featured-article[style*="margin-bottom: 0"]:hover {
+         transform: none !important;
       }
 
       .featured-content {
@@ -654,6 +775,22 @@
          color: white !important;
       }
 
+      /* PDF download buttons hover effects */
+      a[href*=".pdf"][style*="background"]:hover {
+         transform: translateY(-2px);
+         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+      }
+
+      a[href*=".pdf"][style*="var(--primary-color)"]:hover {
+         background: var(--primary-dark) !important;
+         box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4) !important;
+      }
+
+      a[href*=".pdf"][style*="var(--success-color)"]:hover {
+         background: #059669 !important;
+         box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4) !important;
+      }
+
       @media (max-width: 768px) {
          .featured-article div[style*="grid-template-columns"] {
             display: block !important;
@@ -662,6 +799,10 @@
          .featured-article img {
             margin-bottom: 16px !important;
             margin-top: 16px;
+         }
+
+         .section div[style*="grid-template-columns: 1fr 1fr"] {
+            grid-template-columns: 1fr !important;
          }
 
          .featured-title {
@@ -705,7 +846,7 @@
          
          <!-- Countdown Timer -->
          <div class="countdown-container" id="countdown-container">
-            <div class="countdown-title">⏰ До начала олимпиады осталось:</div>
+            <div class="countdown-title">До начала III этапа осталось:</div>
             <div class="countdown-grid">
                <div class="countdown-item">
                   <div class="countdown-value" id="days">00</div>
@@ -731,7 +872,7 @@
                <i class="fas fa-search"></i>
                Банк задач
             </a>
-            <a href="#training-program" class="btn btn-secondary">
+            <a href="training-program.html" class="btn btn-secondary">
                <i class="fas fa-graduation-cap"></i>
                Программа подготовки
             </a>
@@ -747,47 +888,91 @@
       </div>
    </section>
 
-   <!-- Announcement Section -->
-   <section class="section" style="background: var(--bg-color); padding: 30px 0;">
+   <!-- Combined Announcements Section -->
+   <section class="section" style="background: var(--bg-color); padding: 10px 0;">
       <div class="container">
-         <article class="featured-article" style="background: var(--surface-color); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-lg); margin-bottom: 0; transition: transform 0.3s ease;">
-            <div class="featured-content" style="padding: 20px;">
-               <div class="featured-meta" style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
-                  <div class="featured-date" style="color: var(--text-secondary); font-size: 13px; display: flex; align-items: center; gap: 6px;">
-                     <i class="fas fa-calendar"></i>
-                     28 июля 2025
+         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; align-items: stretch;">
+            <!-- IZhO 2026 Announcement -->
+            <article class="featured-article" style="background: var(--surface-color); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-lg); margin-bottom: 0; display: flex; flex-direction: column;">
+               <div class="featured-content" style="padding: 15px; padding-bottom: 0px; display: flex; flex-direction: column; flex: 1;">
+                  <div class="featured-meta" style="display: flex; align-items: center; gap: 12px; margin-bottom: 6px;">
+                     <div class="featured-date" style="color: var(--text-secondary); font-size: 13px; display: flex; align-items: center; gap: 6px;">
+                        <i class="fas fa-calendar"></i>
+                        11 января 2026
+                     </div>
+                     <div class="featured-tags" style="display: flex; gap: 6px;">
+                        <span class="tag" style="background: linear-gradient(135deg, #f59e0b, #d97706); color: white; padding: 3px 10px; border-radius: 12px; font-size: 11px; font-weight: 500;">Эксклюзив</span>
+                        <span class="tag" style="background: var(--accent-color); color: white; padding: 3px 10px; border-radius: 12px; font-size: 11px; font-weight: 500;">IZhO 2026</span>
+                        <span class="tag" style="background: var(--primary-color); color: white; padding: 3px 10px; border-radius: 12px; font-size: 11px; font-weight: 500;">Задания</span>
+                     </div>
                   </div>
-                  <div class="featured-tags" style="display: flex; gap: 6px;">
-                     <span class="tag" style="background: linear-gradient(135deg, #8b5cf6, #7c3aed); color: white; padding: 3px 10px; border-radius: 12px; font-size: 11px; font-weight: 500;">Интервью</span>
-                     <span class="tag" style="background: var(--accent-color); color: white; padding: 3px 10px; border-radius: 12px; font-size: 11px; font-weight: 500;">Princeton</span>
-                     <span class="tag" style="background: var(--primary-color); color: white; padding: 3px 10px; border-radius: 12px; font-size: 11px; font-weight: 500;">Эксклюзив</span>
+                  
+                  <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 16px; align-items: center; flex: 1; margin: 6px 0;">
+                     <div>
+                        <h2 class="featured-title" style="font-size: 20px; font-weight: 700; color: var(--text-primary); margin-bottom: 10px; line-height: 1.2;">
+                           ❗ Эксклюзивные задания IZhO 2026
+                        </h2>
+                        <p class="featured-excerpt" style="font-size: 14px; color: var(--text-secondary); margin-bottom: 12px; line-height: 1.5;">
+                           Официальные задания и решения теоретического тура XXII Международной Жаутыковской Олимпиады по физике.
+                        </p>
+                        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                           <a href="problems/izho/IZhO 2026_Phys_Theory_rus.pdf" target="_blank" style="display: inline-flex; align-items: center; gap: 6px; background: var(--primary-color); color: white; padding: 8px 16px; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.3s ease; font-size: 13px; box-shadow: 0 2px 8px rgba(37, 99, 235, 0.3);">
+                              <i class="fas fa-file-pdf"></i>
+                              Условия
+                           </a>
+                           <a href="problems/izho/IZhO 2026_Phys_Theory_rus_sol.pdf" target="_blank" style="display: inline-flex; align-items: center; gap: 6px; background: var(--success-color); color: white; padding: 8px 16px; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.3s ease; font-size: 13px; box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3);">
+                              <i class="fas fa-file-pdf"></i>
+                              Решения
+                           </a>
+                        </div>
+                     </div>
+                     <div style="text-align: center; height: 100%; display: flex; align-items: center; justify-content: center;">
+                        <img src="img/izho.png" alt="IZhO 2026 Logo" style="width: 100%; max-width: 180px; border-radius: 6px; height: auto; object-fit: contain;" onerror="this.style.display='none'">
+                     </div>
                   </div>
                </div>
-               
-               <div style="display: grid; grid-template-columns: 3fr 1fr; gap: 16px; align-items: start; margin: 12px 0;">
-                  <div>
-                     <h2 class="featured-title" style="font-size: 24px; font-weight: 700; color: var(--text-primary); margin-bottom: 12px; line-height: 1.2;">
-                        🎓 Эксклюзивное интервью с Андреем Коцевичем: от Белорусских Физических Олимпиад до Princeton University
-                     </h2>
-                     <p class="featured-excerpt" style="font-size: 15px; color: var(--text-secondary); margin-bottom: 12px; line-height: 1.5;">
-                        Участник IPhO 2019, выпускник МФТИ и аспирант Princeton University рассказывает о своем пути в науке, подготовке к олимпиадам и поступлении в топовые американские университеты. Уникальный 4,5-часовой разговор о физике, образовании и жизни в США.
-                     </p>
-                     <a href="news/andrei-katsevich-interview/" class="read-more" style="display: inline-flex; align-items: center; gap: 8px; background: var(--primary-color); color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.3s ease; font-size: 15px; box-shadow: 0 2px 8px rgba(37, 99, 235, 0.3);">
-                        Читать полное интервью
-                        <i class="fas fa-arrow-right"></i>
-                     </a>
+            </article>
+
+            <!-- Interview Announcement -->
+            <article class="featured-article" style="background: var(--surface-color); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-lg); margin-bottom: 0; display: flex; flex-direction: column;">
+               <div class="featured-content" style="padding: 15px; padding-bottom: 0px; display: flex; flex-direction: column; flex: 1;">
+                  <div class="featured-meta" style="display: flex; align-items: center; gap: 12px; margin-bottom: 6px;">
+                     <div class="featured-date" style="color: var(--text-secondary); font-size: 13px; display: flex; align-items: center; gap: 6px;">
+                        <i class="fas fa-calendar"></i>
+                        8 января 2026
+                     </div>
+                     <div class="featured-tags" style="display: flex; gap: 6px;">
+                        <span class="tag" style="background: linear-gradient(135deg, #8b5cf6, #7c3aed); color: white; padding: 3px 10px; border-radius: 12px; font-size: 11px; font-weight: 500;">Интервью</span>
+                        <span class="tag" style="background: var(--accent-color); color: white; padding: 3px 10px; border-radius: 12px; font-size: 11px; font-weight: 500;">Princeton</span>
+                        <span class="tag" style="background: var(--primary-color); color: white; padding: 3px 10px; border-radius: 12px; font-size: 11px; font-weight: 500;">Эксклюзив</span>
+                     </div>
                   </div>
-                  <div>
-                     <img src="news/andrei-katsevich-interview/katsevich_header_without_background.png" alt="Андрей Коцевич" style="width: 100%; max-width: 250px; border-radius: 3px;">
+                  
+                  <div style="display: grid; grid-template-columns: 2.05fr 1fr; gap: 16px; align-items: center; flex: 1; margin: 6px 0;">
+                     <div>
+                        <h2 class="featured-title" style="font-size: 20px; font-weight: 700; color: var(--text-primary); margin-bottom: 10px; line-height: 1.2;">
+                           От BelPhO в Принстонский университет <img src="img/Princeton_seal.svg" alt="Princeton" style="display: inline-block; width: 24px; height: 24px; vertical-align: middle; padding-bottom: 0px; opacity: 0.8;"> 
+                        </h2>
+                        <p class="featured-excerpt" style="font-size: 14px; color: var(--text-secondary); margin-bottom: 12px; line-height: 1.5;">
+                           Интервью с Андреем Коцевичем о пути в науке, подготовке к олимпиадам и поступлении в лучшие университеты США.
+                        </p>
+                        <a href="news/andrei-katsevich-interview/" class="read-more" style="display: inline-flex; align-items: center; gap: 6px; background: var(--primary-color); color: white; padding: 8px 16px; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.3s ease; font-size: 13px; box-shadow: 0 2px 8px rgba(37, 99, 235, 0.3);">
+                           Читать интервью
+                           <i class="fas fa-arrow-right"></i>
+                        </a>
+                     </div>
+                     <div style="text-align: center; height: 100%; display: flex; align-items: center; justify-content: center;">
+                        <img src="news/andrei-katsevich-interview/katsevich_header_without_background.png" alt="Андрей Коцевич" style="width: 100%; max-width: 550px; border-radius: 3px; height: auto; object-fit: contain;">
+                     </div>
                   </div>
                </div>
-            </div>
-         </article>
+            </article>
+         </div>
       </div>
    </section>
 
    <!-- Features Section -->
-   <section class="features">
+   <!-- <section class="features">
       <div class="container">
          <h2 class="section-title">Ваша подготовка к олимпиаде</h2>
          <p class="section-subtitle">Все необходимые ресурсы для успешного участия в белорусских физических олимпиадах</p>
@@ -842,9 +1027,9 @@
             </div>
          </div>
       </div>
-   </section>
+   </section> -->
 
-   <!-- Training Program Section -->
+   <!-- Training Program Section
    <section id="training-program" class="section">
       <div class="container">
          <h2 class="section-title">Программа подготовки к олимпиадам</h2>
@@ -962,13 +1147,13 @@
             </div>
          </div>
       </div>
-   </section>
+   </section> -->
 
 
    <!-- All Years Archive -->
-   <section id="all-years" class="section" style="background: var(--surface-color);">
+   <section id="all-years" class="section" style="background: var(--surface-color); padding-top: 20px;">
       <div class="container">
-         <h2 class="section-title">Архив олимпиад (1990-2025)</h2>
+         <h2 class="section-title">Задания прошлых лет (1990-2025)</h2>
          
          <!-- ... existing code ... -->
          
@@ -2887,13 +3072,14 @@
       updateCountdown();
       setInterval(updateCountdown, 1000);
       
-      // Christmas Snowflakes
+      // Christmas Snowflakes - DISABLED
+      /*
       function createSnowflake() {
          const snowflake = document.createElement('div');
          snowflake.className = 'snowflake';
          snowflake.innerHTML = '❄';
          snowflake.style.left = Math.random() * 100 + '%';
-         snowflake.style.animationDuration = (Math.random() * 3 + 2) + 's';
+         snowflake.style.animationDuration = (Math.random() * 6 + 5) + 's';
          snowflake.style.opacity = Math.random();
          snowflake.style.fontSize = (Math.random() * 10 + 10) + 'px';
          
@@ -2901,7 +3087,7 @@
          
          setTimeout(() => {
             snowflake.remove();
-         }, 5000);
+         }, 12000);
       }
       
       // Create snowflakes periodically
@@ -2911,6 +3097,7 @@
       for (let i = 0; i < 20; i++) {
          setTimeout(() => createSnowflake(), i * 150);
       }
+      */
    </script>
 </body>
 
