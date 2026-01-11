@@ -1243,10 +1243,45 @@
                border-right: 6px solid var(--surface-color);
             }
 
-            .year-number:hover .history-tooltip {
+            .year-number:hover .history-tooltip,
+            .year-number.active .history-tooltip {
                opacity: 1;
                visibility: visible;
                transform: translateX(0);
+            }
+
+            @media (max-width: 768px) {
+               .history-tooltip {
+                  left: 50%;
+                  top: calc(100% + 12px);
+                  transform: translateX(-50%) translateY(-10px);
+                  width: calc(100vw - 40px);
+                  max-width: 320px;
+               }
+
+               .history-tooltip::before {
+                  left: 50%;
+                  top: -6px;
+                  transform: translateX(-50%);
+                  border-left: 6px solid transparent;
+                  border-right: 6px solid transparent;
+                  border-bottom: 6px solid var(--border-color);
+                  border-top: none;
+               }
+
+               .history-tooltip::after {
+                  left: 50%;
+                  top: -5px;
+                  transform: translateX(-50%);
+                  border-left: 6px solid transparent;
+                  border-right: 6px solid transparent;
+                  border-bottom: 6px solid var(--surface-color);
+                  border-top: none;
+               }
+
+               .year-number.active .history-tooltip {
+                  transform: translateX(-50%) translateY(0);
+               }
             }
 
             .history-content h4 {
@@ -3191,6 +3226,33 @@
          setTimeout(() => createSnowflake(), i * 150);
       }
       */
+
+      // Mobile support for history tooltips
+      document.addEventListener('DOMContentLoaded', function() {
+         const historyButtons = document.querySelectorAll('.year-number');
+         
+         historyButtons.forEach(function(button) {
+            // Touch event for mobile
+            button.addEventListener('touchstart', function(e) {
+               e.preventDefault();
+               // Close other open tooltips
+               historyButtons.forEach(function(btn) {
+                  if (btn !== button) {
+                     btn.classList.remove('active');
+                  }
+               });
+               // Toggle this tooltip
+               button.classList.toggle('active');
+            });
+
+            // Click outside to close on mobile
+            document.addEventListener('touchstart', function(e) {
+               if (!button.contains(e.target) && !button.querySelector('.history-tooltip')?.contains(e.target)) {
+                  button.classList.remove('active');
+               }
+            });
+         });
+      });
    </script>
 </body>
 
