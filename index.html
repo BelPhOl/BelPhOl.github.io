@@ -926,7 +926,7 @@
                            </a>
                         </div>
                      </div>
-                     <div style="text-align: center; height: 100%; display: flex; align-items: center; justify-content: center;">
+                     <div style="text-align: center; display: flex; align-items: center; justify-content: center;">
                         <img src="img/izho.png" alt="IZhO 2026 Logo" style="width: 100%; max-width: 180px; border-radius: 6px; height: auto; object-fit: contain;" onerror="this.style.display='none'">
                      </div>
                   </div>
@@ -961,7 +961,7 @@
                            <i class="fas fa-arrow-right"></i>
                         </a>
                      </div>
-                     <div style="text-align: center; height: 100%; display: flex; align-items: center; justify-content: center;">
+                     <div style="text-align: center; display: flex; align-items: center; justify-content: center;">
                         <img src="news/andrei-katsevich-interview/katsevich_header_without_background.png" alt="Андрей Коцевич" style="width: 100%; max-width: 550px; border-radius: 3px; height: auto; object-fit: contain;">
                      </div>
                   </div>
@@ -1252,7 +1252,7 @@
 
             @media (max-width: 768px) {
                .history-tooltip {
-                  left: 50%;
+                  left: 10%;
                   top: calc(100% + 12px);
                   transform: translateX(-50%) translateY(-10px);
                   width: calc(100vw - 40px);
@@ -1281,6 +1281,10 @@
 
                .year-number.active .history-tooltip {
                   transform: translateX(-50%) translateY(0);
+               }
+
+               .modern-year-card {
+                  margin: 12px;
                }
             }
 
@@ -1549,7 +1553,7 @@
             <!-- 2022 - Гродно + BelPhO -->
             <div class="modern-year-card history-button" style="border-left-color: var(--accent-color); position: relative;">
                <div class="year-header">
-                  <div class="year-number" style="color: var(--accent-color);">
+                  <div class="year-number" style="color: var(--accent-color);">2022
                      <div class="history-tooltip">
                         <div class="history-content">
                            <h4 style="margin: 0 0 8px 0; color: var(--text-primary); font-size: 14px; font-weight: 600;">История BelPhO</h4>
@@ -1558,7 +1562,7 @@
                            </p>
                         </div>
                   </div>
-                  2022 <i class="fas fa-history" style="color: var(--accent-color); font-size: 20px;"></i>
+                  <i class="fas fa-history" style="color: var(--accent-color); font-size: 20px;"></i>
                   
                </div>
                <div class="year-city">Гродно</div>
