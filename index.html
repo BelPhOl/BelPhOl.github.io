@@ -660,9 +660,66 @@
       /* Mobile Navigation */
       .mobile-nav {
          display: none;
+         cursor: pointer;
+         font-size: 24px;
+         color: var(--text-primary);
+         padding: 8px;
+      }
+
+      .mobile-nav:hover {
+         color: var(--primary-color);
+      }
+
+      .mobile-menu {
+         display: none;
+         position: absolute;
+         top: 100%;
+         left: 0;
+         right: 0;
+         background: var(--surface-color);
+         box-shadow: var(--shadow-lg);
+         z-index: 1000;
+         padding: 16px 20px;
+      }
+
+      .mobile-menu.active {
+         display: block;
+      }
+
+      .mobile-menu .nav-links {
+         display: flex;
+         flex-direction: column;
+         gap: 12px;
+         list-style: none;
+      }
+
+      .mobile-menu .nav-links li {
+         border-bottom: 1px solid var(--border-color);
+         padding-bottom: 12px;
+      }
+
+      .mobile-menu .nav-links li:last-child {
+         border-bottom: none;
+         padding-bottom: 0;
+      }
+
+      .mobile-menu .nav-links a {
+         display: block;
+         padding: 8px 0;
+         font-size: 16px;
+         color: var(--text-primary);
+      }
+
+      .mobile-menu .nav-links a:hover,
+      .mobile-menu .nav-links a.active {
+         color: var(--primary-color);
       }
 
       @media (max-width: 768px) {
+         .header {
+            position: relative;
+         }
+
          .nav-links {
             display: none;
          }
@@ -880,9 +937,19 @@
                   <li><a href="news/">Новости</a></li>
                </ul>
             </nav>
-            <div class="mobile-nav">
+            <div class="mobile-nav" id="mobile-nav-toggle">
                <i class="fas fa-bars"></i>
             </div>
+         </div>
+         <div class="mobile-menu" id="mobile-menu">
+            <ul class="nav-links">
+               <li><a href="./" class="active">Главная</a></li>
+               <li><a href="problems/">Задачи</a></li>
+               <li><a href="books/">Книги</a></li>
+               <li><a href="training-program.html">Программа подготовки</a></li>
+               <li><a href="alumni.html">Выпускники</a></li>
+               <li><a href="news/">Новости</a></li>
+            </ul>
          </div>
       </div>
    </header>
@@ -3507,6 +3574,50 @@
          setTimeout(() => createSnowflake(), i * 150);
       }
       */
+
+      // Mobile navigation menu toggle
+      document.addEventListener('DOMContentLoaded', function() {
+         const mobileNavToggle = document.getElementById('mobile-nav-toggle');
+         const mobileMenu = document.getElementById('mobile-menu');
+         
+         if (mobileNavToggle && mobileMenu) {
+            mobileNavToggle.addEventListener('click', function(e) {
+               e.stopPropagation();
+               mobileMenu.classList.toggle('active');
+               
+               // Change icon
+               const icon = mobileNavToggle.querySelector('i');
+               if (mobileMenu.classList.contains('active')) {
+                  icon.classList.remove('fa-bars');
+                  icon.classList.add('fa-times');
+               } else {
+                  icon.classList.remove('fa-times');
+                  icon.classList.add('fa-bars');
+               }
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', function(e) {
+               if (!mobileNavToggle.contains(e.target) && !mobileMenu.contains(e.target)) {
+                  mobileMenu.classList.remove('active');
+                  const icon = mobileNavToggle.querySelector('i');
+                  icon.classList.remove('fa-times');
+                  icon.classList.add('fa-bars');
+               }
+            });
+
+            // Close menu when clicking on a link
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(function(link) {
+               link.addEventListener('click', function() {
+                  mobileMenu.classList.remove('active');
+                  const icon = mobileNavToggle.querySelector('i');
+                  icon.classList.remove('fa-times');
+                  icon.classList.add('fa-bars');
+               });
+            });
+         }
+      });
 
       // Mobile support for history tooltips
       document.addEventListener('DOMContentLoaded', function() {
