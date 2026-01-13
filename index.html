@@ -307,19 +307,42 @@
 
       @media (max-width: 768px) {
          .countdown-container {
-            padding: 10px 16px;
+            padding: 6px 10px;
+            margin: 6px auto;
+            max-width: 90%;
+         }
+
+         .countdown-title {
+            font-size: 9px;
+            margin-bottom: 4px;
+            line-height: 1.2;
          }
 
          .countdown-grid {
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(4, 1fr);
+            gap: 4px;
          }
          
          .countdown-value {
-            font-size: 20px;
+            font-size: 16px;
+            letter-spacing: 0.5px;
+            margin-bottom: 1px;
+         }
+
+         .countdown-label {
+            font-size: 6px;
+            letter-spacing: 0.5px;
          }
 
          .countdown-item {
-            padding: 6px 4px;
+            padding: 3px 2px;
+         }
+
+         .countdown-container::before {
+            font-size: 8px;
+            top: 4px;
+            left: 8px;
+            letter-spacing: 1px;
          }
       }
 
@@ -648,12 +671,37 @@
             display: block;
          }
          
+         .hero {
+            padding: 30px 0;
+         }
+
          .hero h1 {
-            font-size: 32px;
+            font-size: 28px;
+            margin-bottom: 8px;
          }
          
          .hero p {
-            font-size: 16px;
+            font-size: 14px;
+            margin-bottom: 16px;
+         }
+
+         .hero-actions {
+            flex-direction: row;
+            gap: 6px;
+            flex-wrap: wrap;
+            justify-content: center;
+         }
+
+         .hero-actions .btn {
+            font-size: 11px;
+            padding: 6px 10px;
+            flex: 0 1 auto;
+            min-width: auto;
+         }
+
+         .hero-actions .btn i {
+            font-size: 11px;
+            margin-right: 4px;
          }
          
          #training-program {
