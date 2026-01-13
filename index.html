@@ -847,7 +847,7 @@
          
          <!-- Countdown Timer -->
          <div class="countdown-container" id="countdown-container">
-            <div class="countdown-title">До начала III этапа осталось:</div>
+            <div class="countdown-title">До начала экспериментального тура осталось:</div>
             <div class="countdown-grid">
                <div class="countdown-item">
                   <div class="countdown-value" id="days">00</div>
@@ -3360,7 +3360,7 @@
       function updateCountdown() {
          // Set target date: January 13, 10:00 AM (current year or next year if already passed)
          const now = new Date();
-         let targetDate = new Date(now.getFullYear(), 0, 13, 10, 0, 0); // January 13, 10 AM
+         let targetDate = new Date(now.getFullYear(), 0, 14, 10, 0, 0); // January 13, 10 AM
          
          // If the date has already passed this year, set it for next year
          if (targetDate < now) {
