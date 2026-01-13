@@ -925,7 +925,7 @@
                      <div style="display: flex; flex-direction: column; gap: 16px;">
                         <!-- Grade Selector Tabs -->
                         <div style="display: flex; gap: 8px; border-bottom: 2px solid var(--border-color); padding-bottom: 0;">
-                           <button onclick="showGrade(9)" class="grade-tab active" data-grade="9" style="flex: 1; padding: 12px 16px; border: none; background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(37, 99, 235, 0.05)); border-radius: 8px 8px 0 0; font-weight: 700; font-size: 15px; color: var(--primary-color); cursor: pointer; transition: all 0.3s ease; border-bottom: 4px solid var(--primary-color); box-shadow: 0 -2px 8px rgba(37, 99, 235, 0.2);">
+                           <button onclick="showGrade(9)" class="grade-tab" data-grade="9" style="flex: 1; padding: 12px 16px; border: none; background: var(--bg-color); border-radius: 8px 8px 0 0; font-weight: 600; font-size: 14px; color: var(--text-secondary); cursor: pointer; transition: all 0.3s ease; border-bottom: 4px solid transparent; opacity: 0.7;">
                               9 класс
                            </button>
                            <button onclick="showGrade(10)" class="grade-tab" data-grade="10" style="flex: 1; padding: 12px 16px; border: none; background: var(--bg-color); border-radius: 8px 8px 0 0; font-weight: 600; font-size: 14px; color: var(--text-secondary); cursor: pointer; transition: all 0.3s ease; border-bottom: 4px solid transparent; opacity: 0.7;">
@@ -937,7 +937,7 @@
                         </div>
                         
                         <!-- Grade 9 Content -->
-                        <div id="grade-9" class="grade-content" style="display: flex; gap: 10px; flex-wrap: wrap;">
+                        <div id="grade-9" class="grade-content" style="display: none; gap: 10px; flex-wrap: wrap;">
                            <a href="problems/third/2026/МГО 2026 ТТ  9  Усл 1.pdf" target="_blank" style="flex: 1; min-width: 140px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: #3b82f6; color: white; padding: 12px 20px; border-radius: 6px; text-decoration: none; font-weight: 600; transition: all 0.2s ease; font-size: 14px; box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3); border: 1px solid rgba(59, 130, 246, 0.3);" onmouseover="this.style.background='#2563eb'; this.style.boxShadow='0 4px 12px rgba(59, 130, 246, 0.4)'" onmouseout="this.style.background='#3b82f6'; this.style.boxShadow='0 2px 8px rgba(59, 130, 246, 0.3)'">
                               <i class="fas fa-file-pdf"></i>
                               Задания
@@ -1037,7 +1037,27 @@
                                  tab.style.boxShadow = 'none';
                               }
                            });
+                           
+                           // Save selected grade to localStorage
+                           localStorage.setItem('selectedGrade2026', grade);
                         }
+                        
+                        // Restore selected grade on page load
+                        document.addEventListener('DOMContentLoaded', function() {
+                           const savedGrade = localStorage.getItem('selectedGrade2026');
+                           if (savedGrade) {
+                              const grade = parseInt(savedGrade);
+                              if (grade === 9 || grade === 10 || grade === 11) {
+                                 showGrade(grade);
+                              } else {
+                                 // Default to grade 9 if saved value is invalid
+                                 showGrade(9);
+                              }
+                           } else {
+                              // Default to grade 9 if no saved value
+                              showGrade(9);
+                           }
+                        });
                      </script>
                   </div>
                   <div style="text-align: center; display: flex; align-items: center; justify-content: center; position: relative;">
