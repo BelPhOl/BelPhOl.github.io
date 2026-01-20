@@ -958,11 +958,11 @@
    <section class="hero">
       <div class="container">
          <h1>Белорусские физические олимпиады</h1>
-         <p>Продвижение академического превосходства через Республиканскую олимпиаду по физике</p>
+         <p style="max-width: 100%;">BelPhO — национальная платформа физических олимпиад Беларуси</p>
          
          <!-- Countdown Timer -->
          <div class="countdown-container" id="countdown-container">
-            <div class="countdown-title">До начала экспериментального тура осталось:</div>
+            <div class="countdown-title">До начала заключительного этапа республиканской олимпиады осталось:</div>
             <div class="countdown-grid">
                <div class="countdown-item">
                   <div class="countdown-value" id="days">00</div>
@@ -3574,13 +3574,13 @@
    <script>
       // Countdown Timer
       function updateCountdown() {
-         // Set target date: January 13, 10:00 AM (current year or next year if already passed)
+         // Set target date: March 24, 10:00 AM (current year or next year if already passed)
          const now = new Date();
-         let targetDate = new Date(now.getFullYear(), 0, 14, 10, 0, 0); // January 13, 10 AM
+         let targetDate = new Date(now.getFullYear(), 2, 24, 10, 0, 0); // March 24, 10 AM
          
          // If the date has already passed this year, set it for next year
          if (targetDate < now) {
-            targetDate = new Date(now.getFullYear() + 1, 0, 13, 10, 0, 0);
+            targetDate = new Date(now.getFullYear() + 1, 2, 24, 10, 0, 0);
          }
          
          const timeLeft = targetDate - now;
