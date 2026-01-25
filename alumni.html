@@ -48,15 +48,15 @@
         }
 
         .container {
-            max-width: 1400px;
+            max-width: 1600px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 10px;
         }
 
         /* Header */
         .header {
             background: var(--surface-color);
-            padding: 20px 0;
+            padding: 10px 0;
             box-shadow: var(--shadow-sm);
             position: static;
         }
@@ -118,73 +118,96 @@
 
         /* Hero */
         .hero {
-            background: var(--gradient-primary);
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.88) 0%, rgba(59, 130, 246, 0.85) 50%, rgba(96, 165, 250, 0.82) 100%);
             color: white;
-            padding: 80px 0;
+            padding: 40px 0;
             text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('img/flashNewYear2025.png') no-repeat center 30%;
+            background-size: 110%;
+            opacity: 0.4;
+            pointer-events: none;
+            z-index: 1;
         }
 
         .hero h1 {
-            font-size: 48px;
+            font-size: 36px;
             font-weight: 700;
-            margin-bottom: 16px;
+            margin-bottom: 8px;
+            line-height: 1.2;
+            position: relative;
+            z-index: 2;
         }
 
         .hero p {
-            font-size: 20px;
+            font-size: 16px;
             opacity: 0.9;
-            max-width: 800px;
+            max-width: 600px;
             margin: 0 auto;
+            position: relative;
+            z-index: 2;
         }
 
         /* Stats */
         .stats-section {
-            padding: 60px 0;
+            padding: 12px 0;
             background: var(--surface-color);
         }
 
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 32px;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 4px;
         }
 
         .stat-card {
             text-align: center;
-            padding: 24px;
-            border-radius: 12px;
+            padding: 6px 4px;
+            border-radius: 8px;
             background: var(--bg-color);
             box-shadow: var(--shadow-sm);
         }
 
         .stat-number {
-            font-size: 36px;
+            font-size: 20px;
             font-weight: 700;
             color: var(--primary-color);
-            margin-bottom: 8px;
+            margin-bottom: 1px;
+            line-height: 1.2;
         }
 
         .stat-label {
             color: var(--text-secondary);
-            font-size: 14px;
+            font-size: 11px;
+            line-height: 1.3;
         }
 
         /* Filter */
         .filter-section {
-            padding: 40px 0;
+            padding: 12px 0;
             background: var(--surface-color);
             border-bottom: 1px solid var(--border-color);
         }
 
         .filter-controls {
             display: flex;
-            gap: 16px;
+            gap: 6px;
             justify-content: center;
             flex-wrap: wrap;
         }
 
         .filter-btn {
-            padding: 8px 16px;
+            padding: 4px 10px;
             border: 2px solid var(--border-color);
             background: var(--surface-color);
             border-radius: 8px;
@@ -201,52 +224,51 @@
 
         /* Alumni Grid */
         .alumni-section {
-            padding: 60px 0;
+            padding: 20px 0;
         }
 
         .alumni-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 8px;
         }
 
         @media (min-width: 1200px) {
             .alumni-grid {
-                grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-                gap: 24px;
+                grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+                gap: 10px;
             }
         }
 
         @media (min-width: 1600px) {
             .alumni-grid {
-                grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
-                gap: 28px;
+                grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+                gap: 12px;
             }
         }
 
         .alumni-card {
             background: var(--surface-color);
-            border-radius: 16px;
-            padding: 20px;
+            border-radius: 8px;
+            padding: 8px;
             box-shadow: var(--shadow-md);
             transition: all 0.3s ease;
-            border-left: 4px solid var(--primary-color);
+            border-left: 3px solid var(--primary-color);
         }
 
         @media (min-width: 1200px) {
             .alumni-card {
-                padding: 22px;
+                padding: 10px;
             }
         }
 
         @media (min-width: 1600px) {
             .alumni-card {
-                padding: 24px;
+                padding: 12px;
             }
         }
 
         .alumni-card:hover {
-            transform: translateY(-4px);
             box-shadow: var(--shadow-lg);
         }
 
@@ -266,19 +288,19 @@
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            margin-bottom: 16px;
+            margin-bottom: 6px;
         }
 
         .alumni-info {
             display: flex;
-            gap: 12px;
+            gap: 8px;
             align-items: flex-start;
             flex: 1;
         }
 
         .profile-image {
-            width: 70px;
-            height: 70px;
+            width: 60px;
+            height: 60px;
             border-radius: 50%;
             overflow: hidden;
             flex-shrink: 0;
@@ -287,8 +309,8 @@
 
         @media (min-width: 1200px) {
             .profile-image {
-                width: 75px;
-                height: 75px;
+                width: 70px;
+                height: 70px;
             }
         }
 
@@ -310,35 +332,38 @@
         }
 
         .alumni-name {
-            font-size: 18px;
+            font-size: 15px;
             font-weight: 600;
             color: var(--text-primary);
-            margin-bottom: 4px;
+            margin-bottom: 2px;
+            line-height: 1.4;
         }
 
         .english-name {
-            font-size: 14px;
+            font-size: 12px;
             font-weight: 400;
             color: var(--text-secondary);
             font-style: italic;
-            margin-bottom: 4px;
+            margin-bottom: 2px;
+            line-height: 1.4;
         }
 
         .current-status {
-            font-size: 12px;
+            font-size: 11px;
             color: var(--primary-color);
             font-weight: 500;
             background: var(--bg-color);
-            padding: 2px 6px;
-            border-radius: 4px;
+            padding: 2px 5px;
+            border-radius: 3px;
             display: inline-block;
         }
 
         .teacher-info {
-            font-size: 12px;
+            font-size: 11px;
             color: var(--text-secondary);
-            margin-bottom: 4px;
+            margin-bottom: 2px;
             font-style: italic;
+            line-height: 1.4;
         }
 
         .university-with-emblem {
@@ -348,12 +373,12 @@
         }
 
         .university-emblem {
-            max-width: 24px;
-            max-height: 20px;
+            max-width: 48px;
+            max-height: 36px;
             width: auto;
             height: auto;
-            border-radius: 2px;
             object-fit: contain;
+            border-radius: 2px;
         }
 
         .forbes-candidate {
@@ -377,9 +402,9 @@
         }
 
         .medal-badge {
-            padding: 4px 8px;
-            border-radius: 6px;
-            font-size: 12px;
+            padding: 3px 7px;
+            border-radius: 4px;
+            font-size: 11px;
             font-weight: 600;
             color: white;
         }
@@ -410,12 +435,12 @@
 
         .alumni-details {
             display: grid;
-            gap: 10px;
+            gap: 5px;
         }
 
         @media (min-width: 1200px) {
             .alumni-details {
-                gap: 12px;
+                gap: 6px;
             }
         }
 
@@ -423,7 +448,8 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            font-size: 14px;
+            font-size: 12px;
+            line-height: 1.5;
         }
 
         .detail-label {
@@ -450,61 +476,62 @@
         }
 
         .achievements {
-            margin-top: 16px;
-            padding-top: 16px;
+            margin-top: 6px;
+            padding-top: 6px;
             border-top: 1px solid var(--border-color);
         }
 
         .achievements-title {
-            font-size: 14px;
+            font-size: 12px;
             font-weight: 600;
-            margin-bottom: 8px;
+            margin-bottom: 3px;
             color: var(--text-primary);
         }
 
         .achievement-list {
             display: flex;
             flex-wrap: wrap;
-            gap: 6px;
+            gap: 3px;
         }
 
         .achievement-tag {
-            padding: 2px 6px;
+            padding: 2px 5px;
             background: var(--bg-color);
-            border-radius: 4px;
-            font-size: 11px;
+            border-radius: 3px;
+            font-size: 10px;
             color: var(--text-secondary);
+            line-height: 1.4;
         }
 
         /* Social Links */
         .social-links {
-            margin-top: 16px;
-            padding-top: 16px;
+            margin-top: 6px;
+            padding-top: 6px;
             border-top: 1px solid var(--border-color);
         }
 
         .social-links-title {
-            font-size: 14px;
+            font-size: 12px;
             font-weight: 600;
-            margin-bottom: 8px;
+            margin-bottom: 3px;
             color: var(--text-primary);
         }
 
         .social-links-list {
             display: flex;
             flex-wrap: wrap;
-            gap: 8px;
+            gap: 4px;
         }
 
         .social-link {
             display: inline-flex;
             align-items: center;
-            gap: 4px;
-            padding: 4px 8px;
+            gap: 3px;
+            padding: 3px 6px;
             background: var(--bg-color);
-            border-radius: 6px;
+            border-radius: 4px;
             text-decoration: none;
-            font-size: 12px;
+            font-size: 11px;
             color: var(--text-secondary);
             transition: all 0.3s ease;
             border: 1px solid var(--border-color);
@@ -513,11 +540,10 @@
         .social-link:hover {
             background: var(--primary-color);
             color: white;
-            transform: translateY(-1px);
         }
 
         .social-link i {
-            font-size: 14px;
+            font-size: 11px;
         }
 
         .social-link.linkedin:hover { background: #0077b5; }
@@ -588,12 +614,11 @@
 
         .social-link.savchenko:hover {
             background: linear-gradient(135deg, #7c3aed, #a855f7);
-            transform: translateY(-3px) scale(1.02);
             box-shadow: 0 8px 25px rgba(99, 102, 241, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.1);
         }
 
         .social-link.savchenko:active {
-            transform: translateY(-1px) scale(0.98);
+            transform: scale(0.98);
         }
 
         /* Enhanced name display */
@@ -605,9 +630,10 @@
         }
 
         .alumni-school {
-            font-size: 14px;
+            font-size: 12px;
             color: var(--text-secondary);
-            margin-bottom: 4px;
+            margin-bottom: 2px;
+            line-height: 1.4;
         }
 
         .english-name {
@@ -641,7 +667,6 @@
         }
 
         .forbes-candidate:hover {
-            transform: translateY(-6px);
             box-shadow: 0 12px 35px rgba(255, 215, 0, 0.4);
         }
 
@@ -649,19 +674,19 @@
         .research-highlight {
             background: linear-gradient(135deg, #667eea, #764ba2);
             color: white;
-            padding: 12px;
-            border-radius: 8px;
-            margin-top: 12px;
+            padding: 6px;
+            border-radius: 6px;
+            margin-top: 6px;
         }
 
         .research-highlight h4 {
-            font-size: 14px;
+            font-size: 12px;
             font-weight: 600;
-            margin-bottom: 6px;
+            margin-bottom: 3px;
         }
 
         .research-highlight p {
-            font-size: 12px;
+            font-size: 11px;
             line-height: 1.4;
         }
 
@@ -677,91 +702,176 @@
             margin-left: 8px;
         }
 
-        /* Hall of Fame badge */
-        .hall-of-fame {
-            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
-            color: white;
-            padding: 4px 8px;
-            border-radius: 6px;
-            font-size: 11px;
-            font-weight: 600;
-            display: inline-block;
-            margin-top: 4px;
-        }
 
         /* Team Photos */
         .team-photos-section {
-            padding: 60px 0;
+            padding: 12px 0;
             background: var(--surface-color);
         }
 
         .section-title {
-            font-size: 32px;
+            font-size: 24px;
             font-weight: 700;
             color: var(--text-primary);
             text-align: center;
-            margin-bottom: 48px;
+            margin-bottom: 8px;
         }
 
-        .team-photos-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 32px;
-            margin-bottom: 48px;
+        .team-photos-slider-wrapper {
+            position: relative;
+            margin-bottom: 8px;
+            padding: 0 50px;
+        }
+
+        .team-photos-slider {
+            display: flex;
+            overflow: hidden;
+            scroll-behavior: smooth;
+            gap: 12px;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+            padding: 4px 0;
         }
 
         .team-photo-card {
             background: var(--bg-color);
-            border-radius: 16px;
+            border-radius: 20px;
             overflow: hidden;
-            box-shadow: var(--shadow-md);
-            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.04);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            flex: 0 0 calc(33.333% - 8px);
+            min-width: 280px;
+            scroll-snap-align: start;
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        @media (max-width: 1200px) {
+            .team-photo-card {
+                flex: 0 0 calc(50% - 6px);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .team-photos-slider-wrapper {
+                padding: 0 45px;
+            }
+            .team-photo-card {
+                flex: 0 0 100%;
+            }
         }
 
         .team-photo-card:hover {
-            transform: translateY(-4px);
-            box-shadow: var(--shadow-lg);
+            box-shadow: 0 8px 24px rgba(37, 99, 235, 0.15), 0 4px 8px rgba(0, 0, 0, 0.1);
+            transform: scale(1.02);
+        }
+
+        .slider-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            color: rgba(37, 99, 235, 0.9);
+            border: 1px solid rgba(37, 99, 235, 0.2);
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            z-index: 10;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.08);
+        }
+
+        .slider-arrow:hover {
+            background: rgba(37, 99, 235, 0.95);
+            color: white;
+            border-color: rgba(37, 99, 235, 0.95);
+            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.3), 0 2px 8px rgba(0, 0, 0, 0.15);
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        .slider-arrow:active {
+            transform: translateY(-50%) scale(0.95);
+        }
+
+        .slider-arrow.prev {
+            left: 0;
+        }
+
+        .slider-arrow.next {
+            right: 0;
+        }
+
+        .slider-arrow:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+            transform: translateY(-50%) scale(0.9);
         }
 
         .team-photo {
             width: 100%;
-            height: 250px;
+            height: 220px;
             object-fit: cover;
+            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .team-photo-card:hover .team-photo {
+            transform: scale(1.05);
         }
 
         .team-photo-caption {
-            padding: 24px;
+            padding: 12px;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.02), transparent);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .team-photo-card:hover .team-photo-caption {
+            background: linear-gradient(to top, rgba(37, 99, 235, 0.03), transparent);
         }
 
         .team-photo-caption h3 {
-            font-size: 20px;
+            font-size: 14px;
             font-weight: 600;
             color: var(--text-primary);
-            margin-bottom: 8px;
+            margin-bottom: 6px;
+            line-height: 1.4;
+            transition: color 0.3s ease;
+        }
+
+        .team-photo-card:hover .team-photo-caption h3 {
+            color: rgba(37, 99, 235, 0.9);
         }
 
         .team-photo-caption p {
             color: var(--text-secondary);
+            font-size: 11px;
             line-height: 1.5;
+            transition: color 0.3s ease;
         }
 
         .training-camps-section {
             border-top: 2px solid var(--border-color);
-            padding-top: 48px;
+            padding-top: 8px;
         }
 
         .subsection-title {
-            font-size: 24px;
+            font-size: 18px;
             font-weight: 600;
             color: var(--text-primary);
             text-align: center;
-            margin-bottom: 32px;
+            margin-bottom: 6px;
         }
 
         .training-photos-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 24px;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 6px;
         }
 
         .training-photo-card {
@@ -773,43 +883,44 @@
         }
 
         .training-photo-card:hover {
-            transform: translateY(-2px);
             box-shadow: var(--shadow-md);
         }
 
         .training-photo {
             width: 100%;
-            height: 200px;
+            height: 120px;
             object-fit: cover;
         }
 
         .training-photo-caption {
-            padding: 16px;
+            padding: 4px;
         }
 
         .training-photo-caption h4 {
-            font-size: 16px;
+            font-size: 12px;
             font-weight: 600;
             color: var(--text-primary);
-            margin-bottom: 4px;
+            margin-bottom: 2px;
+            line-height: 1.4;
         }
 
         .training-photo-caption p {
             color: var(--text-secondary);
-            font-size: 14px;
+            font-size: 10px;
+            line-height: 1.3;
         }
 
         /* Year sections */
         .year-section {
-            margin-bottom: 48px;
+            margin-bottom: 12px;
         }
 
         .year-title {
             font-size: 24px;
             font-weight: 700;
             color: var(--text-primary);
-            margin-bottom: 24px;
-            padding-bottom: 8px;
+            margin-bottom: 8px;
+            padding-bottom: 4px;
             border-bottom: 2px solid var(--primary-color);
         }
 
@@ -831,8 +942,22 @@
                 justify-content: flex-start;
             }
             
-            .team-photos-grid {
-                grid-template-columns: 1fr;
+            .team-photos-slider {
+                gap: 4px;
+            }
+            
+            .slider-arrow {
+                width: 32px;
+                height: 32px;
+                font-size: 14px;
+            }
+            
+            .slider-arrow.prev {
+                left: 5px;
+            }
+            
+            .slider-arrow.next {
+                right: 5px;
             }
             
             .training-photos-grid {
@@ -841,7 +966,7 @@
             
             .stats-grid {
                 grid-template-columns: repeat(2, 1fr);
-                gap: 16px;
+                gap: 6px;
             }
             
             .alumni-info {
@@ -962,7 +1087,11 @@
     <section class="team-photos-section">
         <div class="container">
             <h2 class="section-title">Команды IPhO по годам</h2>
-            <div class="team-photos-grid">
+            <div class="team-photos-slider-wrapper">
+                <button class="slider-arrow prev" aria-label="Previous">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="team-photos-slider" id="team-photos-slider">
                 <div class="team-photo-card">
                     <img src="news/ipho-2025/belarus_physics_team_with_leaders_official.jpg" alt="Команда IPhO 2025" class="team-photo">
                     <div class="team-photo-caption">
@@ -1012,6 +1141,60 @@
                         <p>Александр Михалычев (1-е место, золото), Руслан Сакович (золото), Сергей Квачонок, Алексей Бобрик (серебро), Александр Плехов (бронза)</p>
                     </div>
                 </div>
+                <!-- Duplicated cards for infinite loop -->
+                <div class="team-photo-card">
+                    <img src="news/ipho-2025/belarus_physics_team_with_leaders_official.jpg" alt="Команда IPhO 2025" class="team-photo">
+                    <div class="team-photo-caption">
+                        <h3>IPhO 2025 - Париж, Франция (55-я юбилейная)</h3>
+                        <p>Вячеслав Клеукин, Адриан Ревковский, Арсений Кузнецов, Илья Пластинин (серебро), Константин Шмерко (похвальный отзыв)</p>
+                    </div>
+                </div>
+                <div class="team-photo-card">
+                    <img src="img/teams/ipho_2024.jpg" alt="Команда IPhO 2024" class="team-photo">
+                    <div class="team-photo-caption">
+                        <h3>IPhO 2024 - Иран</h3>
+                        <p>Алина Полонская (золото), Михаил Хурсин (серебро), Андрей Ёрш, Артём Левко, Илья Иванов (бронза)</p>
+                    </div>
+                </div>
+                <div class="team-photo-card">
+                    <img src="img/teams/ipho_2019.jpg" alt="Команда IPhO 2019" class="team-photo">
+                    <div class="team-photo-caption">
+                        <h3>IPhO 2019 - Израиль (50-я юбилейная)</h3>
+                        <p>Евгений Дедков (золото), Александр Каленчиц, Михаил Макей, Андрей Коцевич, Алексей Быков (бронза)</p>
+                    </div>
+                </div>
+                <div class="team-photo-card">
+                    <img src="img/teams/ipho_2018.jpg" alt="Команда IPhO 2018" class="team-photo">
+                    <div class="team-photo-caption">
+                        <h3>IPhO 2018 - Португалия</h3>
+                        <p>Евгений Ханкович, Евгений Дедков (серебро), Владислав Фядурка, Николай Зуников (бронза), Кырам Аль-Харба</p>
+                    </div>
+                </div>
+                <div class="team-photo-card">
+                    <img src="img/teams/ipho_2015.jpg" alt="Команда IPhO 2015" class="team-photo">
+                    <div class="team-photo-caption">
+                        <h3>IPhO 2015 - Индия</h3>
+                        <p>Антон Толкачов (золото), Богдан Звяжинский (серебро), Евгений Шурыгин, Артём Пивоварчик, Владислав Климашонок (бронза)</p>
+                    </div>
+                </div>
+                <div class="team-photo-card">
+                    <img src="img/teams/ipho_2013.JPG" alt="Команда IPhO 2013" class="team-photo">
+                    <div class="team-photo-caption">
+                        <h3>IPhO 2013 - Дания</h3>
+                        <p>Александр Гончарук, Иван Митьковец, Максим Лицкевич (серебро), Алексей Дудук, Джеймс Аквух (бронза)</p>
+                    </div>
+                </div>
+                <div class="team-photo-card">
+                    <img src="img/teams/ipho_2004.jpg" alt="Команда IPhO 2004" class="team-photo">
+                    <div class="team-photo-caption">
+                        <h3>IPhO 2004 - Южная Корея (Исторический успех)</h3>
+                        <p>Александр Михалычев (1-е место, золото), Руслан Сакович (золото), Сергей Квачонок, Алексей Бобрик (серебро), Александр Плехов (бронза)</p>
+                    </div>
+                </div>
+                </div>
+                <button class="slider-arrow next" aria-label="Next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
             </div>
             
             <div class="training-camps-section">
@@ -1508,7 +1691,14 @@
                 experiment: null,
                 total: 33.5,
                 totalContestants: 208,
-                achievements: []
+                achievements: [
+                    "🌐 Разработка и администрирование сайта (2003-2005)",
+                    "📧 Первая версия: brfo.narod.ru (устарела)",
+                    "💻 Email: andrandr@rambler.ru"
+                ],
+                socialLinks: [
+                    { type: "other", url: "mailto:andrandr@rambler.ru", name: "Email" }
+                ]
             },
             {
                 name: "Антон Шашок",
@@ -3725,7 +3915,7 @@
                 ],
                 profileImage: "img/teams/Адриан Ревковский.jpg",
                 currentStatus: "Выпускник гимназии",
-                university: "—",
+                university: "Ягелонский университет (Jagiellonian University)",
                 country: "Беларусь",
                 profession: "Выпускник гимназии 2025",
                 socialLinks: [
@@ -3751,7 +3941,7 @@
                 ],
                 profileImage: "img/teams/Вячеслав Клеукин.jpg",
                 currentStatus: "Выпускник гимназии",
-                university: "—",
+                university: "Московский физико-технический институт (МФТИ)",
                 country: "Беларусь",
                 profession: "Выпускник гимназии 2025",
                 socialLinks: [
@@ -3779,7 +3969,7 @@
                 ],
                 profileImage: "img/teams/Илья Пластинин.jpg",
                 currentStatus: "Выпускник лицея",
-                university: "—",
+                university: "Московский физико-технический институт (МФТИ)",
                 country: "Беларусь",
                 profession: "Выпускник лицея 2025",
                 socialLinks: [
@@ -3832,7 +4022,7 @@
                 ],
                 profileImage: "img/teams/Константин Шмерко.jpg",
                 currentStatus: "Выпускник лицея",
-                university: "—",
+                university: "Белорусский государственный университет (БГУ)",
                 country: "Беларусь",
                 profession: "Выпускник лицея 2025",
                 socialLinks: []
@@ -3885,7 +4075,6 @@
                                         <div class="medal-badge medal-${alumni.award}">
                                             ${getMedalText(alumni.award)}
                                         </div>
-                                        ${alumni.hallOfFame ? `<div class="hall-of-fame">Hall of Fame</div>` : ''}
                                     </div>
                                     
                                     <div class="alumni-details">
@@ -4066,20 +4255,113 @@
 
         // Helper function to get university emblems
         function getUniversityEmblem(university) {
+            if (!university) return null;
+            
+            const universityLower = university.toLowerCase();
             const emblems = {
-                'MIT': 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/MIT_logo.svg/240px-MIT_logo.svg.png',
-                'Princeton University': 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Princeton_seal.svg/120px-Princeton_seal.svg.png',
-                'Caltech': 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Caltech_logo.png/120px-Caltech_logo.png',
-                'Stanford University': 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Seal_of_Leland_Stanford_Junior_University.svg/120px-Seal_of_Leland_Stanford_Junior_University.svg.png',
-                'Harvard University': 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Harvard_University_coat_of_arms.svg/120px-Harvard_University_coat_of_arms.svg.png',
-                'Cambridge University': 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/University_of_Cambridge_coat_of_arms_official.svg/120px-University_of_Cambridge_coat_of_arms_official.svg.png',
-                'Oxford University': 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Oxford-University-Circlet.svg/120px-Oxford-University-Circlet.svg.png',
-                'МФТИ': 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Mipt_logo.svg/120px-Mipt_logo.svg.png'
+                // MIT
+                'mit': 'img/mini_logos/universities/MIT_logo_2003-2023.svg',
+                'massachusetts institute of technology': 'img/mini_logos/universities/MIT_logo_2003-2023.svg',
+                
+                // Princeton
+                'princeton': 'img/mini_logos/universities/Princeton_seal.svg',
+                'princeton university': 'img/mini_logos/universities/Princeton_seal.svg',
+                
+                // Caltech
+                'caltech': 'img/mini_logos/universities/Caltech_Logo.svg',
+                'california institute of technology': 'img/mini_logos/universities/Caltech_Logo.svg',
+                
+                // Cambridge
+                'cambridge': 'img/mini_logos/universities/Coat_of_Arms_of_the_University_of_Cambridge.svg',
+                'university of cambridge': 'img/mini_logos/universities/Coat_of_Arms_of_the_University_of_Cambridge.svg',
+                
+                // ETH Zürich
+                'eth': 'img/mini_logos/universities/ETH_Zürich_Logo_black.svg',
+                'eth zürich': 'img/mini_logos/universities/ETH_Zürich_Logo_black.svg',
+                'eth zurich': 'img/mini_logos/universities/ETH_Zürich_Logo_black.svg',
+                
+                // Georgia Tech
+                'georgia tech': 'img/mini_logos/universities/Georgia_Tech_logo.svg',
+                'georgia institute of technology': 'img/mini_logos/universities/Georgia_Tech_logo.svg',
+                
+                // IST Austria
+                'ist austria': 'img/mini_logos/universities/Institute_of_Science_and_Technology_Austria_Logo.svg',
+                'institute of science and technology austria': 'img/mini_logos/universities/Institute_of_Science_and_Technology_Austria_Logo.svg',
+                
+                // KTH
+                'kth': 'img/mini_logos/universities/KTH_Royal_Institute_of_Technology_logo.svg',
+                'royal institute of technology': 'img/mini_logos/universities/KTH_Royal_Institute_of_Technology_logo.svg',
+                'kth royal institute of technology': 'img/mini_logos/universities/KTH_Royal_Institute_of_Technology_logo.svg',
+                
+                // MIPT / МФТИ
+                'mipt': 'img/mini_logos/universities/moscow_institute_of_physics_and_technology_logo-freelogovectors.svg',
+                'московский физико-технический институт': 'img/mini_logos/universities/moscow_institute_of_physics_and_technology_logo-freelogovectors.svg',
+                'moscow institute of physics and technology': 'img/mini_logos/universities/moscow_institute_of_physics_and_technology_logo-freelogovectors.svg',
+                'мфти': 'img/mini_logos/universities/moscow_institute_of_physics_and_technology_logo-freelogovectors.svg',
+                
+                // Quantic
+                'quantic': 'img/mini_logos/universities/Quantic-logo-color.svg',
+                'quantic school': 'img/mini_logos/universities/Quantic-logo-color.svg',
+                
+                // Skoltech
+                'skoltech': 'img/mini_logos/universities/Skoltech-logo.png',
+                
+                // Stockholm University
+                'stockholm university': 'img/mini_logos/universities/Stockholms_Universitet_logo.svg.png',
+                'stockholm': 'img/mini_logos/universities/Stockholms_Universitet_logo.svg.png',
+                
+                // Syracuse
+                'syracuse': 'img/mini_logos/universities/Syracuse_University_wordmark.svg',
+                'syracuse university': 'img/mini_logos/universities/Syracuse_University_wordmark.svg',
+                
+                // University of Hamburg
+                'hamburg': 'img/mini_logos/universities/UHH_Universität_Hamburg_Logo.svg',
+                'university of hamburg': 'img/mini_logos/universities/UHH_Universität_Hamburg_Logo.svg',
+                
+                // University of Liverpool
+                'liverpool': 'img/mini_logos/universities/University of Liverpool Arms.svg',
+                'university of liverpool': 'img/mini_logos/universities/University of Liverpool Arms.svg',
+                
+                // University of Chicago
+                'chicago': 'img/mini_logos/universities/University_of_Chicago_wordmark.svg',
+                'university of chicago': 'img/mini_logos/universities/University_of_Chicago_wordmark.svg',
+                
+                // Jagiellonian University / Ягелонский университет
+                'jagiellonian': 'img/mini_logos/universities/Herb_Uniwersytetu_Jagiellońskiego.svg',
+                'jagiellonian university': 'img/mini_logos/universities/Herb_Uniwersytetu_Jagiellońskiego.svg',
+                'ягелонский университет': 'img/mini_logos/universities/Herb_Uniwersytetu_Jagiellońskiego.svg',
+                'ягелонский': 'img/mini_logos/universities/Herb_Uniwersytetu_Jagiellońskiego.svg',
+                
+                // École Polytechnique
+                'école polytechnique': 'img/mini_logos/universities/École_polytechnique_signature.svg',
+                'ecole polytechnique': 'img/mini_logos/universities/École_polytechnique_signature.svg',
+                'polytechnique': 'img/mini_logos/universities/École_polytechnique_signature.svg',
+                
+                // HSE / ВШЭ
+                'hse': 'img/mini_logos/universities/Логотип_НИУ_ВШЭ.svg',
+                'высшая школа экономики': 'img/mini_logos/universities/Логотип_НИУ_ВШЭ.svg',
+                'вшэ': 'img/mini_logos/universities/Логотип_НИУ_ВШЭ.svg',
+                'higher school of economics': 'img/mini_logos/universities/Логотип_НИУ_ВШЭ.svg',
+                
+                // Belarusian State University / БГУ
+                'bsu': 'img/mini_logos/universities/Belarusian_State_University_emblem.svg',
+                'belarusian state university': 'img/mini_logos/universities/Belarusian_State_University_emblem.svg',
+                'белорусский государственный университет': 'img/mini_logos/universities/Belarusian_State_University_emblem.svg',
+                'бгу': 'img/mini_logos/universities/Belarusian_State_University_emblem.svg',
+                
+                // FAU Erlangen-Nürnberg
+                'fau': 'img/mini_logos/universities/Friedrich-Alexander-Universität_Erlangen-Nürnberg_logo.svg',
+                'friedrich-alexander': 'img/mini_logos/universities/Friedrich-Alexander-Universität_Erlangen-Nürnberg_logo.svg',
+                'erlangen': 'img/mini_logos/universities/Friedrich-Alexander-Universität_Erlangen-Nürnberg_logo.svg',
+                
+                // GSU (Gomel State University)
+                'gsu': 'img/mini_logos/universities/LogoGSU.png',
+                'gomel state university': 'img/mini_logos/universities/LogoGSU.png'
             };
             
             // Check if university name contains any of the emblem keys
             for (const [key, emblem] of Object.entries(emblems)) {
-                if (university && university.includes(key)) {
+                if (universityLower.includes(key)) {
                     return emblem;
                 }
             }
@@ -4183,18 +4465,154 @@
             document.getElementById('it-specialists').textContent = itSpecialists;
         }
 
+        // Team Photos Slider
+        function initTeamPhotosSlider() {
+            const slider = document.getElementById('team-photos-slider');
+            const prevBtn = document.querySelector('.slider-arrow.prev');
+            const nextBtn = document.querySelector('.slider-arrow.next');
+            
+            if (!slider || !prevBtn || !nextBtn) return;
+            
+            let currentIndex = 0;
+            let autoSlideInterval;
+            const slideDuration = 4000; // 4 seconds
+            let isTransitioning = false;
+            
+            function getVisibleCards() {
+                const width = window.innerWidth;
+                if (width <= 768) return 1;
+                if (width <= 1200) return 2;
+                return 3;
+            }
+            
+            function updateSlider(instant = false) {
+                const cards = slider.querySelectorAll('.team-photo-card');
+                if (cards.length === 0) return;
+                
+                const visibleCards = getVisibleCards();
+                const cardWidth = cards[0].offsetWidth;
+                const gap = 12;
+                const scrollPosition = currentIndex * (cardWidth + gap);
+                
+                slider.scrollTo({
+                    left: scrollPosition,
+                    behavior: instant ? 'auto' : 'smooth'
+                });
+                
+                // Never disable arrows for infinite loop
+                prevBtn.disabled = false;
+                nextBtn.disabled = false;
+            }
+            
+            function nextSlide() {
+                if (isTransitioning) return;
+                isTransitioning = true;
+                
+                const cards = slider.querySelectorAll('.team-photo-card');
+                const visibleCards = getVisibleCards();
+                const originalCardCount = 7; // Original number of unique cards
+                
+                // Check if we're at the last original card
+                if (currentIndex >= originalCardCount - 1) {
+                    // Reset to beginning instantly (invisible jump - duplicate looks identical)
+                    currentIndex = 0;
+                    slider.scrollTo({ left: 0, behavior: 'auto' });
+                    // Just reset, don't move to next - let next auto-slide handle it
+                    setTimeout(() => {
+                        isTransitioning = false;
+                    }, 100);
+                } else {
+                    currentIndex++;
+                    updateSlider();
+                    setTimeout(() => {
+                        isTransitioning = false;
+                    }, 500);
+                }
+            }
+            
+            function prevSlide() {
+                if (isTransitioning) return;
+                isTransitioning = true;
+                
+                const cards = slider.querySelectorAll('.team-photo-card');
+                const visibleCards = getVisibleCards();
+                const originalCardCount = 7; // Original number of unique cards
+                
+                // Check if we're at the first card
+                if (currentIndex <= 0) {
+                    // Jump to end of original set instantly (invisible jump - duplicate looks identical)
+                    const cardWidth = cards[0].offsetWidth;
+                    const gap = 12;
+                    currentIndex = originalCardCount - 1;
+                    const scrollPosition = currentIndex * (cardWidth + gap);
+                    slider.scrollTo({ left: scrollPosition, behavior: 'auto' });
+                    // Just reset, don't move to previous - let next auto-slide handle it
+                    setTimeout(() => {
+                        isTransitioning = false;
+                    }, 100);
+                } else {
+                    currentIndex--;
+                    updateSlider();
+                    setTimeout(() => {
+                        isTransitioning = false;
+                    }, 500);
+                }
+            }
+            
+            function startAutoSlide() {
+                autoSlideInterval = setInterval(nextSlide, slideDuration);
+            }
+            
+            function stopAutoSlide() {
+                if (autoSlideInterval) {
+                    clearInterval(autoSlideInterval);
+                }
+            }
+            
+            // Event listeners
+            nextBtn.addEventListener('click', () => {
+                stopAutoSlide();
+                nextSlide();
+                startAutoSlide();
+            });
+            
+            prevBtn.addEventListener('click', () => {
+                stopAutoSlide();
+                prevSlide();
+                startAutoSlide();
+            });
+            
+            // Pause on hover
+            slider.addEventListener('mouseenter', stopAutoSlide);
+            slider.addEventListener('mouseleave', startAutoSlide);
+            
+            // Handle window resize
+            let resizeTimeout;
+            window.addEventListener('resize', () => {
+                clearTimeout(resizeTimeout);
+                resizeTimeout = setTimeout(() => {
+                    updateSlider(true);
+                }, 250);
+            });
+            
+            // Initialize
+            updateSlider(true);
+            startAutoSlide();
+        }
+
         // Initialize
         document.addEventListener('DOMContentLoaded', () => {
             updateStats(alumniData);
             renderAlumni(alumniData);
             setupFilters();
+            initTeamPhotosSlider();
         });
     </script>
 
     <!-- Footer -->
-    <footer style="background: var(--surface-color); padding: 40px 0; border-top: 1px solid var(--border-color); margin-top: 80px;">
+    <footer style="background: var(--surface-color); padding: 16px 0; border-top: 1px solid var(--border-color); margin-top: 20px;">
         <div class="container">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 32px; text-align: center;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 12px; text-align: center;">
                 <div>
                     <p style="color: var(--text-secondary); font-size: 14px; line-height: 1.6;">
                         © <strong>Белорусские физические олимпиады</strong><br>
