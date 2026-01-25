@@ -131,8 +131,13 @@
                 display: block;
             }
             
+            .hero {
+                padding: 24px 0;
+            }
+            
             .hero h1 {
                 font-size: 28px;
+                margin-bottom: 4px;
             }
             
             .hero p {
@@ -142,9 +147,9 @@
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, #2563eb 0%, #06b6d4 100%);
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.88) 0%, rgba(59, 130, 246, 0.85) 50%, rgba(96, 165, 250, 0.82) 100%);
             color: white;
-            padding: 20px 0;
+            padding: 40px 0;
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -157,29 +162,27 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('../img/flashNewYear2025.png') no-repeat center;
-            background-size: cover;
-            opacity: 0.35;
+            background: url('../img/flashNewYear2025.png') no-repeat center 30%;
+            background-size: 100%;
+            opacity: 0.4;
             pointer-events: none;
             z-index: 1;
         }
 
         .hero h1 {
-            font-size: 28px;
+            font-size: 36px;
             font-weight: 700;
-            margin-bottom: 4px;
+            margin-bottom: 8px;
             line-height: 1.2;
             position: relative;
             z-index: 2;
         }
 
         .hero p {
-            font-size: 14px;
+            font-size: 16px;
             opacity: 0.9;
-            margin-bottom: 8px;
             max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
+            margin: 0 auto;
             position: relative;
             z-index: 2;
         }
@@ -808,14 +811,6 @@
         }
 
         @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 36px;
-            }
-            
-            .hero p {
-                font-size: 18px;
-            }
-            
             .stats-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
@@ -839,11 +834,16 @@
             }
             
             .hero {
-                padding: 32px 0;
+                padding: 16px 0;
             }
             
             .hero h1 {
                 font-size: 24px;
+                margin-bottom: 2px;
+            }
+            
+            .hero p {
+                font-size: 13px;
             }
             
             .stats-grid {
@@ -937,10 +937,10 @@
     <section class="authors-info" style="background: var(--surface-color); padding: 8px 0; border-bottom: 1px solid var(--border-color);">
         <div class="container">
             <p style="color: var(--text-secondary); font-size: 13px; line-height: 1.5; max-width: 900px; margin: 0 auto; text-align: center;">
-                Представленные здесь задачи были предложены для проведения Республиканских Олимпиад по физике Слободянюком А.И., Марковичем Л.Г., Лавриненко А.В., Богомоловым В.О., Зеньковичем В.И., Нечаем А.П., Тимощенко А.И., Барашковым В.В.
+                Представленные здесь задачи были предложены для проведения Республиканских Олимпиад по физике Слободянюком А.И., Марковичем Л.Г., Лавриненко А.В., Богомоловым В.О., Зеньковичем В.И., Нечаем А.П., Тимощенко А.И., Барашковым В.В., Пивоварчиком А.М. и др.
             </p>
             <p style="color: var(--text-secondary); font-size: 13px; line-height: 1.5; max-width: 900px; margin: 4px auto 0; text-align: center;">
-                Раздел "Задачи разных лет", составлен из задач, предложенных авторами для проведения областных олимпиад и олимпиад Лицея БГУ.
+                Раздел "Задачи", составлен из задач, предложенных авторами для проведения областных олимпиад и олимпиад Лицея БГУ.
             </p>
         </div>
     </section>
