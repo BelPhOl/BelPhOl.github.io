@@ -18,23 +18,23 @@
    
    <style>
       :root {
-         --primary-color: #0ea5e9;
-         --primary-dark: #0284c7;
+         --primary-color: #2563eb;
+         --primary-dark: #1e40af;
          --secondary-color: #64748b;
          --accent-color: #f59e0b;
-         --success-color: #22c55e;
+         --success-color: #10b981;
          --warning-color: #f59e0b;
          --error-color: #ef4444;
-         --bg-color: #f8fafc;
+         --bg-color: #fefefe;
          --surface-color: #ffffff;
          --text-primary: #1e293b;
-         --text-secondary: #64748b;
+         --text-secondary: #475569;
          --border-color: #e2e8f0;
          --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
          --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
          --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
          --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-         --gradient-primary: linear-gradient(135deg, #0ea5e9 0%, #3b82f6 50%, #8b5cf6 100%);
+         --gradient-primary: linear-gradient(135deg, #2563eb 0%, #3b82f6 50%, #60a5fa 100%);
       }
 
       * {
@@ -140,7 +140,7 @@
 
       /* Hero Section */
       .hero {
-         background: linear-gradient(135deg, rgba(14, 165, 233, 0.8) 0%, rgba(59, 130, 246, 0.75) 50%, rgba(139, 92, 246, 0.7) 100%);
+         background: linear-gradient(135deg, rgba(37, 99, 235, 0.88) 0%, rgba(59, 130, 246, 0.85) 50%, rgba(96, 165, 250, 0.82) 100%);
          color: white;
          padding: 40px 0;
          text-align: center;
@@ -155,8 +155,8 @@
          left: 0;
          width: 100%;
          height: 100%;
-         background: url('../img/flashNewYear2025.png') no-repeat center;
-         background-size: cover;
+         background: url('../img/flashNewYear2025.png') no-repeat center 30%;
+         background-size: 100%;
          opacity: 0.35;
          pointer-events: none;
          z-index: 1;
@@ -241,26 +241,26 @@
          padding: 12px 14px;
          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
          transition: all 0.3s ease;
-         border-left: 3px solid rgba(14, 165, 233, 0.5);
-         border-top: 1px solid rgba(14, 165, 233, 0.15);
+         border-left: 3px solid rgba(37, 99, 235, 0.6);
+         border-top: 1px solid rgba(37, 99, 235, 0.2);
          min-height: auto;
       }
 
       .resource-card:hover {
          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
-         border-left-color: rgba(14, 165, 233, 0.7);
+         border-left-color: rgba(37, 99, 235, 0.8);
       }
 
       .resource-card.featured {
-         border-left-color: rgba(14, 165, 233, 0.7);
-         background: linear-gradient(135deg, rgba(239, 246, 255, 0.5) 0%, rgba(219, 234, 254, 0.3) 100%);
+         border-left-color: rgba(37, 99, 235, 0.8);
+         background: linear-gradient(135deg, rgba(239, 246, 255, 0.6) 0%, rgba(219, 234, 254, 0.4) 100%);
       }
 
       .resource-card h3 {
          font-size: 16px;
          font-weight: 600;
          margin-bottom: 6px;
-         color: rgba(14, 165, 233, 1);
+         color: rgba(37, 99, 235, 1);
          display: flex;
          align-items: center;
          gap: 8px;
@@ -272,7 +272,7 @@
          font-size: 14px;
          font-weight: 600;
          margin: 10px 0 6px 0;
-         color: rgba(14, 165, 233, 0.9);
+         color: rgba(37, 99, 235, 0.9);
          letter-spacing: -0.05px;
          line-height: 1.4;
       }
@@ -297,12 +297,12 @@
          position: absolute;
          left: 6px;
          top: 0;
-         color: rgba(14, 165, 233, 0.6);
+         color: rgba(37, 99, 235, 0.65);
          font-weight: bold;
       }
 
       .resource-list a {
-         color: rgba(14, 165, 233, 0.95);
+         color: rgba(37, 99, 235, 0.95);
          text-decoration: none;
          font-weight: 500;
          transition: color 0.2s ease;
@@ -312,7 +312,7 @@
       }
 
       .resource-list a:hover {
-         color: rgba(14, 165, 233, 1);
+         color: rgba(37, 99, 235, 1);
          text-decoration: underline;
       }
 
@@ -324,18 +324,18 @@
          padding-top: 2px;
          padding-bottom: 2px;
          font-weight: 600;
-         color: rgba(14, 165, 233, 1) !important;
-         background: rgba(14, 165, 233, 0.1);
+         color: rgba(37, 99, 235, 1) !important;
+         background: rgba(37, 99, 235, 0.12);
          border-radius: 4px;
-         border: 1px solid rgba(14, 165, 233, 0.25);
+         border: 1px solid rgba(37, 99, 235, 0.3);
          transition: all 0.2s ease;
       }
 
       .resource-list a[href$=".pdf"]:hover,
       .resource-list a[href*=".pdf"]:hover {
-         background: rgba(14, 165, 233, 0.18);
-         border-color: rgba(14, 165, 233, 0.45);
-         color: rgba(14, 165, 233, 1) !important;
+         background: rgba(37, 99, 235, 0.2);
+         border-color: rgba(37, 99, 235, 0.5);
+         color: rgba(37, 99, 235, 1) !important;
          text-decoration: none;
       }
 
@@ -367,8 +367,8 @@
       }
 
       .pdf-link-recommendations {
-         background: rgba(14, 165, 233, 0.12) !important;
-         border: 2px solid rgba(14, 165, 233, 0.35) !important;
+         background: rgba(37, 99, 235, 0.14) !important;
+         border: 2px solid rgba(37, 99, 235, 0.4) !important;
          border-radius: 6px !important;
          padding: 8px 12px !important;
          padding-left: 32px !important;
@@ -377,8 +377,8 @@
       }
 
       .pdf-link-recommendations:hover {
-         background: rgba(14, 165, 233, 0.22) !important;
-         border-color: rgba(14, 165, 233, 0.55) !important;
+         background: rgba(37, 99, 235, 0.24) !important;
+         border-color: rgba(37, 99, 235, 0.6) !important;
       }
 
       .pdf-link-recommendations .pdf-icon-recommendations {
@@ -401,13 +401,13 @@
       .alina-full-section {
          grid-column: 1 / -1;
          background: linear-gradient(135deg, rgba(240, 253, 250, 0.95) 0%, rgba(224, 242, 254, 0.9) 50%, rgba(186, 230, 253, 0.85) 100%);
-         border: 2px solid rgba(14, 165, 233, 0.35);
+         border: 2px solid rgba(37, 99, 235, 0.4);
          border-radius: 12px;
-         padding: 20px 24px;
+         padding: 10px 12px;
          margin: 2px 0;
          position: relative;
          overflow: hidden;
-         box-shadow: 0 4px 20px rgba(14, 165, 233, 0.12);
+         box-shadow: 0 4px 20px rgba(37, 99, 235, 0.15);
       }
 
       .alina-full-section::before {
@@ -417,28 +417,28 @@
          right: 0;
          width: 120px;
          height: 120px;
-         background: radial-gradient(circle, rgba(14, 165, 233, 0.1) 0%, transparent 70%);
+         background: radial-gradient(circle, rgba(37, 99, 235, 0.12) 0%, transparent 70%);
          pointer-events: none;
       }
 
       .alina-subjects-grid {
          display: grid;
          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-         gap: 16px;
+         gap: 4px;
          margin-top: 12px;
       }
 
       .alina-subject-card {
          background: rgba(255, 255, 255, 0.95);
          border-radius: 10px;
-         padding: 14px 18px;
-         border-left: 3px solid rgba(14, 165, 233, 0.7);
-         box-shadow: 0 2px 8px rgba(14, 165, 233, 0.1);
-         border-top: 1px solid rgba(14, 165, 233, 0.15);
+         padding: 3px 4px;
+         border-left: 3px solid rgba(37, 99, 235, 0.75);
+         box-shadow: 0 2px 8px rgba(37, 99, 235, 0.12);
+         border-top: 1px solid rgba(37, 99, 235, 0.2);
       }
 
       .alina-subject-card h4 {
-         color: rgba(14, 165, 233, 0.95);
+         color: rgba(37, 99, 235, 0.95);
          font-size: 16px;
          margin-bottom: 8px;
          display: flex;
@@ -449,24 +449,24 @@
       }
 
       .study-time {
-         background: rgba(14, 165, 233, 0.12);
-         color: rgba(14, 165, 233, 0.95);
+         background: rgba(37, 99, 235, 0.14);
+         color: rgba(37, 99, 235, 0.95);
          padding: 3px 8px;
          border-radius: 6px;
          font-size: 11px;
          font-weight: 600;
          margin-left: auto;
          display: inline-block;
-         border: 1px solid rgba(14, 165, 233, 0.25);
+         border: 1px solid rgba(37, 99, 235, 0.3);
          letter-spacing: 0.3px;
          white-space: nowrap;
       }
 
       /* Savchenko Featured Section */
       .savchenko-featured {
-         background: linear-gradient(135deg, rgba(240, 253, 250, 0.6) 0%, rgba(224, 242, 254, 0.4) 100%);
-         border: 1px solid rgba(14, 165, 233, 0.25);
-         border-left: 3px solid rgba(14, 165, 233, 0.7);
+         background: linear-gradient(135deg, rgba(239, 246, 255, 0.7) 0%, rgba(219, 234, 254, 0.5) 100%);
+         border: 1px solid rgba(37, 99, 235, 0.3);
+         border-left: 3px solid rgba(37, 99, 235, 0.75);
          position: relative;
          overflow: hidden;
       }
@@ -484,13 +484,13 @@
       }
 
       .savchenko-featured h3 {
-         color: rgba(14, 165, 233, 0.95);
+         color: rgba(37, 99, 235, 0.95);
          font-weight: 600;
          letter-spacing: -0.2px;
       }
 
       .savchenko-featured p {
-         color: rgba(30, 41, 59, 0.85);
+         color: rgba(30, 41, 59, 0.94);
          font-weight: 400;
          margin-bottom: 10px;
          font-size: 13px;
@@ -502,11 +502,11 @@
          padding: 10px 12px;
          border-radius: 6px;
          margin: 8px 0;
-         border: 1px solid rgba(14, 165, 233, 0.15);
+         border: 1px solid rgba(37, 99, 235, 0.2);
       }
 
       .savchenko-featured .platform-benefits h4 {
-         color: rgba(14, 165, 233, 0.9);
+         color: rgba(37, 99, 235, 0.9);
          margin-bottom: 6px;
          font-size: 13px;
          font-weight: 600;
@@ -521,7 +521,7 @@
          padding: 4px 0;
          padding-left: 18px;
          position: relative;
-         color: rgba(30, 41, 59, 0.9);
+         color: rgba(30, 41, 59, 0.92);
          font-weight: 400;
          font-size: 13px;
          line-height: 1.5;
@@ -531,7 +531,7 @@
          content: '✓';
          position: absolute;
          left: 0;
-         color: rgba(14, 165, 233, 0.8);
+         color: rgba(37, 99, 235, 0.85);
          font-weight: bold;
          font-size: 13px;
       }
@@ -692,7 +692,7 @@
             <div class="preparation-info">
                <h3 style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
                   <span><i class="fas fa-graduation-cap"></i> Методы подготовки школьников</span>
-                  <a href="handouts/recommendations.pdf" target="_blank" class="pdf-link-recommendations" style="color: rgba(14, 165, 233, 1) !important; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; position: relative; font-size: 14px;">
+                  <a href="handouts/recommendations.pdf" target="_blank" class="pdf-link-recommendations" style="color: rgba(37, 99, 235, 1) !important; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; position: relative; font-size: 14px;">
                      <span class="pdf-icon-recommendations" style="position: absolute; left: 8px; top: 50%; transform: translateY(-50%); display: inline-block;"></span>
                      Рекомендации по подготовке (PDF)
                   </a>
@@ -716,11 +716,11 @@
             <!-- Alina Polonskaya's Complete Study Guides - FULL WIDTH SECTION -->
             <div class="alina-full-section">
                <div style="margin-bottom: 12px; position: relative; z-index: 1;">
-                  <h3 style="color: rgba(14, 165, 233, 1); font-size: 20px; font-weight: 700; margin: 0; letter-spacing: -0.3px; display: inline;">
+                  <h3 style="color: rgba(37, 99, 235, 1); font-size: 20px; font-weight: 700; margin: 0; letter-spacing: -0.3px; display: inline;">
                      Методики подготовки по физике
                   </h3>
-                  <span style="color: rgba(30, 41, 59, 0.9); font-size: 14px; font-weight: 500; margin-left: 12px; line-height: 1.6;">
-                     Автор: <strong style="color: rgba(14, 165, 233, 0.95);">Алина Полонская</strong> • Золотая медалистка IPhO 2024 (Беларусь)
+                  <span style="color: rgba(15, 23, 42, 0.88); font-size: 14px; font-weight: 500; margin-left: 12px; line-height: 1.6;">
+                     Автор: <strong style="color: rgba(37, 99, 235, 0.95);">Алина Полонская</strong> • Золотая медалистка IPhO 2024 (Беларусь)
                   </span>
                </div>
                
@@ -729,14 +729,14 @@
                   <div class="alina-subject-card">
                      <h4><i class="fas fa-cogs"></i> Механика <span class="study-time">8 недель</span></h4>
                      
-                     <h5 style="color: rgba(14, 165, 233, 0.95); margin: 10px 0 6px 0; font-weight: 600; font-size: 14px; line-height: 1.4;">Введение (3 недели):</h5>
+                     <h5 style="color: rgba(37, 99, 235, 0.95); margin: 10px 0 6px 0; font-weight: 600; font-size: 14px; line-height: 1.4;">Введение (3 недели):</h5>
                      <ul style="font-size: 13px; margin-bottom: 8px; padding-left: 16px; line-height: 1.6; color: rgba(30, 41, 59, 0.9);">
                         <li>Мякишев Г.Я. — Физика. Механика. 10 класс</li>
                         <li>Бутиков Е.И., Кондратьев А.С. — Физика. Механика</li>
                         <li>Меледин Г.Ф. — Физика в задачах (182 задачи по механике)</li>
                      </ul>
                      
-                     <h5 style="color: rgba(14, 165, 233, 0.95); margin: 10px 0 6px 0; font-weight: 600; font-size: 14px; line-height: 1.4;">Основная теория (3 недели):</h5>
+                     <h5 style="color: rgba(37, 99, 235, 0.95); margin: 10px 0 6px 0; font-weight: 600; font-size: 14px; line-height: 1.4;">Основная теория (3 недели):</h5>
                      <ul style="font-size: 13px; margin-bottom: 8px; padding-left: 16px; line-height: 1.6; color: rgba(30, 41, 59, 0.9);">
                         <li>Иродов И.Е. — Основные законы механики</li>
                         <li>Сивухин Д.В. — Общий курс физики. Механика. т.I</li>
@@ -744,13 +744,13 @@
                         <li>Бутиков Е.И., Быков А.А., Кондратьев А.С. — Физика в примерах и задачах (Механика)</li>
                      </ul>
                      
-                     <h5 style="color: rgba(14, 165, 233, 0.95); margin: 10px 0 6px 0; font-weight: 600; font-size: 14px; line-height: 1.4;">Колебания (1 неделя):</h5>
+                     <h5 style="color: rgba(37, 99, 235, 0.95); margin: 10px 0 6px 0; font-weight: 600; font-size: 14px; line-height: 1.4;">Колебания (1 неделя):</h5>
                      <ul style="font-size: 13px; margin-bottom: 8px; padding-left: 16px; line-height: 1.6; color: rgba(30, 41, 59, 0.9);">
                         <li>Перунова М.Н. — Колебания и волны</li>
                         <li>Mathus — Уравнение колебаний. 1, 2</li>
                      </ul>
                      
-                     <h5 style="color: rgba(14, 165, 233, 0.95); margin: 10px 0 6px 0; font-weight: 600; font-size: 14px; line-height: 1.4;">Практика (4 недели):</h5>
+                     <h5 style="color: rgba(37, 99, 235, 0.95); margin: 10px 0 6px 0; font-weight: 600; font-size: 14px; line-height: 1.4;">Практика (4 недели):</h5>
                      <ul style="font-size: 12px; padding-left: 16px;">
                         <li>Буздин А.И., Ильин В.А. — Задачи Московских Физических Олимпиад (116 задач)</li>
                         <li>Буздин А.И., Зильберман А.Р. — Раз задача, Два задача... (86 задач)</li>
@@ -765,7 +765,7 @@
                   <div class="alina-subject-card">
                      <h4><i class="fas fa-bolt"></i> Электродинамика <span class="study-time">8 недель</span></h4>
                      
-                                           <h5 style="color: rgba(14, 165, 233, 0.95); margin: 10px 0 6px 0; font-weight: 600; font-size: 14px; line-height: 1.4;">Введение (2 недели):</h5>
+                                           <h5 style="color: rgba(37, 99, 235, 0.95); margin: 10px 0 6px 0; font-weight: 600; font-size: 14px; line-height: 1.4;">Введение (2 недели):</h5>
                       <ul style="font-size: 13px; margin-bottom: 8px; padding-left: 16px; line-height: 1.6; color: rgba(30, 41, 59, 0.9);">
                          <li>Мякишев Г.Я., Синяков А.З., Слободсков Б.А. — Электродинамика. 10-11 классы</li>
                          <li>Бутиков Е.И., Кондратьев А.С. — Электродинамика. Оптика</li>
@@ -773,7 +773,7 @@
                          <li><em>Практика:</em> Рисование магнитных линий соленоидов, намагниченных предметов</li>
                       </ul>
                       
-                      <h5 style="color: rgba(14, 165, 233, 0.95); margin: 10px 0 6px 0; font-weight: 600; font-size: 14px; line-height: 1.4;">Основная теория (4 недели):</h5>
+                      <h5 style="color: rgba(37, 99, 235, 0.95); margin: 10px 0 6px 0; font-weight: 600; font-size: 14px; line-height: 1.4;">Основная теория (4 недели):</h5>
                       <ul style="font-size: 13px; margin-bottom: 8px; padding-left: 16px; line-height: 1.6; color: rgba(30, 41, 59, 0.9);">
                          <li>Сивухин Д.В. — Электричество</li>
                          <li>Иродов И.Е. — Основные законы электромагнетизма</li>
@@ -783,7 +783,7 @@
                          <li><em>Важно:</em> Геометрический смысл grad, div, rot, уравнений Максвелла</li>
                       </ul>
                       
-                      <h5 style="color: rgba(14, 165, 233, 0.95); margin: 10px 0 6px 0; font-weight: 600; font-size: 14px; line-height: 1.4;">Практика (2 недели):</h5>
+                      <h5 style="color: rgba(37, 99, 235, 0.95); margin: 10px 0 6px 0; font-weight: 600; font-size: 14px; line-height: 1.4;">Практика (2 недели):</h5>
                      <ul style="font-size: 12px; padding-left: 16px;">
                         <li>Буздин А.И., Ильин В.А. — Задачи Московских Физических Олимпиад (62 задачи)</li>
                         <li>Буздин А.И., Зильберман А.Р. — Раз задача, Два задача... (80 задач)</li>
@@ -798,14 +798,14 @@
                   <div class="alina-subject-card">
                      <h4><i class="fas fa-thermometer-half"></i> Термодинамика <span class="study-time">6 недель</span></h4>
                      
-                                           <h5 style="color: rgba(14, 165, 233, 0.95); margin: 10px 0 6px 0; font-weight: 600; font-size: 14px; line-height: 1.4;">Введение (2 недели):</h5>
+                                           <h5 style="color: rgba(37, 99, 235, 0.95); margin: 10px 0 6px 0; font-weight: 600; font-size: 14px; line-height: 1.4;">Введение (2 недели):</h5>
                       <ul style="font-size: 13px; margin-bottom: 8px; padding-left: 16px; line-height: 1.6; color: rgba(30, 41, 59, 0.9);">
                          <li>Мякишев Г.Я. — Молекулярная физика. Термодинамика</li>
                          <li>Бутиков Е.И., Кондратьев А.С. — Строение и свойства вещества</li>
                          <li>Меледин Г.Ф. — Физика в задачах (65 задач по тепловым явлениям)</li>
                       </ul>
                       
-                      <h5 style="color: rgba(14, 165, 233, 0.95); margin: 10px 0 6px 0; font-weight: 600; font-size: 14px; line-height: 1.4;">Основная теория (3 недели):</h5>
+                      <h5 style="color: rgba(37, 99, 235, 0.95); margin: 10px 0 6px 0; font-weight: 600; font-size: 14px; line-height: 1.4;">Основная теория (3 недели):</h5>
                       <ul style="font-size: 13px; margin-bottom: 8px; padding-left: 16px; line-height: 1.6; color: rgba(30, 41, 59, 0.9);">
                          <li>Сивухин Д.В. — Общий курс физики. Термодинамика и молекулярная физика</li>
                          <li>Бутиков Е.И., Быков А.А., Кондратьев А.С. — Физика в примерах и задачах (Термодинамика)</li>
@@ -813,7 +813,7 @@
                          <li>Иродов И.Е. — Физика макросистем. Основные законы</li>
                       </ul>
                       
-                      <h5 style="color: rgba(14, 165, 233, 0.95); margin: 10px 0 6px 0; font-weight: 600; font-size: 14px; line-height: 1.4;">Практика (2 недели):</h5>
+                      <h5 style="color: rgba(37, 99, 235, 0.95); margin: 10px 0 6px 0; font-weight: 600; font-size: 14px; line-height: 1.4;">Практика (2 недели):</h5>
                      <ul style="font-size: 12px; padding-left: 16px;">
                         <li>Буздин А.И., Ильин В.А. — Задачи Московских Физических Олимпиад (42 задачи)</li>
                         <li>Буздин А.И., Зильберман А.Р. — Раз задача, Два задача... (55 задач)</li>
@@ -827,7 +827,7 @@
                   <div class="alina-subject-card">
                      <h4><i class="fas fa-eye"></i> Оптика и квантовая механика</h4>
                      
-                                           <h5 style="color: rgba(14, 165, 233, 0.95); margin: 10px 0 6px 0; font-weight: 600; font-size: 14px; line-height: 1.4;">Теоретическая база:</h5>
+                                           <h5 style="color: rgba(37, 99, 235, 0.95); margin: 10px 0 6px 0; font-weight: 600; font-size: 14px; line-height: 1.4;">Теоретическая база:</h5>
                       <ul style="font-size: 13px; margin-bottom: 8px; padding-left: 16px; line-height: 1.6; color: rgba(30, 41, 59, 0.9);">
                          <li>Мякишев Г.Я., Синяков А.З. — Оптика. Квантовая физика. 11 класс</li>
                          <li>Савельев И.В. — Курс общей физики, том III</li>
@@ -840,7 +840,7 @@
                          <li><em>Особое внимание:</em> Оптические приборы, векторные способы расчета интерференции</li>
                       </ul>
                       
-                      <h5 style="color: rgba(14, 165, 233, 0.95); margin: 10px 0 6px 0; font-weight: 600; font-size: 14px; line-height: 1.4;">Практика:</h5>
+                      <h5 style="color: rgba(37, 99, 235, 0.95); margin: 10px 0 6px 0; font-weight: 600; font-size: 14px; line-height: 1.4;">Практика:</h5>
                       <ul style="font-size: 12px; padding-left: 16px;">
                          <li>Меледин Г.Ф. — Физика в задачах (52 задачи)</li>
                          <li>Буздин А.И., Ильин В.А. — Задачи Московских Физических Олимпиад (20 задач)</li>
@@ -855,7 +855,7 @@
                   </div>
                </div>
                 <span style="color: rgba(30, 41, 59, 0.9); margin: 0; font-size: 13px; line-height: 1.6; display: inline;">
-                   <strong style="color: rgba(14, 165, 233, 0.95);">Дополнительные темы:</strong> Инвариант Аббе, Применение уравнения Шрёдингера, Микроскопы, телескопы, разрешающая способность, Поляризаторы, четвертьволновые/полуволновые пластинки, Индикатриса рассеяния
+                   <strong style="color: rgba(37, 99, 235, 0.95);">Дополнительные темы:</strong> Инвариант Аббе, Применение уравнения Шрёдингера, Микроскопы, телескопы, разрешающая способность, Поляризаторы, четвертьволновые/полуволновые пластинки, Индикатриса рассеяния
                 </span>
             </div>
 
