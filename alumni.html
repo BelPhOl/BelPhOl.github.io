@@ -147,6 +147,16 @@
             line-height: 1.2;
             position: relative;
             z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .hero h1 .ipho-logo {
+            width: 48px;
+            height: 48px;
+            vertical-align: middle;
         }
 
         .hero p {
@@ -402,33 +412,38 @@
         }
 
         .medal-badge {
-            padding: 3px 7px;
+            padding: 0;
             border-radius: 4px;
-            font-size: 11px;
-            font-weight: 600;
-            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: transparent;
+        }
+
+        .medal-badge .medal-icon {
+            width: 32px;
+            height: 32px;
+            display: block;
         }
 
         .medal-gold {
-            background: var(--gold);
-            color: #333;
+            background: transparent;
         }
 
         .medal-silver {
-            background: var(--silver);
-            color: #333;
+            background: transparent;
         }
 
         .medal-bronze {
-            background: var(--bronze);
+            background: transparent;
         }
 
         .medal-mention {
-            background: var(--secondary-color);
+            background: transparent;
         }
 
         .medal-founder {
-            background: linear-gradient(45deg, #ff6b35, #f7931e);
+            background: transparent;
             color: white;
             font-weight: bold;
         }
@@ -454,6 +469,15 @@
 
         .detail-label {
             color: var(--text-secondary);
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .detail-label .ipho-logo {
+            width: 16px;
+            height: 16px;
+            vertical-align: middle;
         }
 
         .detail-value {
@@ -715,6 +739,16 @@
             color: var(--text-primary);
             text-align: center;
             margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .section-title .ipho-logo {
+            width: 32px;
+            height: 32px;
+            vertical-align: middle;
         }
 
         .team-photos-slider-wrapper {
@@ -1019,8 +1053,8 @@
     <!-- Hero -->
     <section class="hero">
         <div class="container">
-            <h1>Выпускники IPhO</h1>
-            <p>Гордость белорусской физики: участники международных олимпиад и квалификационных сборов с 1995 года. Представители лучших школ и лицеев страны, завоевавшие 102 медали на международной арене, включая триумф на IPhO 2025 в Париже.</p>
+            <h1><img src="img/mini_logos/ipho_logo.svg" alt="IPhO" class="ipho-logo">Выпускники IPhO</h1>
+            <p>Гордость белорусской физики: участники международных олимпиад и квалификационных сборов с 1995 года. Представители лучших школ и лицеев страны, завоевавшие 137 медалей на международной арене, включая триумф на IPhO 2025 в Париже.</p>
         </div>
     </section>
 
@@ -1086,7 +1120,7 @@
     <!-- Team Photos -->
     <section class="team-photos-section">
         <div class="container">
-            <h2 class="section-title">Команды IPhO по годам</h2>
+            <h2 class="section-title"><img src="img/mini_logos/ipho_logo.svg" alt="IPhO" class="ipho-logo">Команды IPhO по годам</h2>
             <div class="team-photos-slider-wrapper">
                 <button class="slider-arrow prev" aria-label="Previous">
                     <i class="fas fa-chevron-left"></i>
@@ -4079,7 +4113,7 @@
                                     
                                     <div class="alumni-details">
                                         <div class="detail-row">
-                                            <span class="detail-label">Олимпиада:</span>
+                                            <span class="detail-label"><img src="img/mini_logos/ipho_logo.svg" alt="IPhO" class="ipho-logo">Олимпиада:</span>
                                             <span class="detail-value">${alumni.ipho}</span>
                                         </div>
                                         ${alumni.rank !== null ? `
@@ -4214,10 +4248,10 @@
         // Helper function to get medal text
         function getMedalText(award) {
             const medals = {
-                'gold': 'Золото',
-                'silver': 'Серебро',
-                'bronze': 'Бронза',
-                'mention': 'Отзыв',
+                'gold': '<img src="img/mini_logos/Gold_medal.svg" alt="Золото" class="medal-icon">',
+                'silver': '<img src="img/mini_logos/Silver_medal.svg" alt="Серебро" class="medal-icon">',
+                'bronze': '<img src="img/mini_logos/Bronze_medal.svg" alt="Бронза" class="medal-icon">',
+                'mention': '<img src="img/mini_logos/Honorable_medal.svg" alt="Похвальный отзыв" class="medal-icon">',
                 'founder': 'Основатель'
             };
             return medals[award] || award;
