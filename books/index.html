@@ -157,7 +157,7 @@
          height: 100%;
          background: url('../img/flashNewYear2025.png') no-repeat center 30%;
          background-size: 100%;
-         opacity: 0.35;
+         opacity: 0.4;
          pointer-events: none;
          z-index: 1;
       }
@@ -205,7 +205,7 @@
       /* Preparation Methods */
       .preparation-info {
          background: var(--surface-color);
-         padding: 10px 16px;
+         padding: 8px 14px;
          border-radius: 12px;
          box-shadow: var(--shadow-md);
          margin-bottom: 0px;
@@ -238,7 +238,7 @@
       .resource-card {
          background: var(--surface-color);
          border-radius: 8px;
-         padding: 12px 14px;
+         padding: 8px 12px;
          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
          transition: all 0.3s ease;
          border-left: 3px solid rgba(37, 99, 235, 0.6);
@@ -266,6 +266,20 @@
          gap: 8px;
          letter-spacing: -0.1px;
          line-height: 1.35;
+      }
+
+      .resource-card h3 img {
+         width: 36px;
+         height: 36px;
+         vertical-align: middle;
+         flex-shrink: 0;
+      }
+
+      .preparation-info h3 img {
+         width: 36px;
+         height: 36px;
+         vertical-align: middle;
+         flex-shrink: 0;
       }
 
       .resource-card h4 {
@@ -440,12 +454,20 @@
       .alina-subject-card h4 {
          color: rgba(37, 99, 235, 0.95);
          font-size: 16px;
-         margin-bottom: 8px;
+         margin-bottom: 4px;
          display: flex;
          align-items: center;
          justify-content: space-between;
          gap: 12px;
          font-weight: 600;
+      }
+
+      .alina-subject-card h4 img {
+         width: 48px;
+         height: 48px;
+         margin-right: 12px;
+         vertical-align: middle;
+         display: inline-block;
       }
 
       .study-time {
@@ -691,7 +713,7 @@
       <div class="container">
             <div class="preparation-info">
                <h3 style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
-                  <span><i class="fas fa-graduation-cap"></i> Методы подготовки школьников</span>
+                  <span><img src="../img/mini_logos/Education - Grad Hat.svg" alt="Методы подготовки" style="width: 36px; height: 36px; vertical-align: middle; margin-right: 8px;"> Методы подготовки школьников</span>
                   <a href="handouts/recommendations.pdf" target="_blank" class="pdf-link-recommendations" style="color: rgba(37, 99, 235, 1) !important; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; position: relative; font-size: 14px;">
                      <span class="pdf-icon-recommendations" style="position: absolute; left: 8px; top: 50%; transform: translateY(-50%); display: inline-block;"></span>
                      Рекомендации по подготовке (PDF)
@@ -727,7 +749,7 @@
                <div class="alina-subjects-grid">
                   <!-- Mechanics -->
                   <div class="alina-subject-card">
-                     <h4><i class="fas fa-cogs"></i> Механика <span class="study-time">8 недель</span></h4>
+                     <h4><img src="../img/mini_logos/mechanics.svg" alt="Механика"> Механика <span class="study-time">8 недель</span></h4>
                      
                      <h5 style="color: rgba(37, 99, 235, 0.95); margin: 10px 0 6px 0; font-weight: 600; font-size: 14px; line-height: 1.4;">Введение (3 недели):</h5>
                      <ul style="font-size: 13px; margin-bottom: 8px; padding-left: 16px; line-height: 1.6; color: rgba(30, 41, 59, 0.9);">
@@ -763,7 +785,7 @@
                   
                   <!-- Electrodynamics -->
                   <div class="alina-subject-card">
-                     <h4><i class="fas fa-bolt"></i> Электродинамика <span class="study-time">8 недель</span></h4>
+                     <h4><img src="../img/mini_logos/Electromagnetism.svg" alt="Электродинамика"> Электродинамика <span class="study-time">8 недель</span></h4>
                      
                                            <h5 style="color: rgba(37, 99, 235, 0.95); margin: 10px 0 6px 0; font-weight: 600; font-size: 14px; line-height: 1.4;">Введение (2 недели):</h5>
                       <ul style="font-size: 13px; margin-bottom: 8px; padding-left: 16px; line-height: 1.6; color: rgba(30, 41, 59, 0.9);">
@@ -796,7 +818,7 @@
                   
                   <!-- Thermodynamics -->
                   <div class="alina-subject-card">
-                     <h4><i class="fas fa-thermometer-half"></i> Термодинамика <span class="study-time">6 недель</span></h4>
+                     <h4><img src="../img/mini_logos/Thermodynamics_icon.svg" alt="Термодинамика"> Термодинамика <span class="study-time">6 недель</span></h4>
                      
                                            <h5 style="color: rgba(37, 99, 235, 0.95); margin: 10px 0 6px 0; font-weight: 600; font-size: 14px; line-height: 1.4;">Введение (2 недели):</h5>
                       <ul style="font-size: 13px; margin-bottom: 8px; padding-left: 16px; line-height: 1.6; color: rgba(30, 41, 59, 0.9);">
@@ -825,7 +847,7 @@
                   
                   <!-- Optics & Quantum -->
                   <div class="alina-subject-card">
-                     <h4><i class="fas fa-eye"></i> Оптика и квантовая механика</h4>
+                     <h4><img src="../img/mini_logos/atom.svg" alt="Оптика и квантовая механика"> Оптика и квантовая механика</h4>
                      
                                            <h5 style="color: rgba(37, 99, 235, 0.95); margin: 10px 0 6px 0; font-weight: 600; font-size: 14px; line-height: 1.4;">Теоретическая база:</h5>
                       <ul style="font-size: 13px; margin-bottom: 8px; padding-left: 16px; line-height: 1.6; color: rgba(30, 41, 59, 0.9);">
@@ -861,7 +883,7 @@
 
             <!-- Слободянюк Books -->
             <div class="resource-card">
-               <h3><i class="fas fa-book"></i> Книги А.И. Слободянюка</h3>
+               <h3><img src="../img/mini_logos/book.svg" alt="Книги" style="width: 36px; height: 36px; vertical-align: middle; margin-right: 8px;"> Книги А.И. Слободянюка</h3>
                <p>Фундаментальные пособия по всем разделам физики от ведущего методиста белорусских физических олимпиад. Основа для экспериментального тура на всех уровнях.</p>
                
                <div class="book-covers">
@@ -897,7 +919,7 @@
 
             <!-- Theory Textbooks -->
             <div class="resource-card">
-               <h3><i class="fas fa-graduation-cap"></i> Фундаментальные учебники</h3>
+               <h3><img src="../img/mini_logos/Education - Grad Hat.svg" alt="Учебники" style="width: 36px; height: 36px; vertical-align: middle; margin-right: 8px;"> Фундаментальные учебники</h3>
                <p>Классические учебники по общей физике для глубокого понимания теоретических основ</p>
                
                <div class="book-covers">
@@ -945,7 +967,7 @@
 
             <!-- Problem Collections -->
             <div class="resource-card">
-               <h3><i class="fas fa-puzzle-piece"></i> Классические сборники задач</h3>
+               <h3><img src="../img/mini_logos/puzzle.svg" alt="Задачи" style="width: 36px; height: 36px; vertical-align: middle; margin-right: 8px;"> Классические сборники задач</h3>
                <p>Проверенные временем коллекции задач различной сложности для систематической подготовки</p>
                
                <div class="book-covers">
@@ -1002,7 +1024,7 @@
 
             <!-- Savchenko Solutions -->
             <div class="resource-card savchenko-featured">
-               <h3><i class="fas fa-star"></i> Savchenko Solutions</h3>
+               <h3><img src="../img/mini_logos/savchenko.png" alt="Savchenko" style="width: 36px; height: 36px; vertical-align: middle; margin-right: 8px;"> Savchenko Solutions</h3>
                <p>Платформа с решениями задач из сборника Савченко О.Я. — первый в мире полный архив решений для этого классического задачника.</p>
                
                <div class="platform-benefits">
@@ -1022,7 +1044,7 @@
 
             <!-- School Textbooks -->
             <div class="resource-card">
-               <h3><i class="fas fa-school"></i> Школьные учебники углубленного уровня</h3>
+               <h3><img src="../img/mini_logos/school.svg" alt="Школьные учебники" style="width: 36px; height: 36px; vertical-align: middle; margin-right: 8px;"> Школьные учебники углубленного уровня</h3>
                <p>Учебники для школ с углубленным изучением физики и профильных классов</p>
                
                <h4>Серия под редакцией Мякишева Г.Я.:</h4>
@@ -1042,7 +1064,7 @@
 
             <!-- International Resources -->
             <div class="resource-card">
-               <h3><i class="fas fa-globe"></i> Международные ресурсы</h3>
+               <h3><img src="../img/mini_logos/Simple Globe.svg" alt="Международные ресурсы" style="width: 36px; height: 36px; vertical-align: middle; margin-right: 8px;"> Международные ресурсы</h3>
                <p>Материалы для подготовки к IPhO и изучения международного опыта олимпиадного движения</p>
                
                <ul class="resource-list">

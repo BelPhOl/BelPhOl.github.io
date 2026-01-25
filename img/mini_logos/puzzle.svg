@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   width="230"
+   height="280"
+   viewBox="-138 -155 230 280"
+   id="svg38"
+   sodipodi:docname="9l cube puzzle solution.svg"
+   inkscape:export-filename="puzzle.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview38"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1">
+    <inkscape:page
+       x="0"
+       y="0"
+       width="230"
+       height="280"
+       id="page2"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <title
+     id="title1">9l cube puzzle solution</title>
+  <desc
+     id="desc1">One way to assemble 9 L triominoes into a 3x3 cube by CMG Lee.</desc>
+  <style
+     type="text/css"
+     id="style1">
+.main   { font-family:Helvetica,Arial,sans-serif; font-size:72px; text-anchor:middle;
+          fill:#000000; stroke:none; stroke-linejoin:bevel; }
+.shadow { filter:url(#filter_shadow); }
+.right  { filter:url(#filter_right); }
+.left   { filter:url(#filter_left); }
+.block1 { fill:#ff66cc; }
+.block2 { fill:#cc0099; }
+.block3 { fill:#00cc99; }
+.block4 { fill:#006633; }
+.block5 { fill:#6699ff; }
+.block6 { fill:#0000ff; }
+.block7 { fill:#ffcc00; }
+.block8 { fill:#996600; }
+.block9 { fill:#663300; }
+ </style>
+  <defs
+     id="defs25">
+    <filter
+       id="filter_shadow"
+       x="-0.028571429"
+       y="-0.022030651"
+       width="1.0571429"
+       height="1.0716475">
+      <feOffset
+         dx="0"
+         dy="7"
+         in="SourceAlpha"
+         id="feOffset1" />
+      <feMorphology
+         operator="erode"
+         radius="4"
+         id="feMorphology1" />
+      <feGaussianBlur
+         stdDeviation="4"
+         id="feGaussianBlur1" />
+      <feBlend
+         in="SourceGraphic"
+         id="feBlend1"
+         mode="normal" />
+    </filter>
+    <filter
+       id="filter_right"
+       x="-0.0055555556"
+       y="-0.0055555556"
+       width="1.0111111"
+       height="1.0111111">
+      <feColorMatrix
+         type="matrix"
+         values="0.6,0,0,0,0 0,0.6,0,0,0 0,0,0.6,0,0 0,0,0,1,0"
+         id="feColorMatrix1" />
+    </filter>
+    <filter
+       id="filter_left"
+       x="-0.0055555556"
+       y="-0.0055555556"
+       width="1.0111111"
+       height="1.0111111">
+      <feColorMatrix
+         type="matrix"
+         values="0.8,0,0,0,0 0,0.8,0,0,0 0,0,0.8,0,0 0,0,0,1,0"
+         id="feColorMatrix2" />
+    </filter>
+    <g
+       id="cube111"
+       stroke="#000000"
+       stroke-width="0.1">
+      <rect
+         class="top"
+         transform="matrix(4,-2,-3,-3,0,0)"
+         x="0"
+         y="0"
+         width="9"
+         height="9"
+         id="rect2" />
+      <rect
+         class="right"
+         transform="matrix(4,-2,0,4,0,0)"
+         x="0"
+         y="0"
+         width="9"
+         height="9"
+         id="rect3" />
+      <rect
+         class="left"
+         transform="matrix(-3,-3,0,4,0,0)"
+         x="0"
+         y="0"
+         width="9"
+         height="9"
+         id="rect4" />
+    </g>
+    <g
+       id="cube211">
+      <use
+         xlink:href="#cube111"
+         transform="translate(40,-20)"
+         id="use4" />
+      <use
+         xlink:href="#cube111"
+         id="use5" />
+    </g>
+    <g
+       id="cube121">
+      <use
+         xlink:href="#cube111"
+         transform="translate(-30,-30)"
+         id="use6" />
+      <use
+         xlink:href="#cube111"
+         id="use7" />
+    </g>
+    <g
+       id="block1or5">
+      <use
+         xlink:href="#cube111"
+         transform="translate(0,40)"
+         id="use8" />
+      <use
+         xlink:href="#cube121"
+         id="use9" />
+    </g>
+    <g
+       id="block2or6"
+       transform="translate(0,40)">
+      <use
+         xlink:href="#cube121"
+         transform="translate(0,40)"
+         id="use10" />
+      <use
+         xlink:href="#cube111"
+         transform="translate(-30,-30)"
+         id="use11" />
+    </g>
+    <g
+       id="blocks12">
+      <use
+         class="block2"
+         xlink:href="#block2or6"
+         id="use12" />
+      <use
+         class="block1"
+         xlink:href="#block1or5"
+         id="use13" />
+    </g>
+    <g
+       id="blocks34">
+      <use
+         class="block4"
+         xlink:href="#cube211"
+         transform="translate(0,80)"
+         id="use14" />
+      <use
+         class="block4"
+         xlink:href="#cube111"
+         transform="translate(40,20)"
+         id="use15" />
+      <use
+         class="block3"
+         xlink:href="#cube111"
+         transform="translate(0,40)"
+         id="use16" />
+      <use
+         class="block3"
+         xlink:href="#cube211"
+         id="use17" />
+    </g>
+    <g
+       id="blocks56">
+      <use
+         class="block6"
+         xlink:href="#block2or6"
+         id="use18" />
+      <use
+         class="block5"
+         xlink:href="#block1or5"
+         id="use19" />
+    </g>
+    <g
+       id="blocks789front"
+       transform="translate(10,-50)">
+      <use
+         class="block9"
+         xlink:href="#cube111"
+         transform="translate(0,80)"
+         id="use20" />
+      <use
+         class="block8"
+         xlink:href="#cube111"
+         transform="translate(0,40)"
+         id="use21" />
+      <use
+         class="block7"
+         xlink:href="#cube111"
+         id="use22" />
+    </g>
+    <g
+       id="blocks789back"
+       transform="translate(-20,-80)">
+      <use
+         class="block9"
+         xlink:href="#cube211"
+         transform="translate(0,80)"
+         id="use23" />
+      <use
+         class="block8"
+         xlink:href="#cube211"
+         transform="translate(0,40)"
+         id="use24" />
+      <use
+         class="block7"
+         xlink:href="#cube211"
+         id="use25" />
+    </g>
+  </defs>
+  <g
+     class="main"
+     id="g38"
+     transform="translate(0.73393203,2.0958634)">
+    <g
+       id="g37">
+      <g
+         transform="translate(-45.933932,-6.3458633)"
+         id="g36">
+        <g
+           class="shadow"
+           id="g35">
+          <use
+             xlink:href="#blocks789back"
+             id="use31" />
+          <use
+             xlink:href="#blocks56"
+             transform="translate(80,-40)"
+             id="use32" />
+          <use
+             xlink:href="#blocks789front"
+             id="use33" />
+          <use
+             xlink:href="#blocks12"
+             transform="translate(-30,-30)"
+             id="use34" />
+          <use
+             xlink:href="#blocks34"
+             id="use35" />
+        </g>
+      </g>
+    </g>
+  </g>
+  <metadata
+     id="metadata38">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>9l cube puzzle solution</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

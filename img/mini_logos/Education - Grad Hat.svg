@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.0" width="605.77734" height="605.77344" id="svg2">
+  <title id="title2999">Education - Grad Hat</title>
+  <defs id="defs4">
+    <marker refX="0" refY="0" orient="auto" id="Dot_s" style="overflow:visible">
+      <path d="m -2.5,-1 c 0,2.76 -2.24,5 -5,5 -2.76,0 -5,-2.24 -5,-5 0,-2.76 2.24,-5 5,-5 2.76,0 5,2.24 5,5 z" transform="matrix(0.2,0,0,0.2,1.48,0.2)" id="path4903" style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none;marker-end:none"/>
+    </marker>
+    <marker refX="0" refY="0" orient="auto" id="StopS" style="overflow:visible">
+      <path d="M 0,5.65 0,-5.65" transform="scale(0.2,0.2)" id="path4858" style="fill:none;stroke:#000000;stroke-width:1pt"/>
+    </marker>
+  </defs>
+  <metadata id="metadata7">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <dc:title>Education - Grad Hat</dc:title>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Adrien "Pandark" Pachkoff</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:date>2012-12-03</dc:date>
+        <dc:contributor>
+          <cc:Agent>
+            <dc:title>Krzysiu Jarzyna, Eduemoni, Adrien "Pandark" Pachkoff</dc:title>
+          </cc:Agent>
+        </dc:contributor>
+        <dc:description>A graduation hat</dc:description>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title/>
+          </cc:Agent>
+        </dc:rights>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/by/3.0/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:requires rdf:resource="http://creativecommons.org/ns#Notice"/>
+        <cc:requires rdf:resource="http://creativecommons.org/ns#Attribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <path d="m 154.57289,297.73642 -37.94609,96.97913 c 79.41071,-11.11861 121.22165,25.98017 139.8574,82.98189 63.09613,-100.81289 145.25302,-78.48652 195.60924,-29.87647 -8.54845,-49.73945 -17.26175,-99.47284 -25.91843,-149.20144 -97.49784,37.61966 -190.75726,52.16346 -271.60212,-0.88311 z" id="path1888" style="fill:#000000;stroke:#000000;stroke-width:1.57201147px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"/>
+  <path d="M 296.59375,127.29 10,241.88375 l 0,16.375 286.59375,114.625 286.03125,-114.375 0,-16.84375 L 296.59375,127.29 z" id="rect1874" style="fill:#000000"/>
+  <path d="m 489.75321,286.67226 11.11168,48.48733" id="path2131" style="fill:none;stroke:#000000;stroke-width:16;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"/>
+  <path d="m 504.89602,316.96737 c 5.7021,46.71521 43.14135,84.8069 77.90173,91.23517" id="path3911" style="fill:none;stroke:#000000;stroke-width:3.5559485;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Dot_s)"/>
+  <path d="m 499.21572,328.8353 c 5.7021,46.71521 43.14135,84.8069 77.90173,91.23517" id="path4982" style="fill:none;stroke:#000000;stroke-width:3.5417459;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Dot_s)"/>
+  <path d="m 493.1548,343.98759 c 5.7021,46.71521 43.14135,84.8069 77.90173,91.23517" id="path4984" style="fill:none;stroke:#000000;stroke-width:3.5417459;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Dot_s)"/>
+  <path d="m 489.1142,349.03835 c 5.7021,46.71521 43.14135,84.8069 77.90173,91.23517" id="path4986" style="fill:none;stroke:#000000;stroke-width:3.5417459;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Dot_s)"/>
+  <path d="m 503.17011,318.64755 c 6.07406,39.73263 45.95559,72.1307 82.98349,77.59813" id="path4988" style="fill:none;stroke:#000000;stroke-width:3.38471699;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Dot_s)"/>
+  <path d="m 486.16904,356.07218 c 4.72497,43.89622 35.74852,79.68931 64.55226,85.72967" id="path4990" style="fill:none;stroke:#000000;stroke-width:3.12524533;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Dot_s)"/>
+  <path d="m 500.22587,330.8556 c 5.7021,46.71521 43.14135,84.8069 77.90173,91.23517" id="path4992" style="fill:none;stroke:#000000;stroke-width:3.5417459;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Dot_s)"/>
+  <path d="m 504.46913,334.50507 c 10.76679,45.81376 52.13991,79.59156 87.39424,82.18748" id="path6764" style="fill:none;stroke:#000000;stroke-width:3.5417459;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Dot_s)"/>
+  <path d="m 496.50233,347.5098 c 10.76679,45.81376 52.13991,79.59156 87.39424,82.18748" id="path6766" style="fill:none;stroke:#000000;stroke-width:3.5417459;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Dot_s)"/>
+  <path d="m 525.96914,339.61227 a 23.550255,23.550255 0 1 1 -47.10051,0 23.550255,23.550255 0 1 1 47.10051,0 z" id="path3021" style="fill:#000000;fill-opacity:1;stroke:none"/>
+</svg>
