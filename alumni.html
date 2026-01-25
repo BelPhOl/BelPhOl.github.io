@@ -48,7 +48,7 @@
         }
 
         .container {
-            max-width: 1600px;
+            max-width: 1400px;
             margin: 0 auto;
             padding: 0 10px;
         }
@@ -418,12 +418,66 @@
             align-items: center;
             justify-content: center;
             background: transparent;
+            position: relative;
         }
 
         .medal-badge .medal-icon {
             width: 32px;
             height: 32px;
             display: block;
+            cursor: pointer;
+        }
+
+        .medal-badge .medal-tooltip {
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-bottom: 8px;
+            padding: 6px 10px;
+            background: rgba(0, 0, 0, 0.85);
+            color: white;
+            font-size: 12px;
+            white-space: nowrap;
+            border-radius: 4px;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.2s ease;
+            z-index: 1000;
+        }
+
+        .medal-badge .medal-tooltip.tooltip-left {
+            left: auto;
+            right: 0;
+            transform: translateX(0);
+        }
+
+        .medal-badge .medal-tooltip.tooltip-left::after {
+            left: auto;
+            right: 16px;
+            transform: translateX(0);
+        }
+
+        .medal-badge .medal-tooltip::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 5px solid transparent;
+            border-top-color: rgba(0, 0, 0, 0.85);
+        }
+
+        .medal-badge:hover .medal-tooltip,
+        .medal-badge:active .medal-tooltip,
+        .medal-badge:focus .medal-tooltip {
+            opacity: 1;
+        }
+
+        @media (hover: none) {
+            .medal-badge:active .medal-tooltip {
+                opacity: 1;
+            }
         }
 
         .medal-gold {
@@ -4248,10 +4302,10 @@
         // Helper function to get medal text
         function getMedalText(award) {
             const medals = {
-                'gold': '<img src="img/mini_logos/Gold_medal.svg" alt="Золото" class="medal-icon">',
-                'silver': '<img src="img/mini_logos/Silver_medal.svg" alt="Серебро" class="medal-icon">',
-                'bronze': '<img src="img/mini_logos/Bronze_medal.svg" alt="Бронза" class="medal-icon">',
-                'mention': '<img src="img/mini_logos/Honorable_medal.svg" alt="Похвальный отзыв" class="medal-icon">',
+                'gold': '<img src="img/mini_logos/Gold_medal.svg" alt="Золото" class="medal-icon"><span class="medal-tooltip">Золотая медаль</span>',
+                'silver': '<img src="img/mini_logos/Silver_medal.svg" alt="Серебро" class="medal-icon"><span class="medal-tooltip">Серебряная медаль</span>',
+                'bronze': '<img src="img/mini_logos/Bronze_medal.svg" alt="Бронза" class="medal-icon"><span class="medal-tooltip">Бронзовая медаль</span>',
+                'mention': '<img src="img/mini_logos/Honorable_medal.svg" alt="Похвальный отзыв" class="medal-icon"><span class="medal-tooltip">Похвальный отзыв</span>',
                 'founder': 'Основатель'
             };
             return medals[award] || award;
@@ -4634,12 +4688,61 @@
             startAutoSlide();
         }
 
+        // Adjust tooltip position if near right border
+        function adjustTooltipPosition() {
+            const medalBadges = document.querySelectorAll('.medal-badge');
+            medalBadges.forEach(badge => {
+                const tooltip = badge.querySelector('.medal-tooltip');
+                if (!tooltip) return;
+
+                const handlePosition = () => {
+                    // Temporarily make tooltip visible to measure
+                    const wasVisible = tooltip.style.opacity === '1';
+                    tooltip.style.opacity = '1';
+                    tooltip.style.visibility = 'hidden';
+                    
+                    const badgeRect = badge.getBoundingClientRect();
+                    const tooltipRect = tooltip.getBoundingClientRect();
+                    const windowWidth = window.innerWidth;
+                    const padding = 10; // Minimum distance from edge
+
+                    // Calculate where tooltip center would be
+                    const badgeCenterX = badgeRect.left + (badgeRect.width / 2);
+                    const tooltipHalfWidth = tooltipRect.width / 2;
+                    const tooltipRight = badgeCenterX + tooltipHalfWidth;
+
+                    // Restore original state
+                    tooltip.style.opacity = '';
+                    tooltip.style.visibility = '';
+
+                    // Check if tooltip would overflow right edge
+                    if (tooltipRight > windowWidth - padding) {
+                        tooltip.classList.add('tooltip-left');
+                    } else {
+                        tooltip.classList.remove('tooltip-left');
+                    }
+                };
+
+                // Check on hover
+                badge.addEventListener('mouseenter', handlePosition);
+                badge.addEventListener('touchstart', handlePosition);
+                
+                // Also check on window resize
+                window.addEventListener('resize', handlePosition);
+            });
+        }
+
         // Initialize
         document.addEventListener('DOMContentLoaded', () => {
             updateStats(alumniData);
             renderAlumni(alumniData);
             setupFilters();
             initTeamPhotosSlider();
+            
+            // Adjust tooltip positions after rendering
+            setTimeout(() => {
+                adjustTooltipPosition();
+            }, 100);
         });
     </script>
 
