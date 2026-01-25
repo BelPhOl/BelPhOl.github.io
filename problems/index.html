@@ -26,7 +26,7 @@
             --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
             --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
             --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-            --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-primary: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #06b6d4 100%);
             --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
             --gradient-accent: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
         }
@@ -120,7 +120,7 @@
             display: none;
         }
 
-        @media (max-width: 768px) {
+            @media (max-width: 768px) {
             .nav-links {
                 display: none;
             }
@@ -130,19 +130,19 @@
             }
             
             .hero h1 {
-                font-size: 36px;
+                font-size: 28px;
             }
             
             .hero p {
-                font-size: 18px;
+                font-size: 14px;
             }
         }
 
         /* Hero Section */
         .hero {
-            background: var(--gradient-primary);
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.75) 0%, rgba(59, 130, 246, 0.75) 50%, rgba(251, 191, 36, 0.75) 100%);
             color: white;
-            padding: 80px 0;
+            padding: 40px 0;
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -155,39 +155,46 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('../img/flash.png') no-repeat center;
+            background: url('../img/flashNewYear2025.png') no-repeat center;
             background-size: cover;
-            opacity: 0.1;
+            opacity: 0.35;
             pointer-events: none;
+            z-index: 1;
         }
 
         .hero h1 {
-            font-size: 48px;
+            font-size: 36px;
             font-weight: 700;
-            margin-bottom: 16px;
+            margin-bottom: 8px;
             line-height: 1.2;
+            position: relative;
+            z-index: 2;
         }
 
         .hero p {
-            font-size: 20px;
+            font-size: 16px;
             opacity: 0.9;
-            margin-bottom: 32px;
+            margin-bottom: 16px;
             max-width: 600px;
             margin-left: auto;
             margin-right: auto;
+            position: relative;
+            z-index: 2;
         }
 
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 32px;
-            margin-top: 48px;
+            gap: 16px;
+            margin-top: 20px;
+            position: relative;
+            z-index: 2;
         }
 
         .stat-card {
             background: rgba(255, 255, 255, 0.1);
-            padding: 24px;
-            border-radius: 16px;
+            padding: 16px;
+            border-radius: 12px;
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.2);
             transition: all 0.3s ease;
@@ -201,13 +208,13 @@
         }
 
         .stat-number {
-            font-size: 32px;
+            font-size: 24px;
             font-weight: 700;
-            margin-bottom: 8px;
+            margin-bottom: 4px;
         }
 
         .stat-label {
-            font-size: 14px;
+            font-size: 12px;
             opacity: 0.8;
         }
 
@@ -822,11 +829,11 @@
             }
             
             .hero {
-                padding: 48px 0;
+                padding: 32px 0;
             }
             
             .hero h1 {
-                font-size: 28px;
+                font-size: 24px;
             }
             
             .stats-grid {
