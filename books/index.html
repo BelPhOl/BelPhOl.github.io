@@ -182,7 +182,7 @@
 
       /* Sections */
       .section {
-         padding: 10px 0;
+         padding: 0;
       }
 
       .section-title {
@@ -205,7 +205,7 @@
       /* Preparation Methods */
       .preparation-info {
          background: var(--surface-color);
-         padding: 16px 20px;
+         padding: 10px 16px;
          border-radius: 12px;
          box-shadow: var(--shadow-md);
          margin-bottom: 0px;
@@ -215,29 +215,30 @@
       .preparation-info h3 {
          font-size: 18px;
          font-weight: 600;
-         margin-bottom: 12px;
+         margin-bottom: 6px;
          color: var(--primary-color);
+         line-height: 1.4;
       }
 
       .preparation-info p {
-         margin-bottom: 12px;
-         line-height: 1.7;
+         margin-bottom: 6px;
+         line-height: 1.65;
          font-size: 15px;
-         color: rgba(30, 41, 59, 0.9);
+         color: rgba(30, 41, 59, 0.95);
       }
 
       /* Resource Grid */
       .resource-grid {
          display: grid;
          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-         gap: 16px;
+         gap: 8px;
          margin-top: 0px;
       }
 
       .resource-card {
          background: var(--surface-color);
          border-radius: 8px;
-         padding: 14px 16px;
+         padding: 12px 14px;
          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
          transition: all 0.3s ease;
          border-left: 3px solid rgba(14, 165, 233, 0.5);
@@ -258,22 +259,22 @@
       .resource-card h3 {
          font-size: 16px;
          font-weight: 600;
-         margin-bottom: 8px;
+         margin-bottom: 6px;
          color: rgba(14, 165, 233, 1);
          display: flex;
          align-items: center;
          gap: 8px;
          letter-spacing: -0.1px;
-         line-height: 1.4;
+         line-height: 1.35;
       }
 
       .resource-card h4 {
          font-size: 14px;
          font-weight: 600;
-         margin: 12px 0 8px 0;
+         margin: 10px 0 6px 0;
          color: rgba(14, 165, 233, 0.9);
          letter-spacing: -0.05px;
-         line-height: 1.5;
+         line-height: 1.4;
       }
 
       .resource-list {
@@ -283,12 +284,12 @@
       }
 
       .resource-list li {
-         margin-bottom: 6px;
+         margin-bottom: 3px;
          padding-left: 18px;
          position: relative;
          font-size: 13px;
-         line-height: 1.6;
-         color: rgba(30, 41, 59, 0.9);
+         line-height: 1.5;
+         color: rgba(30, 41, 59, 0.92);
       }
 
       .resource-list li::before {
@@ -439,24 +440,26 @@
       .alina-subject-card h4 {
          color: rgba(14, 165, 233, 0.95);
          font-size: 16px;
-         margin-bottom: 10px;
+         margin-bottom: 8px;
          display: flex;
          align-items: center;
-         gap: 8px;
+         justify-content: space-between;
+         gap: 12px;
          font-weight: 600;
       }
 
       .study-time {
          background: rgba(14, 165, 233, 0.12);
          color: rgba(14, 165, 233, 0.95);
-         padding: 5px 10px;
+         padding: 3px 8px;
          border-radius: 6px;
          font-size: 11px;
          font-weight: 600;
-         margin-bottom: 10px;
+         margin-left: auto;
          display: inline-block;
          border: 1px solid rgba(14, 165, 233, 0.25);
          letter-spacing: 0.3px;
+         white-space: nowrap;
       }
 
       /* Savchenko Featured Section */
@@ -687,19 +690,20 @@
    <section class="section">
       <div class="container">
             <div class="preparation-info">
-               <h3><i class="fas fa-graduation-cap"></i> Методы подготовки школьников</h3>
+               <h3 style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+                  <span><i class="fas fa-graduation-cap"></i> Методы подготовки школьников</span>
+                  <a href="handouts/recommendations.pdf" target="_blank" class="pdf-link-recommendations" style="color: rgba(14, 165, 233, 1) !important; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; position: relative; font-size: 14px;">
+                     <span class="pdf-icon-recommendations" style="position: absolute; left: 8px; top: 50%; transform: translateY(-50%); display: inline-block;"></span>
+                     Рекомендации по подготовке (PDF)
+                  </a>
+               </h3>
                <p>Подготовка школьников к физическим олимпиадам зависит от школы и преподавателей. В частности, сборная Лицея БГУ ведёт централизованную подготовку по сборнику задач О. Я. Савченко с последующим решением задач олимпиад прошлых лет, включая регулярные сборы по выходным и усиленные занятия перед олимпиадой.</p>
                
                <p>Практика показывает, что основное внимание следует уделять решению задач, а не изучению теории. При этом англоязычные учебные пособия, как правило, обладают более высоким качеством и особенно полезны при подготовке к IPhO.</p>
                
                <p>Для подготовки к экспериментальному туру на всех уровнях основным пособием является книга А. И. Слободянюка «Физическая олимпиада: экспериментальный тур».</p>
                
-               <p style="margin-top: 12px;">
-                  <a href="handouts/recommendations.pdf" target="_blank" class="pdf-link-recommendations" style="color: rgba(14, 165, 233, 1) !important; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; position: relative;">
-                     <span class="pdf-icon-recommendations" style="position: absolute; left: 8px; top: 50%; transform: translateY(-50%); display: inline-block;"></span>
-                     Рекомендации по подготовке (PDF)
-                  </a>
-               </p>
+
            </div>
       </div>
    </section>
@@ -723,8 +727,7 @@
                <div class="alina-subjects-grid">
                   <!-- Mechanics -->
                   <div class="alina-subject-card">
-                     <h4><i class="fas fa-cogs"></i> Механика</h4>
-                     <div class="study-time">Общее время: 8 недель</div>
+                     <h4><i class="fas fa-cogs"></i> Механика <span class="study-time">8 недель</span></h4>
                      
                      <h5 style="color: rgba(14, 165, 233, 0.95); margin: 10px 0 6px 0; font-weight: 600; font-size: 14px; line-height: 1.4;">Введение (3 недели):</h5>
                      <ul style="font-size: 13px; margin-bottom: 8px; padding-left: 16px; line-height: 1.6; color: rgba(30, 41, 59, 0.9);">
@@ -760,8 +763,7 @@
                   
                   <!-- Electrodynamics -->
                   <div class="alina-subject-card">
-                     <h4><i class="fas fa-bolt"></i> Электродинамика</h4>
-                     <div class="study-time">Общее время: 8 недель</div>
+                     <h4><i class="fas fa-bolt"></i> Электродинамика <span class="study-time">8 недель</span></h4>
                      
                                            <h5 style="color: rgba(14, 165, 233, 0.95); margin: 10px 0 6px 0; font-weight: 600; font-size: 14px; line-height: 1.4;">Введение (2 недели):</h5>
                       <ul style="font-size: 13px; margin-bottom: 8px; padding-left: 16px; line-height: 1.6; color: rgba(30, 41, 59, 0.9);">
@@ -794,8 +796,7 @@
                   
                   <!-- Thermodynamics -->
                   <div class="alina-subject-card">
-                     <h4><i class="fas fa-thermometer-half"></i> Термодинамика</h4>
-                     <div class="study-time">Общее время: 6 недель</div>
+                     <h4><i class="fas fa-thermometer-half"></i> Термодинамика <span class="study-time">6 недель</span></h4>
                      
                                            <h5 style="color: rgba(14, 165, 233, 0.95); margin: 10px 0 6px 0; font-weight: 600; font-size: 14px; line-height: 1.4;">Введение (2 недели):</h5>
                       <ul style="font-size: 13px; margin-bottom: 8px; padding-left: 16px; line-height: 1.6; color: rgba(30, 41, 59, 0.9);">
@@ -825,7 +826,6 @@
                   <!-- Optics & Quantum -->
                   <div class="alina-subject-card">
                      <h4><i class="fas fa-eye"></i> Оптика и квантовая механика</h4>
-                     <div class="study-time">Фокус: визуализация и схемы</div>
                      
                                            <h5 style="color: rgba(14, 165, 233, 0.95); margin: 10px 0 6px 0; font-weight: 600; font-size: 14px; line-height: 1.4;">Теоретическая база:</h5>
                       <ul style="font-size: 13px; margin-bottom: 8px; padding-left: 16px; line-height: 1.6; color: rgba(30, 41, 59, 0.9);">
