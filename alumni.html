@@ -553,6 +553,16 @@
             font-weight: 600;
         }
 
+        .score-theory {
+            color: #3b82f6;
+            font-weight: 600;
+        }
+
+        .score-experiment {
+            color: #10b981;
+            font-weight: 600;
+        }
+
         .achievements {
             margin-top: 6px;
             padding-top: 6px;
@@ -4222,19 +4232,7 @@
                                         ${alumni.total !== null ? `
                                             <div class="detail-row">
                                                 <span class="detail-label">Общий балл:</span>
-                                                <span class="detail-value total-score">${alumni.total}</span>
-                                            </div>
-                                        ` : ''}
-                                        ${alumni.theory !== null ? `
-                                            <div class="detail-row">
-                                                <span class="detail-label">Теория:</span>
-                                                <span class="detail-value">${alumni.theory}</span>
-                                            </div>
-                                        ` : ''}
-                                        ${alumni.experiment !== null ? `
-                                            <div class="detail-row">
-                                                <span class="detail-label">Эксперимент:</span>
-                                                <span class="detail-value">${alumni.experiment}</span>
+                                                <span class="detail-value total-score">${alumni.total}${alumni.theory !== null && alumni.experiment !== null ? `=<span class="score-theory">${alumni.theory} (T)</span>+<span class="score-experiment">${alumni.experiment} (E)</span>` : ''}</span>
                                             </div>
                                         ` : ''}
                                         
