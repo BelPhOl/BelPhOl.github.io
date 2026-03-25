@@ -1344,7 +1344,7 @@
                         </div>
                      </div>
                   </div>
-                  <div style="text-align: center; display: flex; align-items: center; justify-content: center; position: absolute; right: 6%; top: 50%; transform: translateY(-50%); height: fit-content; z-index: 2;">
+                  <div id="final-materials-logo" style="text-align: center; display: flex; align-items: center; justify-content: center; position: absolute; right: 6%; top: 50%; transform: translateY(-50%); height: fit-content; z-index: 2;">
                      <div class="logo-background-circle" style="position: absolute; width: 150px; height: 150px; background: linear-gradient(135deg, rgba(124, 58, 237, 0.15), rgba(30, 58, 138, 0.12)); border-radius: 50%; animation: gentlePulse 4s ease-in-out infinite;"></div>
                      <img src="img/logo.svg" alt="BelPhO Logo" style="width: 100%; max-width: 150px; border-radius: 8px; height: auto; object-fit: contain; position: relative; z-index: 1; filter: drop-shadow(0 6px 16px rgba(124, 58, 237, 0.3));">
                   </div>
@@ -1434,6 +1434,13 @@
                   }
                });
             </script>
+            <style>
+               @media (max-width: 768px) {
+                  #final-materials-logo {
+                     display: none !important;
+                  }
+               }
+            </style>
          </article>
       </div>
    </section>
