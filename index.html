@@ -1132,7 +1132,7 @@
       </div>
    </section>
 
-  <!-- 2026 Final Theoretical Round Announcement -->
+  <!-- 2026 Final Materials Announcement -->
    <section class="section" style="background: white; padding: 20px 0;">
       <div class="container" style="padding:5px 0;">
          <article class="featured-article" style="background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%); border-radius: 16px; overflow: hidden; box-shadow: 0 8px 24px rgba(124, 58, 237, 0.15), 0 4px 12px rgba(59, 130, 246, 0.1); margin-bottom: 16px; display: flex; flex-direction: column; border: 2px solid rgba(124, 58, 237, 0.1); position: relative;">
@@ -1141,12 +1141,13 @@
                <div class="featured-meta" style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px; flex-wrap: wrap;">
                   <div class="featured-date" style="color: var(--text-secondary); font-size: 13px; display: flex; align-items: center; gap: 6px; font-weight: 500;">
                      <i class="fas fa-calendar" style="color: #7c3aed;"></i>
-                     24 марта 2026
+                     25 марта 2026
                   </div>
                   <div class="featured-tags" style="display: flex; gap: 8px; flex-wrap: wrap;">
                      <span class="tag" style="background: linear-gradient(135deg, #7c3aed, #6d28d9); color: white; padding: 5px 14px; border-radius: 20px; font-size: 12px; font-weight: 600;">Финал</span>
                      <span class="tag" style="background: linear-gradient(135deg, #2563eb, #1d4ed8); color: white; padding: 5px 14px; border-radius: 20px; font-size: 12px; font-weight: 600;">Брест</span>
-                     <span class="tag" style="background: linear-gradient(135deg, #10b981, #059669); color: white; padding: 5px 14px; border-radius: 20px; font-size: 12px; font-weight: 600;">Теория 2026</span>
+                     <span class="tag" style="background: linear-gradient(135deg, #10b981, #059669); color: white; padding: 5px 14px; border-radius: 20px; font-size: 12px; font-weight: 600;">Теория и Эксперимент 2026</span>
+                     <span class="tag" style="background: linear-gradient(135deg, #64748b, #334155); color: white; padding: 5px 14px; border-radius: 20px; font-size: 12px; font-weight: 600;">Дополнительные материалы</span>
                   </div>
                </div>
                <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 24px; align-items: center; flex: 1; margin: 8px 0;">
@@ -1159,7 +1160,7 @@
                         Материалы теоретического тура финала Республиканской олимпиады по физике 2026
                      </h2>
                      <p class="featured-excerpt" style="font-size: 16px; color: #334155; margin-bottom: 16px; line-height: 1.65; font-weight: 500; max-width: 840px;">
-                        Официальная публикация материалов заключительного этапа (г. Брест) для 9-11 классов. Выберите класс и откройте задания, решения и презентации.
+                        Официальная публикация материалов заключительного этапа (г. Брест) для 9-11 классов: теория, эксперимент и дополнительные материалы. Выберите класс и откройте задания и решения.
                      </p>
                      <div style="display: flex; flex-direction: column; gap: 16px;">
                         <div style="display: flex; gap: 8px; border-bottom: 2px solid var(--border-color); padding-bottom: 0;">
@@ -1186,6 +1187,159 @@
                            <a href="problems/final/2026/Теория/11 класс/РФО2026 Теория 11 класс решения Вариант 1.pdf" target="_blank" style="flex: 1; min-width: 180px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: #065f46; color: white; padding: 12px 20px; border-radius: 8px; text-decoration: none; font-weight: 700; transition: all 0.2s ease; font-size: 14px; box-shadow: 0 3px 10px rgba(6, 95, 70, 0.35);" onmouseover="this.style.background='#047857'" onmouseout="this.style.background='#065f46'"><i class="fas fa-lightbulb"></i>Решения (вариант 1)</a>
                            <a href="problems/final/2026/Теория/11 класс/РФО2026 Теория 11 класс решения Вариант 1_1.pdf" target="_blank" style="flex: 1; min-width: 180px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: #7f1d1d; color: white; padding: 12px 20px; border-radius: 8px; text-decoration: none; font-weight: 700; transition: all 0.2s ease; font-size: 14px; box-shadow: 0 3px 10px rgba(127, 29, 29, 0.35);" onmouseover="this.style.background='#991b1b'" onmouseout="this.style.background='#7f1d1d'"><i class="fas fa-lightbulb"></i>Решения (вариант 1_1)</a>
                         </div>
+                     </div>
+                     <div style="display: flex; flex-direction: column; gap: 16px; margin-top: 10px;">
+                        <div style="width: 100%; display: flex; align-items: center; gap: 8px; font-weight: 900; font-size: 14px; color: #0f172a;">
+                           <i class="fas fa-flask" style="color: #2563eb;"></i>
+                           Экспериментальный тур
+                        </div>
+                        <div style="display: flex; gap: 8px; border-bottom: 2px solid var(--border-color); padding-bottom: 0;">
+                           <button onclick="showFinalExpGrade(9)" class="final-exp-grade-tab" data-final-exp-grade="9" style="flex: 1; padding: 12px 16px; border: none; background: var(--bg-color); border-radius: 8px 8px 0 0; font-weight: 600; font-size: 14px; color: var(--text-secondary); cursor: pointer; transition: all 0.3s ease; border-bottom: 4px solid transparent; opacity: 0.7;">
+                              9 класс
+                           </button>
+                           <button onclick="showFinalExpGrade(10)" class="final-exp-grade-tab" data-final-exp-grade="10" style="flex: 1; padding: 12px 16px; border: none; background: var(--bg-color); border-radius: 8px 8px 0 0; font-weight: 600; font-size: 14px; color: var(--text-secondary); cursor: pointer; transition: all 0.3s ease; border-bottom: 4px solid transparent; opacity: 0.7;">
+                              10 класс
+                           </button>
+                           <button onclick="showFinalExpGrade(11)" class="final-exp-grade-tab" data-final-exp-grade="11" style="flex: 1; padding: 12px 16px; border: none; background: var(--bg-color); border-radius: 8px 8px 0 0; font-weight: 600; font-size: 14px; color: var(--text-secondary); cursor: pointer; transition: all 0.3s ease; border-bottom: 4px solid transparent; opacity: 0.7;">
+                              11 класс
+                           </button>
+                        </div>
+                        <div id="final-exp-grade-9" class="final-exp-grade-content" style="display: none; gap: 10px; flex-wrap: wrap;">
+                           <a href="problems/final/2026/Эксперимент/9 класс/РФО2026 ЭкспТур 9 класс условия.pdf" target="_blank" style="flex: 1; min-width: 180px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: #1e3a8a; color: white; padding: 12px 20px; border-radius: 8px; text-decoration: none; font-weight: 800; transition: all 0.2s ease; font-size: 14px; box-shadow: 0 3px 10px rgba(30, 58, 138, 0.35);" onmouseover="this.style.background='#1e40af'" onmouseout="this.style.background='#1e3a8a'">
+                              <i class="fas fa-file-pdf"></i>
+                              Условия
+                           </a>
+                           <a href="problems/final/2026/Эксперимент/9 класс/РФО2026 ЭкспТур 9 класс решение.pdf" target="_blank" style="flex: 1; min-width: 180px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: #065f46; color: white; padding: 12px 20px; border-radius: 8px; text-decoration: none; font-weight: 800; transition: all 0.2s ease; font-size: 14px; box-shadow: 0 3px 10px rgba(6, 95, 70, 0.35);" onmouseover="this.style.background='#047857'" onmouseout="this.style.background='#065f46'">
+                              <i class="fas fa-lightbulb"></i>
+                              Решение
+                           </a>
+                        </div>
+                        <div id="final-exp-grade-10" class="final-exp-grade-content" style="display: none; gap: 10px; flex-wrap: wrap;">
+                           <a href="problems/final/2026/Эксперимент/10 класс/РФО2026 ЭкспТур 10 класс условия.pdf" target="_blank" style="flex: 1; min-width: 180px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: #1e3a8a; color: white; padding: 12px 20px; border-radius: 8px; text-decoration: none; font-weight: 800; transition: all 0.2s ease; font-size: 14px; box-shadow: 0 3px 10px rgba(30, 58, 138, 0.35);" onmouseover="this.style.background='#1e40af'" onmouseout="this.style.background='#1e3a8a'">
+                              <i class="fas fa-file-pdf"></i>
+                              Условия
+                           </a>
+                           <a href="problems/final/2026/Эксперимент/10 класс/РФО2026 ЭкспТур 10 класс решение.pdf" target="_blank" style="flex: 1; min-width: 180px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: #065f46; color: white; padding: 12px 20px; border-radius: 8px; text-decoration: none; font-weight: 800; transition: all 0.2s ease; font-size: 14px; box-shadow: 0 3px 10px rgba(6, 95, 70, 0.35);" onmouseover="this.style.background='#047857'" onmouseout="this.style.background='#065f46'">
+                              <i class="fas fa-lightbulb"></i>
+                              Решение
+                           </a>
+                        </div>
+                        <div id="final-exp-grade-11" class="final-exp-grade-content" style="display: none; gap: 10px; flex-wrap: wrap;">
+                           <a href="problems/final/2026/Эксперимент/11 класс/РФО2026 ЭкспТур 11 класс условия.pdf" target="_blank" style="flex: 1; min-width: 180px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: #1e3a8a; color: white; padding: 12px 20px; border-radius: 8px; text-decoration: none; font-weight: 800; transition: all 0.2s ease; font-size: 14px; box-shadow: 0 3px 10px rgba(30, 58, 138, 0.35);" onmouseover="this.style.background='#1e40af'" onmouseout="this.style.background='#1e3a8a'">
+                              <i class="fas fa-file-pdf"></i>
+                              Условия
+                           </a>
+                           <a href="problems/final/2026/Эксперимент/11 класс/РФО2026 ЭкспТур 11 класс решения.pdf" target="_blank" style="flex: 1; min-width: 180px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: #065f46; color: white; padding: 12px 20px; border-radius: 8px; text-decoration: none; font-weight: 800; transition: all 0.2s ease; font-size: 14px; box-shadow: 0 3px 10px rgba(6, 95, 70, 0.35);" onmouseover="this.style.background='#047857'" onmouseout="this.style.background='#065f46'">
+                              <i class="fas fa-lightbulb"></i>
+                              Решения
+                           </a>
+                        </div>
+
+                        <div style="display: flex; flex-direction: column; gap: 6px; margin-top: 2px;">
+                           <div style="font-weight: 900; font-size: 14px; color: #0f172a; display: flex; align-items: center; gap: 8px;">
+                              <i class="fas fa-id-badge" style="color:#6d28d9;"></i>
+                              Схемы оценивания
+                           </div>
+                           <a href="problems/final/2026/Эксперимент/Схемы оценивания ЭТ 11-2.doc" target="_blank" class="year-link">
+                              Схемы оценивания ЭТ 11-2
+                           </a>
+                        </div>
+
+                        <div style="width: 100%; display: flex; align-items: center; gap: 8px; font-weight: 900; font-size: 14px; color: #0f172a; margin-top: 6px;">
+                           <i class="fas fa-book-open" style="color:#7c3aed;"></i>
+                           Дополнительные материалы
+                        </div>
+                        <a href="problems/final/2026/Дополнительные материалы/Классики науки.pdf" target="_blank" class="year-link">
+                           Классики науки.pdf
+                        </a>
+
+                        <details style="background: rgba(15,23,42,0.03); border: 1px solid rgba(15,23,42,0.08); border-radius: 12px; padding: 10px 12px;">
+                           <summary style="cursor: pointer; font-weight: 900; color: #0f172a; font-size: 13px;">9-1 бинокулярное зрение</summary>
+                           <div style="display:flex; flex-direction:column; gap: 6px; margin-top: 10px;">
+                              <a href="problems/final/2026/Дополнительные материалы/9-1 бинокулярное зрение/Рисунки/камера обскура 1.jpg" target="_blank" class="year-link">камера обскура 1.jpg</a>
+                              <a href="problems/final/2026/Дополнительные материалы/9-1 бинокулярное зрение/Рисунки/камера обскура 2.png" target="_blank" class="year-link">камера обскура 2.png</a>
+                              <a href="problems/final/2026/Дополнительные материалы/9-1 бинокулярное зрение/Рисунки/камера обскура 3.jpg" target="_blank" class="year-link">камера обскура 3.jpg</a>
+                              <a href="problems/final/2026/Дополнительные материалы/9-1 бинокулярное зрение/Рисунки/камера обскура 4.jpg" target="_blank" class="year-link">камера обскура 4.jpg</a>
+                              <a href="problems/final/2026/Дополнительные материалы/9-1 бинокулярное зрение/Рисунки/Луна 1.jpg" target="_blank" class="year-link">Луна 1.jpg</a>
+                              <a href="problems/final/2026/Дополнительные материалы/9-1 бинокулярное зрение/Рисунки/Луна 3.jpg" target="_blank" class="year-link">Луна 3.jpg</a>
+                              <a href="problems/final/2026/Дополнительные материалы/9-1 бинокулярное зрение/Рисунки/Рисунки мои.png" target="_blank" class="year-link">Рисунки мои.png</a>
+                              <a href="problems/final/2026/Дополнительные материалы/9-1 бинокулярное зрение/Рисунки/стереотруба.jpg" target="_blank" class="year-link">стереотруба.jpg</a>
+                              <a href="problems/final/2026/Дополнительные материалы/9-1 бинокулярное зрение/Рисунки/фотоаппарат 1 .jpg" target="_blank" class="year-link">фотоаппарат 1 .jpg</a>
+                              <a href="problems/final/2026/Дополнительные материалы/9-1 бинокулярное зрение/Рисунки/фотоаппарат 2.jpg" target="_blank" class="year-link">фотоаппарат 2.jpg</a>
+                              <a href="problems/final/2026/Дополнительные материалы/9-1 бинокулярное зрение/Рисунки/фотоаппарат 3.jpg" target="_blank" class="year-link">фотоаппарат 3.jpg</a>
+                           </div>
+                        </details>
+
+                        <details style="background: rgba(15,23,42,0.03); border: 1px solid rgba(15,23,42,0.08); border-radius: 12px; padding: 10px 12px;">
+                           <summary style="cursor: pointer; font-weight: 900; color: #0f172a; font-size: 13px;">9-2 охлаждение реактора</summary>
+                           <div style="display:flex; flex-direction:column; gap: 6px; margin-top: 10px;">
+                              <a href="problems/final/2026/Дополнительные материалы/9-2 охлаждение реактора/ВВЭР1200.pdf" target="_blank" class="year-link">ВВЭР1200.pdf</a>
+                              <a href="problems/final/2026/Дополнительные материалы/9-2 охлаждение реактора/Рисунки реактор/монтаж реактора.jpg" target="_blank" class="year-link">монтаж реактора.jpg</a>
+                              <a href="problems/final/2026/Дополнительные материалы/9-2 охлаждение реактора/Рисунки реактор/схема АЭС.jpg" target="_blank" class="year-link">схема АЭС.jpg</a>
+                              <a href="problems/final/2026/Дополнительные материалы/9-2 охлаждение реактора/Рисунки реактор/фото реактора.jpg" target="_blank" class="year-link">фото реактора.jpg</a>
+                           </div>
+                        </details>
+
+                        <details style="background: rgba(15,23,42,0.03); border: 1px solid rgba(15,23,42,0.08); border-radius: 12px; padding: 10px 12px;">
+                           <summary style="cursor: pointer; font-weight: 900; color: #0f172a; font-size: 13px;">9-3 автомобиль</summary>
+                           <div style="display:flex; flex-direction:column; gap: 6px; margin-top: 10px;">
+                              <a href="problems/final/2026/Дополнительные материалы/9-3 автомобиль/расчеты авто.xls" target="_blank" class="year-link">расчеты авто.xls</a>
+                              <a href="problems/final/2026/Дополнительные материалы/9-3 автомобиль/Литература/Кравец Теория автомобиля.pdf" target="_blank" class="year-link">Кравец Теория автомобиля.pdf</a>
+                              <a href="problems/final/2026/Дополнительные материалы/9-3 автомобиль/Литература/смирнов Теория движения.pdf" target="_blank" class="year-link">смирнов Теория движения.pdf</a>
+                              <a href="problems/final/2026/Дополнительные материалы/9-3 автомобиль/Литература/Характеристики Белджи.docx" target="_blank" class="year-link">Характеристики Белджи.docx</a>
+                              <a href="problems/final/2026/Дополнительные материалы/9-3 автомобиль/Рисунки авто/БелДжи50.png" target="_blank" class="year-link">БелДжи50.png</a>
+                              <a href="problems/final/2026/Дополнительные материалы/9-3 автомобиль/Рисунки авто/белджи80.png" target="_blank" class="year-link">белджи80.png</a>
+                           </div>
+                        </details>
+
+                        <details style="background: rgba(15,23,42,0.03); border: 1px solid rgba(15,23,42,0.08); border-radius: 12px; padding: 10px 12px;">
+                           <summary style="cursor: pointer; font-weight: 900; color: #0f172a; font-size: 13px;">10-1 электрический коллаж</summary>
+                           <div style="display:flex; flex-direction:column; gap: 6px; margin-top: 10px;">
+                              <a href="problems/final/2026/Дополнительные материалы/10-1 Электрический коллаж/Сила Лоренца 3В.pdf" target="_blank" class="year-link">Сила Лоренца 3В.pdf</a>
+                              <a href="problems/final/2026/Дополнительные материалы/10-1 Электрический коллаж/Электрические весы.pdf" target="_blank" class="year-link">Электрические весы.pdf</a>
+                              <a href="problems/final/2026/Дополнительные материалы/10-1 Электрический коллаж/Конденсатор с диэлектриком/плоский кондер.pdf" target="_blank" class="year-link">плоский кондер.pdf</a>
+                              <a href="problems/final/2026/Дополнительные материалы/10-1 Электрический коллаж/Конденсатор с переменным расстоянием/Плоский конденсатор.pdf" target="_blank" class="year-link">Плоский конденсатор.pdf</a>
+                              <a href="problems/final/2026/Дополнительные материалы/10-1 Электрический коллаж/Конденсатор с переменным расстоянием/Расчеты.xls" target="_blank" class="year-link">Расчеты.xls</a>
+                              <a href="problems/final/2026/Дополнительные материалы/10-1 Электрический коллаж/Телега в магнитном поле/магнитики 3В.pdf" target="_blank" class="year-link">магнитики 3В.pdf</a>
+                              <a href="problems/final/2026/Дополнительные материалы/10-1 Электрический коллаж/Телега в магнитном поле/Магнитное поле телега 3В.pdf" target="_blank" class="year-link">Магнитное поле телега 3В.pdf</a>
+                              <a href="problems/final/2026/Дополнительные материалы/10-1 Электрический коллаж/ЭМИ/закон ЭМИ 3В.pdf" target="_blank" class="year-link">закон ЭМИ 3В.pdf</a>
+                              <a href="problems/final/2026/Дополнительные материалы/10-1 Электрический коллаж/ЭМИ/Закон ЭМи много.pdf" target="_blank" class="year-link">Закон ЭМи много.pdf</a>
+                           </div>
+                        </details>
+
+                        <details style="background: rgba(15,23,42,0.03); border: 1px solid rgba(15,23,42,0.08); border-radius: 12px; padding: 10px 12px;">
+                           <summary style="cursor: pointer; font-weight: 900; color: #0f172a; font-size: 13px;">10-2 Земля - Луна</summary>
+                           <div style="display:flex; flex-direction:column; gap: 6px; margin-top: 10px;">
+                              <a href="problems/final/2026/Дополнительные материалы/10-2 Земля - Луна/Астрономические данные.xls" target="_blank" class="year-link">Астрономические данные.xls</a>
+                              <a href="problems/final/2026/Дополнительные материалы/10-2 Земля - Луна/Гравитация рисунки/11-1.png" target="_blank" class="year-link">11-1.png</a>
+                              <a href="problems/final/2026/Дополнительные материалы/10-2 Земля - Луна/Гравитация рисунки/1688090229_kartin-papik-pro-p-kartinki-solntse-luna-i-zemlya-6.jpg" target="_blank" class="year-link">...-6.jpg</a>
+                              <a href="problems/final/2026/Дополнительные материалы/10-2 Земля - Луна/Гравитация рисунки/1688090229_kartin-papik-pro-p-kartinki-solntse-luna-i-zemlya-8.jpg" target="_blank" class="year-link">...-8.jpg</a>
+                              <a href="problems/final/2026/Дополнительные материалы/10-2 Земля - Луна/Гравитация рисунки/320-fakty-o-lune-i-solntse-3.jpg" target="_blank" class="year-link">320-fakty-o-lune-i-solntse-3.jpg</a>
+                              <a href="problems/final/2026/Дополнительные материалы/10-2 Земля - Луна/Гравитация рисунки/attraktsiony.jpg" target="_blank" class="year-link">attraktsiony.jpg</a>
+                              <a href="problems/final/2026/Дополнительные материалы/10-2 Земля - Луна/Гравитация рисунки/istockphoto-535938019-612x612.jpg" target="_blank" class="year-link">istockphoto-535938019-612x612.jpg</a>
+                              <a href="problems/final/2026/Дополнительные материалы/10-2 Земля - Луна/Гравитация рисунки/moon-earth01.jpg" target="_blank" class="year-link">moon-earth01.jpg</a>
+                              <a href="problems/final/2026/Дополнительные материалы/10-2 Земля - Луна/Гравитация рисунки/vals_003-min.jpg" target="_blank" class="year-link">vals_003-min.jpg</a>
+                              <a href="problems/final/2026/Дополнительные материалы/10-2 Земля - Луна/Гравитация рисунки/солнце-луна-и-земля-ось-вращения-периодов-сезонов-астрономии-185008484.jpg" target="_blank" class="year-link">солнце-луна-и-земля-ось-вращения...185008484.jpg</a>
+                           </div>
+                        </details>
+
+                        <details style="background: rgba(15,23,42,0.03); border: 1px solid rgba(15,23,42,0.08); border-radius: 12px; padding: 10px 12px;">
+                           <summary style="cursor: pointer; font-weight: 900; color: #0f172a; font-size: 13px;">11-1 опыт Каведиша</summary>
+                           <div style="display:flex; flex-direction:column; gap: 6px; margin-top: 10px;">
+                              <a href="problems/final/2026/Дополнительные материалы/11-1 опыт Каведиша/1003337_EN.pdf" target="_blank" class="year-link">1003337_EN.pdf</a>
+                              <a href="problems/final/2026/Дополнительные материалы/11-1 опыт Каведиша/UE1010300_RU.pdf" target="_blank" class="year-link">UE1010300_RU.pdf</a>
+                              <a href="problems/final/2026/Дополнительные материалы/11-1 опыт Каведиша/с данными.pdf" target="_blank" class="year-link">с данными.pdf</a>
+                              <a href="problems/final/2026/Дополнительные материалы/11-1 опыт Каведиша/Данные и расчеты Каве.xls" target="_blank" class="year-link">Данные и расчеты Каве.xls</a>
+                           </div>
+                        </details>
+
+                        <details style="background: rgba(15,23,42,0.03); border: 1px solid rgba(15,23,42,0.08); border-radius: 12px; padding: 10px 12px;">
+                           <summary style="cursor: pointer; font-weight: 900; color: #0f172a; font-size: 13px;">11-2 Камера Вильсона</summary>
+                           <div style="display:flex; flex-direction:column; gap: 6px; margin-top: 10px;">
+                              <a href="problems/final/2026/Дополнительные материалы/11-2 Камера Вильсона/УФН камера Вильсона.pdf" target="_blank" class="year-link">УФН камера Вильсона.pdf</a>
+                              <a href="problems/final/2026/Дополнительные материалы/11-2 Камера Вильсона/Физика облаков.pdf" target="_blank" class="year-link">Физика облаков.pdf</a>
+                           </div>
+                        </details>
                      </div>
                   </div>
                   <div style="text-align: center; display: flex; align-items: center; justify-content: center; position: relative;">
@@ -1227,6 +1381,43 @@
                      showFinalGrade(savedFinalGrade);
                   } else {
                      showFinalGrade(9);
+                  }
+               });
+               
+               function showFinalExpGrade(grade) {
+                  document.querySelectorAll('.final-exp-grade-content').forEach(content => {
+                     content.style.display = 'none';
+                  });
+                  const selectedContent = document.getElementById('final-exp-grade-' + grade);
+                  if (selectedContent) {
+                     selectedContent.style.display = 'flex';
+                  }
+
+                  document.querySelectorAll('.final-exp-grade-tab').forEach(tab => {
+                     if (parseInt(tab.dataset.finalExpGrade) === grade) {
+                        tab.style.color = 'var(--primary-color)';
+                        tab.style.borderBottomColor = 'var(--primary-color)';
+                        tab.style.background = 'linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(37, 99, 235, 0.05))';
+                        tab.style.opacity = '1';
+                        tab.style.fontWeight = '700';
+                     } else {
+                        tab.style.color = 'var(--text-secondary)';
+                        tab.style.borderBottomColor = 'transparent';
+                        tab.style.background = 'var(--bg-color)';
+                        tab.style.opacity = '0.7';
+                        tab.style.fontWeight = '600';
+                     }
+                  });
+
+                  localStorage.setItem('selectedFinalExpGrade2026', grade);
+               }
+
+               document.addEventListener('DOMContentLoaded', function() {
+                  const savedFinalExpGrade = parseInt(localStorage.getItem('selectedFinalExpGrade2026') || '9');
+                  if (savedFinalExpGrade === 9 || savedFinalExpGrade === 10 || savedFinalExpGrade === 11) {
+                     showFinalExpGrade(savedFinalExpGrade);
+                  } else {
+                     showFinalExpGrade(9);
                   }
                });
             </script>
