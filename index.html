@@ -1117,8 +1117,9 @@
       .pr26__lang button.is-active { background: #fff; color: #1e1b4b; }
       .pr26__grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 28px; align-items: center; }
       .pr26__badge { display: inline-flex; align-items: center; gap: 8px; background: linear-gradient(135deg, var(--pr26-gold) 0%, var(--pr26-gold-2) 100%); color: #3a2606; font-weight: 800; font-size: 12.5px; letter-spacing: .6px; text-transform: uppercase; padding: 7px 14px; border-radius: 999px; box-shadow: 0 6px 18px -6px rgba(245,158,11,.55); }
-      .pr26__title { font-size: 34px; line-height: 1.12; font-weight: 800; margin: 16px 0 12px; letter-spacing: -.5px; }
+      .pr26__title { font-size: 34px; line-height: 1.12; font-weight: 800; margin: 16px 0 4px; letter-spacing: -.5px; }
       .pr26__title .hl { background: linear-gradient(120deg, #fde68a, #fbbf24); -webkit-background-clip: text; background-clip: text; color: transparent; }
+      .pr26__tagline { font-size: 23px; font-weight: 700; line-height: 1.2; margin: 0 0 16px; color: var(--pr26-gold); letter-spacing: -.2px; }
       .pr26__lead { font-size: 17px; line-height: 1.55; color: rgba(255,255,255,0.9); max-width: 640px; margin-bottom: 16px; }
       .pr26__elig { display: flex; gap: 12px; align-items: flex-start; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); border-left: 3px solid var(--pr26-gold); border-radius: 12px; padding: 13px 16px; font-size: 14.5px; line-height: 1.5; color: rgba(255,255,255,0.94); max-width: 640px; }
       .pr26__elig i { color: var(--pr26-gold); margin-top: 3px; }
@@ -1152,12 +1153,14 @@
       @media (max-width: 900px) {
          .pr26__grid { grid-template-columns: 1fr; gap: 22px; }
          .pr26__title { font-size: 27px; }
+         .pr26__tagline { font-size: 19px; }
          .pr26__lead { font-size: 15.5px; }
          .pr26__card { padding: 20px; }
       }
       @media (max-width: 480px) {
          .pr26__wrap { padding: 20px 16px 24px; }
          .pr26__title { font-size: 23px; }
+         .pr26__tagline { font-size: 17px; }
          .pr26__chip { font-size: 12.5px; padding: 7px 10px; }
       }
       @media (prefers-reduced-motion: reduce) { .pr26__dot { animation: none; } }
@@ -1186,9 +1189,13 @@
                </span>
 
                <h2 class="pr26__title">
-                  <span class="l-ru">Практикум по теоретической физике <span class="hl">2026</span><br>попробуй настоящую науку</span>
-                  <span class="l-en">Theoretical Physics Practicum <span class="hl">2026</span><br>try real research</span>
+                  <span class="l-ru">Практикум по теоретической&nbsp;физике&nbsp;<span class="hl">2026</span></span>
+                  <span class="l-en">Theoretical Physics Practicum&nbsp;<span class="hl">2026</span></span>
                </h2>
+               <p class="pr26__tagline">
+                  <span class="l-ru">попробуй настоящую науку</span>
+                  <span class="l-en">try real research</span>
+               </p>
 
                <p class="pr26__lead">
                   <span class="l-ru"><b>Бесплатный</b> онлайн-практикум, где студенты работают над небольшим исследовательским проектом вместе с учёными <b>MIT, Caltech, Harvard, Flatiron Institute и Carnegie Mellon</b>. Языки: английский, украинский, русский.</span>
