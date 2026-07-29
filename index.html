@@ -455,11 +455,11 @@
       .belso-section {
          width: 30%;
          padding: 12px 16px;
-         background: rgba(255, 255, 255, 0.97);
+         background: linear-gradient(135deg, rgba(14, 116, 144, 0.2) 0%, rgba(3, 105, 161, 0.15) 100%);
          backdrop-filter: blur(10px);
          -webkit-backdrop-filter: blur(10px);
          border-radius: 12px;
-         border: 1px solid rgba(255, 255, 255, 0.75);
+         border: 1px solid rgba(14, 116, 144, 0.4);
          display: flex;
          flex-direction: column;
          align-items: center;
@@ -467,7 +467,7 @@
          gap: 10px;
          position: relative;
          z-index: 2;
-         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+         box-shadow: 0 4px 16px rgba(14, 116, 144, 0.15);
          min-height: auto;
       }
 
@@ -477,7 +477,7 @@
          align-items: center;
          justify-content: center;
          text-decoration: none;
-         color: #1e293b;
+         color: white;
          transition: all 0.3s ease;
          width: 100%;
          gap: 10px;
@@ -497,11 +497,11 @@
       }
 
       .belso-text {
-         font-size: 11.5px;
+         font-size: 11px;
          line-height: 1.4;
-         color: #1e293b;
-         text-shadow: none;
-         font-weight: 600;
+         color: rgba(255, 255, 255, 0.95);
+         text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+         font-weight: 400;
          text-align: center;
       }
 
@@ -1068,254 +1068,6 @@
          </div>
       </div>
    </header>
-
-   <!-- ===================== Practicum 2026 Announcement Banner ===================== -->
-   <style>
-      .pr26 {
-         --pr26-gold: #fbbf24;
-         --pr26-gold-2: #f59e0b;
-         --pr26-ink: #0b1437;
-         position: relative;
-         overflow: hidden;
-         background:
-            radial-gradient(1200px 400px at 12% -20%, rgba(99,102,241,0.45) 0%, transparent 60%),
-            radial-gradient(900px 500px at 95% 120%, rgba(236,72,153,0.32) 0%, transparent 55%),
-            linear-gradient(120deg, #0b1437 0%, #1e1b4b 45%, #3b1d6e 100%);
-         color: #fff;
-         border-bottom: 1px solid rgba(255,255,255,0.08);
-      }
-      .pr26::before { /* faint physics grid */
-         content: '';
-         position: absolute; inset: 0;
-         background-image:
-            linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
-         background-size: 44px 44px;
-         mask-image: radial-gradient(circle at 30% 40%, #000 0%, transparent 75%);
-         pointer-events: none;
-      }
-      .pr26::after { /* orbiting accent glow */
-         content: '';
-         position: absolute; top: -140px; right: -120px;
-         width: 420px; height: 420px; border-radius: 50%;
-         background: radial-gradient(circle, rgba(251,191,36,0.18) 0%, transparent 70%);
-         pointer-events: none;
-      }
-      .pr26__wrap {
-         position: relative; z-index: 1;
-         max-width: 1240px; margin: 0 auto;
-         padding: 26px 20px 30px;
-         display: grid; grid-template-columns: 1fr; gap: 22px;
-      }
-      .pr26__topbar { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
-      .pr26__live { display: inline-flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 600; color: rgba(255,255,255,0.92); letter-spacing: .2px; }
-      .pr26__dot { width: 9px; height: 9px; border-radius: 50%; background: #34d399; box-shadow: 0 0 0 0 rgba(52,211,153,0.7); animation: pr26pulse 2s infinite; flex: 0 0 auto; }
-      @keyframes pr26pulse { 0%{box-shadow:0 0 0 0 rgba(52,211,153,.6)} 70%{box-shadow:0 0 0 10px rgba(52,211,153,0)} 100%{box-shadow:0 0 0 0 rgba(52,211,153,0)} }
-      .pr26__count { display: inline-block; font-variant-numeric: tabular-nums; color: var(--pr26-gold); font-size: 16.5px; font-weight: 800; letter-spacing: .3px; vertical-align: middle; background: rgba(251,191,36,0.15); border: 1px solid rgba(251,191,36,0.35); padding: 3px 11px; border-radius: 9px; }
-      .pr26__lang { display: inline-flex; background: rgba(255,255,255,0.10); border: 1px solid rgba(255,255,255,0.16); border-radius: 999px; padding: 3px; gap: 2px; }
-      .pr26__lang button { appearance: none; border: none; background: transparent; color: rgba(255,255,255,0.75); font-weight: 700; font-size: 12.5px; letter-spacing: .4px; padding: 6px 14px; border-radius: 999px; cursor: pointer; transition: all .2s ease; font-family: inherit; }
-      .pr26__lang button.is-active { background: #fff; color: #1e1b4b; }
-      .pr26__grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 28px; align-items: center; }
-      .pr26__badge { display: inline-flex; align-items: center; gap: 8px; background: linear-gradient(135deg, var(--pr26-gold) 0%, var(--pr26-gold-2) 100%); color: #3a2606; font-weight: 800; font-size: 12.5px; letter-spacing: .6px; text-transform: uppercase; padding: 7px 14px; border-radius: 999px; box-shadow: 0 6px 18px -6px rgba(245,158,11,.55); }
-      .pr26__title { font-size: 34px; line-height: 1.12; font-weight: 800; margin: 16px 0 4px; letter-spacing: -.5px; }
-      .pr26__title .hl { background: linear-gradient(120deg, #fde68a, #fbbf24); -webkit-background-clip: text; background-clip: text; color: transparent; }
-      .pr26__tagline { font-size: 23px; font-weight: 700; line-height: 1.2; margin: 0 0 16px; color: var(--pr26-gold); letter-spacing: -.2px; }
-      .pr26__lead { font-size: 17px; line-height: 1.55; color: rgba(255,255,255,0.9); max-width: 640px; margin-bottom: 16px; }
-      .pr26__elig { display: flex; gap: 12px; align-items: flex-start; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); border-left: 3px solid var(--pr26-gold); border-radius: 12px; padding: 13px 16px; font-size: 14.5px; line-height: 1.5; color: rgba(255,255,255,0.94); max-width: 640px; }
-      .pr26__elig i { color: var(--pr26-gold); margin-top: 3px; }
-      .pr26__chips { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 18px; }
-      .pr26__chip { display: inline-flex; align-items: center; gap: 7px; background: rgba(255,255,255,0.09); border: 1px solid rgba(255,255,255,0.14); border-radius: 10px; padding: 8px 12px; font-size: 13.5px; font-weight: 600; color: rgba(255,255,255,0.92); }
-      .pr26__chip i { color: var(--pr26-gold); }
-      .pr26__chip--free { background: linear-gradient(135deg, var(--pr26-gold) 0%, var(--pr26-gold-2) 100%); border-color: transparent; color: #3a2606; font-weight: 800; box-shadow: 0 6px 16px -6px rgba(245,158,11,.6); }
-      .pr26__chip--free i { color: #3a2606; }
-      .pr26__proof { display: flex; align-items: center; gap: 11px; margin-top: 14px; max-width: 640px; background: rgba(52,211,153,0.10); border: 1px solid rgba(52,211,153,0.28); border-radius: 12px; padding: 11px 14px; font-size: 13.5px; line-height: 1.45; color: rgba(255,255,255,0.92); text-decoration: none; transition: all .2s ease; }
-      .pr26__proof:hover { background: rgba(52,211,153,0.16); border-color: rgba(52,211,153,0.5); color: #fff; text-decoration: none; }
-      .pr26__proof i { color: #34d399; font-size: 16px; flex: 0 0 auto; }
-      .pr26__proof b { color: #6ee7b7; white-space: nowrap; }
-      /* CTA card */
-      .pr26__card { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.16); border-radius: 18px; padding: 24px; backdrop-filter: blur(6px); box-shadow: 0 24px 60px -30px rgba(0,0,0,.7); }
-      .pr26__card h3 { font-size: 16px; font-weight: 700; margin-bottom: 6px; color: #fff; }
-      .pr26__card p.small { font-size: 13px; line-height: 1.5; color: rgba(255,255,255,0.72); margin-bottom: 16px; }
-      .pr26__cta { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; background: linear-gradient(135deg, #fde68a 0%, var(--pr26-gold) 45%, var(--pr26-gold-2) 100%); color: #3a2606; font-weight: 800; font-size: 17px; text-decoration: none; padding: 15px 20px; border-radius: 12px; box-shadow: 0 12px 26px -10px rgba(245,158,11,.7); transition: transform .2s ease, box-shadow .2s ease; }
-      .pr26__cta:hover { transform: translateY(-2px); box-shadow: 0 18px 34px -12px rgba(245,158,11,.85); color: #3a2606; text-decoration: none; }
-      .pr26__hint { font-size: 12.5px; line-height: 1.5; color: rgba(255,255,255,0.68); margin-top: 12px; text-align: center; }
-      .pr26__hint b { color: rgba(255,255,255,0.92); }
-      .pr26__versions { margin-top: 16px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.14); font-size: 13px; color: rgba(255,255,255,0.7); text-align: center; }
-      .pr26__versions .lbl { display: block; margin-bottom: 8px; font-weight: 600; letter-spacing: .2px; }
-      .pr26__versions a { color: #fff; font-weight: 700; text-decoration: none; border-bottom: 1px solid rgba(251,191,36,.6); padding-bottom: 1px; transition: color .2s ease; }
-      .pr26__versions a:hover { color: var(--pr26-gold); }
-      .pr26__versions .sep { opacity: .4; margin: 0 8px; }
-      .pr26__rules { display: inline-flex; align-items: center; gap: 6px; margin-top: 14px; font-size: 13px; color: rgba(255,255,255,0.8); text-decoration: none; }
-      .pr26__rules:hover { color: var(--pr26-gold); text-decoration: none; }
-      /* language visibility */
-      .pr26[data-lang="ru"] .l-en { display: none; }
-      .pr26[data-lang="en"] .l-ru { display: none; }
-      @media (max-width: 900px) {
-         .pr26__grid { grid-template-columns: 1fr; gap: 22px; }
-         .pr26__title { font-size: 27px; }
-         .pr26__tagline { font-size: 19px; }
-         .pr26__lead { font-size: 15.5px; }
-         .pr26__card { padding: 20px; }
-      }
-      @media (max-width: 480px) {
-         .pr26__wrap { padding: 20px 16px 24px; }
-         .pr26__title { font-size: 23px; }
-         .pr26__tagline { font-size: 17px; }
-         .pr26__chip { font-size: 12.5px; padding: 7px 10px; }
-      }
-      @media (prefers-reduced-motion: reduce) { .pr26__dot { animation: none; } }
-   </style>
-
-   <section class="pr26" data-lang="ru" aria-label="Практикум по теоретической физике 2026 — набор открыт">
-      <div class="pr26__wrap">
-         <div class="pr26__topbar">
-            <span class="pr26__live">
-               <span class="pr26__dot"></span>
-               <span class="l-ru">Регистрация идёт &nbsp;<span id="pr26count" class="pr26__count"></span></span>
-               <span class="l-en">Registration is open &nbsp;<span class="pr26__count pr26count-en"></span></span>
-            </span>
-            <span class="pr26__lang" role="group" aria-label="Язык баннера / Banner language">
-               <button type="button" data-set="ru" class="is-active">РУС</button>
-               <button type="button" data-set="en">ENG</button>
-            </span>
-         </div>
-
-         <div class="pr26__grid">
-            <div class="pr26__main">
-               <span class="pr26__badge">
-                  <i class="fas fa-atom"></i>
-                  <span class="l-ru">Набор открыт · 2026</span>
-                  <span class="l-en">Registration open · 2026</span>
-               </span>
-
-               <h2 class="pr26__title">
-                  <span class="l-ru">Практикум по теоретической&nbsp;физике&nbsp;<span class="hl">2026</span></span>
-                  <span class="l-en">Theoretical Physics Practicum&nbsp;<span class="hl">2026</span></span>
-               </h2>
-               <p class="pr26__tagline">
-                  <span class="l-ru">попробуй настоящую науку</span>
-                  <span class="l-en">try real research</span>
-               </p>
-
-               <p class="pr26__lead">
-                  <span class="l-ru"><b>Бесплатный</b> онлайн-практикум, где студенты работают над небольшим исследовательским проектом вместе с учёными <b>MIT, Caltech, Harvard, Flatiron Institute и Carnegie Mellon</b>. Языки: английский, украинский, русский.</span>
-                  <span class="l-en">A <b>free</b> online practicum where students work on a small research project together with scientists from <b>MIT, Caltech, Harvard, the Flatiron Institute and Carnegie Mellon</b>. Languages: English, Ukrainian, Russian.</span>
-               </p>
-
-               <div class="pr26__elig">
-                  <i class="fas fa-circle-info"></i>
-                  <div>
-                     <span class="l-ru">По словам организаторов, <b>мотивированные школьники тоже могут зарегистрироваться и попробовать свои силы</b> — независимо от страны и университета; в прошлые годы такое случалось и срабатывало.</span>
-                     <span class="l-en">Per the organizers, <b>motivated high-school students are also welcome to register and give it a try</b> — regardless of country or university; it has happened in past years and worked out.</span>
-                  </div>
-               </div>
-
-               <div class="pr26__chips">
-                  <span class="pr26__chip"><i class="fas fa-calendar-check"></i><span class="l-ru">Регистрация до 26 июля</span><span class="l-en">Register by July 26</span></span>
-                  <span class="pr26__chip"><i class="fas fa-puzzle-piece"></i><span class="l-ru">Конкурс 27–30 июля</span><span class="l-en">Contest July 27–30</span></span>
-                  <span class="pr26__chip"><i class="fas fa-flask"></i><span class="l-ru">Практикум 10–21 августа</span><span class="l-en">Practicum Aug 10–21</span></span>
-                  <span class="pr26__chip pr26__chip--free"><i class="fas fa-circle-check"></i><span class="l-ru">Участие полностью бесплатное</span><span class="l-en">100% free — no fees</span></span>
-               </div>
-
-               <a class="pr26__proof" href="https://arxiv.org/abs/2512.16571" target="_blank" rel="noopener">
-                  <i class="fas fa-file-lines"></i>
-                  <span class="l-ru">Это работает: проект прошлого практикума вырос в научную статью на arXiv — в соавторстве с организатором Леонидом Левитовым. <b>Читать →</b></span>
-                  <span class="l-en">It works: a past practicum project grew into an arXiv paper — co-authored with organizer Leonid Levitov. <b>Read →</b></span>
-               </a>
-            </div>
-
-            <div class="pr26__card">
-               <h3><span class="l-ru">Как принять участие</span><span class="l-en">How to take part</span></h3>
-               <p class="small">
-                  <span class="l-ru">Отбор идёт по результатам конкурса задач. <b>Участие полностью бесплатное.</b> Чтобы участвовать — зарегистрируйтесь по электронной почте.</span>
-                  <span class="l-en">Admission is based on the problem-solving contest. <b>Participation is completely free.</b> To take part, register by email.</span>
-               </p>
-
-               <a id="pr26cta" class="pr26__cta" href="mailto:theorphys2022@gmail.com?subject=Practicum%202026">
-                  <i class="fas fa-paper-plane"></i>
-                  <span class="l-ru">Зарегистрироваться</span>
-                  <span class="l-en">Register now</span>
-               </a>
-
-               <p class="pr26__hint">
-                  <span class="l-ru">Письмо на <b>theorphys2022@gmail.com</b> с темой <b>«Practicum 2026»</b>. Укажите имя, университет/школу и курс, который заканчиваете. Дедлайн — <b>26 июля, 12:00 МСК</b>.</span>
-                  <span class="l-en">Email <b>theorphys2022@gmail.com</b> with the subject <b>“Practicum 2026”</b>. Include your name, university/school and the year you are completing. Deadline — <b>July 26, 12:00 MSK</b>.</span>
-               </p>
-
-               <div class="pr26__versions">
-                  <span class="lbl"><span class="l-ru">Полная информация на сайте:</span><span class="l-en">Full details on the site:</span></span>
-                  <a href="https://sites.google.com/view/theorphys-2026/2026-front-page-ru" target="_blank" rel="noopener">Русский</a>
-                  <span class="sep">·</span>
-                  <a href="https://sites.google.com/view/theorphys-2026/2026-front-page-ukr" target="_blank" rel="noopener">Українська</a>
-                  <span class="sep">·</span>
-                  <a href="https://sites.google.com/view/theorphys-2026/2026-front-page-eng" target="_blank" rel="noopener">English</a>
-                  <br>
-                  <a class="pr26__rules" href="https://sites.google.com/view/theorphys-2026/2026-front-page-details-eng" target="_blank" rel="noopener">
-                     <i class="fas fa-book-open"></i>
-                     <span class="l-ru">Правила и организационные детали</span><span class="l-en">Rules &amp; organizational details</span>
-                  </a>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
-
-   <script>
-      (function () {
-         var banner = document.querySelector('.pr26');
-         if (!banner) return;
-
-         // Language toggle (Russian ⇄ English inline copy)
-         banner.querySelectorAll('.pr26__lang button').forEach(function (btn) {
-            btn.addEventListener('click', function () {
-               var lang = btn.getAttribute('data-set');
-               banner.setAttribute('data-lang', lang);
-               banner.querySelectorAll('.pr26__lang button').forEach(function (b) {
-                  b.classList.toggle('is-active', b === btn);
-               });
-               buildMailto(lang);
-               renderCount();
-            });
-         });
-
-         // Pre-fill the registration email so one tap opens a ready-to-send message
-         var cta = document.getElementById('pr26cta');
-         function buildMailto(lang) {
-            var subject = 'Practicum 2026';
-            var body = lang === 'en'
-               ? 'Hello!\n\nI would like to register for the Practicum 2026 problem-solving contest.\n\nName:\nUniversity / school:\nYear I am completing:\n\nThank you!'
-               : 'Здравствуйте!\n\nХочу зарегистрироваться на конкурс Практикума 2026.\n\nИмя:\nУниверситет / школа:\nКурс, который заканчиваю в этом году:\n\nСпасибо!';
-            cta.setAttribute('href', 'mailto:theorphys2022@gmail.com?subject=' +
-               encodeURIComponent(subject) + '&body=' + encodeURIComponent(body));
-         }
-
-         // Live countdown to the registration deadline (26 July 2026, 12:00 MSK = UTC+3)
-         var deadline = new Date('2026-07-26T12:00:00+03:00').getTime();
-         function renderCount() {
-            var elRu = document.getElementById('pr26count');
-            var elEn = document.querySelector('.pr26count-en');
-            var now = new Date().getTime();
-            var diff = deadline - now;
-            var txtRu, txtEn;
-            if (diff > 0) {
-               var d = Math.floor(diff / 86400000);
-               var h = Math.floor((diff % 86400000) / 3600000);
-               txtRu = 'до закрытия ' + d + ' д ' + h + ' ч';
-               txtEn = 'closes in ' + d + 'd ' + h + 'h';
-            } else {
-               txtRu = 'регистрация завершена';
-               txtEn = 'registration closed';
-            }
-            if (elRu) elRu.textContent = txtRu;
-            if (elEn) elEn.textContent = txtEn;
-         }
-
-         buildMailto('ru');
-         renderCount();
-         setInterval(renderCount, 60000);
-      })();
-   </script>
-   <!-- =================== /Practicum 2026 Announcement Banner =================== -->
 
    <!-- Hero Section -->
    <section class="hero">
