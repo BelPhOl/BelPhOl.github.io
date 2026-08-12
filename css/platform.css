@@ -58,7 +58,7 @@ img, svg { max-width: 100%; height: auto; }
 
 a { color: var(--primary-color); }
 
-.container { max-width: 1280px; margin: 0 auto; padding: 0 16px; }
+.container { max-width: 1600px; margin: 0 auto; padding: 0 10px; }
 
 /* ---------------------------------------------------------------- header */
 
@@ -157,21 +157,23 @@ a { color: var(--primary-color); }
 
 /* ---------------------------------------------------------------- layout */
 
-.p-shell { max-width: 1280px; margin: 0 auto; padding: 16px 16px 0; }
+.p-shell { max-width: 1600px; margin: 0 auto; padding: 8px 10px 0; }
 
 .p-layout { display: block; }
 
-.p-main { min-width: 0; max-width: 860px; }
+.p-main { min-width: 0; max-width: 1180px; }
 
 @media (min-width: 900px) {
-  .p-shell { padding: 28px 24px 0; }
+  /* Tight by intent: the page is a problem, and every pixel of chrome is a
+     pixel not showing it. Was 28/24 padding, a 292px rail and a 28px gutter. */
+  .p-shell { padding: 10px 12px 0; }
   .p-layout {
     display: grid;
-    grid-template-columns: 292px minmax(0, 1fr);
-    gap: 28px;
+    grid-template-columns: 236px minmax(0, 1fr);
+    gap: 16px;
     align-items: start;
   }
-  .p-sidebar { position: sticky; top: 20px; }
+  .p-sidebar { position: sticky; top: 8px; }
 }
 
 /* --------------------------------------------------------------- sidebar */
@@ -447,8 +449,8 @@ a { color: var(--primary-color); }
   border: 1px solid var(--border-color);
   border-radius: var(--radius);
   box-shadow: var(--shadow-sm);
-  padding: 18px 20px;
-  margin-bottom: 16px;
+  padding: 10px 12px;
+  margin-bottom: 10px;
   /* flow-root, not overflow:hidden — a card must contain its floated figure
      (otherwise fig. 1 spills past the card and squeezes the NEXT part's text
      into a one-word column) while still letting tall math scroll. */
@@ -1017,7 +1019,7 @@ mjx-container[display="true"]::-webkit-scrollbar-track { background: transparent
    gains a sidebar/grid when there is room for one.
    ========================================================================== */
 
-.p-shell-wide { max-width: 1240px; padding-bottom: 8px; }
+.p-shell-wide { max-width: 1600px; padding-bottom: 4px; }
 
 /* --------------------------------------------------------------- crumbs */
 
@@ -1740,11 +1742,12 @@ mjx-container[display="true"]::-webkit-scrollbar-track { background: transparent
 .pf-range-track-sm .pf-range-input::-moz-range-thumb { width: 14px; height: 14px; }
 
 .pf-taglist {
-  max-height: 260px;
-  overflow-y: auto;
+  /* No max-height, no overflow-y. A nested scroll box inside an already
+     scrolling sidebar means two scrollbars fighting, and the end of the skill
+     list becomes very hard to reach. The list flows with the page instead. */
   border: 1px solid var(--border-color);
   border-radius: var(--radius-sm);
-  padding: 4px 8px;
+  padding: 3px 6px;
   background: var(--bg-color);
 }
 .pf-tag-section {
@@ -1885,17 +1888,19 @@ mjx-container[display="true"]::-webkit-scrollbar-track { background: transparent
 @media (min-width: 1000px) {
   .pf-layout {
     display: grid;
-    grid-template-columns: 288px minmax(0, 1fr);
-    gap: 26px;
+    grid-template-columns: 268px minmax(0, 1fr);
+    gap: 16px;
     align-items: start;
   }
   .pf-filters-toggle { display: none; }
   .pf-filters {
     display: block;
+    /* Sticks to the page and scrolls with it. It used to be pinned to the
+       viewport with its own scrollbar, so a filter list taller than the screen
+       could only be reached through a second, nested scroll. */
     position: sticky;
-    top: 16px;
-    max-height: calc(100vh - 32px);
-    overflow-y: auto;
+    top: 8px;
+    align-self: start;
     margin-bottom: 0;
   }
   .pf-h1 { font-size: 30px; }
