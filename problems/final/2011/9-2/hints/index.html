@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сканер-стробоскооп — подсказки — BelPhO</title>
+  <meta name="description" content="Сканер-стробоскооп — Республиканская олимпиада 2011, 9 класс, задача 2. Три уровня подсказок.">
+  <link rel="canonical" href="https://belpho.org/problems/final/2011/9-2/hints/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BelPhO">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:url" content="https://belpho.org/problems/final/2011/9-2/hints/">
+  <meta property="og:title" content="Сканер-стробоскооп — подсказки — BelPhO">
+  <meta property="og:description" content="Сканер-стробоскооп — Республиканская олимпиада 2011, 9 класс, задача 2. Три уровня подсказок.">
+  
+  <meta property="og:image" content="https://belpho.org/problems/thumbs/og/final-2011.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/css/platform.css">
+</head>
+<body>
+<svg id="mjx-glyph-cache" aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden"><defs><path id="MJX-TEX-I-1D447" d="M40 437Q21 437 21 445Q21 450 37 501T71 602L88 651Q93 669 101 677H569H659Q691 677 697 676T704 667Q704 661 687 553T668 444Q668 437 649 437Q640 437 637 437T631 442L629 445Q629 451 635 490T641 551Q641 586 628 604T573 629Q568 630 515 631Q469 631 457 630T439 622Q438 621 368 343T298 60Q298 48 386 46Q418 46 427 45T436 36Q436 31 433 22Q429 4 424 1L422 0Q419 0 415 0Q410 0 363 1T228 2Q99 2 64 0H49Q43 6 43 9T45 27Q49 40 55 46H83H94Q174 46 189 55Q190 56 191 56Q196 59 201 76T241 233Q258 301 269 344Q339 619 339 625Q339 630 310 630H279Q212 630 191 624Q146 614 121 583T67 467Q60 445 57 441T43 437H40Z"></path><path id="MJX-TEX-I-1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path><path id="MJX-TEX-I-1D461" d="M26 385Q19 392 19 395Q19 399 22 411T27 425Q29 430 36 430T87 431H140L159 511Q162 522 166 540T173 566T179 586T187 603T197 615T211 624T229 626Q247 625 254 615T261 596Q261 589 252 549T232 470L222 433Q222 431 272 431H323Q330 424 330 420Q330 398 317 385H210L174 240Q135 80 135 68Q135 26 162 26Q197 26 230 60T283 144Q285 150 288 151T303 153H307Q322 153 322 145Q322 142 319 133Q314 117 301 95T267 48T216 6T155 -11Q125 -11 98 4T59 56Q57 64 57 83V101L92 241Q127 382 128 383Q128 385 77 385H26Z"></path><path id="MJX-TEX-N-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path><path id="MJX-TEX-N-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path><path id="MJX-TEX-I-1D44E" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path><path id="MJX-TEX-I-1D436" d="M50 252Q50 367 117 473T286 641T490 704Q580 704 633 653Q642 643 648 636T656 626L657 623Q660 623 684 649Q691 655 699 663T715 679T725 690L740 705H746Q760 705 760 698Q760 694 728 561Q692 422 692 421Q690 416 687 415T669 413H653Q647 419 647 422Q647 423 648 429T650 449T651 481Q651 552 619 605T510 659Q484 659 454 652T382 628T299 572T226 479Q194 422 175 346T156 222Q156 108 232 58Q280 24 350 24Q441 24 512 92T606 240Q610 253 612 255T628 257Q648 257 648 248Q648 243 647 239Q618 132 523 55T319 -22Q206 -22 128 53T50 252Z"></path><path id="MJX-TEX-I-1D711" d="M92 210Q92 176 106 149T142 108T185 85T220 72L235 70L237 71L250 112Q268 170 283 211T322 299T370 375T429 423T502 442Q547 442 582 410T618 302Q618 224 575 152T457 35T299 -10Q273 -10 273 -12L266 -48Q260 -83 252 -125T241 -179Q236 -203 215 -212Q204 -218 190 -218Q159 -215 159 -185Q159 -175 214 -2L209 0Q204 2 195 5T173 14T147 28T120 46T94 71T71 103T56 142T50 190Q50 238 76 311T149 431H162Q183 431 183 423Q183 417 175 409Q134 361 114 300T92 210ZM574 278Q574 320 550 344T486 369Q437 369 394 329T323 218Q309 184 295 109L286 64Q304 62 306 62Q423 62 498 131T574 278Z"></path><path id="MJX-TEX-N-6D" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q351 442 364 440T387 434T406 426T421 417T432 406T441 395T448 384T452 374T455 366L457 361L460 365Q463 369 466 373T475 384T488 397T503 410T523 422T546 432T572 439T603 442Q729 442 740 329Q741 322 741 190V104Q741 66 743 59T754 49Q775 46 803 46H819V0H811L788 1Q764 2 737 2T699 3Q596 3 587 0H579V46H595Q656 46 656 62Q657 64 657 200Q656 335 655 343Q649 371 635 385T611 402T585 404Q540 404 506 370Q479 343 472 315T464 232V168V108Q464 78 465 68T468 55T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z"></path><path id="MJX-TEX-N-61" d="M137 305T115 305T78 320T63 359Q63 394 97 421T218 448Q291 448 336 416T396 340Q401 326 401 309T402 194V124Q402 76 407 58T428 40Q443 40 448 56T453 109V145H493V106Q492 66 490 59Q481 29 455 12T400 -6T353 12T329 54V58L327 55Q325 52 322 49T314 40T302 29T287 17T269 6T247 -2T221 -8T190 -11Q130 -11 82 20T34 107Q34 128 41 147T68 188T116 225T194 253T304 268H318V290Q318 324 312 340Q290 411 215 411Q197 411 181 410T156 406T148 403Q170 388 170 359Q170 334 154 320ZM126 106Q126 75 150 51T209 26Q247 26 276 49T315 109Q317 116 318 175Q318 233 317 233Q309 233 296 232T251 223T193 203T147 166T126 106Z"></path><path id="MJX-TEX-N-78" d="M201 0Q189 3 102 3Q26 3 17 0H11V46H25Q48 47 67 52T96 61T121 78T139 96T160 122T180 150L226 210L168 288Q159 301 149 315T133 336T122 351T113 363T107 370T100 376T94 379T88 381T80 383Q74 383 44 385H16V431H23Q59 429 126 429Q219 429 229 431H237V385Q201 381 201 369Q201 367 211 353T239 315T268 274L272 270L297 304Q329 345 329 358Q329 364 327 369T322 376T317 380T310 384L307 385H302V431H309Q324 428 408 428Q487 428 493 431H499V385H492Q443 385 411 368Q394 360 377 341T312 257L296 236L358 151Q424 61 429 57T446 50Q464 46 499 46H516V0H510H502Q494 1 482 1T457 2T432 2T414 3Q403 3 377 3T327 1L304 0H295V46H298Q309 46 320 51T331 63Q331 65 291 120L250 175Q249 174 219 133T185 88Q181 83 181 74Q181 63 188 55T206 46Q208 46 208 23V0H201Z"></path></defs></svg>
+<header class="site-header">
+  <div class="container header-content">
+    <a href="/" class="logo">
+      <img src="/img/logo.png" alt="BelPhO" class="logo-img" width="36" height="36">
+      <span>BelPhO</span>
+    </a>
+    <nav class="site-nav" aria-label="Основная навигация">
+      <ul class="nav-links">
+        <li><a href="/">Главная</a></li>
+        <li><a href="/problems/" class="active">Задачи</a></li>
+        <li><a href="/books/">Книги</a></li>
+        <li><a href="/training-program.html">Подготовка</a></li>
+        <li><a href="/alumni.html">Выпускники</a></li>
+        <li><a href="/news/">Новости</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<main class="p-shell">
+  <div class="p-layout">
+    
+<aside class="p-sidebar" id="p-sidebar" data-problem-id="2011-final-theory-9-2">
+  <div class="sb-card">
+    <div class="sb-head">
+      <div class="sb-crumb"><a href="/problems/final/">Республиканская</a>&#8195;<a href="/problems/final/2011/">2011</a></div>
+      <h1 class="sb-title">Сканер-стробоскооп</h1>
+      <div class="sb-meta">
+        <span class="sb-chip">9 класс</span>
+        <span class="sb-chip sb-chip-num">№ 2</span>
+        
+        
+        
+        
+        
+        <span class="sb-chip sb-chip-diff" style="background:#800026;color:#fff"
+              title="Максимальная — Задача уровня медального тура IZhO — идею неоткуда списать.">5/5</span>
+        
+        
+      </div>
+      
+      
+      <nav class="sb-siblings" aria-label="Другие задачи этого тура">
+        <a class="sb-sib-arrow" href="/problems/final/2011/9-1/" aria-label="Предыдущая задача">‹</a>
+        
+        <span class="sb-sib-list">
+          <a class="sb-sib" href="/problems/final/2011/9-1/">9.1</a><a class="sb-sib is-current" href="/problems/final/2011/9-2/" aria-current=&#34;page&#34;>9.2</a><a class="sb-sib" href="/problems/final/2011/9-3/">9.3</a>
+        </span>
+        <a class="sb-sib-arrow" href="/problems/final/2011/9-3/" aria-label="Следующая задача">›</a>
+        
+      </nav>
+      
+    </div>
+    <nav class="sb-nav" aria-label="Разделы задачи">
+      
+      <a class="sb-item" href="/problems/final/2011/9-2/"
+         >
+        <span class="sb-glyph sb-glyph-t">T</span>
+        <span>Условие</span>
+      </a>
+      
+      <a class="sb-item" href="/problems/final/2011/9-2/solution/"
+         >
+        <span class="sb-glyph sb-glyph-s">S</span>
+        <span>Решение</span>
+      </a>
+      
+      <a class="sb-item on" href="/problems/final/2011/9-2/hints/"
+         aria-current=&#34;page&#34;>
+        <span class="sb-glyph sb-glyph-h">H</span>
+        <span>Подсказки</span>
+      </a>
+      
+      
+      <a class="sb-item sb-item-edu" href="/problems/final/2011/9-2/edu/"
+         >
+        <span class="sb-glyph sb-glyph-e">E</span>
+        <span>Режим тренировки</span>
+      </a>
+      
+      <details class="sb-files" id="sb-files">
+        <summary class="sb-item sb-item-files">
+          <span class="sb-glyph sb-glyph-f">▾</span><span>Файлы</span>
+        </summary>
+        <div class="sb-files-menu">
+          
+          <a href="/problems/final/2011/9-2/problem.pdf" class="sb-file">Условие — PDF</a>
+          
+          
+        </div>
+      </details>
+    </nav>
+    
+  </div>
+</aside>
+
+    <div class="p-main" id="p-main">
+      <div class="page-head">
+  <h2 class="page-title">Подсказки</h2>
+  <span class="page-sub">Открывайте по одной — попробуйте продвинуться после каждой, прежде чем открывать следующую.</span>
+</div>
+
+
+<p class="note-unofficial">Подсказки сгенерированы автоматически и проверены редакцией.</p>
+
+
+<div id="hints-root" data-problem-id="2011-final-theory-9-2">
+
+  <section class="subq-card hints-card" data-part="2.2">
+    <header class="subq-head subq-head-split">
+      <span class="subq-pill">2.2</span>
+      
+    </header>
+    <div class="hint-list">
+      
+      <details class="hint hint-1" data-hint="h1">
+        <summary>
+          <span class="hint-glyph">H1</span>
+          <span class="hint-name">Направление</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><p>Посчитай, сколько полных колебаний помещается на отрезке снимка, который соответствует известному пути каретки.</p></div>
+      </details>
+      
+      <details class="hint hint-2" data-hint="h2">
+        <summary>
+          <span class="hint-glyph">H2</span>
+          <span class="hint-name">Ключевой шаг</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><p>Используй соотношение «время = пройденный кареткой путь / её скорость» и тот факт, что период — это время одного полного цикла колебаний.</p></div>
+      </details>
+      
+      <details class="hint hint-3" data-hint="h3">
+        <summary>
+          <span class="hint-glyph">H3</span>
+          <span class="hint-name">Почти решение</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><ol>
+<li>Определи на снимке расстояние, в течение которого стержень совершил целое число колебаний, и сосчитай это число колебаний.</li>
+<li>Переведи это расстояние в время с помощью скорости каретки.</li>
+<li>Раздели полученное время на число колебаний, чтобы получить период.</li>
+<li>Вырази <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="1.593ex" height="1.532ex" role="img" focusable="false" viewBox="0 -677 704 677" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D447" xlink:href="#MJX-TEX-I-1D447"></use></g></g></g></svg></mjx-container> через измеренное расстояние, скорость каретки и число колебаний.</li>
+</ol></div>
+      </details>
+      
+    </div>
+  </section>
+
+  <section class="subq-card hints-card" data-part="3.1">
+    <header class="subq-head subq-head-split">
+      <span class="subq-pill">3.1</span>
+      
+    </header>
+    <div class="hint-list">
+      
+      <details class="hint hint-1" data-hint="h1">
+        <summary>
+          <span class="hint-glyph">H1</span>
+          <span class="hint-name">Направление</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><p>Внимательно рассмотрите последовательность отпечатков стержня на фотографии: обратите внимание на порядок и смещение отдельных характерных точек стержня вдоль изображения.</p></div>
+      </details>
+      
+      <details class="hint hint-2" data-hint="h2">
+        <summary>
+          <span class="hint-glyph">H2</span>
+          <span class="hint-name">Ключевой шаг</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><p>Сделайте опору на геометрию снимка: смещение одинаковых точек стержня вдоль оси, указанной на рисунке, показывает направление его поступательного движения.</p></div>
+      </details>
+      
+      <details class="hint hint-3" data-hint="h3">
+        <summary>
+          <span class="hint-glyph">H3</span>
+          <span class="hint-name">Почти решение</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><ol>
+<li>Отметьте на рисунке несколько характерных точек стержня (например, концы) в разных положениях.</li>
+<li>Нанесите ось <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="1.294ex" height="1.025ex" role="img" focusable="false" viewBox="0 -442 572 453" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D465" xlink:href="#MJX-TEX-I-1D465"></use></g></g></g></svg></mjx-container>, указанную в задаче, и упорядочите отмеченные точки по координате <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="1.294ex" height="1.025ex" role="img" focusable="false" viewBox="0 -442 572 453" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D465" xlink:href="#MJX-TEX-I-1D465"></use></g></g></g></svg></mjx-container>.</li>
+<li>Проследите, в какую сторону идут эти метки по мере смены положений стержня на снимке.</li>
+<li>Выразите направление движения стержня из полученной системы отметок.</li>
+</ol></div>
+      </details>
+      
+    </div>
+  </section>
+
+  <section class="subq-card hints-card" data-part="3.3">
+    <header class="subq-head subq-head-split">
+      <span class="subq-pill">3.3</span>
+      
+    </header>
+    <div class="hint-list">
+      
+      <details class="hint hint-1" data-hint="h1">
+        <summary>
+          <span class="hint-glyph">H1</span>
+          <span class="hint-name">Направление</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><p>Определи масштаб снимка в мм на клетку и временной масштаб (сколько времени соответствует одному делению по направлению сканирования).</p></div>
+      </details>
+      
+      <details class="hint hint-2" data-hint="h2">
+        <summary>
+          <span class="hint-glyph">H2</span>
+          <span class="hint-name">Ключевой шаг</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><p>Пользуйся результатом из пункта 3.2: ускорение связано с наклоном линейной зависимости <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.798ex;" xmlns="http://www.w3.org/2000/svg" width="4.487ex" height="2.495ex" role="img" focusable="false" viewBox="0 -750 1983.5 1102.8" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mfrac"><g data-mml-node="mi" transform="translate(220,394) scale(0.707)"><use data-c="1D465" xlink:href="#MJX-TEX-I-1D465"></use></g><g data-mml-node="mi" transform="translate(294.6,-345) scale(0.707)"><use data-c="1D461" xlink:href="#MJX-TEX-I-1D461"></use></g><rect width="604.5" height="60" x="120" y="220"></rect></g><g data-mml-node="mo" transform="translate(844.5,0)"><use data-c="28" xlink:href="#MJX-TEX-N-28"></use></g><g data-mml-node="mi" transform="translate(1233.5,0)"><use data-c="1D461" xlink:href="#MJX-TEX-I-1D461"></use></g><g data-mml-node="mo" transform="translate(1594.5,0)"><use data-c="29" xlink:href="#MJX-TEX-N-29"></use></g></g></g></svg></mjx-container>; переведи наклон в физические единицы с учётом шкалы.</p></div>
+      </details>
+      
+      <details class="hint hint-3" data-hint="h3">
+        <summary>
+          <span class="hint-glyph">H3</span>
+          <span class="hint-name">Почти решение</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><ol>
+<li>Измерь наклон прямой на графике <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.798ex;" xmlns="http://www.w3.org/2000/svg" width="1.911ex" height="2.397ex" role="img" focusable="false" viewBox="0 -706.5 844.5 1059.3" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mfrac"><g data-mml-node="mi" transform="translate(220,394) scale(0.707)"><use data-c="1D465" xlink:href="#MJX-TEX-I-1D465"></use></g><g data-mml-node="mi" transform="translate(294.6,-345) scale(0.707)"><use data-c="1D461" xlink:href="#MJX-TEX-I-1D461"></use></g><rect width="604.5" height="60" x="120" y="220"></rect></g></g></g></svg></mjx-container> от <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="0.817ex" height="1.441ex" role="img" focusable="false" viewBox="0 -626 361 637" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D461" xlink:href="#MJX-TEX-I-1D461"></use></g></g></g></svg></mjx-container> в единицах клеток/клетка времени.</li>
+<li>Переведи этот наклон в мм/с^2, подставив размер клетки в мм и время, соответствующее одному клеточному смещению каретки.</li>
+<li>Проведи оценку погрешности, учитывая точность считывания по сетке и первые неточные точки.</li>
+<li>Вырази численное значение <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.023ex;" xmlns="http://www.w3.org/2000/svg" width="1.197ex" height="1.02ex" role="img" focusable="false" viewBox="0 -441 529 451" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D44E" xlink:href="#MJX-TEX-I-1D44E"></use></g></g></g></svg></mjx-container> через измеренный наклон и масштабные коэффициенты (мм и с).</li>
+</ol></div>
+      </details>
+      
+    </div>
+  </section>
+
+  <section class="subq-card hints-card" data-part="4.1">
+    <header class="subq-head subq-head-split">
+      <span class="subq-pill">4.1</span>
+      
+    </header>
+    <div class="hint-list">
+      
+      <details class="hint hint-1" data-hint="h1">
+        <summary>
+          <span class="hint-glyph">H1</span>
+          <span class="hint-name">Направление</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><p>Найди на снимке пары точек, соответствующие концам стержня в моменты максимального отклонения; в идеале эти точки лежат на прямых, проходящих через ось вращения.</p></div>
+      </details>
+      
+      <details class="hint hint-2" data-hint="h2">
+        <summary>
+          <span class="hint-glyph">H2</span>
+          <span class="hint-name">Ключевой шаг</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><p>Воспользуйся геометрическим методом: в идеальном случае прямые, соединяющие одновременные положения концов стержня, пересекаются в положении оси; при небольших дрейфах ось лежит в области пересечения полос, ограниченной параллельными прямыми.</p></div>
+      </details>
+      
+      <details class="hint hint-3" data-hint="h3">
+        <summary>
+          <span class="hint-glyph">H3</span>
+          <span class="hint-name">Почти решение</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><ol>
+<li>Проведи прямые через соответствующие отмеченные точки конца стержня для двух противоположных максимальных отклонений (по набору точек A,B,C и D,E,F).</li>
+<li>Построй полосы возможного положения оси как область между этими параллельными прямыми, учитывая разброс точек.</li>
+<li>Отметь на рисунке полученную область пересечения — это область, в которой может находиться ось вращения <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="1.719ex" height="1.645ex" role="img" focusable="false" viewBox="0 -705 760 727" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D436" xlink:href="#MJX-TEX-I-1D436"></use></g></g></g></svg></mjx-container>.</li>
+<li>Вырази границы этой области через уравнения построенных прямых и их пересечение на рисунке.</li>
+</ol></div>
+      </details>
+      
+    </div>
+  </section>
+
+  <section class="subq-card hints-card" data-part="4.2">
+    <header class="subq-head subq-head-split">
+      <span class="subq-pill">4.2</span>
+      
+    </header>
+    <div class="hint-list">
+      
+      <details class="hint hint-1" data-hint="h1">
+        <summary>
+          <span class="hint-glyph">H1</span>
+          <span class="hint-name">Направление</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><p>Определи на снимке углы отклонения стержня в его крайних положениях относительно предполагаемого положения оси.</p></div>
+      </details>
+      
+      <details class="hint hint-2" data-hint="h2">
+        <summary>
+          <span class="hint-glyph">H2</span>
+          <span class="hint-name">Ключевой шаг</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><p>Воспользуйся геометрией: угловая амплитуда — это половина разности крайних отклонений или просто положительная величина максимального отклонения от среднего положения.</p></div>
+      </details>
+      
+      <details class="hint hint-3" data-hint="h3">
+        <summary>
+          <span class="hint-glyph">H3</span>
+          <span class="hint-name">Почти решение</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><ol>
+<li>Найди на снимке направления стержня в двух противоположных максимумах и измерь углы этих направлений относительно вертикали или предполагаемой оси.</li>
+<li>Вычисли амплитуду как разность между средней линией и максимальным отклонением (или как половину угла между крайними положениями).</li>
+<li>Оцени неопределённость, учитывая разброс положений оси и точность измерения углов по сетке.</li>
+<li>Вырази угловую амплитуду <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.493ex;" xmlns="http://www.w3.org/2000/svg" width="4.645ex" height="1.493ex" role="img" focusable="false" viewBox="0 -442 2052.9 660" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D711" xlink:href="#MJX-TEX-I-1D711"></use></g><g data-mml-node="TeXAtom" transform="translate(687,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mtext"><use data-c="6D" xlink:href="#MJX-TEX-N-6D"></use><use data-c="61" xlink:href="#MJX-TEX-N-61" transform="translate(833,0)"></use><use data-c="78" xlink:href="#MJX-TEX-N-78" transform="translate(1333,0)"></use></g></g></g></g></g></svg></mjx-container> через измеренные углы и оценку погрешности.</li>
+</ol></div>
+      </details>
+      
+    </div>
+  </section>
+
+  <section class="subq-card hints-card" data-part="4.3">
+    <header class="subq-head subq-head-split">
+      <span class="subq-pill">4.3</span>
+      
+    </header>
+    <div class="hint-list">
+      
+      <details class="hint hint-1" data-hint="h1">
+        <summary>
+          <span class="hint-glyph">H1</span>
+          <span class="hint-name">Направление</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><p>Найди на снимке участок, за который каретка проходит известное расстояние, и подсчитай, сколько колебаний стержень совершил за этот путь.</p></div>
+      </details>
+      
+      <details class="hint hint-2" data-hint="h2">
+        <summary>
+          <span class="hint-glyph">H2</span>
+          <span class="hint-name">Ключевой шаг</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><p>Пользуйся тем же приёмом, что и для поступательных колебаний: время, соответствующее пройденному кареткой пути, даёт суммарное время нескольких периодов; разделив его на число колебаний, получишь период.</p></div>
+      </details>
+      
+      <details class="hint hint-3" data-hint="h3">
+        <summary>
+          <span class="hint-glyph">H3</span>
+          <span class="hint-name">Почти решение</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><ol>
+<li>Измерь на снимке расстояние (в мм или клетках), соответствующее наблюдаемому отрезку, и сосчитай число совершённых за него колебаний.</li>
+<li>Переведи это расстояние в время, разделив на скорость каретки.</li>
+<li>Раздели полученное время на число колебаний — это и есть период.</li>
+<li>Вырази <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="1.593ex" height="1.532ex" role="img" focusable="false" viewBox="0 -677 704 677" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D447" xlink:href="#MJX-TEX-I-1D447"></use></g></g></g></svg></mjx-container> через измеренное расстояние, скорость каретки и число колебаний.</li>
+</ol></div>
+      </details>
+      
+    </div>
+  </section>
+
+  <section class="subq-card hints-card" data-part="5.1">
+    <header class="subq-head subq-head-split">
+      <span class="subq-pill">5.1</span>
+      
+    </header>
+    <div class="hint-list">
+      
+      <details class="hint hint-1" data-hint="h1">
+        <summary>
+          <span class="hint-glyph">H1</span>
+          <span class="hint-name">Направление</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><p>Найди на снимке несколько точек одного фиксированного расстояния от оси (например, отметки на стержне), они должны лежать на окружности при вращении вокруг неподвижной оси.</p></div>
+      </details>
+      
+      <details class="hint hint-2" data-hint="h2">
+        <summary>
+          <span class="hint-glyph">H2</span>
+          <span class="hint-name">Ключевой шаг</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><p>Построй перпендикуляры к хордам (соединяющим пары точек одного радиуса) — их пересечение даёт центр окружности, то есть положение оси вращения.</p></div>
+      </details>
+      
+      <details class="hint hint-3" data-hint="h3">
+        <summary>
+          <span class="hint-glyph">H3</span>
+          <span class="hint-name">Почти решение</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><ol>
+<li>Выдели на снимке две различные хорды (пары точек, соответствующие одинаковым радиусам) и построй их серединные перпендикуляры.</li>
+<li>Найди точку их пересечения — это положение оси вращения <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="1.719ex" height="1.645ex" role="img" focusable="false" viewBox="0 -705 760 727" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D436" xlink:href="#MJX-TEX-I-1D436"></use></g></g></g></svg></mjx-container> на снимке.</li>
+<li>Определи направление вращения по тому, в какую сторону перемещаются метки вдоль последовательности кадров (по знаку углового смещения).</li>
+<li>Вырази положение оси <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="1.719ex" height="1.645ex" role="img" focusable="false" viewBox="0 -705 760 727" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D436" xlink:href="#MJX-TEX-I-1D436"></use></g></g></g></svg></mjx-container> как координаты пересечения построенных перпендикуляров на рисунке и укажи направление вращения (по ходу изменения фаз меток).</li>
+</ol></div>
+      </details>
+      
+    </div>
+  </section>
+
+</div>
+
+
+
+<div class="page-next">
+  <a class="btn btn-ghost" href="/problems/final/2011/9-2/">← Условие</a>
+  <a class="btn btn-primary" href="/problems/final/2011/9-2/solution/">Смотреть решение →</a>
+</div>
+
+
+
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© 2026 BelPhO — Белорусские физические олимпиады</span>
+    <span class="footer-links">
+      <a href="/problems/">Задачи</a>
+      <a href="https://t.me/belpho_by" rel="noopener">Telegram</a>
+    </span>
+  </div>
+</footer>
+
+
+<script type="module" src="/js/site/problem-page.js"></script>
+
+</body>
+</html>

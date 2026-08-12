@@ -58,8 +58,9 @@
         
         
         
+        
         <span class="sb-chip sb-chip-diff" style="background:#ffffcc;color:#2d2d2d"
-              title="Рутинная задача для эталонного решателя — один стандартный закон, применённый один раз.">Сложность: Лёгкая&#8195;оценка</span>
+              title="Лёгкая — Рутинная задача для эталонного решателя — один стандартный закон, применённый один раз.">1/5</span>
         
         <span class="sb-chip sb-chip-edu">Edu</span>
       </div>
@@ -89,6 +90,12 @@
         <span>Решение</span>
       </a>
       
+      <a class="sb-item" href="/problems/third/2019/9-e1/hints/"
+         >
+        <span class="sb-glyph sb-glyph-h">H</span>
+        <span>Подсказки</span>
+      </a>
+      
       
       <a class="sb-item sb-item-edu on" href="/problems/third/2019/9-e1/edu/"
          aria-current=&#34;page&#34;>
@@ -102,7 +109,9 @@
         </summary>
         <div class="sb-files-menu">
           
-          <span class="sb-file sb-file-none">PDF появятся позже</span>
+          <a href="/problems/third/2019/9-e1/problem.pdf" class="sb-file">Условие — PDF</a>
+          
+          
         </div>
       </details>
     </nav>
@@ -145,6 +154,24 @@
     
     
     
+    <div class="edu-actions">
+      
+      <button type="button" class="btn-reveal btn-reveal-h1" data-target="h1" data-label="Подсказка 1">Подсказка 1</button>
+      
+      <button type="button" class="btn-reveal btn-reveal-h2" data-target="h2" data-label="Подсказка 2">Подсказка 2</button>
+      
+      <button type="button" class="btn-reveal btn-reveal-h3" data-target="h3" data-label="Подсказка 3">Подсказка 3</button>
+      
+    </div>
+    <div class="edu-bodies">
+      <div class="edu-reveal-body hint-body hint-tint-1" data-body="h1" hidden><p>Заметь, что при последовательном соединении суммарное сопротивление наростает по мере добавления участков — предвидь вид таблицы и графика.</p></div><div class="edu-reveal-body hint-body hint-tint-2" data-body="h2" hidden><p>Рассматривай каждый участок как одинаковый элемент с некоторым сопротивлением; суммарное сопротивление равно сумме сопротивлений звеньев.</p></div><div class="edu-reveal-body hint-body hint-tint-3" data-body="h3" hidden><ol>
+<li>Нарисуй схему и пронумеруй последовательно звенья от «0» до «k».</li>
+<li>Измеряй омметром сопротивление между «0» и каждым «k» и заноси значения в таблицу.</li>
+<li>Проверь повторностью измерений для оценки случайной погрешности.</li>
+<li>Собери полученные пары (k, R_k) — переходи к аппроксимации в следующем пункте.</li>
+</ol></div>
+    </div>
+    
   </section>
   
   <section class="subq-card edu-card" data-part="1.2" id="part-1-2">
@@ -165,6 +192,24 @@
     
     
     
+    <div class="edu-actions">
+      
+      <button type="button" class="btn-reveal btn-reveal-h1" data-target="h1" data-label="Подсказка 1">Подсказка 1</button>
+      
+      <button type="button" class="btn-reveal btn-reveal-h2" data-target="h2" data-label="Подсказка 2">Подсказка 2</button>
+      
+      <button type="button" class="btn-reveal btn-reveal-h3" data-target="h3" data-label="Подсказка 3">Подсказка 3</button>
+      
+    </div>
+    <div class="edu-bodies">
+      <div class="edu-reveal-body hint-body hint-tint-1" data-body="h1" hidden><p>Построй график точек зависимости измеренного сопротивления от номера клеммы и присмотрись к поведению точек: как они расположены — близко к какой простой линии или кривой? Обрати внимание на значение при k=0.</p></div><div class="edu-reveal-body hint-body hint-tint-2" data-body="h2" hidden><p>Подбери простую аппроксимацию данных методом наименьших квадратов — проверь, годится ли прямая. Оцени статистические погрешности параметров аппроксимации и посмотри на остатки (разности эксперимент — аппроксимация).</p></div><div class="edu-reveal-body hint-body hint-tint-3" data-body="h3" hidden><ol>
+<li>Нанеси на один график все экспериментальные точки и проведи выбранную аппроксимацию (прямая).</li>
+<li>Выпиши нормальные уравнения для коэффициентов аппроксимации и реши их численно методом наименьших квадратов.</li>
+<li>Оцени погрешности найденных коэффициентов по стандартным формулам для линейной регрессии и сравни смещение при k=0 с сопротивлением соединительных проводов.</li>
+<li>Вырази параметры аппроксимации (обозначь их a и b) из полученной системы уравнений и интерпретируй физически полученные значения.</li>
+</ol></div>
+    </div>
+    
   </section>
   
 
@@ -184,6 +229,24 @@
 
     
     
+    
+    <div class="edu-actions">
+      
+      <button type="button" class="btn-reveal btn-reveal-h1" data-target="h1" data-label="Подсказка 1">Подсказка 1</button>
+      
+      <button type="button" class="btn-reveal btn-reveal-h2" data-target="h2" data-label="Подсказка 2">Подсказка 2</button>
+      
+      <button type="button" class="btn-reveal btn-reveal-h3" data-target="h3" data-label="Подсказка 3">Подсказка 3</button>
+      
+    </div>
+    <div class="edu-bodies">
+      <div class="edu-reveal-body hint-body hint-tint-1" data-body="h1" hidden><p>Если все «четные» клеммы коротятся вместе, заметишь сильную симметрию — подумай, какие узлы у тебя получатся.</p></div><div class="edu-reveal-body hint-body hint-tint-2" data-body="h2" hidden><p>Воспользуйся сведением схемы по симметрии: коротко соединённые узлы дают общую точку (центральный узел), что превращает сеть в эквивалент звезды/параллелей.</p></div><div class="edu-reveal-body hint-body hint-tint-3" data-body="h3" hidden><ol>
+<li>Нарисуй исходную цепь и отметь, какие клеммы объединены в один узел (все чётные вместе).</li>
+<li>Перерисуй схему, заменив объединённые клеммы одним центральным узлом и соединениями к нему от нечётных клемм.</li>
+<li>Определи для каждого k, к какому типу подключения он относится (к нечётной клемме — между двумя параллельными звеньями, к чётной — прямо к центру), и вычисли соответствующее эквивалентное сопротивление через звено <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.375ex;" xmlns="http://www.w3.org/2000/svg" width="2.705ex" height="1.92ex" role="img" focusable="false" viewBox="0 -683 1195.6 848.6" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D445" xlink:href="#MJX-TEX-I-1D445"></use></g><g data-mml-node="mn" transform="translate(792,-150) scale(0.707)"><use data-c="30" xlink:href="#MJX-TEX-N-30"></use></g></g></g></g></svg></mjx-container>.</li>
+<li>Выразите <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.357ex;" xmlns="http://www.w3.org/2000/svg" width="2.738ex" height="1.902ex" role="img" focusable="false" viewBox="0 -683 1210.4 840.8" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D445" xlink:href="#MJX-TEX-I-1D445"></use></g><g data-mml-node="mi" transform="translate(792,-150) scale(0.707)"><use data-c="1D458" xlink:href="#MJX-TEX-I-1D458"></use></g></g></g></g></svg></mjx-container> из полученной системы эквивалентных соединений.</li>
+</ol></div>
+    </div>
     
   </section>
   
@@ -222,6 +285,24 @@
     
     
     
+    <div class="edu-actions">
+      
+      <button type="button" class="btn-reveal btn-reveal-h1" data-target="h1" data-label="Подсказка 1">Подсказка 1</button>
+      
+      <button type="button" class="btn-reveal btn-reveal-h2" data-target="h2" data-label="Подсказка 2">Подсказка 2</button>
+      
+      <button type="button" class="btn-reveal btn-reveal-h3" data-target="h3" data-label="Подсказка 3">Подсказка 3</button>
+      
+    </div>
+    <div class="edu-bodies">
+      <div class="edu-reveal-body hint-body hint-tint-1" data-body="h1" hidden><p>Сравни экспериментальные точки с теоретической кривой и обрати внимание на систематические отклонения (контакты, провода, прибор).</p></div><div class="edu-reveal-body hint-body hint-tint-2" data-body="h2" hidden><p>Построй на тех же осях экспериментальные точки и теоретическую кривую, используя найденное в части 1 значение <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.375ex;" xmlns="http://www.w3.org/2000/svg" width="2.705ex" height="1.92ex" role="img" focusable="false" viewBox="0 -683 1195.6 848.6" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D445" xlink:href="#MJX-TEX-I-1D445"></use></g><g data-mml-node="mn" transform="translate(792,-150) scale(0.707)"><use data-c="30" xlink:href="#MJX-TEX-N-30"></use></g></g></g></g></svg></mjx-container>; учти вклады контактного и проводного сопротивления и погрешность омметра.</p></div><div class="edu-reveal-body hint-body hint-tint-3" data-body="h3" hidden><ol>
+<li>Нанеси на один график экспериментальные значения и теоретическую кривую <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.566ex;" xmlns="http://www.w3.org/2000/svg" width="5.677ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 2509.4 1000" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D445" xlink:href="#MJX-TEX-I-1D445"></use></g><g data-mml-node="mi" transform="translate(792,-150) scale(0.707)"><use data-c="1D458" xlink:href="#MJX-TEX-I-1D458"></use></g></g><g data-mml-node="mo" transform="translate(1210.4,0)"><use data-c="28" xlink:href="#MJX-TEX-N-28"></use></g><g data-mml-node="mi" transform="translate(1599.4,0)"><use data-c="1D458" xlink:href="#MJX-TEX-I-1D458"></use></g><g data-mml-node="mo" transform="translate(2120.4,0)"><use data-c="29" xlink:href="#MJX-TEX-N-29"></use></g></g></g></svg></mjx-container>, вычисленную с подставленным <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.375ex;" xmlns="http://www.w3.org/2000/svg" width="2.705ex" height="1.92ex" role="img" focusable="false" viewBox="0 -683 1195.6 848.6" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D445" xlink:href="#MJX-TEX-I-1D445"></use></g><g data-mml-node="mn" transform="translate(792,-150) scale(0.707)"><use data-c="30" xlink:href="#MJX-TEX-N-30"></use></g></g></g></g></svg></mjx-container>.</li>
+<li>Вычисли разности (остатки) между экспериментом и теорией для каждого k и оцени их величину относительно погрешности измерений.</li>
+<li>Проанализируй возможные причины отклонений: сопротивление соединительных проводов, контактные сопротивления, погрешность прибора и неточность предположения о полном тождестве звеньев.</li>
+<li>Выразите относительные расхождения между экспериментальными и теоретическими значениями через оценённые погрешности и сделай вывод о соответствии данных теории.</li>
+</ol></div>
+    </div>
+    
   </section>
   
   <section class="subq-card edu-card" data-part="2.1" id="part-2-1">
@@ -238,6 +319,24 @@
 
     
     
+    
+    <div class="edu-actions">
+      
+      <button type="button" class="btn-reveal btn-reveal-h1" data-target="h1" data-label="Подсказка 1">Подсказка 1</button>
+      
+      <button type="button" class="btn-reveal btn-reveal-h2" data-target="h2" data-label="Подсказка 2">Подсказка 2</button>
+      
+      <button type="button" class="btn-reveal btn-reveal-h3" data-target="h3" data-label="Подсказка 3">Подсказка 3</button>
+      
+    </div>
+    <div class="edu-bodies">
+      <div class="edu-reveal-body hint-body hint-tint-1" data-body="h1" hidden><p>Если все «четные» клеммы коротятся вместе, заметишь сильную симметрию — подумай, какие узлы у тебя получатся.</p></div><div class="edu-reveal-body hint-body hint-tint-2" data-body="h2" hidden><p>Воспользуйся сведением схемы по симметрии: коротко соединённые узлы дают общую точку (центральный узел), что превращает сеть в эквивалент звезды/параллелей.</p></div><div class="edu-reveal-body hint-body hint-tint-3" data-body="h3" hidden><ol>
+<li>Нарисуй исходную цепь и отметь, какие клеммы объединены в один узел (все чётные вместе).</li>
+<li>Перерисуй схему, заменив объединённые клеммы одним центральным узлом и соединениями к нему от нечётных клемм.</li>
+<li>Определи для каждого k, к какому типу подключения он относится (к нечётной клемме — между двумя параллельными звеньями, к чётной — прямо к центру), и вычисли соответствующее эквивалентное сопротивление через звено <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.375ex;" xmlns="http://www.w3.org/2000/svg" width="2.705ex" height="1.92ex" role="img" focusable="false" viewBox="0 -683 1195.6 848.6" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D445" xlink:href="#MJX-TEX-I-1D445"></use></g><g data-mml-node="mn" transform="translate(792,-150) scale(0.707)"><use data-c="30" xlink:href="#MJX-TEX-N-30"></use></g></g></g></g></svg></mjx-container>.</li>
+<li>Выразите <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.357ex;" xmlns="http://www.w3.org/2000/svg" width="2.738ex" height="1.902ex" role="img" focusable="false" viewBox="0 -683 1210.4 840.8" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D445" xlink:href="#MJX-TEX-I-1D445"></use></g><g data-mml-node="mi" transform="translate(792,-150) scale(0.707)"><use data-c="1D458" xlink:href="#MJX-TEX-I-1D458"></use></g></g></g></g></svg></mjx-container> из полученной системы эквивалентных соединений.</li>
+</ol></div>
+    </div>
     
   </section>
   

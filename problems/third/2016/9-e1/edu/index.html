@@ -58,8 +58,9 @@
         
         
         
+        
         <span class="sb-chip sb-chip-diff" style="background:#ffffcc;color:#2d2d2d"
-              title="Рутинная задача для эталонного решателя — один стандартный закон, применённый один раз.">Сложность: Лёгкая&#8195;оценка</span>
+              title="Лёгкая — Рутинная задача для эталонного решателя — один стандартный закон, применённый один раз.">1/5</span>
         
         <span class="sb-chip sb-chip-edu">Edu</span>
       </div>
@@ -89,6 +90,12 @@
         <span>Решение</span>
       </a>
       
+      <a class="sb-item" href="/problems/third/2016/9-e1/hints/"
+         >
+        <span class="sb-glyph sb-glyph-h">H</span>
+        <span>Подсказки</span>
+      </a>
+      
       
       <a class="sb-item sb-item-edu on" href="/problems/third/2016/9-e1/edu/"
          aria-current=&#34;page&#34;>
@@ -102,7 +109,9 @@
         </summary>
         <div class="sb-files-menu">
           
-          <span class="sb-file sb-file-none">PDF появятся позже</span>
+          <a href="/problems/third/2016/9-e1/problem.pdf" class="sb-file">Условие — PDF</a>
+          
+          
         </div>
       </details>
     </nav>
@@ -281,11 +290,22 @@
     
     <div class="edu-actions">
       
+      <button type="button" class="btn-reveal btn-reveal-h1" data-target="h1" data-label="Подсказка 1">Подсказка 1</button>
+      
+      <button type="button" class="btn-reveal btn-reveal-h2" data-target="h2" data-label="Подсказка 2">Подсказка 2</button>
+      
+      <button type="button" class="btn-reveal btn-reveal-h3" data-target="h3" data-label="Подсказка 3">Подсказка 3</button>
+      
       <button type="button" class="btn-reveal btn-reveal-s" data-target="solution" data-label="Решение">Решение</button>
       
     </div>
     <div class="edu-bodies">
-      <div class="edu-reveal-body edu-solution" data-body="solution" hidden><p>1.4 Разумно предположить, что скорость вытекания определяется разностью давления на концах трубки, через которую вытекает вода. Давление воды на верхнем срезе верхней трубки примерно равно атмосферному давлению. Поэтому давление на нижнем уровне нижней трубки остается постоянным и не зависящем от уровня жидкости в бутылке.</p>
+      <div class="edu-reveal-body hint-body hint-tint-1" data-body="h1" hidden><p>Подумай, за счёт чего поддерживается постоянная скорость вытекания, несмотря на изменение уровня воды в бутылке.</p></div><div class="edu-reveal-body hint-body hint-tint-2" data-body="h2" hidden><p>Учти, что поток определяется разностью давлений на концах выходной трубки; используйте представление о гидростатическом давлении столба жидкости и о давлении снаружи (атмосферном).</p></div><div class="edu-reveal-body hint-body hint-tint-3" data-body="h3" hidden><ol>
+<li>Определи, какие столбы жидкости создают давление на верхний и нижний концы трубки в бутылке.</li>
+<li>Докажи, что верхний срез верхней трубки имеет давление, близкое к атмосферному, поэтому разность давлений остаётся примерно постоянной при изменении <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="2.009ex" height="1.545ex" role="img" focusable="false" viewBox="0 -683 888 683" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D43B" xlink:href="#MJX-TEX-I-1D43B"></use></g></g></g></svg></mjx-container>.</li>
+<li>Учти возможные дополнительные вклады (например, динамическое давление струи или длина трубки), которые могут изменить эффективную разность давлений.</li>
+<li>Выразите эту качественную зависимость давления (и через неё — расход) из полученной схемы сил/давлений.</li>
+</ol></div><div class="edu-reveal-body edu-solution" data-body="solution" hidden><p>1.4 Разумно предположить, что скорость вытекания определяется разностью давления на концах трубки, через которую вытекает вода. Давление воды на верхнем срезе верхней трубки примерно равно атмосферному давлению. Поэтому давление на нижнем уровне нижней трубки остается постоянным и не зависящем от уровня жидкости в бутылке.</p>
 <p><figure class="md-fig md-fig-float md-fig-float-right" style="--fig-w:38%"><img src="/problems/data/figures/2016-third-exp-9-1/fig3.png" alt="" loading="lazy"></figure></p></div>
     </div>
     

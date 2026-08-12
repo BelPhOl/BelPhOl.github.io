@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Электронный термометр — подсказки — BelPhO</title>
+  <meta name="description" content="Электронный термометр — Республиканская олимпиада 2015, 10 класс, задача Э1. Три уровня подсказок.">
+  <link rel="canonical" href="https://belpho.org/problems/final/2015/10-e1/hints/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BelPhO">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:url" content="https://belpho.org/problems/final/2015/10-e1/hints/">
+  <meta property="og:title" content="Электронный термометр — подсказки — BelPhO">
+  <meta property="og:description" content="Электронный термометр — Республиканская олимпиада 2015, 10 класс, задача Э1. Три уровня подсказок.">
+  
+  <meta property="og:image" content="https://belpho.org/problems/thumbs/og/final-2015.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/css/platform.css">
+</head>
+<body>
+<svg id="mjx-glyph-cache" aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden"><defs><path id="MJX-TEX-I-1D461" d="M26 385Q19 392 19 395Q19 399 22 411T27 425Q29 430 36 430T87 431H140L159 511Q162 522 166 540T173 566T179 586T187 603T197 615T211 624T229 626Q247 625 254 615T261 596Q261 589 252 549T232 470L222 433Q222 431 272 431H323Q330 424 330 420Q330 398 317 385H210L174 240Q135 80 135 68Q135 26 162 26Q197 26 230 60T283 144Q285 150 288 151T303 153H307Q322 153 322 145Q322 142 319 133Q314 117 301 95T267 48T216 6T155 -11Q125 -11 98 4T59 56Q57 64 57 83V101L92 241Q127 382 128 383Q128 385 77 385H26Z"></path><path id="MJX-TEX-N-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path><path id="MJX-TEX-I-1D70F" d="M39 284Q18 284 18 294Q18 301 45 338T99 398Q134 425 164 429Q170 431 332 431Q492 431 497 429Q517 424 517 402Q517 388 508 376T485 360Q479 358 389 358T299 356Q298 355 283 274T251 109T233 20Q228 5 215 -4T186 -13Q153 -13 153 20V30L203 192Q214 228 227 272T248 336L254 357Q254 358 208 358Q206 358 197 358T183 359Q105 359 61 295Q56 287 53 286T39 284Z"></path><path id="MJX-TEX-N-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path><path id="MJX-TEX-N-2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path></defs></svg>
+<header class="site-header">
+  <div class="container header-content">
+    <a href="/" class="logo">
+      <img src="/img/logo.png" alt="BelPhO" class="logo-img" width="36" height="36">
+      <span>BelPhO</span>
+    </a>
+    <nav class="site-nav" aria-label="Основная навигация">
+      <ul class="nav-links">
+        <li><a href="/">Главная</a></li>
+        <li><a href="/problems/" class="active">Задачи</a></li>
+        <li><a href="/books/">Книги</a></li>
+        <li><a href="/training-program.html">Подготовка</a></li>
+        <li><a href="/alumni.html">Выпускники</a></li>
+        <li><a href="/news/">Новости</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<main class="p-shell">
+  <div class="p-layout">
+    
+<aside class="p-sidebar" id="p-sidebar" data-problem-id="2015-final-exp-10-1">
+  <div class="sb-card">
+    <div class="sb-head">
+      <div class="sb-crumb"><a href="/problems/final/">Республиканская</a>&#8195;<a href="/problems/final/2015/">2015</a></div>
+      <h1 class="sb-title">Электронный термометр</h1>
+      <div class="sb-meta">
+        <span class="sb-chip">10 класс</span>
+        <span class="sb-chip sb-chip-num">№ Э1</span>
+        
+        
+        
+        
+        
+        <span class="sb-chip sb-chip-diff" style="background:#ffffcc;color:#2d2d2d"
+              title="Лёгкая — Рутинная задача для эталонного решателя — один стандартный закон, применённый один раз.">1/5</span>
+        
+        
+      </div>
+      
+      
+      <nav class="sb-siblings" aria-label="Другие задачи этого тура">
+        <span class="sb-sib-arrow is-disabled" aria-hidden="true">‹</span>
+        <span class="sb-sib-list">
+          <a class="sb-sib is-current" href="/problems/final/2015/10-e1/" aria-current=&#34;page&#34;>10.1</a><a class="sb-sib" href="/problems/final/2015/10-e2/">10.2</a>
+        </span>
+        <a class="sb-sib-arrow" href="/problems/final/2015/10-e2/" aria-label="Следующая задача">›</a>
+        
+      </nav>
+      
+    </div>
+    <nav class="sb-nav" aria-label="Разделы задачи">
+      
+      <a class="sb-item" href="/problems/final/2015/10-e1/"
+         >
+        <span class="sb-glyph sb-glyph-t">T</span>
+        <span>Условие</span>
+      </a>
+      
+      <a class="sb-item" href="/problems/final/2015/10-e1/solution/"
+         >
+        <span class="sb-glyph sb-glyph-s">S</span>
+        <span>Решение</span>
+      </a>
+      
+      <a class="sb-item on" href="/problems/final/2015/10-e1/hints/"
+         aria-current=&#34;page&#34;>
+        <span class="sb-glyph sb-glyph-h">H</span>
+        <span>Подсказки</span>
+      </a>
+      
+      
+      <a class="sb-item sb-item-edu" href="/problems/final/2015/10-e1/edu/"
+         >
+        <span class="sb-glyph sb-glyph-e">E</span>
+        <span>Режим тренировки</span>
+      </a>
+      
+      <details class="sb-files" id="sb-files">
+        <summary class="sb-item sb-item-files">
+          <span class="sb-glyph sb-glyph-f">▾</span><span>Файлы</span>
+        </summary>
+        <div class="sb-files-menu">
+          
+          <a href="/problems/final/2015/10-e1/problem.pdf" class="sb-file">Условие — PDF</a>
+          
+          
+        </div>
+      </details>
+    </nav>
+    
+  </div>
+</aside>
+
+    <div class="p-main" id="p-main">
+      <div class="page-head">
+  <h2 class="page-title">Подсказки</h2>
+  <span class="page-sub">Открывайте по одной — попробуйте продвинуться после каждой, прежде чем открывать следующую.</span>
+</div>
+
+
+<p class="note-unofficial">Подсказки сгенерированы автоматически и проверены редакцией.</p>
+
+
+<div id="hints-root" data-problem-id="2015-final-exp-10-1">
+
+  <section class="subq-card hints-card" data-part="1.1">
+    <header class="subq-head subq-head-split">
+      <span class="subq-pill">1.1</span>
+      
+    </header>
+    <div class="hint-list">
+      
+      <details class="hint hint-1" data-hint="h1">
+        <summary>
+          <span class="hint-glyph">H1</span>
+          <span class="hint-name">Направление</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><p>Наблюдаешь, как меняется показание при погружении в тёплую воду — подумай, как ведёт себя температура датчика по сравнению с температурой воды; сделай рисунок и собери табличные данные по времени.</p></div>
+      </details>
+      
+      <details class="hint hint-2" data-hint="h2">
+        <summary>
+          <span class="hint-glyph">H2</span>
+          <span class="hint-name">Ключевой шаг</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><p>Запиши уравнение теплового баланса для термометра при обмене теплом с водой (в форме закона Ньютона о теплообмене с учётом теплоёмкости).</p></div>
+      </details>
+      
+      <details class="hint hint-3" data-hint="h3">
+        <summary>
+          <span class="hint-glyph">H3</span>
+          <span class="hint-name">Почти решение</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><ol>
+<li>Измерь и запиши значения <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.72ex;" xmlns="http://www.w3.org/2000/svg" width="5.854ex" height="2.417ex" role="img" focusable="false" viewBox="0 -750 2587.5 1068.2" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D461" xlink:href="#MJX-TEX-I-1D461"></use></g><g data-mml-node="TeXAtom" transform="translate(394,-176.7) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">э</text></g><g data-mml-node="mi" transform="translate(600,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">л</text></g></g></g><g data-mml-node="mo" transform="translate(1292.5,0)"><use data-c="28" xlink:href="#MJX-TEX-N-28"></use></g><g data-mml-node="mi" transform="translate(1681.5,0)"><use data-c="1D70F" xlink:href="#MJX-TEX-I-1D70F"></use></g><g data-mml-node="mo" transform="translate(2198.5,0)"><use data-c="29" xlink:href="#MJX-TEX-N-29"></use></g></g></g></svg></mjx-container> через равные интервалы времени.</li>
+<li>Построй график <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.72ex;" xmlns="http://www.w3.org/2000/svg" width="5.854ex" height="2.417ex" role="img" focusable="false" viewBox="0 -750 2587.5 1068.2" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D461" xlink:href="#MJX-TEX-I-1D461"></use></g><g data-mml-node="TeXAtom" transform="translate(394,-176.7) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">э</text></g><g data-mml-node="mi" transform="translate(600,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">л</text></g></g></g><g data-mml-node="mo" transform="translate(1292.5,0)"><use data-c="28" xlink:href="#MJX-TEX-N-28"></use></g><g data-mml-node="mi" transform="translate(1681.5,0)"><use data-c="1D70F" xlink:href="#MJX-TEX-I-1D70F"></use></g><g data-mml-node="mo" transform="translate(2198.5,0)"><use data-c="29" xlink:href="#MJX-TEX-N-29"></use></g></g></g></svg></mjx-container> и визуально оцени, когда показания перестают существенно меняться.</li>
+<li>Предположи экспоненциальный подход к установившейся температуре и линейно преобразуй данные (например, по логарифму отклонения от установившейся температуры).</li>
+<li>По полученной системе определений выразите постоянную времени процесса (\tau) из полученных данных.</li>
+</ol></div>
+      </details>
+      
+    </div>
+  </section>
+
+  <section class="subq-card hints-card" data-part="1.2">
+    <header class="subq-head subq-head-split">
+      <span class="subq-pill">1.2</span>
+      
+    </header>
+    <div class="hint-list">
+      
+      <details class="hint hint-1" data-hint="h1">
+        <summary>
+          <span class="hint-glyph">H1</span>
+          <span class="hint-name">Направление</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><p>Сравни скорость установления показаний в воздухе с ситуацией в воде — обрати внимание на порядок времени и на критерий «установившегося» значения; подготовь таблицу и график. </p></div>
+      </details>
+      
+      <details class="hint hint-2" data-hint="h2">
+        <summary>
+          <span class="hint-glyph">H2</span>
+          <span class="hint-name">Ключевой шаг</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><p>Опять используй уравнение Ньютона для теплообмена термометра с окружающим воздухом; теплоёмкость термометра остаётся той же. </p></div>
+      </details>
+      
+      <details class="hint hint-3" data-hint="h3">
+        <summary>
+          <span class="hint-glyph">H3</span>
+          <span class="hint-name">Почти решение</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><ol>
+<li>Запиши экспериментальные пары <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.72ex;" xmlns="http://www.w3.org/2000/svg" width="6.86ex" height="2.417ex" role="img" focusable="false" viewBox="0 -750 3032.2 1068.2" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><use data-c="28" xlink:href="#MJX-TEX-N-28"></use></g><g data-mml-node="mi" transform="translate(389,0)"><use data-c="1D70F" xlink:href="#MJX-TEX-I-1D70F"></use></g><g data-mml-node="mo" transform="translate(906,0)"><use data-c="2C" xlink:href="#MJX-TEX-N-2C"></use></g><g data-mml-node="msub" transform="translate(1350.7,0)"><g data-mml-node="mi"><use data-c="1D461" xlink:href="#MJX-TEX-I-1D461"></use></g><g data-mml-node="TeXAtom" transform="translate(394,-176.7) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">э</text></g><g data-mml-node="mi" transform="translate(600,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">л</text></g></g></g><g data-mml-node="mo" transform="translate(2643.2,0)"><use data-c="29" xlink:href="#MJX-TEX-N-29"></use></g></g></g></svg></mjx-container> при охлаждении в воздухе.</li>
+<li>Построй график <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.72ex;" xmlns="http://www.w3.org/2000/svg" width="5.854ex" height="2.417ex" role="img" focusable="false" viewBox="0 -750 2587.5 1068.2" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D461" xlink:href="#MJX-TEX-I-1D461"></use></g><g data-mml-node="TeXAtom" transform="translate(394,-176.7) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">э</text></g><g data-mml-node="mi" transform="translate(600,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">л</text></g></g></g><g data-mml-node="mo" transform="translate(1292.5,0)"><use data-c="28" xlink:href="#MJX-TEX-N-28"></use></g><g data-mml-node="mi" transform="translate(1681.5,0)"><use data-c="1D70F" xlink:href="#MJX-TEX-I-1D70F"></use></g><g data-mml-node="mo" transform="translate(2198.5,0)"><use data-c="29" xlink:href="#MJX-TEX-N-29"></use></g></g></g></svg></mjx-container> и выбери критерий установления показаний (например, отклонение от комнатной температуры меньше заданного порога).</li>
+<li>Если предполагаешь экспоненциальную залежность, построй график преобразования для оценки временной константы (линейная аппроксимация в подходящей системе координат).</li>
+<li>По полученной системе определите постоянную времени охлаждения и выразите её из полученных данных.</li>
+</ol></div>
+      </details>
+      
+    </div>
+  </section>
+
+  <section class="subq-card hints-card" data-part="3.1">
+    <header class="subq-head subq-head-split">
+      <span class="subq-pill">3.1</span>
+      
+    </header>
+    <div class="hint-list">
+      
+      <details class="hint hint-1" data-hint="h1">
+        <summary>
+          <span class="hint-glyph">H1</span>
+          <span class="hint-name">Направление</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><p>Вспомни, что показали эксперименты о зависимости показаний от глубины погружения и о времени установления показаний — какие практические последствия можно из этого извлечь?</p></div>
+      </details>
+      
+      <details class="hint hint-2" data-hint="h2">
+        <summary>
+          <span class="hint-glyph">H2</span>
+          <span class="hint-name">Ключевой шаг</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><p>Опирайся на результаты измерений и на поведение термометра, описанное в уравнении теплового баланса, чтобы сформулировать рекомендации по глубине погружения и времени ожидания при измерении жидкости и воздуха.</p></div>
+      </details>
+      
+      <details class="hint hint-3" data-hint="h3">
+        <summary>
+          <span class="hint-glyph">H3</span>
+          <span class="hint-name">Почти решение</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><ol>
+<li>Суммируй наблюдения по влиянию глубины на расхождение между электронным и спиртовым термометрами.</li>
+<li>Суммируй наблюдения по времени установления показаний в воде и в воздухе.</li>
+<li>Сформулируй две практические рекомендации для пользования электронным термометром на базе этих наблюдений (по глубине погружения и по времени ожидания).</li>
+<li>Из полученной совокупности экспериментальных выводов выразите требуемую глубину погружения и требуемое время ожидания из полученной системы наблюдений.</li>
+</ol></div>
+      </details>
+      
+    </div>
+  </section>
+
+</div>
+
+
+
+<div class="page-next">
+  <a class="btn btn-ghost" href="/problems/final/2015/10-e1/">← Условие</a>
+  <a class="btn btn-primary" href="/problems/final/2015/10-e1/solution/">Смотреть решение →</a>
+</div>
+
+
+
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© 2026 BelPhO — Белорусские физические олимпиады</span>
+    <span class="footer-links">
+      <a href="/problems/">Задачи</a>
+      <a href="https://t.me/belpho_by" rel="noopener">Telegram</a>
+    </span>
+  </div>
+</footer>
+
+
+<script type="module" src="/js/site/problem-page.js"></script>
+
+</body>
+</html>

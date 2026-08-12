@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Изгиб поверхности — подсказки — BelPhO</title>
+  <meta name="description" content="Изгиб поверхности — Городская олимпиада (3-й этап) 2021, 10 класс, задача Э1. Три уровня подсказок.">
+  <link rel="canonical" href="https://belpho.org/problems/third/2021/10-e1/hints/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BelPhO">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:url" content="https://belpho.org/problems/third/2021/10-e1/hints/">
+  <meta property="og:title" content="Изгиб поверхности — подсказки — BelPhO">
+  <meta property="og:description" content="Изгиб поверхности — Городская олимпиада (3-й этап) 2021, 10 класс, задача Э1. Три уровня подсказок.">
+  
+  <meta property="og:image" content="https://belpho.org/problems/thumbs/og/third-2021.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/css/platform.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-content">
+    <a href="/" class="logo">
+      <img src="/img/logo.png" alt="BelPhO" class="logo-img" width="36" height="36">
+      <span>BelPhO</span>
+    </a>
+    <nav class="site-nav" aria-label="Основная навигация">
+      <ul class="nav-links">
+        <li><a href="/">Главная</a></li>
+        <li><a href="/problems/" class="active">Задачи</a></li>
+        <li><a href="/books/">Книги</a></li>
+        <li><a href="/training-program.html">Подготовка</a></li>
+        <li><a href="/alumni.html">Выпускники</a></li>
+        <li><a href="/news/">Новости</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<main class="p-shell">
+  <div class="p-layout">
+    
+<aside class="p-sidebar" id="p-sidebar" data-problem-id="2021-third-exp-10-1">
+  <div class="sb-card">
+    <div class="sb-head">
+      <div class="sb-crumb"><a href="/problems/third/">Городская</a>&#8195;<a href="/problems/third/2021/">2021</a></div>
+      <h1 class="sb-title">Изгиб поверхности</h1>
+      <div class="sb-meta">
+        <span class="sb-chip">10 класс</span>
+        <span class="sb-chip sb-chip-num">№ Э1</span>
+        
+        
+        
+        
+        
+        <span class="sb-chip sb-chip-diff" style="background:#ffffcc;color:#2d2d2d"
+              title="Лёгкая — Рутинная задача для эталонного решателя — один стандартный закон, применённый один раз.">1/5</span>
+        
+        
+      </div>
+      
+      
+      <nav class="sb-siblings" aria-label="Другие задачи этого тура">
+        <span class="sb-sib-arrow is-disabled" aria-hidden="true">‹</span>
+        <span class="sb-sib-list">
+          <a class="sb-sib is-current" href="/problems/third/2021/10-e1/" aria-current=&#34;page&#34;>10.1</a><a class="sb-sib" href="/problems/third/2021/10-e2/">10.2</a>
+        </span>
+        <a class="sb-sib-arrow" href="/problems/third/2021/10-e2/" aria-label="Следующая задача">›</a>
+        
+      </nav>
+      
+    </div>
+    <nav class="sb-nav" aria-label="Разделы задачи">
+      
+      <a class="sb-item" href="/problems/third/2021/10-e1/"
+         >
+        <span class="sb-glyph sb-glyph-t">T</span>
+        <span>Условие</span>
+      </a>
+      
+      <a class="sb-item" href="/problems/third/2021/10-e1/solution/"
+         >
+        <span class="sb-glyph sb-glyph-s">S</span>
+        <span>Решение</span>
+      </a>
+      
+      <a class="sb-item on" href="/problems/third/2021/10-e1/hints/"
+         aria-current=&#34;page&#34;>
+        <span class="sb-glyph sb-glyph-h">H</span>
+        <span>Подсказки</span>
+      </a>
+      
+      
+      <a class="sb-item sb-item-edu" href="/problems/third/2021/10-e1/edu/"
+         >
+        <span class="sb-glyph sb-glyph-e">E</span>
+        <span>Режим тренировки</span>
+      </a>
+      
+      <details class="sb-files" id="sb-files">
+        <summary class="sb-item sb-item-files">
+          <span class="sb-glyph sb-glyph-f">▾</span><span>Файлы</span>
+        </summary>
+        <div class="sb-files-menu">
+          
+          <a href="/problems/third/2021/10-e1/problem.pdf" class="sb-file">Условие — PDF</a>
+          
+          
+        </div>
+      </details>
+    </nav>
+    
+  </div>
+</aside>
+
+    <div class="p-main" id="p-main">
+      <div class="page-head">
+  <h2 class="page-title">Подсказки</h2>
+  <span class="page-sub">Открывайте по одной — попробуйте продвинуться после каждой, прежде чем открывать следующую.</span>
+</div>
+
+
+<p class="note-unofficial">Подсказки сгенерированы автоматически и проверены редакцией.</p>
+
+
+<div id="hints-root" data-problem-id="2021-third-exp-10-1">
+
+  <section class="subq-card hints-card" data-part="1.1">
+    <header class="subq-head subq-head-split">
+      <span class="subq-pill">1.1</span>
+      
+    </header>
+    <div class="hint-list">
+      
+      <details class="hint hint-1" data-hint="h1">
+        <summary>
+          <span class="hint-glyph">H1</span>
+          <span class="hint-name">Направление</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><p>Наблюдай, при каком минимальном наклоне монета начинает устойчиво скользить по бумаге. Подумай, как уменьшить случайную погрешность наблюдения.</p></div>
+      </details>
+      
+      <details class="hint hint-2" data-hint="h2">
+        <summary>
+          <span class="hint-glyph">H2</span>
+          <span class="hint-name">Ключевой шаг</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><p>Воспользуйся условием равновесия сил в момент начала скольжения: максимальная сила трения сравнивается с касательной компонентой веса монеты.</p></div>
+      </details>
+      
+      <details class="hint hint-3" data-hint="h3">
+        <summary>
+          <span class="hint-glyph">H3</span>
+          <span class="hint-name">Почти решение</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><ol>
+<li>Установи дощечку и плавно увеличивай угол наклона до появления скольжения.</li>
+<li>Для каждой попытки зафиксируй значение угла по транспорту и повтори измерение несколько раз.</li>
+<li>Оцени случайную погрешность по разбросу значений и учти систематическую погрешность прибора.</li>
+<li>Вырази угол α0 как среднее измерений с оценкой погрешности.</li>
+</ol></div>
+      </details>
+      
+    </div>
+  </section>
+
+  <section class="subq-card hints-card" data-part="1.2">
+    <header class="subq-head subq-head-split">
+      <span class="subq-pill">1.2</span>
+      
+    </header>
+    <div class="hint-list">
+      
+      <details class="hint hint-1" data-hint="h1">
+        <summary>
+          <span class="hint-glyph">H1</span>
+          <span class="hint-name">Направление</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><p>Подумай, как связать измеренный критический угол с величиной коэффициента трения между монетой и бумагой.</p></div>
+      </details>
+      
+      <details class="hint hint-2" data-hint="h2">
+        <summary>
+          <span class="hint-glyph">H2</span>
+          <span class="hint-name">Ключевой шаг</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><p>Используй условие начала скольжения — равенство максимальной силы трения и касательной компоненты силы тяжести — и запиши соответствующее уравнение сил.</p></div>
+      </details>
+      
+      <details class="hint hint-3" data-hint="h3">
+        <summary>
+          <span class="hint-glyph">H3</span>
+          <span class="hint-name">Почти решение</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><ol>
+<li>Запиши уравнение равновесия сил в момент начала скольжения (максимальная трение = касательная компонента веса).</li>
+<li>Приведи это уравнение к виду, где появляется искомая величина μ (алгебраически выдели μ).</li>
+<li>Подставь в полученное выражение среднее значение α0 и получи численное значение μ1.</li>
+<li>Вырази μ1 из полученной системы.</li>
+</ol></div>
+      </details>
+      
+    </div>
+  </section>
+
+  <section class="subq-card hints-card" data-part="1.3">
+    <header class="subq-head subq-head-split">
+      <span class="subq-pill">1.3</span>
+      
+    </header>
+    <div class="hint-list">
+      
+      <details class="hint hint-1" data-hint="h1">
+        <summary>
+          <span class="hint-glyph">H1</span>
+          <span class="hint-name">Направление</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><p>Какие источники погрешности влияют на измерение μ: инструментальные (транспортир), статистические (разброс), систематические (неидеальная укладка бумаги)?</p></div>
+      </details>
+      
+      <details class="hint hint-2" data-hint="h2">
+        <summary>
+          <span class="hint-glyph">H2</span>
+          <span class="hint-name">Ключевой шаг</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><p>Оцени погрешность методом распространения ошибок: используй погрешности измерения угла и случайную дисперсию результатов при повторениях.</p></div>
+      </details>
+      
+      <details class="hint hint-3" data-hint="h3">
+        <summary>
+          <span class="hint-glyph">H3</span>
+          <span class="hint-name">Почти решение</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><ol>
+<li>Определи погрешность Δα — сочетание разрешения транспортира и стандартного отклонения измерений.</li>
+<li>Выпиши зависимость μ от α из предыдущего пункта и вычисли производную dμ/dα для оценки влияния Δα.</li>
+<li>Применяя правило распространения ошибок, вычисли Δμ ≈ |dμ/dα|·Δα и при необходимости добавь вклад систематических погрешностей.</li>
+<li>Вырази погрешность Δμ и относительную погрешность Δμ/μ.</li>
+</ol></div>
+      </details>
+      
+    </div>
+  </section>
+
+  <section class="subq-card hints-card" data-part="2.1.1">
+    <header class="subq-head subq-head-split">
+      <span class="subq-pill">2.1.1</span>
+      
+    </header>
+    <div class="hint-list">
+      
+      <details class="hint hint-1" data-hint="h1">
+        <summary>
+          <span class="hint-glyph">H1</span>
+          <span class="hint-name">Направление</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><p>Подумай, откуда монета получает энергию для сдвига по горизонтали и какие силы делают отрицательную работу.</p></div>
+      </details>
+      
+      <details class="hint hint-2" data-hint="h2">
+        <summary>
+          <span class="hint-glyph">H2</span>
+          <span class="hint-name">Ключевой шаг</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><p>Запиши закон сохранения энергии с учётом работы силы трения: падение потенциальной энергии равно сумме работ, потерь механической энергии на всём пути.</p></div>
+      </details>
+      
+      <details class="hint hint-3" data-hint="h3">
+        <summary>
+          <span class="hint-glyph">H3</span>
+          <span class="hint-name">Почти решение</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><ol>
+<li>Запиши изменение потенциальной энергии монеты при спуске с высоты h.</li>
+<li>Запиши работу силы трения на всем пробеге в горизонтальном направлении (интеграл силы трения по пути).</li>
+<li>Сравни падение потенциальной энергии с работой трения и сведи уравнение к соотношению между L и h.</li>
+<li>Вырази L(h) из полученной системы (получишь функциональную связь между L и h).</li>
+</ol></div>
+      </details>
+      
+    </div>
+  </section>
+
+  <section class="subq-card hints-card" data-part="2.1.2">
+    <header class="subq-head subq-head-split">
+      <span class="subq-pill">2.1.2</span>
+      
+    </header>
+    <div class="hint-list">
+      
+      <details class="hint hint-1" data-hint="h1">
+        <summary>
+          <span class="hint-glyph">H1</span>
+          <span class="hint-name">Направление</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><p>Проверь, какие параметры входили в вывод зависимости L(h) и может ли в них фигурировать угол наклона α.</p></div>
+      </details>
+      
+      <details class="hint hint-2" data-hint="h2">
+        <summary>
+          <span class="hint-glyph">H2</span>
+          <span class="hint-name">Ключевой шаг</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><p>Проанализируй уравнение сохранения энергии и работу трения: выясни, зависит ли итоговая связь от геометрии наклонной части (угла α) при пренебрежении дополнительными потерями.</p></div>
+      </details>
+      
+      <details class="hint hint-3" data-hint="h3">
+        <summary>
+          <span class="hint-glyph">H3</span>
+          <span class="hint-name">Почти решение</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><ol>
+<li>Проследи, как в выводе L(h) проявляются длины участков траектории и нормальная реакция поверхности.</li>
+<li>Покажи алгебраически, что при выбранных допущениях зависимость L(h) не содержит параметра α (он сокращается или не входит).</li>
+<li>Сделай заключение о зависимости (или независимости) L(h) от угла наклона.</li>
+<li>Вырази, изменяется ли L(h) при изменении α из полученной системы.</li>
+</ol></div>
+      </details>
+      
+    </div>
+  </section>
+
+  <section class="subq-card hints-card" data-part="2.2.1">
+    <header class="subq-head subq-head-split">
+      <span class="subq-pill">2.2.1</span>
+      
+    </header>
+    <div class="hint-list">
+      
+      <details class="hint hint-1" data-hint="h1">
+        <summary>
+          <span class="hint-glyph">H1</span>
+          <span class="hint-name">Направление</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><p>Организуй измерения так, чтобы при каждом фиксированном значении начальной высоты h получить несколько повторов L для усреднения.</p></div>
+      </details>
+      
+      <details class="hint hint-2" data-hint="h2">
+        <summary>
+          <span class="hint-glyph">H2</span>
+          <span class="hint-name">Ключевой шаг</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><p>Запиши процедуру измерений и фиксируй значение угла наклона α, при котором проводишь серию опытов.</p></div>
+      </details>
+      
+      <details class="hint hint-3" data-hint="h3">
+        <summary>
+          <span class="hint-glyph">H3</span>
+          <span class="hint-name">Почти решение</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><ol>
+<li>Выбери и зафиксируй значение α, замерь его синус или угол и запиши в протокол.</li>
+<li>Для набора начальных высот h последовательно отпускай монету и измеряй горизонтальное смещение L несколько раз для каждой h.</li>
+<li>Вычисли средние значения L и соответствующие h и составь таблицу результатов.</li>
+<li>Вырази зафиксированный угол α и полученную серию пар (h,L) для дальнейшего анализа.</li>
+</ol></div>
+      </details>
+      
+    </div>
+  </section>
+
+  <section class="subq-card hints-card" data-part="2.2.2">
+    <header class="subq-head subq-head-split">
+      <span class="subq-pill">2.2.2</span>
+      
+    </header>
+    <div class="hint-list">
+      
+      <details class="hint hint-1" data-hint="h1">
+        <summary>
+          <span class="hint-glyph">H1</span>
+          <span class="hint-name">Направление</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><p>Построй график L по оси вертикали и h по оси горизонтали; сначала нанесите средние значения для каждой точки.</p></div>
+      </details>
+      
+      <details class="hint hint-2" data-hint="h2">
+        <summary>
+          <span class="hint-glyph">H2</span>
+          <span class="hint-name">Ключевой шаг</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><p>Используй стандартный графический приём: точки данных на плоскости (h,L) и затем визуально оцени линейность.</p></div>
+      </details>
+      
+      <details class="hint hint-3" data-hint="h3">
+        <summary>
+          <span class="hint-glyph">H3</span>
+          <span class="hint-name">Почти решение</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><ol>
+<li>Отметь на осях единицы измерения и масштаб, размести точки (h,L).</li>
+<li>Проведи ориентирующую прямую, визуально проверь, можно ли считать зависимость линейной.</li>
+<li>Проведи исключение явных выбросов и обсуди их возможные причины.</li>
+<li>Вырази результат построения графика — набор точек и предварительную оценку линейности.</li>
+</ol></div>
+      </details>
+      
+    </div>
+  </section>
+
+  <section class="subq-card hints-card" data-part="2.2.3">
+    <header class="subq-head subq-head-split">
+      <span class="subq-pill">2.2.3</span>
+      
+    </header>
+    <div class="hint-list">
+      
+      <details class="hint hint-1" data-hint="h1">
+        <summary>
+          <span class="hint-glyph">H1</span>
+          <span class="hint-name">Направление</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><p>Аппроксимируй зависимость L(h) линейной функцией и оцени параметры методом наименьших квадратов.</p></div>
+      </details>
+      
+      <details class="hint hint-2" data-hint="h2">
+        <summary>
+          <span class="hint-glyph">H2</span>
+          <span class="hint-name">Ключевой шаг</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><p>Применяй МНК для прямой L= a h + b: выпиши нормальные уравнения и формулы для оценки a и b и их стандартных погрешностей.</p></div>
+      </details>
+      
+      <details class="hint hint-3" data-hint="h3">
+        <summary>
+          <span class="hint-glyph">H3</span>
+          <span class="hint-name">Почти решение</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><ol>
+<li>Вычисли суммы ∑h, ∑L, ∑hL, ∑h^2 по набору данных.</li>
+<li>Подставь эти суммы в нормальные уравнения МНК и реши их для получения оценок a и b.</li>
+<li>Оцени стандартные отклонения оценок a и b из остатков и числа степеней свободы.</li>
+<li>Вырази найденные параметры a и b и их погрешности (не выполняя численных подстановок здесь).</li>
+</ol></div>
+      </details>
+      
+    </div>
+  </section>
+
+  <section class="subq-card hints-card" data-part="2.2.5">
+    <header class="subq-head subq-head-split">
+      <span class="subq-pill">2.2.5</span>
+      
+    </header>
+    <div class="hint-list">
+      
+      <details class="hint hint-1" data-hint="h1">
+        <summary>
+          <span class="hint-glyph">H1</span>
+          <span class="hint-name">Направление</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><p>Сравни полученные экспериментальные значения μ из части 1 и части 2 и проследи, насколько экспериментальное поведение L(h) согласуется с теорией.</p></div>
+      </details>
+      
+      <details class="hint hint-2" data-hint="h2">
+        <summary>
+          <span class="hint-glyph">H2</span>
+          <span class="hint-name">Ключевой шаг</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><p>Сравни численные оценки и их погрешности; проанализируй возможные причины расхождений (дополнительные потери, различие статического/динамического μ).</p></div>
+      </details>
+      
+      <details class="hint hint-3" data-hint="h3">
+        <summary>
+          <span class="hint-glyph">H3</span>
+          <span class="hint-name">Почти решение</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><ol>
+<li>Сравни значение μ1 из прямого измерения и μ из аппроксимации L(h) с учётом погрешностей.</li>
+<li>Проанализируй, совпадают ли значения внутри погрешностей и в какую сторону наблюдается смещение.</li>
+<li>Сформулируй вывод о подтверждении или опровержении теоретической формулы и укажи возможные физические причины расхождений.</li>
+<li>Вырази заключение о том, подтверждают ли данные теорию и совпадают ли значения коэффициентов трения.</li>
+</ol></div>
+      </details>
+      
+    </div>
+  </section>
+
+  <section class="subq-card hints-card" data-part="2.3.1">
+    <header class="subq-head subq-head-split">
+      <span class="subq-pill">2.3.1</span>
+      
+    </header>
+    <div class="hint-list">
+      
+      <details class="hint hint-1" data-hint="h1">
+        <summary>
+          <span class="hint-glyph">H1</span>
+          <span class="hint-name">Направление</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><p>Подумай, как кривизна переходного участка изменяет нормальную силу и какие силы совершают дополнительную работу (потери энергии).</p></div>
+      </details>
+      
+      <details class="hint hint-2" data-hint="h2">
+        <summary>
+          <span class="hint-glyph">H2</span>
+          <span class="hint-name">Ключевой шаг</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><p>Оцени дополнительные потери, считая участок изгиба дугой окружности радиуса R: используйте приближённую оценку работы центростремительных сил, учитывая кинетическую энергию на входе в дугу.</p></div>
+      </details>
+      
+      <details class="hint hint-3" data-hint="h3">
+        <summary>
+          <span class="hint-glyph">H3</span>
+          <span class="hint-name">Почти решение</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><ol>
+<li>Аппроксимируй кривой участок дугой радиуса R и длиной Rα (угол α дуги).</li>
+<li>Оцени центростремительную силу как mv^2/R и умножь на длину дуги, чтобы получить порядок величины потерь ΔE.</li>
+<li>Свяжи скорость v через энерговый баланс на доинтегральном участке (используй выражение для v через h и трение без учета кривизны).</li>
+<li>Вырази дополнительную потерю ΔE как функцию v (и, через предыдущую связь, как функцию начальной высоты h).</li>
+</ol></div>
+      </details>
+      
+    </div>
+  </section>
+
+  <section class="subq-card hints-card" data-part="2.3.2">
+    <header class="subq-head subq-head-split">
+      <span class="subq-pill">2.3.2</span>
+      
+    </header>
+    <div class="hint-list">
+      
+      <details class="hint hint-1" data-hint="h1">
+        <summary>
+          <span class="hint-glyph">H1</span>
+          <span class="hint-name">Направление</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><p>Подумай, как добавленная потеря ΔE изменит энерговый баланс и следовательно зависимость L(h) и параметры её линейной аппроксимации.</p></div>
+      </details>
+      
+      <details class="hint hint-2" data-hint="h2">
+        <summary>
+          <span class="hint-glyph">H2</span>
+          <span class="hint-name">Ключевой шаг</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><p>Включи ΔE в уравнение сохранения энергии: падение потенциальной энергии равняется сумме работы трения на горизонтали и дополнительной потери на дуге; проанализируй влияние на коэффициент наклона и сдвиг.</p></div>
+      </details>
+      
+      <details class="hint hint-3" data-hint="h3">
+        <summary>
+          <span class="hint-glyph">H3</span>
+          <span class="hint-name">Почти решение</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><ol>
+<li>Запиши скорректированное уравнение энергии: mgh = работа трения по L + ΔE(h).</li>
+<li>Исследуй, как наличие ΔE(h) (обычно пропорционально v^2, а значит функция h) меняет линейность зависимости L(h): появится дополнительный член, нелинейный по h.</li>
+<li>Определи качественно, как это повлияет на параметры линейной аппроксимации (изменение наклона и сдвиг b).</li>
+<li>Вырази, как именно дополнительные потери влияют на наклон и сдвиг линейной аппроксимации в полученной системе.</li>
+</ol></div>
+      </details>
+      
+    </div>
+  </section>
+
+  <section class="subq-card hints-card" data-part="2.3.3">
+    <header class="subq-head subq-head-split">
+      <span class="subq-pill">2.3.3</span>
+      
+    </header>
+    <div class="hint-list">
+      
+      <details class="hint hint-1" data-hint="h1">
+        <summary>
+          <span class="hint-glyph">H1</span>
+          <span class="hint-name">Направление</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><p>Оцени предельный случай малого угла наклона: при каком условии влияние кривизны становится несущественным по сравнению с основной работой трения?</p></div>
+      </details>
+      
+      <details class="hint hint-2" data-hint="h2">
+        <summary>
+          <span class="hint-glyph">H2</span>
+          <span class="hint-name">Ключевой шаг</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><p>Используй выражение для ΔE и для основной работы трения и сравни их масштабы; при α→0 длина дуги и скорость уменьшаются, поэтому вклад ΔE стремится к нулю.</p></div>
+      </details>
+      
+      <details class="hint hint-3" data-hint="h3">
+        <summary>
+          <span class="hint-glyph">H3</span>
+          <span class="hint-name">Почти решение</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><ol>
+<li>Сравни порядок величины ΔE ≈ α m v^2 с работе трения m g μ L (или с m g h в главном балансе).</li>
+<li>Найдёшь условие, при котором ΔE ≪ m g μ L (или ≪ m g h), что даёт критерий малости вклада кривизны (в терминах α, h и R).</li>
+<li>Сформулируй значение α (или условие на α и h), при котором дополнительные потери пренебрежимы.</li>
+<li>Вырази границу малости дополнительной потери (условие для α), выведенную из сравнения масштабов.</li>
+</ol></div>
+      </details>
+      
+    </div>
+  </section>
+
+  <section class="subq-card hints-card" data-part="2.4.1">
+    <header class="subq-head subq-head-split">
+      <span class="subq-pill">2.4.1</span>
+      
+    </header>
+    <div class="hint-list">
+      
+      <details class="hint hint-1" data-hint="h1">
+        <summary>
+          <span class="hint-glyph">H1</span>
+          <span class="hint-name">Направление</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><p>Проведи серии измерений L(h) при нескольких значениях угла α, соблюдая одинаковую методику и повторяемость для каждого α.</p></div>
+      </details>
+      
+      <details class="hint hint-2" data-hint="h2">
+        <summary>
+          <span class="hint-glyph">H2</span>
+          <span class="hint-name">Ключевой шаг</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><p>Для каждого α построй график L(h) по тем же правилам и нанеси все графики на один бланк для сравнения их наклонов.</p></div>
+      </details>
+      
+      <details class="hint hint-3" data-hint="h3">
+        <summary>
+          <span class="hint-glyph">H3</span>
+          <span class="hint-name">Почти решение</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><ol>
+<li>Выбери набор α (включая малые значения) и для каждого α проведи измерения L для набора h, усредни повторения.</li>
+<li>Построй на одном графике кривые L(h) для разных α или по отдельным бланкам, сохраняя масштаб осей.</li>
+<li>Визуально сравни наклоны кривых и отметь тренд при уменьшении α.</li>
+<li>Вырази полученные графики и подготовь данные для вычисления коэффициентов наклона.</li>
+</ol></div>
+      </details>
+      
+    </div>
+  </section>
+
+  <section class="subq-card hints-card" data-part="2.4.3">
+    <header class="subq-head subq-head-split">
+      <span class="subq-pill">2.4.3</span>
+      
+    </header>
+    <div class="hint-list">
+      
+      <details class="hint hint-1" data-hint="h1">
+        <summary>
+          <span class="hint-glyph">H1</span>
+          <span class="hint-name">Направление</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><p>Посмотри на зависимость полученных коэффициентов наклона a от α (или sinα) и представь поведение при α→0.</p></div>
+      </details>
+      
+      <details class="hint hint-2" data-hint="h2">
+        <summary>
+          <span class="hint-glyph">H2</span>
+          <span class="hint-name">Ключевой шаг</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><p>Аппроксимируй зависимость a(α) линейной функцией и экстраполируй её к α=0, чтобы получить «нулевой» наклон, соответствующий отсутствию дополнительных потерь.</p></div>
+      </details>
+      
+      <details class="hint hint-3" data-hint="h3">
+        <summary>
+          <span class="hint-glyph">H3</span>
+          <span class="hint-name">Почти решение</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><ol>
+<li>Построй график a в зависимости от sinα (или α) и проверь на линейность тренда.</li>
+<li>Подбери простую аппроксимацию (линейную) и получи экстраполированное значение a при α→0.</li>
+<li>Оцени устойчивость экстраполяции по разбросу точек и возможным систематическим ошибкам.</li>
+<li>Вырази предельное значение коэффициента наклона a при α→0 из аппроксимации.</li>
+</ol></div>
+      </details>
+      
+    </div>
+  </section>
+
+  <section class="subq-card hints-card" data-part="2.4.4">
+    <header class="subq-head subq-head-split">
+      <span class="subq-pill">2.4.4</span>
+      
+    </header>
+    <div class="hint-list">
+      
+      <details class="hint hint-1" data-hint="h1">
+        <summary>
+          <span class="hint-glyph">H1</span>
+          <span class="hint-name">Направление</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><p>Сравни значение μ, полученное через экстраполированный наклон при α→0, с прямым измерением μ1 из части 1.</p></div>
+      </details>
+      
+      <details class="hint hint-2" data-hint="h2">
+        <summary>
+          <span class="hint-glyph">H2</span>
+          <span class="hint-name">Ключевой шаг</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><p>Используй те же теоретические соотношения, связывающие наклон a и μ, и учитывай, что при α→0 дополнительная потеря ΔE пренебрежима, поэтому экстраполированный a даёт корректную μ.</p></div>
+      </details>
+      
+      <details class="hint hint-3" data-hint="h3">
+        <summary>
+          <span class="hint-glyph">H3</span>
+          <span class="hint-name">Почти решение</span>
+          <span class="hint-arrow" aria-hidden="true">▾</span>
+        </summary>
+        <div class="hint-body"><ol>
+<li>Возьми экстраполированное значение a(α→0) и используй теоретическую связь между a и μ, выведенную в п.2.1.1.</li>
+<li>Сравни полученное таким образом μ с μ1 из части 1 и оцени согласие с учётом погрешностей.</li>
+<li>Сделай заключение о качестве эксперимента и источниках оставшихся расхождений.</li>
+<li>Вырази окончательную оценку μ по всем данным и сравни её со значением из Части 1.</li>
+</ol></div>
+      </details>
+      
+    </div>
+  </section>
+
+</div>
+
+
+
+<div class="page-next">
+  <a class="btn btn-ghost" href="/problems/third/2021/10-e1/">← Условие</a>
+  <a class="btn btn-primary" href="/problems/third/2021/10-e1/solution/">Смотреть решение →</a>
+</div>
+
+
+
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© 2026 BelPhO — Белорусские физические олимпиады</span>
+    <span class="footer-links">
+      <a href="/problems/">Задачи</a>
+      <a href="https://t.me/belpho_by" rel="noopener">Telegram</a>
+    </span>
+  </div>
+</footer>
+
+
+<script type="module" src="/js/site/problem-page.js"></script>
+
+</body>
+</html>

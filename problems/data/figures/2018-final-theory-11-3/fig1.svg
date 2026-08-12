@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="none">
+  <!-- surface with hatching -->
+  <line x1="20" y1="190" x2="300" y2="190" stroke="#1e293b" stroke-width="2.5"/>
+  <g stroke="#64748b" stroke-width="1.4">
+    <line x1="34" y1="204" x2="48" y2="190"/><line x1="62" y1="204" x2="76" y2="190"/>
+    <line x1="90" y1="204" x2="104" y2="190"/><line x1="118" y1="204" x2="132" y2="190"/>
+    <line x1="146" y1="204" x2="160" y2="190"/><line x1="174" y1="204" x2="188" y2="190"/>
+    <line x1="202" y1="204" x2="216" y2="190"/><line x1="230" y1="204" x2="244" y2="190"/>
+    <line x1="258" y1="204" x2="272" y2="190"/>
+  </g>
+  <!-- normal (dashed) -->
+  <line x1="160" y1="190" x2="160" y2="28" stroke="#94a3b8" stroke-width="1.6" stroke-dasharray="7 5"/>
+  <!-- incident ray -->
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#1e293b"/>
+    </marker>
+    <marker id="arrb" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#2563eb"/>
+    </marker>
+  </defs>
+  <line x1="30" y1="40" x2="155" y2="184" stroke="#1e293b" stroke-width="2.4" marker-end="url(#arr)"/>
+  <!-- reflected ray -->
+  <line x1="165" y1="184" x2="290" y2="40" stroke="#2563eb" stroke-width="2.2" marker-end="url(#arrb)"/>
+  <!-- angle arcs -->
+  <path d="M 160 138 A 52 52 0 0 0 129.5 148.3" stroke="#1e293b" stroke-width="1.5"/>
+  <path d="M 190.5 148.3 A 52 52 0 0 0 160 138" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="138" y="128" fill="#1e293b" font-style="italic">&#945;</text>
+  <text x="171" y="128" fill="#2563eb" font-style="italic">&#945;</text>
+  <!-- labels -->
+  <text x="34" y="30" fill="#1e293b" font-style="italic">I</text>
+  <text x="268" y="30" fill="#2563eb" font-style="italic">&#961;I</text>
+  <text x="232" y="222" fill="#475569" font-size="14">&#961; = 0,70</text>
+</svg>

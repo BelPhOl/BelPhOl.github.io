@@ -2352,6 +2352,24 @@ td.md-td-text { text-align: left !important; }
   .pf-head-tight .pf-h1 { font-size: 20px; }
 }
 
+/* Skill filter: sections collapsed by default, leaves on request. 271 leaves
+   listed flat turned the rail into an endless scroll. */
+.pf-tag-sec { border-bottom: 1px solid var(--border-color); }
+.pf-tag-sec:last-child { border-bottom: 0; }
+.pf-tag-sechead {
+  display: flex; align-items: center; justify-content: space-between; gap: 8px;
+  cursor: pointer; list-style: none;
+  padding: 6px 2px; font-size: 12.5px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.05em; color: #64748b;
+}
+.pf-tag-sechead::-webkit-details-marker { display: none; }
+.pf-tag-sechead::before { content: '▸'; font-size: 10px; color: #94a3b8; transition: transform .12s; }
+.pf-tag-sec[open] > .pf-tag-sechead::before { transform: rotate(90deg); }
+.pf-tag-secname { flex: 1; }
+.pf-tag-secn { font-style: normal; color: #94a3b8; font-size: 11.5px; }
+.pf-tag-all { font-weight: 600; color: var(--primary-color); }
+.pf-tag-sec .pf-tag-row { padding-left: 12px; }
+
 
 /* --- MathJax SVG container styles (generated) --- */
 

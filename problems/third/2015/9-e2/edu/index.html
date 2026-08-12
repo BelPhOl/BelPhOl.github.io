@@ -58,8 +58,9 @@
         
         
         
+        
         <span class="sb-chip sb-chip-diff" style="background:#ffffcc;color:#2d2d2d"
-              title="Рутинная задача для эталонного решателя — один стандартный закон, применённый один раз.">Сложность: Лёгкая&#8195;оценка</span>
+              title="Лёгкая — Рутинная задача для эталонного решателя — один стандартный закон, применённый один раз.">1/5</span>
         
         <span class="sb-chip sb-chip-edu">Edu</span>
       </div>
@@ -89,6 +90,12 @@
         <span>Решение</span>
       </a>
       
+      <a class="sb-item" href="/problems/third/2015/9-e2/hints/"
+         >
+        <span class="sb-glyph sb-glyph-h">H</span>
+        <span>Подсказки</span>
+      </a>
+      
       
       <a class="sb-item sb-item-edu on" href="/problems/third/2015/9-e2/edu/"
          aria-current=&#34;page&#34;>
@@ -102,7 +109,9 @@
         </summary>
         <div class="sb-files-menu">
           
-          <span class="sb-file sb-file-none">PDF появятся позже</span>
+          <a href="/problems/third/2015/9-e2/problem.pdf" class="sb-file">Условие — PDF</a>
+          
+          
         </div>
       </details>
     </nav>
@@ -330,11 +339,22 @@
     
     <div class="edu-actions">
       
+      <button type="button" class="btn-reveal btn-reveal-h1" data-target="h1" data-label="Подсказка 1">Подсказка 1</button>
+      
+      <button type="button" class="btn-reveal btn-reveal-h2" data-target="h2" data-label="Подсказка 2">Подсказка 2</button>
+      
+      <button type="button" class="btn-reveal btn-reveal-h3" data-target="h3" data-label="Подсказка 3">Подсказка 3</button>
+      
       <button type="button" class="btn-reveal btn-reveal-s" data-target="solution" data-label="Решение">Решение</button>
       
     </div>
     <div class="edu-bodies">
-      <div class="edu-reveal-body edu-solution" data-body="solution" hidden><p>2.3 Видно, что прямо пропорциональная зависимость между указанными углами наблюдается до углов меньших <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="3.25ex" height="1.649ex" role="img" focusable="false" viewBox="0 -707 1436.6 729" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msup"><g data-mml-node="mn"><use data-c="33" xlink:href="#MJX-TEX-N-33"></use><use data-c="30" xlink:href="#MJX-TEX-N-30" transform="translate(500,0)"></use></g><g data-mml-node="mo" transform="translate(1033,393.1) scale(0.707)"><use data-c="2218" xlink:href="#MJX-TEX-N-2218"></use></g></g></g></g></svg></mjx-container>. Рассчитанный в этом диапазоне (по углу наклона графика) показатель преломления воды оказывается равным <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.439ex;" xmlns="http://www.w3.org/2000/svg" width="8.397ex" height="1.971ex" role="img" focusable="false" viewBox="0 -677 3711.6 871" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D45B" xlink:href="#MJX-TEX-I-1D45B"></use></g><g data-mml-node="mo" transform="translate(877.8,0)"><use data-c="3D" xlink:href="#MJX-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(1933.6,0)"><use data-c="31" xlink:href="#MJX-TEX-N-31"></use></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(2433.6,0)"><g data-mml-node="mo"><use data-c="2C" xlink:href="#MJX-TEX-N-2C"></use></g></g><g data-mml-node="mn" transform="translate(2711.6,0)"><use data-c="33" xlink:href="#MJX-TEX-N-33"></use><use data-c="34" xlink:href="#MJX-TEX-N-34" transform="translate(500,0)"></use></g></g></g></svg></mjx-container>.</p>
+      <div class="edu-reveal-body hint-body hint-tint-1" data-body="h1" hidden><p>Построй график зависимости β(α) и внимательно посмотри, на каком интервале точек кривая выглядит практически прямой. Определи, для каких малых углов связь между углами близка к пропорциональной.</p></div><div class="edu-reveal-body hint-body hint-tint-2" data-body="h2" hidden><p>Воспользуйся законом преломления (Снеллиусом). Для малых углов можно заменить синусы углов их числовыми величинами, что приводит к линейной связи между α и β.</p></div><div class="edu-reveal-body hint-body hint-tint-3" data-body="h3" hidden><ol>
+<li>Выбери на графике диапазон углов, где зависимость β(α) близка к прямой и ограничься им.</li>
+<li>Проведи по выбранным точкам прямую методом наименьших квадратов или подбора, при этом учитывай, что линия должна проходить через начало координат.</li>
+<li>Определи угловой коэффициент этой прямой (отношение β к α в выбранном диапазоне).</li>
+<li>По закону преломления в приближении малых углов вырази показатель преломления воды через полученное отношение, т.е. выразите <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="1.357ex" height="1.025ex" role="img" focusable="false" viewBox="0 -442 600 453" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D45B" xlink:href="#MJX-TEX-I-1D45B"></use></g></g></g></svg></mjx-container> из полученной системы.</li>
+</ol></div><div class="edu-reveal-body edu-solution" data-body="solution" hidden><p>2.3 Видно, что прямо пропорциональная зависимость между указанными углами наблюдается до углов меньших <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="3.25ex" height="1.649ex" role="img" focusable="false" viewBox="0 -707 1436.6 729" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msup"><g data-mml-node="mn"><use data-c="33" xlink:href="#MJX-TEX-N-33"></use><use data-c="30" xlink:href="#MJX-TEX-N-30" transform="translate(500,0)"></use></g><g data-mml-node="mo" transform="translate(1033,393.1) scale(0.707)"><use data-c="2218" xlink:href="#MJX-TEX-N-2218"></use></g></g></g></g></svg></mjx-container>. Рассчитанный в этом диапазоне (по углу наклона графика) показатель преломления воды оказывается равным <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.439ex;" xmlns="http://www.w3.org/2000/svg" width="8.397ex" height="1.971ex" role="img" focusable="false" viewBox="0 -677 3711.6 871" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D45B" xlink:href="#MJX-TEX-I-1D45B"></use></g><g data-mml-node="mo" transform="translate(877.8,0)"><use data-c="3D" xlink:href="#MJX-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(1933.6,0)"><use data-c="31" xlink:href="#MJX-TEX-N-31"></use></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(2433.6,0)"><g data-mml-node="mo"><use data-c="2C" xlink:href="#MJX-TEX-N-2C"></use></g></g><g data-mml-node="mn" transform="translate(2711.6,0)"><use data-c="33" xlink:href="#MJX-TEX-N-33"></use><use data-c="34" xlink:href="#MJX-TEX-N-34" transform="translate(500,0)"></use></g></g></g></svg></mjx-container>.</p>
 <p><strong>Задача 10-1 Хроматография</strong></p></div>
     </div>
     
