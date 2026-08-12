@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Формула тонкой линзы — BelPhO</title>
+  <meta name="description" content="Формула тонкой линзы, линейное увеличение, знаки, действительное и мнимое изображение. — 12 задач белорусских олимпиад по физике.">
+  <link rel="canonical" href="https://belpho.org/problems/topics/formula-tonkoi-linzy/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BelPhO">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:url" content="https://belpho.org/problems/topics/formula-tonkoi-linzy/">
+  <meta property="og:title" content="Формула тонкой линзы — BelPhO">
+  <meta property="og:description" content="Формула тонкой линзы, линейное увеличение, знаки, действительное и мнимое изображение. — 12 задач белорусских олимпиад по физике.">
+  
+  <meta property="og:image" content="https://belpho.org/problems/thumbs/og/problems.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/css/platform.css">
+</head>
+<body>
+<svg id="mjx-glyph-cache" aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden"><defs><path id="MJX-TEX-I-1D434" d="M208 74Q208 50 254 46Q272 46 272 35Q272 34 270 22Q267 8 264 4T251 0Q249 0 239 0T205 1T141 2Q70 2 50 0H42Q35 7 35 11Q37 38 48 46H62Q132 49 164 96Q170 102 345 401T523 704Q530 716 547 716H555H572Q578 707 578 706L606 383Q634 60 636 57Q641 46 701 46Q726 46 726 36Q726 34 723 22Q720 7 718 4T704 0Q701 0 690 0T651 1T578 2Q484 2 455 0H443Q437 6 437 9T439 27Q443 40 445 43L449 46H469Q523 49 533 63L521 213H283L249 155Q208 86 208 74ZM516 260Q516 271 504 416T490 562L463 519Q447 492 400 412L310 260L413 259Q516 259 516 260Z"></path><path id="MJX-TEX-I-1D435" d="M231 637Q204 637 199 638T194 649Q194 676 205 682Q206 683 335 683Q594 683 608 681Q671 671 713 636T756 544Q756 480 698 429T565 360L555 357Q619 348 660 311T702 219Q702 146 630 78T453 1Q446 0 242 0Q42 0 39 2Q35 5 35 10Q35 17 37 24Q42 43 47 45Q51 46 62 46H68Q95 46 128 49Q142 52 147 61Q150 65 219 339T288 628Q288 635 231 637ZM649 544Q649 574 634 600T585 634Q578 636 493 637Q473 637 451 637T416 636H403Q388 635 384 626Q382 622 352 506Q352 503 351 500L320 374H401Q482 374 494 376Q554 386 601 434T649 544ZM595 229Q595 273 572 302T512 336Q506 337 429 337Q311 337 310 336Q310 334 293 263T258 122L240 52Q240 48 252 48T333 46Q422 46 429 47Q491 54 543 105T595 229Z"></path><path id="MJX-TEX-I-1D45F" d="M21 287Q22 290 23 295T28 317T38 348T53 381T73 411T99 433T132 442Q161 442 183 430T214 408T225 388Q227 382 228 382T236 389Q284 441 347 441H350Q398 441 422 400Q430 381 430 363Q430 333 417 315T391 292T366 288Q346 288 334 299T322 328Q322 376 378 392Q356 405 342 405Q286 405 239 331Q229 315 224 298T190 165Q156 25 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 114 189T154 366Q154 405 128 405Q107 405 92 377T68 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path><path id="MJX-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-TEX-N-2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path><path id="MJX-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJX-TEX-I-1D44E" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path><path id="MJX-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJX-TEX-I-1D451" d="M366 683Q367 683 438 688T511 694Q523 694 523 686Q523 679 450 384T375 83T374 68Q374 26 402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487H491Q506 153 506 145Q506 140 503 129Q490 79 473 48T445 8T417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157Q33 205 53 255T101 341Q148 398 195 420T280 442Q336 442 364 400Q369 394 369 396Q370 400 396 505T424 616Q424 629 417 632T378 637H357Q351 643 351 645T353 664Q358 683 366 683ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z"></path></defs></svg>
+<header class="site-header">
+  <div class="container header-content">
+    <a href="/" class="logo">
+      <img src="/img/logo.png" alt="BelPhO" class="logo-img" width="36" height="36">
+      <span>BelPhO</span>
+    </a>
+    <nav class="site-nav" aria-label="Основная навигация">
+      <ul class="nav-links">
+        <li><a href="/">Главная</a></li>
+        <li><a href="/problems/" class="active">Задачи</a></li>
+        <li><a href="/books/">Книги</a></li>
+        <li><a href="/training-program.html">Подготовка</a></li>
+        <li><a href="/alumni.html">Выпускники</a></li>
+        <li><a href="/news/">Новости</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<main class="p-shell p-shell-wide">
+  
+<nav class="crumbs" aria-label="Хлебные крошки">
+  <a href="/">Главная</a> <span>/</span>
+  <a href="/problems/">Задачи</a> <span>/</span>
+  <a href="/problems/topics/">Темы</a> <span>/</span>
+  <span aria-current="page">Формула тонкой линзы</span>
+</nav>
+
+<header class="yr-head yr-head-topic">
+  <div class="yr-head-main">
+    <p class="yr-kicker">Оптика</p>
+    <h1 class="yr-title yr-title-topic">Формула тонкой линзы</h1>
+    <p class="tp-lead">Формула тонкой линзы, линейное увеличение, знаки, действительное и мнимое изображение.</p>
+  </div>
+  <ul class="yr-facts">
+    <li><b>12</b> задач</li>
+    
+  </ul>
+</header>
+
+<div id="pr-root">
+  <div class="pr-list">
+    
+<a class="pr" href="/problems/final/2026/9-1/" data-pid="2026-final-theory-9-1">
+  <span class="pr-badge pr-badge-t">Т1</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/2026-final-theory-9-1-320.webp" srcset="/problems/thumbs/2026-final-theory-9-1-320.webp 320w, /problems/thumbs/2026-final-theory-9-1-640.webp 640w" sizes="96px"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Почему у человека два глаза?</span>
+    <span class="pr-snippet"><p>Часть 1. Один глаз как фотоаппарат.</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Республиканская</b><i>Респ.</i> · 2026</span>
+      <span class="pr-grade">9 кл.</span>
+      
+      
+      
+      <span class="pr-time">~30 мин</span>
+      <span class="pr-tag">Формула тонкой линзы</span><span class="pr-tag">Ход лучей в линзах</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s on" title="Решение">Р</span>
+      
+      <span class="pr-av pr-av-m" title="Разбалловка — нет">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#fd8d3c;color:#2d2d2d"
+          title="Сложность (оценка): Республиканская олимпиада — уровень 3 из 5. Медианная задача Республиканской олимпиады: нужен настоящий шаг, но это известный приём.">≈3/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/third/2015/9-e2/" data-pid="2015-third-exp-9-2">
+  <span class="pr-badge pr-badge-e">Э2</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/2015-third-exp-9-2-320.webp" srcset="/problems/thumbs/2015-third-exp-9-2-320.webp 320w, /problems/thumbs/2015-third-exp-9-2-640.webp 640w" sizes="96px"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Преломление света</span>
+    <span class="pr-snippet"><p>Если луч света проходит через границу двух сред, то он преломляется. Это явление вам знакомо, оно лежит в основе работы линз. Однако закон …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Городская</b><i>3-й этап</i> · 2015</span>
+      <span class="pr-grade">9 кл.</span>
+      
+      
+      
+      <span class="pr-time">~60 мин</span>
+      <span class="pr-tag">Закон преломления (Снеллиуса)</span><span class="pr-tag">Формула тонкой линзы</span><span class="pr-tag">Прямое измерение</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s on" title="Решение">Р</span>
+      
+      <span class="pr-av pr-av-m" title="Разбалловка — нет">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#ffffcc;color:#2d2d2d"
+          title="Сложность (оценка): Городской этап (9 класс) — уровень 1 из 5. Рутинная задача для эталонного решателя — один стандартный закон, применённый один раз.">≈1/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2014/11-e2/" data-pid="2014-final-exp-11-2">
+  <span class="pr-badge pr-badge-e">Э2</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/2014-final-exp-11-2.svg"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-card">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Получение изображений</span>
+    <span class="pr-snippet"><p>Приборы и оборудование: лазер на подставке с блоком питания, линза собирающая, линза рассеивающая, экран, набор экранов с отверстиями, набор …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Республиканская</b><i>Респ.</i> · 2014</span>
+      <span class="pr-grade">11 кл.</span>
+      
+      
+      
+      <span class="pr-time">~150 мин</span>
+      <span class="pr-tag">Формула тонкой линзы</span><span class="pr-tag">Фокусное расстояние линзы</span><span class="pr-tag">Построение графика</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s" title="Решение — нет">Р</span>
+      
+      <span class="pr-av pr-av-m" title="Разбалловка — нет">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#800026;color:#fff"
+          title="Сложность (оценка): Уровень IZhO — уровень 5 из 5. Задача уровня медального тура IZhO — идею неоткуда списать.">≈5/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/third/2013/10-e2/" data-pid="2013-third-exp-10-2">
+  <span class="pr-badge pr-badge-e">Э2</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/2013-third-exp-10-2-320.webp" srcset="/problems/thumbs/2013-third-exp-10-2-320.webp 320w, /problems/thumbs/2013-third-exp-10-2-640.webp 640w" sizes="96px"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Посмотрим?</span>
+    <span class="pr-snippet"><p>Два года назад (в 8 классе) Вас учили строить изображения в линзах. Пример такого построения показан на рисунке.</p>
+<p>Здесь <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="3.414ex" height="1.62ex" role="img" focusable="false" viewBox="0 -716 1509 716" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D434" xlink:href="#MJX-TEX-I-1D434"></use></g><g data-mml-node="mi" transform="translate(750,0)"><use data-c="1D435" xlink:href="#MJX-TEX-I-1D435"></use></g></g></g></svg></mjx-container> - предмет, который …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Городская</b><i>3-й этап</i> · 2013</span>
+      <span class="pr-grade">10 кл.</span>
+      
+      
+      
+      <span class="pr-time">~90 мин</span>
+      <span class="pr-tag">Формула тонкой линзы</span><span class="pr-tag">Линеаризация (приведение зависимости к линейному виду)</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s on" title="Решение">Р</span>
+      
+      <span class="pr-av pr-av-m on" title="Разбалловка">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#fed976;color:#2d2d2d"
+          title="Сложность (оценка): Типичный городской этап — уровень 2 из 5. Типичная задача городского этапа — или лёгкая задача Республиканской олимпиады.">≈2/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2012/11-2/" data-pid="2012-final-theory-11-2">
+  <span class="pr-badge pr-badge-t">Т2</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/2012-final-theory-11-2-320.webp" srcset="/problems/thumbs/2012-final-theory-11-2-320.webp 320w, /problems/thumbs/2012-final-theory-11-2-640.webp 640w" sizes="96px"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title pr-title-num">Задача 11-2</span>
+    <span class="pr-snippet"><p>В этой задаче мы предлагаем Вам рассмотреть упрощенную модель системы наведения ракет. Оптическая схема системы представлена на рис 1. Ее основа  …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Республиканская</b><i>Респ.</i> · 2012</span>
+      <span class="pr-grade">11 кл.</span>
+      
+      
+      
+      <span class="pr-time">~30 мин</span>
+      <span class="pr-tag">Формула тонкой линзы</span><span class="pr-tag">Ход лучей в линзах</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s on" title="Решение">Р</span>
+      
+      <span class="pr-av pr-av-m" title="Разбалловка — нет">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#800026;color:#fff"
+          title="Сложность (оценка): Уровень IZhO — уровень 5 из 5. Задача уровня медального тура IZhO — идею неоткуда списать.">≈5/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2011/11-e2/" data-pid="2011-final-exp-11-2">
+  <span class="pr-badge pr-badge-e">Э2</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/2011-final-exp-11-2-320.webp" srcset="/problems/thumbs/2011-final-exp-11-2-320.webp 320w, /problems/thumbs/2011-final-exp-11-2-640.webp 640w" sizes="96px"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Зеркало Френеля</span>
+    <span class="pr-snippet"><p>Приборы и оборудование: Линзы рассеивающая и собирающая на подставке, лазер на подставке с экраном, экран, две линейки в качестве направляющих, линза …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Республиканская</b><i>Респ.</i> · 2011</span>
+      <span class="pr-grade">11 кл.</span>
+      
+      
+      
+      <span class="pr-time">~90 мин</span>
+      <span class="pr-tag">Преломление на сферической поверхности</span><span class="pr-tag">Формула тонкой линзы</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s on" title="Решение">Р</span>
+      
+      <span class="pr-av pr-av-m" title="Разбалловка — нет">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#fed976;color:#2d2d2d"
+          title="Сложность (оценка): Типичный городской этап — уровень 2 из 5. Типичная задача городского этапа — или лёгкая задача Республиканской олимпиады.">≈2/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2009/9-3/" data-pid="2009-final-theory-9-3">
+  <span class="pr-badge pr-badge-t">Т3</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/2009-final-theory-9-3-320.webp" srcset="/problems/thumbs/2009-final-theory-9-3-320.webp 320w, /problems/thumbs/2009-final-theory-9-3-640.webp 640w" sizes="96px"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Глаз</span>
+    <span class="pr-snippet"><p>Глаз человека представляет собой уникальный оптический прибор, посредством которого мозг получает зрительную информацию. Согласно усредненным данным …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Республиканская</b><i>Респ.</i> · 2009</span>
+      <span class="pr-grade">9 кл.</span>
+      
+      
+      
+      <span class="pr-time">~25 мин</span>
+      <span class="pr-tag">Формула тонкой линзы</span><span class="pr-tag">Ход лучей в линзах</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s on" title="Решение">Р</span>
+      
+      <span class="pr-av pr-av-m" title="Разбалловка — нет">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#fd8d3c;color:#2d2d2d"
+          title="Сложность (оценка): Республиканская олимпиада — уровень 3 из 5. Медианная задача Республиканской олимпиады: нужен настоящий шаг, но это известный приём.">≈3/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/third/2003/9-3/" data-pid="2003-third-theory-9-3">
+  <span class="pr-badge pr-badge-t">Т3</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/2003-third-theory-9-3-320.webp" srcset="/problems/thumbs/2003-third-theory-9-3-320.webp 320w, /problems/thumbs/2003-third-theory-9-3-640.webp 640w" sizes="96px"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Линзы</span>
+    <span class="pr-snippet"><p>Оптическая система состоит из двух тонких линз, главные оптические оси которых совпадают. Радиус первой линзы <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.439ex;" xmlns="http://www.w3.org/2000/svg" width="7.917ex" height="1.946ex" role="img" focusable="false" viewBox="0 -666 3499.1 860" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D45F" xlink:href="#MJX-TEX-I-1D45F"></use></g><g data-mml-node="mn" transform="translate(484,-150) scale(0.707)"><use data-c="31" xlink:href="#MJX-TEX-N-31"></use></g></g><g data-mml-node="mo" transform="translate(1165.3,0)"><use data-c="3D" xlink:href="#MJX-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(2221.1,0)"><use data-c="31" xlink:href="#MJX-TEX-N-31"></use></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(2721.1,0)"><g data-mml-node="mo"><use data-c="2C" xlink:href="#MJX-TEX-N-2C"></use></g></g><g data-mml-node="mn" transform="translate(2999.1,0)"><use data-c="30" xlink:href="#MJX-TEX-N-30"></use></g></g></g></svg></mjx-container> см, радиус второй …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Городская</b><i>3-й этап</i> · 2003</span>
+      <span class="pr-grade">9 кл.</span>
+      
+      
+      
+      <span class="pr-time">~15 мин</span>
+      <span class="pr-tag">Формула тонкой линзы</span><span class="pr-tag">Ход лучей в линзах</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s on" title="Решение">Р</span>
+      
+      <span class="pr-av pr-av-m" title="Разбалловка — нет">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#e31a1c;color:#fff"
+          title="Сложность (оценка): Повышенной трудности — уровень 4 из 5. Сложная задача Республиканской олимпиады или уровень отборочных сборов.">≈4/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2000/11-2/" data-pid="2000-final-theory-11-2">
+  <span class="pr-badge pr-badge-t">Т2</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/2000-final-theory-11-2-320.webp" srcset="/problems/thumbs/2000-final-theory-11-2-320.webp 320w, /problems/thumbs/2000-final-theory-11-2-640.webp 640w" sizes="96px"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title pr-title-num">Задача 11-2</span>
+    <span class="pr-snippet"><ol>
+<li>Для изготовления тонкой линзы пространство между двумя сферическими тонкими поверхностями залили материалом с показателем преломления …</li>
+</ol></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Республиканская</b><i>Респ.</i> · 2000</span>
+      <span class="pr-grade">11 кл.</span>
+      
+      
+      
+      <span class="pr-time">~30 мин</span>
+      <span class="pr-tag">Ход лучей в линзах</span><span class="pr-tag">Формула тонкой линзы</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s on" title="Решение">Р</span>
+      
+      <span class="pr-av pr-av-m" title="Разбалловка — нет">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#800026;color:#fff"
+          title="Сложность (оценка): Уровень IZhO — уровень 5 из 5. Задача уровня медального тура IZhO — идею неоткуда списать.">≈5/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/1996/11-1/" data-pid="1996-final-theory-11-1">
+  <span class="pr-badge pr-badge-t">Т1</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/1996-final-theory-11-1-320.webp" srcset="/problems/thumbs/1996-final-theory-11-1-320.webp 320w, /problems/thumbs/1996-final-theory-11-1-640.webp 640w" sizes="96px"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title pr-title-num">Задача 11-1</span>
+    <span class="pr-snippet"><p>Тонкая стеклянная собирающая линза вделана в стенку аквариума с водой. Действительное перевернутое изображение предмета, находящегося в воздухе на …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Республиканская</b><i>Респ.</i> · 1996</span>
+      <span class="pr-grade">11 кл.</span>
+      
+      
+      
+      <span class="pr-time">~20 мин</span>
+      <span class="pr-tag">Формула тонкой линзы</span><span class="pr-tag">Закон преломления (Снеллиуса)</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s on" title="Решение">Р</span>
+      
+      <span class="pr-av pr-av-m" title="Разбалловка — нет">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#800026;color:#fff"
+          title="Сложность (оценка): Уровень IZhO — уровень 5 из 5. Задача уровня медального тура IZhO — идею неоткуда списать.">≈5/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/1991/11-5/" data-pid="1991-final-theory-11-5">
+  <span class="pr-badge pr-badge-t">Т5</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/1991-final-theory-11-5-320.webp" srcset="/problems/thumbs/1991-final-theory-11-5-320.webp 320w, /problems/thumbs/1991-final-theory-11-5-640.webp 640w" sizes="96px"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title pr-title-num">Задача 11-5</span>
+    <span class="pr-snippet"><p>На расстоянии <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.452ex;" xmlns="http://www.w3.org/2000/svg" width="9.191ex" height="2.149ex" role="img" focusable="false" viewBox="0 -750 4062.6 950" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D44E" xlink:href="#MJX-TEX-I-1D44E"></use></g><g data-mml-node="mo" transform="translate(806.8,0)"><use data-c="3D" xlink:href="#MJX-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(1862.6,0)"><use data-c="32" xlink:href="#MJX-TEX-N-32"></use><use data-c="30" xlink:href="#MJX-TEX-N-30" transform="translate(500,0)"></use></g><g data-mml-node="mtext" transform="translate(2862.6,0)"><text data-variant="normal"  font-size="884px" font-family="serif" transform="scale(1,-1)" textLength="1200" lengthAdjust="spacingAndGlyphs">см</text></g></g></g></svg></mjx-container> от точечного источника света помещена собирающая линза диаметром <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.452ex;" xmlns="http://www.w3.org/2000/svg" width="9.8ex" height="2.149ex" role="img" focusable="false" viewBox="0 -750 4331.6 950" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D451" xlink:href="#MJX-TEX-I-1D451"></use></g><g data-mml-node="mo" transform="translate(797.8,0)"><use data-c="3D" xlink:href="#MJX-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(1853.6,0)"><use data-c="31" xlink:href="#MJX-TEX-N-31"></use></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(2353.6,0)"><g data-mml-node="mo"><use data-c="2C" xlink:href="#MJX-TEX-N-2C"></use></g></g><g data-mml-node="mn" transform="translate(2631.6,0)"><use data-c="30" xlink:href="#MJX-TEX-N-30"></use></g><g data-mml-node="mtext" transform="translate(3131.6,0)"><text data-variant="normal"  font-size="884px" font-family="serif" transform="scale(1,-1)" textLength="1200" lengthAdjust="spacingAndGlyphs">см</text></g></g></g></svg></mjx-container> с фокусным расстоянием …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Республиканская</b><i>Респ.</i> · 1991</span>
+      <span class="pr-grade">11 кл.</span>
+      
+      
+      
+      <span class="pr-time">~25 мин</span>
+      <span class="pr-tag">Формула тонкой линзы</span><span class="pr-tag">Система двух линз</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s on" title="Решение">Р</span>
+      
+      <span class="pr-av pr-av-m" title="Разбалловка — нет">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#800026;color:#fff"
+          title="Сложность (оценка): Уровень IZhO — уровень 5 из 5. Задача уровня медального тура IZhO — идею неоткуда списать.">≈5/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/1990/9-5/" data-pid="1990-final-theory-9-5">
+  <span class="pr-badge pr-badge-t">Т5</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/1990-final-theory-9-5-320.webp" srcset="/problems/thumbs/1990-final-theory-9-5-320.webp 320w, /problems/thumbs/1990-final-theory-9-5-640.webp 640w" sizes="96px"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title pr-title-num">Задача 9-5</span>
+    <span class="pr-snippet"><p>На рисунке представлен ход двух лучей через тонкую линзу. Найти построением положение ее главных фокусов.</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Республиканская</b><i>Респ.</i> · 1990</span>
+      <span class="pr-grade">9 кл.</span>
+      
+      
+      
+      <span class="pr-time">~8 мин</span>
+      <span class="pr-tag">Ход лучей в линзах</span><span class="pr-tag">Формула тонкой линзы</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s on" title="Решение">Р</span>
+      
+      <span class="pr-av pr-av-m" title="Разбалловка — нет">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#fed976;color:#2d2d2d"
+          title="Сложность (оценка): Типичный городской этап — уровень 2 из 5. Типичная задача городского этапа — или лёгкая задача Республиканской олимпиады.">≈2/5</span>
+    
+  </span>
+</a>
+
+  </div>
+</div>
+
+<nav class="yr-nav">
+  <a class="btn btn-ghost" href="/problems/topics/">← Все темы</a>
+  <a class="btn btn-ghost" href="/problems/?tag=formula_tonkoi_linzy">Открыть в поиске задач</a>
+</nav>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© 2026 BelPhO — Белорусские физические олимпиады</span>
+    <span class="footer-links">
+      <a href="/problems/">Задачи</a>
+      <a href="https://t.me/belpho_by" rel="noopener">Telegram</a>
+    </span>
+  </div>
+</footer>
+
+
+<script type="module" src="/js/site/problem-list.js"></script>
+
+</body>
+</html>

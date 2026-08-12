@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Цикл Карно — BelPhO</title>
+  <meta name="description" content="Идеальный цикл Карно, максимальный КПД, сравнение реальных циклов с идеальным. — 2 задач белорусских олимпиад по физике.">
+  <link rel="canonical" href="https://belpho.org/problems/topics/tsikl-karno/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BelPhO">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:url" content="https://belpho.org/problems/topics/tsikl-karno/">
+  <meta property="og:title" content="Цикл Карно — BelPhO">
+  <meta property="og:description" content="Идеальный цикл Карно, максимальный КПД, сравнение реальных циклов с идеальным. — 2 задач белорусских олимпиад по физике.">
+  
+  <meta property="og:image" content="https://belpho.org/problems/thumbs/og/problems.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/css/platform.css">
+</head>
+<body>
+<svg id="mjx-glyph-cache" aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden"><defs><path id="MJX-TEX-I-1D447" d="M40 437Q21 437 21 445Q21 450 37 501T71 602L88 651Q93 669 101 677H569H659Q691 677 697 676T704 667Q704 661 687 553T668 444Q668 437 649 437Q640 437 637 437T631 442L629 445Q629 451 635 490T641 551Q641 586 628 604T573 629Q568 630 515 631Q469 631 457 630T439 622Q438 621 368 343T298 60Q298 48 386 46Q418 46 427 45T436 36Q436 31 433 22Q429 4 424 1L422 0Q419 0 415 0Q410 0 363 1T228 2Q99 2 64 0H49Q43 6 43 9T45 27Q49 40 55 46H83H94Q174 46 189 55Q190 56 191 56Q196 59 201 76T241 233Q258 301 269 344Q339 619 339 625Q339 630 310 630H279Q212 630 191 624Q146 614 121 583T67 467Q60 445 57 441T43 437H40Z"></path><path id="MJX-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJX-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJX-TEX-I-1D436" d="M50 252Q50 367 117 473T286 641T490 704Q580 704 633 653Q642 643 648 636T656 626L657 623Q660 623 684 649Q691 655 699 663T715 679T725 690L740 705H746Q760 705 760 698Q760 694 728 561Q692 422 692 421Q690 416 687 415T669 413H653Q647 419 647 422Q647 423 648 429T650 449T651 481Q651 552 619 605T510 659Q484 659 454 652T382 628T299 572T226 479Q194 422 175 346T156 222Q156 108 232 58Q280 24 350 24Q441 24 512 92T606 240Q610 253 612 255T628 257Q648 257 648 248Q648 243 647 239Q618 132 523 55T319 -22Q206 -22 128 53T50 252Z"></path></defs></svg>
+<header class="site-header">
+  <div class="container header-content">
+    <a href="/" class="logo">
+      <img src="/img/logo.png" alt="BelPhO" class="logo-img" width="36" height="36">
+      <span>BelPhO</span>
+    </a>
+    <nav class="site-nav" aria-label="Основная навигация">
+      <ul class="nav-links">
+        <li><a href="/">Главная</a></li>
+        <li><a href="/problems/" class="active">Задачи</a></li>
+        <li><a href="/books/">Книги</a></li>
+        <li><a href="/training-program.html">Подготовка</a></li>
+        <li><a href="/alumni.html">Выпускники</a></li>
+        <li><a href="/news/">Новости</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<main class="p-shell p-shell-wide">
+  
+<nav class="crumbs" aria-label="Хлебные крошки">
+  <a href="/">Главная</a> <span>/</span>
+  <a href="/problems/">Задачи</a> <span>/</span>
+  <a href="/problems/topics/">Темы</a> <span>/</span>
+  <span aria-current="page">Цикл Карно</span>
+</nav>
+
+<header class="yr-head yr-head-topic">
+  <div class="yr-head-main">
+    <p class="yr-kicker">Термодинамика</p>
+    <h1 class="yr-title yr-title-topic">Цикл Карно</h1>
+    <p class="tp-lead">Идеальный цикл Карно, максимальный КПД, сравнение реальных циклов с идеальным.</p>
+  </div>
+  <ul class="yr-facts">
+    <li><b>2</b> задач</li>
+    <li>в книгах: <a href="/books/Molekuliarnaja_fizika.pdf">Молекулярная физика и термодинамика</a> </li>
+  </ul>
+</header>
+
+<div id="pr-root">
+  <div class="pr-list">
+    
+<a class="pr" href="/problems/third/2024/10-3/" data-pid="2024-third-theory-10-3">
+  <span class="pr-badge pr-badge-t">Т3</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/2024-third-theory-10-3-320.webp" srcset="/problems/thumbs/2024-third-theory-10-3-320.webp 320w, /problems/thumbs/2024-third-theory-10-3-640.webp 640w" sizes="96px"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Не хуже Карно ..?</span>
+    <span class="pr-snippet"><p>Двигатели внутреннего сгорания (ДВС), работающие по различным термодинамическим циклам, успешно работают в современном мире. Миллионы машин …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Городская</b><i>3-й этап</i> · 2024</span>
+      <span class="pr-grade">10 кл.</span>
+      
+      
+      
+      <span class="pr-time">~25 мин</span>
+      <span class="pr-tag">Тепловые машины и КПД</span><span class="pr-tag">Цикл Карно</span><span class="pr-tag">Первый закон термодинамики</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s on" title="Решение">Р</span>
+      
+      <span class="pr-av pr-av-m on" title="Разбалловка">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#fd8d3c;color:#2d2d2d"
+          title="Сложность (оценка): Республиканская олимпиада — уровень 3 из 5. Медианная задача Республиканской олимпиады: нужен настоящий шаг, но это известный приём.">≈3/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/1991/11-1/" data-pid="1991-final-theory-11-1">
+  <span class="pr-badge pr-badge-t">Т1</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/1991-final-theory-11-1.svg"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-card">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title pr-title-num">Задача 11-1</span>
+    <span class="pr-snippet"><p>Для поддержания в комнате постоянной температуры <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.72ex;" xmlns="http://www.w3.org/2000/svg" width="10.456ex" height="2.675ex" role="img" focusable="false" viewBox="0 -864 4621.4 1182.1" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D447" xlink:href="#MJX-TEX-I-1D447"></use></g><g data-mml-node="TeXAtom" transform="translate(617,-176.7) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mtext"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">х</text></g></g></g><g data-mml-node="mo" transform="translate(1369,0)"><use data-c="3D" xlink:href="#MJX-TEX-N-3D"></use></g><g data-mml-node="msup" transform="translate(2424.8,0)"><g data-mml-node="mn"><use data-c="32" xlink:href="#MJX-TEX-N-32"></use><use data-c="31" xlink:href="#MJX-TEX-N-31" transform="translate(500,0)"></use></g><g data-mml-node="mn" transform="translate(1033,393.1) scale(0.707)"><use data-c="30" xlink:href="#MJX-TEX-N-30"></use></g></g><g data-mml-node="mi" transform="translate(3861.4,0)"><use data-c="1D436" xlink:href="#MJX-TEX-I-1D436"></use></g></g></g></svg></mjx-container> используется кондиционер. Температура наружного воздуха …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Республиканская</b><i>Респ.</i> · 1991</span>
+      <span class="pr-grade">11 кл.</span>
+      
+      
+      
+      <span class="pr-time">~4 мин</span>
+      <span class="pr-tag">Тепловые машины и КПД</span><span class="pr-tag">Цикл Карно</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s on" title="Решение">Р</span>
+      
+      <span class="pr-av pr-av-m" title="Разбалловка — нет">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#ffffcc;color:#2d2d2d"
+          title="Сложность (оценка): Городской этап (9 класс) — уровень 1 из 5. Рутинная задача для эталонного решателя — один стандартный закон, применённый один раз.">≈1/5</span>
+    
+  </span>
+</a>
+
+  </div>
+</div>
+
+<nav class="yr-nav">
+  <a class="btn btn-ghost" href="/problems/topics/">← Все темы</a>
+  <a class="btn btn-ghost" href="/problems/?tag=tsikl_karno">Открыть в поиске задач</a>
+</nav>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© 2026 BelPhO — Белорусские физические олимпиады</span>
+    <span class="footer-links">
+      <a href="/problems/">Задачи</a>
+      <a href="https://t.me/belpho_by" rel="noopener">Telegram</a>
+    </span>
+  </div>
+</footer>
+
+
+<script type="module" src="/js/site/problem-list.js"></script>
+
+</body>
+</html>

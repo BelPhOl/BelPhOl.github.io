@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Связанные тела, блоки, нити — BelPhO</title>
+  <meta name="description" content="Системы тел, соединённых нитями через блоки; кинематические связи и общее уравнение движения. — 16 задач белорусских олимпиад по физике.">
+  <link rel="canonical" href="https://belpho.org/problems/topics/svyazannye-tela-i-bloki/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BelPhO">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:url" content="https://belpho.org/problems/topics/svyazannye-tela-i-bloki/">
+  <meta property="og:title" content="Связанные тела, блоки, нити — BelPhO">
+  <meta property="og:description" content="Системы тел, соединённых нитями через блоки; кинематические связи и общее уравнение движения. — 16 задач белорусских олимпиад по физике.">
+  
+  <meta property="og:image" content="https://belpho.org/problems/thumbs/og/problems.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/css/platform.css">
+</head>
+<body>
+<svg id="mjx-glyph-cache" aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden"><defs><path id="MJX-TEX-I-1D45A" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path><path id="MJX-TEX-I-1D435" d="M231 637Q204 637 199 638T194 649Q194 676 205 682Q206 683 335 683Q594 683 608 681Q671 671 713 636T756 544Q756 480 698 429T565 360L555 357Q619 348 660 311T702 219Q702 146 630 78T453 1Q446 0 242 0Q42 0 39 2Q35 5 35 10Q35 17 37 24Q42 43 47 45Q51 46 62 46H68Q95 46 128 49Q142 52 147 61Q150 65 219 339T288 628Q288 635 231 637ZM649 544Q649 574 634 600T585 634Q578 636 493 637Q473 637 451 637T416 636H403Q388 635 384 626Q382 622 352 506Q352 503 351 500L320 374H401Q482 374 494 376Q554 386 601 434T649 544ZM595 229Q595 273 572 302T512 336Q506 337 429 337Q311 337 310 336Q310 334 293 263T258 122L240 52Q240 48 252 48T333 46Q422 46 429 47Q491 54 543 105T595 229Z"></path><path id="MJX-TEX-I-1D707" d="M58 -216Q44 -216 34 -208T23 -186Q23 -176 96 116T173 414Q186 442 219 442Q231 441 239 435T249 423T251 413Q251 401 220 279T187 142Q185 131 185 107V99Q185 26 252 26Q261 26 270 27T287 31T302 38T315 45T327 55T338 65T348 77T356 88T365 100L372 110L408 253Q444 395 448 404Q461 431 491 431Q504 431 512 424T523 412T525 402L449 84Q448 79 448 68Q448 43 455 35T476 26Q485 27 496 35Q517 55 537 131Q543 151 547 152Q549 153 557 153H561Q580 153 580 144Q580 138 575 117T555 63T523 13Q510 0 491 -8Q483 -10 467 -10Q446 -10 429 -4T402 11T385 29T376 44T374 51L368 45Q362 39 350 30T324 12T288 -4T246 -11Q199 -11 153 12L129 -85Q108 -167 104 -180T92 -202Q76 -216 58 -216Z"></path><path id="MJX-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJX-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-TEX-N-2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path><path id="MJX-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJX-TEX-N-35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z"></path><path id="MJX-TEX-N-37" d="M55 458Q56 460 72 567L88 674Q88 676 108 676H128V672Q128 662 143 655T195 646T364 644H485V605L417 512Q408 500 387 472T360 435T339 403T319 367T305 330T292 284T284 230T278 162T275 80Q275 66 275 52T274 28V19Q270 2 255 -10T221 -22Q210 -22 200 -19T179 0T168 40Q168 198 265 368Q285 400 349 489L395 552H302Q128 552 119 546Q113 543 108 522T98 479L95 458V455H55V458Z"></path><path id="MJX-TEX-I-1D459" d="M117 59Q117 26 142 26Q179 26 205 131Q211 151 215 152Q217 153 225 153H229Q238 153 241 153T246 151T248 144Q247 138 245 128T234 90T214 43T183 6T137 -11Q101 -11 70 11T38 85Q38 97 39 102L104 360Q167 615 167 623Q167 626 166 628T162 632T157 634T149 635T141 636T132 637T122 637Q112 637 109 637T101 638T95 641T94 647Q94 649 96 661Q101 680 107 682T179 688Q194 689 213 690T243 693T254 694Q266 694 266 686Q266 675 193 386T118 83Q118 81 118 75T117 65V59Z"></path></defs></svg>
+<header class="site-header">
+  <div class="container header-content">
+    <a href="/" class="logo">
+      <img src="/img/logo.png" alt="BelPhO" class="logo-img" width="36" height="36">
+      <span>BelPhO</span>
+    </a>
+    <nav class="site-nav" aria-label="Основная навигация">
+      <ul class="nav-links">
+        <li><a href="/">Главная</a></li>
+        <li><a href="/problems/" class="active">Задачи</a></li>
+        <li><a href="/books/">Книги</a></li>
+        <li><a href="/training-program.html">Подготовка</a></li>
+        <li><a href="/alumni.html">Выпускники</a></li>
+        <li><a href="/news/">Новости</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<main class="p-shell p-shell-wide">
+  
+<nav class="crumbs" aria-label="Хлебные крошки">
+  <a href="/">Главная</a> <span>/</span>
+  <a href="/problems/">Задачи</a> <span>/</span>
+  <a href="/problems/topics/">Темы</a> <span>/</span>
+  <span aria-current="page">Связанные тела, блоки, нити</span>
+</nav>
+
+<header class="yr-head yr-head-topic">
+  <div class="yr-head-main">
+    <p class="yr-kicker">Динамика</p>
+    <h1 class="yr-title yr-title-topic">Связанные тела, блоки, нити</h1>
+    <p class="tp-lead">Системы тел, соединённых нитями через блоки; кинематические связи и общее уравнение движения.</p>
+  </div>
+  <ul class="yr-facts">
+    <li><b>16</b> задач</li>
+    
+  </ul>
+</header>
+
+<div id="pr-root">
+  <div class="pr-list">
+    
+<a class="pr" href="/problems/final/2022/9-3/" data-pid="2022-final-theory-9-3">
+  <span class="pr-badge pr-badge-t">Т3</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/2022-final-theory-9-3-320.webp" srcset="/problems/thumbs/2022-final-theory-9-3-320.webp 320w, /problems/thumbs/2022-final-theory-9-3-640.webp 640w" sizes="96px"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Три груза</span>
+    <span class="pr-snippet"><p>Один конец жёсткого невесомого стержня шарнирно закреплён, к другому концу на перекинутой через невесомый блок нити подвешен груз массой <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="1.986ex" height="1.025ex" role="img" focusable="false" viewBox="0 -442 878 453" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D45A" xlink:href="#MJX-TEX-I-1D45A"></use></g></g></g></svg></mjx-container>. Ещё два …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Республиканская</b><i>Респ.</i> · 2022</span>
+      <span class="pr-grade">9 кл.</span>
+      
+      
+      
+      <span class="pr-time">~15 мин</span>
+      <span class="pr-tag">Законы динамики Ньютона</span><span class="pr-tag">Связанные тела, блоки, нити</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s on" title="Решение">Р</span>
+      
+      <span class="pr-av pr-av-m" title="Разбалловка — нет">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#800026;color:#fff"
+          title="Сложность (оценка): Уровень IZhO — уровень 5 из 5. Задача уровня медального тура IZhO — идею неоткуда списать.">≈5/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2021/9-2/" data-pid="2021-final-theory-9-2">
+  <span class="pr-badge pr-badge-t">Т2</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/2021-final-theory-9-2-320.webp" srcset="/problems/thumbs/2021-final-theory-9-2-320.webp 320w, /problems/thumbs/2021-final-theory-9-2-640.webp 640w" sizes="96px"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Наклонная плоскость</span>
+    <span class="pr-snippet"><p>Для подъема грузов широко используется такой простой механизм, как наклонная плоскость.</p>
+<p>Для его описания воспользуемся следующей моделью. Ящик …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Республиканская</b><i>Респ.</i> · 2021</span>
+      <span class="pr-grade">9 кл.</span>
+      
+      
+      
+      <span class="pr-time">~35 мин</span>
+      <span class="pr-tag">Сухое трение</span><span class="pr-tag">Связанные тела, блоки, нити</span><span class="pr-tag">Законы динамики Ньютона</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s on" title="Решение">Р</span>
+      
+      <span class="pr-av pr-av-m" title="Разбалловка — нет">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#800026;color:#fff"
+          title="Сложность (оценка): Уровень IZhO — уровень 5 из 5. Задача уровня медального тура IZhO — идею неоткуда списать.">≈5/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2021/10-1/" data-pid="2021-final-theory-10-1">
+  <span class="pr-badge pr-badge-t">Т1</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/2021-final-theory-10-1-320.webp" srcset="/problems/thumbs/2021-final-theory-10-1-320.webp 320w, /problems/thumbs/2021-final-theory-10-1-640.webp 640w" sizes="96px"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Привязанная тележка</span>
+    <span class="pr-snippet"><p>Небольшую тележку <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="1.717ex" height="1.545ex" role="img" focusable="false" viewBox="0 -683 759 683" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D435" xlink:href="#MJX-TEX-I-1D435"></use></g></g></g></svg></mjx-container> необходимо подтянуть слева направо по гладкой горизонтальной поверхности с помощью легкой нерастяжимой нити. При движении …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Республиканская</b><i>Респ.</i> · 2021</span>
+      <span class="pr-grade">10 кл.</span>
+      
+      
+      
+      <span class="pr-time">~25 мин</span>
+      <span class="pr-tag">Связанные тела, блоки, нити</span><span class="pr-tag">Относительность движения. Сложение скоростей</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s" title="Решение — нет">Р</span>
+      
+      <span class="pr-av pr-av-m" title="Разбалловка — нет">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#800026;color:#fff"
+          title="Сложность (оценка): Уровень IZhO — уровень 5 из 5. Задача уровня медального тура IZhO — идею неоткуда списать.">≈5/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/third/2021/9-1/" data-pid="2021-third-theory-9-1">
+  <span class="pr-badge pr-badge-t">Т1</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/2021-third-theory-9-1-320.webp" srcset="/problems/thumbs/2021-third-theory-9-1-320.webp 320w, /problems/thumbs/2021-third-theory-9-1-640.webp 640w" sizes="96px"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Собака и поводок</span>
+    <span class="pr-snippet"><p>Всякая бродячая собака, по словам М. Булгакова, мечтает об ошейнике. Добавим к ошейнику и поводок. Когда собака бегает от радости, поводок с ручкой …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Городская</b><i>3-й этап</i> · 2021</span>
+      <span class="pr-grade">9 кл.</span>
+      
+      
+      
+      <span class="pr-time">~25 мин</span>
+      <span class="pr-tag">Закон движения и основная задача кинематики</span><span class="pr-tag">Связанные тела, блоки, нити</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s on" title="Решение">Р</span>
+      
+      <span class="pr-av pr-av-m" title="Разбалловка — нет">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#800026;color:#fff"
+          title="Сложность (оценка): Уровень IZhO — уровень 5 из 5. Задача уровня медального тура IZhO — идею неоткуда списать.">≈5/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2018/9-1/" data-pid="2018-final-theory-9-1">
+  <span class="pr-badge pr-badge-t">Т1</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/2018-final-theory-9-1-320.webp" srcset="/problems/thumbs/2018-final-theory-9-1-320.webp 320w, /problems/thumbs/2018-final-theory-9-1-640.webp 640w" sizes="96px"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Разминка</span>
+    <span class="pr-snippet"><p>Задание состоит из трех не связанных между собой задач!<br />Задача 1. Блоки<br />Во всех устройствах, рассматриваемых в данной задаче, массы нитей и блоков …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Республиканская</b><i>Респ.</i> · 2018</span>
+      <span class="pr-grade">9 кл.</span>
+      
+      
+      
+      <span class="pr-time">~3 мин</span>
+      <span class="pr-tag">Связанные тела, блоки, нити</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s on" title="Решение">Р</span>
+      
+      <span class="pr-av pr-av-m" title="Разбалловка — нет">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#ffffcc;color:#2d2d2d"
+          title="Сложность (оценка): Городской этап (9 класс) — уровень 1 из 5. Рутинная задача для эталонного решателя — один стандартный закон, применённый один раз.">≈1/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/third/2018/11-1/" data-pid="2018-third-theory-11-1">
+  <span class="pr-badge pr-badge-t">Т1</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/2018-third-theory-11-1-320.webp" srcset="/problems/thumbs/2018-third-theory-11-1-320.webp 320w, /problems/thumbs/2018-third-theory-11-1-640.webp 640w" sizes="96px"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Почти ЦТ: два бруска и веревочка!</span>
+    <span class="pr-snippet"><p>На горизонтальной поверхности покоятся два одинаковых бруска, масса каждого равна <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="1.986ex" height="1.025ex" role="img" focusable="false" viewBox="0 -442 878 453" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D45A" xlink:href="#MJX-TEX-I-1D45A"></use></g></g></g></svg></mjx-container>. Коэффициент трения брусков о поверхность равен <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.489ex;" xmlns="http://www.w3.org/2000/svg" width="1.364ex" height="1.489ex" role="img" focusable="false" viewBox="0 -442 603 658" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D707" xlink:href="#MJX-TEX-I-1D707"></use></g></g></g></svg></mjx-container>. Бруски …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Городская</b><i>3-й этап</i> · 2018</span>
+      <span class="pr-grade">11 кл.</span>
+      
+      
+      
+      <span class="pr-time">~10 мин</span>
+      <span class="pr-tag">Сухое трение</span><span class="pr-tag">Статика: условия равновесия</span><span class="pr-tag">Связанные тела, блоки, нити</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s on" title="Решение">Р</span>
+      
+      <span class="pr-av pr-av-m" title="Разбалловка — нет">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#fd8d3c;color:#2d2d2d"
+          title="Сложность (оценка): Республиканская олимпиада — уровень 3 из 5. Медианная задача Республиканской олимпиады: нужен настоящий шаг, но это известный приём.">≈3/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2016/9-e1/" data-pid="2016-final-exp-9-1">
+  <span class="pr-badge pr-badge-e">Э1</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/2016-final-exp-9-1-320.webp" srcset="/problems/thumbs/2016-final-exp-9-1-320.webp 320w, /problems/thumbs/2016-final-exp-9-1-640.webp 640w" sizes="96px"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Законы движения</span>
+    <span class="pr-snippet"><p>Расчет погрешностей в данной работе не требуется!<br />В 9 классе Вы изучили два простейших вида движения – равномерное и равноускоренное. Но в реальности …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Республиканская</b><i>Респ.</i> · 2016</span>
+      <span class="pr-grade">9 кл.</span>
+      
+      
+      
+      <span class="pr-time">~90 мин</span>
+      <span class="pr-tag">Связанные тела, блоки, нити</span><span class="pr-tag">Сила тяжести и вес тела</span><span class="pr-tag">Прямое измерение</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s on" title="Решение">Р</span>
+      
+      <span class="pr-av pr-av-m" title="Разбалловка — нет">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#ffffcc;color:#2d2d2d"
+          title="Сложность (оценка): Городской этап (9 класс) — уровень 1 из 5. Рутинная задача для эталонного решателя — один стандартный закон, применённый один раз.">≈1/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2016/9-e2/" data-pid="2016-final-exp-9-2">
+  <span class="pr-badge pr-badge-e">Э2</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/2016-final-exp-9-2-320.webp" srcset="/problems/thumbs/2016-final-exp-9-2-320.webp 320w, /problems/thumbs/2016-final-exp-9-2-640.webp 640w" sizes="96px"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Полузамкнутая цепочка</span>
+    <span class="pr-snippet"><p>Присоедините к правой скрепке дополнительную нить и спиралевидно или змейкой уложите ее на пол.<br />К левой скрепке подвесьте 6 или 7 скрепок.</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Республиканская</b><i>Респ.</i> · 2016</span>
+      <span class="pr-grade">9 кл.</span>
+      
+      
+      
+      <span class="pr-time">~30 мин</span>
+      <span class="pr-tag">Связанные тела, блоки, нити</span><span class="pr-tag">Прямое измерение</span><span class="pr-tag">Серия повторных измерений</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s on" title="Решение">Р</span>
+      
+      <span class="pr-av pr-av-m" title="Разбалловка — нет">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#ffffcc;color:#2d2d2d"
+          title="Сложность (оценка): Городской этап (9 класс) — уровень 1 из 5. Рутинная задача для эталонного решателя — один стандартный закон, применённый один раз.">≈1/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2016/9-e3/" data-pid="2016-final-exp-9-3">
+  <span class="pr-badge pr-badge-e">Э3</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/2016-final-exp-9-3-320.webp" srcset="/problems/thumbs/2016-final-exp-9-3-320.webp 320w, /problems/thumbs/2016-final-exp-9-3-640.webp 640w" sizes="96px"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Замкнутая цепочка</span>
+    <span class="pr-snippet"><p>Присоедините свободный конец дополнительной нити к левой, связанной с нитью, скрепке.<br />К левой скрепке подвесьте 5 или 6 скрепок.</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Республиканская</b><i>Респ.</i> · 2016</span>
+      <span class="pr-grade">9 кл.</span>
+      
+      
+      
+      <span class="pr-time">~90 мин</span>
+      <span class="pr-tag">Связанные тела, блоки, нити</span><span class="pr-tag">Прямое измерение</span><span class="pr-tag">Серия повторных измерений</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s on" title="Решение">Р</span>
+      
+      <span class="pr-av pr-av-m" title="Разбалловка — нет">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#fd8d3c;color:#2d2d2d"
+          title="Сложность (оценка): Республиканская олимпиада — уровень 3 из 5. Медианная задача Республиканской олимпиады: нужен настоящий шаг, но это известный приём.">≈3/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/third/2016/10-e1/" data-pid="2016-third-exp-10-1">
+  <span class="pr-badge pr-badge-e">Э1</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/2016-third-exp-10-1-320.webp" srcset="/problems/thumbs/2016-third-exp-10-1-320.webp 320w, /problems/thumbs/2016-third-exp-10-1-640.webp 640w" sizes="96px"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Трение в неподвижном блоке</span>
+    <span class="pr-snippet"><p>Оборудование: штатив с лапкой (высота стержня штатива должна быть не менее 80 см), неподвижный блок, грузы по 100г – 6шт, груз 50г – 1шт (все грузы …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Городская</b><i>3-й этап</i> · 2016</span>
+      <span class="pr-grade">10 кл.</span>
+      
+      
+      
+      <span class="pr-time">~20 мин</span>
+      <span class="pr-tag">Сухое трение</span><span class="pr-tag">Связанные тела, блоки, нити</span><span class="pr-tag">Прямое измерение</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s on" title="Решение">Р</span>
+      
+      <span class="pr-av pr-av-m" title="Разбалловка — нет">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#fd8d3c;color:#2d2d2d"
+          title="Сложность (оценка): Республиканская олимпиада — уровень 3 из 5. Медианная задача Республиканской олимпиады: нужен настоящий шаг, но это известный приём.">≈3/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/third/2008/10-2-v1/" data-pid="2008-third-theory-10-2-v1">
+  <span class="pr-badge pr-badge-t">Т2</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/2008-third-theory-10-2-v1-320.webp" srcset="/problems/thumbs/2008-third-theory-10-2-v1-320.webp 320w, /problems/thumbs/2008-third-theory-10-2-v1-640.webp 640w" sizes="96px"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Муфта<span class="pr-variant">вар. 1</span></span>
+    <span class="pr-snippet"><p>На горизонтальный стержень насажена муфта массы <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.439ex;" xmlns="http://www.w3.org/2000/svg" width="8.883ex" height="1.946ex" role="img" focusable="false" viewBox="0 -666 3926.1 860" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D45A" xlink:href="#MJX-TEX-I-1D45A"></use></g><g data-mml-node="mn" transform="translate(911,-150) scale(0.707)"><use data-c="30" xlink:href="#MJX-TEX-N-30"></use></g></g><g data-mml-node="mo" transform="translate(1592.3,0)"><use data-c="3D" xlink:href="#MJX-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(2648.1,0)"><use data-c="31" xlink:href="#MJX-TEX-N-31"></use></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(3148.1,0)"><g data-mml-node="mo"><use data-c="2C" xlink:href="#MJX-TEX-N-2C"></use></g></g><g data-mml-node="mn" transform="translate(3426.1,0)"><use data-c="30" xlink:href="#MJX-TEX-N-30"></use></g></g></g></svg></mjx-container> кг, которая может скользить по стержню без трения. К муфте прикреплена легкая прочная …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Городская</b><i>3-й этап</i> · 2008</span>
+      <span class="pr-grade">10 кл.</span>
+      
+      
+      
+      <span class="pr-time">~45 мин</span>
+      <span class="pr-tag">Законы динамики Ньютона</span><span class="pr-tag">Связанные тела, блоки, нити</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s on" title="Решение">Р</span>
+      
+      <span class="pr-av pr-av-m" title="Разбалловка — нет">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#800026;color:#fff"
+          title="Сложность (оценка): Уровень IZhO — уровень 5 из 5. Задача уровня медального тура IZhO — идею неоткуда списать.">≈5/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2003/9-2/" data-pid="2003-final-theory-9-2">
+  <span class="pr-badge pr-badge-t">Т2</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/2003-final-theory-9-2-320.webp" srcset="/problems/thumbs/2003-final-theory-9-2-320.webp 320w, /problems/thumbs/2003-final-theory-9-2-640.webp 640w" sizes="96px"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title pr-title-num">Задача 9-2</span>
+    <span class="pr-snippet"><p>В установке, показанной на рисунке, массы грузов равны <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.439ex;" xmlns="http://www.w3.org/2000/svg" width="10.014ex" height="1.946ex" role="img" focusable="false" viewBox="0 -666 4426.1 860" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D45A" xlink:href="#MJX-TEX-I-1D45A"></use></g><g data-mml-node="mn" transform="translate(911,-150) scale(0.707)"><use data-c="30" xlink:href="#MJX-TEX-N-30"></use></g></g><g data-mml-node="mo" transform="translate(1592.3,0)"><use data-c="3D" xlink:href="#MJX-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(2648.1,0)"><use data-c="30" xlink:href="#MJX-TEX-N-30"></use></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(3148.1,0)"><g data-mml-node="mo"><use data-c="2C" xlink:href="#MJX-TEX-N-2C"></use></g></g><g data-mml-node="mn" transform="translate(3426.1,0)"><use data-c="32" xlink:href="#MJX-TEX-N-32"></use><use data-c="35" xlink:href="#MJX-TEX-N-35" transform="translate(500,0)"></use></g></g></g></svg></mjx-container> кг, <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.439ex;" xmlns="http://www.w3.org/2000/svg" width="10.014ex" height="1.946ex" role="img" focusable="false" viewBox="0 -666 4426.1 860" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D45A" xlink:href="#MJX-TEX-I-1D45A"></use></g><g data-mml-node="mn" transform="translate(911,-150) scale(0.707)"><use data-c="31" xlink:href="#MJX-TEX-N-31"></use></g></g><g data-mml-node="mo" transform="translate(1592.3,0)"><use data-c="3D" xlink:href="#MJX-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(2648.1,0)"><use data-c="30" xlink:href="#MJX-TEX-N-30"></use></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(3148.1,0)"><g data-mml-node="mo"><use data-c="2C" xlink:href="#MJX-TEX-N-2C"></use></g></g><g data-mml-node="mn" transform="translate(3426.1,0)"><use data-c="35" xlink:href="#MJX-TEX-N-35"></use><use data-c="35" xlink:href="#MJX-TEX-N-35" transform="translate(500,0)"></use></g></g></g></svg></mjx-container> кг, <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.439ex;" xmlns="http://www.w3.org/2000/svg" width="10.014ex" height="1.968ex" role="img" focusable="false" viewBox="0 -676 4426.1 870" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D45A" xlink:href="#MJX-TEX-I-1D45A"></use></g><g data-mml-node="mn" transform="translate(911,-150) scale(0.707)"><use data-c="32" xlink:href="#MJX-TEX-N-32"></use></g></g><g data-mml-node="mo" transform="translate(1592.3,0)"><use data-c="3D" xlink:href="#MJX-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(2648.1,0)"><use data-c="30" xlink:href="#MJX-TEX-N-30"></use></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(3148.1,0)"><g data-mml-node="mo"><use data-c="2C" xlink:href="#MJX-TEX-N-2C"></use></g></g><g data-mml-node="mn" transform="translate(3426.1,0)"><use data-c="37" xlink:href="#MJX-TEX-N-37"></use><use data-c="35" xlink:href="#MJX-TEX-N-35" transform="translate(500,0)"></use></g></g></g></svg></mjx-container> кг.<br />Грузы связаны легкой нитью …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Республиканская</b><i>Респ.</i> · 2003</span>
+      <span class="pr-grade">9 кл.</span>
+      
+      
+      
+      <span class="pr-time">~12 мин</span>
+      <span class="pr-tag">Связанные тела, блоки, нити</span><span class="pr-tag">Законы динамики Ньютона</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s on" title="Решение">Р</span>
+      
+      <span class="pr-av pr-av-m" title="Разбалловка — нет">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#fed976;color:#2d2d2d"
+          title="Сложность (оценка): Типичный городской этап — уровень 2 из 5. Типичная задача городского этапа — или лёгкая задача Республиканской олимпиады.">≈2/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/third/2002/10-1/" data-pid="2002-third-theory-10-1">
+  <span class="pr-badge pr-badge-t">Т1</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/2002-third-theory-10-1-320.webp" srcset="/problems/thumbs/2002-third-theory-10-1-320.webp 320w, /problems/thumbs/2002-third-theory-10-1-640.webp 640w" sizes="96px"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title pr-title-num">Задача 10-1</span>
+    <span class="pr-snippet"><ol>
+<li>Муфта массы <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="1.986ex" height="1.025ex" role="img" focusable="false" viewBox="0 -442 878 453" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D45A" xlink:href="#MJX-TEX-I-1D45A"></use></g></g></g></svg></mjx-container> насажена на жесткий гладкий горизонтальный стержень <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.452ex;" xmlns="http://www.w3.org/2000/svg" width="2.715ex" height="2.149ex" role="img" focusable="false" viewBox="0 -750 1200 950" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtext"><text data-variant="normal"  font-size="884px" font-family="serif" transform="scale(1,-1)" textLength="1200" lengthAdjust="spacingAndGlyphs">АВ</text></g></g></g></svg></mjx-container> и с помощью легкой нерастяжимой веревки и неподвижного гладкого …</li>
+</ol></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Городская</b><i>3-й этап</i> · 2002</span>
+      <span class="pr-grade">10 кл.</span>
+      
+      
+      
+      <span class="pr-time">~15 мин</span>
+      <span class="pr-tag">Связанные тела, блоки, нити</span><span class="pr-tag">Закон сохранения энергии</span><span class="pr-tag">Законы динамики Ньютона</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s on" title="Решение">Р</span>
+      
+      <span class="pr-av pr-av-m" title="Разбалловка — нет">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#fed976;color:#2d2d2d"
+          title="Сложность (оценка): Типичный городской этап — уровень 2 из 5. Типичная задача городского этапа — или лёгкая задача Республиканской олимпиады.">≈2/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/1996/9-3/" data-pid="1996-final-theory-9-3">
+  <span class="pr-badge pr-badge-t">Т3</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/1996-final-theory-9-3-320.webp" srcset="/problems/thumbs/1996-final-theory-9-3-320.webp 320w, /problems/thumbs/1996-final-theory-9-3-640.webp 640w" sizes="96px"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title pr-title-num">Задача 9-3</span>
+    <span class="pr-snippet"><p>Грузы массами <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.452ex;" xmlns="http://www.w3.org/2000/svg" width="11.12ex" height="2.149ex" role="img" focusable="false" viewBox="0 -750 4915.1 950" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D45A" xlink:href="#MJX-TEX-I-1D45A"></use></g><g data-mml-node="TeXAtom" transform="translate(911,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><use data-c="31" xlink:href="#MJX-TEX-N-31"></use></g></g></g><g data-mml-node="mo" transform="translate(1592.3,0)"><use data-c="3D" xlink:href="#MJX-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(2648.1,0)"><use data-c="35" xlink:href="#MJX-TEX-N-35"></use><use data-c="30" xlink:href="#MJX-TEX-N-30" transform="translate(500,0)"></use><use data-c="30" xlink:href="#MJX-TEX-N-30" transform="translate(1000,0)"></use></g><g data-mml-node="mstyle" transform="translate(4148.1,0)"><g data-mml-node="mspace"></g></g><g data-mml-node="mtext" transform="translate(4315.1,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">г</text></g></g></g></svg></mjx-container> и <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.452ex;" xmlns="http://www.w3.org/2000/svg" width="11.12ex" height="2.149ex" role="img" focusable="false" viewBox="0 -750 4915.1 950" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D45A" xlink:href="#MJX-TEX-I-1D45A"></use></g><g data-mml-node="TeXAtom" transform="translate(911,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><use data-c="32" xlink:href="#MJX-TEX-N-32"></use></g></g></g><g data-mml-node="mo" transform="translate(1592.3,0)"><use data-c="3D" xlink:href="#MJX-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(2648.1,0)"><use data-c="31" xlink:href="#MJX-TEX-N-31"></use><use data-c="30" xlink:href="#MJX-TEX-N-30" transform="translate(500,0)"></use><use data-c="30" xlink:href="#MJX-TEX-N-30" transform="translate(1000,0)"></use></g><g data-mml-node="mstyle" transform="translate(4148.1,0)"><g data-mml-node="mspace"></g></g><g data-mml-node="mtext" transform="translate(4315.1,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">г</text></g></g></g></svg></mjx-container> скреплены легкой нерастяжимой нитью с помощью системы легких и гладких блоков. …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Республиканская</b><i>Респ.</i> · 1996</span>
+      <span class="pr-grade">9 кл.</span>
+      
+      
+      
+      <span class="pr-time">~8 мин</span>
+      <span class="pr-tag">Связанные тела, блоки, нити</span><span class="pr-tag">Законы динамики Ньютона</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s on" title="Решение">Р</span>
+      
+      <span class="pr-av pr-av-m" title="Разбалловка — нет">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#fd8d3c;color:#2d2d2d"
+          title="Сложность (оценка): Республиканская олимпиада — уровень 3 из 5. Медианная задача Республиканской олимпиады: нужен настоящий шаг, но это известный приём.">≈3/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/1996/11-3/" data-pid="1996-final-theory-11-3">
+  <span class="pr-badge pr-badge-t">Т3</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/1996-final-theory-11-3-320.webp" srcset="/problems/thumbs/1996-final-theory-11-3-320.webp 320w, /problems/thumbs/1996-final-theory-11-3-640.webp 640w" sizes="96px"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title pr-title-num">Задача 11-3</span>
+    <span class="pr-snippet"><p>Длинная невесомая нерастяжимая нить переброшена через два маленьких невесомых блока, оси которых жестко закреплены. К концам нити привязаны …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Республиканская</b><i>Респ.</i> · 1996</span>
+      <span class="pr-grade">11 кл.</span>
+      
+      
+      
+      <span class="pr-time">~20 мин</span>
+      <span class="pr-tag">Связанные тела, блоки, нити</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s on" title="Решение">Р</span>
+      
+      <span class="pr-av pr-av-m" title="Разбалловка — нет">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#800026;color:#fff"
+          title="Сложность (оценка): Уровень IZhO — уровень 5 из 5. Задача уровня медального тура IZhO — идею неоткуда списать.">≈5/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/1995/9-2/" data-pid="1995-final-theory-9-2">
+  <span class="pr-badge pr-badge-t">Т2</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/1995-final-theory-9-2-320.webp" srcset="/problems/thumbs/1995-final-theory-9-2-320.webp 320w, /problems/thumbs/1995-final-theory-9-2-640.webp 640w" sizes="96px"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title pr-title-num">Задача 9-2</span>
+    <span class="pr-snippet"><p>Три шарика массами <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.439ex;" xmlns="http://www.w3.org/2000/svg" width="9.103ex" height="1.946ex" role="img" focusable="false" viewBox="0 -666 4023.3 860" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D45A" xlink:href="#MJX-TEX-I-1D45A"></use></g><g data-mml-node="mo" transform="translate(878,0)"><use data-c="2C" xlink:href="#MJX-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(1322.7,0)"><use data-c="32" xlink:href="#MJX-TEX-N-32"></use></g><g data-mml-node="mi" transform="translate(1822.7,0)"><use data-c="1D45A" xlink:href="#MJX-TEX-I-1D45A"></use></g><g data-mml-node="mo" transform="translate(2700.7,0)"><use data-c="2C" xlink:href="#MJX-TEX-N-2C"></use></g><g data-mml-node="mi" transform="translate(3145.3,0)"><use data-c="1D45A" xlink:href="#MJX-TEX-I-1D45A"></use></g></g></g></svg></mjx-container> шарнирно скреплены легкими жесткими стержнями длиной <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="0.674ex" height="1.595ex" role="img" focusable="false" viewBox="0 -694 298 705" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D459" xlink:href="#MJX-TEX-I-1D459"></use></g></g></g></svg></mjx-container> и установлены вертикально на гладкой горизонтальной плоскости. …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Республиканская</b><i>Респ.</i> · 1995</span>
+      <span class="pr-grade">9 кл.</span>
+      
+      
+      
+      <span class="pr-time">~10 мин</span>
+      <span class="pr-tag">Связанные тела, блоки, нити</span><span class="pr-tag">Закон сохранения энергии</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s on" title="Решение">Р</span>
+      
+      <span class="pr-av pr-av-m" title="Разбалловка — нет">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#fd8d3c;color:#2d2d2d"
+          title="Сложность (оценка): Республиканская олимпиада — уровень 3 из 5. Медианная задача Республиканской олимпиады: нужен настоящий шаг, но это известный приём.">≈3/5</span>
+    
+  </span>
+</a>
+
+  </div>
+</div>
+
+<nav class="yr-nav">
+  <a class="btn btn-ghost" href="/problems/topics/">← Все темы</a>
+  <a class="btn btn-ghost" href="/problems/?tag=svyazannye_tela_i_bloki">Открыть в поиске задач</a>
+</nav>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© 2026 BelPhO — Белорусские физические олимпиады</span>
+    <span class="footer-links">
+      <a href="/problems/">Задачи</a>
+      <a href="https://t.me/belpho_by" rel="noopener">Telegram</a>
+    </span>
+  </div>
+</footer>
+
+
+<script type="module" src="/js/site/problem-list.js"></script>
+
+</body>
+</html>

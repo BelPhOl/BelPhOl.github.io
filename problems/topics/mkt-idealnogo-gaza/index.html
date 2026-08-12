@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>МКТ идеального газа: давление и температура — BelPhO</title>
+  <meta name="description" content="Модель идеального газа, вывод основного уравнения МКТ, молекулярно-кинетический смысл температуры. — 6 задач белорусских олимпиад по физике.">
+  <link rel="canonical" href="https://belpho.org/problems/topics/mkt-idealnogo-gaza/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BelPhO">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:url" content="https://belpho.org/problems/topics/mkt-idealnogo-gaza/">
+  <meta property="og:title" content="МКТ идеального газа: давление и температура — BelPhO">
+  <meta property="og:description" content="Модель идеального газа, вывод основного уравнения МКТ, молекулярно-кинетический смысл температуры. — 6 задач белорусских олимпиад по физике.">
+  
+  <meta property="og:image" content="https://belpho.org/problems/thumbs/og/problems.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/css/platform.css">
+</head>
+<body>
+<svg id="mjx-glyph-cache" aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden"><defs><path id="MJX-TEX-I-1D446" d="M308 24Q367 24 416 76T466 197Q466 260 414 284Q308 311 278 321T236 341Q176 383 176 462Q176 523 208 573T273 648Q302 673 343 688T407 704H418H425Q521 704 564 640Q565 640 577 653T603 682T623 704Q624 704 627 704T632 705Q645 705 645 698T617 577T585 459T569 456Q549 456 549 465Q549 471 550 475Q550 478 551 494T553 520Q553 554 544 579T526 616T501 641Q465 662 419 662Q362 662 313 616T263 510Q263 480 278 458T319 427Q323 425 389 408T456 390Q490 379 522 342T554 242Q554 216 546 186Q541 164 528 137T492 78T426 18T332 -20Q320 -22 298 -22Q199 -22 144 33L134 44L106 13Q83 -14 78 -18T65 -22Q52 -22 52 -14Q52 -11 110 221Q112 227 130 227H143Q149 221 149 216Q149 214 148 207T144 186T142 153Q144 114 160 87T203 47T255 29T308 24Z"></path><path id="MJX-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJX-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></defs></svg>
+<header class="site-header">
+  <div class="container header-content">
+    <a href="/" class="logo">
+      <img src="/img/logo.png" alt="BelPhO" class="logo-img" width="36" height="36">
+      <span>BelPhO</span>
+    </a>
+    <nav class="site-nav" aria-label="Основная навигация">
+      <ul class="nav-links">
+        <li><a href="/">Главная</a></li>
+        <li><a href="/problems/" class="active">Задачи</a></li>
+        <li><a href="/books/">Книги</a></li>
+        <li><a href="/training-program.html">Подготовка</a></li>
+        <li><a href="/alumni.html">Выпускники</a></li>
+        <li><a href="/news/">Новости</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<main class="p-shell p-shell-wide">
+  
+<nav class="crumbs" aria-label="Хлебные крошки">
+  <a href="/">Главная</a> <span>/</span>
+  <a href="/problems/">Задачи</a> <span>/</span>
+  <a href="/problems/topics/">Темы</a> <span>/</span>
+  <span aria-current="page">МКТ идеального газа: давление и температура</span>
+</nav>
+
+<header class="yr-head yr-head-topic">
+  <div class="yr-head-main">
+    <p class="yr-kicker">Молекулярная физика</p>
+    <h1 class="yr-title yr-title-topic">МКТ идеального газа: давление и температура</h1>
+    <p class="tp-lead">Модель идеального газа, вывод основного уравнения МКТ, молекулярно-кинетический смысл температуры.</p>
+  </div>
+  <ul class="yr-facts">
+    <li><b>6</b> задач</li>
+    <li>в книгах: <a href="/books/Molekuliarnaja_fizika.pdf">Молекулярная физика и термодинамика</a> </li>
+  </ul>
+</header>
+
+<div id="pr-root">
+  <div class="pr-list">
+    
+<a class="pr" href="/problems/third/2020/11-2/" data-pid="2020-third-theory-11-2">
+  <span class="pr-badge pr-badge-t">Т2</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/2020-third-theory-11-2-320.webp" srcset="/problems/thumbs/2020-third-theory-11-2-320.webp 320w, /problems/thumbs/2020-third-theory-11-2-640.webp 640w" sizes="96px"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Монгольфьер и шарльер</span>
+    <span class="pr-snippet"><p>Первые полеты на воздушных шарах состоялись во Франции в 1783 году. Энтузиастами воздухоплавания являлись братья Жозеф-Мишель и Жак-Этьен Монгольфье. …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Городская</b><i>3-й этап</i> · 2020</span>
+      <span class="pr-grade">11 кл.</span>
+      
+      
+      
+      <span class="pr-time">~35 мин</span>
+      <span class="pr-tag">МКТ идеального газа: давление и температура</span><span class="pr-tag">Закон Архимеда, плавание тел</span><span class="pr-tag">Барометрическая формула, модели атмосферы</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s on" title="Решение">Р</span>
+      
+      <span class="pr-av pr-av-m" title="Разбалловка — нет">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#e31a1c;color:#fff"
+          title="Сложность (оценка): Повышенной трудности — уровень 4 из 5. Сложная задача Республиканской олимпиады или уровень отборочных сборов.">≈4/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2016/10-3/" data-pid="2016-final-theory-10-3">
+  <span class="pr-badge pr-badge-t">Т3</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/2016-final-theory-10-3-320.webp" srcset="/problems/thumbs/2016-final-theory-10-3-320.webp 320w, /problems/thumbs/2016-final-theory-10-3-640.webp 640w" sizes="96px"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Термоэлектрические явления</span>
+    <span class="pr-snippet"><p>Современная теория строения металлов основывается на законах квантовой физики. Однако и более простые классические теории позволяют получать …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Республиканская</b><i>Респ.</i> · 2016</span>
+      <span class="pr-grade">10 кл.</span>
+      
+      
+      
+      <span class="pr-time">~40 мин</span>
+      <span class="pr-tag">МКТ идеального газа: давление и температура</span><span class="pr-tag">Закон Ома</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s on" title="Решение">Р</span>
+      
+      <span class="pr-av pr-av-m" title="Разбалловка — нет">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#e31a1c;color:#fff"
+          title="Сложность (оценка): Повышенной трудности — уровень 4 из 5. Сложная задача Республиканской олимпиады или уровень отборочных сборов.">≈4/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/third/2016/11-3/" data-pid="2016-third-theory-11-3">
+  <span class="pr-badge pr-badge-t">Т3</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/2016-third-theory-11-3-320.webp" srcset="/problems/thumbs/2016-third-theory-11-3-320.webp 320w, /problems/thumbs/2016-third-theory-11-3-640.webp 640w" sizes="96px"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Как разгоняется газ?</span>
+    <span class="pr-snippet"><p>Цель данной задачи – показать, как газы протекают через сопло реактивного двигателя, почему профиль сопла изменяется не монотонно: сначала сужается …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Городская</b><i>3-й этап</i> · 2016</span>
+      <span class="pr-grade">11 кл.</span>
+      
+      
+      
+      <span class="pr-time">~60 мин</span>
+      <span class="pr-tag">МКТ идеального газа: давление и температура</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s on" title="Решение">Р</span>
+      
+      <span class="pr-av pr-av-m" title="Разбалловка — нет">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#800026;color:#fff"
+          title="Сложность (оценка): Уровень IZhO — уровень 5 из 5. Задача уровня медального тура IZhO — идею неоткуда списать.">≈5/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2012/10-2/" data-pid="2012-final-theory-10-2">
+  <span class="pr-badge pr-badge-t">Т2</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/2012-final-theory-10-2-320.webp" srcset="/problems/thumbs/2012-final-theory-10-2-320.webp 320w, /problems/thumbs/2012-final-theory-10-2-640.webp 640w" sizes="96px"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Электронный газ и неоднородный проводник</span>
+    <span class="pr-snippet"><p>В классической электронной теории металлов предполагается, что движение электронов подчиняется законам классической теории. В этой теории электроны …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Республиканская</b><i>Респ.</i> · 2012</span>
+      <span class="pr-grade">10 кл.</span>
+      
+      
+      
+      <span class="pr-time">~30 мин</span>
+      <span class="pr-tag">МКТ идеального газа: давление и температура</span><span class="pr-tag">Средняя и мгновенная скорость</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s on" title="Решение">Р</span>
+      
+      <span class="pr-av pr-av-m" title="Разбалловка — нет">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#fd8d3c;color:#2d2d2d"
+          title="Сложность (оценка): Республиканская олимпиада — уровень 3 из 5. Медианная задача Республиканской олимпиады: нужен настоящий шаг, но это известный приём.">≈3/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/third/2001/10-1/" data-pid="2001-third-theory-10-1">
+  <span class="pr-badge pr-badge-t">Т1</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/2001-third-theory-10-1-320.webp" srcset="/problems/thumbs/2001-third-theory-10-1-320.webp 320w, /problems/thumbs/2001-third-theory-10-1-640.webp 640w" sizes="96px"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title pr-title-num">Задача 10-1</span>
+    <span class="pr-snippet"><p>Задача 1. (20 баллов) В физике при описании сложных процессов достаточно широко используются различные простейшие модели. Одной из них является …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Городская</b><i>3-й этап</i> · 2001</span>
+      <span class="pr-grade">10 кл.</span>
+      
+      
+      
+      <span class="pr-time">~35 мин</span>
+      <span class="pr-tag">МКТ идеального газа: давление и температура</span><span class="pr-tag">Закон движения и основная задача кинематики</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s" title="Решение — нет">Р</span>
+      
+      <span class="pr-av pr-av-m" title="Разбалловка — нет">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#800026;color:#fff"
+          title="Сложность (оценка): Уровень IZhO — уровень 5 из 5. Задача уровня медального тура IZhO — идею неоткуда списать.">≈5/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/1993/11-4/" data-pid="1993-final-theory-11-4">
+  <span class="pr-badge pr-badge-t">Т4</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/1993-final-theory-11-4.svg"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-card">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title pr-title-num">Задача 11-4</span>
+    <span class="pr-snippet"><p>Летающая тарелка в виде пластины площадью <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.452ex;" xmlns="http://www.w3.org/2000/svg" width="9.462ex" height="2.597ex" role="img" focusable="false" viewBox="0 -948 4182.1 1148" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D446" xlink:href="#MJX-TEX-I-1D446"></use></g><g data-mml-node="mo" transform="translate(922.8,0)"><use data-c="3D" xlink:href="#MJX-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(1978.6,0)"><use data-c="31" xlink:href="#MJX-TEX-N-31"></use><use data-c="30" xlink:href="#MJX-TEX-N-30" transform="translate(500,0)"></use></g><g data-mml-node="mstyle" transform="translate(2978.6,0)"><g data-mml-node="mspace"></g></g><g data-mml-node="msup" transform="translate(3145.6,0)"><g data-mml-node="mtext"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">м</text></g><g data-mml-node="mn" transform="translate(633,477.1) scale(0.707)"><use data-c="32" xlink:href="#MJX-TEX-N-32"></use></g></g></g></g></svg></mjx-container> “висит” в воздухе. Нижняя поверхность тарелки имеет температуру …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Республиканская</b><i>Респ.</i> · 1993</span>
+      <span class="pr-grade">11 кл.</span>
+      
+      
+      
+      <span class="pr-time">~15 мин</span>
+      <span class="pr-tag">МКТ идеального газа: давление и температура</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s on" title="Решение">Р</span>
+      
+      <span class="pr-av pr-av-m" title="Разбалловка — нет">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#fd8d3c;color:#2d2d2d"
+          title="Сложность (оценка): Республиканская олимпиада — уровень 3 из 5. Медианная задача Республиканской олимпиады: нужен настоящий шаг, но это известный приём.">≈3/5</span>
+    
+  </span>
+</a>
+
+  </div>
+</div>
+
+<nav class="yr-nav">
+  <a class="btn btn-ghost" href="/problems/topics/">← Все темы</a>
+  <a class="btn btn-ghost" href="/problems/?tag=mkt_idealnogo_gaza">Открыть в поиске задач</a>
+</nav>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© 2026 BelPhO — Белорусские физические олимпиады</span>
+    <span class="footer-links">
+      <a href="/problems/">Задачи</a>
+      <a href="https://t.me/belpho_by" rel="noopener">Telegram</a>
+    </span>
+  </div>
+</footer>
+
+
+<script type="module" src="/js/site/problem-list.js"></script>
+
+</body>
+</html>
