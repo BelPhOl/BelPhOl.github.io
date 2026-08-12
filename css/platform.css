@@ -58,7 +58,7 @@ img, svg { max-width: 100%; height: auto; }
 
 a { color: var(--primary-color); }
 
-.container { max-width: 1600px; margin: 0 auto; padding: 0 10px; }
+.container { max-width: min(1800px, 97vw); margin: 0 auto; padding: 0 8px; }
 
 /* ---------------------------------------------------------------- header */
 
@@ -157,23 +157,29 @@ a { color: var(--primary-color); }
 
 /* ---------------------------------------------------------------- layout */
 
-.p-shell { max-width: 1600px; margin: 0 auto; padding: 8px 10px 0; }
+.p-shell { max-width: min(1800px, 97vw); margin: 0 auto; padding: 8px 8px 0; }
 
 .p-layout { display: block; }
 
-.p-main { min-width: 0; max-width: 1180px; }
+.p-main { min-width: 0; max-width: none; }
 
 @media (min-width: 900px) {
-  /* Tight by intent: the page is a problem, and every pixel of chrome is a
-     pixel not showing it. Was 28/24 padding, a 292px rail and a 28px gutter. */
-  .p-shell { padding: 10px 12px 0; }
+  /* The page IS the problem. Chrome gets the minimum that still works:
+     originally 28/24 padding, a 292px rail and a 28px gutter, which left the
+     statement about a third of the screen. */
+  .p-shell { padding: 6px 8px 0; }
   .p-layout {
     display: grid;
-    grid-template-columns: 236px minmax(0, 1fr);
-    gap: 16px;
+    grid-template-columns: 200px minmax(0, 1fr);
+    gap: 12px;
     align-items: start;
   }
-  .p-sidebar { position: sticky; top: 8px; }
+  .p-sidebar { position: sticky; top: 6px; }
+}
+@media (min-width: 1500px) {
+  /* On a wide screen the rail costs proportionally nothing, so give the extra
+     width to the content rather than growing the furniture. */
+  .p-layout { grid-template-columns: 210px minmax(0, 1fr); gap: 14px; }
 }
 
 /* --------------------------------------------------------------- sidebar */
@@ -220,6 +226,39 @@ a { color: var(--primary-color); }
 /* Background/text come from the band's own color (inline style, lib/heatColor.js
    bandColor/bandTextColor) — the border just needs to stop fighting them. */
 .sb-chip-diff { border-color: transparent; }
+
+/* Sibling strip — «‹ 10.1 10.2 10.3 ›», the round's own numbers. The rail is
+   only 200px wide, so this stays as compact as the availability chips above
+   it rather than reading like a second nav. */
+.sb-siblings {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+.sb-sib-list { display: flex; flex-wrap: wrap; gap: 4px; }
+.sb-sib, .sb-sib-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 22px;
+  height: 22px;
+  padding: 0 5px;
+  border-radius: 5px;
+  background: var(--bg-color);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  font-size: 11.5px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  text-decoration: none;
+  line-height: 1;
+}
+.sb-sib-arrow { color: var(--text-primary); }
+.sb-sib-arrow.is-disabled { color: #cbd5e1; }
+.sb-sib:hover, .sb-sib-arrow:not(.is-disabled):hover { border-color: var(--primary-color); color: var(--primary-dark); }
+.sb-sib.is-current { background: var(--primary-color); border-color: var(--primary-color); color: #fff; }
 
 /* nav: vertical list on desktop, horizontal tab-bar on mobile */
 
@@ -449,8 +488,8 @@ a { color: var(--primary-color); }
   border: 1px solid var(--border-color);
   border-radius: var(--radius);
   box-shadow: var(--shadow-sm);
-  padding: 10px 12px;
-  margin-bottom: 10px;
+  padding: 12px 18px;
+  margin-bottom: 8px;
   /* flow-root, not overflow:hidden — a card must contain its floated figure
      (otherwise fig. 1 spills past the card and squeezes the NEXT part's text
      into a one-word column) while still letting tall math scroll. */
@@ -491,6 +530,13 @@ a { color: var(--primary-color); }
 
 .subq-head-split .subq-pill { flex-shrink: 0; }
 
+/* When the question frame owns the number (.subq-num below), its card's
+   header has no pill — just the points chip, or nothing at all. An `auto`
+   margin keeps the chip pinned to the right edge either way: with a pill
+   present, space-between already puts it there and this is a no-op; alone,
+   it would otherwise default to flex-start and jump to the left. */
+.subq-points { margin-left: auto; }
+
 .subq-points {
   font-size: 12.5px;
   font-weight: 700;
@@ -522,6 +568,12 @@ a { color: var(--primary-color); }
   padding: 10px 14px 11px;
   margin-bottom: 0.7em;
 }
+
+/* The part's own leading number («1.1») inside that framed sentence — see
+   build.js's highlightLeadingLabel. This used to also be drawn as a separate
+   blue badge (.subq-pill) above the frame, printing the same number twice;
+   the badge is gone and this is the one place the number is coloured now. */
+.subq-num { color: var(--primary-color); font-weight: 700; }
 
 @media (max-width: 480px) {
   .subq-body-question > p:first-of-type { padding: 8px 10px 9px; }
@@ -829,6 +881,10 @@ a { color: var(--primary-color); }
 /* ------------------------------------------------------------------- edu */
 
 .edu-done {
+  /* No subq-pill sits to its left any more (the question frame below carries
+     the coloured number instead) — pin it to the header's right edge itself
+     rather than leaning on space-between with a now-absent sibling. */
+  margin-left: auto;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -868,7 +924,7 @@ a { color: var(--primary-color); }
 .edu-done-input:focus-visible + .edu-done-box { outline: 2px solid var(--primary-color); outline-offset: 2px; }
 
 .edu-card.is-done { border-color: #a7f3d0; }
-.edu-card.is-done .subq-pill { background: var(--success-color); }
+.edu-card.is-done .subq-num { color: var(--success-color); }
 .edu-card.is-done .edu-done { color: #047857; }
 
 .edu-actions {
@@ -1019,7 +1075,7 @@ mjx-container[display="true"]::-webkit-scrollbar-track { background: transparent
    gains a sidebar/grid when there is room for one.
    ========================================================================== */
 
-.p-shell-wide { max-width: 1600px; padding-bottom: 4px; }
+.p-shell-wide { max-width: min(1800px, 97vw); padding-bottom: 4px; }
 
 /* --------------------------------------------------------------- crumbs */
 
@@ -1038,46 +1094,45 @@ mjx-container[display="true"]::-webkit-scrollbar-track { background: transparent
 
 /* ====================================================== stage landing page */
 
+/* The hero used to be «visiting card» real estate spent on furniture: a
+   kicker, a title, a four-line description and three stacked stat blocks —
+   over half a screen before a single year was visible. The year grid is the
+   actual content of the page, so the hero is kept to what it takes to orient
+   a reader who arrived from search not knowing what this stage even is. */
 .st-hero {
   background: linear-gradient(135deg, var(--accent-tint) 0%, var(--surface-color) 62%);
   border: 1px solid var(--border-color);
   border-left: 4px solid var(--accent);
   border-radius: var(--radius);
-  padding: 22px 22px 18px;
+  padding: 14px 18px 13px;
   box-shadow: var(--shadow-sm);
 }
 
 .st-kicker {
-  font-size: 11.5px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: var(--accent-ink);
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 .st-title {
-  font-size: 27px;
+  font-size: 22px;
   font-weight: 800;
   line-height: 1.2;
   letter-spacing: -0.02em;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
-.st-desc { font-size: 15.5px; color: var(--text-secondary); max-width: 62ch; }
+.st-desc { font-size: 14px; color: var(--text-secondary); max-width: 68ch; margin-bottom: 8px; }
 
-.st-stats {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px 26px;
-  margin-top: 16px;
-  padding-top: 14px;
-  border-top: 1px solid var(--border-color);
-}
-.st-stats dt { font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-secondary); }
-.st-stats dd { font-size: 21px; font-weight: 700; line-height: 1.2; font-variant-numeric: tabular-nums; }
+/* One line — «520 задач · 37 олимпиад · 1990–2026» — not three stacked
+   label/value blocks. */
+.st-stats { font-size: 13.5px; color: var(--text-secondary); }
+.st-stats b { color: var(--text-primary); font-variant-numeric: tabular-nums; }
 
-.st-section { margin-top: 28px; }
+.st-section { margin-top: 22px; }
 
 .st-section-head {
   display: flex;
@@ -1091,20 +1146,23 @@ mjx-container[display="true"]::-webkit-scrollbar-track { background: transparent
 .st-all { font-size: 13.5px; color: var(--primary-color); text-decoration: none; white-space: nowrap; }
 .st-all:hover { text-decoration: underline; }
 
-/* Year chips. auto-fill keeps them a comfortable tap size at 390px (two per
-   row) without ever stretching to a 300px-wide slab on a desktop. */
+/* Year chips are the actual content of this page, so they are sized like it:
+   bigger and more prominent than the old 132px tap-target grid. auto-fill
+   still keeps two comfortable columns at 390px without ever stretching to a
+   single oversized slab on a wide desktop. align-items:start means a year
+   with no borrowed preview image (thumb missing, see build.js) sits at its
+   own natural height instead of stretching to match a taller neighbour. */
 .st-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(132px, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 14px;
+  align-items: start;
 }
 
 .st-chip {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 2px;
-  padding: 13px 14px 15px;
   background: var(--surface-color);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-sm);
@@ -1119,21 +1177,37 @@ mjx-container[display="true"]::-webkit-scrollbar-track { background: transparent
   transform: translateY(-1px);
 }
 
+/* Borrowed from the year's own first problem (lib/thumbCard.js / lib/thumbs.js
+   — the exact same asset the problem's own row uses, so there is no extra
+   build cost). Letterboxed on white like every other figure thumbnail on the
+   site, never cropped — a physics figure cropped to fill loses the axis
+   labels that make it recognisable. */
+.st-chip-img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background: #fff;
+  border-bottom: 1px solid var(--border-color);
+}
+.st-chip-img img { display: block; width: 100%; height: 100%; object-fit: contain; }
+
+.st-chip-body { display: flex; flex-direction: column; gap: 2px; padding: 12px 13px 14px; }
+
 .st-chip-year { font-size: 22px; font-weight: 800; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
 .st-chip-n { font-size: 12.5px; color: var(--text-secondary); }
-.st-chip-grades { display: flex; gap: 4px; margin-top: 4px; }
-.st-chip-grades i, .st-chip-grades b {
+.st-chip-grades { display: flex; flex-wrap: wrap; gap: 3px; margin-top: 4px; }
+.st-chip-grades i {
   font-style: normal;
-  font-size: 10.5px;
+  font-size: 10px;
   font-weight: 700;
   line-height: 1;
-  padding: 3px 6px;
+  padding: 3px 5px;
   border-radius: 4px;
   background: var(--bg-color);
   color: var(--text-secondary);
   border: 1px solid var(--border-color);
 }
-.st-chip-grades b { background: #ecfeff; color: #155e75; border-color: #a5f3fc; }
+.st-chip-grades i.st-chip-exp { background: #ecfeff; color: #155e75; border-color: #a5f3fc; }
 .st-chip-solved { font-size: 12px; font-weight: 600; color: var(--success-color); margin-top: 2px; }
 .st-chip.is-done { border-color: #a7f3d0; background: var(--success-tint); }
 
@@ -1274,7 +1348,7 @@ mjx-container[display="true"]::-webkit-scrollbar-track { background: transparent
 .pr {
   position: relative;
   display: grid;
-  grid-template-columns: 34px 76px minmax(0, 1fr);
+  grid-template-columns: 34px 108px minmax(0, 1fr);
   grid-template-areas:
     "badge thumb main"
     "badge thumb right";
@@ -1312,8 +1386,8 @@ mjx-container[display="true"]::-webkit-scrollbar-track { background: transparent
   align-self: start;
   position: relative;
   display: block;
-  width: 76px;
-  height: 57px;
+  width: 108px;
+  height: 81px;
   border-radius: 6px;
   overflow: hidden;
   background: var(--bg-color);
@@ -1423,7 +1497,7 @@ mjx-container[display="true"]::-webkit-scrollbar-track { background: transparent
 .pr-where > i { display: none; }
 .pr-grade, .pr-pts, .pr-time { white-space: nowrap; }
 .pr-meta > span + span::before {
-  content: '·';
+  content: '';
   margin-right: 8px;
   color: #cbd5e1;
 }
@@ -1459,11 +1533,18 @@ mjx-container[display="true"]::-webkit-scrollbar-track { background: transparent
   font-weight: 700;
   background: #f1f5f9;
   color: #cbd5e1;
+  cursor: pointer;
 }
 .pr-av-t.on { background: var(--primary-tint); color: var(--primary-dark); }
 .pr-av-s.on { background: var(--success-tint); color: #047857; }
 .pr-av-m.on { background: var(--hint-2-tint); color: #b45309; }
 .pr-av-h.on { background: var(--hint-1-tint); color: var(--hint-1); }
+/* A badge doubles as a filter toggle (client/finder.js, client/problem-list.js)
+   — this is "is that filter active right now", independent of .on ("does
+   THIS row have it"). box-shadow, not border, so the badge's own size never
+   shifts when the filter is toggled. */
+.pr-av[aria-pressed="true"] { box-shadow: 0 0 0 2px var(--primary-color); }
+.pr-av:focus-visible { outline: 2px solid var(--primary-color); outline-offset: 1px; }
 
 .pr-diff {
   display: inline-flex;
@@ -1499,14 +1580,14 @@ mjx-container[display="true"]::-webkit-scrollbar-track { background: transparent
 
 @media (min-width: 640px) {
   .pr {
-    grid-template-columns: 44px 96px minmax(0, 1fr) auto;
+    grid-template-columns: 44px 152px minmax(0, 1fr) auto;
     grid-template-areas: "badge thumb main right";
     align-items: center;
     gap: 14px;
     padding: 10px 14px;
   }
   .pr-badge { align-self: center; min-width: 44px; height: 30px; font-size: 14px; }
-  .pr-thumb { align-self: center; width: 96px; height: 72px; }
+  .pr-thumb { align-self: center; width: 152px; height: 114px; }
   .pr-right { margin-top: 0; justify-content: flex-end; }
   .pr-title { font-size: 15.5px; }
   .pr-title-num { font-size: 14.5px; }
@@ -1844,6 +1925,10 @@ mjx-container[display="true"]::-webkit-scrollbar-track { background: transparent
 .pr-preview p + p::before { content: ' '; }
 .pr-preview mjx-container[display="true"] { display: inline-block; margin: 0 !important; }
 
+/* Zero-height IntersectionObserver target, just above the fallback button —
+   invisible but present in layout (display:none elements never intersect). */
+.pf-sentinel { height: 1px; margin-top: 12px; }
+
 .pf-more {
   display: block;
   width: 100%;
@@ -1859,6 +1944,21 @@ mjx-container[display="true"]::-webkit-scrollbar-track { background: transparent
   cursor: pointer;
 }
 .pf-more:hover { border-color: var(--primary-color); color: var(--primary-dark); }
+
+/* Visually hidden but still in the accessibility tree and the tab order —
+   unlike `hidden`/display:none, a screen reader can still reach and read
+   this. Used for the finder's aria-live status text. */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
 
 .pf-empty { padding: 44px 16px; text-align: center; color: var(--text-secondary); font-size: 14.5px; }
 .pf-empty p { margin-bottom: 12px; }
@@ -2102,7 +2202,7 @@ a.tp-leaf-name:hover { text-decoration: underline; }
 .bk-chip-pages { font-weight: 700; color: var(--text-primary); }
 .bk-sections { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 8px; }
 .bk-sec { font-size: 11px; color: var(--text-secondary); }
-.bk-sec + .bk-sec::before { content: '·'; margin-right: 4px; color: #cbd5e1; }
+.bk-sec + .bk-sec::before { content: ''; margin-right: 10px; }
 .bk-actions { display: flex; gap: 8px; margin-bottom: 6px; }
 .btn-sm { min-height: 32px; padding: 0 14px; font-size: 13px; }
 
@@ -2168,6 +2268,7 @@ a.tp-leaf-name:hover { text-decoration: underline; }
     break-inside: avoid;
   }
   .subq-pill { background: none; color: #000; border: 1.5pt solid #000; border-radius: 4pt; padding: 2pt 8pt; }
+  .subq-num { color: #000; }
   .sb-chip { border-color: #bbb; background: none; }
   .md-fig img { border-color: #bbb; }
   .hint summary { background: none; }
@@ -2181,6 +2282,74 @@ a.tp-leaf-name:hover { text-decoration: underline; }
   .subq-body-question > p:first-of-type { border-color: #000; break-inside: avoid; }
   .footnotes { break-inside: avoid; }
   .fn-back { display: none; }
+}
+
+/* ------------------------------------------------------------------ tables */
+/* The corpus's experimental problems live in their tables, and the authors set
+   them with real care: a heavy outer rule, thin inner rules, every cell ruled,
+   numbers right-aligned under a centred header, and a lighter frame on a small
+   table than on a big one. Nothing here styled `<table>` at all, so 179
+   problems' data rendered as loose columns of numbers with no grid. */
+.md-table { overflow-x: auto; margin: 10px 0 14px; max-width: 100%; }
+.md-table > table, .p-body table, .subq-body table, .intro-card table {
+  border-collapse: collapse;
+  border: 2.5px solid var(--text-color);
+  font-variant-numeric: tabular-nums;
+  font-size: 15px;
+  background: #fff;
+}
+.md-table > table th, .md-table > table td,
+.p-body table th, .p-body table td,
+.subq-body table th, .subq-body table td,
+.intro-card table th, .intro-card table td {
+  border: 1px solid var(--text-color);
+  padding: 5px 12px;
+  line-height: 1.35;
+}
+.md-table > table th, .p-body table th,
+.subq-body table th, .intro-card table th {
+  text-align: center; font-weight: 600; padding: 7px 12px; white-space: nowrap;
+}
+/* Numbers right-align — that is what makes a column of measurements readable,
+   and it is what the source PDFs do. Text cells opt back out. */
+.md-table > table td, .p-body table td,
+.subq-body table td, .intro-card table td { text-align: right; }
+td.md-td-text { text-align: left !important; }
+/* A short table with the same heavy frame as a 17-row one looks clumsy; the
+   authors use a lighter rule on small tables. */
+.md-table--sm > table { border-width: 1.5px; font-size: 14.5px; }
+.md-table--sm > table th, .md-table--sm > table td { padding: 3px 9px; }
+@media (max-width: 639.98px) {
+  .md-table > table, .p-body table { font-size: 13.5px; }
+  .md-table > table th, .md-table > table td,
+  .p-body table th, .p-body table td { padding: 3px 7px; }
+}
+
+/* Lists inside a card: the marker lives in the padding box, so without room for
+   it a «1.» renders outside the card and collides with the accent rule. */
+.intro-card ol, .intro-card ul,
+.subq-body ol, .subq-body ul,
+.p-body ol, .p-body ul { padding-left: 26px; margin: 6px 0 8px; }
+.intro-card li, .subq-body li, .p-body li { margin: 2px 0; }
+
+/* Finder header on one line: title, count, stage links and presets all share a
+   row and wrap only when they must. The three-line lede and the breadcrumb are
+   gone — the header nav already says where you are, and the problems should
+   begin as near the top as the layout allows. */
+.pf-head-tight {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px 14px;
+  margin: 4px 0 10px;
+}
+.pf-head-tight .pf-h1 { margin: 0; font-size: 24px; line-height: 1.2; }
+.pf-count-inline { color: var(--text-secondary); font-size: 14px; white-space: nowrap; }
+.pf-head-tight .pf-stage-links,
+.pf-head-tight .pf-presets { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; }
+@media (max-width: 639.98px) {
+  .pf-head-tight { gap: 6px 10px; }
+  .pf-head-tight .pf-h1 { font-size: 20px; }
 }
 
 
