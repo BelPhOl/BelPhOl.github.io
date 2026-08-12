@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64.20pt" height="37.29pt" viewBox="0 0 64.20 37.29">
+<defs><clipPath id="figbox"><rect x="0" y="0" width="64.20" height="37.29"/></clipPath></defs>
+<g clip-path="url(#figbox)">
+<path d="M22.05,14.35 L23.35,13.45" fill="none" stroke="#000000" stroke-width="0.500" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M23.35,13.75 L25.35,19.65" fill="none" stroke="#000000" stroke-width="1.000" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M25.55,19.65 L28.25,2.75" fill="none" stroke="#000000" stroke-width="0.500" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M28.25,2.75 L62.15,2.75" fill="none" stroke="#000000" stroke-width="0.500" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M7.25,22.05 L63.05,22.05" fill="none" stroke="#000000" stroke-width="0.500" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M0.25,22.75 L1.65,21.85" fill="none" stroke="#000000" stroke-width="0.500" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M1.65,22.15 L3.55,35.25" fill="none" stroke="#000000" stroke-width="1.000" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M3.85,35.25 L6.45,0.25" fill="none" stroke="#000000" stroke-width="0.500" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M6.45,0.25 L63.95,0.25" fill="none" stroke="#000000" stroke-width="0.500" stroke-linecap="butt" stroke-linejoin="miter"/>
+<text x="31.65" y="34.65" font-family="'Times New Roman', Georgia, serif" font-size="11.46" font-style="italic" fill="#000000">F</text>
+<text x="51.05" y="15.95" font-family="'Times New Roman', Georgia, serif" font-size="11.46" font-style="italic" fill="#000000">y</text>
+<text x="29.45" y="15.95" font-family="'Times New Roman', Georgia, serif" font-size="11.46" font-style="italic" fill="#000000">x</text>
+<text x="13.55" y="15.95" font-family="'Times New Roman', Georgia, serif" font-size="11.46" font-style="italic" fill="#000000">m</text>
+<text x="57.05" y="10.55" font-family="'Times New Roman', Georgia, serif" font-size="6.69" fill="#000000">2</text>
+<text x="56.35" y="19.05" font-family="'Times New Roman', Georgia, serif" font-size="6.69" fill="#000000">0</text>
+<text x="35.25" y="10.55" font-family="'Times New Roman', Georgia, serif" font-size="6.69" fill="#000000">2</text>
+<text x="34.45" y="19.05" font-family="'Times New Roman', Georgia, serif" font-size="6.69" fill="#000000">0</text>
+<text x="8.05" y="15.95" font-family="'Times New Roman', Georgia, serif" font-size="11.46" fill="#000000">2</text>
+<text x="41.85" y="15.95" font-family="'Times New Roman', serif" font-size="10.73" fill="#000000">+</text>
+</g>
+</svg>

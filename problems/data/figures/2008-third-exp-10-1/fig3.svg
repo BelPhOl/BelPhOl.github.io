@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="330.72pt" height="212.16pt" viewBox="0 0 330.72 212.16">
+<defs><clipPath id="figbox"><rect x="0" y="0" width="330.72" height="212.16"/></clipPath><clipPath id="c0"><rect x="40.62" y="142.38" width="275.16" height="0.24"/></clipPath><clipPath id="c1"><rect x="40.62" y="116.22" width="275.16" height="0.24"/></clipPath><clipPath id="c2"><rect x="40.62" y="90.66" width="275.16" height="0.24"/></clipPath><clipPath id="c3"><rect x="40.62" y="64.50" width="275.16" height="0.24"/></clipPath><clipPath id="c4"><rect x="40.62" y="39.06" width="275.16" height="0.12"/></clipPath><clipPath id="c5"><rect x="36.78" y="45.30" width="7.44" height="7.92"/></clipPath><clipPath id="c6"><rect x="36.78" y="45.30" width="7.44" height="7.92"/></clipPath></defs>
+<g clip-path="url(#figbox)">
+<path d="M0.06,0.06 L330.66,0.06 L330.66,212.10 L0.06,212.10 Z" fill="#ffffff" stroke="#000000" fill-rule="evenodd" stroke-width="0.120" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M40.50,142.38 L315.66,142.38" fill="none" stroke="#000000" stroke-width="0.120" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#c0)"/>
+<path d="M40.50,116.22 L315.66,116.22" fill="none" stroke="#000000" stroke-width="0.120" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#c1)"/>
+<path d="M40.50,90.66 L315.66,90.66" fill="none" stroke="#000000" stroke-width="0.120" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#c2)"/>
+<path d="M40.50,64.50 L315.66,64.50" fill="none" stroke="#000000" stroke-width="0.120" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#c3)"/>
+<path d="M40.50,39.06 L315.66,39.06" fill="none" stroke="#000000" stroke-width="0.120" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#c4)"/>
+<path d="M40.50,39.06 L40.50,167.94" fill="none" stroke="#000000" stroke-width="0.120" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M38.22,167.94 L40.50,167.94" fill="none" stroke="#000000" stroke-width="0.120" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M38.22,142.38 L40.50,142.38" fill="none" stroke="#000000" stroke-width="0.120" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M38.22,116.22 L40.50,116.22" fill="none" stroke="#000000" stroke-width="0.120" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M38.22,90.66 L40.50,90.66" fill="none" stroke="#000000" stroke-width="0.120" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M38.22,64.50 L40.50,64.50" fill="none" stroke="#000000" stroke-width="0.120" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M38.22,39.06 L40.50,39.06" fill="none" stroke="#000000" stroke-width="0.120" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M40.50,167.94 L315.66,167.94" fill="none" stroke="#000000" stroke-width="0.120" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M40.50,170.10 L40.50,167.94" fill="none" stroke="#000000" stroke-width="0.120" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M75.06,170.10 L75.06,167.94" fill="none" stroke="#000000" stroke-width="0.120" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M109.50,170.10 L109.50,167.94" fill="none" stroke="#000000" stroke-width="0.120" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M143.94,170.10 L143.94,167.94" fill="none" stroke="#000000" stroke-width="0.120" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M178.50,170.10 L178.50,167.94" fill="none" stroke="#000000" stroke-width="0.120" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M212.22,170.10 L212.22,167.94" fill="none" stroke="#000000" stroke-width="0.120" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M246.66,170.10 L246.66,167.94" fill="none" stroke="#000000" stroke-width="0.120" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M281.22,170.10 L281.22,167.94" fill="none" stroke="#000000" stroke-width="0.120" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M315.66,170.10 L315.66,167.94" fill="none" stroke="#000000" stroke-width="0.120" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M43.50,49.14 C43.50,47.22 42.06,45.78 40.14,45.78 C38.22,45.78 36.78,47.22 36.78,49.14 C36.78,50.94 38.22,52.50 40.14,52.50 C42.06,52.50 43.50,50.94 43.50,49.14" fill="#ff0000" stroke="none" fill-rule="evenodd" clip-path="url(#c5)"/>
+<path d="M43.50,49.14 C43.50,47.22 42.06,45.78 40.14,45.78 C38.22,45.78 36.78,47.22 36.78,49.14 C36.78,50.94 38.22,52.50 40.14,52.50 C42.06,52.50 43.50,50.94 43.50,49.14" fill="none" stroke="#000080" stroke-width="0.749" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#c6)"/>
+<path d="M54.78,54.42 C54.78,52.50 53.22,50.94 51.42,50.94 C49.50,50.94 48.06,52.50 48.06,54.42 C48.06,56.22 49.50,57.78 51.42,57.78 C53.22,57.78 54.78,56.22 54.78,54.42" fill="#ff0000" stroke="none" fill-rule="evenodd"/>
+<path d="M54.78,54.42 C54.78,52.50 53.22,50.94 51.42,50.94 C49.50,50.94 48.06,52.50 48.06,54.42 C48.06,56.22 49.50,57.78 51.42,57.78 C53.22,57.78 54.78,56.22 54.78,54.42" fill="none" stroke="#000080" stroke-width="0.749" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M65.22,59.58 C65.22,57.78 63.78,56.22 61.86,56.22 C60.06,56.22 58.50,57.78 58.50,59.58 C58.50,61.50 60.06,62.94 61.86,62.94 C63.78,62.94 65.22,61.50 65.22,59.58" fill="#ff0000" stroke="none" fill-rule="evenodd"/>
+<path d="M65.22,59.58 C65.22,57.78 63.78,56.22 61.86,56.22 C60.06,56.22 58.50,57.78 58.50,59.58 C58.50,61.50 60.06,62.94 61.86,62.94 C63.78,62.94 65.22,61.50 65.22,59.58" fill="none" stroke="#000080" stroke-width="0.749" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M77.22,64.14 C77.22,62.22 75.78,60.78 73.86,60.78 C72.06,60.78 70.50,62.22 70.50,64.14 C70.50,65.94 72.06,67.50 73.86,67.50 C75.78,67.50 77.22,65.94 77.22,64.14" fill="#ff0000" stroke="none" fill-rule="evenodd"/>
+<path d="M77.22,64.14 C77.22,62.22 75.78,60.78 73.86,60.78 C72.06,60.78 70.50,62.22 70.50,64.14 C70.50,65.94 72.06,67.50 73.86,67.50 C75.78,67.50 77.22,65.94 77.22,64.14" fill="none" stroke="#000080" stroke-width="0.749" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M89.22,69.30 C89.22,67.50 87.78,65.94 85.86,65.94 C84.06,65.94 82.50,67.50 82.50,69.30 C82.50,71.22 84.06,72.78 85.86,72.78 C87.78,72.78 89.22,71.22 89.22,69.30" fill="#ff0000" stroke="none" fill-rule="evenodd"/>
+<path d="M89.22,69.30 C89.22,67.50 87.78,65.94 85.86,65.94 C84.06,65.94 82.50,67.50 82.50,69.30 C82.50,71.22 84.06,72.78 85.86,72.78 C87.78,72.78 89.22,71.22 89.22,69.30" fill="none" stroke="#000080" stroke-width="0.749" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M101.22,74.58 C101.22,72.78 99.78,71.22 97.86,71.22 C96.06,71.22 94.50,72.78 94.50,74.58 C94.50,76.50 96.06,77.94 97.86,77.94 C99.78,77.94 101.22,76.50 101.22,74.58" fill="#ff0000" stroke="none" fill-rule="evenodd"/>
+<path d="M101.22,74.58 C101.22,72.78 99.78,71.22 97.86,71.22 C96.06,71.22 94.50,72.78 94.50,74.58 C94.50,76.50 96.06,77.94 97.86,77.94 C99.78,77.94 101.22,76.50 101.22,74.58" fill="none" stroke="#000080" stroke-width="0.749" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M113.94,79.86 C113.94,77.94 112.50,76.50 110.58,76.50 C108.78,76.50 107.22,77.94 107.22,79.86 C107.22,81.66 108.78,83.22 110.58,83.22 C112.50,83.22 113.94,81.66 113.94,79.86" fill="#ff0000" stroke="none" fill-rule="evenodd"/>
+<path d="M113.94,79.86 C113.94,77.94 112.50,76.50 110.58,76.50 C108.78,76.50 107.22,77.94 107.22,79.86 C107.22,81.66 108.78,83.22 110.58,83.22 C112.50,83.22 113.94,81.66 113.94,79.86" fill="none" stroke="#000080" stroke-width="0.749" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M127.50,85.14 C127.50,83.22 125.94,81.78 124.14,81.78 C122.22,81.78 120.78,83.22 120.78,85.14 C120.78,86.94 122.22,88.50 124.14,88.50 C125.94,88.50 127.50,86.94 127.50,85.14" fill="#ff0000" stroke="none" fill-rule="evenodd"/>
+<path d="M127.50,85.14 C127.50,83.22 125.94,81.78 124.14,81.78 C122.22,81.78 120.78,83.22 120.78,85.14 C120.78,86.94 122.22,88.50 124.14,88.50 C125.94,88.50 127.50,86.94 127.50,85.14" fill="none" stroke="#000080" stroke-width="0.749" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M141.78,90.30 C141.78,88.50 140.22,86.94 138.42,86.94 C136.50,86.94 134.94,88.50 134.94,90.30 C134.94,92.22 136.50,93.66 138.42,93.66 C140.22,93.66 141.78,92.22 141.78,90.30" fill="#ff0000" stroke="none" fill-rule="evenodd"/>
+<path d="M141.78,90.30 C141.78,88.50 140.22,86.94 138.42,86.94 C136.50,86.94 134.94,88.50 134.94,90.30 C134.94,92.22 136.50,93.66 138.42,93.66 C140.22,93.66 141.78,92.22 141.78,90.30" fill="none" stroke="#000080" stroke-width="0.749" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M155.94,95.58 C155.94,93.78 154.50,92.22 152.58,92.22 C150.78,92.22 149.22,93.78 149.22,95.58 C149.22,97.50 150.78,98.94 152.58,98.94 C154.50,98.94 155.94,97.50 155.94,95.58" fill="#ff0000" stroke="none" fill-rule="evenodd"/>
+<path d="M155.94,95.58 C155.94,93.78 154.50,92.22 152.58,92.22 C150.78,92.22 149.22,93.78 149.22,95.58 C149.22,97.50 150.78,98.94 152.58,98.94 C154.50,98.94 155.94,97.50 155.94,95.58" fill="none" stroke="#000080" stroke-width="0.749" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M171.78,100.86 C171.78,98.94 170.22,97.50 168.30,97.50 C166.50,97.50 164.94,98.94 164.94,100.86 C164.94,102.66 166.50,104.22 168.30,104.22 C170.22,104.22 171.78,102.66 171.78,100.86" fill="#ff0000" stroke="none" fill-rule="evenodd"/>
+<path d="M171.78,100.86 C171.78,98.94 170.22,97.50 168.30,97.50 C166.50,97.50 164.94,98.94 164.94,100.86 C164.94,102.66 166.50,104.22 168.30,104.22 C170.22,104.22 171.78,102.66 171.78,100.86" fill="none" stroke="#000080" stroke-width="0.749" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M184.50,105.30 C184.50,103.50 182.94,101.94 181.14,101.94 C179.22,101.94 177.78,103.50 177.78,105.30 C177.78,107.22 179.22,108.66 181.14,108.66 C182.94,108.66 184.50,107.22 184.50,105.30" fill="#ff0000" stroke="none" fill-rule="evenodd"/>
+<path d="M184.50,105.30 C184.50,103.50 182.94,101.94 181.14,101.94 C179.22,101.94 177.78,103.50 177.78,105.30 C177.78,107.22 179.22,108.66 181.14,108.66 C182.94,108.66 184.50,107.22 184.50,105.30" fill="none" stroke="#000080" stroke-width="0.749" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M199.50,110.58 C199.50,108.66 197.94,107.22 196.14,107.22 C194.22,107.22 192.66,108.66 192.66,110.58 C192.66,112.38 194.22,113.94 196.14,113.94 C197.94,113.94 199.50,112.38 199.50,110.58" fill="#ff0000" stroke="none" fill-rule="evenodd"/>
+<path d="M199.50,110.58 C199.50,108.66 197.94,107.22 196.14,107.22 C194.22,107.22 192.66,108.66 192.66,110.58 C192.66,112.38 194.22,113.94 196.14,113.94 C197.94,113.94 199.50,112.38 199.50,110.58" fill="none" stroke="#000080" stroke-width="0.749" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M215.94,115.86 C215.94,113.94 214.50,112.50 212.58,112.50 C210.78,112.50 209.22,113.94 209.22,115.86 C209.22,117.66 210.78,119.22 212.58,119.22 C214.50,119.22 215.94,117.66 215.94,115.86" fill="#ff0000" stroke="none" fill-rule="evenodd"/>
+<path d="M215.94,115.86 C215.94,113.94 214.50,112.50 212.58,112.50 C210.78,112.50 209.22,113.94 209.22,115.86 C209.22,117.66 210.78,119.22 212.58,119.22 C214.50,119.22 215.94,117.66 215.94,115.86" fill="none" stroke="#000080" stroke-width="0.749" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M235.50,121.02 C235.50,119.22 233.94,117.66 232.14,117.66 C230.22,117.66 228.66,119.22 228.66,121.02 C228.66,122.94 230.22,124.38 232.14,124.38 C233.94,124.38 235.50,122.94 235.50,121.02" fill="#ff0000" stroke="none" fill-rule="evenodd"/>
+<path d="M235.50,121.02 C235.50,119.22 233.94,117.66 232.14,117.66 C230.22,117.66 228.66,119.22 228.66,121.02 C228.66,122.94 230.22,124.38 232.14,124.38 C233.94,124.38 235.50,122.94 235.50,121.02" fill="none" stroke="#000080" stroke-width="0.749" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M255.66,126.30 C255.66,124.50 254.22,122.94 252.30,122.94 C250.50,122.94 248.94,124.50 248.94,126.30 C248.94,128.22 250.50,129.66 252.30,129.66 C254.22,129.66 255.66,128.22 255.66,126.30" fill="#ff0000" stroke="none" fill-rule="evenodd"/>
+<path d="M255.66,126.30 C255.66,124.50 254.22,122.94 252.30,122.94 C250.50,122.94 248.94,124.50 248.94,126.30 C248.94,128.22 250.50,129.66 252.30,129.66 C254.22,129.66 255.66,128.22 255.66,126.30" fill="none" stroke="#000080" stroke-width="0.749" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M274.50,131.58 C274.50,129.66 272.94,128.22 271.02,128.22 C269.22,128.22 267.66,129.66 267.66,131.58 C267.66,133.38 269.22,134.94 271.02,134.94 C272.94,134.94 274.50,133.38 274.50,131.58" fill="#ff0000" stroke="none" fill-rule="evenodd"/>
+<path d="M274.50,131.58 C274.50,129.66 272.94,128.22 271.02,128.22 C269.22,128.22 267.66,129.66 267.66,131.58 C267.66,133.38 269.22,134.94 271.02,134.94 C272.94,134.94 274.50,133.38 274.50,131.58" fill="none" stroke="#000080" stroke-width="0.749" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M0.06,0.06 L330.66,0.06 L330.66,212.10 L0.06,212.10 Z" fill="none" stroke="#000000" stroke-width="0.120" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="96.06" y="14.46" font-family="Arial, Helvetica, sans-serif" font-size="8.25" font-weight="bold" fill="#000000">Зависимость</text>
+<text x="152.34" y="14.46" font-family="Arial, Helvetica, sans-serif" font-size="8.25" font-weight="bold" fill="#000000">высоты</text>
+<text x="186.78" y="14.46" font-family="Arial, Helvetica, sans-serif" font-size="8.25" font-weight="bold" fill="#000000">от</text>
+<text x="198.06" y="14.46" font-family="Arial, Helvetica, sans-serif" font-size="8.25" font-weight="bold" fill="#000000">времени</text>
+<text x="30.06" y="170.22" font-family="Arial, Helvetica, sans-serif" font-size="8.25" fill="#000000">0</text>
+<text x="30.06" y="144.66" font-family="Arial, Helvetica, sans-serif" font-size="8.25" fill="#000000">5</text>
+<text x="25.62" y="118.50" font-family="Arial, Helvetica, sans-serif" font-size="8.25" fill="#000000">10</text>
+<text x="25.62" y="92.94" font-family="Arial, Helvetica, sans-serif" font-size="8.25" fill="#000000">15</text>
+<text x="25.62" y="66.78" font-family="Arial, Helvetica, sans-serif" font-size="8.25" fill="#000000">20</text>
+<text x="25.62" y="41.22" font-family="Arial, Helvetica, sans-serif" font-size="8.25" fill="#000000">25</text>
+<text x="38.34" y="182.10" font-family="Arial, Helvetica, sans-serif" font-size="8.25" fill="#000000">0</text>
+<text x="70.62" y="182.10" font-family="Arial, Helvetica, sans-serif" font-size="8.25" fill="#000000">50</text>
+<text x="102.78" y="182.10" font-family="Arial, Helvetica, sans-serif" font-size="8.25" fill="#000000">100</text>
+<text x="137.34" y="182.10" font-family="Arial, Helvetica, sans-serif" font-size="8.25" fill="#000000">150</text>
+<text x="171.78" y="182.10" font-family="Arial, Helvetica, sans-serif" font-size="8.25" fill="#000000">200</text>
+<text x="205.50" y="182.10" font-family="Arial, Helvetica, sans-serif" font-size="8.25" fill="#000000">250</text>
+<text x="240.06" y="182.10" font-family="Arial, Helvetica, sans-serif" font-size="8.25" fill="#000000">300</text>
+<text x="274.50" y="182.10" font-family="Arial, Helvetica, sans-serif" font-size="8.25" fill="#000000">350</text>
+<text x="308.94" y="182.10" font-family="Arial, Helvetica, sans-serif" font-size="8.25" fill="#000000">400</text>
+<text x="160.50" y="198.18" font-family="Arial, Helvetica, sans-serif" font-size="8.25" font-weight="bold" fill="#000000">время</text>
+<text x="186.78" y="198.18" font-family="Arial, Helvetica, sans-serif" font-size="8.25" font-weight="bold" fill="#000000">, </text>
+<text x="191.34" y="198.18" font-family="Arial, Helvetica, sans-serif" font-size="8.25" font-weight="bold" fill="#000000">с</text>
+<text x="18.30" y="125.94" font-family="Arial, Helvetica, sans-serif" font-size="8.25" font-weight="bold" fill="#000000">высота</text>
+<text x="18.30" y="96.06" font-family="Arial, Helvetica, sans-serif" font-size="8.25" font-weight="bold" fill="#000000">, </text>
+<text x="18.30" y="91.50" font-family="Arial, Helvetica, sans-serif" font-size="8.25" font-weight="bold" fill="#000000">см</text>
+</g>
+</svg>

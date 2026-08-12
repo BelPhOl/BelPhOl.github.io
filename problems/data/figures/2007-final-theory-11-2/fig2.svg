@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="108.75pt" height="54.75pt" viewBox="0 0 108.75 54.75">
+<defs><clipPath id="figbox"><rect x="0" y="0" width="108.75" height="54.75"/></clipPath></defs>
+<g clip-path="url(#figbox)">
+<path d="M54.38,0.38 C24.56,0.38 0.38,12.43 0.38,27.38 C0.38,42.32 24.56,54.38 54.38,54.38 C84.26,54.38 108.38,42.32 108.38,27.38 C108.38,12.43 84.26,0.38 54.38,0.38" fill="#ffffff" stroke="#000000" fill-rule="evenodd" stroke-width="0.750" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M54.38,27.02 L103.39,27.02 L103.70,27.14 L103.76,27.38 L103.70,27.62 L103.39,27.74 L54.38,27.74 L54.14,27.62 L54.02,27.38 L54.14,27.14 L54.38,27.02 M102.38,24.38 L108.38,27.38 L102.38,30.38" fill="#000000" stroke="none"/>
+<path d="M54.02,27.38 L54.02,5.36 L54.14,5.12 L54.38,4.99 L54.68,5.12 L54.80,5.36 L54.80,27.38 L54.68,27.62 L54.38,27.74 L54.14,27.62 L54.02,27.38 M51.38,6.38 L54.38,0.38 L57.38,6.38" fill="#000000" stroke="none"/>
+<text x="79.64" y="24.13" font-family="'Times New Roman', Georgia, serif" font-size="12.05" font-style="italic" fill="#000000">а </text>
+<text x="43.63" y="15.13" font-family="'Times New Roman', Georgia, serif" font-size="12.05" font-style="italic" fill="#000000">b </text>
+</g>
+</svg>

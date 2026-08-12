@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140.13pt" height="108.81pt" viewBox="0 0 140.13 108.81">
+<defs><clipPath id="figbox"><rect x="0" y="0" width="140.13" height="108.81"/></clipPath></defs>
+<g clip-path="url(#figbox)">
+<path d="M99.38,36.43 C84.43,36.43 72.38,48.55 72.38,63.43 C72.38,78.32 84.43,90.38 99.38,90.38 C114.32,90.38 126.44,78.32 126.44,63.43 C126.44,48.55 114.32,36.43 99.38,36.43" fill="#ffffff" stroke="#000000" fill-rule="evenodd" stroke-width="0.750" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M0.38,108.44 C43.88,94.93 87.38,81.43 99.38,63.43 C111.38,45.43 91.88,22.93 72.38,0.38" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.25,3" stroke-dashoffset="0.00"/>
+<path d="M117.38,27.38 L81.38,99.43" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5.25,3,.00075,3" stroke-dashoffset="0.00"/>
+<path d="M0.38,45.08 L49.40,45.08 L49.70,45.20 L49.76,45.43 L49.70,45.73 L49.40,45.86 L0.38,45.86 L0.14,45.73 L0.02,45.43 L0.14,45.20 L0.38,45.08 M48.38,42.43 L54.38,45.43 L48.38,48.43" fill="#000000" stroke="none"/>
+<path d="M0.38,63.08 L49.40,63.14 L49.70,63.26 L49.76,63.49 L49.70,63.80 L49.40,63.86 L0.38,63.86 L0.14,63.73 L0.02,63.43 L0.14,63.20 L0.38,63.08 M48.43,60.49 L54.38,63.49 L48.38,66.49" fill="#000000" stroke="none"/>
+<path d="M0.38,81.01 L49.40,81.01 L49.70,81.14 L49.76,81.38 L49.70,81.67 L49.40,81.80 L0.38,81.80 L0.14,81.67 L0.02,81.38 L0.14,81.14 L0.38,81.01 M48.38,78.38 L54.38,81.38 L48.38,84.38" fill="#000000" stroke="none"/>
+<path d="M90.38,63.43 L135.38,63.43" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.25,3" stroke-dashoffset="0.00"/>
+<text x="107.35" y="60.01" font-family="'Times New Roman', serif" font-size="11.93" fill="#000000">θ</text>
+<text x="7.63" y="15.08" font-family="'Times New Roman', Georgia, serif" font-size="12.05" fill="#000000">свет от </text>
+<text x="7.64" y="28.99" font-family="'Times New Roman', Georgia, serif" font-size="12.05" fill="#000000">Солнца </text>
+<text x="106.64" y="96.26" font-family="'Times New Roman', Georgia, serif" font-size="12.05" fill="#000000">Земля </text>
+<text x="97.64" y="33.26" font-family="'Times New Roman', Georgia, serif" font-size="12.05" fill="#000000">Север </text>
+<text x="79.64" y="105.26" font-family="'Times New Roman', Georgia, serif" font-size="12.05" fill="#000000">Юг </text>
+</g>
+</svg>

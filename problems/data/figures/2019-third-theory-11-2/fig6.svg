@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41.74pt" height="33.56pt" viewBox="0 0 41.74 33.56">
+<defs><clipPath id="figbox"><rect x="0" y="0" width="41.74" height="33.56"/></clipPath></defs>
+<g clip-path="url(#figbox)">
+<path d="M25.92,11.47 L27.43,10.59" fill="none" stroke="#000000" stroke-width="0.502" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M27.43,10.86 L29.65,14.92" fill="none" stroke="#000000" stroke-width="1.004" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M29.91,14.92 L32.85,2.75" fill="none" stroke="#000000" stroke-width="0.502" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M32.85,2.75 L39.47,2.75" fill="none" stroke="#000000" stroke-width="0.502" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M8.15,18.68 L40.48,18.68" fill="none" stroke="#000000" stroke-width="0.502" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M0.25,20.51 L1.78,19.63" fill="none" stroke="#000000" stroke-width="0.502" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M1.78,19.87 L4.00,31.47" fill="none" stroke="#000000" stroke-width="1.004" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M4.27,31.47 L7.21,0.25" fill="none" stroke="#000000" stroke-width="0.502" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M7.21,0.25 L41.49,0.25" fill="none" stroke="#000000" stroke-width="0.502" stroke-linecap="butt" stroke-linejoin="round"/>
+<text x="21.49" y="30.97" font-family="'Times New Roman', Georgia, serif" font-size="12.09" fill="#000000">2</text>
+<text x="33.24" y="14.23" font-family="'Times New Roman', Georgia, serif" font-size="12.09" fill="#000000">5</text>
+<text x="8.57" y="14.23" font-family="'Times New Roman', Georgia, serif" font-size="12.09" fill="#000000">3</text>
+<text x="16.45" y="14.23" font-family="'Times New Roman', serif" font-size="12.09" fill="#000000">−</text>
+</g>
+</svg>

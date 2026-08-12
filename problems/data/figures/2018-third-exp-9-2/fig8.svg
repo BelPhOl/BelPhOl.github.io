@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="66.60pt" height="33.23pt" viewBox="0 0 66.60 33.23">
+<defs><clipPath id="figbox"><rect x="0" y="0" width="66.60" height="33.23"/></clipPath></defs>
+<g clip-path="url(#figbox)">
+<path d="M0.25,32.98 L17.10,32.98" fill="none" stroke="#000000" stroke-width="0.505" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M52.19,17.76 L65.34,17.76" fill="none" stroke="#000000" stroke-width="0.240" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M20.59,19.97 L22.13,19.08" fill="none" stroke="#000000" stroke-width="0.505" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M22.13,19.34 L24.35,30.60" fill="none" stroke="#000000" stroke-width="1.009" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M24.61,30.60 L27.55,0.25" fill="none" stroke="#000000" stroke-width="0.505" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M27.55,0.25 L66.35,0.25" fill="none" stroke="#000000" stroke-width="0.505" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M19.34,32.98 L67.33,32.98" fill="none" stroke="#000000" stroke-width="0.505" stroke-linecap="butt" stroke-linejoin="round"/>
+<text x="53.40" y="13.19" font-family="'Times New Roman', Georgia, serif" font-size="11.97" font-style="italic" fill="#000000">L</text>
+<text x="28.85" y="20.74" font-family="'Times New Roman', Georgia, serif" font-size="11.97" font-style="italic" fill="#000000">x</text>
+<text x="1.07" y="28.41" font-family="'Times New Roman', Georgia, serif" font-size="11.97" font-style="italic" fill="#000000">mg</text>
+<text x="55.95" y="30.12" font-family="'Times New Roman', Georgia, serif" font-size="11.97" fill="#000000">4</text>
+<text x="59.68" y="7.83" font-family="'Times New Roman', Georgia, serif" font-size="6.99" fill="#000000">2</text>
+<text x="35.32" y="15.38" font-family="'Times New Roman', Georgia, serif" font-size="6.99" fill="#000000">2</text>
+<text x="42.81" y="20.74" font-family="'Times New Roman', serif" font-size="11.97" fill="#000000">+</text>
+</g>
+</svg>

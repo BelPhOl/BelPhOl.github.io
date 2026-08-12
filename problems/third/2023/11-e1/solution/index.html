@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Поплавок — решение — BelPhO</title>
+  <meta name="description" content="Поплавок — Городская олимпиада (3-й этап) 2023, 11 класс, задача Э1. Подробное решение с ответами.">
+  <link rel="canonical" href="https://belpho.org/problems/third/2023/11-e1/solution/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BelPhO">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:url" content="https://belpho.org/problems/third/2023/11-e1/solution/">
+  <meta property="og:title" content="Поплавок — решение — BelPhO">
+  <meta property="og:description" content="Поплавок — Городская олимпиада (3-й этап) 2023, 11 класс, задача Э1. Подробное решение с ответами.">
+  
+  <meta property="og:image" content="https://belpho.org/problems/thumbs/og/third-2023.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/css/platform.css">
+</head>
+<body>
+<svg id="mjx-glyph-cache" aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden"><defs><path id="MJX-TEX-I-1D45A" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path><path id="MJX-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-TEX-I-1D70B" d="M132 -11Q98 -11 98 22V33L111 61Q186 219 220 334L228 358H196Q158 358 142 355T103 336Q92 329 81 318T62 297T53 285Q51 284 38 284Q19 284 19 294Q19 300 38 329T93 391T164 429Q171 431 389 431Q549 431 553 430Q573 423 573 402Q573 371 541 360Q535 358 472 358H408L405 341Q393 269 393 222Q393 170 402 129T421 65T431 37Q431 20 417 5T381 -10Q370 -10 363 -7T347 17T331 77Q330 86 330 121Q330 170 339 226T357 318T367 358H269L268 354Q268 351 249 275T206 114T175 17Q164 -11 132 -11Z"></path><path id="MJX-TEX-I-1D45F" d="M21 287Q22 290 23 295T28 317T38 348T53 381T73 411T99 433T132 442Q161 442 183 430T214 408T225 388Q227 382 228 382T236 389Q284 441 347 441H350Q398 441 422 400Q430 381 430 363Q430 333 417 315T391 292T366 288Q346 288 334 299T322 328Q322 376 378 392Q356 405 342 405Q286 405 239 331Q229 315 224 298T190 165Q156 25 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 114 189T154 366Q154 405 128 405Q107 405 92 377T68 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path><path id="MJX-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJX-TEX-N-394" d="M51 0Q46 4 46 7Q46 9 215 357T388 709Q391 716 416 716Q439 716 444 709Q447 705 616 357T786 7Q786 4 781 0H51ZM507 344L384 596L137 92L383 91H630Q630 93 507 344Z"></path><path id="MJX-TEX-I-210E" d="M137 683Q138 683 209 688T282 694Q294 694 294 685Q294 674 258 534Q220 386 220 383Q220 381 227 388Q288 442 357 442Q411 442 444 415T478 336Q478 285 440 178T402 50Q403 36 407 31T422 26Q450 26 474 56T513 138Q516 149 519 151T535 153Q555 153 555 145Q555 144 551 130Q535 71 500 33Q466 -10 419 -10H414Q367 -10 346 17T325 74Q325 90 361 192T398 345Q398 404 354 404H349Q266 404 205 306L198 293L164 158Q132 28 127 16Q114 -11 83 -11Q69 -11 59 -2T48 16Q48 30 121 320L195 616Q195 629 188 632T149 637H128Q122 643 122 645T124 664Q129 683 137 683Z"></path><path id="MJX-TEX-I-1D70C" d="M58 -216Q25 -216 23 -186Q23 -176 73 26T127 234Q143 289 182 341Q252 427 341 441Q343 441 349 441T359 442Q432 442 471 394T510 276Q510 219 486 165T425 74T345 13T266 -10H255H248Q197 -10 165 35L160 41L133 -71Q108 -168 104 -181T92 -202Q76 -216 58 -216ZM424 322Q424 359 407 382T357 405Q322 405 287 376T231 300Q217 269 193 170L176 102Q193 26 260 26Q298 26 334 62Q367 92 389 158T418 266T424 322Z"></path><path id="MJX-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJX-TEX-N-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path><path id="MJX-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-TEX-N-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path><path id="MJX-TEX-N-37" d="M55 458Q56 460 72 567L88 674Q88 676 108 676H128V672Q128 662 143 655T195 646T364 644H485V605L417 512Q408 500 387 472T360 435T339 403T319 367T305 330T292 284T284 230T278 162T275 80Q275 66 275 52T274 28V19Q270 2 255 -10T221 -22Q210 -22 200 -19T179 0T168 40Q168 198 265 368Q285 400 349 489L395 552H302Q128 552 119 546Q113 543 108 522T98 479L95 458V455H55V458Z"></path><path id="MJX-TEX-N-2218" d="M55 251Q55 328 112 386T249 444T386 388T444 249Q444 171 388 113T250 55Q170 55 113 112T55 251ZM245 403Q188 403 142 361T96 250Q96 183 141 140T250 96Q284 96 313 109T354 135T375 160Q403 197 403 250Q403 313 360 358T245 403Z"></path></defs></svg>
+<header class="site-header">
+  <div class="container header-content">
+    <a href="/" class="logo">
+      <img src="/img/logo.png" alt="BelPhO" class="logo-img" width="36" height="36">
+      <span>BelPhO</span>
+    </a>
+    <nav class="site-nav" aria-label="Основная навигация">
+      <ul class="nav-links">
+        <li><a href="/">Главная</a></li>
+        <li><a href="/problems/" class="active">Задачи</a></li>
+        <li><a href="/books/">Книги</a></li>
+        <li><a href="/training-program.html">Подготовка</a></li>
+        <li><a href="/alumni.html">Выпускники</a></li>
+        <li><a href="/news/">Новости</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<main class="p-shell">
+  <div class="p-layout">
+    
+<aside class="p-sidebar" id="p-sidebar" data-problem-id="2023-third-exp-11-1">
+  <div class="sb-card">
+    <div class="sb-head">
+      <div class="sb-crumb"><a href="/problems/third/">Городская</a> · <a href="/problems/third/2023/">2023</a></div>
+      <h1 class="sb-title">Поплавок</h1>
+      <div class="sb-meta">
+        <span class="sb-chip">11 класс</span>
+        <span class="sb-chip sb-chip-num">№ Э1</span>
+        
+        
+        
+      </div>
+    </div>
+    <nav class="sb-nav" aria-label="Разделы задачи">
+      
+      <a class="sb-item" href="/problems/third/2023/11-e1/"
+         >
+        <span class="sb-glyph sb-glyph-t">T</span>
+        <span>Условие</span>
+      </a>
+      
+      <a class="sb-item on" href="/problems/third/2023/11-e1/solution/"
+         aria-current=&#34;page&#34;>
+        <span class="sb-glyph sb-glyph-s">S</span>
+        <span>Решение</span>
+      </a>
+      
+      
+      <details class="sb-files" id="sb-files">
+        <summary class="sb-item sb-item-files">
+          <span class="sb-glyph sb-glyph-f">▾</span><span>Файлы</span>
+        </summary>
+        <div class="sb-files-menu">
+          
+          <span class="sb-file sb-file-none">PDF появятся позже</span>
+        </div>
+      </details>
+    </nav>
+    
+  </div>
+</aside>
+
+    <div class="p-main" id="p-main">
+      <div class="page-head">
+  <h2 class="page-title">Решение</h2>
+  <span class="page-sub">Городская олимпиада (3-й этап) · 2023 · 11 класс · № Э1</span>
+</div>
+
+
+
+<section class="intro-card">
+  <ol>
+<li><p>Трубку с закрытым снизу концом можно использовать в качестве гидростатических весов. При не слишком высокой точности измерений, можно считать, что плотность свинца значительно больше плотности воды (в 11 раз), поэтому силу Архимеда, действующую на свинец не учитывать (хотя ее не сложно учесть, поставив в формуле коэффициент 1,1). Масса прикрепленного к трубке дополнительного груза определяется по формуле<br /><mjx-container class="MathJax" jax="SVG" display="true" width="full" style="min-width: 23.049ex;"><svg style="vertical-align: -0.717ex; min-width: 23.049ex;" xmlns="http://www.w3.org/2000/svg" width="100%" height="2.565ex" role="img" focusable="false" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(0.0181,-0.0181) translate(0, -817)"><g data-mml-node="math"><g data-mml-node="mtable" transform="translate(2078,0) translate(-2078,0)"><g transform="translate(0 817) matrix(1 0 0 -1 0 0) scale(55.25)"><svg data-table="true" preserveAspectRatio="xMidYMid" viewBox="3015.8 -817 1 1133.9"><g transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="mlabeledtr" transform="translate(0,-67)"><g data-mml-node="mtd"><g data-mml-node="mi"><use data-c="1D45A" xlink:href="#MJX-TEX-I-1D45A"></use></g><g data-mml-node="mo" transform="translate(1155.8,0)"><use data-c="3D" xlink:href="#MJX-TEX-N-3D"></use></g><g data-mml-node="mi" transform="translate(2211.6,0)"><use data-c="1D70B" xlink:href="#MJX-TEX-I-1D70B"></use></g><g data-mml-node="msup" transform="translate(2781.6,0)"><g data-mml-node="mi"><use data-c="1D45F" xlink:href="#MJX-TEX-I-1D45F"></use></g><g data-mml-node="mn" transform="translate(484,413) scale(0.707)"><use data-c="32" xlink:href="#MJX-TEX-N-32"></use></g></g><g data-mml-node="mi" transform="translate(3669.1,0)"><use data-c="394" xlink:href="#MJX-TEX-N-394"></use></g><g data-mml-node="mi" transform="translate(4502.1,0)"><use data-c="210E" xlink:href="#MJX-TEX-I-210E"></use></g><g data-mml-node="msub" transform="translate(5078.1,0)"><g data-mml-node="mi"><use data-c="1D70C" xlink:href="#MJX-TEX-I-1D70C"></use></g><g data-mml-node="mn" transform="translate(550,-150) scale(0.707)"><use data-c="30" xlink:href="#MJX-TEX-N-30"></use></g></g></g></g></g></svg><svg data-labels="true" preserveAspectRatio="xMaxYMid" viewBox="1278 -817 1 1133.9"><g data-labels="true" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="mtd" id="mjx-eqn:1" transform="translate(0,683)"><text data-id-align="true"></text><g data-idbox="true" transform="translate(0,-750)"><g data-mml-node="mtext"><use data-c="28" xlink:href="#MJX-TEX-N-28"></use><use data-c="31" xlink:href="#MJX-TEX-N-31" transform="translate(389,0)"></use><use data-c="29" xlink:href="#MJX-TEX-N-29" transform="translate(889,0)"></use></g></g></g></g></svg></g></g></g></g></svg></mjx-container><br />Где <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="3.188ex" height="1.645ex" role="img" focusable="false" viewBox="0 -716 1409 727" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="394" xlink:href="#MJX-TEX-N-394"></use></g><g data-mml-node="mi" transform="translate(833,0)"><use data-c="210E" xlink:href="#MJX-TEX-I-210E"></use></g></g></g></svg></mjx-container> - глубина погружения трубки. Диаметр трубки порядка 2 мм. Поэтому изменение глубины погружения на 1 см, соответствует изменение массы на 0,03 г.</p>
+</li>
+<li><p>Масса маленьких грузил для поплавковых удочек лежит в интервале 0,1 – 0, 5 г.</p>
+</li>
+</ol>
+<p>3.Можно (и нужно) добиться начального угла погружения не менее <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="3.25ex" height="1.672ex" role="img" focusable="false" viewBox="0 -717 1436.6 739" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msup"><g data-mml-node="mn"><use data-c="37" xlink:href="#MJX-TEX-N-37"></use><use data-c="30" xlink:href="#MJX-TEX-N-30" transform="translate(500,0)"></use></g><g data-mml-node="mo" transform="translate(1033,403.1) scale(0.707)"><use data-c="2218" xlink:href="#MJX-TEX-N-2218"></use></g></g></g></g></svg></mjx-container>. Большему углу препятствует недостаточный диаметр пластиковой бутылки.</p>
+<p><figure class="md-fig md-fig-float md-fig-float-right" style="--fig-w:31%"><img src="/problems/data/figures/2023-third-exp-11-1/fig3.png" alt="" loading="lazy"></figure></p>
+<ol>
+<li><p>Для использованной нами ручки угол наклона монотонно возрастал при увеличении массы грузила. Ручка становилась вертикально уже при массе подвешенного груза менее 0,1 г. Поэтому для того, чтобы снять требуемую зависимость требуется использовать маленькие кусочки свинца.</p>
+</li>
+<li><p>Основная причина наклонного положения – смещение центра масс вытесненной воды, при наклоне цилиндрического поплавка.</p>
+</li>
+<li><p>Основной параметр, влияющий на исследуемое явление – диаметр поплавка: чем больше этот диаметр, тем легче заставить поплавок плавать в наклонном положении.</p>
+</li>
+</ol>
+</section>
+
+
+
+
+
+
+
+
+
+<div class="page-next">
+  <a class="btn btn-ghost" href="/problems/third/2023/11-e1/">← Условие</a>
+  
+</div>
+
+
+
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© 2026 BelPhO — Белорусские физические олимпиады</span>
+    <span class="footer-links">
+      <a href="/problems/">Задачи</a>
+      <a href="https://t.me/belpho_by" rel="noopener">Telegram</a>
+    </span>
+  </div>
+</footer>
+
+
+<script type="module" src="/js/site/problem-page.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="181.00pt" height="82.94pt" viewBox="0 0 181.00 82.94">
+<defs><clipPath id="figbox"><rect x="0" y="0" width="181.00" height="82.94"/></clipPath></defs>
+<g clip-path="url(#figbox)">
+<path d="M0.50,0.50 L180.50,0.62" fill="none" stroke="#000000" stroke-width="1.000" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M53.18,80.18 L62.18,71.06 L63.14,72.02 L54.14,81.14 L53.18,80.18 M54.98,82.10 L63.98,72.98 L64.94,73.94 L55.94,82.94" fill="#000000" stroke="none"/>
+<path d="M63.26,72.26 L131.78,3.74 L132.26,3.74 L132.38,4.10 L132.26,4.34 L63.86,72.74 L63.62,72.86 L63.26,72.74 L63.14,72.50 L63.26,72.26 M129.14,2.66 L135.50,0.50 L133.46,6.86" fill="#000000" stroke="none"/>
+<path d="M54.14,70.58 L54.26,2.54 L54.38,2.30 L54.62,2.18 L54.86,2.30 L54.98,2.54 L54.98,70.58 L54.86,70.82 L54.62,70.94 L54.26,70.82 L54.14,70.58 M57.38,64.70 L54.50,71.54 L51.74,64.70 L51.74,64.34 L51.98,64.22 L52.22,64.22 L52.46,64.34 L54.86,70.34 L54.26,70.34 L56.66,64.34 L56.90,64.22 L57.26,64.22 L57.38,64.34 L57.38,64.70 M51.74,8.42 L54.62,1.58 L57.50,8.42 L57.50,8.66 L57.26,8.90 L57.02,8.90 L56.78,8.66 L54.26,2.66 L54.98,2.66 L52.46,8.66 L52.22,8.90 L51.98,8.90 L51.74,8.66 L51.74,8.42" fill="#000000" stroke="none"/>
+<path d="M117.50,0.50 L117.62,27.50" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M144.50,0.50 L144.62,27.50" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M119.66,27.14 L142.58,27.26 L142.82,27.26 L142.94,27.62 L142.82,27.86 L142.58,27.98 L119.66,27.86 L119.30,27.74 L119.18,27.50 L119.30,27.26 L119.66,27.14 M123.38,30.38 L118.94,27.50 L123.38,24.74 L123.74,24.62 L123.98,24.86 L123.98,25.10 L123.86,25.34 L119.78,27.86 L119.78,27.26 L123.86,29.78 L123.98,29.90 L123.98,30.26 L123.74,30.38 L123.38,30.38 M138.86,24.74 L143.30,27.62 L138.86,30.38 L138.50,30.38 L138.26,30.26 L138.26,30.02 L138.38,29.78 L142.46,27.26 L142.46,27.86 L138.38,25.34 L138.26,25.10 L138.26,24.86 L138.50,24.74 L138.86,24.74" fill="#000000" stroke="none"/>
+<text x="43.70" y="42.26" font-family="'Times New Roman', Georgia, serif" font-size="11.97" font-style="italic" fill="#000000">L </text>
+<text x="63.38" y="57.74" font-family="'Times New Roman', serif" font-size="11.97" fill="#000000">ϕ</text>
+<text x="131.90" y="42.02" font-family="'Times New Roman', Georgia, serif" font-size="11.97" font-style="italic" fill="#000000">x</text>
+<text x="117.50" y="42.02" font-family="'Times New Roman', serif" font-size="11.97" fill="#000000">±∆</text>
+</g>
+</svg>

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="138.87pt" height="64.94pt" viewBox="0 0 138.87 64.94">
+<defs><clipPath id="figbox"><rect x="0" y="0" width="138.87" height="64.94"/></clipPath><clipPath id="c0"><rect x="55.26" y="14.89" width="26.00" height="30.95"/></clipPath><clipPath id="c1"><rect x="103.11" y="14.89" width="24.00" height="30.95"/></clipPath></defs>
+<g clip-path="url(#figbox)">
+<path d="M0.00,0.00 L0.48,0.00 L0.48,0.48 L0.00,0.48 Z" fill="#000000" stroke="none" fill-rule="evenodd"/>
+<path d="M0.00,0.00 L0.48,0.00 L0.48,0.48 L0.00,0.48 Z" fill="#000000" stroke="none" fill-rule="evenodd"/>
+<path d="M0.48,0.00 L44.52,0.00 L44.52,0.48 L0.48,0.48 Z" fill="#000000" stroke="none" fill-rule="evenodd"/>
+<path d="M44.52,0.00 L45.00,0.00 L45.00,0.48 L44.52,0.48 Z" fill="#000000" stroke="none" fill-rule="evenodd"/>
+<path d="M45.00,0.00 L91.44,0.00 L91.44,0.48 L45.00,0.48 Z" fill="#000000" stroke="none" fill-rule="evenodd"/>
+<path d="M91.44,0.00 L91.92,0.00 L91.92,0.48 L91.44,0.48 Z" fill="#000000" stroke="none" fill-rule="evenodd"/>
+<path d="M91.92,0.00 L138.38,0.00 L138.38,0.48 L91.92,0.48 Z" fill="#000000" stroke="none" fill-rule="evenodd"/>
+<path d="M138.39,0.00 L138.87,0.00 L138.87,0.48 L138.39,0.48 Z" fill="#000000" stroke="none" fill-rule="evenodd"/>
+<path d="M0.00,0.48 L0.48,0.48 L0.48,14.40 L0.00,14.40 Z" fill="#000000" stroke="none" fill-rule="evenodd"/>
+<path d="M44.52,0.48 L45.00,0.48 L45.00,14.40 L44.52,14.40 Z" fill="#000000" stroke="none" fill-rule="evenodd"/>
+<path d="M91.44,0.48 L91.92,0.48 L91.92,14.40 L91.44,14.40 Z" fill="#000000" stroke="none" fill-rule="evenodd"/>
+<path d="M138.39,0.48 L138.87,0.48 L138.87,14.40 L138.39,14.40 Z" fill="#000000" stroke="none" fill-rule="evenodd"/>
+<path d="M69.59,30.91 L78.52,30.91" fill="none" stroke="#000000" stroke-width="0.499" stroke-linecap="butt" stroke-linejoin="round" clip-path="url(#c0)"/>
+<path d="M115.37,30.91 L124.27,30.91" fill="none" stroke="#000000" stroke-width="0.499" stroke-linecap="butt" stroke-linejoin="round" clip-path="url(#c1)"/>
+<path d="M0.00,14.40 L0.48,14.40 L0.48,14.88 L0.00,14.88 Z" fill="#000000" stroke="none" fill-rule="evenodd"/>
+<path d="M0.48,14.40 L44.52,14.40 L44.52,14.88 L0.48,14.88 Z" fill="#000000" stroke="none" fill-rule="evenodd"/>
+<path d="M44.52,14.40 L45.00,14.40 L45.00,14.88 L44.52,14.88 Z" fill="#000000" stroke="none" fill-rule="evenodd"/>
+<path d="M45.00,14.40 L91.44,14.40 L91.44,14.88 L45.00,14.88 Z" fill="#000000" stroke="none" fill-rule="evenodd"/>
+<path d="M91.44,14.40 L91.92,14.40 L91.92,14.88 L91.44,14.88 Z" fill="#000000" stroke="none" fill-rule="evenodd"/>
+<path d="M91.92,14.40 L138.38,14.40 L138.38,14.88 L91.92,14.88 Z" fill="#000000" stroke="none" fill-rule="evenodd"/>
+<path d="M138.39,14.40 L138.87,14.40 L138.87,14.88 L138.39,14.88 Z" fill="#000000" stroke="none" fill-rule="evenodd"/>
+<path d="M0.00,14.88 L0.48,14.88 L0.48,45.98 L0.00,45.98 Z" fill="#000000" stroke="none" fill-rule="evenodd"/>
+<path d="M44.52,14.88 L45.00,14.88 L45.00,45.98 L44.52,45.98 Z" fill="#000000" stroke="none" fill-rule="evenodd"/>
+<path d="M91.44,14.88 L91.92,14.88 L91.92,45.98 L91.44,45.98 Z" fill="#000000" stroke="none" fill-rule="evenodd"/>
+<path d="M138.39,14.88 L138.87,14.88 L138.87,45.98 L138.39,45.98 Z" fill="#000000" stroke="none" fill-rule="evenodd"/>
+<path d="M0.00,45.98 L0.48,45.98 L0.48,46.46 L0.00,46.46 Z" fill="#000000" stroke="none" fill-rule="evenodd"/>
+<path d="M0.48,45.98 L44.52,45.98 L44.52,46.46 L0.48,46.46 Z" fill="#000000" stroke="none" fill-rule="evenodd"/>
+<path d="M44.52,45.98 L45.00,45.98 L45.00,46.46 L44.52,46.46 Z" fill="#000000" stroke="none" fill-rule="evenodd"/>
+<path d="M45.00,45.98 L91.44,45.98 L91.44,46.46 L45.00,46.46 Z" fill="#000000" stroke="none" fill-rule="evenodd"/>
+<path d="M91.44,45.98 L91.92,45.98 L91.92,46.46 L91.44,46.46 Z" fill="#000000" stroke="none" fill-rule="evenodd"/>
+<path d="M91.92,45.98 L138.38,45.98 L138.38,46.46 L91.92,46.46 Z" fill="#000000" stroke="none" fill-rule="evenodd"/>
+<path d="M138.39,45.98 L138.87,45.98 L138.87,46.46 L138.39,46.46 Z" fill="#000000" stroke="none" fill-rule="evenodd"/>
+<path d="M0.00,46.46 L0.48,46.46 L0.48,64.46 L0.00,64.46 Z" fill="#000000" stroke="none" fill-rule="evenodd"/>
+<path d="M0.00,64.46 L0.48,64.46 L0.48,64.94 L0.00,64.94 Z" fill="#000000" stroke="none" fill-rule="evenodd"/>
+<path d="M0.00,64.46 L0.48,64.46 L0.48,64.94 L0.00,64.94 Z" fill="#000000" stroke="none" fill-rule="evenodd"/>
+<path d="M0.48,64.46 L44.52,64.46 L44.52,64.94 L0.48,64.94 Z" fill="#000000" stroke="none" fill-rule="evenodd"/>
+<path d="M44.52,46.46 L45.00,46.46 L45.00,64.46 L44.52,64.46 Z" fill="#000000" stroke="none" fill-rule="evenodd"/>
+<path d="M44.52,64.46 L45.00,64.46 L45.00,64.94 L44.52,64.94 Z" fill="#000000" stroke="none" fill-rule="evenodd"/>
+<path d="M45.00,64.46 L91.44,64.46 L91.44,64.94 L45.00,64.94 Z" fill="#000000" stroke="none" fill-rule="evenodd"/>
+<path d="M91.44,46.46 L91.92,46.46 L91.92,64.46 L91.44,64.46 Z" fill="#000000" stroke="none" fill-rule="evenodd"/>
+<path d="M91.44,64.46 L91.92,64.46 L91.92,64.94 L91.44,64.94 Z" fill="#000000" stroke="none" fill-rule="evenodd"/>
+<path d="M91.92,64.46 L138.38,64.46 L138.38,64.94 L91.92,64.94 Z" fill="#000000" stroke="none" fill-rule="evenodd"/>
+<path d="M138.39,46.46 L138.87,46.46 L138.87,64.46 L138.39,64.46 Z" fill="#000000" stroke="none" fill-rule="evenodd"/>
+<path d="M138.39,64.46 L138.87,64.46 L138.87,64.94 L138.39,64.94 Z" fill="#000000" stroke="none" fill-rule="evenodd"/>
+<text x="19.38" y="11.25" font-family="'Times New Roman', Georgia, serif" font-size="11.46" font-style="italic" fill="#000000">k</text>
+<text x="65.16" y="11.64" font-family="'Times New Roman', Georgia, serif" font-size="12.00" fill="#000000">0 </text>
+<text x="112.11" y="11.64" font-family="'Times New Roman', Georgia, serif" font-size="12.00" fill="#000000">1 </text>
+<text x="24.23" y="29.75" font-family="'Times New Roman', Georgia, serif" font-size="6.81" font-style="italic" fill="#000000">k</text>
+<text x="15.95" y="26.77" font-family="'Times New Roman', serif" font-size="11.67" fill="#000000"></text>
+<text x="71.07" y="43.30" font-family="'Times New Roman', Georgia, serif" font-size="12.00" fill="#000000">8</text>
+<text x="56.87" y="33.91" font-family="'Times New Roman', Georgia, serif" font-size="12.00" fill="#000000">0</text>
+<text x="69.66" y="26.35" font-family="'Times New Roman', serif" font-size="12.00" fill="#000000"></text>
+<text x="64.54" y="33.91" font-family="'Times New Roman', serif" font-size="12.00" fill="#000000"></text>
+<text x="116.84" y="43.32" font-family="'Times New Roman', Georgia, serif" font-size="12.02" fill="#000000">8</text>
+<text x="103.61" y="33.93" font-family="'Times New Roman', Georgia, serif" font-size="12.02" fill="#000000">1</text>
+<text x="115.44" y="26.35" font-family="'Times New Roman', serif" font-size="12.02" fill="#000000"></text>
+<text x="110.32" y="33.93" font-family="'Times New Roman', serif" font-size="12.02" fill="#000000"></text>
+<text x="24.16" y="61.32" font-family="'Times New Roman', Georgia, serif" font-size="6.81" font-style="italic" fill="#000000">k</text>
+<text x="19.63" y="58.34" font-family="'Times New Roman', Georgia, serif" font-size="11.66" font-style="italic" fill="#000000">f</text>
+<text x="54.72" y="61.82" font-family="'Times New Roman', Georgia, serif" font-size="12.00" fill="#000000">0,447 </text>
+<text x="101.64" y="61.82" font-family="'Times New Roman', Georgia, serif" font-size="12.00" fill="#000000">0,441 </text>
+</g>
+</svg>

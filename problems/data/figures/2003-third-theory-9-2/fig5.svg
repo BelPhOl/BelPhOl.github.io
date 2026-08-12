@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60.00pt" height="31.02pt" viewBox="0 0 60.00 31.02">
+<defs><clipPath id="figbox"><rect x="0" y="0" width="60.00" height="31.02"/></clipPath></defs>
+<g clip-path="url(#figbox)">
+<path d="M0.00,0.00 L0.72,0.00 L0.72,0.72 L0.00,0.72 Z" fill="#000000" stroke="none"/>
+<path d="M0.00,0.00 L60.00,0.00 L60.00,0.72 L0.00,0.72 Z" fill="#000000" stroke="none"/>
+<path d="M59.28,0.00 L60.00,0.00 L60.00,0.72 L59.28,0.72 Z" fill="#000000" stroke="none"/>
+<path d="M0.00,0.72 L0.72,0.72 L0.72,30.30 L0.00,30.30 Z" fill="#000000" stroke="none"/>
+<path d="M59.28,0.72 L60.00,0.72 L60.00,30.30 L59.28,30.30 Z" fill="#000000" stroke="none"/>
+<path d="M0.00,30.30 L0.72,30.30 L0.72,31.02 L0.00,31.02 Z" fill="#000000" stroke="none"/>
+<path d="M0.00,30.30 L60.00,30.30 L60.00,31.02 L0.00,31.02 Z" fill="#000000" stroke="none"/>
+<path d="M59.28,30.30 L60.00,30.30 L60.00,31.02 L59.28,31.02 Z" fill="#000000" stroke="none"/>
+</g>
+</svg>

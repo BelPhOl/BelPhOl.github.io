@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Таутохронизм и принцип Ферма — разбалловка — BelPhO</title>
+  <meta name="description" content="Таутохронизм и принцип Ферма — Республиканская олимпиада 2024, 11 класс, задача 3. Критерии оценивания и подсчёт баллов.">
+  <link rel="canonical" href="https://belpho.org/problems/final/2024/11-3/marking/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BelPhO">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:url" content="https://belpho.org/problems/final/2024/11-3/marking/">
+  <meta property="og:title" content="Таутохронизм и принцип Ферма — разбалловка — BelPhO">
+  <meta property="og:description" content="Таутохронизм и принцип Ферма — Республиканская олимпиада 2024, 11 класс, задача 3. Критерии оценивания и подсчёт баллов.">
+  
+  <meta property="og:image" content="https://belpho.org/problems/thumbs/og/final-2024.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/css/platform.css">
+</head>
+<body>
+<svg id="mjx-glyph-cache" aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden"><defs><path id="MJX-TEX-I-1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"></path><path id="MJX-TEX-N-2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path><path id="MJX-TEX-I-1D453" d="M118 -162Q120 -162 124 -164T135 -167T147 -168Q160 -168 171 -155T187 -126Q197 -99 221 27T267 267T289 382V385H242Q195 385 192 387Q188 390 188 397L195 425Q197 430 203 430T250 431Q298 431 298 432Q298 434 307 482T319 540Q356 705 465 705Q502 703 526 683T550 630Q550 594 529 578T487 561Q443 561 443 603Q443 622 454 636T478 657L487 662Q471 668 457 668Q445 668 434 658T419 630Q412 601 403 552T387 469T380 433Q380 431 435 431Q480 431 487 430T498 424Q499 420 496 407T491 391Q489 386 482 386T428 385H372L349 263Q301 15 282 -47Q255 -132 212 -173Q175 -205 139 -205Q107 -205 81 -186T55 -132Q55 -95 76 -78T118 -61Q162 -61 162 -103Q162 -122 151 -136T127 -157L118 -162Z"></path></defs></svg>
+<header class="site-header">
+  <div class="container header-content">
+    <a href="/" class="logo">
+      <img src="/img/logo.png" alt="BelPhO" class="logo-img" width="36" height="36">
+      <span>BelPhO</span>
+    </a>
+    <nav class="site-nav" aria-label="Основная навигация">
+      <ul class="nav-links">
+        <li><a href="/">Главная</a></li>
+        <li><a href="/problems/" class="active">Задачи</a></li>
+        <li><a href="/books/">Книги</a></li>
+        <li><a href="/training-program.html">Подготовка</a></li>
+        <li><a href="/alumni.html">Выпускники</a></li>
+        <li><a href="/news/">Новости</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<main class="p-shell">
+  <div class="p-layout">
+    
+<aside class="p-sidebar" id="p-sidebar" data-problem-id="2024-final-theory-11-3">
+  <div class="sb-card">
+    <div class="sb-head">
+      <div class="sb-crumb"><a href="/problems/final/">Республиканская</a> · <a href="/problems/final/2024/">2024</a></div>
+      <h1 class="sb-title">Таутохронизм и принцип Ферма</h1>
+      <div class="sb-meta">
+        <span class="sb-chip">11 класс</span>
+        <span class="sb-chip sb-chip-num">№ 3</span>
+        
+        
+        
+      </div>
+    </div>
+    <nav class="sb-nav" aria-label="Разделы задачи">
+      
+      <a class="sb-item" href="/problems/final/2024/11-3/"
+         >
+        <span class="sb-glyph sb-glyph-t">T</span>
+        <span>Условие</span>
+      </a>
+      
+      <a class="sb-item" href="/problems/final/2024/11-3/solution/"
+         >
+        <span class="sb-glyph sb-glyph-s">S</span>
+        <span>Решение</span>
+      </a>
+      
+      <a class="sb-item on" href="/problems/final/2024/11-3/marking/"
+         aria-current=&#34;page&#34;>
+        <span class="sb-glyph sb-glyph-m">M</span>
+        <span>Разбалловка</span>
+      </a>
+      
+      
+      <a class="sb-item sb-item-edu" href="/problems/final/2024/11-3/edu/"
+         >
+        <span class="sb-glyph sb-glyph-e">E</span>
+        <span>Режим тренировки</span>
+      </a>
+      
+      <details class="sb-files" id="sb-files">
+        <summary class="sb-item sb-item-files">
+          <span class="sb-glyph sb-glyph-f">▾</span><span>Файлы</span>
+        </summary>
+        <div class="sb-files-menu">
+          
+          <span class="sb-file sb-file-none">PDF появятся позже</span>
+        </div>
+      </details>
+    </nav>
+    
+  </div>
+</aside>
+
+    <div class="p-main" id="p-main">
+      
+<div class="page-head">
+  <h2 class="page-title">Разбалловка</h2>
+  <span class="page-sub">
+    Официальная таблица критериев, как она напечатана в протоколе олимпиады.
+  </span>
+</div>
+
+
+
+
+<p class="note-unofficial">Баллы за отдельные пункты приведены внутри строк — так, как они стоят в исходной таблице. Автоматический подсчёт для этой задачи недоступен.</p>
+
+
+
+<div class="marking-raw">
+
+
+  <section class="subq-card marking-card marking-card-raw">
+    
+    <div class="crit-list">
+      
+        
+          
+          <div class="crit-row crit-row-static crit-row-head"><span class="crit-text">Пункт Содержание Всего за часть Всего за пункт Баллы Оценки</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text"><strong>Часть 1. Математическое введение.</strong> <strong>3</strong></span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text">1.1 Разложение (1) <strong>1</strong> 1 1 1</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text">1.2 Уравнение окружности <strong>2</strong> 1 1 1</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text">Разложение (3) 1 1 1</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text"><strong>Часть 2. Таутохронизм</strong></span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text"><em><strong>«Традиционные выводы известных формул не оцениваются!</strong></em>»*</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text"><strong>Задача 2.1</strong> <strong>10</strong> 13</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text">2.1 Основная идея – постоянство времени 2 2 2</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text">Рисунок: ход луча; - указание геометрических параметров <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.464ex;" xmlns="http://www.w3.org/2000/svg" width="3.359ex" height="2.059ex" role="img" focusable="false" viewBox="0 -705 1484.7 910" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D466" xlink:href="#MJX-TEX-I-1D466"></use></g><g data-mml-node="mo" transform="translate(490,0)"><use data-c="2C" xlink:href="#MJX-TEX-N-2C"></use></g><g data-mml-node="mi" transform="translate(934.7,0)"><use data-c="1D453" xlink:href="#MJX-TEX-I-1D453"></use></g></g></g></svg></mjx-container> 1 1 0 2</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text">Формула для пути луча (4) 2 2 2</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text">Разложение (5) 2 0 2</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text">Функция поверхности (6) 1 0 1</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text">Формула для фокусного расстояния 1 0 1</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text"><strong>Задача 2.2</strong> <strong>10</strong> 23</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text">2.2 Рисунок: ход луча; - указание геометрических параметров <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.464ex;" xmlns="http://www.w3.org/2000/svg" width="3.359ex" height="2.059ex" role="img" focusable="false" viewBox="0 -705 1484.7 910" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D466" xlink:href="#MJX-TEX-I-1D466"></use></g><g data-mml-node="mo" transform="translate(490,0)"><use data-c="2C" xlink:href="#MJX-TEX-N-2C"></use></g><g data-mml-node="mi" transform="translate(934.7,0)"><use data-c="1D453" xlink:href="#MJX-TEX-I-1D453"></use></g></g></g></svg></mjx-container> 1 1 0 2</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text">Время движения в среде (9) 1 1 1</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text">Равенство (10) 2 2 2</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text">Разложение (11) 2 0 2</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text">Функция поверхности (12) 1 0 1</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text">Формула для фокусного расстояния (14) 2 2 2</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text"><strong>Задача 2.3</strong> <strong>10</strong> 33</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text">2.3.1 Рисунок: ход луча; - указание геометрических параметров <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.464ex;" xmlns="http://www.w3.org/2000/svg" width="3.359ex" height="2.059ex" role="img" focusable="false" viewBox="0 -705 1484.7 910" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D466" xlink:href="#MJX-TEX-I-1D466"></use></g><g data-mml-node="mo" transform="translate(490,0)"><use data-c="2C" xlink:href="#MJX-TEX-N-2C"></use></g><g data-mml-node="mi" transform="translate(934.7,0)"><use data-c="1D453" xlink:href="#MJX-TEX-I-1D453"></use></g></g></g></svg></mjx-container> <strong>9</strong> 1 1 0 9</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text">Равенство (15) 2 0</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text">Разложение (16) - (17) 3 0</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text">Формула (19) Вывод: есть постоянство времени 1 1 0</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text">2.3.2 Формула (20) <strong>1</strong> 1</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text"><strong>Задача 2.4</strong> <strong>7</strong> 40</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text">2.4.1 Предложение считать «расстояния» отрицательными <strong>2</strong> 2 2 2</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text">2.4.2 Рисунок: ход луча; - указание геометрических параметров <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.464ex;" xmlns="http://www.w3.org/2000/svg" width="3.359ex" height="2.059ex" role="img" focusable="false" viewBox="0 -705 1484.7 910" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D466" xlink:href="#MJX-TEX-I-1D466"></use></g><g data-mml-node="mo" transform="translate(490,0)"><use data-c="2C" xlink:href="#MJX-TEX-N-2C"></use></g><g data-mml-node="mi" transform="translate(934.7,0)"><use data-c="1D453" xlink:href="#MJX-TEX-I-1D453"></use></g></g></g></svg></mjx-container> <strong>5</strong> 1 1 0 2</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text">Равенство (20) 1 0 1</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text">Разложение (21) 1 0 1</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text">Формула (22) 1 1 1</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text">2.4.3 Обоснование принципа: <strong>5</strong></span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text">- волновая природа света; 2 1 2</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text">- интерференция волн; 2 0 2</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text">- все волны в одной фазе, поэтому максимум! 1 1 1</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text"><strong>Часть 3. Принцип Ферма</strong></span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text"><strong>Задача 3.1</strong> <strong>10</strong> 55</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text">3.1 Рисунок с указанием всех параметров 2 0 2</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text">Идея: время должно быть минимальным 2 0 2</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text">Выражение для времени распространения (23) 2 0 2</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text">Выражение для производной (24) 2 0 2</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text">Геометрические соотношения (25) 1 1 1</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text">Закон преломления (26) 1 1 1</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text"><strong>Задача 3.2</strong> <strong>10</strong> 65</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text">3.2.1 Формула для длины хорды (27) <strong>8</strong> 1 1 1</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text">Формула для длины пути (28) 3 1 3</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text">Схематический график: - две ветви синусоиды; - первая ниже второй; - два максимума с правильным указанием координат 1 1 2 0 0</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text">3.2.2 Правильные значения точек отражения <strong>2</strong> 2 2 2</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text"><strong>Задача 3.3</strong> <strong>5</strong></span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text">3.3.1 Формулировка: время движение экстремально или стационарно 2 1 2</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text">3.3.2 Обоснование: - вблизи «стационарной» точки время распространения света по близким траекториям почти одинаково; - различие времен имеет второй порядок малости; - максимум интерференции 1 1 1 0 3</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text">ИТОГО за Задание 3 <strong>70</strong> 24 65</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text">Задание 1 Задание 2 Задание 3 Всего за ТТ</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text">Оценки после проверки</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text">Подпись проверяющего</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text">Изменения после ознакомления</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text">Итоговые баллы</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text">Подпись участника</span></div>
+          
+        
+      
+        
+          
+          <div class="crit-row crit-row-static"><span class="crit-text">Подпись члена жюри</span></div>
+          
+        
+      
+    </div>
+  </section>
+
+</div>
+
+
+
+<div class="page-next">
+  <a class="btn btn-ghost" href="/problems/final/2024/11-3/solution/">← Решение</a>
+  <a class="btn btn-primary" href="/problems/final/2024/11-3/edu/">Режим тренировки →</a>
+</div>
+
+
+
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© 2026 BelPhO — Белорусские физические олимпиады</span>
+    <span class="footer-links">
+      <a href="/problems/">Задачи</a>
+      <a href="https://t.me/belpho_by" rel="noopener">Telegram</a>
+    </span>
+  </div>
+</footer>
+
+
+<script type="module" src="/js/site/problem-page.js"></script>
+
+</body>
+</html>

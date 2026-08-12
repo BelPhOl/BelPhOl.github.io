@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="421.50004" height="122.28" viewBox="0 0 421.50004 122.28">
+<defs>
+<filter id="filter-remove-color" x="0%" y="0%" width="100%" height="100%">
+<feColorMatrix color-interpolation-filters="sRGB" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
+</filter>
+<filter id="filter-color-to-alpha" x="0%" y="0%" width="100%" height="100%">
+<feColorMatrix color-interpolation-filters="sRGB" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0.2126 0.7152 0.0722 0 0"/>
+</filter>
+<clipPath id="clip-0">
+<path clip-rule="nonzero" d="M 1 0 L 420 0 L 420 121.503906 L 1 121.503906 Z M 1 0 "/>
+</clipPath>
+<image id="source-5" x="0" y="0" width="555" height="155" xlink:href="data:image/png;base64,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"/>
+<mask id="mask-0">
+<g filter="url(#filter-remove-color)">
+<use xlink:href="#source-5" filter="url(#filter-color-to-alpha)" transform="matrix(0.755014, 0, 0, 0.784285, 0.985131, -0.0000119298)"/>
+</g>
+</mask>
+</defs>
+<g clip-path="url(#clip-0)">
+<path fill-rule="nonzero" fill="rgb(0%, 0%, 0%)" fill-opacity="1" d="M 1.015625 121.503906 L 419.988281 121.503906 L 419.988281 0.03125 L 1.015625 0.03125 Z M 1.015625 121.503906 "/>
+<g mask="url(#mask-0)">
+<rect x="-42.150004" y="-12.228" width="505.800048" height="146.736" fill="rgb(99.607849%, 99.607849%, 99.607849%)" fill-opacity="1"/>
+</g>
+</g>
+</svg>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="164.99997" height="147.71997" viewBox="0 0 164.99997 147.71997">
+<defs>
+<filter id="filter-remove-color" x="0%" y="0%" width="100%" height="100%">
+<feColorMatrix color-interpolation-filters="sRGB" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
+</filter>
+<filter id="filter-color-to-alpha" x="0%" y="0%" width="100%" height="100%">
+<feColorMatrix color-interpolation-filters="sRGB" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0.2126 0.7152 0.0722 0 0"/>
+</filter>
+<g>
+<g id="glyph-0-0">
+</g>
+</g>
+<clipPath id="clip-0">
+<path clip-rule="nonzero" d="M 0.15625 0 L 164.84375 0 L 164.84375 147.441406 L 0.15625 147.441406 Z M 0.15625 0 "/>
+</clipPath>
+<clipPath id="clip-1">
+<path clip-rule="nonzero" d="M 0.15625 0 L 164.84375 0 L 164.84375 147 L 0.15625 147 Z M 0.15625 0 "/>
+</clipPath>
+<image id="source-7" x="0" y="0" width="213" height="189" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANUAAAC9CAAAAAABjGdoAAAAAmJLR0QA/4ePzL8AAAcPSURBVHic7V3bsuUqCIRT8/+/zHkwF40mAjbGtStdtWfVrItJB6QVMWGhP4j/3j6BEHysfgcBrJjxbRoBZ8W8QPz5h22OSWgBWlBWi3CCsmISWoMUkpXQKqTA0YIXsdbf1CvolV3BTESEtdUypJCs1iH1R/sVjtVCpsKxWonU54GPWMpUKFZrkQKxWozU16/usZqpIKyWI/V54B3WMxWA1YKkxlmtSOrrV00saapRVmuSGmS1KKmYfvX6+sFQlrNtKiZJedz3MGKre1LvcopY6UmZaXSzNgywWjVU0AirO1KS/fsW3NGCNy+T69vE9buzMRAD5SbQyevdyu2BLMIkDWFKRF+m5bQVC6XV0ou93jbShqHILkwiA0TCxiA+Vnv8E6KLG0rx8txInDS4PLA8HSEWLrqTxgSh6/0eVvXJ8OV/3bMNrmEArOHn+iR1AGn+InhV3MGKq6gnp+fdiViB8BoGO6vidOpxhPJkY2sYzKzyUzk47dFilfHuQL+q7GRQH5brj6GwsjpMVfueYf4bPYkxstpPpzUu159p+MzMp8K0ThdqwsaK99n7EKf4SbSJFQvCThMyAwZWKSO2uO8lqFkxgfqTz1RsOrKalfAptiMwN9FMjygPssgkFoObq38313jBVK4j6zyQSVgYEL4cDRzzUXS/SqRGMhR7Q+6rArfVNm8VpqWz0Dma2RjOg0eaCTGC0LRroskxCUv6o7FYOc/QfVbCyVLD1provSpbHdaiHxE2BavDUmOEZgYaVe6WD2v51zumRs8Wq30gu0No3FpeUr4jNvWqUlw5rQUJ8RocOUbH4VRjizSyGBlf+EdKrkuoXRMZ06xZI6UdLVZ1rg6mWZOgnInsCeQtc2Gk5rgUadptP1SC0gMzzZrjfyIja0HqtUa/ZrkTFX5vV0cLgGapwMeC7EAX1mfOvJql/urORs5X7xU05Jh8mqUkxQeLsmDDZy9L7va0Fn5Yd+ig5O94oa9M8GmW/rvMRAJKDFvqLSQfYejcUN+pmEjOPN5eZeiMTQZWDs06cqidHyROrTSkz3baLCdRVlDAWtXfp8+yXfb2T/YYgeurNg80atZJKo0t29eK909wAchWx5RplqJnZaTo7usnJyRMrIQtOYyrQzXOPYaTvebMPM96mMtGcbJ7oF6zroVB1eQmjJPDVlrNqqudyo8DOZlZuedZUohWLCebXhHpNetsYRvdZV+OXzK3VpEIn2P3h69lH0rxMqcExV53q9GsB1sH+16CmZVNsy6Yw8lXI93VrBtTzeLk88CeZt1EoGmcnLbqaVbjvZmcXKx6msVS7R+Zy8muV0Q9zdpG6pJ/f3ZJl88DH6LgXld8fDTbTkTefSIKzdpoFZym7bh1Vag+5AZPz0vbEIpBxfNEHwjvTqUbzcq7k5S+15noQ+H1wLZmFTGi7E/PE30w3LbqaBbfOtqMwOFk1dYszsNC6Whzt7C7dwA21rPynKYI5eH9+NUccn4PvNOsJ32aFdn9uzUrzWKhruZKX7QQoube01Np1k7uJkbw9lnHB90LBgUOVg5xLNazeiX814l+E6jtjgcr8yUSpsJagK0WCk66o4zs1pTCWqMl/L0tnLwfVNNWuQ52fbfz28HqpijI6H1jdmtBxqz8ZC2LrXJW1jNT5gZB2IaRqpM8xgOUlFWKd7s/PuubAMaKWGt0TBCGcoMVgAYfvccPqtYdO5oaYwWtGwT2zY3V3qHMLTtqMNqABpzCVvazGqobLA4NjaKlBzqa9tcNBiKxSqMVV80lpm4QLHic5Ujk+q6uAYBmoVV8G1v4Wx2vdceTgtyTDqdZKIyzGtcs/CgSYqsxzQoYGgNYwTQLB9SdzP2aFTGLwXjggGaFTM0w9+W01Q3miJlvQlhh51kAoO6h6tSsoNQAygN9mhWV74DZCjXPggDEyqdZYakp5NOHrJoVl2/DeaA5CgYmEXH3kfZrFh4wVmbNisz3Iu/5bdKs0CQ20gMtmhWbmYfaahnNArKyaFbwIgr0XvpqzYpeGcJ64Cojd+xzD5SaFb6IB2Wl1Kz4lUn0MyoUmjVhuRXtgWvcBwNuq65mzeALZtXXrClGxD/7ZYX1LLwHPkfBOf0N/6SoR82aFEQ0984y4VGzKlJBLhrxVC/1PGuxJ2884UGzLsXvcbsQWo5+WST2NHn83a42h2700d07y4Q7zXrYmIAG4MkbNYq6wYY3hG/ICokWTc162JgAR8wTQxuaVW1MiEQIq3vNmrRxLurprlfN0mxMwKHJavi2SJVmsUzkdDcwGx6uXTSrtzEBjZDIXlc3RXB6aDOIVVXrDh2sd0vb88rvP4O4+nqWahyIazu99G0VcGhhCd3w90a/orSXKbL5+48Cp9wvPjk58snx7yU6382xRiHSVu/hY/U7+Fj9Dj5Wv4P/AR0UwtgXyu9AAAAAAElFTkSuQmCC"/>
+<mask id="mask-0">
+<g filter="url(#filter-remove-color)">
+<use xlink:href="#source-7" filter="url(#filter-color-to-alpha)" transform="matrix(0.773182, 0, 0, 0.780108, 0.156102, 0.0000189641)"/>
+</g>
+</mask>
+<clipPath id="clip-2">
+<path clip-rule="nonzero" d="M 164 147 L 164.84375 147 L 164.84375 147.441406 L 164 147.441406 Z M 164 147 "/>
+</clipPath>
+</defs>
+<g clip-path="url(#clip-0)">
+<path fill-rule="nonzero" fill="rgb(0%, 0%, 0%)" fill-opacity="1" d="M 0.1875 147.410156 L 164.8125 147.410156 L 164.8125 0.03125 L 0.1875 0.03125 Z M 0.1875 147.410156 "/>
+</g>
+<g clip-path="url(#clip-1)">
+<g mask="url(#mask-0)">
+<rect x="-16.499997" y="-14.771997" width="197.999964" height="177.263964" fill="rgb(99.607849%, 99.607849%, 99.607849%)" fill-opacity="1"/>
+</g>
+</g>
+<g clip-path="url(#clip-2)">
+<g fill="rgb(0%, 0%, 0%)" fill-opacity="1">
+<use xlink:href="#glyph-0-0" x="164.843937" y="147.44056"/>
+</g>
+</g>
+</svg>

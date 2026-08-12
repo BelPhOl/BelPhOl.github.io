@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="133.31pt" height="146.42pt" viewBox="0 0 133.31 146.42">
+<defs><clipPath id="figbox"><rect x="0" y="0" width="133.31" height="146.42"/></clipPath></defs>
+<g clip-path="url(#figbox)">
+<path d="M48.36,26.96 L22.56,103.22 L21.96,102.44 L89.10,102.44 L89.10,103.70 L21.96,103.70 C21.78,103.70 21.60,103.58 21.48,103.40 C21.36,103.22 21.30,103.04 21.36,102.86 L47.16,26.60 L48.36,26.96 M44.58,26.78 L49.32,22.04 L50.28,28.70 L44.58,26.78 M88.08,100.04 L94.08,103.04 L88.08,106.04" fill="#000000" stroke="none"/>
+<path d="M19.80,103.82 L73.14,103.82 L73.86,94.04" fill="none" stroke="#5a5a5a" stroke-width="3.000" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M92.34,43.22 L72.90,96.92 L112.62,101.36 L132.06,47.72" fill="#a5a5a5" stroke="none" fill-rule="evenodd"/>
+<path d="M92.34,43.22 L72.90,96.92 L112.62,101.36 L132.06,47.72 L92.34,43.22" fill="none" stroke="#5a5a5a" stroke-width="2.500" stroke-linecap="round" stroke-linejoin="miter"/>
+<path d="M22.02,104.60 L17.04,118.04 L68.76,118.04 L71.76,103.82" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M92.04,43.04 L97.68,27.98 L48.54,28.64 L42.90,42.26 M27.00,103.82 L24.24,112.10 M32.46,103.82 L29.70,112.10 M37.44,103.82 L34.68,112.10 M42.24,103.82 L39.48,112.10 M47.52,103.82 L44.76,112.10 M23.40,105.32 L21.96,109.58 M29.40,105.32 L27.96,109.58 M34.62,105.62 L33.24,109.82 M39.60,105.62 L38.16,109.82 M44.40,105.32 L42.96,109.58 M50.10,35.54 L47.40,43.82 M55.62,35.54 L52.86,43.82 M60.60,35.54 L57.84,43.82 M65.40,35.54 L62.64,43.82 M70.68,35.54 L67.92,43.82 M46.50,37.04 L45.12,41.30 M52.50,37.04 L51.12,41.30 M57.78,37.28 L56.40,41.54 M62.70,37.28 L61.32,41.54 M67.50,37.04 L66.12,41.30 M52.80,104.12 L50.10,112.34 M58.32,104.12 L55.56,112.34 M63.30,104.12 L60.54,112.34 M68.10,104.12 L65.34,112.34 M49.20,105.62 L47.82,109.82 M55.20,105.62 L53.82,109.82 M60.48,105.86 L59.10,110.12 M65.40,105.86 L64.02,110.12 M70.20,105.62 L68.82,109.82 M77.52,34.82 L74.76,43.04 M83.04,34.82 L80.28,43.04 M87.96,34.82 L85.20,43.04 M92.76,34.82 L90.00,43.04 M73.92,36.32 L72.54,40.52 M79.92,36.32 L78.54,40.52 M85.20,36.56 L83.76,40.82 M90.12,36.56 L88.74,40.82 M94.92,36.32 L93.54,40.52" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M117.54,3.92 C116.04,3.74 111.30,3.62 108.54,3.14 C105.78,2.66 104.10,1.16 101.04,0.92 C97.92,0.62 91.68,0.50 89.76,1.64 C87.90,2.78 90.36,4.28 89.76,7.64 C89.16,11.00 87.78,15.92 86.04,21.92 C84.30,27.92 85.08,26.30 79.26,43.64 C73.50,60.98 57.00,108.92 51.12,126.14" fill="none" stroke="#000000" stroke-width="1.000" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M51.84,126.38 L47.28,141.80 L45.84,141.38 L50.40,125.96 L51.84,126.38 M49.20,125.60 C49.50,124.52 50.64,123.92 51.72,124.22 C52.74,124.52 53.34,125.66 53.04,126.74 C52.74,127.76 51.60,128.36 50.58,128.06 C49.50,127.76 48.90,126.62 49.20,125.60 M49.68,141.50 L45.12,146.42 L43.98,139.82" fill="#000000" stroke="none"/>
+<path d="M18.00,93.32 L73.68,93.32 L72.00,102.38 L21.42,102.38" fill="#989898" stroke="none" fill-rule="evenodd"/>
+<path d="M18.00,93.32 L21.42,102.38" fill="none" stroke="#989898" stroke-width="0.060" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M73.68,93.32 L92.28,43.04 L88.86,56.78 L72.00,102.38" fill="#dcdcdc" stroke="none" fill-rule="evenodd"/>
+<path d="M73.68,93.32 L72.00,102.38" fill="none" stroke="#dcdcdc" stroke-width="0.060" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M36.54,43.04 L18.00,93.32 L73.68,93.32 L92.28,43.04" fill="#c4c4c4" stroke="none" fill-rule="evenodd"/>
+<path d="M36.54,43.04 L18.00,93.32" fill="none" stroke="#e7e7e7" stroke-width="1.020" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M18.00,93.32 L73.68,93.32" fill="none" stroke="#b7b7b7" stroke-width="1.020" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M73.68,93.32 L92.28,43.04" fill="none" stroke="#d2d2d2" stroke-width="1.020" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M92.28,43.04 L36.54,43.04" fill="none" stroke="#b7b7b7" stroke-width="1.020" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M39.96,93.32 L58.80,43.82 L70.86,43.82 L52.02,93.32 L39.96,93.32" fill="#7f7f7f" stroke="none" fill-rule="evenodd"/>
+<path d="M39.96,93.32 L52.02,93.32 L70.86,43.82 L58.80,43.82 Z" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M46.02,51.32 C46.02,53.00 50.10,54.32 55.20,54.32 C60.24,54.32 64.32,53.00 64.32,51.32 C64.32,49.64 60.24,48.32 55.20,48.32 C50.10,48.32 46.02,49.64 46.02,51.32" fill="#323232" stroke="none" fill-rule="evenodd"/>
+<path d="M55.20,48.32 C50.10,48.32 46.02,49.64 46.02,51.32 L46.02,69.38 C46.02,71.06 50.10,72.38 55.20,72.38 C60.24,72.38 64.32,71.06 64.32,69.38 L64.32,51.32 C64.32,49.64 60.24,48.32 55.20,48.32 M46.02,51.32 C46.02,53.00 50.10,54.32 55.20,54.32 C60.24,54.32 64.32,53.00 64.32,51.32" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="78.96" y="116.18" font-family="'Times New Roman', Georgia, serif" font-size="12.00" fill="#000000">Х </text>
+<text x="31.08" y="35.36" font-family="'Times New Roman', Georgia, serif" font-size="12.00" fill="#000000">У </text>
+<text x="12.72" y="109.64" font-family="'Times New Roman', Georgia, serif" font-size="12.00" fill="#000000">0 </text>
+<text x="53.52" y="137.60" font-family="'Times New Roman', Georgia, serif" font-size="10.02" fill="#000000">F</text>
+<text x="59.10" y="139.10" font-family="'Times New Roman', Georgia, serif" font-size="6.48" fill="#000000">тр1</text>
+<text x="68.40" y="137.60" font-family="'Times New Roman', Georgia, serif" font-size="10.02" fill="#000000">(х),  F</text>
+<text x="93.12" y="139.10" font-family="'Times New Roman', Georgia, serif" font-size="6.48" fill="#000000">тр2</text>
+<text x="102.42" y="137.60" font-family="'Times New Roman', Georgia, serif" font-size="10.02" fill="#000000">(х) </text>
+</g>
+</svg>

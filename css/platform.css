@@ -1,0 +1,2295 @@
+/* ============================================================================
+   platform.css — design system for belpho.org problem pages.
+   Tokens formalized from the existing site's index.html :root (kept in sync
+   by hand; the old site inlines them). Mobile-first: base = one column,
+   ≥900px = sticky left sidebar + content. No external CDNs: Inter is used
+   when present on the system/site, otherwise the system UI stack.
+   MathJax container CSS is appended to this file by build.js.
+   ========================================================================== */
+
+:root {
+  --primary-color: #2563eb;
+  --primary-dark: #1d4ed8;
+  --primary-tint: #eff6ff;
+  --secondary-color: #64748b;
+  --accent-color: #f59e0b;
+  --success-color: #10b981;
+  --success-tint: #ecfdf5;
+  --warning-color: #f59e0b;
+  --error-color: #ef4444;
+  --bg-color: #f8fafc;
+  --surface-color: #ffffff;
+  --text-primary: #1e293b;
+  --text-secondary: #64748b;
+  --border-color: #e2e8f0;
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --hint-1: #7c3aed;
+  --hint-1-tint: #f5f3ff;
+  --hint-2: #d97706;
+  --hint-2-tint: #fffbeb;
+  --hint-3: #1e293b;
+  --hint-3-tint: #f1f5f9;
+  --radius: 12px;
+  --radius-sm: 8px;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* The edu page pre-renders every hint/answer/solution and hides it with the
+   `hidden` attribute, so a reveal is a pure attribute flip with no fetch and
+   no re-render. Component rules like `.answer-box{display:flex}` would beat
+   the UA's `[hidden]{display:none}`, so it is re-asserted here. */
+[hidden] { display: none !important; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  font-family: var(--font-sans);
+  background: var(--bg-color);
+  color: var(--text-primary);
+  line-height: 1.65;
+  font-size: 16px;
+}
+
+img, svg { max-width: 100%; height: auto; }
+
+a { color: var(--primary-color); }
+
+.container { max-width: 1280px; margin: 0 auto; padding: 0 16px; }
+
+/* ---------------------------------------------------------------- header */
+
+.site-header {
+  background: var(--surface-color);
+  box-shadow: var(--shadow-sm);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 56px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--primary-color);
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.logo-img { width: 36px; height: 36px; object-fit: contain; }
+
+.site-nav { min-width: 0; }
+
+.nav-links {
+  display: flex;
+  gap: 22px;
+  list-style: none;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  padding: 4px 0;
+}
+.nav-links::-webkit-scrollbar { display: none; }
+
+.nav-links a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover, .nav-links a.active { color: var(--primary-color); }
+
+/* Below ~760px the six nav labels cannot share a row with the logo without
+   being clipped mid-word. The nav drops to its own full-width row and scrolls,
+   with a fade at the right edge so it is visibly scrollable rather than
+   looking cut off. */
+@media (max-width: 759.98px) {
+  .header-content { flex-wrap: wrap; min-height: 0; padding: 8px 0 0; }
+  .logo { font-size: 20px; }
+  .logo-img { width: 30px; height: 30px; }
+  .site-nav {
+    flex-basis: 100%;
+    position: relative;
+    margin: 0 -16px;
+    padding: 0 16px;
+    -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 28px), transparent);
+    mask-image: linear-gradient(90deg, #000 calc(100% - 28px), transparent);
+  }
+  .nav-links { gap: 18px; padding: 6px 0 8px; }
+  .nav-links a { font-size: 14.5px; }
+}
+
+/* ---------------------------------------------------------------- footer */
+
+.site-footer {
+  margin-top: 48px;
+  padding: 20px 0 28px;
+  border-top: 1px solid var(--border-color);
+  background: var(--surface-color);
+}
+
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  justify-content: space-between;
+  color: var(--text-secondary);
+  font-size: 13.5px;
+}
+
+.footer-links { display: flex; gap: 18px; }
+.footer-links a { color: var(--text-secondary); text-decoration: none; }
+.footer-links a:hover { color: var(--primary-color); }
+
+/* ---------------------------------------------------------------- layout */
+
+.p-shell { max-width: 1280px; margin: 0 auto; padding: 16px 16px 0; }
+
+.p-layout { display: block; }
+
+.p-main { min-width: 0; max-width: 860px; }
+
+@media (min-width: 900px) {
+  .p-shell { padding: 28px 24px 0; }
+  .p-layout {
+    display: grid;
+    grid-template-columns: 292px minmax(0, 1fr);
+    gap: 28px;
+    align-items: start;
+  }
+  .p-sidebar { position: sticky; top: 20px; }
+}
+
+/* --------------------------------------------------------------- sidebar */
+
+.sb-card {
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.sb-head { padding: 16px 16px 12px; }
+
+.sb-crumb { font-size: 12.5px; color: var(--text-secondary); margin-bottom: 4px; }
+.sb-crumb a { color: var(--text-secondary); text-decoration: none; }
+.sb-crumb a:hover { color: var(--primary-color); }
+
+.sb-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  margin-bottom: 10px;
+}
+
+.sb-meta { display: flex; flex-wrap: wrap; gap: 6px; }
+
+.sb-chip {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: var(--bg-color);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.sb-chip-num { background: var(--primary-tint); border-color: #bfdbfe; color: var(--primary-dark); }
+.sb-chip-pts { background: var(--success-tint); border-color: #a7f3d0; color: #047857; }
+.sb-chip-edu { background: var(--hint-1-tint); border-color: #ddd6fe; color: var(--hint-1); }
+
+/* nav: vertical list on desktop, horizontal tab-bar on mobile */
+
+.sb-nav { border-top: 1px solid var(--border-color); padding: 8px; }
+
+.sb-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 10px;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  color: var(--text-primary);
+  font-weight: 500;
+  font-size: 14.5px;
+  transition: background 0.15s ease;
+  cursor: pointer;
+}
+
+.sb-item:hover { background: var(--bg-color); }
+
+.sb-item.on {
+  background: var(--primary-tint);
+  color: var(--primary-dark);
+  font-weight: 600;
+}
+
+.sb-glyph {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 700;
+  flex-shrink: 0;
+  color: #fff;
+}
+
+.sb-glyph-t { background: var(--primary-color); }
+.sb-glyph-s { background: var(--success-color); }
+.sb-glyph-m { background: var(--accent-color); }
+.sb-glyph-h { background: var(--hint-1); }
+.sb-glyph-e { background: #0e7490; }
+.sb-glyph-f { background: var(--secondary-color); }
+
+.sb-item-edu { border-top: 1px dashed var(--border-color); margin-top: 6px; padding-top: 12px; border-radius: 0 0 var(--radius-sm) var(--radius-sm); }
+
+/* files dropdown */
+
+.sb-files summary { list-style: none; }
+.sb-files summary::-webkit-details-marker { display: none; }
+.sb-files[open] .sb-glyph-f { transform: rotate(180deg); }
+.sb-glyph-f { transition: transform 0.2s ease; font-size: 11px; }
+
+.sb-files-menu { padding: 2px 10px 8px 46px; display: flex; flex-direction: column; gap: 2px; }
+
+.sb-file {
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: 4px 0;
+}
+.sb-file:hover { color: var(--primary-color); }
+.sb-file-none { font-style: italic; }
+
+/* Σ total card (marking page) */
+
+.sb-total {
+  border-top: 1px solid var(--border-color);
+  padding: 14px 16px;
+  background: linear-gradient(180deg, #fffbeb 0%, var(--surface-color) 100%);
+}
+
+.sb-total-row { display: flex; align-items: center; gap: 10px; }
+
+.sb-total-sigma {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: var(--accent-color);
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.sb-total-label { font-size: 14px; font-weight: 600; flex: 1; }
+
+.sb-total-val { font-size: 20px; font-weight: 700; color: var(--text-primary); }
+.sb-total-max { font-size: 14px; font-weight: 500; color: var(--text-secondary); }
+
+.sb-total-bar {
+  margin-top: 10px;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--border-color);
+  overflow: hidden;
+}
+
+.sb-total-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--accent-color), var(--success-color));
+  transition: width 0.25s ease;
+}
+
+/* mobile: head compact, nav becomes horizontal scrollable tab bar */
+
+@media (max-width: 899.98px) {
+  .sb-head { padding: 14px 14px 10px; }
+  .sb-title { font-size: 18px; margin-bottom: 8px; }
+  /* The vertical sidebar nav becomes a horizontal tab bar. It scrolls (six
+     targets never fit 390px), so it needs an edge cue — but NOT a mask: a
+     masked element becomes the containing block for fixed descendants, which
+     silently trapped the Файлы sheet inside this 44px-tall strip. The classic
+     background-attachment scroll-shadow does the same job with no such effect,
+     and it correctly disappears at each end of the scroll. */
+  .sb-nav {
+    display: flex;
+    align-items: stretch;
+    gap: 2px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding: 8px;
+    background:
+      linear-gradient(90deg, var(--surface-color) 40%, rgba(255, 255, 255, 0)) left / 28px 100% no-repeat local,
+      linear-gradient(90deg, rgba(255, 255, 255, 0), var(--surface-color) 60%) right / 28px 100% no-repeat local,
+      radial-gradient(farthest-side at 0 50%, rgb(15 23 42 / 0.13), transparent) left / 12px 100% no-repeat scroll,
+      radial-gradient(farthest-side at 100% 50%, rgb(15 23 42 / 0.13), transparent) right / 12px 100% no-repeat scroll;
+  }
+  .sb-nav::-webkit-scrollbar { display: none; }
+  .sb-item { flex-shrink: 0; padding: 7px 9px; gap: 7px; font-size: 14px; }
+  .sb-item-edu { border-top: none; margin-top: 0; padding-top: 7px; }
+  .sb-files { flex-shrink: 0; }
+
+  /* The running total is the entire point of the marking page, but in the
+     mobile stack the sidebar sits ABOVE the criteria and scrolls away as soon
+     as the student starts toggling. It becomes a fixed thumb-height bar
+     instead, so the Σ is visible next to every switch they touch. */
+  .sb-total {
+    position: fixed;
+    left: 0; right: 0; bottom: 0;
+    z-index: 60;
+    background: var(--surface-color);
+    border-top: 1px solid var(--border-color);
+    box-shadow: 0 -4px 12px -4px rgb(0 0 0 / 0.15);
+    padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
+  }
+  .sb-total-bar { margin-top: 8px; }
+  body:has(#sb-total-card) { padding-bottom: 84px; }
+  /* The Файлы item sits inside a horizontally scrolling tab bar, so an
+     absolutely positioned dropdown would be clipped by the scroller's mask or
+     land off-screen depending on the scroll offset. `fixed` escapes the
+     scroller entirely: the menu opens as a thumb-height sheet, always fully
+     visible wherever the tab bar happens to be scrolled. */
+  .sb-files-menu {
+    position: fixed;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    top: auto;
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-lg);
+    padding: 12px 16px;
+    z-index: 70;
+  }
+  .sb-files-menu::before {
+    content: 'Файлы';
+    display: block;
+    font-size: 11.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-secondary);
+    padding-bottom: 6px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid var(--border-color);
+  }
+  .sb-file { padding: 8px 0; font-size: 15px; }
+}
+
+/* -------------------------------------------------------------- page head */
+
+.page-head { margin: 4px 0 16px; }
+
+.page-title {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.page-sub { display: block; font-size: 13.5px; color: var(--text-secondary); margin-top: 2px; }
+
+.edu-badge {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: var(--hint-1);
+  color: #fff;
+  letter-spacing: 0.02em;
+}
+
+.note-unofficial {
+  font-size: 13px;
+  color: var(--text-secondary);
+  background: var(--surface-color);
+  border: 1px dashed var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 8px 12px;
+  margin-bottom: 14px;
+}
+
+/* ----------------------------------------------------------------- cards */
+
+.intro-card, .subq-card {
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  padding: 18px 20px;
+  margin-bottom: 16px;
+  /* flow-root, not overflow:hidden — a card must contain its floated figure
+     (otherwise fig. 1 spills past the card and squeezes the NEXT part's text
+     into a one-word column) while still letting tall math scroll. */
+  display: flow-root;
+}
+
+.intro-card { border-left: 3px solid var(--primary-color); }
+
+.intro-card p, .subq-body p, .hint-body p, .edu-solution p { margin-bottom: 0.7em; }
+.intro-card p:last-child, .subq-body p:last-child,
+.hint-body p:last-child, .edu-solution p:last-child { margin-bottom: 0; }
+
+.part-section {
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-secondary);
+  margin: 22px 0 12px;
+}
+
+.subq-head { margin-bottom: 10px; }
+
+.subq-head-split { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+
+.subq-pill {
+  display: inline-flex;
+  align-items: flex-start;
+  background: var(--primary-color);
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1;
+  padding: 6px 12px 7px;
+  border-radius: 999px;
+  letter-spacing: 0.01em;
+}
+
+.subq-head-split .subq-pill { flex-shrink: 0; }
+
+.subq-points {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--text-secondary);
+  background: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  padding: 2px 10px;
+  white-space: nowrap;
+}
+
+.subq-body { font-size: 16px; }
+.subq-body ul, .subq-body ol { margin: 0 0 0.7em 1.3em; }
+
+/* --------------------------------------------------------- question frame */
+
+/* The authors box the exact sentence they ask the student to answer in a
+   double-ruled frame — e.g. «1.1 Найдите численное значение и размерность
+   универсальной газовой постоянной R…» — leaving the surrounding context
+   text unframed. That is always the FIRST paragraph of a part's statement
+   (verified against the source: 2025 «Брызги шампанского!» 1.1–2.2), so the
+   site reproduces it there, on every part, as a readability aid — "so it
+   will be convenient for readers to understand what problems authors ask
+   them to solve exactly" — even for the many source PDFs that never drew a
+   box at all. `border-style: double` is a real double rule, not two divs. */
+.subq-body-question > p:first-of-type {
+  border: 4px double var(--text-primary);
+  border-radius: 3px;
+  padding: 10px 14px 11px;
+  margin-bottom: 0.7em;
+}
+
+@media (max-width: 480px) {
+  .subq-body-question > p:first-of-type { padding: 8px 10px 9px; }
+}
+
+/* ---------------------------------------------------------------- figures */
+
+.md-fig {
+  width: var(--fig-w, 100%);
+  margin: 8px auto 12px;
+  text-align: center;
+}
+
+.md-fig img {
+  width: 100%;
+  background: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 8px;
+}
+
+.md-fig figcaption {
+  font-size: 12.5px;
+  color: var(--text-secondary);
+  margin-top: 5px;
+  line-height: 1.45;
+}
+
+/* float_side ('left'/'right', from figures.float_side) drives which way text
+   wraps — matches the PDF's own wrapfig placement instead of a width guess.
+   Only above the breakpoint: a floated figure at, say, 60% width leaves too
+   little room for wrapped text on a 390px phone, so mobile un-floats
+   everything below and shows it as a normal centred block instead — the
+   audience is mobile-majority on cheap devices, and a figure with nothing to
+   wrap around it must never be the one thing stuck alone on its own line. */
+@media (min-width: 640px) {
+  .md-fig-float-right { float: right; margin: 4px 0 10px 18px; }
+  .md-fig-float-left { float: left; margin: 4px 18px 10px 0; }
+}
+
+@media (max-width: 639.98px) {
+  .md-fig { width: min(88%, 340px); }
+}
+
+/* Small phones: reclaim horizontal space for the text itself. */
+@media (max-width: 480px) {
+  .container, .p-shell { padding-left: 12px; padding-right: 12px; }
+  .intro-card, .subq-card { padding: 14px 14px; }
+  .crit-row { padding: 8px 4px; gap: 10px; }
+  .page-title { font-size: 21px; }
+  .subq-body, .crit-text { font-size: 15.5px; }
+}
+
+/* ------------------------------------------------------------- answer box */
+
+.answer-box {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-top: 14px;
+  padding: 10px 14px;
+  background: var(--success-tint);
+  border: 1px solid #a7f3d0;
+  border-left: 3px solid var(--success-color);
+  border-radius: var(--radius-sm);
+  overflow-x: auto;
+}
+
+.answer-label {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #047857;
+  flex-shrink: 0;
+}
+
+.answer-body { font-size: 16px; min-width: 0; }
+
+/* ------------------------------------------------------------- footnotes */
+
+/* In-text marker → anchor (opts.footnotes in lib/mdRender.js). Untested
+   against real data: problem.footnotes is empty until the footnotes_json
+   column lands, so .footnotes never renders and .fn-marker never matches
+   today — this is the CSS half of a template path built ahead of the data. */
+.fn-marker { font-size: 0.8em; }
+.fn-marker a {
+  color: var(--primary-color);
+  text-decoration: none;
+  padding: 0 1px;
+}
+.fn-marker a:hover { text-decoration: underline; }
+
+.footnotes {
+  margin-top: 22px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border-color);
+}
+
+.footnotes-title {
+  font-size: 12.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.footnotes-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+
+.footnote-item {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  scroll-margin-top: 16px;
+}
+.footnote-marker { flex-shrink: 0; font-weight: 600; }
+
+.footnote-body { flex: 1; min-width: 0; }
+.footnote-body p { display: inline; margin: 0; }
+
+.fn-back {
+  flex-shrink: 0;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 13px;
+}
+.fn-back:hover { text-decoration: underline; }
+
+/* ---------------------------------------------------- marking / criteria */
+
+.crit-list { display: flex; flex-direction: column; gap: 4px; }
+
+.crit-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 9px 10px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.crit-row:hover { background: var(--bg-color); }
+
+.crit-input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.crit-toggle {
+  flex-shrink: 0;
+  width: 38px;
+  height: 22px;
+  border-radius: 999px;
+  background: #cbd5e1;
+  position: relative;
+  transition: background 0.18s ease;
+  margin-top: 2px;
+}
+
+.crit-toggle::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.18s ease;
+}
+
+.crit-input:checked + .crit-toggle { background: var(--success-color); }
+.crit-input:checked + .crit-toggle::after { transform: translateX(16px); }
+.crit-input:focus-visible + .crit-toggle { outline: 2px solid var(--primary-color); outline-offset: 2px; }
+
+.crit-text { flex: 1; font-size: 15px; min-width: 0; }
+
+.crit-row .crit-input:checked ~ .crit-text { color: var(--text-primary); }
+
+.crit-pts {
+  flex-shrink: 0;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-secondary);
+  background: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  padding: 1px 9px;
+  margin-top: 2px;
+  transition: all 0.15s ease;
+}
+
+.crit-input:checked ~ .crit-pts {
+  color: #047857;
+  background: var(--success-tint);
+  border-color: #a7f3d0;
+}
+
+/* Alternatives are a radio group, and must not look like the independent
+   switches above them — a toggle implies "each can be on", which is exactly
+   what these criteria are not. Same row geometry, radio affordance. */
+.crit-row-alt .crit-toggle {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--surface-color);
+  border: 2px solid #cbd5e1;
+}
+.crit-row-alt .crit-toggle::after {
+  top: 50%; left: 50%;
+  width: 10px; height: 10px;
+  background: var(--success-color);
+  box-shadow: none;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.15s ease;
+}
+.crit-row-alt .crit-input:checked + .crit-toggle {
+  background: var(--surface-color);
+  border-color: var(--success-color);
+}
+.crit-row-alt .crit-input:checked + .crit-toggle::after { transform: translate(-50%, -50%) scale(1); }
+
+.crit-alt-group {
+  border: 1px dashed #cbd5e1;
+  border-radius: var(--radius-sm);
+  padding: 8px;
+  margin: 2px 0;
+}
+
+.crit-alt-label {
+  font-size: 11.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+  padding: 0 10px 4px;
+}
+
+.part-subtotal { font-size: 14px; color: var(--text-secondary); }
+.part-subtotal-val { font-size: 17px; color: var(--text-primary); }
+
+/* ----------------------------------------------------------------- hints */
+
+.hint-list { display: flex; flex-direction: column; gap: 10px; }
+
+.hint {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: var(--surface-color);
+}
+
+.hint summary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14.5px;
+  list-style: none;
+  user-select: none;
+}
+.hint summary::-webkit-details-marker { display: none; }
+
+.hint-glyph {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 30px;
+  height: 22px;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.hint-arrow { margin-left: auto; color: var(--text-secondary); transition: transform 0.2s ease; font-size: 12px; }
+.hint[open] .hint-arrow { transform: rotate(180deg); }
+
+.hint-1 { border-color: #ddd6fe; }
+.hint-1 summary { background: var(--hint-1-tint); color: var(--hint-1); }
+.hint-1 .hint-glyph { background: var(--hint-1); }
+
+.hint-2 { border-color: #fde68a; }
+.hint-2 summary { background: var(--hint-2-tint); color: var(--hint-2); }
+.hint-2 .hint-glyph { background: var(--hint-2); }
+
+.hint-3 { border-color: #cbd5e1; }
+.hint-3 summary { background: var(--hint-3-tint); color: var(--hint-3); }
+.hint-3 .hint-glyph { background: var(--hint-3); }
+
+.hint-body { padding: 12px 14px; font-size: 15px; border-top: 1px solid var(--border-color); }
+.hint-body p { margin-bottom: 0.6em; }
+.hint-body p:last-child { margin-bottom: 0; }
+
+/* ------------------------------------------------------------------- edu */
+
+.edu-done {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.edu-done-input { position: absolute; opacity: 0; width: 0; height: 0; }
+
+.edu-done-box {
+  width: 22px;
+  height: 22px;
+  border-radius: 7px;
+  border: 2px solid #cbd5e1;
+  background: var(--surface-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+}
+
+.edu-done-input:checked + .edu-done-box {
+  background: var(--success-color);
+  border-color: var(--success-color);
+}
+
+.edu-done-input:checked + .edu-done-box::after {
+  content: '✓';
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.edu-done-input:focus-visible + .edu-done-box { outline: 2px solid var(--primary-color); outline-offset: 2px; }
+
+.edu-card.is-done { border-color: #a7f3d0; }
+.edu-card.is-done .subq-pill { background: var(--success-color); }
+.edu-card.is-done .edu-done { color: #047857; }
+
+.edu-actions {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-top: 12px;
+  border-top: 1px dashed var(--border-color);
+}
+
+/* The button row is deliberately NOT cleared — it tucks in under the text
+   beside a tall floated figure instead of leaving a column of dead space.
+   Revealed bodies DO clear it: a solution squeezed into the leftover 40% next
+   to a figure is unreadable. */
+.edu-bodies { display: flex; flex-direction: column; gap: 10px; clear: both; }
+.edu-bodies:not(:empty) > .edu-reveal-body:first-child { margin-top: 12px; }
+
+.edu-reveal-body { margin-top: 0; }
+.edu-reveal-body.hint-body { border: 1px solid var(--border-color); border-radius: var(--radius-sm); }
+.hint-tint-1 { background: var(--hint-1-tint); border-color: #ddd6fe !important; }
+.hint-tint-2 { background: var(--hint-2-tint); border-color: #fde68a !important; }
+.hint-tint-3 { background: var(--hint-3-tint); border-color: #cbd5e1 !important; }
+
+.edu-solution {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  background: var(--bg-color);
+  font-size: 15px;
+}
+.edu-solution p { margin-bottom: 0.6em; }
+
+.btn-reveal {
+  font-family: var(--font-sans);
+  font-size: 13.5px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border-color);
+  background: var(--surface-color);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  min-height: 34px;
+}
+
+.btn-reveal:hover { border-color: currentColor; }
+.btn-reveal-h1 { color: var(--hint-1); }
+.btn-reveal-h2 { color: var(--hint-2); }
+.btn-reveal-h3 { color: var(--hint-3); }
+.btn-reveal-a { color: #047857; }
+.btn-reveal-s { color: var(--primary-color); }
+
+/* An opened reveal reads as "spent": filled, so the row shows at a glance how
+   much help this part has already cost. */
+.btn-reveal.is-open { background: currentColor; border-color: currentColor; }
+.btn-reveal.is-open::after { content: ' ✕'; font-size: 11px; opacity: 0.8; }
+.btn-reveal-h1.is-open, .btn-reveal-h2.is-open, .btn-reveal-h3.is-open,
+.btn-reveal-a.is-open, .btn-reveal-s.is-open { color: #fff; }
+.btn-reveal-h1.is-open { background: var(--hint-1); border-color: var(--hint-1); }
+.btn-reveal-h2.is-open { background: var(--hint-2); border-color: var(--hint-2); }
+.btn-reveal-h3.is-open { background: var(--hint-3); border-color: var(--hint-3); }
+.btn-reveal-a.is-open { background: var(--success-color); border-color: var(--success-color); }
+.btn-reveal-s.is-open { background: var(--primary-color); border-color: var(--primary-color); }
+
+/* --------------------------------------------------------------- buttons */
+
+.page-next {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  margin: 22px 0 8px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-sans);
+  font-size: 14.5px;
+  font-weight: 600;
+  padding: 9px 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: all 0.15s ease;
+}
+
+.btn-primary { background: var(--primary-color); color: #fff; box-shadow: var(--shadow-sm); }
+.btn-primary:hover { background: var(--primary-dark); }
+
+.btn-ghost { border-color: var(--border-color); color: var(--text-secondary); background: var(--surface-color); }
+.btn-ghost:hover { color: var(--primary-color); border-color: #bfdbfe; }
+
+/* ------------------------------------------------------------------ math */
+
+mjx-container { overflow-x: auto; overflow-y: hidden; max-width: 100%; }
+mjx-container[display="true"] { padding: 2px 0; margin: 0.5em 0 !important; }
+mjx-container svg { max-width: 100%; }
+
+/* WIDE DISPLAY MATH. MathJax gives a full-width display container an INLINE
+   `min-width` equal to the formula's natural width (`min-width: 38.642ex`), and
+   min-width beats max-width. So a real olympiad solution's 39ex equation forced
+   its card wider than a 390 px phone and got clipped at the card's edge — with
+   no scrollbar, because the overflow was on the CARD, not on the maths box.
+   Clearing the container's min-width (the SVG keeps its own) turns the maths
+   box back into the scroll container it was meant to be.
+
+   The two radial gradients are scroll shadows: `background-attachment: scroll`
+   pins them to the box while the `local` layers move with the content, so a
+   shadow appears on a side ONLY while there is more formula that way. Without
+   it a cut-off equation on a phone reads as a rendering failure. */
+mjx-container[display="true"] {
+  min-width: 0 !important;
+  overflow-x: auto;
+  overflow-y: hidden;
+  background:
+    linear-gradient(90deg, var(--surface-color) 40%, rgba(255, 255, 255, 0)) left center / 28px 100% no-repeat local,
+    linear-gradient(90deg, rgba(255, 255, 255, 0), var(--surface-color) 60%) right center / 28px 100% no-repeat local,
+    radial-gradient(farthest-side at 0 50%, rgba(15, 23, 42, 0.13), rgba(15, 23, 42, 0)) left center / 13px 100% no-repeat scroll,
+    radial-gradient(farthest-side at 100% 50%, rgba(15, 23, 42, 0.16), rgba(15, 23, 42, 0)) right center / 16px 100% no-repeat scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 transparent;
+}
+/* A thin thumb under the formula is the unambiguous version of the same signal,
+   and it only exists when there is something to scroll to. 26% of the corpus's
+   display formulas are wider than a 390 px screen and the tail runs to 3.5×
+   screen width, so scaling them to fit would put a p99 formula at 30% size —
+   scrolling is the only readable answer, and it has to be visibly on offer. */
+mjx-container[display="true"]::-webkit-scrollbar { height: 6px; }
+mjx-container[display="true"]::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+mjx-container[display="true"]::-webkit-scrollbar-track { background: transparent; }
+/* Centring a formula that is wider than the screen hides its left-hand side —
+   the side with the thing being defined — behind the scroll origin. */
+@media (max-width: 767.98px) {
+  mjx-container[display="true"] { text-align: left !important; }
+}
+
+/* ============================================================================
+   LISTS, STAGE PAGES AND THE FINDER (Milestone 2)
+   Mobile-first, like the rest of this file: the audience is majority mobile on
+   school networks, so every layout here starts as a single column and only
+   gains a sidebar/grid when there is room for one.
+   ========================================================================== */
+
+.p-shell-wide { max-width: 1240px; padding-bottom: 8px; }
+
+/* --------------------------------------------------------------- crumbs */
+
+.crumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+}
+.crumbs a { color: var(--text-secondary); text-decoration: none; }
+.crumbs a:hover { color: var(--primary-color); }
+.crumbs span[aria-current] { color: var(--text-primary); font-weight: 600; }
+
+/* ====================================================== stage landing page */
+
+.st-hero {
+  background: linear-gradient(135deg, var(--accent-tint) 0%, var(--surface-color) 62%);
+  border: 1px solid var(--border-color);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 22px 22px 18px;
+  box-shadow: var(--shadow-sm);
+}
+
+.st-kicker {
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--accent-ink);
+  margin-bottom: 6px;
+}
+
+.st-title {
+  font-size: 27px;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 10px;
+}
+
+.st-desc { font-size: 15.5px; color: var(--text-secondary); max-width: 62ch; }
+
+.st-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 26px;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border-color);
+}
+.st-stats dt { font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-secondary); }
+.st-stats dd { font-size: 21px; font-weight: 700; line-height: 1.2; font-variant-numeric: tabular-nums; }
+
+.st-section { margin-top: 28px; }
+
+.st-section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.st-h2 { font-size: 17px; font-weight: 700; margin-bottom: 12px; }
+.st-all { font-size: 13.5px; color: var(--primary-color); text-decoration: none; white-space: nowrap; }
+.st-all:hover { text-decoration: underline; }
+
+/* Year chips. auto-fill keeps them a comfortable tap size at 390px (two per
+   row) without ever stretching to a 300px-wide slab on a desktop. */
+.st-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(132px, 1fr));
+  gap: 10px;
+}
+
+.st-chip {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 13px 14px 15px;
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  color: inherit;
+  overflow: hidden;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+}
+.st-chip:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+}
+
+.st-chip-year { font-size: 22px; font-weight: 800; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.st-chip-n { font-size: 12.5px; color: var(--text-secondary); }
+.st-chip-grades { display: flex; gap: 4px; margin-top: 4px; }
+.st-chip-grades i, .st-chip-grades b {
+  font-style: normal;
+  font-size: 10.5px;
+  font-weight: 700;
+  line-height: 1;
+  padding: 3px 6px;
+  border-radius: 4px;
+  background: var(--bg-color);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+}
+.st-chip-grades b { background: #ecfeff; color: #155e75; border-color: #a5f3fc; }
+.st-chip-solved { font-size: 12px; font-weight: 600; color: var(--success-color); margin-top: 2px; }
+.st-chip.is-done { border-color: #a7f3d0; background: var(--success-tint); }
+
+/* The bar is the year's median difficulty: a whole stage's ramp is readable by
+   scanning down the grid without opening anything. */
+.st-chip-bar {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 4px;
+  background: var(--border-color);
+}
+.st-chip-bar i { display: block; height: 100%; }
+
+.st-others { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px; }
+
+.st-other {
+  display: block;
+  padding: 13px 15px;
+  border: 1px solid var(--border-color);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius-sm);
+  background: var(--surface-color);
+  text-decoration: none;
+  color: inherit;
+}
+.st-other:hover { border-color: var(--accent); box-shadow: var(--shadow-sm); }
+.st-other-title { display: block; font-weight: 700; font-size: 15px; margin-bottom: 3px; }
+.st-other-desc { display: block; font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+
+/* =============================================================== year page */
+
+.yr-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px 24px;
+  padding: 16px 18px;
+  background: linear-gradient(135deg, var(--accent-tint) 0%, var(--surface-color) 70%);
+  border: 1px solid var(--border-color);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius);
+}
+
+.yr-kicker { font-size: 13px; font-weight: 600; color: var(--accent-ink); }
+.yr-title { font-size: 34px; font-weight: 800; line-height: 1; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+
+.yr-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 18px;
+  list-style: none;
+  font-size: 13.5px;
+  color: var(--text-secondary);
+}
+.yr-facts b { color: var(--text-primary); font-variant-numeric: tabular-nums; }
+
+.yr-strip {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding: 12px 0 4px;
+  margin: 0 -4px;
+}
+.yr-strip::-webkit-scrollbar { display: none; }
+
+.yr-strip-item {
+  flex-shrink: 0;
+  padding: 5px 11px;
+  border-radius: 999px;
+  border: 1px solid var(--border-color);
+  background: var(--surface-color);
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  font-variant-numeric: tabular-nums;
+}
+.yr-strip-item:hover { color: var(--primary-color); border-color: #bfdbfe; }
+.yr-strip-item.on { background: var(--text-primary); border-color: var(--text-primary); color: #fff; }
+
+.yr-nav { display: flex; justify-content: space-between; gap: 10px; margin: 22px 0 8px; }
+
+/* ------------------------------------------------------------- list chrome */
+
+.pr-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 16px;
+  margin: 14px 0 10px;
+}
+
+.pr-legend { display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: 12px; color: var(--text-secondary); }
+.pr-legend-item { display: inline-flex; align-items: center; gap: 5px; }
+
+.pr-hide-solved {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+.pr-hide-solved input { width: 16px; height: 16px; accent-color: var(--success-color); }
+
+.pr-group + .pr-group { margin-top: 22px; }
+
+.pr-group-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+.pr-group-n {
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0;
+  padding: 1px 7px;
+  border-radius: 999px;
+  background: var(--bg-color);
+  border: 1px solid var(--border-color);
+}
+
+.pr-list { display: flex; flex-direction: column; gap: 8px; }
+
+#pr-root.hide-solved .pr.is-solved { display: none; }
+
+/* ----------------------------------------------------------- problem row */
+
+.pr {
+  position: relative;
+  display: grid;
+  grid-template-columns: 34px 76px minmax(0, 1fr);
+  grid-template-areas:
+    "badge thumb main"
+    "badge thumb right";
+  align-content: start;
+  gap: 4px 10px;
+  padding: 10px;
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.pr:hover { border-color: #bfdbfe; box-shadow: var(--shadow-sm); }
+.pr:focus-visible { outline: 2px solid var(--primary-color); outline-offset: 2px; }
+
+.pr-badge {
+  grid-area: badge;
+  align-self: start;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 34px;
+  height: 26px;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+.pr-badge-t { background: var(--primary-tint); color: var(--primary-dark); box-shadow: inset 0 0 0 1px #bfdbfe; }
+.pr-badge-e { background: #ecfeff; color: #155e75; box-shadow: inset 0 0 0 1px #a5f3fc; }
+
+.pr-thumb {
+  grid-area: thumb;
+  align-self: start;
+  position: relative;
+  display: block;
+  width: 76px;
+  height: 57px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--bg-color);
+  box-shadow: inset 0 0 0 1px var(--border-color);
+}
+/* Explicit box + object-fit: the <img> carries width/height 96×72 for CLS, and
+   the CSS box scales it; a figure is letterboxed (never cropped — a cropped
+   physics figure loses the very labels that identify it). */
+.pr-thumb img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.pr-thumb img.is-figure { background: #fff; }
+.pr-thumb img.is-card { object-fit: cover; }
+
+/* A solved row keeps its thumbnail readable: a corner tick plus a light wash,
+   not a full-cover green block. Covering the figure entirely removes the very
+   thing that lets a reader recognise the problem they already did. */
+.pr-check {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--success-color);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  box-shadow: 0 1px 3px rgb(15 23 42 / 0.3);
+  z-index: 1;
+}
+.pr.is-solved .pr-check { display: flex; }
+.pr.is-solved .pr-thumb::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgb(16 185 129 / 0.16);
+}
+.pr.is-solved { border-color: #a7f3d0; }
+.pr.is-solved .pr-title { color: #047857; }
+
+.pr-main { grid-area: main; min-width: 0; }
+
+.pr-title {
+  display: block;
+  font-size: 15px;
+  font-weight: 650;
+  line-height: 1.35;
+  letter-spacing: -0.005em;
+  color: var(--text-primary);
+}
+.pr:hover .pr-title { color: var(--primary-dark); }
+
+.pr-variant {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 7px;
+  border-radius: 999px;
+  background: var(--hint-2-tint);
+  border: 1px solid #fde68a;
+  color: #b45309;
+  font-size: 11px;
+  font-weight: 700;
+  vertical-align: 1px;
+}
+
+/* Only 294 of 532 problems print a title; the rest show «Задача 10-1», which is
+   accurate and uninformative. The snippet under it is what makes such a row
+   scannable — the statement's own opening, in a slot that says so. */
+.pr-title-num { font-weight: 600; color: var(--text-secondary); font-size: 14px; }
+.pr:hover .pr-title-num { color: var(--primary-dark); }
+
+.pr-snippet {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+  margin-top: 3px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+.pr-snippet p { display: inline; margin: 0; }
+.pr-snippet p + p::before { content: ' '; }
+/* An inline mjx-container must stay `inline`: MathJax puts the formula's
+   baseline correction on the SVG's own `vertical-align`, and making the
+   container `inline-block` moves the baseline to its bottom edge, which floated
+   every «$R$» and «$1{,}0$» a third of a line above the sentence. Only a
+   DOWNGRADED display block needs inline-block. */
+.pr-snippet mjx-container[display="true"] { display: inline-block; margin: 0 !important; }
+
+
+.pr-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 8px;
+  margin-top: 4px;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+.pr-where { font-weight: 600; color: var(--text-secondary); }
+.pr-where i { font-style: normal; }
+.pr-where > i { display: none; }
+.pr-grade, .pr-pts, .pr-time { white-space: nowrap; }
+.pr-meta > span + span::before {
+  content: '·';
+  margin-right: 8px;
+  color: #cbd5e1;
+}
+.pr-meta > .pr-tag + .pr-tag::before, .pr-meta > span + .pr-tag::before { content: none; margin: 0; }
+
+.pr-tag {
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: var(--bg-color);
+  border: 1px solid var(--border-color);
+  font-size: 11.5px;
+  white-space: nowrap;
+}
+
+.pr-right {
+  grid-area: right;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 2px;
+}
+
+.pr-avail { display: inline-flex; gap: 3px; }
+
+.pr-av {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 17px;
+  height: 17px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 700;
+  background: #f1f5f9;
+  color: #cbd5e1;
+}
+.pr-av-t.on { background: var(--primary-tint); color: var(--primary-dark); }
+.pr-av-s.on { background: var(--success-tint); color: #047857; }
+.pr-av-m.on { background: var(--hint-2-tint); color: #b45309; }
+.pr-av-h.on { background: var(--hint-1-tint); color: var(--hint-1); }
+
+.pr-diff {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 34px;
+  height: 22px;
+  padding: 0 7px;
+  border-radius: 6px;
+  font-size: 12.5px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  box-shadow: inset 0 0 0 1px rgb(15 23 42 / 0.08);
+}
+.pr-diff-none { background: #f1f5f9; color: #94a3b8; }
+
+/* On a phone three tag pills wrap to three lines and turn a 110 px row into a
+   200 px one, so eight rows no longer fit on a screen. The meta line is kept to
+   ONE line and clipped with a fade: grade/points/time come first and the tags
+   trail off, which is the right priority when there is no room for both. */
+@media (max-width: 639.98px) {
+  .pr-meta {
+    flex-wrap: nowrap;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 26px), transparent);
+    mask-image: linear-gradient(90deg, #000 calc(100% - 26px), transparent);
+  }
+  .pr-meta > span { flex-shrink: 0; }
+  .pr-where > b { display: none; }
+  .pr-where > i { display: inline; }
+}
+
+@media (min-width: 640px) {
+  .pr {
+    grid-template-columns: 44px 96px minmax(0, 1fr) auto;
+    grid-template-areas: "badge thumb main right";
+    align-items: center;
+    gap: 14px;
+    padding: 10px 14px;
+  }
+  .pr-badge { align-self: center; min-width: 44px; height: 30px; font-size: 14px; }
+  .pr-thumb { align-self: center; width: 96px; height: 72px; }
+  .pr-right { margin-top: 0; justify-content: flex-end; }
+  .pr-title { font-size: 15.5px; }
+  .pr-title-num { font-size: 14.5px; }
+}
+
+/* ================================================================== finder */
+
+.pf-head { margin-bottom: 14px; }
+.pf-h1 { font-size: 26px; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 6px; }
+.pf-lede { font-size: 14.5px; color: var(--text-secondary); max-width: 70ch; }
+
+.pf-stage-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+
+.pf-stage-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border-color);
+  background: var(--surface-color);
+  color: var(--text-primary);
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.pf-stage-link:hover { border-color: var(--primary-color); color: var(--primary-dark); }
+.pf-stage-link span {
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--text-secondary);
+  background: var(--bg-color);
+  border-radius: 999px;
+  padding: 0 7px;
+}
+
+.pf-presets { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+
+.pf-chip {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 14px;
+  min-height: 34px;
+  border-radius: 999px;
+  border: 1px solid var(--border-color);
+  background: var(--surface-color);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.pf-chip:hover { border-color: var(--primary-color); color: var(--primary-dark); }
+.pf-chip.on { background: var(--primary-color); border-color: var(--primary-color); color: #fff; }
+.pf-chip-clear { color: var(--text-secondary); }
+.pf-chip-clear:hover { color: var(--error-color); border-color: #fecaca; }
+
+.pf-layout { display: block; }
+
+.pf-filters-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  min-height: 44px;
+  margin-bottom: 12px;
+  padding: 0 16px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+  background: var(--surface-color);
+  font-family: var(--font-sans);
+  font-size: 14.5px;
+  font-weight: 600;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+.pf-filters-toggle::before { content: '⚙'; font-size: 15px; color: var(--text-secondary); }
+.pf-filters-toggle[aria-expanded="true"] { border-color: var(--primary-color); color: var(--primary-dark); }
+.pf-filters-count {
+  margin-left: auto;
+  min-width: 22px;
+  padding: 1px 7px;
+  border-radius: 999px;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.pf-filters {
+  display: none;
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: 14px;
+  margin-bottom: 14px;
+}
+.pf-filters.is-open { display: block; }
+
+.pf-group { margin-bottom: 16px; }
+.pf-group:last-of-type { margin-bottom: 12px; }
+
+.pf-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  margin-bottom: 7px;
+}
+
+.pf-input {
+  width: 100%;
+  min-height: 40px;
+  padding: 0 12px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  background: var(--surface-color);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  color: var(--text-primary);
+}
+.pf-input:focus { outline: none; border-color: var(--primary-color); box-shadow: 0 0 0 3px var(--primary-tint); }
+.pf-input-sm { min-height: 32px; font-size: 13px; margin-bottom: 6px; }
+
+.pf-checks { display: flex; flex-direction: column; gap: 1px; }
+.pf-checks-row { flex-direction: row; flex-wrap: wrap; gap: 4px 14px; }
+
+.pf-check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 2px;
+  font-size: 13.5px;
+  color: var(--text-primary);
+  cursor: pointer;
+  min-height: 30px;
+}
+.pf-check input { width: 16px; height: 16px; flex-shrink: 0; accent-color: var(--primary-color); }
+.pf-check span { min-width: 0; overflow-wrap: anywhere; }
+.pf-check i { margin-left: auto; font-style: normal; font-size: 11.5px; color: #94a3b8; font-variant-numeric: tabular-nums; }
+
+.pf-seg {
+  display: flex;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+.pf-seg button {
+  flex: 1;
+  min-height: 34px;
+  border: none;
+  border-right: 1px solid var(--border-color);
+  background: var(--surface-color);
+  font-family: var(--font-sans);
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+.pf-seg button:last-child { border-right: none; }
+.pf-seg button.on { background: var(--primary-color); color: #fff; }
+.pf-seg-sm { margin-bottom: 6px; }
+.pf-seg-sm button { min-height: 28px; font-size: 11px; letter-spacing: 0.03em; }
+
+/* Dual-range slider. The whole .pf-range-track is the drag surface; the two
+   <input>s are visual only for pointers (pointer-events:none) but stay
+   keyboard-operable, and client/finder.js listens to their own input events. */
+.pf-range-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--text-primary);
+}
+.pf-range-head-sm { font-size: 12px; color: var(--text-secondary); margin-top: 6px; }
+.pf-range-val { font-size: 12px; color: var(--text-secondary); font-variant-numeric: tabular-nums; }
+
+.pf-range-track { position: relative; height: 30px; cursor: pointer; touch-action: none; }
+.pf-range-track::before {
+  content: '';
+  position: absolute;
+  top: 13px; left: 0; right: 0;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--border-color);
+}
+.pf-range-fill {
+  position: absolute;
+  top: 13px;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--primary-color);
+  pointer-events: none;
+  left: 0; right: 100%;
+}
+.pf-range-input {
+  position: absolute;
+  top: 7px; left: 0;
+  width: 100%;
+  height: 16px;
+  margin: 0;
+  padding: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  pointer-events: none;
+}
+.pf-range-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px; height: 18px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  border: 2px solid #fff;
+  box-shadow: 0 1px 3px rgb(15 23 42 / 0.35);
+  margin-top: -7px;
+}
+.pf-range-input::-moz-range-thumb {
+  width: 18px; height: 18px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  border: 2px solid #fff;
+  box-shadow: 0 1px 3px rgb(15 23 42 / 0.35);
+}
+.pf-range-input::-webkit-slider-runnable-track { height: 4px; background: transparent; }
+.pf-range-input::-moz-range-track { height: 4px; background: transparent; }
+.pf-range-input:focus-visible::-webkit-slider-thumb { outline: 2px solid var(--primary-dark); outline-offset: 2px; }
+.pf-range-track-sm { height: 26px; }
+.pf-range-track-sm::before, .pf-range-track-sm .pf-range-fill { top: 11px; height: 3px; }
+.pf-range-track-sm .pf-range-input { top: 6px; }
+.pf-range-track-sm .pf-range-input::-webkit-slider-thumb { width: 14px; height: 14px; margin-top: -5px; }
+.pf-range-track-sm .pf-range-input::-moz-range-thumb { width: 14px; height: 14px; }
+
+.pf-taglist {
+  max-height: 260px;
+  overflow-y: auto;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 4px 8px;
+  background: var(--bg-color);
+}
+.pf-tag-section {
+  font-size: 10.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: #94a3b8;
+  padding: 8px 0 2px;
+}
+.pf-tag-row { font-size: 13px; min-height: 28px; padding: 2px; }
+
+.pf-advanced { border-top: 1px solid var(--border-color); padding-top: 10px; }
+.pf-advanced summary {
+  cursor: pointer;
+  list-style: none;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--primary-color);
+  padding: 4px 0;
+}
+.pf-advanced summary::-webkit-details-marker { display: none; }
+.pf-advanced summary::before { content: '▸ '; }
+.pf-advanced[open] summary::before { content: '▾ '; }
+.pf-advanced-note { font-size: 12px; color: var(--text-secondary); margin: 4px 0 8px; }
+.pf-axis-h {
+  font-size: 10.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: #94a3b8;
+  margin: 14px 0 2px;
+}
+
+.pf-clear {
+  width: 100%;
+  min-height: 38px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+  background: var(--surface-color);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+.pf-clear:hover { color: var(--error-color); border-color: #fecaca; }
+
+.pf-results { min-width: 0; }
+
+.pf-resultbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 14px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+.pf-sort { display: inline-flex; align-items: center; gap: 7px; }
+.pf-sort select {
+  min-height: 34px;
+  padding: 0 8px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  background: var(--surface-color);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  color: var(--text-primary);
+}
+
+/* Finder rows carry a statement preview, so they align to the top and the
+   preview spans the full main column. */
+.pr-card { align-items: start; }
+.pr-card .pr-badge, .pr-card .pr-thumb { align-self: start; }
+
+.pr-preview {
+  display: block;
+  margin-top: 7px;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--text-secondary);
+  /* Two lines on a phone, three on a desktop: enough to recognise the problem,
+     never enough for one long statement to push the next row off the screen. */
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+}
+.pr-preview.is-loading { color: #94a3b8; font-style: italic; }
+.pr-preview p { display: inline; margin: 0; }
+.pr-preview p + p::before { content: ' '; }
+.pr-preview mjx-container[display="true"] { display: inline-block; margin: 0 !important; }
+
+.pf-more {
+  display: block;
+  width: 100%;
+  min-height: 44px;
+  margin-top: 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+  background: var(--surface-color);
+  font-family: var(--font-sans);
+  font-size: 14.5px;
+  font-weight: 600;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+.pf-more:hover { border-color: var(--primary-color); color: var(--primary-dark); }
+
+.pf-empty { padding: 44px 16px; text-align: center; color: var(--text-secondary); font-size: 14.5px; }
+.pf-empty p { margin-bottom: 12px; }
+
+.pf-error {
+  margin-top: 12px;
+  padding: 18px;
+  text-align: center;
+  border: 1px solid #fecaca;
+  border-radius: var(--radius-sm);
+  background: #fef2f2;
+}
+.pf-error p { color: #b91c1c; font-size: 14px; margin-bottom: 10px; }
+.pf-error button {
+  min-height: 38px;
+  padding: 0 20px;
+  border: none;
+  border-radius: var(--radius-sm);
+  background: var(--primary-color);
+  color: #fff;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (min-width: 1000px) {
+  .pf-layout {
+    display: grid;
+    grid-template-columns: 288px minmax(0, 1fr);
+    gap: 26px;
+    align-items: start;
+  }
+  .pf-filters-toggle { display: none; }
+  .pf-filters {
+    display: block;
+    position: sticky;
+    top: 16px;
+    max-height: calc(100vh - 32px);
+    overflow-y: auto;
+    margin-bottom: 0;
+  }
+  .pf-h1 { font-size: 30px; }
+}
+
+@media (max-width: 480px) {
+  .st-title { font-size: 23px; }
+  .yr-title { font-size: 30px; }
+  .pf-h1 { font-size: 22px; }
+  .pr-preview { -webkit-line-clamp: 2; line-clamp: 2; }
+}
+
+/* ----------------------------------------------------------------- print */
+
+
+/* ========================================================== topics / books */
+
+/* The topic index is a SYLLABUS before it is a filter: nothing is tagged yet,
+   so the page has to be worth reading with zero problems attached. Sections are
+   cards in a responsive grid rather than one 271-item list — 194 theory leaves
+   in a single column is a scroll, not a structure. */
+
+.tp-notice {
+  margin-top: 12px;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  background: var(--hint-1-tint, #fffbeb);
+  border: 1px solid #fde68a;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: #92400e;
+}
+.tp-notice b { font-weight: 700; }
+
+.tp-tour { margin-top: 26px; }
+.tp-tour-h {
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.015em;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--border-color);
+}
+.tp-tour-note {
+  margin: 8px 0 14px;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--text-secondary);
+  max-width: 78ch;
+}
+
+.tp-section {
+  break-inside: avoid;
+  margin-bottom: 14px;
+  padding: 12px 14px 6px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+  background: var(--surface-color);
+}
+.tp-section-h {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--primary-dark);
+}
+.tp-section-n {
+  min-width: 22px;
+  padding: 0 6px;
+  border-radius: 999px;
+  background: var(--bg-color);
+  border: 1px solid var(--border-color);
+  font-size: 11px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--text-secondary);
+  letter-spacing: 0;
+}
+
+.tp-leaves { list-style: none; margin: 8px 0 0; padding: 0; }
+.tp-leaf { padding: 7px 0; border-top: 1px solid var(--border-color); }
+.tp-leaf:first-child { border-top: none; }
+.tp-leaf-head { display: flex; align-items: baseline; gap: 8px; }
+.tp-leaf-name { font-size: 14px; font-weight: 650; color: var(--text-primary); }
+a.tp-leaf-name { color: var(--primary-color); }
+a.tp-leaf-name:hover { text-decoration: underline; }
+.tp-leaf-n {
+  margin-left: auto;
+  padding: 0 7px;
+  border-radius: 999px;
+  background: var(--primary-tint, #eff6ff);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--primary-dark);
+}
+.tp-leaf-desc {
+  margin: 2px 0 0;
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+.tp-leaf-books { margin: 4px 0 0; display: flex; flex-wrap: wrap; gap: 4px; }
+.tp-book-ref {
+  padding: 1px 7px;
+  border-radius: 999px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-color);
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+.tp-book-ref:hover { border-color: var(--primary-color); color: var(--primary-dark); }
+.tp-lead { margin-top: 6px; font-size: 14px; line-height: 1.55; color: var(--text-secondary); max-width: 70ch; }
+.tp-source {
+  margin-top: 24px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border-color);
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+.tp-source a { color: var(--primary-color); }
+
+@media (min-width: 900px) {
+  .tp-tour > .tp-section { break-inside: avoid; }
+  .tp-tour { columns: 2; column-gap: 16px; }
+  .tp-tour-h, .tp-tour-note { column-span: all; }
+}
+@media (min-width: 1280px) {
+  .tp-tour { columns: 3; }
+}
+
+/* ---- library --------------------------------------------------------- */
+
+.bk-group { margin-top: 26px; }
+.bk-group-h { font-size: 20px; font-weight: 800; letter-spacing: -0.015em; }
+.bk-group-note {
+  margin: 6px 0 14px;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--text-secondary);
+  max-width: 78ch;
+}
+
+.bk-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+@media (min-width: 720px) { .bk-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1180px) { .bk-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+
+.bk-card {
+  display: grid;
+  grid-template-columns: 92px minmax(0, 1fr);
+  gap: 14px;
+  padding: 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+  background: var(--surface-color);
+}
+.bk-cover {
+  display: block;
+  width: 92px;
+  height: 130px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: var(--bg-color);
+  border: 1px solid var(--border-color);
+}
+.bk-cover img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.bk-cover-fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-size: 34px;
+  font-weight: 800;
+  color: #cbd5e1;
+}
+.bk-body { min-width: 0; }
+.bk-author { font-size: 12.5px; font-weight: 600; color: var(--text-secondary); }
+.bk-title { font-size: 15px; font-weight: 700; line-height: 1.35; margin: 2px 0 6px; }
+.bk-title a { color: var(--text-primary); text-decoration: none; }
+.bk-title a:hover { text-decoration: underline; }
+.bk-title a:hover { color: var(--primary-dark); }
+.bk-meta { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 6px; }
+.bk-chip {
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: var(--bg-color);
+  border: 1px solid var(--border-color);
+  font-size: 11px;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+.bk-chip-pages { font-weight: 700; color: var(--text-primary); }
+.bk-sections { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 8px; }
+.bk-sec { font-size: 11px; color: var(--text-secondary); }
+.bk-sec + .bk-sec::before { content: '·'; margin-right: 4px; color: #cbd5e1; }
+.bk-actions { display: flex; gap: 8px; margin-bottom: 6px; }
+.btn-sm { min-height: 32px; padding: 0 14px; font-size: 13px; }
+
+/* Attribution is required on every entry, but it is reference material, not the
+   thing a student came for — folded away, always present, never a claim the
+   generator made up: `statementSource` names the page it was read off. */
+.bk-rights { font-size: 12px; color: var(--text-secondary); }
+.bk-rights summary { cursor: pointer; color: var(--primary-color); }
+.bk-rights p { margin-top: 5px; line-height: 1.5; }
+.bk-attr { font-weight: 600; color: var(--text-primary); }
+.bk-stmt { font-style: italic; }
+.bk-src { font-style: normal; color: #94a3b8; }
+
+/* Read-only разбалловка: the scraped table's own column-header row, kept
+   verbatim because it is what the protocol prints, but set as a header so it
+   does not read as a criterion. */
+.crit-row-static {
+  display: block;
+  padding: 7px 2px;
+  border-top: 1px solid var(--border-color);
+  font-size: 13.5px;
+  line-height: 1.55;
+}
+.crit-row-static:first-child { border-top: none; }
+.crit-row-head {
+  font-size: 11.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #94a3b8;
+}
+.marking-card-raw .crit-list { display: block; }
+
+.pf-label-link { float: right; font-weight: 500; font-size: 12px; color: var(--primary-color); }
+.pf-tag-note {
+  margin: 6px 0 8px;
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+.pf-tag-note a { color: var(--primary-color); }
+.pf-taglist-off .pf-tag-row { opacity: 0.62; cursor: default; }
+.pf-taglist-off .pf-tag-row i { display: none; }
+.pf-tag-section-exp i {
+  margin-left: 6px;
+  font-style: normal;
+  font-size: 10px;
+  padding: 0 5px;
+  border-radius: 999px;
+  background: var(--exp-tint, #ecfeff);
+  color: #155e75;
+}
+
+@media print {
+  body { background: #fff; font-size: 12pt; }
+  .site-header, .site-footer, .sb-nav, .sb-total, .page-next, .btn, .btn-reveal,
+  .note-unofficial, .edu-done { display: none !important; }
+  .p-shell { padding: 0; max-width: none; }
+  .p-layout { display: block; }
+  .p-sidebar { position: static; }
+  .sb-card, .intro-card, .subq-card, .hint, .answer-box {
+    box-shadow: none;
+    border-color: #bbb;
+    break-inside: avoid;
+  }
+  .subq-pill { background: none; color: #000; border: 1.5pt solid #000; border-radius: 4pt; padding: 2pt 8pt; }
+  .sb-chip { border-color: #bbb; background: none; }
+  .md-fig img { border-color: #bbb; }
+  .hint summary { background: none; }
+  a { color: inherit; text-decoration: none; }
+  .edu-reveal-body[hidden] { display: none; }
+  /* A floated figure that lands right at a page break can overlap the text
+     below it in paginated output; block layout on paper is the safe choice. */
+  .md-fig-float-left, .md-fig-float-right { float: none; margin: 8px auto 12px; }
+  /* The double rule is the one piece of source fidelity this design borrows —
+     keep it crisp in black and print it as one unbroken block. */
+  .subq-body-question > p:first-of-type { border-color: #000; break-inside: avoid; }
+  .footnotes { break-inside: avoid; }
+  .fn-back { display: none; }
+}
+
+
+/* --- MathJax SVG container styles (generated) --- */
+
+mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax="SVG"] > svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][display="true"][width="full"] {
+  display: flex;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line], svg[data-table] > g > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame], svg[data-table] > g > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed, svg[data-table] > g > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted, svg[data-table] > g > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > g > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
+  stroke-width: 3;
+}
+

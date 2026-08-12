@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="113.46pt" height="55.44pt" viewBox="0 0 113.46 55.44">
+<defs><clipPath id="figbox"><rect x="0" y="0" width="113.46" height="55.44"/></clipPath></defs>
+<g clip-path="url(#figbox)">
+<path d="M21.78,16.62 L32.40,16.62" fill="none" stroke="#000000" stroke-width="0.499" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M88.74,35.82 L108.72,35.82" fill="none" stroke="#000000" stroke-width="0.250" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M64.20,39.90 L65.76,39.00" fill="none" stroke="#000000" stroke-width="0.499" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M65.76,39.24 L67.98,51.66" fill="none" stroke="#000000" stroke-width="0.998" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M68.22,51.66 L71.16,18.42 L109.74,18.42 M46.20,16.62 L110.76,16.62" fill="none" stroke="#000000" stroke-width="0.499" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M0.00,0.00 L0.72,0.00 L0.72,0.72 L0.00,0.72 Z" fill="#000000" stroke="none"/>
+<path d="M0.00,0.00 L113.46,0.00 L113.46,0.72 L0.00,0.72 Z" fill="#000000" stroke="none"/>
+<path d="M112.74,0.00 L113.46,0.00 L113.46,0.72 L112.74,0.72 Z" fill="#000000" stroke="none"/>
+<path d="M0.00,0.72 L0.72,0.72 L0.72,54.72 L0.00,54.72 Z" fill="#000000" stroke="none"/>
+<path d="M112.74,0.72 L113.46,0.72 L113.46,54.72 L112.74,54.72 Z" fill="#000000" stroke="none"/>
+<path d="M0.00,54.72 L0.72,54.72 L0.72,55.44 L0.00,55.44 Z" fill="#000000" stroke="none"/>
+<path d="M0.00,54.72 L113.46,54.72 L113.46,55.44 L0.00,55.44 Z" fill="#000000" stroke="none"/>
+<path d="M112.74,54.72 L113.46,54.72 L113.46,55.44 L112.74,55.44 Z" fill="#000000" stroke="none"/>
+<text x="3.12" y="20.70" font-family="'Times New Roman', Georgia, serif" font-size="12.01" font-style="italic" fill="#000000">I</text>
+<text x="21.66" y="12.12" font-family="'Times New Roman', Georgia, serif" font-size="12.01" font-style="italic" fill="#000000">U</text>
+<text x="23.70" y="28.92" font-family="'Times New Roman', Georgia, serif" font-size="12.01" font-style="italic" fill="#000000">R</text>
+<text x="77.10" y="12.06" font-family="'Times New Roman', Georgia, serif" font-size="12.01" font-style="italic" fill="#000000">I</text>
+<text x="93.12" y="31.26" font-family="'Times New Roman', Georgia, serif" font-size="12.01" font-style="italic" fill="#000000">v</text>
+<text x="89.34" y="48.18" font-family="'Times New Roman', Georgia, serif" font-size="12.01" font-style="italic" fill="#000000">v</text>
+<text x="11.58" y="20.70" font-family="'Times New Roman', serif" font-size="12.00" fill="#000000">=</text>
+<text x="36.05" y="20.70" font-family="'Times New Roman', serif" font-size="12.00" fill="#000000">=</text>
+<text x="54.36" y="39.96" font-family="'Times New Roman', serif" font-size="12.00" fill="#000000">±</text>
+<text x="79.19" y="39.96" font-family="'Times New Roman', serif" font-size="12.00" fill="#000000">−</text>
+<text x="70.20" y="12.06" font-family="'Times New Roman', Georgia, serif" font-size="12.01" font-style="italic" fill="#000000">2</text>
+<text x="46.50" y="39.96" font-family="'Times New Roman', Georgia, serif" font-size="12.01" font-style="italic" fill="#000000">1</text>
+<text x="71.34" y="39.96" font-family="'Times New Roman', Georgia, serif" font-size="12.01" font-style="italic" fill="#000000">1</text>
+<text x="81.66" y="15.06" font-family="'Times New Roman', Georgia, serif" font-size="7.00" font-style="italic" fill="#000000">0</text>
+<text x="98.46" y="34.26" font-family="'Times New Roman', Georgia, serif" font-size="7.00" font-style="italic" fill="#000000">0</text>
+<text x="99.42" y="25.92" font-family="'Times New Roman', Georgia, serif" font-size="7.00" font-style="italic" fill="#000000">2</text>
+<text x="95.64" y="42.78" font-family="'Times New Roman', Georgia, serif" font-size="7.00" font-style="italic" fill="#000000">2</text>
+<text x="94.92" y="51.18" font-family="'Times New Roman', Georgia, serif" font-size="7.00" font-style="italic" fill="#000000">max</text>
+</g>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50.42pt" height="33.12pt" viewBox="0 0 50.42 33.12">
+<defs><clipPath id="figbox"><rect x="0" y="0" width="50.42" height="33.12"/></clipPath></defs>
+<g clip-path="url(#figbox)">
+<path d="M8.17,16.21 L17.41,16.21" fill="none" stroke="#000000" stroke-width="0.495" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M0.25,20.65 L1.81,19.69" fill="none" stroke="#000000" stroke-width="0.495" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1.81,20.05 L3.97,31.69" fill="none" stroke="#000000" stroke-width="0.991" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4.21,31.69 L7.21,0.25" fill="none" stroke="#000000" stroke-width="0.495" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7.21,0.25 L18.37,0.25" fill="none" stroke="#000000" stroke-width="0.495" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M33.85,16.21 L49.09,16.21" fill="none" stroke="#000000" stroke-width="0.495" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M25.93,20.89 L27.49,20.05" fill="none" stroke="#000000" stroke-width="0.495" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M27.49,20.29 L29.65,32.17" fill="none" stroke="#000000" stroke-width="0.991" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M30.01,32.17 L32.89,0.25" fill="none" stroke="#000000" stroke-width="0.495" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M32.89,0.25 L50.17,0.25" fill="none" stroke="#000000" stroke-width="0.495" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="43.57" y="31.69" font-family="'Times New Roman', Georgia, serif" font-size="7.01" fill="#000000">0</text>
+<text x="34.69" y="28.69" font-family="'Times New Roman', Georgia, serif" font-size="12.01" font-style="italic" fill="#000000">m</text>
+<text x="37.33" y="11.65" font-family="'Times New Roman', Georgia, serif" font-size="12.01" font-style="italic" fill="#000000">m</text>
+<text x="9.85" y="28.69" font-family="'Times New Roman', Georgia, serif" font-size="12.01" font-style="italic" fill="#000000">g</text>
+<text x="9.37" y="11.65" font-family="'Times New Roman', Georgia, serif" font-size="12.01" font-style="italic" fill="#000000">R</text>
+<text x="20.65" y="19.33" font-family="'Times New Roman', serif" font-size="12.01" fill="#000000">⋅</text>
+</g>
+</svg>

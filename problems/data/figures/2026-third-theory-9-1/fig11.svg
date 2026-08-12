@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="54.61pt" height="29.82pt" viewBox="0 0 54.61 29.82">
+<defs><clipPath id="figbox"><rect x="0" y="0" width="54.61" height="29.82"/></clipPath></defs>
+<g clip-path="url(#figbox)">
+<path d="M3.90,3.98 L3.95,31.03" fill="none" stroke="#000000" stroke-width="0.500" stroke-linecap="butt" stroke-linejoin="round" stroke-dasharray="2,1.5" stroke-dashoffset="0.00"/>
+<path d="M-74.50,15.53 L46.40,15.53" fill="none" stroke="#000000" stroke-width="0.500" stroke-linecap="butt" stroke-linejoin="round" stroke-dasharray="2,1.5" stroke-dashoffset="0.00"/>
+<path d="M49.01,15.53 C51.41,15.53 53.35,17.54 53.35,20.03 C53.35,22.52 51.41,24.53 49.01,24.53 C48.91,24.53 48.80,24.53 48.70,24.52" fill="none" stroke="#000000" stroke-width="0.500" stroke-linecap="butt" stroke-linejoin="round" stroke-dasharray="2,1.5" stroke-dashoffset="0.00"/>
+<path d="M7.15,23.93 L48.70,23.98" fill="none" stroke="#000000" stroke-width="0.500" stroke-linecap="butt" stroke-linejoin="round" stroke-dasharray="2,1.5" stroke-dashoffset="0.00"/>
+<path d="M2.46,21.35 C3.96,20.49 5.87,21.00 6.73,22.49 C7.59,23.99 7.08,25.90 5.59,26.76 C4.09,27.62 2.18,27.11 1.32,25.62 C0.46,24.12 0.97,22.21 2.46,21.35" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3.79,14.38 C4.26,14.35 4.67,14.70 4.70,15.17 C4.73,15.64 4.38,16.05 3.91,16.08 C3.44,16.11 3.03,15.76 3.00,15.29 C2.97,14.82 3.32,14.41 3.79,14.38 M3.82,14.81 C3.59,14.82 3.41,15.03 3.43,15.26 C3.44,15.49 3.65,15.67 3.88,15.65 C4.11,15.64 4.29,15.43 4.27,15.20 C4.26,14.97 4.05,14.79 3.82,14.81" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M53.29,18.78 C53.76,18.75 54.17,19.10 54.20,19.57 C54.23,20.04 53.88,20.45 53.41,20.48 C52.94,20.51 52.53,20.16 52.50,19.69 C52.47,19.22 52.82,18.81 53.29,18.78 M53.32,19.21 C53.09,19.22 52.91,19.43 52.93,19.66 C52.94,19.89 53.15,20.07 53.38,20.05 C53.61,20.04 53.79,19.83 53.77,19.60 C53.76,19.37 53.55,19.19 53.32,19.21" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="23.47" y="9.35" font-family="'Times New Roman', serif" font-size="12.00" fill="#000000">𝑆</text>
+<text x="29.35" y="11.75" font-family="'Times New Roman', serif" font-size="8.52" fill="#000000">0</text>
+</g>
+</svg>

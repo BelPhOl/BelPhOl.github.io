@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Колебания стержня — решение — BelPhO</title>
+  <meta name="description" content="Колебания стержня — Городская олимпиада (3-й этап) 2007, 10 класс, задача Э2. Подробное решение с ответами.">
+  <link rel="canonical" href="https://belpho.org/problems/third/2007/10-e2/solution/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BelPhO">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:url" content="https://belpho.org/problems/third/2007/10-e2/solution/">
+  <meta property="og:title" content="Колебания стержня — решение — BelPhO">
+  <meta property="og:description" content="Колебания стержня — Городская олимпиада (3-й этап) 2007, 10 класс, задача Э2. Подробное решение с ответами.">
+  
+  <meta property="og:image" content="https://belpho.org/problems/thumbs/og/third-2007.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/css/platform.css">
+</head>
+<body>
+<svg id="mjx-glyph-cache" aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden"><defs><path id="MJX-TEX-I-1D44B" d="M42 0H40Q26 0 26 11Q26 15 29 27Q33 41 36 43T55 46Q141 49 190 98Q200 108 306 224T411 342Q302 620 297 625Q288 636 234 637H206Q200 643 200 645T202 664Q206 677 212 683H226Q260 681 347 681Q380 681 408 681T453 682T473 682Q490 682 490 671Q490 670 488 658Q484 643 481 640T465 637Q434 634 411 620L488 426L541 485Q646 598 646 610Q646 628 622 635Q617 635 609 637Q594 637 594 648Q594 650 596 664Q600 677 606 683H618Q619 683 643 683T697 681T738 680Q828 680 837 683H845Q852 676 852 672Q850 647 840 637H824Q790 636 763 628T722 611T698 593L687 584Q687 585 592 480L505 384Q505 383 536 304T601 142T638 56Q648 47 699 46Q734 46 734 37Q734 35 732 23Q728 7 725 4T711 1Q708 1 678 1T589 2Q528 2 496 2T461 1Q444 1 444 10Q444 11 446 25Q448 35 450 39T455 44T464 46T480 47T506 54Q523 62 523 64Q522 64 476 181L429 299Q241 95 236 84Q232 76 232 72Q232 53 261 47Q262 47 267 47T273 46Q276 46 277 46T280 45T283 42T284 35Q284 26 282 19Q279 6 276 4T261 1Q258 1 243 1T201 2T142 2Q64 2 42 0Z"></path><path id="MJX-TEX-I-1D447" d="M40 437Q21 437 21 445Q21 450 37 501T71 602L88 651Q93 669 101 677H569H659Q691 677 697 676T704 667Q704 661 687 553T668 444Q668 437 649 437Q640 437 637 437T631 442L629 445Q629 451 635 490T641 551Q641 586 628 604T573 629Q568 630 515 631Q469 631 457 630T439 622Q438 621 368 343T298 60Q298 48 386 46Q418 46 427 45T436 36Q436 31 433 22Q429 4 424 1L422 0Q419 0 415 0Q410 0 363 1T228 2Q99 2 64 0H49Q43 6 43 9T45 27Q49 40 55 46H83H94Q174 46 189 55Q190 56 191 56Q196 59 201 76T241 233Q258 301 269 344Q339 619 339 625Q339 630 310 630H279Q212 630 191 624Q146 614 121 583T67 467Q60 445 57 441T43 437H40Z"></path></defs></svg>
+<header class="site-header">
+  <div class="container header-content">
+    <a href="/" class="logo">
+      <img src="/img/logo.png" alt="BelPhO" class="logo-img" width="36" height="36">
+      <span>BelPhO</span>
+    </a>
+    <nav class="site-nav" aria-label="Основная навигация">
+      <ul class="nav-links">
+        <li><a href="/">Главная</a></li>
+        <li><a href="/problems/" class="active">Задачи</a></li>
+        <li><a href="/books/">Книги</a></li>
+        <li><a href="/training-program.html">Подготовка</a></li>
+        <li><a href="/alumni.html">Выпускники</a></li>
+        <li><a href="/news/">Новости</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<main class="p-shell">
+  <div class="p-layout">
+    
+<aside class="p-sidebar" id="p-sidebar" data-problem-id="2007-third-exp-10-2">
+  <div class="sb-card">
+    <div class="sb-head">
+      <div class="sb-crumb"><a href="/problems/third/">Городская</a> · <a href="/problems/third/2007/">2007</a></div>
+      <h1 class="sb-title">Колебания стержня</h1>
+      <div class="sb-meta">
+        <span class="sb-chip">10 класс</span>
+        <span class="sb-chip sb-chip-num">№ Э2</span>
+        
+        
+        
+      </div>
+    </div>
+    <nav class="sb-nav" aria-label="Разделы задачи">
+      
+      <a class="sb-item" href="/problems/third/2007/10-e2/"
+         >
+        <span class="sb-glyph sb-glyph-t">T</span>
+        <span>Условие</span>
+      </a>
+      
+      <a class="sb-item on" href="/problems/third/2007/10-e2/solution/"
+         aria-current=&#34;page&#34;>
+        <span class="sb-glyph sb-glyph-s">S</span>
+        <span>Решение</span>
+      </a>
+      
+      
+      <details class="sb-files" id="sb-files">
+        <summary class="sb-item sb-item-files">
+          <span class="sb-glyph sb-glyph-f">▾</span><span>Файлы</span>
+        </summary>
+        <div class="sb-files-menu">
+          
+          <span class="sb-file sb-file-none">PDF появятся позже</span>
+        </div>
+      </details>
+    </nav>
+    
+  </div>
+</aside>
+
+    <div class="p-main" id="p-main">
+      <div class="page-head">
+  <h2 class="page-title">Решение</h2>
+  <span class="page-sub">Городская олимпиада (3-й этап) · 2007 · 10 класс · № Э2</span>
+</div>
+
+
+
+<section class="intro-card">
+  <p><em>Задача не блещет оригинальностью, поэтому ограничимся приведением результатов измерений, построением требуемых графиков и небольшим комментарием. Тем более, что формулы хорошо выполняются.<br />Дурацкий совет организаторам: взвесьте половинку ластика на весах, запомните результат и никому не говорите, как вы его получили!</em></p>
+<p><strong>Колебания без груза внизу.</strong><br /><strong>Таблица 1.</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="1.928ex" height="1.545ex" role="img" focusable="false" viewBox="0 -683 852 683" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D44B" xlink:href="#MJX-TEX-I-1D44B"></use></g></g></g></svg></mjx-container>, с</th>
+<th align="left">Время 20 колебаний, с</th>
+<th align="left"></th>
+<th align="left">Период, <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="1.593ex" height="1.532ex" role="img" focusable="false" viewBox="0 -677 704 677" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D447" xlink:href="#MJX-TEX-I-1D447"></use></g></g></g></svg></mjx-container>, с</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">10</td>
+<td align="left">19,15</td>
+<td align="left">19,09</td>
+<td align="left">0,96</td>
+</tr>
+<tr>
+<td align="left">21</td>
+<td align="left">19,01</td>
+<td align="left">18,89</td>
+<td align="left">0,95</td>
+</tr>
+<tr>
+<td align="left">28</td>
+<td align="left">18,71</td>
+<td align="left">18,78</td>
+<td align="left">0,94</td>
+</tr>
+<tr>
+<td align="left">37</td>
+<td align="left">18,7</td>
+<td align="left">18,56</td>
+<td align="left">0,93</td>
+</tr>
+<tr>
+<td align="left">43</td>
+<td align="left">18,53</td>
+<td align="left">18,48</td>
+<td align="left">0,93</td>
+</tr>
+<tr>
+<td align="left">52</td>
+<td align="left">18,3</td>
+<td align="left">18,38</td>
+<td align="left">0,92</td>
+</tr>
+<tr>
+<td align="left">61</td>
+<td align="left">18,14</td>
+<td align="left">18,1</td>
+<td align="left">0,91</td>
+</tr>
+<tr>
+<td align="left">72</td>
+<td align="left">18,19</td>
+<td align="left">18,11</td>
+<td align="left">0,91</td>
+</tr>
+<tr>
+<td align="left">80</td>
+<td align="left">18,22</td>
+<td align="left">18,2</td>
+<td align="left">0,91</td>
+</tr>
+<tr>
+<td align="left">87</td>
+<td align="left">18,2</td>
+<td align="left">18,26</td>
+<td align="left">0,91</td>
+</tr>
+<tr>
+<td align="left">95</td>
+<td align="left">18,59</td>
+<td align="left">18,39</td>
+<td align="left">0,92</td>
+</tr>
+<tr>
+<td align="left">103</td>
+<td align="left">18,59</td>
+<td align="left">18,65</td>
+<td align="left">0,93</td>
+</tr>
+<tr>
+<td align="left">111</td>
+<td align="left">19,23</td>
+<td align="left">19,07</td>
+<td align="left">0,96</td>
+</tr>
+<tr>
+<td align="left">116</td>
+<td align="left">19,62</td>
+<td align="left">19,47</td>
+<td align="left">0,98</td>
+</tr>
+<tr>
+<td align="left">123</td>
+<td align="left">20,09</td>
+<td align="left">20,11</td>
+<td align="left">1,01</td>
+</tr>
+<tr>
+<td align="left">131</td>
+<td align="left">21,37</td>
+<td align="left">21,37</td>
+<td align="left">1,07</td>
+</tr>
+</tbody></table>
+<p><figure class="md-fig" style="--fig-w:100%"><img src="/problems/data/figures/2007-third-exp-10-2/fig5.svg" alt="" loading="lazy"></figure></p>
+<p><strong>Колебания с грузом внизу.</strong><br /><strong>Таблица 2.</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="1.928ex" height="1.545ex" role="img" focusable="false" viewBox="0 -683 852 683" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D44B" xlink:href="#MJX-TEX-I-1D44B"></use></g></g></g></svg></mjx-container>, с</th>
+<th align="left">Время 20 колебаний, с</th>
+<th align="left"></th>
+<th align="left">Период, <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="1.593ex" height="1.532ex" role="img" focusable="false" viewBox="0 -677 704 677" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D447" xlink:href="#MJX-TEX-I-1D447"></use></g></g></g></svg></mjx-container>, с</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">15</td>
+<td align="left">21,61</td>
+<td align="left">21,7</td>
+<td align="left">1,083</td>
+</tr>
+<tr>
+<td align="left">27</td>
+<td align="left">21,3</td>
+<td align="left">21,16</td>
+<td align="left">1,062</td>
+</tr>
+<tr>
+<td align="left">38</td>
+<td align="left">21,03</td>
+<td align="left">20,93</td>
+<td align="left">1,049</td>
+</tr>
+<tr>
+<td align="left">47</td>
+<td align="left">20,82</td>
+<td align="left">20,75</td>
+<td align="left">1,039</td>
+</tr>
+<tr>
+<td align="left">54</td>
+<td align="left">20,62</td>
+<td align="left">20,66</td>
+<td align="left">1,032</td>
+</tr>
+<tr>
+<td align="left">61</td>
+<td align="left">20,49</td>
+<td align="left">20,39</td>
+<td align="left">1,022</td>
+</tr>
+<tr>
+<td align="left">72</td>
+<td align="left">20,35</td>
+<td align="left">20,25</td>
+<td align="left">1,015</td>
+</tr>
+<tr>
+<td align="left">82</td>
+<td align="left">20,13</td>
+<td align="left">20,11</td>
+<td align="left">1,006</td>
+</tr>
+<tr>
+<td align="left">91</td>
+<td align="left">19,84</td>
+<td align="left">19,82</td>
+<td align="left">0,992</td>
+</tr>
+<tr>
+<td align="left">100</td>
+<td align="left">19,81</td>
+<td align="left">19,81</td>
+<td align="left">0,991</td>
+</tr>
+<tr>
+<td align="left">108</td>
+<td align="left">19,59</td>
+<td align="left">19,62</td>
+<td align="left">0,980</td>
+</tr>
+<tr>
+<td align="left">117</td>
+<td align="left">19,53</td>
+<td align="left">19,57</td>
+<td align="left">0,978</td>
+</tr>
+<tr>
+<td align="left">129</td>
+<td align="left">19,72</td>
+<td align="left">19,78</td>
+<td align="left">0,988</td>
+</tr>
+<tr>
+<td align="left">140</td>
+<td align="left">19,93</td>
+<td align="left">19,95</td>
+<td align="left">0,997</td>
+</tr>
+<tr>
+<td align="left">147</td>
+<td align="left">20,1</td>
+<td align="left">20,03</td>
+<td align="left">1,003</td>
+</tr>
+<tr>
+<td align="left">153</td>
+<td align="left">20,38</td>
+<td align="left">20,32</td>
+<td align="left">1,018</td>
+</tr>
+<tr>
+<td align="left">159</td>
+<td align="left">20,56</td>
+<td align="left">20,53</td>
+<td align="left">1,027</td>
+</tr>
+</tbody></table>
+</section>
+
+
+
+
+
+
+
+
+
+<div class="page-next">
+  <a class="btn btn-ghost" href="/problems/third/2007/10-e2/">← Условие</a>
+  
+</div>
+
+
+
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© 2026 BelPhO — Белорусские физические олимпиады</span>
+    <span class="footer-links">
+      <a href="/problems/">Задачи</a>
+      <a href="https://t.me/belpho_by" rel="noopener">Telegram</a>
+    </span>
+  </div>
+</footer>
+
+
+<script type="module" src="/js/site/problem-page.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="90.66pt" height="90.36pt" viewBox="0 0 90.66 90.36">
+<defs><clipPath id="figbox"><rect x="0" y="0" width="90.66" height="90.36"/></clipPath></defs>
+<g clip-path="url(#figbox)">
+<path d="M9.72,63.00 L72.72,27.00" fill="none" stroke="#000000" stroke-width="2.250" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M0.66,80.64 L85.68,80.70 L85.98,80.82 L86.04,81.12 L85.98,81.36 L85.68,81.48 L0.66,81.36 L0.42,81.24 L0.30,81.00 L0.42,80.76 L0.66,80.64 M84.72,78.12 L90.66,81.12 L84.66,84.12" fill="#000000" stroke="none"/>
+<path d="M9.36,90.00 L9.42,4.98 L9.54,4.74 L9.78,4.62 L10.08,4.74 L10.14,4.98 L10.14,90.00 L10.02,90.24 L9.72,90.36 L9.48,90.24 L9.36,90.00 M6.78,6.00 L9.78,0.00 L12.78,6.00" fill="#000000" stroke="none"/>
+<path d="M72.72,27.00 L72.72,81.00" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=".00075,1.5" stroke-dashoffset="0.00"/>
+<path d="M72.72,27.00 L9.72,27.00" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=".00075,1.5" stroke-dashoffset="0.00"/>
+<text x="5.88" y="63.78" font-family="'Times New Roman', Georgia, serif" font-size="6.92" fill="#000000">0</text>
+<text x="0.00" y="60.66" font-family="'Times New Roman', Georgia, serif" font-size="12.02" font-style="italic" fill="#000000">T</text>
+<text x="5.22" y="36.72" font-family="'Times New Roman', Georgia, serif" font-size="6.92" fill="#000000">1</text>
+<text x="0.06" y="33.60" font-family="'Times New Roman', Georgia, serif" font-size="12.02" font-style="italic" fill="#000000">T</text>
+</g>
+</svg>

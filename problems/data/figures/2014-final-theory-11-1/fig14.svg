@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="171.24pt" height="91.11pt" viewBox="0 0 171.24 91.11">
+<defs><clipPath id="figbox"><rect x="0" y="0" width="171.24" height="91.11"/></clipPath></defs>
+<g clip-path="url(#figbox)">
+<path d="M153.72,52.23 C149.88,52.23 146.64,55.35 146.64,59.31 C146.64,63.15 149.88,66.39 153.72,66.39 C157.68,66.39 160.80,63.15 160.80,59.31 C160.80,55.35 157.68,52.23 153.72,52.23" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="butt" stroke-linejoin="round" stroke-dasharray="3,2.25" stroke-dashoffset="0.00"/>
+<path d="M152.52,15.75 C148.68,15.75 145.44,18.99 145.44,22.83 C145.44,26.79 148.68,29.91 152.52,29.91 C156.48,29.91 159.60,26.79 159.60,22.83 C159.60,18.99 156.48,15.75 152.52,15.75" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="butt" stroke-linejoin="round" stroke-dasharray="3,2.25" stroke-dashoffset="0.00"/>
+<path d="M49.08,15.75 C45.12,15.75 42.00,18.99 42.00,22.83 C42.00,26.79 45.12,29.91 49.08,29.91 C52.92,29.91 56.16,26.79 56.16,22.83 C56.16,18.99 52.92,15.75 49.08,15.75" fill="none" stroke="#000000" stroke-width="1.500" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M49.08,52.23 C45.12,52.23 42.00,55.35 42.00,59.31 C42.00,63.15 45.12,66.39 49.08,66.39 C52.92,66.39 56.16,63.15 56.16,59.31 C56.16,55.35 52.92,52.23 49.08,52.23" fill="none" stroke="#000000" stroke-width="1.500" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M99.72,0.75 L99.72,85.47" fill="none" stroke="#000000" stroke-width="1.500" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M56.16,59.31 L146.64,59.31" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="butt" stroke-linejoin="round" stroke-dasharray="3,2.25" stroke-dashoffset="0.00"/>
+<path d="M2.28,22.47 L148.08,22.59" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="butt" stroke-linejoin="round" stroke-dasharray="3,2.25" stroke-dashoffset="0.00"/>
+<path d="M49.32,29.91 L49.32,52.23" fill="none" stroke="#000000" stroke-width="1.500" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M153.00,29.91 L153.00,52.23" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="butt" stroke-linejoin="round" stroke-dasharray="3,2.25" stroke-dashoffset="0.00"/>
+<path d="M53.88,25.47 L145.80,54.75" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="butt" stroke-linejoin="round" stroke-dasharray="3,2.25" stroke-dashoffset="0.00"/>
+<path d="M53.88,55.47 L146.64,26.19" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="butt" stroke-linejoin="round" stroke-dasharray="3,2.25" stroke-dashoffset="0.00"/>
+<path d="M42.00,59.31 L2.28,59.31" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="butt" stroke-linejoin="round" stroke-dasharray="3,2.25" stroke-dashoffset="0.00"/>
+<path d="M56.16,22.11 L56.16,22.95 L75.24,22.95 L75.24,22.11 Z M74.28,19.47 L80.28,22.47 L74.28,25.47" fill="#000000" stroke="none"/>
+<path d="M56.16,58.95 L56.16,59.67 L75.24,59.67 L75.24,58.95 Z M74.28,56.31 L80.28,59.31 L74.28,62.31" fill="#000000" stroke="none"/>
+<path d="M42.12,59.67 L10.92,69.39 L10.68,68.67 L41.88,58.95 L42.12,59.67 M12.60,71.67 L6.00,70.59 L10.80,65.91" fill="#000000" stroke="none"/>
+<path d="M41.88,21.39 L10.68,11.67 L10.92,10.95 L42.12,20.67 L41.88,21.39 M10.80,14.43 L6.00,9.75 L12.60,8.67" fill="#000000" stroke="none"/>
+<path d="M4.92,29.67 L4.92,53.55 L4.20,53.55 L4.08,29.67 L4.92,29.67 M1.56,30.63 L4.44,24.63 L7.56,30.63 L1.56,30.63 M7.56,52.47 L4.56,58.47 L1.56,52.47" fill="#000000" stroke="none"/>
+<path d="M6.00,11.31 L6.00,22.47" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="butt" stroke-linejoin="round" stroke-dasharray="3,2.25" stroke-dashoffset="0.00"/>
+<path d="M6.72,69.87 L6.72,58.47" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="butt" stroke-linejoin="round" stroke-dasharray="3,2.25" stroke-dashoffset="0.00"/>
+<path d="M82.44,23.19 C82.44,24.03 82.44,26.91 81.72,28.47 C81.00,30.15 78.84,32.07 78.00,33.03" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M2.04,87.75 L2.04,88.47 L166.32,88.47 L166.32,87.75 Z M2.04,90.15 L1.20,89.91 L0.60,89.55 L0.12,88.95 L0.00,88.11 L0.12,87.39 L0.60,86.67 L1.20,86.31 L2.04,86.07 L2.76,86.31 L3.36,86.67 L3.84,87.39 L3.96,88.11 L3.84,88.95 L3.36,89.55 L2.76,89.91 L2.04,90.15 M165.24,85.11 L171.24,88.11 L165.24,91.11" fill="#000000" stroke="none"/>
+<text x="149.64" y="62.19" font-family="'Times New Roman', Georgia, serif" font-size="12.00" font-weight="bold" fill="#000000">+ </text>
+<text x="148.80" y="26.43" font-family="'Times New Roman', Georgia, serif" font-size="12.00" font-weight="bold" fill="#000000">− </text>
+<text x="46.08" y="25.47" font-family="'Times New Roman', Georgia, serif" font-size="12.00" font-weight="bold" fill="#000000">+ </text>
+<text x="45.36" y="62.79" font-family="'Times New Roman', Georgia, serif" font-size="12.00" font-weight="bold" fill="#000000">− </text>
+<text x="46.08" y="14.43" font-family="'Times New Roman', Georgia, serif" font-size="11.99" fill="#000000">1 </text>
+<text x="45.36" y="78.63" font-family="'Times New Roman', Georgia, serif" font-size="11.99" fill="#000000">2 </text>
+<text x="137.28" y="18.03" font-family="'Times New Roman', Georgia, serif" font-size="11.99" fill="#000000">3 </text>
+<text x="139.56" y="74.19" font-family="'Times New Roman', Georgia, serif" font-size="11.99" fill="#000000">4 </text>
+<text x="9.48" y="43.11" font-family="'Times New Roman', Georgia, serif" font-size="11.99" font-style="italic" fill="#000000">L </text>
+<text x="72.72" y="17.67" font-family="'Times New Roman', Georgia, serif" font-size="8.12" fill="#000000">13</text>
+<text x="66.24" y="14.07" font-family="'Times New Roman', Georgia, serif" font-size="13.95" font-style="italic" fill="#000000">F</text>
+<text x="23.40" y="85.95" font-family="'Times New Roman', Georgia, serif" font-size="8.12" fill="#000000">23</text>
+<text x="15.84" y="82.35" font-family="'Times New Roman', Georgia, serif" font-size="13.95" font-style="italic" fill="#000000">F</text>
+<text x="18.84" y="70.59" font-family="'Times New Roman', serif" font-size="14.00" fill="#000000">r</text>
+<text x="73.92" y="80.67" font-family="'Times New Roman', Georgia, serif" font-size="8.12" fill="#000000">24</text>
+<text x="66.36" y="77.07" font-family="'Times New Roman', Georgia, serif" font-size="13.95" font-style="italic" fill="#000000">F</text>
+<text x="69.36" y="65.31" font-family="'Times New Roman', serif" font-size="14.00" fill="#000000">r</text>
+<text x="84.36" y="31.11" font-family="'Times New Roman', Georgia, serif" font-size="11.97" font-style="italic" fill="#000000">α</text>
+</g>
+</svg>

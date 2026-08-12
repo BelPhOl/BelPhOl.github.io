@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="380.15pt" height="77.61pt" viewBox="0 0 380.15 77.61">
+<defs><clipPath id="figbox"><rect x="0" y="0" width="380.15" height="77.61"/></clipPath></defs>
+<g clip-path="url(#figbox)">
+<path d="M42.50,25.47 L67.94,0.03 M42.50,54.09 L67.94,28.65 M137.00,54.09 L162.44,28.65 M137.00,25.47 L162.44,0.03 M67.94,0.03 L162.44,0.03 L162.44,28.65 L67.94,28.65 Z M42.50,25.47 L137.00,25.47 L137.00,54.09 L42.50,54.09 Z" fill="none" stroke="#000000" stroke-width="0.060" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M2.00,59.79 C2.60,59.79 3.20,56.97 3.20,54.09 C3.20,51.27 26.24,48.39 49.22,48.39" fill="none" stroke="#000000" stroke-width="4.000" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M29.06,42.69 C25.34,42.69 22.28,45.27 22.28,48.45 C22.28,51.63 25.34,54.15 29.06,54.15 C32.78,54.15 35.84,51.63 35.84,48.45 C35.84,45.27 32.78,42.69 29.06,42.69 M24.26,44.37 L33.86,52.47 M24.26,52.47 L33.86,44.37" fill="none" stroke="#000000" stroke-width="1.000" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M15.50,36.45 L30.74,36.51 L30.74,37.53 L15.50,37.47 L15.50,36.45 M29.72,33.99 L35.72,36.99 L29.72,39.99" fill="#000000" stroke="none"/>
+<path d="M264.20,25.53 L289.70,0.09 M264.20,54.09 L289.70,28.65 M354.68,54.09 L380.12,28.65 M354.68,25.53 L380.12,0.09 M289.70,0.09 L380.12,0.09 L380.12,28.65 L289.70,28.65 Z M264.20,25.53 L354.68,25.53 L354.68,54.09 L264.20,54.09 Z" fill="none" stroke="#000000" stroke-width="0.060" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M209.24,54.15 C209.24,36.99 239.96,19.83 270.68,19.83" fill="none" stroke="#000000" stroke-width="4.000" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M212.54,36.99 C208.94,36.99 206.00,39.57 206.00,42.69 C206.00,45.87 208.94,48.39 212.54,48.39 C216.14,48.39 219.02,45.87 219.02,42.69 C219.02,39.57 216.14,36.99 212.54,36.99 M207.92,38.67 L217.10,46.77 M207.92,46.77 L217.10,38.67" fill="none" stroke="#000000" stroke-width="1.000" stroke-linecap="butt" stroke-linejoin="round"/>
+<text x="90.20" y="67.05" font-family="'Times New Roman', Georgia, serif" font-size="10.02" font-weight="bold" fill="#ffffff">A </text>
+<text x="150.92" y="55.59" font-family="'Times New Roman', Georgia, serif" font-size="10.02" font-weight="bold" fill="#000000">B</text>
+<text x="164.42" y="26.91" font-family="'Times New Roman', Georgia, serif" font-size="10.02" font-weight="bold" fill="#000000">C</text>
+<text x="310.22" y="67.05" font-family="'Times New Roman', Georgia, serif" font-size="10.02" font-weight="bold" fill="#ffffff">A </text>
+<text x="368.36" y="55.59" font-family="'Times New Roman', Georgia, serif" font-size="10.02" font-weight="bold" fill="#000000">B</text>
+<text x="193.76" y="20.07" font-family="'Times New Roman', Georgia, serif" font-size="12.00" font-weight="bold" fill="#000000">2) </text>
+</g>
+</svg>

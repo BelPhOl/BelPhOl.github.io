@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="117" height="88.5" viewBox="0 0 117 88.5">
+<defs>
+<filter id="filter-remove-color" x="0%" y="0%" width="100%" height="100%">
+<feColorMatrix color-interpolation-filters="sRGB" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
+</filter>
+<filter id="filter-color-to-alpha" x="0%" y="0%" width="100%" height="100%">
+<feColorMatrix color-interpolation-filters="sRGB" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0.2126 0.7152 0.0722 0 0"/>
+</filter>
+<clipPath id="clip-0">
+<path clip-rule="nonzero" d="M 0.328125 0 L 116.671875 0 L 116.671875 88 L 0.328125 88 Z M 0.328125 0 "/>
+</clipPath>
+<image id="source-7" x="0" y="0" width="148" height="110" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAABuCAAAAADkXmV3AAAAAmJLR0QA/4ePzL8AAAJiSURBVHic7ZvbkqMwDESlrfn/X9Y+QMzFsmkbSXYV7ocEZkI4aQkZX2Ch+fRvNICmb0Ex9x/7Lady4dax09XHRCQZC3iyP3OcuxII/vsDw4fH5EuJzumlR/45RcQkxC3h84fq8MsnfExCmz2bQdxgkxuUpgasAKj28hzlVFPL4QLF+cYMOSXp5bTP6A2NS0kQ9Z1hvyJySo43jCq47cO8+lKDXBCYVLFQEyV6ElqswqDwghDpVENRj7jJI6K2ZnmVBFQLCtWCQrWgUC0oVAsK1YJCtaBQLShUC6qo21hMWMdBE5+2zh2LoVClGZI5wnfrf80BddOUUENzikifIxkMpY/LDg6fPkcySU7NVRLUwZjRUESUD13NAJUNp80AlYUwvCRk15qSVQPq1LGOgo4t3mZSt73w8O2TR/fpLCHilFtey0oeptc5oZz+lPa8wsdUakNun9LIPRdL9B/tEr6NqSF8LCxMstM8h68Du8r0M/H6b5bTqYqn7Fj21MBU/8aiUx3LnsDTPn+ffU4hVjzI/OozYDKHsmCqXH3Nq562g4heMxWh+qqfDVMxfL91IE0nMGIyzSkrpiJUczYZMlWdassrO6Ya1PUO8UmGTCWoBIS6ZclUgpIfE3gaUyajts+WyaYkGDOZQFkzWUCZM73vzSidpdd665QHE3r19XaZ+mBVp94882KhLKdKPJVeT9GO3t92hdL7ZFV5dGYPKJeU7dMOdZ5PGq8Zhhcz7U7JQ/hi/Ttyahv8Px6WGKhr+ETyh7oGKKtTu2GZIjnVBnl0WXAbiH2jKUvCgkK1oFAtKFT/Aeh9gPkXSWh+AAAAAElFTkSuQmCC"/>
+<mask id="mask-0">
+<g filter="url(#filter-remove-color)">
+<use xlink:href="#source-7" filter="url(#filter-color-to-alpha)" transform="matrix(0.786099, 0, 0, 0.800025, 0.328642, 0.0000348034)"/>
+</g>
+</mask>
+</defs>
+<g clip-path="url(#clip-0)">
+<path fill-rule="nonzero" fill="rgb(0%, 0%, 0%)" fill-opacity="1" d="M 0.359375 87.972656 L 116.640625 87.972656 L 116.640625 0.03125 L 0.359375 0.03125 Z M 0.359375 87.972656 "/>
+<g mask="url(#mask-0)">
+<rect x="-11.7" y="-8.85" width="140.4" height="106.2" fill="rgb(99.607849%, 99.607849%, 99.607849%)" fill-opacity="1"/>
+</g>
+</g>
+</svg>

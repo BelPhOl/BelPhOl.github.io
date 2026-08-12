@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="106.56pt" height="43.08pt" viewBox="0 0 106.56 43.08">
+<defs><clipPath id="figbox"><rect x="0" y="0" width="106.56" height="43.08"/></clipPath></defs>
+<g clip-path="url(#figbox)">
+<image transform="matrix(49.080002,0.000000,-0.000000,10.800000,32.040,32.280)" x="0" y="0" width="1" height="1" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIgAAAAdCAYAAABxESSiAAAAJklEQVR4nO3BMQEAAADCoPVPbQhfoAAAAAAAAAAAAAAAAAAAALgNPb0AAVqmaXsAAAAASUVORK5CYII=" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIgAAAAdCAYAAABxESSiAAAAJklEQVR4nO3BMQEAAADCoPVPbQhfoAAAAAAAAAAAAAAAAAAAALgNPb0AAVqmaXsAAAAASUVORK5CYII="/>
+<image transform="matrix(28.440001,0.000000,-0.000000,11.160000,42.360,4.920)" x="0" y="0" width="1" height="1" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE8AAAAfCAYAAACmupBxAAAAIElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAMA1JmMAAb6CJBgAAAAASUVORK5CYII=" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE8AAAAfCAYAAACmupBxAAAAIElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAMA1JmMAAb6CJBgAAAAASUVORK5CYII="/>
+<image transform="matrix(28.440001,0.000000,-0.000000,14.160000,78.120,0.000)" x="0" y="0" width="1" height="1" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE8AAAAnCAYAAABOkxWxAAAAIklEQVR4nO3BAQEAAACCIP+vbkhAAQAAAAAAAAAAAAAARwYwSwABSbb8oAAAAABJRU5ErkJggg==" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE8AAAAnCAYAAABOkxWxAAAAIklEQVR4nO3BAQEAAACCIP+vbkhAAQAAAAAAAAAAAAAARwYwSwABSbb8oAAAAABJRU5ErkJggg=="/>
+<image transform="matrix(28.320000,0.000000,-0.000000,14.160000,0.000,0.960)" x="0" y="0" width="1" height="1" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAAAnCAYAAAChUX6PAAAAI0lEQVR4nO3BMQEAAADCoPVPbQlPoAAAAAAAAAAAAAAAgLMBL68AARE5HjgAAAAASUVORK5CYII=" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAAAnCAYAAAChUX6PAAAAI0lEQVR4nO3BMQEAAADCoPVPbQlPoAAAAAAAAAAAAAAAgLMBL68AARE5HjgAAAAASUVORK5CYII="/>
+<path d="M14.66,20.20 L99.71,20.20 L99.71,21.60 L14.66,21.60 Z" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M20.08,18.30 C18.67,15.86 15.55,15.02 13.11,16.43 C10.67,17.84 9.83,20.96 11.24,23.40 C12.65,25.84 15.77,26.67 18.21,25.27 C20.65,23.86 21.49,20.74 20.08,18.30" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M99.63,18.30 C98.22,15.86 95.10,15.02 92.66,16.43 C90.22,17.84 89.38,20.96 90.79,23.40 C92.20,25.84 95.32,26.67 97.76,25.27 C100.20,23.86 101.04,20.74 99.63,18.30" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="butt" stroke-linejoin="round"/>
+<text x="39.34" y="41.71" font-family="'Times New Roman', Georgia, serif" font-size="9.96" fill="#000000">Рис. 3 </text>
+<text x="54.58" y="16.39" font-family="'Times New Roman', serif" font-size="12.00" fill="#000000">𝑙</text>
+<text x="85.42" y="11.47" font-family="'Times New Roman', serif" font-size="12.00" fill="#000000">+𝑞</text>
+<text x="7.30" y="12.43" font-family="'Times New Roman', serif" font-size="12.00" fill="#000000">−𝑞</text>
+</g>
+</svg>

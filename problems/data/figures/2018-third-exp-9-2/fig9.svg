@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="46.23pt" height="32.73pt" viewBox="0 0 46.23 32.73">
+<defs><clipPath id="figbox"><rect x="0" y="0" width="46.23" height="32.73"/></clipPath></defs>
+<g clip-path="url(#figbox)">
+<path d="M31.85,17.77 L44.97,17.77" fill="none" stroke="#000000" stroke-width="0.240" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M0.25,19.98 L1.79,19.12" fill="none" stroke="#000000" stroke-width="0.504" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M1.79,19.36 L4.01,30.65" fill="none" stroke="#000000" stroke-width="1.009" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M4.25,30.65 L7.21,0.25" fill="none" stroke="#000000" stroke-width="0.504" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M7.21,0.25 L45.98,0.25" fill="none" stroke="#000000" stroke-width="0.504" stroke-linecap="butt" stroke-linejoin="round"/>
+<text x="39.31" y="7.85" font-family="'Times New Roman', Georgia, serif" font-size="6.99" fill="#000000">2</text>
+<text x="14.98" y="15.39" font-family="'Times New Roman', Georgia, serif" font-size="6.99" fill="#000000">2</text>
+<text x="35.63" y="30.15" font-family="'Times New Roman', Georgia, serif" font-size="11.99" fill="#000000">4</text>
+<text x="33.03" y="13.21" font-family="'Times New Roman', Georgia, serif" font-size="11.99" font-style="italic" fill="#000000">L</text>
+<text x="8.51" y="20.78" font-family="'Times New Roman', Georgia, serif" font-size="11.99" font-style="italic" fill="#000000">x</text>
+<text x="22.47" y="20.78" font-family="'Times New Roman', serif" font-size="11.99" fill="#000000">+</text>
+</g>
+</svg>

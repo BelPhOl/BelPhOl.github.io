@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="181.26pt" height="103.29pt" viewBox="0 0 181.26 103.29">
+<defs><clipPath id="figbox"><rect x="0" y="0" width="181.26" height="103.29"/></clipPath></defs>
+<g clip-path="url(#figbox)">
+<path d="M29.28,0.38 L29.28,68.72 L179.76,68.72 L179.76,0.38 Z" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="round" stroke-linejoin="miter"/>
+<path d="M42.90,27.73 L42.90,48.26 L49.74,48.26 L49.74,27.73 Z" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="round" stroke-linejoin="miter"/>
+<path d="M159.18,14.05 L159.18,61.93 L172.86,61.93 L172.86,14.05 Z" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="round" stroke-linejoin="miter"/>
+<path d="M42.90,48.26 L42.90,89.23 M172.86,61.93 L172.86,89.23 M42.90,89.23 L77.10,89.23 M77.10,82.46 L77.10,96.14 M83.94,75.61 L84.00,102.91" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M83.94,89.23 L97.62,89.23" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.25,3" stroke-dashoffset="0.00"/>
+<path d="M97.62,82.46 L97.62,96.14 M104.52,75.61 L104.52,102.91 M104.52,89.23 L172.86,89.23 L172.86,96.14" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M166.02,96.14 L179.76,96.20" fill="none" stroke="#000000" stroke-width="3.000" stroke-linecap="butt" stroke-linejoin="round"/>
+<text x="68.94" y="10.09" font-family="'Times New Roman', Georgia, serif" font-size="7.50" fill="#000000">вакуумная камера </text>
+<text x="41.52" y="23.59" font-family="'Times New Roman', Georgia, serif" font-size="7.50" fill="#000000">катод </text>
+<text x="137.28" y="23.77" font-family="'Times New Roman', Georgia, serif" font-size="7.50" fill="#000000">анод </text>
+<text x="69.78" y="100.03" font-family="'Times New Roman', serif" font-size="12.02" fill="#000000">ϕ</text>
+<text x="63.78" y="100.03" font-family="'Times New Roman', serif" font-size="12.05" fill="#000000">−</text>
+</g>
+</svg>

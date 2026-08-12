@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="207.75pt" height="207.75pt" viewBox="0 0 207.75 207.75">
+<defs><clipPath id="figbox"><rect x="0" y="0" width="207.75" height="207.75"/></clipPath></defs>
+<g clip-path="url(#figbox)">
+<path d="M0.38,0.38 L0.38,207.37 L207.38,207.37 L207.38,0.38 Z" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="round" stroke-linejoin="miter"/>
+<path d="M100.34,35.11 C66.44,35.11 38.90,62.65 38.90,96.61 C38.90,130.57 66.44,158.11 100.34,158.11 C134.30,158.11 161.84,130.57 161.84,96.61 C161.84,62.65 134.30,35.11 100.34,35.11" fill="#ffffff" stroke="#000000" fill-rule="evenodd" stroke-width="0.854" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M99.92,178.69 L99.92,16.88 C99.92,16.63 100.16,16.45 100.34,16.45 C100.58,16.45 100.82,16.63 100.82,16.88 L100.82,178.69 C100.82,178.93 100.58,179.11 100.34,179.11 C100.16,179.11 99.92,178.93 99.92,178.69 M97.10,23.54 L100.34,15.79 L103.58,23.54 C103.70,23.77 103.58,24.01 103.40,24.13 C103.16,24.19 102.92,24.13 102.80,23.89 L99.98,17.05 L100.76,17.05 L97.94,23.89 C97.82,24.13 97.58,24.19 97.34,24.13 C97.16,24.01 97.04,23.77 97.10,23.54" fill="#000000" stroke="none"/>
+<path d="M28.58,96.19 L180.02,96.25 C180.26,96.25 180.43,96.49 180.43,96.68 C180.43,96.92 180.26,97.15 180.02,97.15 L28.58,97.10 C28.34,97.10 28.16,96.85 28.16,96.68 C28.16,96.44 28.34,96.19 28.58,96.19 M173.36,93.44 L181.10,96.68 L173.36,99.92 C173.12,100.04 172.88,99.92 172.76,99.73 C172.70,99.49 172.76,99.25 173.00,99.13 L179.84,96.32 L179.84,97.10 L173.00,94.27 C172.82,94.15 172.70,93.92 172.76,93.68 C172.88,93.49 173.12,93.37 173.36,93.44" fill="#000000" stroke="none"/>
+<path d="M100.34,95.54 L100.34,97.82 L115.10,97.82 L115.10,95.54 Z M113.96,93.25 L120.80,96.68 L113.96,100.10" fill="#000000" stroke="none"/>
+<path d="M99.20,96.56 L99.26,81.80 L101.54,81.80 L101.48,96.56 L99.20,96.56 M96.98,82.94 L100.40,76.10 L103.82,82.94" fill="#000000" stroke="none"/>
+<path d="M100.04,96.37 L129.14,67.21 C129.32,67.04 129.56,67.04 129.74,67.21 C129.92,67.33 129.92,67.63 129.74,67.82 L100.64,96.97 C100.52,97.10 100.22,97.10 100.04,96.97 C99.92,96.80 99.92,96.49 100.04,96.37 M122.42,69.92 L130.22,66.73 L127.04,74.54 C126.92,74.71 126.68,74.83 126.44,74.71 C126.26,74.65 126.14,74.42 126.26,74.18 L129.02,67.33 L129.62,67.87 L122.78,70.69 C122.54,70.82 122.30,70.69 122.18,70.51 C122.12,70.27 122.24,70.04 122.42,69.92" fill="#000000" stroke="none"/>
+<path d="M74.72,106.87 C71.84,106.87 69.56,109.21 69.56,112.04 C69.56,114.85 71.84,117.13 74.72,117.13 C77.54,117.13 79.82,114.85 79.82,112.04 C79.82,109.21 77.54,106.87 74.72,106.87 M71.06,108.37 L78.32,115.63 M71.06,115.63 L78.32,108.37" fill="none" stroke="#000000" stroke-width="0.854" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18.32,95.77 L18.32,97.51 L94.70,97.51 L94.70,95.77 Z M93.56,93.25 L100.34,96.68 L93.56,100.10" fill="#000000" stroke="none"/>
+<text x="116.48" y="179.47" font-family="'Times New Roman', Georgia, serif" font-size="7.91" fill="#000000">2</text>
+<text x="108.62" y="175.93" font-family="'Times New Roman', Georgia, serif" font-size="13.68" font-style="italic" fill="#000000">R</text>
+<text x="100.28" y="175.93" font-family="'Times New Roman', serif" font-size="13.68" fill="#000000">−</text>
+<text x="34.52" y="117.97" font-family="'Times New Roman', Georgia, serif" font-size="7.91" fill="#000000">2</text>
+<text x="26.66" y="114.43" font-family="'Times New Roman', Georgia, serif" font-size="13.68" font-style="italic" fill="#000000">R</text>
+<text x="18.32" y="114.43" font-family="'Times New Roman', serif" font-size="13.68" fill="#000000">−</text>
+<text x="170.12" y="87.19" font-family="'Times New Roman', Georgia, serif" font-size="7.91" fill="#000000">2</text>
+<text x="162.26" y="83.65" font-family="'Times New Roman', Georgia, serif" font-size="13.68" font-style="italic" fill="#000000">R</text>
+<text x="88.16" y="35.89" font-family="'Times New Roman', Georgia, serif" font-size="7.89" fill="#000000">2</text>
+<text x="80.24" y="32.35" font-family="'Times New Roman', Georgia, serif" font-size="13.64" font-style="italic" fill="#000000">R</text>
+<text x="110.48" y="115.39" font-family="'Times New Roman', Georgia, serif" font-size="13.64" font-style="italic" fill="#000000">i</text>
+<text x="110.90" y="104.53" font-family="'Times New Roman', serif" font-size="13.63" fill="#000000">r</text>
+<text x="92.66" y="84.79" font-family="'Times New Roman', Georgia, serif" font-size="13.68" font-style="italic" fill="#000000">j</text>
+<text x="91.70" y="73.87" font-family="'Times New Roman', serif" font-size="13.68" fill="#000000">r</text>
+<text x="124.88" y="66.67" font-family="'Times New Roman', Georgia, serif" font-size="7.89" fill="#000000">2</text>
+<text x="120.86" y="63.13" font-family="'Times New Roman', Georgia, serif" font-size="13.68" font-style="italic" fill="#000000">r</text>
+<text x="121.76" y="54.61" font-family="'Times New Roman', serif" font-size="13.68" fill="#000000">r</text>
+<text x="182.96" y="112.93" font-family="'Times New Roman', Georgia, serif" font-size="13.75" font-style="italic" fill="#000000">x</text>
+<text x="111.98" y="18.37" font-family="'Times New Roman', Georgia, serif" font-size="13.68" font-style="italic" fill="#000000">y</text>
+<text x="69.56" y="133.69" font-family="'Times New Roman', Georgia, serif" font-size="13.58" font-style="italic" fill="#000000">n</text>
+<text x="70.87" y="125.23" font-family="'Times New Roman', serif" font-size="13.58" fill="#000000">r</text>
+<text x="59.30" y="92.65" font-family="'Times New Roman', Georgia, serif" font-size="13.58" font-style="italic" fill="#000000">a</text>
+<text x="60.74" y="84.19" font-family="'Times New Roman', serif" font-size="13.58" fill="#000000">r</text>
+<text x="8.00" y="201.97" font-family="'Times New Roman', Georgia, serif" font-size="10.02" font-weight="bold" fill="#000000">Рис.  4 </text>
+</g>
+</svg>

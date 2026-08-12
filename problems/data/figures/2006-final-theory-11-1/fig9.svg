@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="153.75pt" height="181.95pt" viewBox="0 0 153.75 181.95">
+<defs><clipPath id="figbox"><rect x="0" y="0" width="153.75" height="181.95"/></clipPath></defs>
+<g clip-path="url(#figbox)">
+<path d="M0.38,0.38 L0.38,181.58 L153.38,181.58 L153.38,0.38 Z" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="round" stroke-linejoin="miter"/>
+<path d="M78.67,9.01 C40.15,9.01 8.95,40.27 8.95,78.79 C8.95,117.32 40.15,148.57 78.67,148.57 C117.13,148.57 148.33,117.32 148.33,78.79 C148.33,40.27 117.13,9.01 78.67,9.01" fill="none" stroke="#000000" stroke-width="0.683" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M115.51,58.21 C101.89,58.21 90.91,69.26 90.91,82.88 C90.91,96.49 101.89,107.53 115.51,107.53 C129.07,107.53 140.11,96.49 140.11,82.88 C140.11,69.26 129.07,58.21 115.51,58.21" fill="none" stroke="#000000" stroke-width="0.683" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M74.53,82.51 L113.71,82.51 C113.89,82.51 114.07,82.69 114.07,82.88 C114.07,83.05 113.89,83.23 113.71,83.23 L74.53,83.23 C74.35,83.23 74.17,83.05 74.17,82.88 C74.17,82.69 74.35,82.51 74.53,82.51 M110.23,80.29 L114.37,82.88 L110.23,85.45 C110.11,85.57 109.87,85.51 109.81,85.33 C109.69,85.15 109.75,84.97 109.87,84.85 L113.53,82.57 L113.53,83.17 L109.87,80.89 C109.75,80.77 109.69,80.59 109.81,80.41 C109.87,80.23 110.11,80.17 110.23,80.29" fill="#000000" stroke="none"/>
+<path d="M74.41,82.57 L121.93,66.73 C122.11,66.67 122.29,66.73 122.35,66.91 C122.41,67.09 122.29,67.27 122.11,67.33 L74.65,83.17 C74.47,83.23 74.29,83.17 74.23,82.99 C74.17,82.82 74.23,82.63 74.41,82.57 M117.91,65.71 L122.65,66.85 L119.53,70.57 C119.41,70.69 119.23,70.76 119.05,70.63 C118.93,70.51 118.87,70.27 118.99,70.15 L121.75,66.79 L121.93,67.33 L117.73,66.38 C117.55,66.32 117.43,66.13 117.49,65.95 C117.55,65.77 117.73,65.65 117.91,65.71" fill="#000000" stroke="none"/>
+<path d="M115.21,82.69 L122.65,67.93 C122.71,67.76 122.89,67.69 123.07,67.76 C123.25,67.88 123.31,68.05 123.25,68.23 L115.87,83.05 C115.75,83.17 115.57,83.23 115.39,83.17 C115.21,83.11 115.15,82.88 115.21,82.69 M119.11,70.03 L123.19,67.51 L123.67,72.32 C123.67,72.49 123.55,72.67 123.37,72.73 C123.19,72.73 123.01,72.61 123.01,72.38 L122.59,68.11 L123.13,68.35 L119.41,70.63 C119.29,70.69 119.05,70.69 118.99,70.51 C118.87,70.33 118.93,70.15 119.11,70.03" fill="#000000" stroke="none"/>
+<text x="99.19" y="93.31" font-family="'Times New Roman', Georgia, serif" font-size="10.85" font-style="italic" fill="#000000">a</text>
+<text x="100.34" y="86.53" font-family="'Times New Roman', serif" font-size="10.85" fill="#000000">r</text>
+<text x="123.85" y="83.53" font-family="'Times New Roman', Georgia, serif" font-size="6.34" fill="#000000">2</text>
+<text x="120.61" y="80.71" font-family="'Times New Roman', Georgia, serif" font-size="10.96" font-style="italic" fill="#000000">r</text>
+<text x="121.33" y="73.87" font-family="'Times New Roman', serif" font-size="10.96" fill="#000000">r</text>
+<text x="109.69" y="70.15" font-family="'Times New Roman', Georgia, serif" font-size="6.34" fill="#000000">1</text>
+<text x="107.17" y="67.33" font-family="'Times New Roman', Georgia, serif" font-size="10.96" font-style="italic" fill="#000000">r</text>
+<text x="107.83" y="60.49" font-family="'Times New Roman', serif" font-size="10.96" fill="#000000">r</text>
+<text x="0.79" y="171.85" font-family="'Times New Roman', Georgia, serif" font-size="10.02" font-weight="bold" fill="#000000">Рис. 3 </text>
+</g>
+</svg>

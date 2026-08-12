@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="119.94pt" height="38.94pt" viewBox="0 0 119.94 38.94">
+<defs><clipPath id="figbox"><rect x="0" y="0" width="119.94" height="38.94"/></clipPath></defs>
+<g clip-path="url(#figbox)">
+<path d="M20.88,17.46 L36.24,17.46 M37.74,2.76 L37.74,32.16" fill="none" stroke="#000000" stroke-width="0.593" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M76.02,30.78 L77.22,29.88 L80.16,36.36 L83.34,19.26 L116.52,19.26" fill="none" stroke="#000000" stroke-width="0.060" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M75.90,30.66 L77.58,29.46 L80.16,34.86 L83.10,18.96 L116.52,18.96 L116.52,19.56 L83.58,19.56 L80.46,36.36 L79.86,36.36 L76.92,30.36 L76.14,30.96" fill="#000000" stroke="none" fill-rule="evenodd"/>
+<path d="M68.82,17.46 L117.48,17.46" fill="none" stroke="#000000" stroke-width="0.593" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M0.00,0.00 L0.48,0.00 L0.48,0.48 L0.00,0.48 Z" fill="#000000" stroke="none"/>
+<path d="M0.00,0.00 L119.94,0.00 L119.94,0.48 L0.00,0.48 Z" fill="#000000" stroke="none"/>
+<path d="M119.46,0.00 L119.94,0.00 L119.94,0.48 L119.46,0.48 Z" fill="#000000" stroke="none"/>
+<path d="M0.00,0.48 L0.48,0.48 L0.48,38.46 L0.00,38.46 Z" fill="#000000" stroke="none"/>
+<path d="M119.46,0.48 L119.94,0.48 L119.94,38.46 L119.46,38.46 Z" fill="#000000" stroke="none"/>
+<path d="M0.00,38.46 L0.48,38.46 L0.48,38.94 L0.00,38.94 Z" fill="#000000" stroke="none"/>
+<path d="M0.00,38.46 L119.94,38.46 L119.94,38.94 L0.00,38.94 Z" fill="#000000" stroke="none"/>
+<path d="M119.46,38.46 L119.94,38.46 L119.94,38.94 L119.46,38.94 Z" fill="#000000" stroke="none"/>
+<text x="31.02" y="15.96" font-family="'Times New Roman', Georgia, serif" font-size="6.95" fill="#000000">2</text>
+<text x="91.20" y="26.88" font-family="'Times New Roman', Georgia, serif" font-size="6.95" fill="#000000">*</text>
+<text x="52.14" y="32.70" font-family="'Times New Roman', Georgia, serif" font-size="6.95" fill="#000000">*</text>
+<text x="111.36" y="35.34" font-family="'Times New Roman', Georgia, serif" font-size="6.95" fill="#000000">0</text>
+<text x="69.54" y="32.22" font-family="'Times New Roman', Georgia, serif" font-size="11.95" fill="#000000">2</text>
+<text x="38.64" y="32.70" font-family="'Times New Roman', Georgia, serif" font-size="6.95" font-style="italic" fill="#000000">T</text>
+<text x="47.46" y="32.70" font-family="'Times New Roman', Georgia, serif" font-size="6.95" font-style="italic" fill="#000000">T</text>
+<text x="21.72" y="12.90" font-family="'Times New Roman', Georgia, serif" font-size="11.99" font-style="italic" fill="#000000">dj</text>
+<text x="2.34" y="20.46" font-family="'Times New Roman', Georgia, serif" font-size="11.99" font-style="italic" fill="#000000">k</text>
+<text x="21.66" y="29.82" font-family="'Times New Roman', Georgia, serif" font-size="11.99" font-style="italic" fill="#000000">dT</text>
+<text x="83.10" y="32.22" font-family="'Times New Roman', Georgia, serif" font-size="11.99" font-style="italic" fill="#000000">T</text>
+<text x="105.42" y="32.22" font-family="'Times New Roman', Georgia, serif" font-size="11.99" font-style="italic" fill="#000000">T</text>
+<text x="89.58" y="12.90" font-family="'Times New Roman', serif" font-size="11.99" fill="#000000">χ</text>
+<text x="43.68" y="32.70" font-family="'Times New Roman', serif" font-size="6.93" fill="#000000">=</text>
+<text x="11.34" y="20.46" font-family="'Times New Roman', serif" font-size="11.99" fill="#000000">&gt;</text>
+<text x="59.27" y="20.46" font-family="'Times New Roman', serif" font-size="11.99" fill="#000000">=</text>
+<text x="97.56" y="32.22" font-family="'Times New Roman', serif" font-size="11.99" fill="#000000">−</text>
+</g>
+</svg>

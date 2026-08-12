@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="230.88pt" height="114.60pt" viewBox="0 0 230.88 114.60">
+<defs><clipPath id="figbox"><rect x="0" y="0" width="230.88" height="114.60"/></clipPath></defs>
+<g clip-path="url(#figbox)">
+<path d="M0.00,0.00 L0.48,0.00 L0.48,0.48 L0.00,0.48 Z" fill="#000000" stroke="none"/>
+<path d="M0.00,0.00 L230.88,0.00 L230.88,0.48 L0.00,0.48 Z" fill="#000000" stroke="none"/>
+<path d="M230.40,0.00 L230.88,0.00 L230.88,0.48 L230.40,0.48 Z" fill="#000000" stroke="none"/>
+<path d="M0.00,0.48 L0.48,0.48 L0.48,14.28 L0.00,14.28 Z" fill="#000000" stroke="none"/>
+<path d="M50.40,0.48 L50.88,0.48 L50.88,14.28 L50.40,14.28 Z" fill="#000000" stroke="none"/>
+<path d="M131.40,0.48 L131.88,0.48 L131.88,14.28 L131.40,14.28 Z" fill="#000000" stroke="none"/>
+<path d="M230.40,0.48 L230.88,0.48 L230.88,14.28 L230.40,14.28 Z" fill="#000000" stroke="none"/>
+<path d="M0.00,14.28 L230.88,14.28 L230.88,14.76 L0.00,14.76 Z" fill="#000000" stroke="none"/>
+<path d="M0.00,14.76 L0.48,14.76 L0.48,28.62 L0.00,28.62 Z" fill="#000000" stroke="none"/>
+<path d="M50.40,14.76 L50.88,14.76 L50.88,28.62 L50.40,28.62 Z" fill="#000000" stroke="none"/>
+<path d="M131.40,14.76 L131.88,14.76 L131.88,28.62 L131.40,28.62 Z" fill="#000000" stroke="none"/>
+<path d="M230.40,14.76 L230.88,14.76 L230.88,28.62 L230.40,28.62 Z" fill="#000000" stroke="none"/>
+<path d="M0.00,28.62 L230.88,28.62 L230.88,29.10 L0.00,29.10 Z" fill="#000000" stroke="none"/>
+<path d="M0.00,29.10 L0.48,29.10 L0.48,45.12 L0.00,45.12 Z" fill="#000000" stroke="none"/>
+<path d="M50.40,29.10 L50.88,29.10 L50.88,45.12 L50.40,45.12 Z" fill="#000000" stroke="none"/>
+<path d="M131.40,29.10 L131.88,29.10 L131.88,45.12 L131.40,45.12 Z" fill="#000000" stroke="none"/>
+<path d="M230.40,29.10 L230.88,29.10 L230.88,45.12 L230.40,45.12 Z" fill="#000000" stroke="none"/>
+<path d="M176.10,61.56 L205.02,61.56" fill="none" stroke="#000000" stroke-width="0.499" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M0.00,45.12 L230.88,45.12 L230.88,45.60 L0.00,45.60 Z" fill="#000000" stroke="none"/>
+<path d="M0.00,45.60 L0.48,45.60 L0.48,79.62 L0.00,79.62 Z" fill="#000000" stroke="none"/>
+<path d="M50.40,45.60 L50.88,45.60 L50.88,79.62 L50.40,79.62 Z" fill="#000000" stroke="none"/>
+<path d="M131.40,45.60 L131.88,45.60 L131.88,79.62 L131.40,79.62 Z" fill="#000000" stroke="none"/>
+<path d="M230.40,45.60 L230.88,45.60 L230.88,79.62 L230.40,79.62 Z" fill="#000000" stroke="none"/>
+<path d="M77.52,96.06 L103.98,96.06" fill="none" stroke="#000000" stroke-width="0.499" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M0.00,79.62 L230.88,79.62 L230.88,80.10 L0.00,80.10 Z" fill="#000000" stroke="none"/>
+<path d="M0.00,80.10 L0.48,80.10 L0.48,114.60 L0.00,114.60 Z" fill="#000000" stroke="none"/>
+<path d="M0.00,114.12 L50.40,114.12 L50.40,114.60 L0.00,114.60 Z" fill="#000000" stroke="none"/>
+<path d="M50.40,80.10 L50.88,80.10 L50.88,114.60 L50.40,114.60 Z" fill="#000000" stroke="none"/>
+<path d="M50.88,114.12 L131.40,114.12 L131.40,114.60 L50.88,114.60 Z" fill="#000000" stroke="none"/>
+<path d="M131.40,80.10 L131.88,80.10 L131.88,114.60 L131.40,114.60 Z" fill="#000000" stroke="none"/>
+<path d="M131.88,114.12 L230.40,114.12 L230.40,114.60 L131.88,114.60 Z" fill="#000000" stroke="none"/>
+<path d="M230.40,80.10 L230.88,80.10 L230.88,114.60 L230.40,114.60 Z" fill="#000000" stroke="none"/>
+<path d="M230.40,114.12 L230.88,114.12 L230.88,114.60 L230.40,114.60 Z" fill="#000000" stroke="none"/>
+<text x="19.68" y="11.52" font-family="'Times New Roman', Georgia, serif" font-size="12.02" fill="#000000">№ </text>
+<text x="61.50" y="11.52" font-family="'Times New Roman', Georgia, serif" font-size="12.02" fill="#000000">Гравитация </text>
+<text x="140.64" y="11.52" font-family="'Times New Roman', Georgia, serif" font-size="12.02" fill="#000000">Электростатика </text>
+<text x="25.44" y="25.80" font-family="'Times New Roman', Georgia, serif" font-size="12.02" fill="#000000">1.</text>
+<text x="86.34" y="25.50" font-family="'Times New Roman', Georgia, serif" font-size="11.95" font-style="italic" fill="#000000">m</text>
+<text x="177.84" y="23.52" font-family="'Times New Roman', Georgia, serif" font-size="12.01" font-style="italic" fill="#000000">q</text>
+<text x="25.44" y="41.22" font-family="'Times New Roman', Georgia, serif" font-size="12.02" fill="#000000">2.</text>
+<text x="87.96" y="40.08" font-family="'Times New Roman', Georgia, serif" font-size="12.01" font-style="italic" fill="#000000">g</text>
+<text x="89.16" y="32.40" font-family="'Times New Roman', serif" font-size="12.01" fill="#000000">r</text>
+<text x="177.30" y="43.08" font-family="'Times New Roman', Georgia, serif" font-size="12.01" font-style="italic" fill="#000000">E</text>
+<text x="179.52" y="32.76" font-family="'Times New Roman', serif" font-size="12.01" fill="#000000">r</text>
+<text x="25.44" y="66.72" font-family="'Times New Roman', Georgia, serif" font-size="12.02" fill="#000000">3.</text>
+<text x="85.98" y="66.54" font-family="'Times New Roman', Georgia, serif" font-size="11.95" font-style="italic" fill="#000000">G</text>
+<text x="198.60" y="76.86" font-family="'Times New Roman', Georgia, serif" font-size="9.01" font-style="italic" fill="#000000">0</text>
+<text x="176.76" y="73.86" font-family="'Times New Roman', Georgia, serif" font-size="12.01" font-style="italic" fill="#000000">4</text>
+<text x="187.74" y="57.12" font-family="'Times New Roman', Georgia, serif" font-size="12.01" font-style="italic" fill="#000000">1</text>
+<text x="156.84" y="64.56" font-family="'Times New Roman', Georgia, serif" font-size="12.01" font-style="italic" fill="#000000">k</text>
+<text x="192.72" y="73.86" font-family="'Times New Roman', serif" font-size="12.01" fill="#000000">ε</text>
+<text x="183.60" y="73.86" font-family="'Times New Roman', serif" font-size="12.01" fill="#000000">π</text>
+<text x="166.20" y="64.56" font-family="'Times New Roman', serif" font-size="12.01" fill="#000000">=</text>
+<text x="25.44" y="101.22" font-family="'Times New Roman', Georgia, serif" font-size="12.02" fill="#000000">4.</text>
+<text x="94.32" y="108.36" font-family="'Times New Roman', Georgia, serif" font-size="12.01" font-style="italic" fill="#000000">G</text>
+<text x="78.18" y="108.36" font-family="'Times New Roman', Georgia, serif" font-size="12.01" font-style="italic" fill="#000000">4</text>
+<text x="87.96" y="91.62" font-family="'Times New Roman', Georgia, serif" font-size="12.01" font-style="italic" fill="#000000">1</text>
+<text x="85.02" y="108.36" font-family="'Times New Roman', serif" font-size="12.01" fill="#000000">π</text>
+<text x="180.78" y="105.30" font-family="'Times New Roman', Georgia, serif" font-size="9.01" font-style="italic" fill="#000000">0</text>
+<text x="174.90" y="101.58" font-family="'Times New Roman', serif" font-size="12.01" fill="#000000">ε</text>
+</g>
+</svg>

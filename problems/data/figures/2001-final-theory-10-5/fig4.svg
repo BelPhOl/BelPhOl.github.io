@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="198.71997" height="147.78" viewBox="0 0 198.71997 147.78">
+<defs>
+<filter id="filter-remove-color" x="0%" y="0%" width="100%" height="100%">
+<feColorMatrix color-interpolation-filters="sRGB" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
+</filter>
+<filter id="filter-color-to-alpha" x="0%" y="0%" width="100%" height="100%">
+<feColorMatrix color-interpolation-filters="sRGB" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0.2126 0.7152 0.0722 0 0"/>
+</filter>
+<g>
+<g id="glyph-0-0">
+</g>
+</g>
+<clipPath id="clip-0">
+<path clip-rule="nonzero" d="M 0.0078125 0 L 198.433594 0 L 198.433594 147.558594 L 0.0078125 147.558594 Z M 0.0078125 0 "/>
+</clipPath>
+<clipPath id="clip-1">
+<path clip-rule="nonzero" d="M 0.0078125 0 L 198 0 L 198 147.558594 L 0.0078125 147.558594 Z M 0.0078125 0 "/>
+</clipPath>
+<image id="source-6" x="0" y="0" width="258" height="190" xlink:href="data:image/png;base64,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"/>
+<mask id="mask-0">
+<g filter="url(#filter-remove-color)">
+<use xlink:href="#source-6" filter="url(#filter-color-to-alpha)" transform="matrix(0.769088, 0, 0, 0.776633, 0.00794033, -0.0000968558)"/>
+</g>
+</mask>
+<clipPath id="clip-2">
+<path clip-rule="nonzero" d="M 198 147 L 198.433594 147 L 198.433594 147.558594 L 198 147.558594 Z M 198 147 "/>
+</clipPath>
+</defs>
+<g clip-path="url(#clip-0)">
+<path fill-rule="nonzero" fill="rgb(0%, 0%, 0%)" fill-opacity="1" d="M 0.0390625 147.53125 L 198.402344 147.53125 L 198.402344 0.03125 L 0.0390625 0.03125 Z M 0.0390625 147.53125 "/>
+</g>
+<g clip-path="url(#clip-1)">
+<g mask="url(#mask-0)">
+<rect x="-19.871997" y="-14.778" width="238.463964" height="177.336" fill="rgb(99.607849%, 99.607849%, 99.607849%)" fill-opacity="1"/>
+</g>
+</g>
+<g clip-path="url(#clip-2)">
+<g fill="rgb(0%, 0%, 0%)" fill-opacity="1">
+<use xlink:href="#glyph-0-0" x="198.432556" y="147.560217"/>
+</g>
+</g>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="171.30pt" height="154.11pt" viewBox="0 0 171.30 154.11">
+<defs><clipPath id="figbox"><rect x="0" y="0" width="171.30" height="154.11"/></clipPath></defs>
+<g clip-path="url(#figbox)">
+<path d="M0.36,144.39 L166.32,144.39 L166.62,144.51 L166.68,144.75 L166.62,144.99 L166.32,145.11 L0.36,145.11 L0.12,144.99 L0.00,144.75 L0.12,144.51 L0.36,144.39 M165.30,141.75 L171.30,144.75 L165.30,147.75" fill="#000000" stroke="none"/>
+<path d="M9.00,153.75 L9.00,5.73 L9.12,5.49 L9.36,5.37 L9.66,5.49 L9.78,5.73 L9.78,153.75 L9.66,153.99 L9.36,154.11 L9.12,153.99 L9.00,153.75 M6.36,6.75 L9.36,0.75 L12.36,6.75" fill="#000000" stroke="none"/>
+<path d="M9.36,117.75 L81.30,117.75 L162.30,63.75 M9.36,72.75 L54.36,72.75 L72.30,0.75" fill="none" stroke="#000000" stroke-width="1.500" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M81.30,117.75 L81.30,144.75" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=".00075,1.5" stroke-dashoffset="0.00"/>
+<text x="0.36" y="123.15" font-family="'Times New Roman', Georgia, serif" font-size="11.98" font-style="italic" fill="#000000">a</text>
+</g>
+</svg>

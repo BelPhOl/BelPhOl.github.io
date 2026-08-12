@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="144.69pt" height="189.38pt" viewBox="0 0 144.69 189.38">
+<defs><clipPath id="figbox"><rect x="0" y="0" width="144.69" height="189.38"/></clipPath></defs>
+<g clip-path="url(#figbox)">
+<path d="M0.38,54.00 L0.38,108.00 L144.32,108.00 L144.32,54.00 Z" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="round" stroke-linejoin="miter"/>
+<path d="M0.38,162.00 L0.38,189.00 L144.32,189.00 L144.32,162.00 Z" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="round" stroke-linejoin="miter"/>
+<path d="M52.82,7.50 L53.84,7.50 L53.84,54.00 L52.82,54.00 Z M54.86,7.50 L55.82,7.50 L55.82,54.00 L54.86,54.00 Z M49.82,9.00 L54.32,0.00 L58.82,9.00" fill="#000000" stroke="none"/>
+<path d="M19.88,0.00 L20.00,154.56 L18.98,154.56 L18.92,0.00 L19.88,0.00 M17.90,0.00 L18.02,154.56 L17.00,154.56 L16.88,0.00 L17.90,0.00 M23.00,153.06 L18.50,162.06 L14.00,153.06" fill="#000000" stroke="none"/>
+<path d="M54.86,108.00 L54.86,154.50 L55.82,154.50 L55.82,108.00 Z M52.82,108.00 L52.82,154.50 L53.84,154.50 L53.84,108.00 Z M58.82,153.00 L54.32,162.00 L49.82,153.00" fill="#000000" stroke="none"/>
+<path d="M88.82,162.00 L88.94,7.50 L89.96,7.50 L89.84,162.00 L88.82,162.00 M90.86,162.00 L90.92,7.50 L91.94,7.50 L91.82,162.00 L90.86,162.00 M85.94,9.00 L90.44,0.00 L94.94,9.00" fill="#000000" stroke="none"/>
+<path d="M90.32,88.50 L127.82,88.56 L127.82,89.58 L90.32,89.52 L90.32,88.50 M90.32,90.54 L127.82,90.54 L127.82,91.56 L90.32,91.50 L90.32,90.54 M126.38,85.56 L135.32,90.06 L126.32,94.56" fill="#000000" stroke="none"/>
+<text x="25.58" y="69.00" font-family="'Times New Roman', Georgia, serif" font-size="12.00" font-weight="bold" fill="#000000">атмосфера </text>
+<text x="7.58" y="177.00" font-family="'Times New Roman', Georgia, serif" font-size="12.00" font-weight="bold" fill="#000000">Земля </text>
+<text x="6.14" y="144.72" font-family="'Times New Roman', Georgia, serif" font-size="6.94" fill="#000000">0</text>
+<text x="0.80" y="141.60" font-family="'Times New Roman', Georgia, serif" font-size="12.01" font-style="italic" fill="#000000">P</text>
+<text x="42.20" y="144.72" font-family="'Times New Roman', Georgia, serif" font-size="6.94" fill="#000000">2</text>
+<text x="36.80" y="141.60" font-family="'Times New Roman', Georgia, serif" font-size="12.01" font-style="italic" fill="#000000">P</text>
+<text x="42.20" y="36.72" font-family="'Times New Roman', Georgia, serif" font-size="6.94" fill="#000000">2</text>
+<text x="36.80" y="33.60" font-family="'Times New Roman', Georgia, serif" font-size="12.01" font-style="italic" fill="#000000">P</text>
+<text x="140.00" y="34.08" font-family="'Times New Roman', Georgia, serif" font-size="6.94" fill="#000000">1</text>
+<text x="99.56" y="30.96" font-family="'Times New Roman', Georgia, serif" font-size="12.01" fill="#000000">(1</text>
+<text x="130.63" y="30.96" font-family="'Times New Roman', Georgia, serif" font-size="12.01" fill="#000000">)</text>
+<text x="125.47" y="34.08" font-family="'Times New Roman', Georgia, serif" font-size="6.94" font-style="italic" fill="#000000">З</text>
+<text x="119.06" y="30.96" font-family="'Times New Roman', Georgia, serif" font-size="12.01" font-style="italic" fill="#000000">A</text>
+<text x="135.32" y="30.96" font-family="'Times New Roman', Georgia, serif" font-size="12.01" font-style="italic" fill="#000000">P</text>
+<text x="109.46" y="30.96" font-family="'Times New Roman', serif" font-size="12.01" fill="#000000">−</text>
+<text x="125.18" y="81.72" font-family="'Times New Roman', Georgia, serif" font-size="6.94" fill="#000000">1</text>
+<text x="115.76" y="81.72" font-family="'Times New Roman', Georgia, serif" font-size="6.94" font-style="italic" fill="#000000">З</text>
+<text x="109.28" y="78.60" font-family="'Times New Roman', Georgia, serif" font-size="12.01" font-style="italic" fill="#000000">A</text>
+<text x="120.50" y="78.60" font-family="'Times New Roman', Georgia, serif" font-size="12.01" font-style="italic" fill="#000000">P</text>
+</g>
+</svg>

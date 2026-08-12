@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="144.00pt" height="40.80pt" viewBox="0 0 144.00 40.80">
+<defs><clipPath id="figbox"><rect x="0" y="0" width="144.00" height="40.80"/></clipPath></defs>
+<g clip-path="url(#figbox)">
+<path d="M21.84,20.40 L30.72,20.40" fill="none" stroke="#000000" stroke-width="0.500" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M64.32,20.40 L73.20,20.40" fill="none" stroke="#000000" stroke-width="0.500" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M95.52,20.40 L104.40,20.40" fill="none" stroke="#000000" stroke-width="0.500" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M121.68,20.40 L138.72,20.40" fill="none" stroke="#000000" stroke-width="0.500" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M106.56,24.96 L108.24,24.24" fill="none" stroke="#000000" stroke-width="0.500" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M108.24,24.48 L110.40,36.24" fill="none" stroke="#000000" stroke-width="0.999" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M110.64,36.24 L113.52,4.56" fill="none" stroke="#000000" stroke-width="0.500" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M113.52,4.56 L139.68,4.56" fill="none" stroke="#000000" stroke-width="0.500" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M0.00,0.00 L0.48,0.00 L0.48,1.44 L0.00,1.44 Z" fill="#000000" stroke="none"/>
+<path d="M0.00,0.00 L1.44,0.00 L1.44,0.48 L0.00,0.48 Z" fill="#000000" stroke="none"/>
+<path d="M0.96,0.96 L1.44,0.96 L1.44,1.44 L0.96,1.44 Z" fill="#000000" stroke="none"/>
+<path d="M0.96,0.96 L1.44,0.96 L1.44,1.44 L0.96,1.44 Z" fill="#000000" stroke="none"/>
+<path d="M1.44,0.00 L142.56,0.00 L142.56,0.48 L1.44,0.48 Z" fill="#000000" stroke="none"/>
+<path d="M1.44,0.96 L142.56,0.96 L142.56,1.44 L1.44,1.44 Z" fill="#000000" stroke="none"/>
+<path d="M143.52,0.00 L144.00,0.00 L144.00,1.44 L143.52,1.44 Z" fill="#000000" stroke="none"/>
+<path d="M142.56,0.00 L144.00,0.00 L144.00,0.48 L142.56,0.48 Z" fill="#000000" stroke="none"/>
+<path d="M142.56,0.96 L143.04,0.96 L143.04,1.44 L142.56,1.44 Z" fill="#000000" stroke="none"/>
+<path d="M142.56,0.96 L143.04,0.96 L143.04,1.44 L142.56,1.44 Z" fill="#000000" stroke="none"/>
+<path d="M0.00,1.44 L0.48,1.44 L0.48,39.36 L0.00,39.36 Z" fill="#000000" stroke="none"/>
+<path d="M0.96,1.44 L1.44,1.44 L1.44,39.36 L0.96,39.36 Z" fill="#000000" stroke="none"/>
+<path d="M143.52,1.44 L144.00,1.44 L144.00,39.36 L143.52,39.36 Z" fill="#000000" stroke="none"/>
+<path d="M142.56,1.44 L143.04,1.44 L143.04,39.36 L142.56,39.36 Z" fill="#000000" stroke="none"/>
+<path d="M0.00,39.36 L0.48,39.36 L0.48,40.80 L0.00,40.80 Z" fill="#000000" stroke="none"/>
+<path d="M0.00,40.32 L1.44,40.32 L1.44,40.80 L0.00,40.80 Z" fill="#000000" stroke="none"/>
+<path d="M0.96,39.36 L1.44,39.36 L1.44,39.84 L0.96,39.84 Z" fill="#000000" stroke="none"/>
+<path d="M0.96,39.36 L1.44,39.36 L1.44,39.84 L0.96,39.84 Z" fill="#000000" stroke="none"/>
+<path d="M1.44,40.32 L142.56,40.32 L142.56,40.80 L1.44,40.80 Z" fill="#000000" stroke="none"/>
+<path d="M1.44,39.36 L142.56,39.36 L142.56,39.84 L1.44,39.84 Z" fill="#000000" stroke="none"/>
+<path d="M143.52,39.36 L144.00,39.36 L144.00,40.80 L143.52,40.80 Z" fill="#000000" stroke="none"/>
+<path d="M142.56,40.32 L144.00,40.32 L144.00,40.80 L142.56,40.80 Z" fill="#000000" stroke="none"/>
+<path d="M142.56,39.36 L143.04,39.36 L143.04,39.84 L142.56,39.84 Z" fill="#000000" stroke="none"/>
+<path d="M142.56,39.36 L143.04,39.36 L143.04,39.84 L142.56,39.84 Z" fill="#000000" stroke="none"/>
+<text x="106.07" y="22.81" font-family="'Times New Roman', Georgia, serif" font-size="6.99" fill="#000000">3</text>
+<text x="132.23" y="35.53" font-family="'Times New Roman', Georgia, serif" font-size="6.99" fill="#000000">0</text>
+<text x="99.35" y="18.97" font-family="'Times New Roman', Georgia, serif" font-size="6.99" fill="#000000">0</text>
+<text x="67.91" y="18.97" font-family="'Times New Roman', Georgia, serif" font-size="6.99" fill="#000000">0</text>
+<text x="25.67" y="18.97" font-family="'Times New Roman', Georgia, serif" font-size="6.99" fill="#000000">0</text>
+<text x="114.24" y="23.52" font-family="'Times New Roman', Georgia, serif" font-size="11.98" fill="#000000">2</text>
+<text x="97.20" y="32.64" font-family="'Times New Roman', Georgia, serif" font-size="11.98" fill="#000000">2</text>
+<text x="66.00" y="32.64" font-family="'Times New Roman', Georgia, serif" font-size="11.98" fill="#000000">2</text>
+<text x="23.52" y="32.64" font-family="'Times New Roman', Georgia, serif" font-size="11.98" fill="#000000">2</text>
+<text x="123.85" y="32.64" font-family="'Times New Roman', Georgia, serif" font-size="11.98" fill="#000000">kl</text>
+<text x="122.65" y="16.08" font-family="'Times New Roman', Georgia, serif" font-size="11.98" fill="#000000">mg</text>
+<text x="96.01" y="16.08" font-family="'Times New Roman', Georgia, serif" font-size="11.98" fill="#000000">l</text>
+<text x="64.81" y="16.08" font-family="'Times New Roman', Georgia, serif" font-size="11.98" fill="#000000">l</text>
+<text x="32.17" y="23.52" font-family="'Times New Roman', Georgia, serif" font-size="11.98" fill="#000000">tg</text>
+<text x="22.32" y="16.08" font-family="'Times New Roman', Georgia, serif" font-size="11.98" fill="#000000">l</text>
+<text x="3.37" y="23.52" font-family="'Times New Roman', Georgia, serif" font-size="11.98" fill="#000000">h</text>
+<text x="85.94" y="23.52" font-family="'Times New Roman', serif" font-size="11.98" fill="#000000">=</text>
+<text x="54.73" y="23.52" font-family="'Times New Roman', serif" font-size="11.98" fill="#000000">≈</text>
+<text x="12.25" y="23.52" font-family="'Times New Roman', serif" font-size="11.98" fill="#000000">=</text>
+<text x="74.16" y="23.52" font-family="'Times New Roman', serif" font-size="11.98" fill="#000000">α</text>
+<text x="42.96" y="23.52" font-family="'Times New Roman', serif" font-size="11.98" fill="#000000">α</text>
+</g>
+</svg>

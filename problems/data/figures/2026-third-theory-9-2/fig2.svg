@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="236.25pt" height="203.65pt" viewBox="0 0 236.25 203.65">
+<defs><clipPath id="figbox"><rect x="0" y="0" width="236.25" height="203.65"/></clipPath></defs>
+<g clip-path="url(#figbox)">
+<path d="M28.78,169.92 L218.55,169.92 M28.78,153.24 L218.55,153.24 M28.78,136.57 L218.55,136.57 M28.78,119.88 L218.55,119.88 M28.78,103.20 L218.55,103.20 M28.78,86.52 L218.55,86.52 M28.78,69.85 L218.55,69.85 M28.78,53.16 L218.55,53.16 M28.78,36.48 L218.55,36.48 M28.78,19.80 L218.55,19.80" fill="none" stroke="#b7b7b7" stroke-width="0.750" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M28.78,161.52 L218.55,161.52 M28.78,144.85 L218.55,144.85 M28.78,128.16 L218.55,128.16 M28.78,111.48 L218.55,111.48 M28.78,94.80 L218.55,94.80 M28.78,78.12 L218.55,78.12 M28.78,61.44 L218.55,61.44 M28.78,44.77 L218.55,44.77 M28.78,28.21 L218.55,28.21 M28.78,11.47 L218.55,11.47" fill="none" stroke="#868686" stroke-width="0.750" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M38.24,11.47 L38.24,178.21 M57.20,11.47 L57.20,178.21 M76.29,11.47 L76.29,178.21 M95.24,11.47 L95.24,178.21 M114.20,11.47 L114.20,178.21 M133.17,11.47 L133.17,178.21 M152.12,11.47 L152.12,178.21 M171.08,11.47 L171.08,178.21 M190.04,11.47 L190.04,178.21 M209.12,11.47 L209.12,178.21" fill="none" stroke="#b7b7b7" stroke-width="0.750" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M47.72,11.47 L47.72,178.21 M66.68,11.47 L66.68,178.21 M85.76,11.47 L85.76,178.21 M104.73,11.47 L104.73,178.21 M123.68,11.47 L123.68,178.21 M142.64,11.47 L142.64,178.21 M161.60,11.47 L161.60,178.21 M180.57,11.47 L180.57,178.21 M199.52,11.47 L199.52,178.21 M218.55,11.47 L218.55,178.21" fill="none" stroke="#868686" stroke-width="0.750" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M29.53,178.21 L29.53,17.47 L28.03,17.47 L28.03,178.21 L29.53,178.21 M28.78,17.47 L31.78,21.47 L28.78,11.47 L25.78,21.47 L28.78,17.47" fill="#000000" stroke="none"/>
+<path d="M25.61,178.21 L28.78,178.21 M25.61,161.52 L28.78,161.52 M25.61,144.85 L28.78,144.85 M25.61,128.16 L28.78,128.16 M25.61,111.48 L28.78,111.48 M25.61,94.80 L28.78,94.80 M25.61,78.12 L28.78,78.12 M25.61,61.44 L28.78,61.44 M25.61,44.77 L28.78,44.77 M25.61,28.21 L28.78,28.21 M25.61,11.47 L28.78,11.47" fill="none" stroke="#000000" stroke-width="1.500" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M28.78,177.46 L28.78,178.96 L212.55,178.96 L212.55,177.46 Z M212.55,178.21 L208.55,175.21 L218.55,178.21 L208.55,181.21 L212.55,178.21" fill="#000000" stroke="none"/>
+<path d="M28.78,178.21 L28.78,181.39 M47.72,178.21 L47.72,181.39 M66.68,178.21 L66.68,181.39 M85.76,178.21 L85.76,181.39 M104.73,178.21 L104.73,181.39 M123.68,178.21 L123.68,181.39 M142.64,178.21 L142.64,181.39 M161.60,178.21 L161.60,181.39 M180.57,178.21 L180.57,181.39 M199.52,178.21 L199.52,181.39 M218.55,178.21 L218.55,181.39" fill="none" stroke="#000000" stroke-width="1.500" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M0.38,0.38 L235.88,0.38 L235.88,203.27 L0.38,203.27 Z" fill="none" stroke="#868686" stroke-width="0.750" stroke-linecap="butt" stroke-linejoin="round"/>
+<text x="14.49" y="181.10" font-family="Arial, Helvetica, sans-serif" font-size="9.96" fill="#000000">0</text>
+<text x="6.92" y="164.42" font-family="Arial, Helvetica, sans-serif" font-size="9.96" fill="#000000">0,1</text>
+<text x="6.92" y="147.74" font-family="Arial, Helvetica, sans-serif" font-size="9.96" fill="#000000">0,2</text>
+<text x="6.92" y="131.07" font-family="Arial, Helvetica, sans-serif" font-size="9.96" fill="#000000">0,3</text>
+<text x="6.92" y="114.38" font-family="Arial, Helvetica, sans-serif" font-size="9.96" fill="#000000">0,4</text>
+<text x="6.92" y="97.70" font-family="Arial, Helvetica, sans-serif" font-size="9.98" fill="#000000">0,5</text>
+<text x="6.92" y="81.05" font-family="Arial, Helvetica, sans-serif" font-size="9.96" fill="#000000">0,6</text>
+<text x="6.92" y="64.38" font-family="Arial, Helvetica, sans-serif" font-size="9.96" fill="#000000">0,7</text>
+<text x="6.92" y="47.70" font-family="Arial, Helvetica, sans-serif" font-size="9.96" fill="#000000">0,8</text>
+<text x="6.92" y="31.02" font-family="Arial, Helvetica, sans-serif" font-size="9.96" fill="#000000">0,9</text>
+<text x="14.49" y="14.33" font-family="Arial, Helvetica, sans-serif" font-size="9.96" fill="#000000">1</text>
+<text x="22.50" y="194.11" font-family="Arial, Helvetica, sans-serif" font-size="9.96" fill="#000000">0,0</text>
+<text x="41.49" y="194.11" font-family="Arial, Helvetica, sans-serif" font-size="9.96" fill="#000000">0,1</text>
+<text x="60.46" y="194.11" font-family="Arial, Helvetica, sans-serif" font-size="9.96" fill="#000000">0,2</text>
+<text x="79.45" y="194.11" font-family="Arial, Helvetica, sans-serif" font-size="9.96" fill="#000000">0,3</text>
+<text x="98.43" y="194.11" font-family="Arial, Helvetica, sans-serif" font-size="9.96" fill="#000000">0,4</text>
+<text x="117.42" y="194.11" font-family="Arial, Helvetica, sans-serif" font-size="9.96" fill="#000000">0,5</text>
+<text x="136.40" y="194.11" font-family="Arial, Helvetica, sans-serif" font-size="9.96" fill="#000000">0,6</text>
+<text x="155.36" y="194.11" font-family="Arial, Helvetica, sans-serif" font-size="9.96" fill="#000000">0,7</text>
+<text x="174.35" y="194.11" font-family="Arial, Helvetica, sans-serif" font-size="9.96" fill="#000000">0,8</text>
+<text x="193.33" y="194.11" font-family="Arial, Helvetica, sans-serif" font-size="9.96" fill="#000000">0,9</text>
+<text x="212.32" y="194.11" font-family="Arial, Helvetica, sans-serif" font-size="9.96" fill="#000000">1,0</text>
+<text x="33.70" y="17.52" font-family="'Times New Roman', serif" font-size="14.04" fill="#000000">𝑃</text>
+<text x="42.85" y="12.36" font-family="'Times New Roman', serif" font-size="10.20" fill="#000000">∗</text>
+<text x="207.82" y="175.46" font-family="'Times New Roman', serif" font-size="14.04" fill="#000000">𝑡</text>
+<text x="214.18" y="170.30" font-family="'Times New Roman', serif" font-size="10.20" fill="#000000">∗</text>
+</g>
+</svg>

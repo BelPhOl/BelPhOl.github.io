@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Параллельное соединение ... резинок — решение — BelPhO</title>
+  <meta name="description" content="Параллельное соединение ... резинок — Городская олимпиада (3-й этап) 2011, 9 класс, задача Э2. Подробное решение с ответами.">
+  <link rel="canonical" href="https://belpho.org/problems/third/2011/9-e2/solution/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BelPhO">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:url" content="https://belpho.org/problems/third/2011/9-e2/solution/">
+  <meta property="og:title" content="Параллельное соединение ... резинок — решение — BelPhO">
+  <meta property="og:description" content="Параллельное соединение ... резинок — Городская олимпиада (3-й этап) 2011, 9 класс, задача Э2. Подробное решение с ответами.">
+  
+  <meta property="og:image" content="https://belpho.org/problems/thumbs/og/third-2011.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/css/platform.css">
+</head>
+<body>
+<svg id="mjx-glyph-cache" aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden"><defs><path id="MJX-TEX-N-394" d="M51 0Q46 4 46 7Q46 9 215 357T388 709Q391 716 416 716Q439 716 444 709Q447 705 616 357T786 7Q786 4 781 0H51ZM507 344L384 596L137 92L383 91H630Q630 93 507 344Z"></path><path id="MJX-TEX-I-1D459" d="M117 59Q117 26 142 26Q179 26 205 131Q211 151 215 152Q217 153 225 153H229Q238 153 241 153T246 151T248 144Q247 138 245 128T234 90T214 43T183 6T137 -11Q101 -11 70 11T38 85Q38 97 39 102L104 360Q167 615 167 623Q167 626 166 628T162 632T157 634T149 635T141 636T132 637T122 637Q112 637 109 637T101 638T95 641T94 647Q94 649 96 661Q101 680 107 682T179 688Q194 689 213 690T243 693T254 694Q266 694 266 686Q266 675 193 386T118 83Q118 81 118 75T117 65V59Z"></path><path id="MJX-TEX-I-1D700" d="M190 -22Q124 -22 76 11T27 107Q27 174 97 232L107 239L99 248Q76 273 76 304Q76 364 144 408T290 452H302Q360 452 405 421Q428 405 428 392Q428 381 417 369T391 356Q382 356 371 365T338 383T283 392Q217 392 167 368T116 308Q116 289 133 272Q142 263 145 262T157 264Q188 278 238 278H243Q308 278 308 247Q308 206 223 206Q177 206 142 219L132 212Q68 169 68 112Q68 39 201 39Q253 39 286 49T328 72T345 94T362 105Q376 103 376 88Q376 79 365 62T334 26T275 -8T190 -22Z"></path><path id="MJX-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJX-TEX-I-1D441" d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z"></path><path id="MJX-TEX-I-1D43F" d="M228 637Q194 637 192 641Q191 643 191 649Q191 673 202 682Q204 683 217 683Q271 680 344 680Q485 680 506 683H518Q524 677 524 674T522 656Q517 641 513 637H475Q406 636 394 628Q387 624 380 600T313 336Q297 271 279 198T252 88L243 52Q243 48 252 48T311 46H328Q360 46 379 47T428 54T478 72T522 106T564 161Q580 191 594 228T611 270Q616 273 628 273H641Q647 264 647 262T627 203T583 83T557 9Q555 4 553 3T537 0T494 -1Q483 -1 418 -1T294 0H116Q32 0 32 10Q32 17 34 24Q39 43 44 45Q48 46 59 46H65Q92 46 125 49Q139 52 144 61Q147 65 216 339T285 628Q285 635 228 637Z"></path></defs></svg>
+<header class="site-header">
+  <div class="container header-content">
+    <a href="/" class="logo">
+      <img src="/img/logo.png" alt="BelPhO" class="logo-img" width="36" height="36">
+      <span>BelPhO</span>
+    </a>
+    <nav class="site-nav" aria-label="Основная навигация">
+      <ul class="nav-links">
+        <li><a href="/">Главная</a></li>
+        <li><a href="/problems/" class="active">Задачи</a></li>
+        <li><a href="/books/">Книги</a></li>
+        <li><a href="/training-program.html">Подготовка</a></li>
+        <li><a href="/alumni.html">Выпускники</a></li>
+        <li><a href="/news/">Новости</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<main class="p-shell">
+  <div class="p-layout">
+    
+<aside class="p-sidebar" id="p-sidebar" data-problem-id="2011-third-exp-9-2">
+  <div class="sb-card">
+    <div class="sb-head">
+      <div class="sb-crumb"><a href="/problems/third/">Городская</a> · <a href="/problems/third/2011/">2011</a></div>
+      <h1 class="sb-title">Параллельное соединение ... резинок</h1>
+      <div class="sb-meta">
+        <span class="sb-chip">9 класс</span>
+        <span class="sb-chip sb-chip-num">№ Э2</span>
+        
+        
+        
+      </div>
+    </div>
+    <nav class="sb-nav" aria-label="Разделы задачи">
+      
+      <a class="sb-item" href="/problems/third/2011/9-e2/"
+         >
+        <span class="sb-glyph sb-glyph-t">T</span>
+        <span>Условие</span>
+      </a>
+      
+      <a class="sb-item on" href="/problems/third/2011/9-e2/solution/"
+         aria-current=&#34;page&#34;>
+        <span class="sb-glyph sb-glyph-s">S</span>
+        <span>Решение</span>
+      </a>
+      
+      
+      <a class="sb-item sb-item-edu" href="/problems/third/2011/9-e2/edu/"
+         >
+        <span class="sb-glyph sb-glyph-e">E</span>
+        <span>Режим тренировки</span>
+      </a>
+      
+      <details class="sb-files" id="sb-files">
+        <summary class="sb-item sb-item-files">
+          <span class="sb-glyph sb-glyph-f">▾</span><span>Файлы</span>
+        </summary>
+        <div class="sb-files-menu">
+          
+          <span class="sb-file sb-file-none">PDF появятся позже</span>
+        </div>
+      </details>
+    </nav>
+    
+  </div>
+</aside>
+
+    <div class="p-main" id="p-main">
+      <div class="page-head">
+  <h2 class="page-title">Решение</h2>
+  <span class="page-sub">Городская олимпиада (3-й этап) · 2011 · 9 класс · № Э2</span>
+</div>
+
+
+
+<section class="intro-card">
+  <p><strong>Часть 1. Одна резинка.</strong></p>
+<p>В таблице 1 приведены измеренные значения удлинения резинок <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.559ex" height="1.645ex" role="img" focusable="false" viewBox="0 -716 1131 727" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="394" xlink:href="#MJX-TEX-N-394"></use></g><g data-mml-node="mi" transform="translate(833,0)"><use data-c="1D459" xlink:href="#MJX-TEX-I-1D459"></use></g></g></g></svg></mjx-container>, а также рассчитанные относительные удлинения <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -1.045ex;" xmlns="http://www.w3.org/2000/svg" width="6.876ex" height="3.082ex" role="img" focusable="false" viewBox="0 -900.3 3039.3 1362.4" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D700" xlink:href="#MJX-TEX-I-1D700"></use></g><g data-mml-node="mo" transform="translate(743.8,0)"><use data-c="3D" xlink:href="#MJX-TEX-N-3D"></use></g><g data-mml-node="mfrac" transform="translate(1799.6,0)"><g data-mml-node="mrow" transform="translate(220,394) scale(0.707)"><g data-mml-node="mi"><use data-c="394" xlink:href="#MJX-TEX-N-394"></use></g><g data-mml-node="mi" transform="translate(833,0)"><use data-c="1D459" xlink:href="#MJX-TEX-I-1D459"></use></g></g><g data-mml-node="msub" transform="translate(360.2,-345) scale(0.707)"><g data-mml-node="mi"><use data-c="1D459" xlink:href="#MJX-TEX-I-1D459"></use></g><g data-mml-node="mn" transform="translate(331,-150) scale(0.707)"><use data-c="30" xlink:href="#MJX-TEX-N-30"></use></g></g><rect width="999.7" height="60" x="120" y="220"></rect></g></g></g></svg></mjx-container> при всех значениях числа подвешенных грузов <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="2.009ex" height="1.545ex" role="img" focusable="false" viewBox="0 -683 888 683" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D441" xlink:href="#MJX-TEX-I-1D441"></use></g></g></g></svg></mjx-container> для двух различных значений начальной длины.</p>
+<p><strong>Таблица 1.</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left"><strong><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.375ex;" xmlns="http://www.w3.org/2000/svg" width="2.528ex" height="1.92ex" role="img" focusable="false" viewBox="0 -683 1117.6 848.6" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D43F" xlink:href="#MJX-TEX-I-1D43F"></use></g><g data-mml-node="mn" transform="translate(714,-150) scale(0.707)"><use data-c="30" xlink:href="#MJX-TEX-N-30"></use></g></g></g></g></svg></mjx-container>=30 см</strong></th>
+<th align="left"></th>
+<th align="left"></th>
+<th align="left"><strong><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.375ex;" xmlns="http://www.w3.org/2000/svg" width="2.528ex" height="1.92ex" role="img" focusable="false" viewBox="0 -683 1117.6 848.6" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D43F" xlink:href="#MJX-TEX-I-1D43F"></use></g><g data-mml-node="mn" transform="translate(714,-150) scale(0.707)"><use data-c="30" xlink:href="#MJX-TEX-N-30"></use></g></g></g></g></svg></mjx-container>=20 см</strong></th>
+<th align="left"></th>
+<th align="left"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="2.009ex" height="1.545ex" role="img" focusable="false" viewBox="0 -683 888 683" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D441" xlink:href="#MJX-TEX-I-1D441"></use></g></g></g></svg></mjx-container></td>
+<td align="left"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.559ex" height="1.645ex" role="img" focusable="false" viewBox="0 -716 1131 727" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="394" xlink:href="#MJX-TEX-N-394"></use></g><g data-mml-node="mi" transform="translate(833,0)"><use data-c="1D459" xlink:href="#MJX-TEX-I-1D459"></use></g></g></g></svg></mjx-container>, мм</td>
+<td align="left"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="1.054ex" height="1.072ex" role="img" focusable="false" viewBox="0 -452 466 474" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D700" xlink:href="#MJX-TEX-I-1D700"></use></g></g></g></svg></mjx-container></td>
+<td align="left"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="2.009ex" height="1.545ex" role="img" focusable="false" viewBox="0 -683 888 683" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D441" xlink:href="#MJX-TEX-I-1D441"></use></g></g></g></svg></mjx-container></td>
+<td align="left"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.559ex" height="1.645ex" role="img" focusable="false" viewBox="0 -716 1131 727" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="394" xlink:href="#MJX-TEX-N-394"></use></g><g data-mml-node="mi" transform="translate(833,0)"><use data-c="1D459" xlink:href="#MJX-TEX-I-1D459"></use></g></g></g></svg></mjx-container>, мм</td>
+<td align="left"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="1.054ex" height="1.072ex" role="img" focusable="false" viewBox="0 -452 466 474" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D700" xlink:href="#MJX-TEX-I-1D700"></use></g></g></g></svg></mjx-container></td>
+</tr>
+<tr>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0,00</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0,00</td>
+</tr>
+<tr>
+<td align="left">1</td>
+<td align="left">13</td>
+<td align="left">0,04</td>
+<td align="left">1</td>
+<td align="left">11</td>
+<td align="left">0,06</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">79</td>
+<td align="left">0,26</td>
+<td align="left">2</td>
+<td align="left">55</td>
+<td align="left">0,28</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">207</td>
+<td align="left">0,69</td>
+<td align="left">3</td>
+<td align="left">135</td>
+<td align="left">0,68</td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">328</td>
+<td align="left">1,09</td>
+<td align="left">4</td>
+<td align="left">212</td>
+<td align="left">1,06</td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left">439</td>
+<td align="left">1,46</td>
+<td align="left">5</td>
+<td align="left">277</td>
+<td align="left">1,39</td>
+</tr>
+<tr>
+<td align="left">6</td>
+<td align="left">476</td>
+<td align="left">1,59</td>
+<td align="left">6</td>
+<td align="left">311</td>
+<td align="left">1,56</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">6</td>
+<td align="left">476</td>
+<td align="left">1,59</td>
+<td align="left">6</td>
+<td align="left">311</td>
+<td align="left">1,56</td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left">461</td>
+<td align="left">1,54</td>
+<td align="left">5</td>
+<td align="left">298</td>
+<td align="left">1,49</td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">432</td>
+<td align="left">1,44</td>
+<td align="left">4</td>
+<td align="left">277</td>
+<td align="left">1,39</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">364</td>
+<td align="left">1,21</td>
+<td align="left">3</td>
+<td align="left">221</td>
+<td align="left">1,11</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">135</td>
+<td align="left">0,45</td>
+<td align="left">2</td>
+<td align="left">82</td>
+<td align="left">0,41</td>
+</tr>
+<tr>
+<td align="left">1</td>
+<td align="left">45</td>
+<td align="left">0,15</td>
+<td align="left">1</td>
+<td align="left">21</td>
+<td align="left">0,11</td>
+</tr>
+<tr>
+<td align="left">0</td>
+<td align="left">13</td>
+<td align="left">0,04</td>
+<td align="left">0</td>
+<td align="left">5</td>
+<td align="left">0,03</td>
+</tr>
+</tbody></table>
+<p>На рис.1 показаны графики полученных зависимостей удлинений резинок от числа подвешенных грузов. На обоих графиках четко наблюдается гистерезис, то есть деформации резинок при разгрузке больше, чем при нагрузке (остаточные деформации). На рис. 2 показаны относительные деформации резинок – они одинаковы (с точностью до ошибок измерения) для двух начальных длин.</p>
+<p><figure class="md-fig" style="--fig-w:99%"><img src="/problems/data/figures/2011-third-exp-9-2/fig2.png" alt="" loading="lazy"></figure></p>
+<p><strong>Часть 2. Сдвоенная резинка.</strong></p>
+<p>Экспериментально полученные результаты измерений зависимости удлинений сдвоенной резинки от числа подвешенных грузов представлены в таблице 2 и на графике 3 (по условию его строить не требуется).</p>
+<p><strong>Таблица 2.</strong></p>
+<table>
+<thead>
+<tr>
+<th><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="2.009ex" height="1.545ex" role="img" focusable="false" viewBox="0 -683 888 683" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D441" xlink:href="#MJX-TEX-I-1D441"></use></g></g></g></svg></mjx-container></th>
+<th><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.559ex" height="1.645ex" role="img" focusable="false" viewBox="0 -716 1131 727" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="394" xlink:href="#MJX-TEX-N-394"></use></g><g data-mml-node="mi" transform="translate(833,0)"><use data-c="1D459" xlink:href="#MJX-TEX-I-1D459"></use></g></g></g></svg></mjx-container>, см</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0</td>
+<td>0,0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1,0</td>
+</tr>
+<tr>
+<td>2</td>
+<td>1,5</td>
+</tr>
+<tr>
+<td>3</td>
+<td>2,0</td>
+</tr>
+<tr>
+<td>4</td>
+<td>4,5</td>
+</tr>
+<tr>
+<td>5</td>
+<td>7,5</td>
+</tr>
+<tr>
+<td>6</td>
+<td>10,5</td>
+</tr>
+<tr>
+<td>6</td>
+<td>10,5</td>
+</tr>
+<tr>
+<td>5</td>
+<td>8,0</td>
+</tr>
+<tr>
+<td>4</td>
+<td>6,0</td>
+</tr>
+<tr>
+<td>3</td>
+<td>3,0</td>
+</tr>
+<tr>
+<td>2</td>
+<td>2,0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1,0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0,0</td>
+</tr>
+</tbody></table>
+<p><figure class="md-fig md-fig-float md-fig-float-right" style="--fig-w:59%"><img src="/problems/data/figures/2011-third-exp-9-2/fig3.png" alt="" loading="lazy"></figure></p>
+<p>В первой части работы показано, что относительная деформация резинки не зависит от ее длины. Поэтому для построения теоретической зависимости удлинения сдвоенной резинки можно построить графики зависимости удлинения каждой из частей резинок (используя формулу <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.375ex;" xmlns="http://www.w3.org/2000/svg" width="8.292ex" height="1.994ex" role="img" focusable="false" viewBox="0 -716 3665.1 881.6" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="394" xlink:href="#MJX-TEX-N-394"></use></g><g data-mml-node="mi" transform="translate(833,0)"><use data-c="1D459" xlink:href="#MJX-TEX-I-1D459"></use></g><g data-mml-node="mo" transform="translate(1408.8,0)"><use data-c="3D" xlink:href="#MJX-TEX-N-3D"></use></g><g data-mml-node="mi" transform="translate(2464.6,0)"><use data-c="1D700" xlink:href="#MJX-TEX-I-1D700"></use></g><g data-mml-node="msub" transform="translate(2930.6,0)"><g data-mml-node="mi"><use data-c="1D459" xlink:href="#MJX-TEX-I-1D459"></use></g><g data-mml-node="mn" transform="translate(331,-150) scale(0.707)"><use data-c="30" xlink:href="#MJX-TEX-N-30"></use></g></g></g></g></svg></mjx-container>) от массы подвешенных грузов. Так как для «параллельно» соединенных резинок удлинения одинаковы, а суммарная сила упругости равна сумме сил упругости обоих резинок, то следует провести «сложение» графиков «по горизонтали». Иными словами для нескольких значений <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.559ex" height="1.645ex" role="img" focusable="false" viewBox="0 -716 1131 727" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="394" xlink:href="#MJX-TEX-N-394"></use></g><g data-mml-node="mi" transform="translate(833,0)"><use data-c="1D459" xlink:href="#MJX-TEX-I-1D459"></use></g></g></g></svg></mjx-container> в интервале от 0 до 10 см просуммировать значения масс, якобы подвешенных грузов. Такие построения показаны на рис. 4, где:</p>
+<p>1 – удлинения для резинки 20 см;<br />2 – удлинения для резинки 10 см;<br />3 – просуммированный график;<br />4 – экспериментальные значения.</p>
+<p>Чтобы не загромождать чертеж, результаты расчетов приведены только для «нагрузки».</p>
+<p>Как видно из графика наблюдается соответствие между экспериментальной и рассчитанной зависимостями.</p>
+<p><figure class="md-fig md-fig-float md-fig-float-right" style="--fig-w:60%"><img src="/problems/data/figures/2011-third-exp-9-2/fig4.png" alt="" loading="lazy"></figure></p>
+</section>
+
+
+
+
+
+
+
+
+
+<div class="page-next">
+  <a class="btn btn-ghost" href="/problems/third/2011/9-e2/">← Условие</a>
+  <a class="btn btn-primary" href="/problems/third/2011/9-e2/edu/">Режим тренировки →</a>
+</div>
+
+
+
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© 2026 BelPhO — Белорусские физические олимпиады</span>
+    <span class="footer-links">
+      <a href="/problems/">Задачи</a>
+      <a href="https://t.me/belpho_by" rel="noopener">Telegram</a>
+    </span>
+  </div>
+</footer>
+
+
+<script type="module" src="/js/site/problem-page.js"></script>
+
+</body>
+</html>

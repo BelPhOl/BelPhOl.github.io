@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="119.22" height="48.78003" viewBox="0 0 119.22 48.78003">
+<defs>
+<filter id="filter-remove-color" x="0%" y="0%" width="100%" height="100%">
+<feColorMatrix color-interpolation-filters="sRGB" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
+</filter>
+<filter id="filter-color-to-alpha" x="0%" y="0%" width="100%" height="100%">
+<feColorMatrix color-interpolation-filters="sRGB" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0.2126 0.7152 0.0722 0 0"/>
+</filter>
+<clipPath id="clip-0">
+<path clip-rule="nonzero" d="M 0 0.0507812 L 118.445312 0.0507812 L 118.445312 48.511719 L 0 48.511719 Z M 0 0.0507812 "/>
+</clipPath>
+<clipPath id="clip-1">
+<path clip-rule="nonzero" d="M 0 0.0507812 L 118 0.0507812 L 118 48.511719 L 0 48.511719 Z M 0 0.0507812 "/>
+</clipPath>
+<image id="source-8" x="0" y="0" width="151" height="58" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJcAAAA6CAAAAACYdpSVAAAAAmJLR0QA/4ePzL8AAAGFSURBVGiB7VlBEsMgCIRO/v9leqgxosaAYLRt9tApIdVlRxAtEiyJ12wCJ3h46bABAABOZsFAAOvqtSqvLX5zKhj4GQgBCAnVw+4rSqcXKhYiIWF/rNv1K9iIufRFGz96dYLpdSkHKQQYrldr8IbPUS+NHJew6TWuTjjqVQxt2Qcm6CXi66sXm5KttzaZ0js8H0uIprPplfM6nzJ4Tqps+ZBMxL4yH2sQ17g/rF8meOVjiI2qZofTphfuXdwB4g8ot4TOkI/6vpAyXvEbhc/dxA6noV8lgLKPphAwQWpyS+Q01i9MYj0op1FibomcVr3Wz8djwCwNMHezzYgKZ8CA+nU6V2FVnHtn4aeXPKkl742o92ncnMWlXHED9dPL94pu1P5oPRz9dT/RcTJaQa8a7Vv06lhsbvmo7kkSDpVnM/vV1rJz00swiEbSmXq1lt2d523NPIP06rrLSX+0Qv2qwfd+IqIrVNZ5/OT9ROX8OBvP/0MdMKTyUKyq18NLh4eXDqvyegNmWtF1D5ZfuwAAAABJRU5ErkJggg=="/>
+<mask id="mask-0">
+<g filter="url(#filter-remove-color)">
+<use xlink:href="#source-8" filter="url(#filter-color-to-alpha)" transform="matrix(0.784404, 0, 0, 0.835568, -0.000035766, 0.0493266)"/>
+</g>
+</mask>
+</defs>
+<g clip-path="url(#clip-0)">
+<path fill-rule="nonzero" fill="rgb(0%, 0%, 0%)" fill-opacity="1" d="M 0.03125 48.484375 L 118.414062 48.484375 L 118.414062 0.078125 L 0.03125 0.078125 Z M 0.03125 48.484375 "/>
+</g>
+<g clip-path="url(#clip-1)">
+<g mask="url(#mask-0)">
+<rect x="-11.922" y="-4.878003" width="143.064" height="58.536036" fill="rgb(99.607849%, 99.607849%, 99.607849%)" fill-opacity="1"/>
+</g>
+</g>
+</svg>

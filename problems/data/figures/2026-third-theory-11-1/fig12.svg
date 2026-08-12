@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="111.60pt" height="69.66pt" viewBox="0 0 111.60 69.66">
+<defs><clipPath id="figbox"><rect x="0" y="0" width="111.60" height="69.66"/></clipPath></defs>
+<g clip-path="url(#figbox)">
+<path d="M-208.88,69.20 L131.52,69.20" fill="none" stroke="#000000" stroke-width="0.480" stroke-linecap="butt" stroke-linejoin="round" stroke-dasharray="1.44,.48" stroke-dashoffset="0.00"/>
+<path d="M88.70,3.21 C76.12,3.21 65.92,13.41 65.92,25.98 C65.92,38.56 76.12,48.76 88.70,48.76 C101.27,48.76 111.47,38.56 111.47,25.98 C111.47,13.41 101.27,3.21 88.70,3.21" fill="none" stroke="#000000" stroke-width="0.250" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M0.38,9.96 L15.38,9.96 L15.38,15.76 L0.38,15.76 Z" fill="#bfbfbf" stroke="#000000" fill-rule="evenodd" stroke-width="0.750" stroke-linecap="round" stroke-linejoin="miter"/>
+<path d="M15.16,10.16 C15.20,10.15 15.23,10.15 15.27,10.15 C16.83,10.15 18.10,11.38 18.10,12.88 C18.10,14.39 16.83,15.62 15.27,15.62 C15.23,15.62 15.20,15.61 15.16,15.61 L15.14,16.26 C15.18,16.26 15.23,16.26 15.27,16.26 C17.20,16.26 18.77,14.75 18.77,12.88 C18.77,11.02 17.20,9.51 15.27,9.51 C15.23,9.51 15.18,9.51 15.14,9.51 L15.16,10.16" fill="#bfbfbf" stroke="#000000" fill-rule="evenodd" stroke-width="0.750" stroke-linecap="round" stroke-linejoin="miter"/>
+<path d="M18.77,12.41 L43.22,12.45 L43.22,13.45 L18.77,13.41 L18.77,12.41 M43.22,12.95 L39.22,10.94 L49.22,12.96 L39.22,14.94 L43.22,12.95" fill="#000000" stroke="none"/>
+<path d="M37.77,12.96 L70.27,13.01" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M66.22,26.11 L111.47,26.06" fill="none" stroke="#000000" stroke-width="0.250" stroke-linecap="butt" stroke-linejoin="round" stroke-dasharray="1,.75" stroke-dashoffset="0.00"/>
+<path d="M88.67,48.76 L88.72,3.21" fill="none" stroke="#000000" stroke-width="0.500" stroke-linecap="butt" stroke-linejoin="round" stroke-dasharray="2,1.5" stroke-dashoffset="0.00"/>
+<path d="M87.88,26.13 C87.88,25.68 88.23,25.31 88.67,25.31 C89.11,25.31 89.47,25.68 89.47,26.13 C89.47,26.59 89.11,26.96 88.67,26.96 C88.23,26.96 87.88,26.59 87.88,26.13 M88.27,26.13 C88.27,26.36 88.45,26.55 88.67,26.55 C88.89,26.55 89.07,26.36 89.07,26.13 C89.07,25.91 88.89,25.72 88.67,25.72 C88.45,25.72 88.27,25.91 88.27,26.13" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M89.07,63.75 L88.76,63.75 L88.76,48.41 L88.13,48.41 L88.13,63.75 L87.82,63.75 L88.44,68.86 L89.07,63.75" fill="none" stroke="#000000" stroke-width="0.500" stroke-linecap="round" stroke-linejoin="miter"/>
+<path d="M-4.38,26.06 L72.47,26.06" fill="none" stroke="#000000" stroke-width="0.250" stroke-linecap="butt" stroke-linejoin="round" stroke-dasharray="1,.75" stroke-dashoffset="0.00"/>
+<path d="M54.85,19.26 L54.85,21.71 L53.85,21.71 L53.85,19.26 L54.85,19.26 M54.35,19.26 L52.35,23.27 L54.32,13.26 L56.35,23.25 L54.35,19.26 M54.35,21.71 L56.35,17.70 L54.38,27.71 L52.35,17.72 L54.35,21.71" fill="#000000" stroke="none"/>
+<text x="30.33" y="49.76" font-family="'Times New Roman', Georgia, serif" font-size="6.96" fill="#000000">Рис. 4 </text>
+<text x="23.13" y="10.73" font-family="'Times New Roman', serif" font-size="8.52" fill="#000000">𝐴</text>
+<text x="58.77" y="34.61" font-family="'Times New Roman', serif" font-size="8.52" fill="#000000">𝐶</text>
+<text x="5.61" y="8.09" font-family="'Times New Roman', serif" font-size="8.52" fill="#000000">Л </text>
+<text x="91.29" y="59.60" font-family="'Times New Roman', serif" font-size="8.52" fill="#000000">𝜐⃗</text>
+<text x="46.05" y="22.97" font-family="'Times New Roman', serif" font-size="8.52" fill="#000000">ℎ</text>
+<text x="65.85" y="10.49" font-family="'Times New Roman', serif" font-size="8.52" fill="#000000">𝐵</text>
+</g>
+</svg>

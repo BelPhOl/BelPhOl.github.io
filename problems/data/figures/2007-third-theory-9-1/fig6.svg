@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="108.80pt" height="41.55pt" viewBox="0 0 108.80 41.55">
+<defs><clipPath id="figbox"><rect x="0" y="0" width="108.80" height="41.55"/></clipPath></defs>
+<g clip-path="url(#figbox)">
+<path d="M18.42,20.17 C18.42,31.10 23.46,39.98 29.70,39.98 L97.20,39.98 C103.38,39.98 108.42,31.10 108.42,20.17 C108.42,9.20 103.38,0.38 97.20,0.38 L29.70,0.38 C23.46,0.38 18.42,9.20 18.42,20.17 M29.70,39.98 C35.88,39.98 40.92,31.10 40.92,20.17 C40.92,9.20 35.88,0.38 29.70,0.38" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M0.42,23.72 L22.44,23.78 L22.68,23.90 L22.80,24.14 L22.68,24.43 L22.44,24.49 L0.36,24.49 L0.12,24.38 L0.00,24.08 L0.12,23.84 L0.42,23.72 M21.42,21.14 L27.42,24.14 L21.42,27.14" fill="#000000" stroke="none"/>
+<text x="25.62" y="22.99" font-family="'Times New Roman', Georgia, serif" font-size="12.01" font-style="italic" fill="#000000">S </text>
+<text x="7.62" y="38.95" font-family="'Times New Roman', Georgia, serif" font-size="12.01" font-style="italic" fill="#000000">p </text>
+</g>
+</svg>

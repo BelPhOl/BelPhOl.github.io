@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="124.5" height="36.78003" viewBox="0 0 124.5 36.78003">
+<defs>
+<filter id="filter-remove-color" x="0%" y="0%" width="100%" height="100%">
+<feColorMatrix color-interpolation-filters="sRGB" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
+</filter>
+<filter id="filter-color-to-alpha" x="0%" y="0%" width="100%" height="100%">
+<feColorMatrix color-interpolation-filters="sRGB" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0.2126 0.7152 0.0722 0 0"/>
+</filter>
+<clipPath id="clip-0">
+<path clip-rule="nonzero" d="M 0.121094 0.0585938 L 123.882812 0.0585938 L 123.882812 36.5625 L 0.121094 36.5625 Z M 0.121094 0.0585938 "/>
+</clipPath>
+<image id="source-9" x="0" y="0" width="159" height="42" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJ8AAAAqCAAAAACId9b6AAAAAmJLR0QA/4ePzL8AAADISURBVFiF7ZZRC8MwCIR17P//ZfcwErSrrOWSxpa7PBTExo+rFtWktF6rAf6IfJjIh4l8mMiHiXyY3mdf0BkUQWEjeIJ/iWWWWonsRJtLq/t3kM/6kf6McZ9xOZ9pPyLtGeM+43I+V75BbeM+Yz6faiizzr9kfq0N0rfaOv86X3Ktilj0SRzGrn9DAav3X/fvp238913nX9J/GoHLza9Z8JP/v7zygZz98Kz94Fb71el24X4aNHjchqu6f+TDRD5M5MNEPkzV+T637eRNE/PKpgAAAABJRU5ErkJggg=="/>
+<mask id="mask-0">
+<g filter="url(#filter-remove-color)">
+<use xlink:href="#source-9" filter="url(#filter-color-to-alpha)" transform="matrix(0.778364, 0, 0, 0.870508, 0.121564, -0.000017893)"/>
+</g>
+</mask>
+</defs>
+<g clip-path="url(#clip-0)">
+<path fill-rule="nonzero" fill="rgb(0%, 0%, 0%)" fill-opacity="1" d="M 0.152344 36.53125 L 123.851562 36.53125 L 123.851562 0.0585938 L 0.152344 0.0585938 Z M 0.152344 36.53125 "/>
+<g mask="url(#mask-0)">
+<rect x="-12.45" y="-3.678003" width="149.4" height="44.136036" fill="rgb(99.607849%, 99.607849%, 99.607849%)" fill-opacity="1"/>
+</g>
+</g>
+</svg>

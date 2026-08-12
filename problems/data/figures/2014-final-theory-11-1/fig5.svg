@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="206.55pt" height="65.65pt" viewBox="0 0 206.55 65.65">
+<defs><clipPath id="figbox"><rect x="0" y="0" width="206.55" height="65.65"/></clipPath></defs>
+<g clip-path="url(#figbox)">
+<path d="M64.33,0.38 C85.10,0.38 101.77,14.77 101.77,32.53 C101.77,50.29 85.10,64.69 64.33,64.69 L26.77,64.69 L26.77,0.38" fill="#bfbfbf" stroke="none" fill-rule="evenodd"/>
+<path d="M64.33,0.38 C85.10,0.38 101.77,14.77 101.77,32.53 C101.77,50.29 85.10,64.69 64.33,64.69 L26.77,64.69 L26.77,0.38 L64.33,0.38" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="round" stroke-linejoin="miter"/>
+<path d="M0.38,32.89 L206.18,32.89" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M64.57,64.69 L64.57,0.38" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="butt" stroke-linejoin="round" stroke-dasharray="3,2.25" stroke-dashoffset="0.00"/>
+<path d="M0.38,13.57 L92.77,13.57" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M0.38,53.29 L92.77,53.29" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M0.38,27.38 L101.77,27.49" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M0.38,37.69 L101.77,37.69" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M92.77,13.57 L152.18,47.89" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M92.77,53.29 L144.37,21.97" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M101.77,27.38 L189.37,32.89" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M101.77,37.69 L194.77,32.89" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M64.93,32.65 L76.57,57.01 L75.97,57.38 L64.33,33.01 L64.93,32.65 M62.77,33.73 L62.65,32.89 L62.77,32.17 L63.13,31.57 L63.74,31.09 L64.57,30.85 L65.29,30.97 L66.01,31.33 L66.49,31.93 L66.62,32.77 L66.49,33.49 L66.13,34.21 L65.54,34.69 L64.69,34.81 L63.98,34.69 L63.25,34.33 L62.77,33.73 M78.50,54.97 L78.37,61.69 L73.10,57.61" fill="#000000" stroke="none"/>
+<path d="M126.62,31.81 C125.90,31.81 125.17,32.41 125.17,33.25 C125.17,33.97 125.90,34.57 126.62,34.57 C127.34,34.57 127.94,33.97 127.94,33.25 C127.94,32.41 127.34,31.81 126.62,31.81" fill="#000000" stroke="#000000" fill-rule="evenodd" stroke-width="0.750" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M186.85,31.93 C186.13,31.93 185.53,32.53 185.53,33.25 C185.53,34.09 186.13,34.69 186.85,34.69 C187.57,34.69 188.18,34.09 188.18,33.25 C188.18,32.53 187.57,31.93 186.85,31.93" fill="#000000" stroke="#000000" fill-rule="evenodd" stroke-width="0.750" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.77,37.45 L14.77,37.93 L18.62,37.93 L18.62,37.45 Z M18.62,37.69 L16.57,34.69 L22.57,37.69 L16.57,40.69" fill="#000000" stroke="none"/>
+<path d="M6.98,32.65 L6.98,33.13 L10.82,33.13 L10.82,32.65 Z M10.82,32.89 L8.89,29.89 L14.77,32.89 L8.77,35.89" fill="#000000" stroke="none"/>
+<path d="M14.77,27.25 L14.77,27.73 L18.62,27.73 L18.62,27.25 Z M18.62,27.49 L16.69,24.49 L22.57,27.49 L16.57,30.49" fill="#000000" stroke="none"/>
+<path d="M6.98,13.33 L6.98,13.81 L10.82,13.81 L10.82,13.33 Z M10.82,13.57 L8.77,10.57 L14.77,13.57 L8.77,16.57" fill="#000000" stroke="none"/>
+<path d="M6.98,53.05 L6.98,53.53 L10.82,53.53 L10.82,53.05 Z M10.82,53.29 L8.89,50.29 L14.77,53.29 L8.77,56.29" fill="#000000" stroke="none"/>
+<path d="M101.65,48.13 L106.10,45.01 L106.57,45.61 L102.01,48.73 L101.65,48.13 M106.33,45.38 L102.97,44.05 L109.57,43.09 L106.33,48.97" fill="#000000" stroke="none"/>
+<path d="M146.41,34.45 L146.41,35.17 L153.13,35.17 L153.13,34.45 Z M153.13,34.81 L151.10,31.81 L157.10,34.81 L151.10,37.81" fill="#000000" stroke="none"/>
+<path d="M104.90,19.45 L109.45,22.57 L108.97,23.17 L104.54,20.05 L104.90,19.45 M109.21,22.81 L109.33,19.21 L112.57,25.09 L105.85,24.13" fill="#000000" stroke="none"/>
+<path d="M141.97,30.13 L145.82,29.65 L145.82,30.38 L141.97,30.85 L141.97,30.13 M145.82,30.01 L143.41,27.25 L149.77,29.53 L144.25,33.25" fill="#000000" stroke="none"/>
+<path d="M106.21,32.53 L106.21,33.25 L110.05,33.25 L110.05,32.53 Z M110.05,32.89 L108.01,29.89 L114.01,32.89 L108.01,35.89" fill="#000000" stroke="none"/>
+<path d="M1.69,4.21 L26.77,4.69" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M6.49,3.97 L8.77,3.97 L8.77,4.57 L6.49,4.45 L6.49,3.97 M8.77,4.21 L6.74,1.21 L12.74,4.33 L6.74,7.21" fill="#000000" stroke="none"/>
+<path d="M1.69,62.65 L26.77,63.01" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M6.49,62.41 L6.49,62.89 L8.77,62.89 L8.77,62.41 Z M8.77,62.65 L6.74,59.65 L12.74,62.65 L6.74,65.65" fill="#000000" stroke="none"/>
+<text x="75.49" y="51.37" font-family="'Times New Roman', Georgia, serif" font-size="12.00" font-weight="bold" fill="#000000">R </text>
+<text x="38.29" y="50.41" font-family="'Times New Roman', Georgia, serif" font-size="12.00" font-weight="bold" fill="#000000">n </text>
+<text x="125.29" y="47.77" font-family="'Times New Roman', Georgia, serif" font-size="11.97" fill="#000000">F</text>
+<text x="131.90" y="48.73" font-family="'Times New Roman', Georgia, serif" font-size="8.04" fill="#000000">1 </text>
+<text x="185.29" y="47.77" font-family="'Times New Roman', Georgia, serif" font-size="11.97" fill="#000000">F</text>
+</g>
+</svg>

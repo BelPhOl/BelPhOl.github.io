@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="148.49997" height="55.5" viewBox="0 0 148.49997 55.5">
+<defs>
+<filter id="filter-remove-color" x="0%" y="0%" width="100%" height="100%">
+<feColorMatrix color-interpolation-filters="sRGB" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
+</filter>
+<filter id="filter-color-to-alpha" x="0%" y="0%" width="100%" height="100%">
+<feColorMatrix color-interpolation-filters="sRGB" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0.2126 0.7152 0.0722 0 0"/>
+</filter>
+<clipPath id="clip-0">
+<path clip-rule="nonzero" d="M 0.414062 0 L 147.589844 0 L 147.589844 55 L 0.414062 55 Z M 0.414062 0 "/>
+</clipPath>
+<image id="source-8" x="0" y="0" width="190" height="67" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAL4AAABDCAAAAAAHE+CGAAAAAmJLR0QA/4ePzL8AAAJySURBVGiB7ZrRcsQgCEWhs///y/RB1xiFBAgSO1NeOrOb6MnNFdAtEvzl+AkfETF8SDni8QkS+THIPANyliU/McOc6fPWU5T6x4CJ8AvwcyPIPMU+BICZ1gnMPFS4KZU+PHEmmzEYP3spxZet1IjFT89jofj5WTgS/4UaEon/QgXU4982wm/Ubz0+UWYjrwyTX/drkEze309/29Ldjt/qh9vra+eZFGENc7fjSlwh5tWINN9TwAnS2327+jTCN+Jc25R4bp7GPj1YQjiW7rwZx3K6s4z+MCeDYxyKBs5qnqXSoySPw/s96mH8dwqy3fvtELBbqosPd0Txfaoh5WZIOaf5Mk/uURoAMMWmgJg50tHLjPy0RvUnzyAAjLkoMQz4nAPx5SZUax5+qdbXunYZX3hHp/5tmllL/yjzKFLkUudfDn6Dr2CP9H5XxCW3AvRfXHhf4+maeML0rxbHkhCmUZGQTk2XpL4SidhZnkYhnF9rpSdsos/4cncaGqw+TVehxE78Ez6e/iwNybgoPUPHXz/Z8Hwfj73nEBO94P0b6wQ0Cezb7cfl5lCoT6Cgfx7yNEV8ViGN+knd1/U0SNzSmNV3bFem3W5UYCshfNYHPPSvn4zm8RkDTf8Fg4gomJ8OeiYIBvpRfYWu5/v1950u9RbqsSh9mG+v46FvyoN6j7TGu07m0Y3JXKUX/3tl0OLxlS335NHFvMd3i2+J2JzV4fu5dtiqC7lsjL1+nusyz1XGbRFEHyVCM8+DARFIW7bKJgTDXmHXnWrOPNh5TTVI6AecYdNhL+ODMe9vR2/C34/egr8h/ZZMhthwq26Jf/w34xesF+uQdqcUVAAAAABJRU5ErkJggg=="/>
+<mask id="mask-0">
+<g filter="url(#filter-remove-color)">
+<use xlink:href="#source-8" filter="url(#filter-color-to-alpha)" transform="matrix(0.7746, 0, 0, 0.820962, 0.415182, 0.00000495536)"/>
+</g>
+</mask>
+</defs>
+<g clip-path="url(#clip-0)">
+<path fill-rule="nonzero" fill="rgb(0%, 0%, 0%)" fill-opacity="1" d="M 0.445312 54.976562 L 147.558594 54.976562 L 147.558594 0.03125 L 0.445312 0.03125 Z M 0.445312 54.976562 "/>
+<g mask="url(#mask-0)">
+<rect x="-14.849997" y="-5.55" width="178.199964" height="66.6" fill="rgb(99.607849%, 99.607849%, 99.607849%)" fill-opacity="1"/>
+</g>
+</g>
+</svg>

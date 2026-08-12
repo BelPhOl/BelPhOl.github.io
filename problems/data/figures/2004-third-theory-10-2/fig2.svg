@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="121.58pt" height="31.35pt" viewBox="0 0 121.58 31.35">
+<defs><clipPath id="figbox"><rect x="0" y="0" width="121.58" height="31.35"/></clipPath></defs>
+<g clip-path="url(#figbox)">
+<path d="M-24.35,16.27 L-12.71,16.27 M8.17,16.27 L15.79,16.27 M0.25,19.21 L1.81,18.37" fill="none" stroke="#000000" stroke-width="0.499" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1.81,18.61 L4.03,29.47" fill="none" stroke="#000000" stroke-width="0.998" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4.27,29.47 L7.21,0.25 L16.75,0.25 M112.75,16.27 L120.37,16.27 M104.83,19.21 L106.39,18.37" fill="none" stroke="#000000" stroke-width="0.499" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M106.39,18.61 L108.61,29.47" fill="none" stroke="#000000" stroke-width="0.998" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M108.85,29.47 L111.79,0.25 L121.33,0.25" fill="none" stroke="#000000" stroke-width="0.499" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="112.99" y="28.75" font-family="'Times New Roman', Georgia, serif" font-size="12.03" font-style="italic" fill="#000000">6</text>
+<text x="113.59" y="11.71" font-family="'Times New Roman', Georgia, serif" font-size="12.03" font-style="italic" fill="#000000">5</text>
+<text x="94.51" y="19.27" font-family="'Times New Roman', Georgia, serif" font-size="12.03" font-style="italic" fill="#000000">t</text>
+<text x="72.13" y="19.27" font-family="'Times New Roman', Georgia, serif" font-size="12.03" font-style="italic" fill="#000000">t</text>
+<text x="8.41" y="28.75" font-family="'Times New Roman', Georgia, serif" font-size="12.03" font-style="italic" fill="#000000">6</text>
+<text x="9.01" y="11.71" font-family="'Times New Roman', Georgia, serif" font-size="12.03" font-style="italic" fill="#000000">5</text>
+<text x="98.35" y="22.33" font-family="'Times New Roman', Georgia, serif" font-size="9.02" font-style="italic" fill="#000000">1</text>
+<text x="76.45" y="22.33" font-family="'Times New Roman', Georgia, serif" font-size="9.02" font-style="italic" fill="#000000">2</text>
+<text x="85.51" y="19.27" font-family="'Times New Roman', serif" font-size="12.03" fill="#000000">=</text>
+<text x="38.23" y="19.27" font-family="'Times New Roman', serif" font-size="12.03" fill="#000000">⇒</text>
+</g>
+</svg>

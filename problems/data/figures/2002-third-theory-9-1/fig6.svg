@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="325.92pt" height="178.92pt" viewBox="0 0 325.92 178.92">
+<defs><clipPath id="figbox"><rect x="0" y="0" width="325.92" height="178.92"/></clipPath></defs>
+<g clip-path="url(#figbox)">
+<path d="M13.15,10.66 L23.47,10.66" fill="none" stroke="#000000" stroke-width="0.499" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M32.35,10.66 L103.51,10.66 M118.39,10.66 L162.31,10.66 M171.25,10.66 L322.69,10.66 M-10.07,73.66 L0.25,73.66 M44.53,88.06 L46.39,87.04" fill="none" stroke="#000000" stroke-width="0.499" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M46.39,87.28 L49.03,93.58" fill="none" stroke="#000000" stroke-width="0.998" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M49.27,93.58 L52.69,75.82 L117.85,75.82 M9.13,73.66 L214.33,73.66 M-10.07,137.86 L0.25,137.86 M10.39,161.32 L12.25,160.30" fill="none" stroke="#000000" stroke-width="0.499" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12.25,160.54 L14.89,165.04" fill="none" stroke="#000000" stroke-width="0.998" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15.13,165.04 L18.49,151.78 L25.87,151.78" fill="none" stroke="#000000" stroke-width="0.499" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M43.09,161.14 L51.19,161.14" fill="none" stroke="#000000" stroke-width="0.250" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M27.19,164.74 L29.05,163.66" fill="none" stroke="#000000" stroke-width="0.499" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M29.05,163.96 L31.69,178.42" fill="none" stroke="#000000" stroke-width="0.998" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M31.93,178.42 L35.35,139.96 L83.65,139.96 M9.13,137.86 L104.83,137.86" fill="none" stroke="#000000" stroke-width="0.499" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="49.27" y="26.26" font-family="'Times New Roman', serif" font-size="16.21" fill="#000000">(</text>
+<text x="98.65" y="26.26" font-family="'Times New Roman', serif" font-size="16.21" fill="#000000">)</text>
+<text x="54.37" y="25.06" font-family="'Times New Roman', serif" font-size="14.01" fill="#000000">β</text>
+<text x="76.50" y="25.06" font-family="'Times New Roman', serif" font-size="14.01" fill="#000000">γ</text>
+<text x="153.12" y="25.06" font-family="'Times New Roman', serif" font-size="14.01" fill="#000000">β</text>
+<text x="189.85" y="25.06" font-family="'Times New Roman', serif" font-size="14.01" fill="#000000">β</text>
+<text x="218.04" y="25.06" font-family="'Times New Roman', serif" font-size="14.01" fill="#000000">γ</text>
+<text x="271.20" y="25.06" font-family="'Times New Roman', serif" font-size="14.01" fill="#000000">γ</text>
+<text x="313.43" y="25.06" font-family="'Times New Roman', serif" font-size="14.01" fill="#000000">β</text>
+<text x="109.39" y="68.32" font-family="'Times New Roman', serif" font-size="14.01" fill="#000000">γ</text>
+<text x="34.99" y="89.62" font-family="'Times New Roman', serif" font-size="14.01" fill="#000000">β</text>
+<text x="95.40" y="89.62" font-family="'Times New Roman', serif" font-size="14.01" fill="#000000">γ</text>
+<text x="149.57" y="89.62" font-family="'Times New Roman', serif" font-size="14.01" fill="#000000">γ</text>
+<text x="205.07" y="89.62" font-family="'Times New Roman', serif" font-size="14.01" fill="#000000">β</text>
+<text x="73.75" y="8.80" font-family="'Times New Roman', Georgia, serif" font-size="7.00" fill="#000000">max</text>
+<text x="84.61" y="28.54" font-family="'Times New Roman', Georgia, serif" font-size="7.00" fill="#000000">max</text>
+<text x="252.79" y="8.80" font-family="'Times New Roman', Georgia, serif" font-size="7.00" fill="#000000">max</text>
+<text x="226.21" y="28.54" font-family="'Times New Roman', Georgia, serif" font-size="7.00" fill="#000000">max</text>
+<text x="279.37" y="28.54" font-family="'Times New Roman', Georgia, serif" font-size="7.00" fill="#000000">max</text>
+<text x="117.55" y="71.80" font-family="'Times New Roman', Georgia, serif" font-size="7.00" fill="#000000">max</text>
+<text x="103.57" y="93.10" font-family="'Times New Roman', Georgia, serif" font-size="7.00" fill="#000000">max</text>
+<text x="157.69" y="93.10" font-family="'Times New Roman', Georgia, serif" font-size="7.00" fill="#000000">max</text>
+<text x="48.37" y="5.32" font-family="'Times New Roman', Georgia, serif" font-size="14.01" fill="#000000">sin</text>
+<text x="32.89" y="25.06" font-family="'Times New Roman', Georgia, serif" font-size="14.01" fill="#000000">sin</text>
+<text x="134.11" y="25.06" font-family="'Times New Roman', Georgia, serif" font-size="14.01" fill="#000000">cos</text>
+<text x="227.41" y="5.32" font-family="'Times New Roman', Georgia, serif" font-size="14.01" fill="#000000">sin</text>
+<text x="171.79" y="25.06" font-family="'Times New Roman', Georgia, serif" font-size="14.01" fill="#000000">sin</text>
+<text x="199.87" y="25.06" font-family="'Times New Roman', Georgia, serif" font-size="14.01" fill="#000000">cos</text>
+<text x="253.99" y="25.06" font-family="'Times New Roman', Georgia, serif" font-size="14.01" fill="#000000">sin</text>
+<text x="294.49" y="25.06" font-family="'Times New Roman', Georgia, serif" font-size="14.01" fill="#000000">cos</text>
+<text x="92.17" y="68.32" font-family="'Times New Roman', Georgia, serif" font-size="14.01" fill="#000000">sin</text>
+<text x="9.67" y="89.62" font-family="'Times New Roman', Georgia, serif" font-size="14.01" fill="#000000">sin</text>
+<text x="72.10" y="89.62" font-family="'Times New Roman', Georgia, serif" font-size="14.01" fill="#000000">sin</text>
+<text x="132.28" y="89.62" font-family="'Times New Roman', Georgia, serif" font-size="14.01" fill="#000000">sin</text>
+<text x="180.07" y="89.62" font-family="'Times New Roman', Georgia, serif" font-size="14.01" fill="#000000">cos</text>
+<text x="106.21" y="141.22" font-family="'Times New Roman', Georgia, serif" font-size="14.01" fill="#000000">.</text>
+<text x="1.87" y="14.08" font-family="'Times New Roman', serif" font-size="14.01" fill="#000000">=</text>
+<text x="26.28" y="14.08" font-family="'Times New Roman', serif" font-size="14.01" fill="#000000">⋅</text>
+<text x="66.25" y="25.06" font-family="'Times New Roman', serif" font-size="14.01" fill="#000000">+</text>
+<text x="107.11" y="14.08" font-family="'Times New Roman', serif" font-size="14.01" fill="#000000">=</text>
+<text x="165.12" y="14.08" font-family="'Times New Roman', serif" font-size="14.01" fill="#000000">⋅</text>
+<text x="243.13" y="25.06" font-family="'Times New Roman', serif" font-size="14.01" fill="#000000">+</text>
+<text x="3.06" y="77.08" font-family="'Times New Roman', serif" font-size="14.01" fill="#000000">⋅</text>
+<text x="61.33" y="89.62" font-family="'Times New Roman', serif" font-size="14.01" fill="#000000">−</text>
+<text x="121.44" y="89.62" font-family="'Times New Roman', serif" font-size="14.01" fill="#000000">+</text>
+<text x="217.93" y="77.08" font-family="'Times New Roman', serif" font-size="14.01" fill="#000000">=</text>
+<text x="3.06" y="141.22" font-family="'Times New Roman', serif" font-size="14.01" fill="#000000">⋅</text>
+<text x="35.89" y="157.36" font-family="'Times New Roman', serif" font-size="14.01" fill="#000000">⎛</text>
+<text x="35.89" y="173.80" font-family="'Times New Roman', serif" font-size="14.01" fill="#000000">⎝</text>
+<text x="35.89" y="165.82" font-family="'Times New Roman', serif" font-size="14.01" fill="#000000">⎜⎞</text>
+<text x="51.55" y="173.80" font-family="'Times New Roman', serif" font-size="14.01" fill="#000000">⎠</text>
+<text x="51.55" y="165.82" font-family="'Times New Roman', serif" font-size="14.01" fill="#000000">⎟−</text>
+<text x="87.30" y="164.56" font-family="'Times New Roman', serif" font-size="14.01" fill="#000000">+</text>
+<text x="15.01" y="5.44" font-family="'Times New Roman', Georgia, serif" font-size="14.01" font-style="italic" fill="#000000">L</text>
+<text x="12.37" y="25.06" font-family="'Times New Roman', Georgia, serif" font-size="14.01" font-style="italic" fill="#000000">V</text>
+<text x="137.05" y="5.44" font-family="'Times New Roman', Georgia, serif" font-size="14.01" font-style="italic" fill="#000000">L</text>
+<text x="126.19" y="25.06" font-family="'Times New Roman', Georgia, serif" font-size="14.01" font-style="italic" fill="#000000">v</text>
+<text x="43.87" y="155.92" font-family="'Times New Roman', Georgia, serif" font-size="14.01" font-style="italic" fill="#000000">v</text>
+<text x="43.63" y="175.54" font-family="'Times New Roman', Georgia, serif" font-size="14.01" font-style="italic" fill="#000000">u</text>
+<text x="118.93" y="25.06" font-family="'Times New Roman', Georgia, serif" font-size="14.01" fill="#000000">2</text>
+<text x="27.49" y="89.62" font-family="'Times New Roman', Georgia, serif" font-size="14.01" fill="#000000">2</text>
+<text x="52.45" y="89.62" font-family="'Times New Roman', Georgia, serif" font-size="14.01" fill="#000000">1</text>
+<text x="171.67" y="89.62" font-family="'Times New Roman', Georgia, serif" font-size="14.01" fill="#000000">2</text>
+<text x="53.47" y="132.58" font-family="'Times New Roman', Georgia, serif" font-size="14.01" fill="#000000">2</text>
+<text x="19.15" y="164.56" font-family="'Times New Roman', Georgia, serif" font-size="14.01" fill="#000000">3</text>
+<text x="77.41" y="164.56" font-family="'Times New Roman', Georgia, serif" font-size="14.01" fill="#000000">1</text>
+<text x="98.11" y="164.56" font-family="'Times New Roman', Georgia, serif" font-size="14.01" fill="#000000">3</text>
+<text x="89.41" y="83.32" font-family="'Times New Roman', Georgia, serif" font-size="7.00" fill="#000000">2</text>
+<text x="198.25" y="83.32" font-family="'Times New Roman', Georgia, serif" font-size="7.00" fill="#000000">2</text>
+<text x="59.11" y="147.46" font-family="'Times New Roman', Georgia, serif" font-size="7.00" fill="#000000">2</text>
+</g>
+</svg>

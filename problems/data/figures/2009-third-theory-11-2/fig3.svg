@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="82.46pt" height="16.94pt" viewBox="0 0 82.46 16.94">
+<defs><clipPath id="figbox"><rect x="0" y="0" width="82.46" height="16.94"/></clipPath></defs>
+<g clip-path="url(#figbox)">
+<path d="M41.29,10.69 L42.85,9.85" fill="none" stroke="#000000" stroke-width="0.495" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M42.85,10.09 L45.01,14.17" fill="none" stroke="#000000" stroke-width="0.991" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M45.25,14.17 L48.25,2.05" fill="none" stroke="#000000" stroke-width="0.495" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M48.25,2.05 L55.81,2.05" fill="none" stroke="#000000" stroke-width="0.495" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M0.25,0.25 L82.21,0.25" fill="none" stroke="#000000" stroke-width="0.495" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="26.53" y="13.57" font-family="'Times New Roman', Georgia, serif" font-size="12.01" fill="#000000">2</text>
+<text x="49.09" y="13.57" font-family="'Times New Roman', Georgia, serif" font-size="12.01" font-style="italic" fill="#000000">k</text>
+<text x="33.01" y="13.57" font-family="'Times New Roman', Georgia, serif" font-size="12.01" font-style="italic" fill="#000000">R</text>
+</g>
+</svg>

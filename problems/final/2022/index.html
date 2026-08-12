@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Республиканская 2022 — BelPhO</title>
+  <meta name="description" content="Все задачи республиканской олимпиады 2022 года с условиями, решениями, разбалловкой и подсказками — 15 задач.">
+  <link rel="canonical" href="https://belpho.org/problems/final/2022/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BelPhO">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:url" content="https://belpho.org/problems/final/2022/">
+  <meta property="og:title" content="Республиканская 2022 — BelPhO">
+  <meta property="og:description" content="Все задачи республиканской олимпиады 2022 года с условиями, решениями, разбалловкой и подсказками — 15 задач.">
+  
+  <meta property="og:image" content="https://belpho.org/problems/thumbs/og/final-2022.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/css/platform.css">
+</head>
+<body>
+<svg id="mjx-glyph-cache" aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden"><defs><path id="MJX-TEX-I-1D45A" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path><path id="MJX-TEX-I-1D448" d="M107 637Q73 637 71 641Q70 643 70 649Q70 673 81 682Q83 683 98 683Q139 681 234 681Q268 681 297 681T342 682T362 682Q378 682 378 672Q378 670 376 658Q371 641 366 638H364Q362 638 359 638T352 638T343 637T334 637Q295 636 284 634T266 623Q265 621 238 518T184 302T154 169Q152 155 152 140Q152 86 183 55T269 24Q336 24 403 69T501 205L552 406Q599 598 599 606Q599 633 535 637Q511 637 511 648Q511 650 513 660Q517 676 519 679T529 683Q532 683 561 682T645 680Q696 680 723 681T752 682Q767 682 767 672Q767 650 759 642Q756 637 737 637Q666 633 648 597Q646 592 598 404Q557 235 548 205Q515 105 433 42T263 -22Q171 -22 116 34T60 167V183Q60 201 115 421Q164 622 164 628Q164 635 107 637Z"></path><path id="MJX-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJX-TEX-I-1D434" d="M208 74Q208 50 254 46Q272 46 272 35Q272 34 270 22Q267 8 264 4T251 0Q249 0 239 0T205 1T141 2Q70 2 50 0H42Q35 7 35 11Q37 38 48 46H62Q132 49 164 96Q170 102 345 401T523 704Q530 716 547 716H555H572Q578 707 578 706L606 383Q634 60 636 57Q641 46 701 46Q726 46 726 36Q726 34 723 22Q720 7 718 4T704 0Q701 0 690 0T651 1T578 2Q484 2 455 0H443Q437 6 437 9T439 27Q443 40 445 43L449 46H469Q523 49 533 63L521 213H283L249 155Q208 86 208 74ZM516 260Q516 271 504 416T490 562L463 519Q447 492 400 412L310 260L413 259Q516 259 516 260Z"></path><path id="MJX-TEX-I-1D435" d="M231 637Q204 637 199 638T194 649Q194 676 205 682Q206 683 335 683Q594 683 608 681Q671 671 713 636T756 544Q756 480 698 429T565 360L555 357Q619 348 660 311T702 219Q702 146 630 78T453 1Q446 0 242 0Q42 0 39 2Q35 5 35 10Q35 17 37 24Q42 43 47 45Q51 46 62 46H68Q95 46 128 49Q142 52 147 61Q150 65 219 339T288 628Q288 635 231 637ZM649 544Q649 574 634 600T585 634Q578 636 493 637Q473 637 451 637T416 636H403Q388 635 384 626Q382 622 352 506Q352 503 351 500L320 374H401Q482 374 494 376Q554 386 601 434T649 544ZM595 229Q595 273 572 302T512 336Q506 337 429 337Q311 337 310 336Q310 334 293 263T258 122L240 52Q240 48 252 48T333 46Q422 46 429 47Q491 54 543 105T595 229Z"></path><path id="MJX-TEX-I-1D457" d="M297 596Q297 627 318 644T361 661Q378 661 389 651T403 623Q403 595 384 576T340 557Q322 557 310 567T297 596ZM288 376Q288 405 262 405Q240 405 220 393T185 362T161 325T144 293L137 279Q135 278 121 278H107Q101 284 101 286T105 299Q126 348 164 391T252 441Q253 441 260 441T272 442Q296 441 316 432Q341 418 354 401T367 348V332L318 133Q267 -67 264 -75Q246 -125 194 -164T75 -204Q25 -204 7 -183T-12 -137Q-12 -110 7 -91T53 -71Q70 -71 82 -81T95 -112Q95 -148 63 -167Q69 -168 77 -168Q111 -168 139 -140T182 -74L193 -32Q204 11 219 72T251 197T278 308T289 365Q289 372 288 376Z"></path><path id="MJX-TEX-N-20D7" d="M377 694Q377 702 382 708T397 714Q404 714 409 709Q414 705 419 690Q429 653 460 633Q471 626 471 615Q471 606 468 603T454 594Q411 572 379 531Q377 529 374 525T369 519T364 517T357 516Q350 516 344 521T337 536Q337 555 384 595H213L42 596Q29 605 29 615Q29 622 42 635H401Q377 673 377 694Z"></path><path id="MJX-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-TEX-I-1D70C" d="M58 -216Q25 -216 23 -186Q23 -176 73 26T127 234Q143 289 182 341Q252 427 341 441Q343 441 349 441T359 442Q432 442 471 394T510 276Q510 219 486 165T425 74T345 13T266 -10H255H248Q197 -10 165 35L160 41L133 -71Q108 -168 104 -181T92 -202Q76 -216 58 -216ZM424 322Q424 359 407 382T357 405Q322 405 287 376T231 300Q217 269 193 170L176 102Q193 26 260 26Q298 26 334 62Q367 92 389 158T418 266T424 322Z"></path><path id="MJX-TEX-I-1D438" d="M492 213Q472 213 472 226Q472 230 477 250T482 285Q482 316 461 323T364 330H312Q311 328 277 192T243 52Q243 48 254 48T334 46Q428 46 458 48T518 61Q567 77 599 117T670 248Q680 270 683 272Q690 274 698 274Q718 274 718 261Q613 7 608 2Q605 0 322 0H133Q31 0 31 11Q31 13 34 25Q38 41 42 43T65 46Q92 46 125 49Q139 52 144 61Q146 66 215 342T285 622Q285 629 281 629Q273 632 228 634H197Q191 640 191 642T193 659Q197 676 203 680H757Q764 676 764 669Q764 664 751 557T737 447Q735 440 717 440H705Q698 445 698 453L701 476Q704 500 704 528Q704 558 697 578T678 609T643 625T596 632T532 634H485Q397 633 392 631Q388 629 386 622Q385 619 355 499T324 377Q347 376 372 376H398Q464 376 489 391T534 472Q538 488 540 490T557 493Q562 493 565 493T570 492T572 491T574 487T577 483L544 351Q511 218 508 216Q505 213 492 213Z"></path></defs></svg>
+<header class="site-header">
+  <div class="container header-content">
+    <a href="/" class="logo">
+      <img src="/img/logo.png" alt="BelPhO" class="logo-img" width="36" height="36">
+      <span>BelPhO</span>
+    </a>
+    <nav class="site-nav" aria-label="Основная навигация">
+      <ul class="nav-links">
+        <li><a href="/">Главная</a></li>
+        <li><a href="/problems/" class="active">Задачи</a></li>
+        <li><a href="/books/">Книги</a></li>
+        <li><a href="/training-program.html">Подготовка</a></li>
+        <li><a href="/alumni.html">Выпускники</a></li>
+        <li><a href="/news/">Новости</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<main class="p-shell p-shell-wide">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+  <a href="/">Главная</a> <span>/</span>
+  <a href="/problems/">Задачи</a> <span>/</span>
+  <a href="/problems/final/">Республиканская</a> <span>/</span>
+  <span aria-current="page">2022</span>
+</nav>
+
+<header class="yr-head" style="--accent:#2563eb;--accent-tint:#eff6ff;--accent-ink:#1d4ed8">
+  <div class="yr-head-main">
+    <p class="yr-kicker">Республиканская олимпиада</p>
+    <h1 class="yr-title">2022</h1>
+  </div>
+  <ul class="yr-facts">
+    <li><b>15</b> задач</li>
+    <li><b>9</b> теор. · <b>6</b> эксп.</li>
+    <li><b>15</b> с решением</li>
+    
+  </ul>
+</header>
+
+
+<nav class="yr-strip" aria-label="Годы">
+  
+  <a class="yr-strip-item" href="/problems/final/2026/">2026</a>
+  
+  <a class="yr-strip-item" href="/problems/final/2025/">2025</a>
+  
+  <a class="yr-strip-item" href="/problems/final/2024/">2024</a>
+  
+  <a class="yr-strip-item" href="/problems/final/2023/">2023</a>
+  
+  <a class="yr-strip-item on" href="/problems/final/2022/">2022</a>
+  
+  <a class="yr-strip-item" href="/problems/final/2021/">2021</a>
+  
+  <a class="yr-strip-item" href="/problems/final/2020/">2020</a>
+  
+  <a class="yr-strip-item" href="/problems/final/2019/">2019</a>
+  
+  <a class="yr-strip-item" href="/problems/final/2018/">2018</a>
+  
+  <a class="yr-strip-item" href="/problems/final/2017/">2017</a>
+  
+  <a class="yr-strip-item" href="/problems/final/2016/">2016</a>
+  
+  <a class="yr-strip-item" href="/problems/final/2015/">2015</a>
+  
+  <a class="yr-strip-item" href="/problems/final/2014/">2014</a>
+  
+  <a class="yr-strip-item" href="/problems/final/2013/">2013</a>
+  
+  <a class="yr-strip-item" href="/problems/final/2012/">2012</a>
+  
+  <a class="yr-strip-item" href="/problems/final/2011/">2011</a>
+  
+  <a class="yr-strip-item" href="/problems/final/2010/">2010</a>
+  
+  <a class="yr-strip-item" href="/problems/final/2009/">2009</a>
+  
+  <a class="yr-strip-item" href="/problems/final/2008/">2008</a>
+  
+  <a class="yr-strip-item" href="/problems/final/2007/">2007</a>
+  
+  <a class="yr-strip-item" href="/problems/final/2006/">2006</a>
+  
+  <a class="yr-strip-item" href="/problems/final/2005/">2005</a>
+  
+  <a class="yr-strip-item" href="/problems/final/2004/">2004</a>
+  
+  <a class="yr-strip-item" href="/problems/final/2003/">2003</a>
+  
+  <a class="yr-strip-item" href="/problems/final/2002/">2002</a>
+  
+  <a class="yr-strip-item" href="/problems/final/2001/">2001</a>
+  
+  <a class="yr-strip-item" href="/problems/final/2000/">2000</a>
+  
+  <a class="yr-strip-item" href="/problems/final/1999/">1999</a>
+  
+  <a class="yr-strip-item" href="/problems/final/1998/">1998</a>
+  
+  <a class="yr-strip-item" href="/problems/final/1997/">1997</a>
+  
+  <a class="yr-strip-item" href="/problems/final/1996/">1996</a>
+  
+  <a class="yr-strip-item" href="/problems/final/1995/">1995</a>
+  
+  <a class="yr-strip-item" href="/problems/final/1994/">1994</a>
+  
+  <a class="yr-strip-item" href="/problems/final/1993/">1993</a>
+  
+  <a class="yr-strip-item" href="/problems/final/1992/">1992</a>
+  
+  <a class="yr-strip-item" href="/problems/final/1991/">1991</a>
+  
+  <a class="yr-strip-item" href="/problems/final/1990/">1990</a>
+  
+</nav>
+
+
+<div class="pr-toolbar">
+  <span class="pr-legend">
+    <span class="pr-legend-item"><span class="pr-av pr-av-t on">У</span>условие</span>
+    <span class="pr-legend-item"><span class="pr-av pr-av-s on">Р</span>решение</span>
+    <span class="pr-legend-item"><span class="pr-av pr-av-m on">Б</span>разбалловка</span>
+    <span class="pr-legend-item"><span class="pr-av pr-av-h on">П</span>подсказки</span>
+  </span>
+  <label class="pr-hide-solved">
+    <input type="checkbox" id="pr-hide-solved">
+    <span>Скрыть решённые (<b id="pr-solved-n">0</b>)</span>
+  </label>
+</div>
+
+<div id="pr-root">
+
+  <section class="pr-group">
+    <h2 class="pr-group-title">9 класс <span class="pr-group-n">5</span></h2>
+    <div class="pr-list">
+      
+<a class="pr" href="/problems/final/2022/9-1/" data-pid="2022-final-theory-9-1">
+  <span class="pr-badge pr-badge-t">Т1</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/2022-final-theory-9-1-320.webp" srcset="/problems/thumbs/2022-final-theory-9-1-320.webp 320w, /problems/thumbs/2022-final-theory-9-1-640.webp 640w" sizes="96px"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Неоднородная разминка</span>
+    <span class="pr-snippet"><p>Задание состоит из 3 не связанных между собой задач.<br />Развитие технологий (в том числе нанотехнологий) привело к созданию материалов с необычными …</p></span>
+    <span class="pr-meta">
+      
+      <span class="pr-grade">9 кл.</span>
+      
+      
+      
+      
+      
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s on" title="Решение">Р</span>
+      
+      <span class="pr-av pr-av-m" title="Разбалловка — нет">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff pr-diff-none" title="Сложность не оценена">—</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2022/9-2/" data-pid="2022-final-theory-9-2">
+  <span class="pr-badge pr-badge-t">Т2</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/2022-final-theory-9-2-320.webp" srcset="/problems/thumbs/2022-final-theory-9-2-320.webp 320w, /problems/thumbs/2022-final-theory-9-2-640.webp 640w" sizes="96px"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Земная невесомость</span>
+    <span class="pr-snippet"><p>Для создания «кратковременной невесомости» в земных условиях (например, для тренировки космонавтов) можно использовать богатые возможности …</p></span>
+    <span class="pr-meta">
+      
+      <span class="pr-grade">9 кл.</span>
+      
+      
+      
+      
+      
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s on" title="Решение">Р</span>
+      
+      <span class="pr-av pr-av-m" title="Разбалловка — нет">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff pr-diff-none" title="Сложность не оценена">—</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2022/9-3/" data-pid="2022-final-theory-9-3">
+  <span class="pr-badge pr-badge-t">Т3</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/2022-final-theory-9-3-320.webp" srcset="/problems/thumbs/2022-final-theory-9-3-320.webp 320w, /problems/thumbs/2022-final-theory-9-3-640.webp 640w" sizes="96px"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Три груза</span>
+    <span class="pr-snippet"><p>Один конец жёсткого невесомого стержня шарнирно закреплён, к другому концу на перекинутой через невесомый блок нити подвешен груз массой <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="1.986ex" height="1.025ex" role="img" focusable="false" viewBox="0 -442 878 453" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D45A" xlink:href="#MJX-TEX-I-1D45A"></use></g></g></g></svg></mjx-container>. Ещё два …</p></span>
+    <span class="pr-meta">
+      
+      <span class="pr-grade">9 кл.</span>
+      
+      
+      
+      
+      
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s on" title="Решение">Р</span>
+      
+      <span class="pr-av pr-av-m" title="Разбалловка — нет">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff pr-diff-none" title="Сложность не оценена">—</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2022/9-e1/" data-pid="2022-final-exp-9-1">
+  <span class="pr-badge pr-badge-e">Э1</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/2022-final-exp-9-1-320.webp" srcset="/problems/thumbs/2022-final-exp-9-1-320.webp 320w, /problems/thumbs/2022-final-exp-9-1-640.webp 640w" sizes="96px"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Ускоренное движение</span>
+    <span class="pr-snippet"><p>Приборы и оборудование: установка для фиксации времен; штатив с лапкой, линейка, два шарика, металлический цилиндр.</p>
+<p>В вашем распоряжении имеется …</p></span>
+    <span class="pr-meta">
+      
+      <span class="pr-grade">9 кл.</span>
+      
+      
+      
+      
+      
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s on" title="Решение">Р</span>
+      
+      <span class="pr-av pr-av-m" title="Разбалловка — нет">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff pr-diff-none" title="Сложность не оценена">—</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2022/9-e2/" data-pid="2022-final-exp-9-2">
+  <span class="pr-badge pr-badge-e">Э2</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/2022-final-exp-9-2-320.webp" srcset="/problems/thumbs/2022-final-exp-9-2-320.webp 320w, /problems/thumbs/2022-final-exp-9-2-640.webp 640w" sizes="96px"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Закон преломления света</span>
+    <span class="pr-snippet"><p>Приборы и оборудование: Лазер с источником питания, экран на подставке, призма треугольная, призма трапециевидная, линейка 40 см, транспортир, кусок …</p></span>
+    <span class="pr-meta">
+      
+      <span class="pr-grade">9 кл.</span>
+      
+      
+      
+      
+      
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s on" title="Решение">Р</span>
+      
+      <span class="pr-av pr-av-m" title="Разбалловка — нет">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff pr-diff-none" title="Сложность не оценена">—</span>
+    
+  </span>
+</a>
+
+    </div>
+  </section>
+
+  <section class="pr-group">
+    <h2 class="pr-group-title">10 класс <span class="pr-group-n">5</span></h2>
+    <div class="pr-list">
+      
+<a class="pr" href="/problems/final/2022/10-1/" data-pid="2022-final-theory-10-1">
+  <span class="pr-badge pr-badge-t">Т1</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/2022-final-theory-10-1-320.webp" srcset="/problems/thumbs/2022-final-theory-10-1-320.webp 320w, /problems/thumbs/2022-final-theory-10-1-640.webp 640w" sizes="96px"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Архимедова разминка</span>
+    <span class="pr-snippet"><p>Данная задача состоит из двух не связанных между собой задач.<br />Задача 1.1 Шар на дне сосуда.<br />На дне сосуда, заполненного водой, покоится шар радиуса …</p></span>
+    <span class="pr-meta">
+      
+      <span class="pr-grade">10 кл.</span>
+      
+      
+      
+      
+      
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s on" title="Решение">Р</span>
+      
+      <span class="pr-av pr-av-m" title="Разбалловка — нет">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff pr-diff-none" title="Сложность не оценена">—</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2022/10-2/" data-pid="2022-final-theory-10-2">
+  <span class="pr-badge pr-badge-t">Т2</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/2022-final-theory-10-2-320.webp" srcset="/problems/thumbs/2022-final-theory-10-2-320.webp 320w, /problems/thumbs/2022-final-theory-10-2-640.webp 640w" sizes="96px"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Знаете ли Вы МКТ?</span>
+    <span class="pr-snippet"><p>В данном задании вам необходимо решить несколько взаимосвязанных задач, чтобы продемонстрировать свое понимание основ молекулярно-кинетической теории …</p></span>
+    <span class="pr-meta">
+      
+      <span class="pr-grade">10 кл.</span>
+      
+      
+      
+      
+      
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s on" title="Решение">Р</span>
+      
+      <span class="pr-av pr-av-m" title="Разбалловка — нет">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff pr-diff-none" title="Сложность не оценена">—</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2022/10-3/" data-pid="2022-final-theory-10-3">
+  <span class="pr-badge pr-badge-t">Т3</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/2022-final-theory-10-3-320.webp" srcset="/problems/thumbs/2022-final-theory-10-3-320.webp 320w, /problems/thumbs/2022-final-theory-10-3-640.webp 640w" sizes="96px"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Электромобиль</span>
+    <span class="pr-snippet"><p>Игрушечный электромобиль снабжен электродвигателем ЭД, подключенным к источнику постоянного напряжения <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.375ex;" xmlns="http://www.w3.org/2000/svg" width="2.533ex" height="1.92ex" role="img" focusable="false" viewBox="0 -683 1119.6 848.6" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D448" xlink:href="#MJX-TEX-I-1D448"></use></g><g data-mml-node="mn" transform="translate(716,-150) scale(0.707)"><use data-c="30" xlink:href="#MJX-TEX-N-30"></use></g></g></g></g></svg></mjx-container>. Для регулировки скорости электромобиля …</p></span>
+    <span class="pr-meta">
+      
+      <span class="pr-grade">10 кл.</span>
+      
+      
+      
+      
+      
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s on" title="Решение">Р</span>
+      
+      <span class="pr-av pr-av-m" title="Разбалловка — нет">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff pr-diff-none" title="Сложность не оценена">—</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2022/10-e1/" data-pid="2022-final-exp-10-1">
+  <span class="pr-badge pr-badge-e">Э1</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/2022-final-exp-10-1-320.webp" srcset="/problems/thumbs/2022-final-exp-10-1-320.webp 320w, /problems/thumbs/2022-final-exp-10-1-640.webp 640w" sizes="96px"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Крутильные весы Кулона</span>
+    <span class="pr-snippet"><p>Приборы и оборудование: Штатив с лапкой и кольцевой подставкой, катушка ниток, кусок пластилина, секундомер с памятью этапов, линейка, деревянная …</p></span>
+    <span class="pr-meta">
+      
+      <span class="pr-grade">10 кл.</span>
+      
+      
+      
+      
+      
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s on" title="Решение">Р</span>
+      
+      <span class="pr-av pr-av-m" title="Разбалловка — нет">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff pr-diff-none" title="Сложность не оценена">—</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2022/10-e2/" data-pid="2022-final-exp-10-2">
+  <span class="pr-badge pr-badge-e">Э2</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/2022-final-exp-10-2-320.webp" srcset="/problems/thumbs/2022-final-exp-10-2-320.webp 320w, /problems/thumbs/2022-final-exp-10-2-640.webp 640w" sizes="96px"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Очень медленное движение</span>
+    <span class="pr-snippet"><p>Приборы и оборудование: Штатив с лапкой, пробирка с пробкой, шприцы одноразовые с иголкой, линейка, секундомер электронный с памятью этапов, стакан …</p></span>
+    <span class="pr-meta">
+      
+      <span class="pr-grade">10 кл.</span>
+      
+      
+      
+      
+      
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s on" title="Решение">Р</span>
+      
+      <span class="pr-av pr-av-m" title="Разбалловка — нет">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff pr-diff-none" title="Сложность не оценена">—</span>
+    
+  </span>
+</a>
+
+    </div>
+  </section>
+
+  <section class="pr-group">
+    <h2 class="pr-group-title">11 класс <span class="pr-group-n">5</span></h2>
+    <div class="pr-list">
+      
+<a class="pr" href="/problems/final/2022/11-1/" data-pid="2022-final-theory-11-1">
+  <span class="pr-badge pr-badge-t">Т1</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/2022-final-theory-11-1-320.webp" srcset="/problems/thumbs/2022-final-theory-11-1-320.webp 320w, /problems/thumbs/2022-final-theory-11-1-640.webp 640w" sizes="96px"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Иголка в сферическом бокале</span>
+    <span class="pr-snippet"><p>В полусферическую чашу помещен однородный массивный жесткий стержень <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="3.414ex" height="1.62ex" role="img" focusable="false" viewBox="0 -716 1509 716" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D434" xlink:href="#MJX-TEX-I-1D434"></use></g><g data-mml-node="mi" transform="translate(750,0)"><use data-c="1D435" xlink:href="#MJX-TEX-I-1D435"></use></g></g></g></svg></mjx-container> массы <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="1.986ex" height="1.025ex" role="img" focusable="false" viewBox="0 -442 878 453" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D45A" xlink:href="#MJX-TEX-I-1D45A"></use></g></g></g></svg></mjx-container>, длина которого меньше диаметра чаши. На следующем рисунке …</p></span>
+    <span class="pr-meta">
+      
+      <span class="pr-grade">11 кл.</span>
+      
+      
+      
+      
+      
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s on" title="Решение">Р</span>
+      
+      <span class="pr-av pr-av-m" title="Разбалловка — нет">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff pr-diff-none" title="Сложность не оценена">—</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2022/11-2/" data-pid="2022-final-theory-11-2">
+  <span class="pr-badge pr-badge-t">Т2</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/2022-final-theory-11-2-320.webp" srcset="/problems/thumbs/2022-final-theory-11-2-320.webp 320w, /problems/thumbs/2022-final-theory-11-2-640.webp 640w" sizes="96px"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Гитарная струна</span>
+    <span class="pr-snippet"><p>В данной задаче рассматриваются малые поперечные колебания гитарной струны с закрепленными концами.<br />Основная мода (тип, форма) колебания этой струны …</p></span>
+    <span class="pr-meta">
+      
+      <span class="pr-grade">11 кл.</span>
+      
+      
+      
+      
+      
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s on" title="Решение">Р</span>
+      
+      <span class="pr-av pr-av-m" title="Разбалловка — нет">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff pr-diff-none" title="Сложность не оценена">—</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2022/11-3/" data-pid="2022-final-theory-11-3">
+  <span class="pr-badge pr-badge-t">Т3</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/2022-final-theory-11-3-320.webp" srcset="/problems/thumbs/2022-final-theory-11-3-320.webp 320w, /problems/thumbs/2022-final-theory-11-3-640.webp 640w" sizes="96px"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">«Блинчики» на воде</span>
+    <span class="pr-snippet"><p>Каждый из Вас когда-либо пытался бросать камень на озёрную гладь, добиваясь отскоков. Конечно, чем больше блинчиков получится – тем лучше! Однако …</p></span>
+    <span class="pr-meta">
+      
+      <span class="pr-grade">11 кл.</span>
+      
+      
+      
+      
+      
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s on" title="Решение">Р</span>
+      
+      <span class="pr-av pr-av-m" title="Разбалловка — нет">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff pr-diff-none" title="Сложность не оценена">—</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2022/11-e1/" data-pid="2022-final-exp-11-1">
+  <span class="pr-badge pr-badge-e">Э1</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/2022-final-exp-11-1-320.webp" srcset="/problems/thumbs/2022-final-exp-11-1-320.webp 320w, /problems/thumbs/2022-final-exp-11-1-640.webp 640w" sizes="96px"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Растекание токов и распределение потенциала</span>
+    <span class="pr-snippet"><p>По закону Ома (записанному в дифференциальной форме)<br /><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -1.126ex;" xmlns="http://www.w3.org/2000/svg" width="7.5ex" height="3.576ex" role="img" focusable="false" viewBox="0 -1083 3315.1 1580.7" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mover"><g data-mml-node="mi"><use data-c="1D457" xlink:href="#MJX-TEX-I-1D457"></use></g><g data-mml-node="mo" transform="translate(206,250) translate(-250 0)"><use data-c="20D7" xlink:href="#MJX-TEX-N-20D7"></use></g></g></g><g data-mml-node="mo" transform="translate(689.8,0)"><use data-c="3D" xlink:href="#MJX-TEX-N-3D"></use></g><g data-mml-node="mfrac" transform="translate(1745.6,0)"><g data-mml-node="mn" transform="translate(226,394) scale(0.707)"><use data-c="31" xlink:href="#MJX-TEX-N-31"></use></g><g data-mml-node="mi" transform="translate(220,-345) scale(0.707)"><use data-c="1D70C" xlink:href="#MJX-TEX-I-1D70C"></use></g><rect width="565.6" height="60" x="120" y="220"></rect></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(2551.1,0)"><g data-mml-node="mover"><g data-mml-node="mi"><use data-c="1D438" xlink:href="#MJX-TEX-I-1D438"></use></g><g data-mml-node="mo" transform="translate(471.8,269) translate(-250 0)"><use data-c="20D7" xlink:href="#MJX-TEX-N-20D7"></use></g></g></g></g></g></svg></mjx-container><br />распределение вектора плотности тока при его …</p></span>
+    <span class="pr-meta">
+      
+      <span class="pr-grade">11 кл.</span>
+      
+      
+      
+      
+      
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s on" title="Решение">Р</span>
+      
+      <span class="pr-av pr-av-m" title="Разбалловка — нет">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff pr-diff-none" title="Сложность не оценена">—</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2022/11-e2/" data-pid="2022-final-exp-11-2">
+  <span class="pr-badge pr-badge-e">Э2</span>
+  <span class="pr-thumb">
+    <img src="/problems/thumbs/2022-final-exp-11-2-320.webp" srcset="/problems/thumbs/2022-final-exp-11-2-320.webp 320w, /problems/thumbs/2022-final-exp-11-2-640.webp 640w" sizes="96px"
+         width="96" height="72" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Стеклянный песок</span>
+    <span class="pr-snippet"><p>В формулировке задания 1 были даны подробные инструкции. Поэтому при выполнении этого задания Вам предоставляется гораздо большая свобода и …</p></span>
+    <span class="pr-meta">
+      
+      <span class="pr-grade">11 кл.</span>
+      
+      
+      
+      
+      
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" title="Условие">У</span>
+      
+      <span class="pr-av pr-av-s on" title="Решение">Р</span>
+      
+      <span class="pr-av pr-av-m" title="Разбалловка — нет">Б</span>
+      
+      <span class="pr-av pr-av-h" title="Подсказки — нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff pr-diff-none" title="Сложность не оценена">—</span>
+    
+  </span>
+</a>
+
+    </div>
+  </section>
+
+</div>
+
+<nav class="yr-nav">
+  <a class="btn btn-ghost" href="/problems/final/2021/">← 2021</a>
+  <a class="btn btn-ghost" href="/problems/final/">Все годы</a>
+  <a class="btn btn-ghost" href="/problems/final/2023/">2023 →</a>
+</nav>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© 2026 BelPhO — Белорусские физические олимпиады</span>
+    <span class="footer-links">
+      <a href="/problems/">Задачи</a>
+      <a href="https://t.me/belpho_by" rel="noopener">Telegram</a>
+    </span>
+  </div>
+</footer>
+
+
+<script type="module" src="/js/site/problem-list.js"></script>
+
+</body>
+</html>

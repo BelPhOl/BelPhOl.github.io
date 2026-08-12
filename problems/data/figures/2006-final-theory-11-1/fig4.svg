@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="144.75pt" height="153.75pt" viewBox="0 0 144.75 153.75">
+<defs><clipPath id="figbox"><rect x="0" y="0" width="144.75" height="153.75"/></clipPath></defs>
+<g clip-path="url(#figbox)">
+<path d="M0.38,0.38 L0.38,153.38 L144.38,153.38 L144.38,0.38 Z" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="round" stroke-linejoin="miter"/>
+<path d="M67.99,7.88 C34.75,7.88 7.87,34.82 7.87,68.06 C7.87,101.30 34.75,128.24 67.99,128.24 C101.18,128.24 128.11,101.30 128.11,68.06 C128.11,34.82 101.18,7.88 67.99,7.88" fill="none" stroke="#000000" stroke-width="0.590" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M99.79,50.36 C88.03,50.36 78.55,59.84 78.55,71.60 C78.55,83.30 88.03,92.84 99.79,92.84 C111.49,92.84 120.97,83.30 120.97,71.60 C120.97,59.84 111.49,50.36 99.79,50.36" fill="none" stroke="#000000" stroke-width="0.590" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M64.46,71.30 L98.24,71.30 C98.41,71.30 98.53,71.42 98.53,71.60 C98.53,71.78 98.41,71.90 98.24,71.90 L64.46,71.90 C64.27,71.90 64.15,71.78 64.15,71.60 C64.15,71.42 64.27,71.30 64.46,71.30 M95.24,69.38 L98.77,71.60 L95.24,73.82 C95.11,73.88 94.93,73.88 94.82,73.70 C94.75,73.58 94.82,73.40 94.93,73.34 L98.05,71.36 L98.05,71.84 L94.93,69.86 C94.82,69.80 94.75,69.61 94.82,69.49 C94.93,69.32 95.11,69.32 95.24,69.38" fill="#000000" stroke="none"/>
+<path d="M64.33,71.30 L105.32,57.68 C105.43,57.61 105.61,57.68 105.68,57.86 C105.74,57.98 105.61,58.16 105.49,58.22 L64.51,71.90 C64.33,71.90 64.21,71.84 64.15,71.66 C64.10,71.54 64.15,71.36 64.33,71.30 M101.83,56.78 L105.91,57.74 L103.27,60.98 C103.15,61.10 102.97,61.10 102.85,61.04 C102.74,60.92 102.68,60.74 102.79,60.61 L105.19,57.74 L105.32,58.22 L101.71,57.32 C101.53,57.32 101.47,57.14 101.47,57.02 C101.53,56.84 101.71,56.72 101.83,56.78" fill="#000000" stroke="none"/>
+<path d="M99.55,71.48 L105.91,58.70 C105.97,58.58 106.15,58.52 106.33,58.58 C106.46,58.64 106.51,58.82 106.46,58.99 L100.10,71.72 C99.97,71.90 99.79,71.96 99.68,71.84 C99.55,71.78 99.49,71.60 99.55,71.48 M102.85,60.49 L106.46,58.34 L106.82,62.48 C106.82,62.66 106.69,62.84 106.57,62.84 C106.39,62.84 106.27,62.72 106.21,62.54 L105.91,58.88 L106.33,59.11 L103.15,61.04 C103.03,61.10 102.85,61.04 102.74,60.92 C102.68,60.80 102.74,60.61 102.85,60.49" fill="#000000" stroke="none"/>
+<text x="85.69" y="80.59" font-family="'Times New Roman', Georgia, serif" font-size="9.41" font-style="italic" fill="#000000">a</text>
+<text x="86.65" y="74.71" font-family="'Times New Roman', serif" font-size="9.41" fill="#000000">r</text>
+<text x="106.93" y="72.13" font-family="'Times New Roman', Georgia, serif" font-size="5.46" fill="#000000">2</text>
+<text x="104.18" y="69.67" font-family="'Times New Roman', Georgia, serif" font-size="9.44" font-style="italic" fill="#000000">r</text>
+<text x="104.77" y="63.79" font-family="'Times New Roman', serif" font-size="9.44" fill="#000000">r</text>
+<text x="94.75" y="60.61" font-family="'Times New Roman', Georgia, serif" font-size="5.46" fill="#000000">1</text>
+<text x="92.60" y="58.15" font-family="'Times New Roman', Georgia, serif" font-size="9.44" font-style="italic" fill="#000000">r</text>
+<text x="93.20" y="52.27" font-family="'Times New Roman', serif" font-size="9.44" fill="#000000">r</text>
+<text x="0.79" y="150.49" font-family="'Times New Roman', Georgia, serif" font-size="10.02" font-weight="bold" fill="#000000">   Рис. 3 </text>
+<text x="109.33" y="60.67" font-family="'Times New Roman', Georgia, serif" font-size="12.10" font-style="italic" fill="#000000">A</text>
+</g>
+</svg>

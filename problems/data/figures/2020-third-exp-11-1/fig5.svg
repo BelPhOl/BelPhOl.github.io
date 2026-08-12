@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="69.68pt" height="45.97pt" viewBox="0 0 69.68 45.97">
+<defs><clipPath id="figbox"><rect x="0" y="0" width="69.68" height="45.97"/></clipPath></defs>
+<g clip-path="url(#figbox)">
+<path d="M49.93,7.44 L47.30,14.62" fill="none" stroke="#000000" stroke-width="0.505" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M47.30,14.62 L49.93,21.80" fill="none" stroke="#000000" stroke-width="0.505" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M55.31,7.44 L57.93,14.62" fill="none" stroke="#000000" stroke-width="0.505" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M57.93,14.62 L55.31,21.80" fill="none" stroke="#000000" stroke-width="0.505" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M8.14,31.03 L68.42,31.03" fill="none" stroke="#000000" stroke-width="0.505" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M0.25,29.10 L1.80,28.21" fill="none" stroke="#000000" stroke-width="0.505" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M1.80,28.48 L4.01,44.06" fill="none" stroke="#000000" stroke-width="0.987" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M4.25,44.06 L7.19,2.82" fill="none" stroke="#000000" stroke-width="0.505" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M7.19,2.82 L69.43,2.82" fill="none" stroke="#000000" stroke-width="0.505" stroke-linecap="butt" stroke-linejoin="round"/>
+<text x="23.08" y="17.56" font-family="'Times New Roman', serif" font-size="14.56" fill="#000000">(</text>
+<text x="59.11" y="17.56" font-family="'Times New Roman', serif" font-size="14.56" fill="#000000">)</text>
+<text x="50.56" y="17.61" font-family="'Times New Roman', Georgia, serif" font-size="11.96" font-style="italic" fill="#000000">t</text>
+<text x="26.07" y="17.61" font-family="'Times New Roman', Georgia, serif" font-size="11.96" font-style="italic" fill="#000000">t</text>
+<text x="13.44" y="29.06" font-family="'Times New Roman', Georgia, serif" font-size="6.98" font-style="italic" fill="#000000">k</text>
+<text x="30.19" y="20.62" font-family="'Times New Roman', Georgia, serif" font-size="6.98" font-style="italic" fill="#000000">k</text>
+<text x="35.44" y="43.39" font-family="'Times New Roman', Georgia, serif" font-size="11.96" fill="#000000">3</text>
+<text x="62.78" y="10.38" font-family="'Times New Roman', Georgia, serif" font-size="6.98" fill="#000000">2</text>
+<text x="37.88" y="17.61" font-family="'Times New Roman', serif" font-size="11.96" fill="#000000">−</text>
+<text x="8.83" y="20.41" font-family="'Times New Roman', serif" font-size="17.95" fill="#000000"></text>
+</g>
+</svg>
