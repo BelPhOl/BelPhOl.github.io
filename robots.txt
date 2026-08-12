@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://belpho.by/sitemap.xml
+Sitemap: https://belpho.org/sitemap.xml
 
 # Crawl delay (be respectful)
 Crawl-delay: 1
@@ -15,3 +15,4 @@ Disallow: /*.bak
 # Allow all profile pages
 Allow: /ipho/
 Allow: /profiles/
+Allow: /problems/
