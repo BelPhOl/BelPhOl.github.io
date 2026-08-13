@@ -1,0 +1,1845 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Изучение колебаний — BelPhO</title>
+  <meta name="description" content="Экспериментальное изучение колебаний: зависимость периода маятника от его параметров, крутильные колебания, биения, затухание, оборотный маятник, колебания груза на пружине или на резинке. — 38 задач белорусских олимпиад по физике.">
+  <link rel="canonical" href="https://belpho.org/problems/topics/obekt-kolebaniya/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BelPhO">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:url" content="https://belpho.org/problems/topics/obekt-kolebaniya/">
+  <meta property="og:title" content="Изучение колебаний — BelPhO">
+  <meta property="og:description" content="Экспериментальное изучение колебаний: зависимость периода маятника от его параметров, крутильные колебания, биения, затухание, оборотный маятник, колебания груза на пружине или на резинке. — 38 задач белорусских олимпиад по физике.">
+  
+  <meta property="og:image" content="https://belpho.org/problems/thumbs/og/problems.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/css/platform.css">
+  
+  
+</head>
+<body>
+<svg id="mjx-glyph-cache" aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden"><defs><path id="MJX-TEX-I-1D454" d="M311 43Q296 30 267 15T206 0Q143 0 105 45T66 160Q66 265 143 353T314 442Q361 442 401 394L404 398Q406 401 409 404T418 412T431 419T447 422Q461 422 470 413T480 394Q480 379 423 152T363 -80Q345 -134 286 -169T151 -205Q10 -205 10 -137Q10 -111 28 -91T74 -71Q89 -71 102 -80T116 -111Q116 -121 114 -130T107 -144T99 -154T92 -162L90 -164H91Q101 -167 151 -167Q189 -167 211 -155Q234 -144 254 -122T282 -75Q288 -56 298 -13Q311 35 311 43ZM384 328L380 339Q377 350 375 354T369 368T359 382T346 393T328 402T306 405Q262 405 221 352Q191 313 171 233T151 117Q151 38 213 38Q269 38 323 108L331 118L384 328Z"></path><path id="MJX-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-TEX-N-39" d="M352 287Q304 211 232 211Q154 211 104 270T44 396Q42 412 42 436V444Q42 537 111 606Q171 666 243 666Q245 666 249 666T257 665H261Q273 665 286 663T323 651T370 619T413 560Q456 472 456 334Q456 194 396 97Q361 41 312 10T208 -22Q147 -22 108 7T68 93T121 149Q143 149 158 135T173 96Q173 78 164 65T148 49T135 44L131 43Q131 41 138 37T164 27T206 22H212Q272 22 313 86Q352 142 352 280V287ZM244 248Q292 248 321 297T351 430Q351 508 343 542Q341 552 337 562T323 588T293 615T246 625Q208 625 181 598Q160 576 154 546T147 441Q147 358 152 329T172 282Q197 248 244 248Z"></path><path id="MJX-TEX-N-2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path><path id="MJX-TEX-N-38" d="M70 417T70 494T124 618T248 666Q319 666 374 624T429 515Q429 485 418 459T392 417T361 389T335 371T324 363L338 354Q352 344 366 334T382 323Q457 264 457 174Q457 95 399 37T249 -22Q159 -22 101 29T43 155Q43 263 172 335L154 348Q133 361 127 368Q70 417 70 494ZM286 386L292 390Q298 394 301 396T311 403T323 413T334 425T345 438T355 454T364 471T369 491T371 513Q371 556 342 586T275 624Q268 625 242 625Q201 625 165 599T128 534Q128 511 141 492T167 463T217 431Q224 426 228 424L286 386ZM250 21Q308 21 350 55T392 137Q392 154 387 169T375 194T353 216T330 234T301 253T274 270Q260 279 244 289T218 306L210 311Q204 311 181 294T133 239T107 157Q107 98 150 60T250 21Z"></path><path id="MJX-TEX-I-1D436" d="M50 252Q50 367 117 473T286 641T490 704Q580 704 633 653Q642 643 648 636T656 626L657 623Q660 623 684 649Q691 655 699 663T715 679T725 690L740 705H746Q760 705 760 698Q760 694 728 561Q692 422 692 421Q690 416 687 415T669 413H653Q647 419 647 422Q647 423 648 429T650 449T651 481Q651 552 619 605T510 659Q484 659 454 652T382 628T299 572T226 479Q194 422 175 346T156 222Q156 108 232 58Q280 24 350 24Q441 24 512 92T606 240Q610 253 612 255T628 257Q648 257 648 248Q648 243 647 239Q618 132 523 55T319 -22Q206 -22 128 53T50 252Z"></path><path id="MJX-TEX-I-1D446" d="M308 24Q367 24 416 76T466 197Q466 260 414 284Q308 311 278 321T236 341Q176 383 176 462Q176 523 208 573T273 648Q302 673 343 688T407 704H418H425Q521 704 564 640Q565 640 577 653T603 682T623 704Q624 704 627 704T632 705Q645 705 645 698T617 577T585 459T569 456Q549 456 549 465Q549 471 550 475Q550 478 551 494T553 520Q553 554 544 579T526 616T501 641Q465 662 419 662Q362 662 313 616T263 510Q263 480 278 458T319 427Q323 425 389 408T456 390Q490 379 522 342T554 242Q554 216 546 186Q541 164 528 137T492 78T426 18T332 -20Q320 -22 298 -22Q199 -22 144 33L134 44L106 13Q83 -14 78 -18T65 -22Q52 -22 52 -14Q52 -11 110 221Q112 227 130 227H143Q149 221 149 216Q149 214 148 207T144 186T142 153Q144 114 160 87T203 47T255 29T308 24Z"></path><path id="MJX-TEX-I-1D45A" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></defs></svg>
+<header class="site-header">
+  <div class="container header-content">
+    <a href="/" class="logo">
+      <img src="/img/logo.png" alt="BelPhO" class="logo-img" width="36" height="36">
+      <span>BelPhO</span>
+    </a>
+    <nav class="site-nav" aria-label="Основная навигация">
+      <ul class="nav-links">
+        <li><a href="/">Главная</a></li>
+        <li><a href="/problems/" class="active">Задачи</a></li>
+        <li><a href="/books/">Книги</a></li>
+        <li><a href="/training-program.html">Подготовка</a></li>
+        <li><a href="/alumni.html">Выпускники</a></li>
+        <li><a href="/news/">Новости</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<main class="p-shell p-shell-wide">
+  
+<nav class="crumbs" aria-label="Хлебные крошки">
+  <a href="/">Главная</a> <span>/</span>
+  <a href="/problems/">Задачи</a> <span>/</span>
+  <a href="/problems/topics/">Темы</a> <span>/</span>
+  <span aria-current="page">Изучение колебаний</span>
+</nav>
+
+<header class="yr-head yr-head-topic">
+  <div class="yr-head-main">
+    <p class="yr-kicker">Экспериментальная установка&amp;#8195;экспериментальный тур</p>
+    <h1 class="yr-title yr-title-topic">Изучение колебаний</h1>
+    <p class="tp-lead">Экспериментальное изучение колебаний: зависимость периода маятника от его параметров, крутильные колебания, биения, затухание, оборотный маятник, колебания груза на пружине или на резинке.</p>
+  </div>
+  <ul class="yr-facts">
+    <li><b>38</b> задач</li>
+    
+  </ul>
+</header>
+
+
+<section class="lad-ladder" aria-labelledby="lad-h">
+  <h2 class="lad-h" id="lad-h">Лестница по сложности</h2>
+  <p class="lad-note">
+    11 ступеней из 38 задач темы — по возрастанию расчётной
+    сложности, без повторов одной и той же задачи под разными классами.
+  </p>
+  <ol class="lad-rungs">
+    
+    <li class="lad-rung">
+      <span class="lad-rung-n">1</span>
+      <a class="lad-rung-link" href="/problems/third/2007/10-e2/">Колебания стержня</a>
+      <span class="lad-rung-meta">10 кл.&#8195;2007</span>
+      <span class="lad-rung-band" style="background:#fed976;color:#2d2d2d">2/5</span>
+    </li>
+    
+    <li class="lad-rung">
+      <span class="lad-rung-n">2</span>
+      <a class="lad-rung-link" href="/problems/third/2013/11-e2/">Полумаятник</a>
+      <span class="lad-rung-meta">11 кл.&#8195;2013</span>
+      <span class="lad-rung-band" style="background:#fed976;color:#2d2d2d">2/5</span>
+    </li>
+    
+    <li class="lad-rung">
+      <span class="lad-rung-n">3</span>
+      <a class="lad-rung-link" href="/problems/third/2014/10-e2/">Придумай формулу сам!</a>
+      <span class="lad-rung-meta">10 кл.&#8195;2014</span>
+      <span class="lad-rung-band" style="background:#fed976;color:#2d2d2d">2/5</span>
+    </li>
+    
+    <li class="lad-rung">
+      <span class="lad-rung-n">4</span>
+      <a class="lad-rung-link" href="/problems/final/2005/10-e2/">Магнитные взаимодействия</a>
+      <span class="lad-rung-meta">10 кл.&#8195;2005</span>
+      <span class="lad-rung-band" style="background:#fd8d3c;color:#2d2d2d">3/5</span>
+    </li>
+    
+    <li class="lad-rung">
+      <span class="lad-rung-n">5</span>
+      <a class="lad-rung-link" href="/problems/final/2003/10-e1/">Экспериментальная задача 10-1</a>
+      <span class="lad-rung-meta">10 кл.&#8195;2003</span>
+      <span class="lad-rung-band" style="background:#fd8d3c;color:#2d2d2d">3/5</span>
+    </li>
+    
+    <li class="lad-rung">
+      <span class="lad-rung-n">6</span>
+      <a class="lad-rung-link" href="/problems/final/2009/11-e1/">Лобовое сопротивление</a>
+      <span class="lad-rung-meta">11 кл.&#8195;2009</span>
+      <span class="lad-rung-band" style="background:#e31a1c;color:#fff">4/5</span>
+    </li>
+    
+    <li class="lad-rung">
+      <span class="lad-rung-n">7</span>
+      <a class="lad-rung-link" href="/problems/final/2017/11-e1/">Магнитные взаимодействия</a>
+      <span class="lad-rung-meta">11 кл.&#8195;2017</span>
+      <span class="lad-rung-band" style="background:#e31a1c;color:#fff">4/5</span>
+    </li>
+    
+    <li class="lad-rung">
+      <span class="lad-rung-n">8</span>
+      <a class="lad-rung-link" href="/problems/third/2007/9-e2/">Неупругий удар</a>
+      <span class="lad-rung-meta">9 кл.&#8195;2007</span>
+      <span class="lad-rung-band" style="background:#e31a1c;color:#fff">4/5</span>
+    </li>
+    
+    <li class="lad-rung">
+      <span class="lad-rung-n">9</span>
+      <a class="lad-rung-link" href="/problems/third/2015/11-e2/">Деформация изгиба</a>
+      <span class="lad-rung-meta">11 кл.&#8195;2015</span>
+      <span class="lad-rung-band" style="background:#800026;color:#fff">5/5</span>
+    </li>
+    
+    <li class="lad-rung">
+      <span class="lad-rung-n">10</span>
+      <a class="lad-rung-link" href="/problems/third/2016/11-e2/">Сухое трение</a>
+      <span class="lad-rung-meta">11 кл.&#8195;2016</span>
+      <span class="lad-rung-band" style="background:#800026;color:#fff">5/5</span>
+    </li>
+    
+    <li class="lad-rung">
+      <span class="lad-rung-n">11</span>
+      <a class="lad-rung-link" href="/problems/final/2024/9-e1/">Зона застоя</a>
+      <span class="lad-rung-meta">9 кл.&#8195;2024</span>
+      <span class="lad-rung-band" style="background:#800026;color:#fff">5/5</span>
+    </li>
+    
+  </ol>
+</section>
+
+
+<div id="pr-root">
+  <div class="pr-list">
+    
+<a class="pr" href="/problems/third/2026/11-e2/" data-pid="2026-third-exp-11-2">
+  <span class="pr-badge pr-badge-e">Э2</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2026-third-exp-11-2-320.webp" srcset="/problems/thumbs/2026-third-exp-11-2-320.webp 320w, /problems/thumbs/2026-third-exp-11-2-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Крутильные колебания</span>
+    <span class="pr-snippet"><p>В данной задаче Вам предстоит исследовать горизонтальные и вертикальные крутильные колебания.<br />Оборудование: экспериментальная установка (рис. 1 …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Городская</b><i>3-й этап</i>&#8195;2026</span>
+      <span class="pr-grade">11 кл.</span>
+      
+      
+      
+      <span class="pr-tag">Вращательное движение. Момент силы</span><span class="pr-tag">Момент инерции</span><span class="pr-tag">Силы упругости. Закон Гука</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s on" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение»">Р</span>
+      
+      <span class="pr-av pr-av-m on" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка»">Б</span>
+      
+      <span class="pr-av pr-av-h on" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки»">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#fed976;color:#2d2d2d"
+          title="Сложность (оценка): Типичный городской этап — уровень 2 из 5. Типичная задача городского этапа — или лёгкая задача Республиканской олимпиады.">≈2/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2024/9-e1/" data-pid="2024-final-exp-9-1">
+  <span class="pr-badge pr-badge-e">Э1</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2024-final-exp-9-1-320.webp" srcset="/problems/thumbs/2024-final-exp-9-1-320.webp 320w, /problems/thumbs/2024-final-exp-9-1-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Зона застоя</span>
+    <span class="pr-snippet"><p>Прочтите это в первую очередь!</p>
+<ol>
+<li>Полный комплект состоит из одного заданий, на выполнение которого отводится пять часов.</li>
+<li>Ознакомьтесь с …</li>
+</ol></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Республиканская</b><i>Респ.</i>&#8195;2024</span>
+      <span class="pr-grade">9 кл.</span>
+      
+      
+      
+      <span class="pr-tag">Законы динамики Ньютона</span><span class="pr-tag">Статика: условия равновесия</span><span class="pr-tag">Силы упругости. Закон Гука</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s on" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение»">Р</span>
+      
+      <span class="pr-av pr-av-m" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка» — у этой задачи нет">Б</span>
+      
+      <span class="pr-av pr-av-h on" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки»">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#800026;color:#fff"
+          title="Сложность (оценка): Уровень IZhO — уровень 5 из 5. Задача уровня медального тура IZhO — идею неоткуда списать.">≈5/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2024/11-e1/" data-pid="2024-final-exp-11-1">
+  <span class="pr-badge pr-badge-e">Э1</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2024-final-exp-11-1-320.webp" srcset="/problems/thumbs/2024-final-exp-11-1-320.webp 320w, /problems/thumbs/2024-final-exp-11-1-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Колебания линейки на цилиндре</span>
+    <span class="pr-snippet"><p>Если положить линейку на неподвижный цилиндр так, чтобы в положении равновесия она располагалась горизонтально, и если вывести ее из положения …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Республиканская</b><i>Респ.</i>&#8195;2024</span>
+      <span class="pr-grade">11 кл.</span>
+      
+      
+      
+      <span class="pr-tag">Устойчивость, ветви равновесия и срыв</span><span class="pr-tag">Устойчивость и линеаризация около равновесия</span><span class="pr-tag">График как физический инструмент: наклон, площадь, пересечение и касательная</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s on" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение»">Р</span>
+      
+      <span class="pr-av pr-av-m" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка» — у этой задачи нет">Б</span>
+      
+      <span class="pr-av pr-av-h on" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки»">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#800026;color:#fff"
+          title="Сложность (оценка): Уровень IZhO — уровень 5 из 5. Задача уровня медального тура IZhO — идею неоткуда списать.">≈5/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/third/2024/11-e1/" data-pid="2024-third-exp-11-1">
+  <span class="pr-badge pr-badge-e">Э1</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2024-third-exp-11-1-320.webp" srcset="/problems/thumbs/2024-third-exp-11-1-320.webp 320w, /problems/thumbs/2024-third-exp-11-1-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Негармонические колебания</span>
+    <span class="pr-snippet"><p>Оборудование: два штатива, желоб пластиковый длиной 110см закреплённый на двух дощечках длиной 56см каждая (ширина дощечек 5,0 - 6,0см, толщина 1,0  …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Городская</b><i>3-й этап</i>&#8195;2024</span>
+      <span class="pr-grade">11 кл.</span>
+      
+      
+      
+      <span class="pr-tag">Ускорение. Равноускоренное движение</span><span class="pr-tag">Законы динамики Ньютона</span><span class="pr-tag">Сухое трение</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s on" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение»">Р</span>
+      
+      <span class="pr-av pr-av-m on" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка»">Б</span>
+      
+      <span class="pr-av pr-av-h on" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки»">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#fd8d3c;color:#2d2d2d"
+          title="Сложность (оценка): Республиканская олимпиада — уровень 3 из 5. Медианная задача Республиканской олимпиады: нужен настоящий шаг, но это известный приём.">≈3/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2023/9-e1/" data-pid="2023-final-exp-9-1">
+  <span class="pr-badge pr-badge-e">Э1</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2023-final-exp-9-1-320.webp" srcset="/problems/thumbs/2023-final-exp-9-1-320.webp 320w, /problems/thumbs/2023-final-exp-9-1-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Долгопериодный маятник</span>
+    <span class="pr-snippet"><p>Приборы и оборудование: крутильный маятник (линейка с грузами на подвесе в штативе), секундомер с памятью этапов, линейка 1 м, лазер с блоком …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Республиканская</b><i>Респ.</i>&#8195;2023</span>
+      <span class="pr-grade">9 кл.</span>
+      
+      
+      
+      <span class="pr-tag">Равномерное движение</span><span class="pr-tag">Средняя и мгновенная скорость</span><span class="pr-tag">График как физический инструмент: наклон, площадь, пересечение и касательная</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s on" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение»">Р</span>
+      
+      <span class="pr-av pr-av-m on" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка»">Б</span>
+      
+      <span class="pr-av pr-av-h on" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки»">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#e31a1c;color:#fff"
+          title="Сложность (оценка): Повышенной трудности — уровень 4 из 5. Сложная задача Республиканской олимпиады или уровень отборочных сборов.">≈4/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/third/2023/11-e2/" data-pid="2023-third-exp-11-2">
+  <span class="pr-badge pr-badge-e">Э2</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2023-third-exp-11-2-320.webp" srcset="/problems/thumbs/2023-third-exp-11-2-320.webp 320w, /problems/thumbs/2023-third-exp-11-2-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Бумажный маятник</span>
+    <span class="pr-snippet"><p>Приборы и материалы: плотная бумага (которую вы самостоятельно должны разрезать на нужные вам полоски), линейка, канцелярские скрепки, ножницы …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Городская</b><i>3-й этап</i>&#8195;2023</span>
+      <span class="pr-grade">11 кл.</span>
+      
+      
+      
+      <span class="pr-tag">Гармонические колебания: кинематика</span><span class="pr-tag">Пружинный маятник</span><span class="pr-tag">Затухающие колебания</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s on" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение»">Р</span>
+      
+      <span class="pr-av pr-av-m" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка» — у этой задачи нет">Б</span>
+      
+      <span class="pr-av pr-av-h on" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки»">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#fd8d3c;color:#2d2d2d"
+          title="Сложность (оценка): Республиканская олимпиада — уровень 3 из 5. Медианная задача Республиканской олимпиады: нужен настоящий шаг, но это известный приём.">≈3/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/fifth/2023/sen-e1/" data-pid="2023-fifth-exp-sen-1">
+  <span class="pr-badge pr-badge-e">Э1</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2023-fifth-exp-sen-1-320.webp" srcset="/problems/thumbs/2023-fifth-exp-sen-1-320.webp 320w, /problems/thumbs/2023-fifth-exp-sen-1-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Сканирование движущихся объектов</span>
+    <span class="pr-snippet"><p>Часть 1. Сканер – стробоскоп.<br />Принцип работы сканера известен (см. рис):<br />в прямоугольном корпусе 1 по направляющим 4 с постоянной скоростью движется …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Сборы</b><i>Сборы</i>&#8195;2023</span>
+      <span class="pr-grade">ст.</span>
+      
+      
+      
+      <span class="pr-tag">Равномерное движение</span><span class="pr-tag">Средняя и мгновенная скорость</span><span class="pr-tag">Ускорение. Равноускоренное движение</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s on" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение»">Р</span>
+      
+      <span class="pr-av pr-av-m on" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка»">Б</span>
+      
+      <span class="pr-av pr-av-h on" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки»">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#fd8d3c;color:#2d2d2d"
+          title="Сложность (оценка): Республиканская олимпиада — уровень 3 из 5. Медианная задача Республиканской олимпиады: нужен настоящий шаг, но это известный приём.">≈3/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2022/10-e1/" data-pid="2022-final-exp-10-1">
+  <span class="pr-badge pr-badge-e">Э1</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2022-final-exp-10-1-320.webp" srcset="/problems/thumbs/2022-final-exp-10-1-320.webp 320w, /problems/thumbs/2022-final-exp-10-1-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Крутильные весы Кулона</span>
+    <span class="pr-snippet"><p>Приборы и оборудование: Штатив с лапкой и кольцевой подставкой, катушка ниток, кусок пластилина, секундомер с памятью этапов, линейка, деревянная …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Республиканская</b><i>Респ.</i>&#8195;2022</span>
+      <span class="pr-grade">10 кл.</span>
+      
+      
+      
+      <span class="pr-tag">Вращательное движение. Момент силы</span><span class="pr-tag">Момент инерции</span><span class="pr-tag">Статика: условия равновесия</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s on" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение»">Р</span>
+      
+      <span class="pr-av pr-av-m" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка» — у этой задачи нет">Б</span>
+      
+      <span class="pr-av pr-av-h on" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки»">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#fd8d3c;color:#2d2d2d"
+          title="Сложность (оценка): Республиканская олимпиада — уровень 3 из 5. Медианная задача Республиканской олимпиады: нужен настоящий шаг, но это известный приём.">≈3/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/third/2022/11-e2/" data-pid="2022-third-exp-11-2">
+  <span class="pr-badge pr-badge-e">Э2</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2022-third-exp-11-2-320.webp" srcset="/problems/thumbs/2022-third-exp-11-2-320.webp 320w, /problems/thumbs/2022-third-exp-11-2-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Знай свои деньги!</span>
+    <span class="pr-snippet"><p>Проведение измерений в данной работе требует предельной аккуратности и тщательности. Не пожалейте времени на подготовку установки и ее …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Городская</b><i>3-й этап</i>&#8195;2022</span>
+      <span class="pr-grade">11 кл.</span>
+      
+      
+      
+      <span class="pr-tag">Законы динамики Ньютона</span><span class="pr-tag">Сила тяжести и вес тела</span><span class="pr-tag">Математический маятник</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s on" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение»">Р</span>
+      
+      <span class="pr-av pr-av-m" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка» — у этой задачи нет">Б</span>
+      
+      <span class="pr-av pr-av-h on" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки»">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#e31a1c;color:#fff"
+          title="Сложность (оценка): Повышенной трудности — уровень 4 из 5. Сложная задача Республиканской олимпиады или уровень отборочных сборов.">≈4/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2021/10-e5/" data-pid="2021-final-exp-10-5">
+  <span class="pr-badge pr-badge-e">Э5</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2021-final-exp-10-5-320.webp" srcset="/problems/thumbs/2021-final-exp-10-5-320.webp 320w, /problems/thumbs/2021-final-exp-10-5-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title pr-title-num">Экспериментальная задача 10-5</span>
+    <span class="pr-snippet"><p>В данном задании вы должны исследовать скатывание металлического шарика по изогнутому желобу.</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Республиканская</b><i>Респ.</i>&#8195;2021</span>
+      <span class="pr-grade">10 кл.</span>
+      
+      
+      
+      <span class="pr-tag">Движение по окружности</span><span class="pr-tag">Криволинейное движение. Радиус кривизны</span><span class="pr-tag">Математический маятник</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение» — у этой задачи нет">Р</span>
+      
+      <span class="pr-av pr-av-m" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка» — у этой задачи нет">Б</span>
+      
+      <span class="pr-av pr-av-h" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки» — у этой задачи нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#e31a1c;color:#fff"
+          title="Сложность (оценка): Повышенной трудности — уровень 4 из 5. Сложная задача Республиканской олимпиады или уровень отборочных сборов.">≈4/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/third/2021/11-e2/" data-pid="2021-third-exp-11-2">
+  <span class="pr-badge pr-badge-e">Э2</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2021-third-exp-11-2-320.webp" srcset="/problems/thumbs/2021-third-exp-11-2-320.webp 320w, /problems/thumbs/2021-third-exp-11-2-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Установление вида зависимости</span>
+    <span class="pr-snippet"><p>Описание установки.<br />В данной задаче исследуются малые колебания крутильного маятника. Схема маятника показана на рис. 1</p>
+<p>Металлический стержень с …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Городская</b><i>3-й этап</i>&#8195;2021</span>
+      <span class="pr-grade">11 кл.</span>
+      
+      
+      
+      <span class="pr-tag">Момент инерции</span><span class="pr-tag">Силы упругости. Закон Гука</span><span class="pr-tag">Потенциальная энергия</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s on" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение»">Р</span>
+      
+      <span class="pr-av pr-av-m" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка» — у этой задачи нет">Б</span>
+      
+      <span class="pr-av pr-av-h on" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки»">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#fd8d3c;color:#2d2d2d"
+          title="Сложность (оценка): Республиканская олимпиада — уровень 3 из 5. Медианная задача Республиканской олимпиады: нужен настоящий шаг, но это известный приём.">≈3/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/third/2020/11-e2/" data-pid="2020-third-exp-11-2">
+  <span class="pr-badge pr-badge-e">Э2</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2020-third-exp-11-2-320.webp" srcset="/problems/thumbs/2020-third-exp-11-2-320.webp 320w, /problems/thumbs/2020-third-exp-11-2-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Измерения без приборов</span>
+    <span class="pr-snippet"><p>Многие важные и интересные результаты можно получать, проводя физические эксперименты практически без измерительных приборов, что вам и предстоит …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Городская</b><i>3-й этап</i>&#8195;2020</span>
+      <span class="pr-grade">11 кл.</span>
+      
+      
+      
+      <span class="pr-tag">Гармонические колебания: кинематика</span><span class="pr-tag">Математический маятник</span><span class="pr-tag">Векторное описание и сложение колебаний</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s on" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение»">Р</span>
+      
+      <span class="pr-av pr-av-m" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка» — у этой задачи нет">Б</span>
+      
+      <span class="pr-av pr-av-h on" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки»">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#800026;color:#fff"
+          title="Сложность (оценка): Уровень IZhO — уровень 5 из 5. Задача уровня медального тура IZhO — идею неоткуда списать.">≈5/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2019/11-e2/" data-pid="2019-final-exp-11-2">
+  <span class="pr-badge pr-badge-e">Э2</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2019-final-exp-11-2-320.webp" srcset="/problems/thumbs/2019-final-exp-11-2-320.webp 320w, /problems/thumbs/2019-final-exp-11-2-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Оборотный маятник</span>
+    <span class="pr-snippet"><p>Ускорение свободного падения считать равным <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -1.158ex;" xmlns="http://www.w3.org/2000/svg" width="8.943ex" height="3.447ex" role="img" focusable="false" viewBox="0 -1011.8 3952.8 1523.5" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D454" xlink:href="#MJX-TEX-I-1D454"></use></g><g data-mml-node="mo" transform="translate(754.8,0)"><use data-c="3D" xlink:href="#MJX-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(1810.6,0)"><use data-c="39" xlink:href="#MJX-TEX-N-39"></use></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(2310.6,0)"><g data-mml-node="mo"><use data-c="2C" xlink:href="#MJX-TEX-N-2C"></use></g></g><g data-mml-node="mn" transform="translate(2588.6,0)"><use data-c="38" xlink:href="#MJX-TEX-N-38"></use></g><g data-mml-node="mfrac" transform="translate(3088.6,0)"><g data-mml-node="mtext" transform="translate(220,481.4) scale(0.707)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">м</text></g><g data-mml-node="mtext" transform="translate(220,-370.3) scale(0.707)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">с</text></g><rect width="624.3" height="60" x="120" y="220"></rect></g></g></g></svg></mjx-container>.<br />Приборы и оборудование: оборотный маятник, штатив, линейка …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Республиканская</b><i>Респ.</i>&#8195;2019</span>
+      <span class="pr-grade">11 кл.</span>
+      
+      
+      
+      <span class="pr-tag">Математический маятник</span><span class="pr-tag">Физический маятник</span><span class="pr-tag">График как физический инструмент: наклон, площадь, пересечение и касательная</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s on" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение»">Р</span>
+      
+      <span class="pr-av pr-av-m" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка» — у этой задачи нет">Б</span>
+      
+      <span class="pr-av pr-av-h on" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки»">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#e31a1c;color:#fff"
+          title="Сложность (оценка): Повышенной трудности — уровень 4 из 5. Сложная задача Республиканской олимпиады или уровень отборочных сборов.">≈4/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/third/2019/10-e2/" data-pid="2019-third-exp-10-2">
+  <span class="pr-badge pr-badge-e">Э2</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2019-third-exp-10-2-320.webp" srcset="/problems/thumbs/2019-third-exp-10-2-320.webp 320w, /problems/thumbs/2019-third-exp-10-2-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Открой формулу!</span>
+    <span class="pr-snippet"><p>Несмотря на то, что вы еще не изучали теорию колебаний, предлагаем вам задачу, в которой вы должны самостоятельно получить и экспериментально …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Городская</b><i>3-й этап</i>&#8195;2019</span>
+      <span class="pr-grade">10 кл.</span>
+      
+      
+      
+      <span class="pr-tag">Математический маятник</span><span class="pr-tag">График как физический инструмент: наклон, площадь, пересечение и касательная</span><span class="pr-tag">Метод размерностей и подобия</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s on" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение»">Р</span>
+      
+      <span class="pr-av pr-av-m" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка» — у этой задачи нет">Б</span>
+      
+      <span class="pr-av pr-av-h" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки» — у этой задачи нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#e31a1c;color:#fff"
+          title="Сложность (оценка): Повышенной трудности — уровень 4 из 5. Сложная задача Республиканской олимпиады или уровень отборочных сборов.">≈4/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/third/2019/11-e2/" data-pid="2019-third-exp-11-2">
+  <span class="pr-badge pr-badge-e">Э2</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2019-third-exp-11-2-320.webp" srcset="/problems/thumbs/2019-third-exp-11-2-320.webp 320w, /problems/thumbs/2019-third-exp-11-2-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Закручивание</span>
+    <span class="pr-snippet"><p>Оценка погрешности в данном задании не требуется!<br />Когда нить маятника, подвешенная в точке <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="1.719ex" height="1.645ex" role="img" focusable="false" viewBox="0 -705 760 727" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D436" xlink:href="#MJX-TEX-I-1D436"></use></g></g></g></svg></mjx-container> натыкается на горизонтальный стержень <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="1.459ex" height="1.645ex" role="img" focusable="false" viewBox="0 -705 645 727" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D446" xlink:href="#MJX-TEX-I-1D446"></use></g></g></g></svg></mjx-container>, то при …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Городская</b><i>3-й этап</i>&#8195;2019</span>
+      <span class="pr-grade">11 кл.</span>
+      
+      
+      
+      <span class="pr-tag">Движение по окружности</span><span class="pr-tag">Законы динамики Ньютона</span><span class="pr-tag">Работа. Кинетическая энергия</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s on" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение»">Р</span>
+      
+      <span class="pr-av pr-av-m" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка» — у этой задачи нет">Б</span>
+      
+      <span class="pr-av pr-av-h on" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки»">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#e31a1c;color:#fff"
+          title="Сложность (оценка): Повышенной трудности — уровень 4 из 5. Сложная задача Республиканской олимпиады или уровень отборочных сборов.">≈4/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/third/2018/11-e2/" data-pid="2018-third-exp-11-2">
+  <span class="pr-badge pr-badge-e">Э2</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2018-third-exp-11-2-320.webp" srcset="/problems/thumbs/2018-third-exp-11-2-320.webp 320w, /problems/thumbs/2018-third-exp-11-2-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Дисковый маятник</span>
+    <span class="pr-snippet"><p>Оборудование: лист картона формата А4, ножницы, шило, циркуль, два болта с гайками, штатив с лапкой и гвоздем, секундомер.<br />Формулу для периода …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Городская</b><i>3-й этап</i>&#8195;2018</span>
+      <span class="pr-grade">11 кл.</span>
+      
+      
+      
+      <span class="pr-tag">Вращательное движение. Момент силы</span><span class="pr-tag">Момент инерции</span><span class="pr-tag">Центр масс</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s on" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение»">Р</span>
+      
+      <span class="pr-av pr-av-m" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка» — у этой задачи нет">Б</span>
+      
+      <span class="pr-av pr-av-h on" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки»">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#fd8d3c;color:#2d2d2d"
+          title="Сложность (оценка): Республиканская олимпиада — уровень 3 из 5. Медианная задача Республиканской олимпиады: нужен настоящий шаг, но это известный приём.">≈3/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2017/11-e1/" data-pid="2017-final-exp-11-1">
+  <span class="pr-badge pr-badge-e">Э1</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2017-final-exp-11-1-320.webp" srcset="/problems/thumbs/2017-final-exp-11-1-320.webp 320w, /problems/thumbs/2017-final-exp-11-1-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Магнитные взаимодействия</span>
+    <span class="pr-snippet"><p>В данной задача вам необходимо исследовать зависимости силы магнитных взаимодействий от расстояния между телами.<br />Приборы и оборудование: установка …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Республиканская</b><i>Респ.</i>&#8195;2017</span>
+      <span class="pr-grade">11 кл.</span>
+      
+      
+      
+      <span class="pr-tag">Вращательное движение. Момент силы</span><span class="pr-tag">Момент инерции</span><span class="pr-tag">Магнитное поле. Вектор индукции и силовые линии</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s on" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение»">Р</span>
+      
+      <span class="pr-av pr-av-m" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка» — у этой задачи нет">Б</span>
+      
+      <span class="pr-av pr-av-h on" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки»">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#e31a1c;color:#fff"
+          title="Сложность (оценка): Повышенной трудности — уровень 4 из 5. Сложная задача Республиканской олимпиады или уровень отборочных сборов.">≈4/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/third/2017/11-e1/" data-pid="2017-third-exp-11-1">
+  <span class="pr-badge pr-badge-e">Э1</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2017-third-exp-11-1-320.webp" srcset="/problems/thumbs/2017-third-exp-11-1-320.webp 320w, /problems/thumbs/2017-third-exp-11-1-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Еще одна колебательная система!</span>
+    <span class="pr-snippet"><p>Приборы и оборудование: штатив, спица вязальная (длинная), пластинка из жести; ластик, разрезанный на две равные части, секундомер, транспортир …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Городская</b><i>3-й этап</i>&#8195;2017</span>
+      <span class="pr-grade">11 кл.</span>
+      
+      
+      
+      <span class="pr-tag">Момент инерции</span><span class="pr-tag">Центр масс</span><span class="pr-tag">Потенциальная энергия</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s on" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение»">Р</span>
+      
+      <span class="pr-av pr-av-m" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка» — у этой задачи нет">Б</span>
+      
+      <span class="pr-av pr-av-h" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки» — у этой задачи нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#fd8d3c;color:#2d2d2d"
+          title="Сложность (оценка): Республиканская олимпиада — уровень 3 из 5. Медианная задача Республиканской олимпиады: нужен настоящий шаг, но это известный приём.">≈3/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2016/11-e1/" data-pid="2016-final-exp-11-1">
+  <span class="pr-badge pr-badge-e">Э1</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2016-final-exp-11-1-320.webp" srcset="/problems/thumbs/2016-final-exp-11-1-320.webp 320w, /problems/thumbs/2016-final-exp-11-1-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Двойной маятник</span>
+    <span class="pr-snippet"><p>Приборы и оборудование: двойной маятник, маятник с тяжелым грузом, система подвеса маятников, линейки измерительные.<br />В курсе физики вы изучали …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Республиканская</b><i>Респ.</i>&#8195;2016</span>
+      <span class="pr-grade">11 кл.</span>
+      
+      
+      
+      <span class="pr-tag">Законы динамики Ньютона</span><span class="pr-tag">Кинематические связи: нити, блоки, поршни и жёсткие механизмы</span><span class="pr-tag">Гармонические колебания: кинематика</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s on" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение»">Р</span>
+      
+      <span class="pr-av pr-av-m" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка» — у этой задачи нет">Б</span>
+      
+      <span class="pr-av pr-av-h on" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки»">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#800026;color:#fff"
+          title="Сложность (оценка): Уровень IZhO — уровень 5 из 5. Задача уровня медального тура IZhO — идею неоткуда списать.">≈5/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/third/2016/11-e2/" data-pid="2016-third-exp-11-2">
+  <span class="pr-badge pr-badge-e">Э2</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2016-third-exp-11-2-320.webp" srcset="/problems/thumbs/2016-third-exp-11-2-320.webp 320w, /problems/thumbs/2016-third-exp-11-2-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Сухое трение</span>
+    <span class="pr-snippet"><p>Приборы и оборудование: Штатив с гладким стержнем, кусок проволоки (алюминиевая, двойная в пластиковой изоляции), круговая шкала (лимб), секундомер с …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Городская</b><i>3-й этап</i>&#8195;2016</span>
+      <span class="pr-grade">11 кл.</span>
+      
+      
+      
+      <span class="pr-tag">Равномерное движение</span><span class="pr-tag">Средняя и мгновенная скорость</span><span class="pr-tag">Движение по окружности</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s on" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение»">Р</span>
+      
+      <span class="pr-av pr-av-m" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка» — у этой задачи нет">Б</span>
+      
+      <span class="pr-av pr-av-h on" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки»">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#800026;color:#fff"
+          title="Сложность (оценка): Уровень IZhO — уровень 5 из 5. Задача уровня медального тура IZhO — идею неоткуда списать.">≈5/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/third/2015/11-e2/" data-pid="2015-third-exp-11-2">
+  <span class="pr-badge pr-badge-e">Э2</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2015-third-exp-11-2-320.webp" srcset="/problems/thumbs/2015-third-exp-11-2-320.webp 320w, /problems/thumbs/2015-third-exp-11-2-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Деформация изгиба</span>
+    <span class="pr-snippet"><p>Приборы и оборудование: Пружинка от шариковой ручки, две палочки от шашлыка длиной 20 см, штатив с лапкой, секундомер, транспортир, нить с грузом.<br />В …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Городская</b><i>3-й этап</i>&#8195;2015</span>
+      <span class="pr-grade">11 кл.</span>
+      
+      
+      
+      <span class="pr-tag">Вращательное движение. Момент силы</span><span class="pr-tag">Момент инерции</span><span class="pr-tag">Статика: условия равновесия</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s on" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение»">Р</span>
+      
+      <span class="pr-av pr-av-m" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка» — у этой задачи нет">Б</span>
+      
+      <span class="pr-av pr-av-h on" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки»">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#800026;color:#fff"
+          title="Сложность (оценка): Уровень IZhO — уровень 5 из 5. Задача уровня медального тура IZhO — идею неоткуда списать.">≈5/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2014/9-e2/" data-pid="2014-final-exp-9-2">
+  <span class="pr-badge pr-badge-e">Э2</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2014-final-exp-9-2-320.webp" srcset="/problems/thumbs/2014-final-exp-9-2-320.webp 320w, /problems/thumbs/2014-final-exp-9-2-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Магнитные взаимодействия</span>
+    <span class="pr-snippet"><p>Приборы и оборудование: магнит на подвесе, штатив, железная шайба, линейка секундомер.</p>
+<p>Для повышения устойчивости рекомендуем использовать …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Республиканская</b><i>Респ.</i>&#8195;2014</span>
+      <span class="pr-grade">9 кл.</span>
+      
+      
+      
+      <span class="pr-tag">Вращательное движение. Момент силы</span><span class="pr-tag">Статика: условия равновесия</span><span class="pr-tag">Сила тяжести и вес тела</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s on" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение»">Р</span>
+      
+      <span class="pr-av pr-av-m" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка» — у этой задачи нет">Б</span>
+      
+      <span class="pr-av pr-av-h on" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки»">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#e31a1c;color:#fff"
+          title="Сложность (оценка): Повышенной трудности — уровень 4 из 5. Сложная задача Республиканской олимпиады или уровень отборочных сборов.">≈4/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2014/11-e1/" data-pid="2014-final-exp-11-1">
+  <span class="pr-badge pr-badge-e">Э1</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2014-final-exp-11-1-320.webp" srcset="/problems/thumbs/2014-final-exp-11-1-320.webp 320w, /problems/thumbs/2014-final-exp-11-1-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Тахоманометр</span>
+    <span class="pr-snippet"><p>Если к висящей вертикально нити подвесить груз, то можно получить стоячие волны периодически ударяя по нити на определенном расстоянии от ее точки …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Республиканская</b><i>Респ.</i>&#8195;2014</span>
+      <span class="pr-grade">11 кл.</span>
+      
+      
+      
+      <span class="pr-tag">Движение по окружности</span><span class="pr-tag">Законы динамики Ньютона</span><span class="pr-tag">Кинематическое описание волны</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s on" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение»">Р</span>
+      
+      <span class="pr-av pr-av-m" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка» — у этой задачи нет">Б</span>
+      
+      <span class="pr-av pr-av-h on" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки»">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#e31a1c;color:#fff"
+          title="Сложность (оценка): Повышенной трудности — уровень 4 из 5. Сложная задача Республиканской олимпиады или уровень отборочных сборов.">≈4/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/third/2014/10-e2/" data-pid="2014-third-exp-10-2">
+  <span class="pr-badge pr-badge-e">Э2</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2014-third-exp-10-2-320.webp" srcset="/problems/thumbs/2014-third-exp-10-2-320.webp 320w, /problems/thumbs/2014-third-exp-10-2-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Придумай формулу сам!</span>
+    <span class="pr-snippet"><p>Вам необходимо исследовать колебания пластикового кольца. Так как колебательное движение вы еще не изучали, то вы свободны от теоретических …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Городская</b><i>3-й этап</i>&#8195;2014</span>
+      <span class="pr-grade">10 кл.</span>
+      
+      
+      
+      <span class="pr-tag">График как физический инструмент: наклон, площадь, пересечение и касательная</span><span class="pr-tag">Метод размерностей и подобия</span><span class="pr-tag">Снять зависимость серией измерений</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s on" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение»">Р</span>
+      
+      <span class="pr-av pr-av-m" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка» — у этой задачи нет">Б</span>
+      
+      <span class="pr-av pr-av-h on" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки»">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#fed976;color:#2d2d2d"
+          title="Сложность (оценка): Типичный городской этап — уровень 2 из 5. Типичная задача городского этапа — или лёгкая задача Республиканской олимпиады.">≈2/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2013/9-e1/" data-pid="2013-final-exp-9-1">
+  <span class="pr-badge pr-badge-e">Э1</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2013-final-exp-9-1-320.webp" srcset="/problems/thumbs/2013-final-exp-9-1-320.webp 320w, /problems/thumbs/2013-final-exp-9-1-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Бегающий зайчик</span>
+    <span class="pr-snippet"><p>Приборы и оборудование: крутильный маятник, секундомер, лазер, плоское зеркало, угломерная шкала, линейка 40 см.</p>
+<p>Крутильный маятник состоит из …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Республиканская</b><i>Респ.</i>&#8195;2013</span>
+      <span class="pr-grade">9 кл.</span>
+      
+      
+      
+      <span class="pr-tag">Средняя и мгновенная скорость</span><span class="pr-tag">Гармонические колебания: кинематика</span><span class="pr-tag">График как физический инструмент: наклон, площадь, пересечение и касательная</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s on" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение»">Р</span>
+      
+      <span class="pr-av pr-av-m" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка» — у этой задачи нет">Б</span>
+      
+      <span class="pr-av pr-av-h on" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки»">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#e31a1c;color:#fff"
+          title="Сложность (оценка): Повышенной трудности — уровень 4 из 5. Сложная задача Республиканской олимпиады или уровень отборочных сборов.">≈4/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/third/2013/11-e2/" data-pid="2013-third-exp-11-2">
+  <span class="pr-badge pr-badge-e">Э2</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2013-third-exp-11-2-320.webp" srcset="/problems/thumbs/2013-third-exp-11-2-320.webp 320w, /problems/thumbs/2013-third-exp-11-2-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Полумаятник</span>
+    <span class="pr-snippet"><p>В данной задаче Вам необходимо исследовать колебания математического маятника при наличии ограничений, а также показать свои умения в теоретических …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Городская</b><i>3-й этап</i>&#8195;2013</span>
+      <span class="pr-grade">11 кл.</span>
+      
+      
+      
+      <span class="pr-tag">Математический маятник</span><span class="pr-tag">Устойчивость и линеаризация около равновесия</span><span class="pr-tag">График как физический инструмент: наклон, площадь, пересечение и касательная</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s on" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение»">Р</span>
+      
+      <span class="pr-av pr-av-m on" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка»">Б</span>
+      
+      <span class="pr-av pr-av-h on" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки»">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#fed976;color:#2d2d2d"
+          title="Сложность (оценка): Типичный городской этап — уровень 2 из 5. Типичная задача городского этапа — или лёгкая задача Республиканской олимпиады.">≈2/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/third/2011/11-e2/" data-pid="2011-third-exp-11-2">
+  <span class="pr-badge pr-badge-e">Э2</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2011-third-exp-11-2-320.webp" srcset="/problems/thumbs/2011-third-exp-11-2-320.webp 320w, /problems/thumbs/2011-third-exp-11-2-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Резиновый маятник</span>
+    <span class="pr-snippet"><p>В данной задаче Вам предлагается исследовать колебания груза известной массы <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="1.986ex" height="1.025ex" role="img" focusable="false" viewBox="0 -442 878 453" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D45A" xlink:href="#MJX-TEX-I-1D45A"></use></g></g></g></svg></mjx-container>, подвешенного при помощи штатива на резиновом рыболовном шнуре. В …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Городская</b><i>3-й этап</i>&#8195;2011</span>
+      <span class="pr-grade">11 кл.</span>
+      
+      
+      
+      <span class="pr-tag">Силы упругости. Закон Гука</span><span class="pr-tag">Деформации и упругие свойства тел</span><span class="pr-tag">Пружинный маятник</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s on" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение»">Р</span>
+      
+      <span class="pr-av pr-av-m" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка» — у этой задачи нет">Б</span>
+      
+      <span class="pr-av pr-av-h on" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки»">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#e31a1c;color:#fff"
+          title="Сложность (оценка): Повышенной трудности — уровень 4 из 5. Сложная задача Республиканской олимпиады или уровень отборочных сборов.">≈4/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/third/2010/10-e2/" data-pid="2010-third-exp-10-2">
+  <span class="pr-badge pr-badge-e">Э2</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2010-third-exp-10-2-320.webp" srcset="/problems/thumbs/2010-third-exp-10-2-320.webp 320w, /problems/thumbs/2010-third-exp-10-2-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title pr-title-num">Экспериментальная задача 10-2</span>
+    <span class="pr-snippet"><ol>
+<li>Скотч.</li>
+<li>Пластилин (кусок)</li>
+<li>Спичечный коробок</li>
+<li>Поролон упаковочный – кусок в форме параллелепипеда 1 см х 3 см х 8см.<br />Конструирование …</li>
+</ol></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Городская</b><i>3-й этап</i>&#8195;2010</span>
+      <span class="pr-grade">10 кл.</span>
+      
+      
+      
+      <span class="pr-tag">Сухое трение</span><span class="pr-tag">Работа. Кинетическая энергия</span><span class="pr-tag">Потенциальная энергия</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение» — у этой задачи нет">Р</span>
+      
+      <span class="pr-av pr-av-m" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка» — у этой задачи нет">Б</span>
+      
+      <span class="pr-av pr-av-h" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки» — у этой задачи нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#e31a1c;color:#fff"
+          title="Сложность (оценка): Повышенной трудности — уровень 4 из 5. Сложная задача Республиканской олимпиады или уровень отборочных сборов.">≈4/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/third/2010/11-e2/" data-pid="2010-third-exp-11-2">
+  <span class="pr-badge pr-badge-e">Э2</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2010-third-exp-11-2-320.webp" srcset="/problems/thumbs/2010-third-exp-11-2-320.webp 320w, /problems/thumbs/2010-third-exp-11-2-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title pr-title-num">Экспериментальная задача 11-2</span>
+    <span class="pr-snippet"><ol>
+<li>Лист миллиметровой бумаги формата А3.<br />Лезвие используйте в качестве упора при изучении колебаний, закрепив его в лапке<br />штатива. Будьте …</li>
+</ol></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Городская</b><i>3-й этап</i>&#8195;2010</span>
+      <span class="pr-grade">11 кл.</span>
+      
+      
+      
+      <span class="pr-tag">Момент инерции</span><span class="pr-tag">Центр масс</span><span class="pr-tag">Физический маятник</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение» — у этой задачи нет">Р</span>
+      
+      <span class="pr-av pr-av-m" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка» — у этой задачи нет">Б</span>
+      
+      <span class="pr-av pr-av-h" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки» — у этой задачи нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#800026;color:#fff"
+          title="Сложность (оценка): Уровень IZhO — уровень 5 из 5. Задача уровня медального тура IZhO — идею неоткуда списать.">≈5/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2009/11-e1/" data-pid="2009-final-exp-11-1">
+  <span class="pr-badge pr-badge-e">Э1</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2009-final-exp-11-1-320.webp" srcset="/problems/thumbs/2009-final-exp-11-1-320.webp 320w, /problems/thumbs/2009-final-exp-11-1-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Лобовое сопротивление</span>
+    <span class="pr-snippet"><p>В данной работе вам необходимо измерить коэффициент лобового сопротивления движения гайки в вязкой жидкости.</p>
+<p>Приборы и оборудование. Стержень с …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Республиканская</b><i>Респ.</i>&#8195;2009</span>
+      <span class="pr-grade">11 кл.</span>
+      
+      
+      
+      <span class="pr-tag">Вязкое трение и сопротивление среды</span><span class="pr-tag">Математический маятник</span><span class="pr-tag">Затухающие колебания</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s on" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение»">Р</span>
+      
+      <span class="pr-av pr-av-m" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка» — у этой задачи нет">Б</span>
+      
+      <span class="pr-av pr-av-h on" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки»">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#e31a1c;color:#fff"
+          title="Сложность (оценка): Повышенной трудности — уровень 4 из 5. Сложная задача Республиканской олимпиады или уровень отборочных сборов.">≈4/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/third/2009/11-e2/" data-pid="2009-third-exp-11-2">
+  <span class="pr-badge pr-badge-e">Э2</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2009-third-exp-11-2-320.webp" srcset="/problems/thumbs/2009-third-exp-11-2-320.webp 320w, /problems/thumbs/2009-third-exp-11-2-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title pr-title-num">Экспериментальная задача 11-2</span>
+    <span class="pr-snippet"><p>Задание 2. «Как устоять на иголке!»»<br />В данной работе вам необходимо экспериментально исследовать два типа колебаний маятника с двумя спицами. Не …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Городская</b><i>3-й этап</i>&#8195;2009</span>
+      <span class="pr-grade">11 кл.</span>
+      
+      
+      
+      <span class="pr-tag">Момент инерции</span><span class="pr-tag">Математический маятник</span><span class="pr-tag">Физический маятник</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s on" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение»">Р</span>
+      
+      <span class="pr-av pr-av-m" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка» — у этой задачи нет">Б</span>
+      
+      <span class="pr-av pr-av-h on" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки»">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#fd8d3c;color:#2d2d2d"
+          title="Сложность (оценка): Республиканская олимпиада — уровень 3 из 5. Медианная задача Республиканской олимпиады: нужен настоящий шаг, но это известный приём.">≈3/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2008/10-e2-v1/" data-pid="2008-final-exp-10-2-v1">
+  <span class="pr-badge pr-badge-e">Э2</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2008-final-exp-10-2-v1-320.webp" srcset="/problems/thumbs/2008-final-exp-10-2-v1-320.webp 320w, /problems/thumbs/2008-final-exp-10-2-v1-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Закон электромагнитной индукции<span class="pr-variant">вар. 1</span></span>
+    <span class="pr-snippet"><p>Оборудование: головной телефон, мультиметр, секундомер, конденсатор, диод полупроводниковый, магнит кольцевой, грузик, соединительные провода …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Республиканская</b><i>Респ.</i>&#8195;2008</span>
+      <span class="pr-grade">10 кл.</span>
+      
+      
+      
+      <span class="pr-tag">Электроёмкость. Конденсаторы</span><span class="pr-tag">Электрическое сопротивление, удельное сопротивление</span><span class="pr-tag">Нелинейные элементы, ВАХ</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение» — у этой задачи нет">Р</span>
+      
+      <span class="pr-av pr-av-m" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка» — у этой задачи нет">Б</span>
+      
+      <span class="pr-av pr-av-h" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки» — у этой задачи нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#fd8d3c;color:#2d2d2d"
+          title="Сложность (оценка): Республиканская олимпиада — уровень 3 из 5. Медианная задача Республиканской олимпиады: нужен настоящий шаг, но это известный приём.">≈3/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/third/2008/11-e1/" data-pid="2008-third-exp-11-1">
+  <span class="pr-badge pr-badge-e">Э1</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2008-third-exp-11-1-320.webp" srcset="/problems/thumbs/2008-third-exp-11-1-320.webp 320w, /problems/thumbs/2008-third-exp-11-1-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Качательные</span>
+    <span class="pr-snippet"><p>«Качательные» колебания.<br />Оборудование: цилиндр металлический, линейка деревянная, секундомер, пластилин, палочка деревянная.<br />С помощью пластилина …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Городская</b><i>3-й этап</i>&#8195;2008</span>
+      <span class="pr-grade">11 кл.</span>
+      
+      
+      
+      <span class="pr-tag">Вращательное движение. Момент силы</span><span class="pr-tag">Момент инерции</span><span class="pr-tag">Сухое трение</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s on" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение»">Р</span>
+      
+      <span class="pr-av pr-av-m" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка» — у этой задачи нет">Б</span>
+      
+      <span class="pr-av pr-av-h on" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки»">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#fd8d3c;color:#2d2d2d"
+          title="Сложность (оценка): Республиканская олимпиада — уровень 3 из 5. Медианная задача Республиканской олимпиады: нужен настоящий шаг, но это известный приём.">≈3/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/third/2007/9-e2/" data-pid="2007-third-exp-9-2">
+  <span class="pr-badge pr-badge-e">Э2</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2007-third-exp-9-2-320.webp" srcset="/problems/thumbs/2007-third-exp-9-2-320.webp 320w, /problems/thumbs/2007-third-exp-9-2-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Неупругий удар</span>
+    <span class="pr-snippet"><p>При столкновениях пластичных тел (например, шариков из пластилина) происходит неупругий удар – удар, при котором часть кинетической энергии шариков …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Городская</b><i>3-й этап</i>&#8195;2007</span>
+      <span class="pr-grade">9 кл.</span>
+      
+      
+      
+      <span class="pr-tag">Импульс. Закон сохранения импульса</span><span class="pr-tag">Столкновения тел</span><span class="pr-tag">Работа. Кинетическая энергия</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s on" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение»">Р</span>
+      
+      <span class="pr-av pr-av-m" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка» — у этой задачи нет">Б</span>
+      
+      <span class="pr-av pr-av-h on" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки»">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#e31a1c;color:#fff"
+          title="Сложность (оценка): Повышенной трудности — уровень 4 из 5. Сложная задача Республиканской олимпиады или уровень отборочных сборов.">≈4/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/third/2007/10-e2/" data-pid="2007-third-exp-10-2">
+  <span class="pr-badge pr-badge-e">Э2</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2007-third-exp-10-2-320.webp" srcset="/problems/thumbs/2007-third-exp-10-2-320.webp 320w, /problems/thumbs/2007-third-exp-10-2-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Колебания стержня</span>
+    <span class="pr-snippet"><p>Всякая неизвестная функция линейна,<br />если она не парабола<br />Приборы и оборудование:</p>
+<ol>
+<li>Штатив с лапкой.</li>
+<li>Секундомер.</li>
+<li>Спица вязальная</li>
+<li>Ластик</li>
+<li>…</li>
+</ol></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Городская</b><i>3-й этап</i>&#8195;2007</span>
+      <span class="pr-grade">10 кл.</span>
+      
+      
+      
+      <span class="pr-tag">Физический маятник</span><span class="pr-tag">График как физический инструмент: наклон, площадь, пересечение и касательная</span><span class="pr-tag">Построение модели и допущения</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s on" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение»">Р</span>
+      
+      <span class="pr-av pr-av-m" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка» — у этой задачи нет">Б</span>
+      
+      <span class="pr-av pr-av-h" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки» — у этой задачи нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#fed976;color:#2d2d2d"
+          title="Сложность (оценка): Типичный городской этап — уровень 2 из 5. Типичная задача городского этапа — или лёгкая задача Республиканской олимпиады.">≈2/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2005/10-e2/" data-pid="2005-final-exp-10-2">
+  <span class="pr-badge pr-badge-e">Э2</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2005-final-exp-10-2-320.webp" srcset="/problems/thumbs/2005-final-exp-10-2-320.webp 320w, /problems/thumbs/2005-final-exp-10-2-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Магнитные взаимодействия</span>
+    <span class="pr-snippet"><p>Экспериментальная задача 2.<br />«Магнитные взаимодействия»<br />Вам необходимо исследовать взаимодействия постоянных магнитов и постоянного магнита с железной …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Республиканская</b><i>Респ.</i>&#8195;2005</span>
+      <span class="pr-grade">10 кл.</span>
+      
+      
+      
+      <span class="pr-tag">Центр масс</span><span class="pr-tag">Магнитное поле. Вектор индукции и силовые линии</span><span class="pr-tag">Физический маятник</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение» — у этой задачи нет">Р</span>
+      
+      <span class="pr-av pr-av-m" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка» — у этой задачи нет">Б</span>
+      
+      <span class="pr-av pr-av-h" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки» — у этой задачи нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#fd8d3c;color:#2d2d2d"
+          title="Сложность (оценка): Республиканская олимпиада — уровень 3 из 5. Медианная задача Республиканской олимпиады: нужен настоящий шаг, но это известный приём.">≈3/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2005/11-e1/" data-pid="2005-final-exp-11-1">
+  <span class="pr-badge pr-badge-e">Э1</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2005-final-exp-11-1.svg"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-card">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Магнитные взаимодействия</span>
+    <span class="pr-snippet"><p>Экспериментальная задача 1.<br />Магнитные взаимодействия.<br />Вам необходимо исследовать взаимодействия постоянных магнитов и постоянного магнита с железной …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Республиканская</b><i>Респ.</i>&#8195;2005</span>
+      <span class="pr-grade">11 кл.</span>
+      
+      
+      
+      <span class="pr-tag">Центр масс</span><span class="pr-tag">Магнитное поле. Вектор индукции и силовые линии</span><span class="pr-tag">Физический маятник</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение» — у этой задачи нет">Р</span>
+      
+      <span class="pr-av pr-av-m" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка» — у этой задачи нет">Б</span>
+      
+      <span class="pr-av pr-av-h" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки» — у этой задачи нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#e31a1c;color:#fff"
+          title="Сложность (оценка): Повышенной трудности — уровень 4 из 5. Сложная задача Республиканской олимпиады или уровень отборочных сборов.">≈4/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2003/10-e1/" data-pid="2003-final-exp-10-1">
+  <span class="pr-badge pr-badge-e">Э1</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2003-final-exp-10-1-320.webp" srcset="/problems/thumbs/2003-final-exp-10-1-320.webp 320w, /problems/thumbs/2003-final-exp-10-1-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title pr-title-num">Экспериментальная задача 10-1</span>
+    <span class="pr-snippet"><p>Маятник состоит из стрежня с закрепленными на<br />нем двумя одинаковыми грузами.</p>
+<ol>
+<li>Покажите, что если считать грузы<br />материальными точками и пренебречь …</li>
+</ol></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Республиканская</b><i>Респ.</i>&#8195;2003</span>
+      <span class="pr-grade">10 кл.</span>
+      
+      
+      
+      <span class="pr-tag">Момент инерции</span><span class="pr-tag">Гармонические колебания: кинематика</span><span class="pr-tag">Пружинный маятник</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение» — у этой задачи нет">Р</span>
+      
+      <span class="pr-av pr-av-m" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка» — у этой задачи нет">Б</span>
+      
+      <span class="pr-av pr-av-h" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки» — у этой задачи нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#fd8d3c;color:#2d2d2d"
+          title="Сложность (оценка): Республиканская олимпиада — уровень 3 из 5. Медианная задача Республиканской олимпиады: нужен настоящий шаг, но это известный приём.">≈3/5</span>
+    
+  </span>
+</a>
+
+  </div>
+</div>
+
+<nav class="yr-nav">
+  <a class="btn btn-ghost" href="/problems/topics/">← Все темы</a>
+  <a class="btn btn-ghost" href="/problems/?tag=obekt_kolebaniya">Открыть в поиске задач</a>
+</nav>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© 2026 BelPhO — Белорусские физические олимпиады</span>
+    <span class="footer-links">
+      <a href="/problems/">Задачи</a>
+      <a href="https://t.me/belpho_by" rel="noopener">Telegram</a>
+    </span>
+  </div>
+</footer>
+
+
+<script type="module" src="/js/site/problem-list.js"></script>
+
+</body>
+</html>

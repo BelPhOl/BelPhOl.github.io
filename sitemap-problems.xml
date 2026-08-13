@@ -14466,6 +14466,16 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://belpho.org/problems/topics/analiz-ostatkov/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/analogiya-mezhdu-fizicheskimi-sistemami/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://belpho.org/problems/topics/archimedova-sila/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -14477,6 +14487,11 @@
   </url>
   <url>
     <loc>https://belpho.org/problems/topics/avtokolebaniya/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/balans-potokov-v-stacionare/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -14497,6 +14512,11 @@
   </url>
   <url>
     <loc>https://belpho.org/problems/topics/chernyy-yashchik/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/chislennaya-proizvodnaya/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -14522,6 +14542,11 @@
   </url>
   <url>
     <loc>https://belpho.org/problems/topics/difrakcionnaya-reshetka/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/difrakciya-sveta-zony-frenelya/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -14561,6 +14586,11 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://belpho.org/problems/topics/effekt-holla/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://belpho.org/problems/topics/ekvivalentnyi-istochnik/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -14581,12 +14611,22 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://belpho.org/problems/topics/elektrolity-i-polyarizaciya-elektrodov/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://belpho.org/problems/topics/elektromagnitnaya-induktsiya/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://belpho.org/problems/topics/elektromagnitnye-volny/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/elektrostaticheskaya-zashchita-i-zazemlenie/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -14656,6 +14696,11 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://belpho.org/problems/topics/gisterezis-i-predystoriya/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://belpho.org/problems/topics/gradurovka/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -14706,6 +14751,16 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://belpho.org/problems/topics/kinematicheskie-svyazi/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/kinematika-sto/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://belpho.org/problems/topics/kinematika-volnovogo-processa/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -14731,12 +14786,27 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://belpho.org/problems/topics/kontrolnyy-opyt-i-vychitanie-fona/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://belpho.org/problems/topics/kosmicheskie-skorosti/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://belpho.org/problems/topics/krivolineynoe-dvizhenie/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/kvazistacionarnoe-priblizhenie/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/linearisaciya-po-malomu-parametru/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -14761,6 +14831,11 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://belpho.org/problems/topics/magnitnyi-moment-i-energiya-dipolya/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://belpho.org/problems/topics/magnitnyy-potok/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -14781,6 +14856,11 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://belpho.org/problems/topics/metod-izobrazheniy/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://belpho.org/problems/topics/metod-razmernostey/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -14797,6 +14877,16 @@
   </url>
   <url>
     <loc>https://belpho.org/problems/topics/mnk/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/modelirovanie-i-dopuscheniya/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/modelirovanie-raspredelennoy-sistemy-sloyami/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -14826,6 +14916,11 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://belpho.org/problems/topics/negarmonicheskie-kolebaniya-i-fure/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://belpho.org/problems/topics/neinertsialnye-sistemy/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -14841,7 +14936,22 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://belpho.org/problems/topics/normalizaciya-i-kollaps-dannyh/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://belpho.org/problems/topics/obekt-davlenie-gazov/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/obekt-elektricheskie-cepi/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/obekt-gidrostatika/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -14856,6 +14966,36 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://belpho.org/problems/topics/obekt-kolebaniya/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/obekt-optika/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/obekt-rychag/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/obekt-sily-soprotivleniya/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/obekt-sily-uprugosti/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/obekt-teploobmen/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://belpho.org/problems/topics/obekt-udary/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -14866,7 +15006,37 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://belpho.org/problems/topics/obekt-zakon-dvizheniya/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/obrabotka-fotografii-i-skanov/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/obratnaya-fizicheskaya-zadacha/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://belpho.org/problems/topics/oformlenie-raboty/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/opredelenie-vida-zavisimosti/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/opticheskie-pribory/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/optimizaciya-fizicheskoy-sistemy/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -14911,7 +15081,22 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://belpho.org/problems/topics/pogreshnost-pryamogo-izmereniya/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://belpho.org/problems/topics/pole-skorostey-i-potok/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/polnoe-vnutrennee-otrazhenie/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/potentsial/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -14927,6 +15112,96 @@
   </url>
   <url>
     <loc>https://belpho.org/problems/topics/pravila-kirhgoffa/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/predstavlenie-rezultata-s-pogreshnostyu/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/pribor-barometr-manometr/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/pribor-dinamometr/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/pribor-istochnik-pitaniya/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/pribor-kalorimetr/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/pribor-lazer/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/pribor-linejka/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/pribor-linza-ekran/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/pribor-magnit/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/pribor-menzurka/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/pribor-multimetr/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/pribor-reostat/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/pribor-sekundomer/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/pribor-shpric/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/pribor-shtangencirkul/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/pribor-termometr/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/pribor-transportir/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/pribor-vesy/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -14951,12 +15226,22 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://belpho.org/problems/topics/proizvolnye-processy-i-politropa/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://belpho.org/problems/topics/provodniki-v-elektrostaticheskom-pole/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://belpho.org/problems/topics/pruzhinnyy-mayatnik/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/rabota-gaza/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -14976,7 +15261,22 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://belpho.org/problems/topics/raschet-poley-po-simmetrii/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/raschet-rezistivnyh-tsepey/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://belpho.org/problems/topics/raspredeleniya-maksvella-i-bolcmana/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/rasshirenie-diapazona-pribora/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -14997,6 +15297,11 @@
   </url>
   <url>
     <loc>https://belpho.org/problems/topics/reshenie-differentsialnyh-uravneniy/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/rezhimy-i-granicy-primenimosti/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -15051,6 +15356,11 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://belpho.org/problems/topics/sistematicheskiy-faktor/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://belpho.org/problems/topics/skhema-ustanovki/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -15072,6 +15382,11 @@
   </url>
   <url>
     <loc>https://belpho.org/problems/topics/soobshchayushchiesya-sosudy/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/sootnoshenie-neopredelennostei/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -15126,6 +15441,11 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://belpho.org/problems/topics/sverkhprovodniki-v-magnitnom-pole/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://belpho.org/problems/topics/svetovye-luchi/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -15142,6 +15462,11 @@
   </url>
   <url>
     <loc>https://belpho.org/problems/topics/temperatura-i-teplota/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/teorema-o-cirkulyacii-i-solenoid/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -15167,6 +15492,16 @@
   </url>
   <url>
     <loc>https://belpho.org/problems/topics/teplovye-mashiny-i-kpd/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/tip-izmereniya/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/transformator/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -15201,7 +15536,17 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://belpho.org/problems/topics/vektornoe-slozhenie-kolebaniy/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://belpho.org/problems/topics/vektornye-harakteristiki-dvizheniya/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/vliyanie-izmeritelnogo-pribora/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -15222,6 +15567,11 @@
   </url>
   <url>
     <loc>https://belpho.org/problems/topics/vynuzhdennye-kolebaniya-i-rezonans/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/topics/yadernye-reakcii/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

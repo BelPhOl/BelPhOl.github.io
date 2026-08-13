@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Движение по орбите — BelPhO</title>
-  <meta name="description" content="Круговые и эллиптические орбиты, энергия и момент импульса на орбите. Сюда же: Спутники и орбитальные манёвры. — 6 задач белорусских олимпиад по физике.">
+  <meta name="description" content="Круговые и эллиптические орбиты, энергия и момент импульса на орбите. Сюда же: Спутники и орбитальные манёвры. — 14 задач белорусских олимпиад по физике.">
   <link rel="canonical" href="https://belpho.org/problems/topics/dvizhenie-po-orbite/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="BelPhO">
   <meta property="og:locale" content="ru_RU">
   <meta property="og:url" content="https://belpho.org/problems/topics/dvizhenie-po-orbite/">
   <meta property="og:title" content="Движение по орбите — BelPhO">
-  <meta property="og:description" content="Круговые и эллиптические орбиты, энергия и момент импульса на орбите. Сюда же: Спутники и орбитальные манёвры. — 6 задач белорусских олимпиад по физике.">
+  <meta property="og:description" content="Круговые и эллиптические орбиты, энергия и момент импульса на орбите. Сюда же: Спутники и орбитальные манёвры. — 14 задач белорусских олимпиад по физике.">
   
   <meta property="og:image" content="https://belpho.org/problems/thumbs/og/problems.png">
   <meta property="og:image:width" content="1200">
@@ -24,7 +24,7 @@
   
 </head>
 <body>
-
+<svg id="mjx-glyph-cache" aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden"><defs><path id="MJX-TEX-I-1D43A" d="M50 252Q50 367 117 473T286 641T490 704Q580 704 633 653Q642 643 648 636T656 626L657 623Q660 623 684 649Q691 655 699 663T715 679T725 690L740 705H746Q760 705 760 698Q760 694 728 561Q692 422 692 421Q690 416 687 415T669 413H653Q647 419 647 422Q647 423 648 429T650 449T651 481Q651 552 619 605T510 659Q492 659 471 656T418 643T357 615T294 567T236 496T189 394T158 260Q156 242 156 221Q156 173 170 136T206 79T256 45T308 28T353 24Q407 24 452 47T514 106Q517 114 529 161T541 214Q541 222 528 224T468 227H431Q425 233 425 235T427 254Q431 267 437 273H454Q494 271 594 271Q634 271 659 271T695 272T707 272Q721 272 721 263Q721 261 719 249Q714 230 709 228Q706 227 694 227Q674 227 653 224Q646 221 643 215T629 164Q620 131 614 108Q589 6 586 3Q584 1 581 1Q571 1 553 21T530 52Q530 53 528 52T522 47Q448 -22 322 -22Q201 -22 126 55T50 252Z"></path><path id="MJX-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-TEX-N-36" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z"></path><path id="MJX-TEX-N-2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path><path id="MJX-TEX-N-37" d="M55 458Q56 460 72 567L88 674Q88 676 108 676H128V672Q128 662 143 655T195 646T364 644H485V605L417 512Q408 500 387 472T360 435T339 403T319 367T305 330T292 284T284 230T278 162T275 80Q275 66 275 52T274 28V19Q270 2 255 -10T221 -22Q210 -22 200 -19T179 0T168 40Q168 198 265 368Q285 400 349 489L395 552H302Q128 552 119 546Q113 543 108 522T98 479L95 458V455H55V458Z"></path><path id="MJX-TEX-N-22C5" d="M78 250Q78 274 95 292T138 310Q162 310 180 294T199 251Q199 226 182 208T139 190T96 207T78 250Z"></path><path id="MJX-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJX-TEX-N-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path><path id="MJX-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></defs></svg>
 <header class="site-header">
   <div class="container header-content">
     <a href="/" class="logo">
@@ -61,7 +61,7 @@
     <p class="tp-lead">Круговые и эллиптические орбиты, энергия и момент импульса на орбите. Сюда же: Спутники и орбитальные манёвры.</p>
   </div>
   <ul class="yr-facts">
-    <li><b>6</b> задач</li>
+    <li><b>14</b> задач</li>
     
   </ul>
 </header>
@@ -70,36 +70,78 @@
 <section class="lad-ladder" aria-labelledby="lad-h">
   <h2 class="lad-h" id="lad-h">Лестница по сложности</h2>
   <p class="lad-note">
-    4 ступеней из 6 задач темы — по возрастанию расчётной
+    10 ступеней из 14 задач темы — по возрастанию расчётной
     сложности, без повторов одной и той же задачи под разными классами.
   </p>
   <ol class="lad-rungs">
     
     <li class="lad-rung">
       <span class="lad-rung-n">1</span>
-      <a class="lad-rung-link" href="/problems/third/2000/9-2/">Задача 9-2</a>
+      <a class="lad-rung-link" href="/problems/third/2000/9-1/">Задача 9-1</a>
       <span class="lad-rung-meta">9 кл.&#8195;2000</span>
       <span class="lad-rung-band" style="background:#ffffcc;color:#2d2d2d">1/5</span>
     </li>
     
     <li class="lad-rung">
       <span class="lad-rung-n">2</span>
-      <a class="lad-rung-link" href="/problems/third/2023/10-2/">Космический инфракрасный телескоп Джеймс Уэбб</a>
-      <span class="lad-rung-meta">10 кл.&#8195;2023</span>
-      <span class="lad-rung-band" style="background:#fd8d3c;color:#2d2d2d">3/5</span>
+      <a class="lad-rung-link" href="/problems/final/1994/9-1/">Задача 9-1</a>
+      <span class="lad-rung-meta">9 кл.&#8195;1994</span>
+      <span class="lad-rung-band" style="background:#ffffcc;color:#2d2d2d">1/5</span>
     </li>
     
     <li class="lad-rung">
       <span class="lad-rung-n">3</span>
-      <a class="lad-rung-link" href="/problems/final/2007/10-2/">Торможение спутника</a>
-      <span class="lad-rung-meta">10 кл.&#8195;2007</span>
-      <span class="lad-rung-band" style="background:#e31a1c;color:#fff">4/5</span>
+      <a class="lad-rung-link" href="/problems/third/2005/11-3/">Что вы знаете о Солнце?</a>
+      <span class="lad-rung-meta">11 кл.&#8195;2005</span>
+      <span class="lad-rung-band" style="background:#ffffcc;color:#2d2d2d">1/5</span>
     </li>
     
     <li class="lad-rung">
       <span class="lad-rung-n">4</span>
-      <a class="lad-rung-link" href="/problems/final/2012/10-1/">ЦУП</a>
-      <span class="lad-rung-meta">10 кл.&#8195;2012</span>
+      <a class="lad-rung-link" href="/problems/third/2013/11-1/">Подобие и размерность</a>
+      <span class="lad-rung-meta">11 кл.&#8195;2013</span>
+      <span class="lad-rung-band" style="background:#fed976;color:#2d2d2d">2/5</span>
+    </li>
+    
+    <li class="lad-rung">
+      <span class="lad-rung-n">5</span>
+      <a class="lad-rung-link" href="/problems/final/2009/9-1/">Маленький принц</a>
+      <span class="lad-rung-meta">9 кл.&#8195;2009</span>
+      <span class="lad-rung-band" style="background:#fd8d3c;color:#2d2d2d">3/5</span>
+    </li>
+    
+    <li class="lad-rung">
+      <span class="lad-rung-n">6</span>
+      <a class="lad-rung-link" href="/problems/third/2020/10-3-v2/">Неоднородное гравитационное поле</a>
+      <span class="lad-rung-meta">10 кл.&#8195;2020</span>
+      <span class="lad-rung-band" style="background:#fd8d3c;color:#2d2d2d">3/5</span>
+    </li>
+    
+    <li class="lad-rung">
+      <span class="lad-rung-n">7</span>
+      <a class="lad-rung-link" href="/problems/final/2026/10-3/">Космический вальс</a>
+      <span class="lad-rung-meta">10 кл.&#8195;2026</span>
+      <span class="lad-rung-band" style="background:#e31a1c;color:#fff">4/5</span>
+    </li>
+    
+    <li class="lad-rung">
+      <span class="lad-rung-n">8</span>
+      <a class="lad-rung-link" href="/problems/final/2023/9-2/">Как измеряли Вселенную</a>
+      <span class="lad-rung-meta">9 кл.&#8195;2023</span>
+      <span class="lad-rung-band" style="background:#e31a1c;color:#fff">4/5</span>
+    </li>
+    
+    <li class="lad-rung">
+      <span class="lad-rung-n">9</span>
+      <a class="lad-rung-link" href="/problems/final/2008/10-2-v1/">Гравитационный диполь</a>
+      <span class="lad-rung-meta">10 кл.&#8195;2008</span>
+      <span class="lad-rung-band" style="background:#800026;color:#fff">5/5</span>
+    </li>
+    
+    <li class="lad-rung">
+      <span class="lad-rung-n">10</span>
+      <a class="lad-rung-link" href="/problems/final/2007/10-2/">Торможение спутника</a>
+      <span class="lad-rung-meta">10 кл.&#8195;2007</span>
       <span class="lad-rung-band" style="background:#800026;color:#fff">5/5</span>
     </li>
     
@@ -129,7 +171,7 @@
       
       
       
-      <span class="pr-tag">Гравитационные взаимодействия. Закон всемирного тяготения</span><span class="pr-tag">Движение по орбите</span>
+      <span class="pr-tag">Баллистика: движение в поле тяжести</span><span class="pr-tag">Движение по окружности</span><span class="pr-tag">Законы динамики Ньютона</span>
     </span>
     
   </span>
@@ -147,8 +189,51 @@
       
     </span>
     
-    <span class="pr-diff" style="background:#800026;color:#fff"
-          title="Сложность (оценка): Уровень IZhO — уровень 5 из 5. Задача уровня медального тура IZhO — идею неоткуда списать.">≈5/5</span>
+    <span class="pr-diff" style="background:#e31a1c;color:#fff"
+          title="Сложность (оценка): Повышенной трудности — уровень 4 из 5. Сложная задача Республиканской олимпиады или уровень отборочных сборов.">≈4/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2023/9-2/" data-pid="2023-final-theory-9-2">
+  <span class="pr-badge pr-badge-t">Т2</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2023-final-theory-9-2-320.webp" srcset="/problems/thumbs/2023-final-theory-9-2-320.webp 320w, /problems/thumbs/2023-final-theory-9-2-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Как измеряли Вселенную</span>
+    <span class="pr-snippet"><p>Данное задание состоит из 4 связанных между собой задач.<br />В задаче используется современная система единиц.<br />Во всех частях задания обязательно …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Республиканская</b><i>Респ.</i>&#8195;2023</span>
+      <span class="pr-grade">9 кл.</span>
+      
+      
+      
+      <span class="pr-tag">Относительность движения. Сложение скоростей</span><span class="pr-tag">Движение по окружности</span><span class="pr-tag">Законы динамики Ньютона</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s on" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение»">Р</span>
+      
+      <span class="pr-av pr-av-m" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка» — у этой задачи нет">Б</span>
+      
+      <span class="pr-av pr-av-h on" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки»">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#e31a1c;color:#fff"
+          title="Сложность (оценка): Повышенной трудности — уровень 4 из 5. Сложная задача Республиканской олимпиады или уровень отборочных сборов.">≈4/5</span>
     
   </span>
 </a>
@@ -172,7 +257,7 @@
       
       
       
-      <span class="pr-tag">Движение по орбите</span><span class="pr-tag">Гравитационные взаимодействия. Закон всемирного тяготения</span>
+      <span class="pr-tag">Относительность движения. Сложение скоростей</span><span class="pr-tag">Движение по окружности</span><span class="pr-tag">Законы динамики Ньютона</span>
     </span>
     
   </span>
@@ -190,8 +275,94 @@
       
     </span>
     
+    <span class="pr-diff" style="background:#800026;color:#fff"
+          title="Сложность (оценка): Уровень IZhO — уровень 5 из 5. Задача уровня медального тура IZhO — идею неоткуда списать.">≈5/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/third/2020/10-3-v2/" data-pid="2020-third-theory-10-3-v2">
+  <span class="pr-badge pr-badge-t">Т3</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2020-third-theory-10-3-v2-320.webp" srcset="/problems/thumbs/2020-third-theory-10-3-v2-320.webp 320w, /problems/thumbs/2020-third-theory-10-3-v2-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Неоднородное гравитационное поле<span class="pr-variant">вар. 2</span></span>
+    <span class="pr-snippet"><p>Сила гравитационного взаимодействия зависит от расстояния между взаимодействующими телами. Поэтому гравитационные поля, в общем случае, являются …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Городская</b><i>3-й этап</i>&#8195;2020</span>
+      <span class="pr-grade">10 кл.</span>
+      
+      
+      
+      <span class="pr-tag">Закон движения и основная задача кинематики</span><span class="pr-tag">Свободное падение и вертикальное движение</span><span class="pr-tag">Движение по окружности</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение» — у этой задачи нет">Р</span>
+      
+      <span class="pr-av pr-av-m" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка» — у этой задачи нет">Б</span>
+      
+      <span class="pr-av pr-av-h" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки» — у этой задачи нет">П</span>
+      
+    </span>
+    
     <span class="pr-diff" style="background:#fd8d3c;color:#2d2d2d"
           title="Сложность (оценка): Республиканская олимпиада — уровень 3 из 5. Медианная задача Республиканской олимпиады: нужен настоящий шаг, но это известный приём.">≈3/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/third/2013/11-1/" data-pid="2013-third-theory-11-1">
+  <span class="pr-badge pr-badge-t">Т1</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2013-third-theory-11-1.svg"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-card">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Подобие и размерность</span>
+    <span class="pr-snippet"><p>Теория подобия позволяет на основе анализа уравнений движения устанавливать некоторые закономерности движения без непосредственного решения …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Городская</b><i>3-й этап</i>&#8195;2013</span>
+      <span class="pr-grade">11 кл.</span>
+      
+      
+      
+      <span class="pr-tag">Законы динамики Ньютона</span><span class="pr-tag">Гравитационные взаимодействия. Закон всемирного тяготения</span><span class="pr-tag">Силы упругости. Закон Гука</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s on" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение»">Р</span>
+      
+      <span class="pr-av pr-av-m on" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка»">Б</span>
+      
+      <span class="pr-av pr-av-h" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки» — у этой задачи нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#fed976;color:#2d2d2d"
+          title="Сложность (оценка): Типичный городской этап — уровень 2 из 5. Типичная задача городского этапа — или лёгкая задача Республиканской олимпиады.">≈2/5</span>
     
   </span>
 </a>
@@ -215,7 +386,7 @@
       
       
       
-      <span class="pr-tag">Движение по орбите</span><span class="pr-tag">Космические скорости</span>
+      <span class="pr-tag">Закон движения и основная задача кинематики</span><span class="pr-tag">Средняя и мгновенная скорость</span><span class="pr-tag">Относительность движения. Сложение скоростей</span>
     </span>
     
   </span>
@@ -230,6 +401,135 @@
       <span class="pr-av pr-av-m" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка» — у этой задачи нет">Б</span>
       
       <span class="pr-av pr-av-h on" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки»">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#800026;color:#fff"
+          title="Сложность (оценка): Уровень IZhO — уровень 5 из 5. Задача уровня медального тура IZhO — идею неоткуда списать.">≈5/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2009/9-1/" data-pid="2009-final-theory-9-1">
+  <span class="pr-badge pr-badge-t">Т1</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2009-final-theory-9-1-320.webp" srcset="/problems/thumbs/2009-final-theory-9-1-320.webp 320w, /problems/thumbs/2009-final-theory-9-1-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Маленький принц</span>
+    <span class="pr-snippet"><p>Согласно «теории» Антуана де Сент Экзюпери к нам на Землю прилетал Маленький Принц. Родиной героя являлась малая планета, судя по всему – астероид. …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Республиканская</b><i>Респ.</i>&#8195;2009</span>
+      <span class="pr-grade">9 кл.</span>
+      
+      
+      
+      <span class="pr-tag">Ускорение. Равноускоренное движение</span><span class="pr-tag">Относительность движения. Сложение скоростей</span><span class="pr-tag">Движение по окружности</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s on" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение»">Р</span>
+      
+      <span class="pr-av pr-av-m" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка» — у этой задачи нет">Б</span>
+      
+      <span class="pr-av pr-av-h on" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки»">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#fd8d3c;color:#2d2d2d"
+          title="Сложность (оценка): Республиканская олимпиада — уровень 3 из 5. Медианная задача Республиканской олимпиады: нужен настоящий шаг, но это известный приём.">≈3/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2009/11-1/" data-pid="2009-final-theory-11-1">
+  <span class="pr-badge pr-badge-t">Т1</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2009-final-theory-11-1-320.webp" srcset="/problems/thumbs/2009-final-theory-11-1-320.webp 320w, /problems/thumbs/2009-final-theory-11-1-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Оптико-механическая аналогия</span>
+    <span class="pr-snippet"><p>Оптико-механическая аналогия - это сходство траектории движения частицы в потенциальном силовом поле с траекторией лучей в оптически неоднородной …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Республиканская</b><i>Респ.</i>&#8195;2009</span>
+      <span class="pr-grade">11 кл.</span>
+      
+      
+      
+      <span class="pr-tag">Равномерное движение</span><span class="pr-tag">Ускорение. Равноускоренное движение</span><span class="pr-tag">Свободное падение и вертикальное движение</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s on" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение»">Р</span>
+      
+      <span class="pr-av pr-av-m" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка» — у этой задачи нет">Б</span>
+      
+      <span class="pr-av pr-av-h on" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки»">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#800026;color:#fff"
+          title="Сложность (оценка): Уровень IZhO — уровень 5 из 5. Задача уровня медального тура IZhO — идею неоткуда списать.">≈5/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2008/10-2-v1/" data-pid="2008-final-theory-10-2-v1">
+  <span class="pr-badge pr-badge-t">Т2</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2008-final-theory-10-2-v1-320.webp" srcset="/problems/thumbs/2008-final-theory-10-2-v1-320.webp 320w, /problems/thumbs/2008-final-theory-10-2-v1-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Гравитационный диполь<span class="pr-variant">вар. 1</span></span>
+    <span class="pr-snippet"><p>Хорошо известна и изучена такая система зарядов как электрический диполь.<br />Мы будем рассматривать систему, состоящую из двух небольших шариков, массы …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Республиканская</b><i>Респ.</i>&#8195;2008</span>
+      <span class="pr-grade">10 кл.</span>
+      
+      
+      
+      <span class="pr-tag">Закон движения и основная задача кинематики</span><span class="pr-tag">Движение по окружности</span><span class="pr-tag">Суперпозиция движений</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение» — у этой задачи нет">Р</span>
+      
+      <span class="pr-av pr-av-m" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка» — у этой задачи нет">Б</span>
+      
+      <span class="pr-av pr-av-h" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки» — у этой задачи нет">П</span>
       
     </span>
     
@@ -258,7 +558,7 @@
       
       
       
-      <span class="pr-tag">Движение по орбите</span><span class="pr-tag">Вязкое трение и сопротивление среды</span>
+      <span class="pr-tag">Движение по окружности</span><span class="pr-tag">Криволинейное движение. Радиус кривизны</span><span class="pr-tag">Гравитационные взаимодействия. Закон всемирного тяготения</span>
     </span>
     
   </span>
@@ -276,8 +576,94 @@
       
     </span>
     
-    <span class="pr-diff" style="background:#e31a1c;color:#fff"
-          title="Сложность (оценка): Повышенной трудности — уровень 4 из 5. Сложная задача Республиканской олимпиады или уровень отборочных сборов.">≈4/5</span>
+    <span class="pr-diff" style="background:#800026;color:#fff"
+          title="Сложность (оценка): Уровень IZhO — уровень 5 из 5. Задача уровня медального тура IZhO — идею неоткуда списать.">≈5/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/third/2005/11-3/" data-pid="2005-third-theory-11-3">
+  <span class="pr-badge pr-badge-t">Т3</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2005-third-theory-11-3-320.webp" srcset="/problems/thumbs/2005-third-theory-11-3-320.webp 320w, /problems/thumbs/2005-third-theory-11-3-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Что вы знаете о Солнце?</span>
+    <span class="pr-snippet"><p>Гравитационная постоянная <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -1.475ex;" xmlns="http://www.w3.org/2000/svg" width="19.805ex" height="4.08ex" role="img" focusable="false" viewBox="0 -1151.8 8754 1803.5" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D43A" xlink:href="#MJX-TEX-I-1D43A"></use></g><g data-mml-node="mo" transform="translate(1063.8,0)"><use data-c="3D" xlink:href="#MJX-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(2119.6,0)"><use data-c="36" xlink:href="#MJX-TEX-N-36"></use></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(2619.6,0)"><g data-mml-node="mo"><use data-c="2C" xlink:href="#MJX-TEX-N-2C"></use></g></g><g data-mml-node="mn" transform="translate(2897.6,0)"><use data-c="36" xlink:href="#MJX-TEX-N-36"></use><use data-c="37" xlink:href="#MJX-TEX-N-37" transform="translate(500,0)"></use></g><g data-mml-node="mo" transform="translate(4119.8,0)"><use data-c="22C5" xlink:href="#MJX-TEX-N-22C5"></use></g><g data-mml-node="msup" transform="translate(4620,0)"><g data-mml-node="mn"><use data-c="31" xlink:href="#MJX-TEX-N-31"></use><use data-c="30" xlink:href="#MJX-TEX-N-30" transform="translate(500,0)"></use></g><g data-mml-node="TeXAtom" transform="translate(1033,393.1) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mo"><use data-c="2212" xlink:href="#MJX-TEX-N-2212"></use></g><g data-mml-node="mn" transform="translate(778,0)"><use data-c="31" xlink:href="#MJX-TEX-N-31"></use><use data-c="31" xlink:href="#MJX-TEX-N-31" transform="translate(500,0)"></use></g></g></g><g data-mml-node="mfrac" transform="translate(6960.2,0)"><g data-mml-node="mrow" transform="translate(220,481.4) scale(0.707)"><g data-mml-node="mtext"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">Н</text></g><g data-mml-node="mo" transform="translate(600,0)"><use data-c="22C5" xlink:href="#MJX-TEX-N-22C5"></use></g><g data-mml-node="msup" transform="translate(878,0)"><g data-mml-node="mtext"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">м</text></g><g data-mml-node="mn" transform="translate(633,477.1) scale(0.707)"><use data-c="32" xlink:href="#MJX-TEX-N-32"></use></g></g></g><g data-mml-node="msup" transform="translate(318.3,-510.3) scale(0.707)"><g data-mml-node="mtext"><text data-variant="normal"  font-size="884px" font-family="serif" transform="scale(1,-1)" textLength="1200" lengthAdjust="spacingAndGlyphs">кг</text></g><g data-mml-node="mn" transform="translate(1233,477.1) scale(0.707)"><use data-c="32" xlink:href="#MJX-TEX-N-32"></use></g></g><rect width="1553.8" height="60" x="120" y="220"></rect></g></g></g></svg></mjx-container>;<br />Скорость света …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Городская</b><i>3-й этап</i>&#8195;2005</span>
+      <span class="pr-grade">11 кл.</span>
+      
+      
+      
+      <span class="pr-tag">Гравитационные взаимодействия. Закон всемирного тяготения</span><span class="pr-tag">Закон сохранения энергии</span><span class="pr-tag">МКТ идеального газа: давление и температура</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение» — у этой задачи нет">Р</span>
+      
+      <span class="pr-av pr-av-m" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка» — у этой задачи нет">Б</span>
+      
+      <span class="pr-av pr-av-h" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки» — у этой задачи нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#ffffcc;color:#2d2d2d"
+          title="Сложность (оценка): Городской этап (9 класс) — уровень 1 из 5. Рутинная задача для эталонного решателя — один стандартный закон, применённый один раз.">≈1/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2003/11-2/" data-pid="2003-final-theory-11-2">
+  <span class="pr-badge pr-badge-t">Т2</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2003-final-theory-11-2.svg"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-card">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title pr-title-num">Задача 11-2</span>
+    <span class="pr-snippet"><p>По современным космологическим представлениям звезды возникают из газопылевых туманностей. Будем считать, что звезда образовалась, если в облаке …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Республиканская</b><i>Респ.</i>&#8195;2003</span>
+      <span class="pr-grade">11 кл.</span>
+      
+      
+      
+      <span class="pr-tag">Законы динамики Ньютона</span><span class="pr-tag">Гравитационные взаимодействия. Закон всемирного тяготения</span><span class="pr-tag">Работа. Кинетическая энергия</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s on" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение»">Р</span>
+      
+      <span class="pr-av pr-av-m" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка» — у этой задачи нет">Б</span>
+      
+      <span class="pr-av pr-av-h" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки» — у этой задачи нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#fed976;color:#2d2d2d"
+          title="Сложность (оценка): Типичный городской этап — уровень 2 из 5. Типичная задача городского этапа — или лёгкая задача Республиканской олимпиады.">≈2/5</span>
     
   </span>
 </a>
@@ -303,7 +689,7 @@
       
       
       
-      <span class="pr-tag">Движение по орбите</span>
+      <span class="pr-tag">Относительность движения. Сложение скоростей</span><span class="pr-tag">Движение по окружности</span><span class="pr-tag">Оценка, масштаб и проверка разумности</span>
     </span>
     
   </span>
@@ -327,29 +713,26 @@
   </span>
 </a>
 
-<a class="pr" href="/problems/third/2000/9-2/" data-pid="2000-third-theory-9-2">
-  <span class="pr-badge pr-badge-t">Т2</span>
+<a class="pr" href="/problems/final/1994/9-1/" data-pid="1994-final-theory-9-1">
+  <span class="pr-badge pr-badge-t">Т1</span>
   <span class="pr-thumb">
     
-    <img src="/problems/thumbs/2000-third-theory-9-2-320.webp" srcset="/problems/thumbs/2000-third-theory-9-2-320.webp 320w, /problems/thumbs/2000-third-theory-9-2-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
+    <img src="/problems/thumbs/1994-final-theory-9-1-320.webp" srcset="/problems/thumbs/1994-final-theory-9-1-320.webp 320w, /problems/thumbs/1994-final-theory-9-1-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
          width="108" height="81" alt="" loading="lazy" decoding="async"
          class="is-figure">
     <span class="pr-check" aria-hidden="true">✓</span>
   </span>
   <span class="pr-main">
     
-    <span class="pr-title pr-title-num">Задача 9-2</span>
-    <span class="pr-snippet"><ol>
-<li>Луна находится в первой и последней четвертях, если при наблюдении с Земли видно, что ровно половина диска Луны освещена Солнцем.</li>
-<li>Во время …</li>
-</ol></span>
+    <span class="pr-title pr-title-num">Задача 9-1</span>
+    <span class="pr-snippet"><p>Как известно, Меркурий - ближайшая к Солнцу планета. Наиболее благоприятные условия для наблюдения этой планеты выполняются, когда Меркурий находится …</p></span>
     <span class="pr-meta">
-      <span class="pr-where"><b>Городская</b><i>3-й этап</i>&#8195;2000</span>
+      <span class="pr-where"><b>Республиканская</b><i>Респ.</i>&#8195;1994</span>
       <span class="pr-grade">9 кл.</span>
       
       
       
-      <span class="pr-tag">Движение по орбите</span><span class="pr-tag">Импульс. Закон сохранения импульса</span><span class="pr-tag">Работа. Кинетическая энергия</span>
+      <span class="pr-tag">Закон движения и основная задача кинематики</span><span class="pr-tag">Относительность движения. Сложение скоростей</span><span class="pr-tag">Движение по окружности</span>
     </span>
     
   </span>

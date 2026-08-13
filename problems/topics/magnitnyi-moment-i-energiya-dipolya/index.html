@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Магнитный момент и энергия магнитного диполя — BelPhO</title>
+  <meta name="description" content="Магнитный момент контура или тела и энергия его взаимодействия с внешним полем — вращающий момент, ориентация, потенциальная энергия диполя; навык уровня сборов и IZhO. — 7 задач белорусских олимпиад по физике.">
+  <link rel="canonical" href="https://belpho.org/problems/topics/magnitnyi-moment-i-energiya-dipolya/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BelPhO">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:url" content="https://belpho.org/problems/topics/magnitnyi-moment-i-energiya-dipolya/">
+  <meta property="og:title" content="Магнитный момент и энергия магнитного диполя — BelPhO">
+  <meta property="og:description" content="Магнитный момент контура или тела и энергия его взаимодействия с внешним полем — вращающий момент, ориентация, потенциальная энергия диполя; навык уровня сборов и IZhO. — 7 задач белорусских олимпиад по физике.">
+  
+  <meta property="og:image" content="https://belpho.org/problems/thumbs/og/problems.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/css/platform.css">
+  
+  
+</head>
+<body>
+<svg id="mjx-glyph-cache" aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden"><defs><path id="MJX-TEX-BI-1D48E" d="M24 296Q25 302 27 312T41 350T65 397T104 435T159 452Q203 452 234 435Q268 419 285 384L295 392Q305 401 317 410T349 429T389 445Q411 451 446 451Q560 451 592 383Q593 380 594 379L595 375L604 384Q675 452 762 452Q893 452 916 367Q918 356 918 334Q918 285 881 183T841 66Q838 43 849 43Q876 43 901 69T940 138Q945 156 949 159T969 162H975H986Q1006 162 1006 148Q1006 138 996 115T966 63T914 13T841 -8Q794 -8 758 16T721 82Q721 96 758 199T796 351Q796 401 753 401Q702 401 662 369T599 298Q597 294 567 172T533 40Q525 22 506 7T462 -8Q435 -8 422 8T409 39Q409 48 425 114T458 248T476 320Q478 330 478 348T474 377T462 393T449 399T433 400H428Q380 400 336 363Q301 332 281 298Q278 293 247 170T214 40Q206 22 187 7T143 -8T104 7T90 39Q90 47 108 124T146 274L164 347Q166 355 166 372Q166 401 149 401Q129 401 115 379T89 306Q84 288 80 285T55 282H44Q24 282 24 296Z"></path><path id="MJX-TEX-I-1D43C" d="M43 1Q26 1 26 10Q26 12 29 24Q34 43 39 45Q42 46 54 46H60Q120 46 136 53Q137 53 138 54Q143 56 149 77T198 273Q210 318 216 344Q286 624 286 626Q284 630 284 631Q274 637 213 637H193Q184 643 189 662Q193 677 195 680T209 683H213Q285 681 359 681Q481 681 487 683H497Q504 676 504 672T501 655T494 639Q491 637 471 637Q440 637 407 634Q393 631 388 623Q381 609 337 432Q326 385 315 341Q245 65 245 59Q245 52 255 50T307 46H339Q345 38 345 37T342 19Q338 6 332 0H316Q279 2 179 2Q143 2 113 2T65 2T43 1Z"></path><path id="MJX-TEX-I-1D446" d="M308 24Q367 24 416 76T466 197Q466 260 414 284Q308 311 278 321T236 341Q176 383 176 462Q176 523 208 573T273 648Q302 673 343 688T407 704H418H425Q521 704 564 640Q565 640 577 653T603 682T623 704Q624 704 627 704T632 705Q645 705 645 698T617 577T585 459T569 456Q549 456 549 465Q549 471 550 475Q550 478 551 494T553 520Q553 554 544 579T526 616T501 641Q465 662 419 662Q362 662 313 616T263 510Q263 480 278 458T319 427Q323 425 389 408T456 390Q490 379 522 342T554 242Q554 216 546 186Q541 164 528 137T492 78T426 18T332 -20Q320 -22 298 -22Q199 -22 144 33L134 44L106 13Q83 -14 78 -18T65 -22Q52 -22 52 -14Q52 -11 110 221Q112 227 130 227H143Q149 221 149 216Q149 214 148 207T144 186T142 153Q144 114 160 87T203 47T255 29T308 24Z"></path><path id="MJX-TEX-I-1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></defs></svg>
+<header class="site-header">
+  <div class="container header-content">
+    <a href="/" class="logo">
+      <img src="/img/logo.png" alt="BelPhO" class="logo-img" width="36" height="36">
+      <span>BelPhO</span>
+    </a>
+    <nav class="site-nav" aria-label="Основная навигация">
+      <ul class="nav-links">
+        <li><a href="/">Главная</a></li>
+        <li><a href="/problems/" class="active">Задачи</a></li>
+        <li><a href="/books/">Книги</a></li>
+        <li><a href="/training-program.html">Подготовка</a></li>
+        <li><a href="/alumni.html">Выпускники</a></li>
+        <li><a href="/news/">Новости</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<main class="p-shell p-shell-wide">
+  
+<nav class="crumbs" aria-label="Хлебные крошки">
+  <a href="/">Главная</a> <span>/</span>
+  <a href="/problems/">Задачи</a> <span>/</span>
+  <a href="/problems/topics/">Темы</a> <span>/</span>
+  <span aria-current="page">Магнитный момент и энергия магнитного диполя</span>
+</nav>
+
+<header class="yr-head yr-head-topic">
+  <div class="yr-head-main">
+    <p class="yr-kicker">Магнитостатика</p>
+    <h1 class="yr-title yr-title-topic">Магнитный момент и энергия магнитного диполя</h1>
+    <p class="tp-lead">Магнитный момент контура или тела и энергия его взаимодействия с внешним полем — вращающий момент, ориентация, потенциальная энергия диполя; навык уровня сборов и IZhO.</p>
+  </div>
+  <ul class="yr-facts">
+    <li><b>7</b> задач</li>
+    
+  </ul>
+</header>
+
+
+<section class="lad-ladder" aria-labelledby="lad-h">
+  <h2 class="lad-h" id="lad-h">Лестница по сложности</h2>
+  <p class="lad-note">
+    4 ступеней из 7 задач темы — по возрастанию расчётной
+    сложности, без повторов одной и той же задачи под разными классами.
+  </p>
+  <ol class="lad-rungs">
+    
+    <li class="lad-rung">
+      <span class="lad-rung-n">1</span>
+      <a class="lad-rung-link" href="/problems/third/2002/11-1/">Задача 11-1</a>
+      <span class="lad-rung-meta">11 кл.&#8195;2002</span>
+      <span class="lad-rung-band" style="background:#e31a1c;color:#fff">4/5</span>
+    </li>
+    
+    <li class="lad-rung">
+      <span class="lad-rung-n">2</span>
+      <a class="lad-rung-link" href="/problems/third/2001/11-1/">Задача 11-1</a>
+      <span class="lad-rung-meta">11 кл.&#8195;2001</span>
+      <span class="lad-rung-band" style="background:#e31a1c;color:#fff">4/5</span>
+    </li>
+    
+    <li class="lad-rung">
+      <span class="lad-rung-n">3</span>
+      <a class="lad-rung-link" href="/problems/final/2017/11-2/">Кольцевая</a>
+      <span class="lad-rung-meta">11 кл.&#8195;2017</span>
+      <span class="lad-rung-band" style="background:#800026;color:#fff">5/5</span>
+    </li>
+    
+    <li class="lad-rung">
+      <span class="lad-rung-n">4</span>
+      <a class="lad-rung-link" href="/problems/final/2021/11-3/">Эффект Эйнштейна-де-Гааза</a>
+      <span class="lad-rung-meta">11 кл.&#8195;2021</span>
+      <span class="lad-rung-band" style="background:#800026;color:#fff">5/5</span>
+    </li>
+    
+  </ol>
+</section>
+
+
+<div id="pr-root">
+  <div class="pr-list">
+    
+<a class="pr" href="/problems/izho/2026/t3/" data-pid="2026-izho-theory-all-3">
+  <span class="pr-badge pr-badge-t">Т3</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2026-izho-theory-all-3.svg"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-card">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Электронный парамагнитный резонанс</span>
+    <span class="pr-snippet"><p>Магнитный момент<br />Магнитный момент <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.018ex;" xmlns="http://www.w3.org/2000/svg" width="2.335ex" height="1.041ex" role="img" focusable="false" viewBox="0 -452 1032 460" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D48E" xlink:href="#MJX-TEX-BI-1D48E"></use></g></g></g></svg></mjx-container> плоского контура с током — это векторная величина, определяемая как произведение силы тока <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="1.14ex" height="1.545ex" role="img" focusable="false" viewBox="0 -683 504 683" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D43C" xlink:href="#MJX-TEX-I-1D43C"></use></g></g></g></svg></mjx-container>, пло …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>IZhO</b><i>IZhO</i>&#8195;2026</span>
+      <span class="pr-grade">все</span>
+      
+      
+      
+      <span class="pr-tag">Момент импульса и его сохранение</span><span class="pr-tag">Работа. Кинетическая энергия</span><span class="pr-tag">Магнитное поле. Вектор индукции и силовые линии</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s on" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение»">Р</span>
+      
+      <span class="pr-av pr-av-m" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка» — у этой задачи нет">Б</span>
+      
+      <span class="pr-av pr-av-h on" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки»">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#800026;color:#fff"
+          title="Сложность (оценка): Уровень IZhO — уровень 5 из 5. Задача уровня медального тура IZhO — идею неоткуда списать.">≈5/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2025/11-2/" data-pid="2025-final-theory-11-2">
+  <span class="pr-badge pr-badge-t">Т2</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2025-final-theory-11-2-320.webp" srcset="/problems/thumbs/2025-final-theory-11-2-320.webp 320w, /problems/thumbs/2025-final-theory-11-2-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Взаимодействия цилиндрических магнитов</span>
+    <span class="pr-snippet"><p>Описание магнитных полей и магнитных взаимодействий является математически более сложной задачей, чем описание электростатических взаимодействий. Во …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Республиканская</b><i>Респ.</i>&#8195;2025</span>
+      <span class="pr-grade">11 кл.</span>
+      
+      
+      
+      <span class="pr-tag">Статика: условия равновесия</span><span class="pr-tag">Устойчивость, ветви равновесия и срыв</span><span class="pr-tag">Сила тяжести и вес тела</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s on" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение»">Р</span>
+      
+      <span class="pr-av pr-av-m" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка» — у этой задачи нет">Б</span>
+      
+      <span class="pr-av pr-av-h on" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки»">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#e31a1c;color:#fff"
+          title="Сложность (оценка): Повышенной трудности — уровень 4 из 5. Сложная задача Республиканской олимпиады или уровень отборочных сборов.">≈4/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2021/11-3/" data-pid="2021-final-theory-11-3">
+  <span class="pr-badge pr-badge-t">Т3</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2021-final-theory-11-3-320.webp" srcset="/problems/thumbs/2021-final-theory-11-3-320.webp 320w, /problems/thumbs/2021-final-theory-11-3-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Эффект Эйнштейна-де-Гааза</span>
+    <span class="pr-snippet"><p>Момент импульса, момент инерции... небольшое теоретическое введение.<br />Существует ряд задач, в которых объектом внимания выступает вращательное …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Республиканская</b><i>Респ.</i>&#8195;2021</span>
+      <span class="pr-grade">11 кл.</span>
+      
+      
+      
+      <span class="pr-tag">Движение по окружности</span><span class="pr-tag">Вращательное движение. Момент силы</span><span class="pr-tag">Момент инерции</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение» — у этой задачи нет">Р</span>
+      
+      <span class="pr-av pr-av-m" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка» — у этой задачи нет">Б</span>
+      
+      <span class="pr-av pr-av-h" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки» — у этой задачи нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#800026;color:#fff"
+          title="Сложность (оценка): Уровень IZhO — уровень 5 из 5. Задача уровня медального тура IZhO — идею неоткуда списать.">≈5/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2017/11-2/" data-pid="2017-final-theory-11-2">
+  <span class="pr-badge pr-badge-t">Т2</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2017-final-theory-11-2-320.webp" srcset="/problems/thumbs/2017-final-theory-11-2-320.webp 320w, /problems/thumbs/2017-final-theory-11-2-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title">Кольцевая</span>
+    <span class="pr-snippet"><p>Построение всех графиков выполняйте на отдельных, выданных Вам бланках!<br />Часть 1. Электрическое поле кольца.<br />Суммарный электрический заряд тонкого …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Республиканская</b><i>Респ.</i>&#8195;2017</span>
+      <span class="pr-grade">11 кл.</span>
+      
+      
+      
+      <span class="pr-tag">Закон Кулона</span><span class="pr-tag">Напряжённость поля. Принцип суперпозиции</span><span class="pr-tag">Электрический диполь</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s on" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение»">Р</span>
+      
+      <span class="pr-av pr-av-m" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка» — у этой задачи нет">Б</span>
+      
+      <span class="pr-av pr-av-h on" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки»">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#800026;color:#fff"
+          title="Сложность (оценка): Уровень IZhO — уровень 5 из 5. Задача уровня медального тура IZhO — идею неоткуда списать.">≈5/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/final/2005/11-3/" data-pid="2005-final-theory-11-3">
+  <span class="pr-badge pr-badge-t">Т3</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2005-final-theory-11-3-320.webp" srcset="/problems/thumbs/2005-final-theory-11-3-320.webp 320w, /problems/thumbs/2005-final-theory-11-3-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title pr-title-num">Задача 11-3</span>
+    <span class="pr-snippet"><p>Задача 11-3. «Магнитная регулировка»*<br />В данной задаче исследуется возможность управлением течением жидкости с помощью магнитного поля. В качестве …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Республиканская</b><i>Респ.</i>&#8195;2005</span>
+      <span class="pr-grade">11 кл.</span>
+      
+      
+      
+      <span class="pr-tag">Сила тяжести и вес тела</span><span class="pr-tag">Вязкое трение и сопротивление среды</span><span class="pr-tag">Закон Архимеда, плавание тел</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение» — у этой задачи нет">Р</span>
+      
+      <span class="pr-av pr-av-m" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка» — у этой задачи нет">Б</span>
+      
+      <span class="pr-av pr-av-h" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки» — у этой задачи нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#e31a1c;color:#fff"
+          title="Сложность (оценка): Повышенной трудности — уровень 4 из 5. Сложная задача Республиканской олимпиады или уровень отборочных сборов.">≈4/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/third/2002/11-1/" data-pid="2002-third-theory-11-1">
+  <span class="pr-badge pr-badge-t">Т1</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2002-third-theory-11-1-320.webp" srcset="/problems/thumbs/2002-third-theory-11-1-320.webp 320w, /problems/thumbs/2002-third-theory-11-1-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title pr-title-num">Задача 11-1</span>
+    <span class="pr-snippet"><ol>
+<li>Ротор модели электродвигателя представляет собой прямоугольную рамку площадью <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="1.459ex" height="1.645ex" role="img" focusable="false" viewBox="0 -705 645 727" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D446" xlink:href="#MJX-TEX-I-1D446"></use></g></g></g></svg></mjx-container>, содержащую <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="1.357ex" height="1.025ex" role="img" focusable="false" viewBox="0 -442 600 453" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D45B" xlink:href="#MJX-TEX-I-1D45B"></use></g></g></g></svg></mjx-container> витков проволоки, закрепленную на массивном …</li>
+</ol></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Городская</b><i>3-й этап</i>&#8195;2002</span>
+      <span class="pr-grade">11 кл.</span>
+      
+      
+      
+      <span class="pr-tag">Вращательное движение. Момент силы</span><span class="pr-tag">Мощность</span><span class="pr-tag">Закон Ома</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение» — у этой задачи нет">Р</span>
+      
+      <span class="pr-av pr-av-m" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка» — у этой задачи нет">Б</span>
+      
+      <span class="pr-av pr-av-h" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки» — у этой задачи нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#e31a1c;color:#fff"
+          title="Сложность (оценка): Повышенной трудности — уровень 4 из 5. Сложная задача Республиканской олимпиады или уровень отборочных сборов.">≈4/5</span>
+    
+  </span>
+</a>
+
+<a class="pr" href="/problems/third/2001/11-1/" data-pid="2001-third-theory-11-1">
+  <span class="pr-badge pr-badge-t">Т1</span>
+  <span class="pr-thumb">
+    
+    <img src="/problems/thumbs/2001-third-theory-11-1-320.webp" srcset="/problems/thumbs/2001-third-theory-11-1-320.webp 320w, /problems/thumbs/2001-third-theory-11-1-640.webp 640w" sizes="(min-width: 640px) 152px, 108px"
+         width="108" height="81" alt="" loading="lazy" decoding="async"
+         class="is-figure">
+    <span class="pr-check" aria-hidden="true">✓</span>
+  </span>
+  <span class="pr-main">
+    
+    <span class="pr-title pr-title-num">Задача 11-1</span>
+    <span class="pr-snippet"><p>Задача 1. (20 баллов) Диамагнитные свойства кристалла определяются свойствами атомов, из которых образован данный кристалл.<br />В качестве модели …</p></span>
+    <span class="pr-meta">
+      <span class="pr-where"><b>Городская</b><i>3-й этап</i>&#8195;2001</span>
+      <span class="pr-grade">11 кл.</span>
+      
+      
+      
+      <span class="pr-tag">Движение по окружности</span><span class="pr-tag">Вращательное движение. Момент силы</span><span class="pr-tag">Модель сплошной среды. Плотность</span>
+    </span>
+    
+  </span>
+  <span class="pr-right">
+    
+    <span class="pr-avail" aria-label="Что есть у задачи">
+      
+      <span class="pr-av pr-av-t on" data-av="1" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Условие»">У</span>
+      
+      <span class="pr-av pr-av-s" data-av="2" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Решение» — у этой задачи нет">Р</span>
+      
+      <span class="pr-av pr-av-m" data-av="4" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Разбалловка» — у этой задачи нет">Б</span>
+      
+      <span class="pr-av pr-av-h" data-av="8" role="button" tabindex="0" aria-pressed="false" title="Фильтр: «Подсказки» — у этой задачи нет">П</span>
+      
+    </span>
+    
+    <span class="pr-diff" style="background:#e31a1c;color:#fff"
+          title="Сложность (оценка): Повышенной трудности — уровень 4 из 5. Сложная задача Республиканской олимпиады или уровень отборочных сборов.">≈4/5</span>
+    
+  </span>
+</a>
+
+  </div>
+</div>
+
+<nav class="yr-nav">
+  <a class="btn btn-ghost" href="/problems/topics/">← Все темы</a>
+  <a class="btn btn-ghost" href="/problems/?tag=magnitnyi_moment_i_energiya_dipolya">Открыть в поиске задач</a>
+</nav>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© 2026 BelPhO — Белорусские физические олимпиады</span>
+    <span class="footer-links">
+      <a href="/problems/">Задачи</a>
+      <a href="https://t.me/belpho_by" rel="noopener">Telegram</a>
+    </span>
+  </div>
+</footer>
+
+
+<script type="module" src="/js/site/problem-list.js"></script>
+
+</body>
+</html>
