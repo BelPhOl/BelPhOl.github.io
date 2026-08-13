@@ -8091,6 +8091,11 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://belpho.org/problems/final/2026/10-3/answer-sheet/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://belpho.org/problems/final/2026/10-3/edu/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
@@ -8111,6 +8116,11 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://belpho.org/problems/final/2026/10-e1/answer-sheet/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://belpho.org/problems/final/2026/10-e1/edu/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
@@ -8129,6 +8139,11 @@
     <loc>https://belpho.org/problems/final/2026/10-e2/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/final/2026/10-e2/answer-sheet/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://belpho.org/problems/final/2026/10-e2/edu/</loc>
@@ -8186,6 +8201,11 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://belpho.org/problems/final/2026/11-3/answer-sheet/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://belpho.org/problems/final/2026/11-3/edu/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
@@ -8204,6 +8224,11 @@
     <loc>https://belpho.org/problems/final/2026/11-e1/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/final/2026/11-e1/answer-sheet/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://belpho.org/problems/final/2026/11-e1/edu/</loc>
@@ -8226,6 +8251,11 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://belpho.org/problems/final/2026/11-e2/answer-sheet/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://belpho.org/problems/final/2026/11-e2/hints/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
@@ -8239,6 +8269,11 @@
     <loc>https://belpho.org/problems/final/2026/9-1/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/final/2026/9-1/answer-sheet/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://belpho.org/problems/final/2026/9-1/edu/</loc>
@@ -8261,6 +8296,11 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://belpho.org/problems/final/2026/9-2/answer-sheet/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://belpho.org/problems/final/2026/9-2/edu/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
@@ -8279,6 +8319,11 @@
     <loc>https://belpho.org/problems/final/2026/9-3/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/final/2026/9-3/answer-sheet/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://belpho.org/problems/final/2026/9-3/edu/</loc>
@@ -8301,6 +8346,11 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://belpho.org/problems/final/2026/9-e1/answer-sheet/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://belpho.org/problems/final/2026/9-e1/edu/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
@@ -8319,6 +8369,11 @@
     <loc>https://belpho.org/problems/final/2026/9-e2/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/final/2026/9-e2/answer-sheet/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://belpho.org/problems/final/2026/9-e2/edu/</loc>
