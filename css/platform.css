@@ -2003,6 +2003,17 @@ mjx-container[display="true"]::-webkit-scrollbar-track { background: transparent
     align-self: start;
     margin-bottom: 0;
   }
+  /* ...but only while it actually fits on screen. A sticky box taller than the
+     viewport pins its top at `top` and then never moves again, so everything
+     below the fold inside it — which is exactly the skill list — cannot be
+     scrolled to at all. The old fix was a nested scrollbar on the tag list;
+     that was removed on purpose (two scrollbars fighting). So instead, when the
+     sidebar does not fit, stop sticking and let it flow with the page.
+     finder.js toggles this class on load, on resize, and whenever a section is
+     expanded or collapsed. */
+  .pf-filters.pf-filters--tall {
+    position: static;
+  }
   .pf-h1 { font-size: 30px; }
 }
 
