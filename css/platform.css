@@ -13,6 +13,14 @@
   --primary-tint: #eff6ff;
   --secondary-color: #64748b;
   --accent-color: #f59e0b;
+  /* Accent aliases. These nine use sites referenced --accent/--accent-tint/
+     --accent-ink, none of which existed, so every one of those declarations
+     was dropped: the stage and year headers lost their tinted gradient and
+     their 4px accent rule entirely. Defining them is the smaller change and
+     keeps the call sites readable. */
+  --accent: #f59e0b;
+  --accent-tint: #fff7ed;
+  --accent-ink: #b45309;
   --success-color: #10b981;
   --success-tint: #ecfdf5;
   --warning-color: #f59e0b;
@@ -157,7 +165,10 @@ a { color: var(--primary-color); }
 
 /* ---------------------------------------------------------------- layout */
 
-.p-shell { max-width: min(1800px, 97vw); margin: 0 auto; padding: 8px 8px 0; }
+/* The 1800px cap was the gap, not the padding: on a 2560px monitor `margin:
+   0 auto` parked ~380px of dead space either side of the rail. The problem
+   page is the one view that should take the screen it is given. */
+.p-shell { max-width: min(2400px, 98.5vw); margin: 0 auto; padding: 8px 6px 0; }
 
 .p-layout { display: block; }
 
@@ -167,7 +178,7 @@ a { color: var(--primary-color); }
   /* The page IS the problem. Chrome gets the minimum that still works:
      originally 28/24 padding, a 292px rail and a 28px gutter, which left the
      statement about a third of the screen. */
-  .p-shell { padding: 6px 8px 0; }
+  .p-shell { padding: 6px 6px 0; }
   .p-layout {
     display: grid;
     grid-template-columns: 200px minmax(0, 1fr);
@@ -312,8 +323,12 @@ a { color: var(--primary-color); }
 
 .sb-files summary { list-style: none; }
 .sb-files summary::-webkit-details-marker { display: none; }
-.sb-files[open] .sb-glyph-f { transform: rotate(180deg); }
-.sb-glyph-f { transition: transform 0.2s ease; font-size: 11px; }
+/* The ▾ used to flip 180° with a 0.2s transition when the menu was open.
+   Now that open/closed is a persisted preference, that animation replayed on
+   every single page load — the marker starts unrotated and animates into
+   place as soon as the script restores the state. Neither the rotation nor
+   the transition survives: the glyph is a static ▾. */
+.sb-glyph-f { font-size: 11px; }
 
 .sb-files-menu { padding: 2px 10px 8px 46px; display: flex; flex-direction: column; gap: 2px; }
 
@@ -581,11 +596,22 @@ a { color: var(--primary-color); }
 
 /* ---------------------------------------------------------------- figures */
 
+/* --fig-w is the figure's width as a FRACTION OF THE PRINTED COLUMN, measured
+   off the PDF. On A4 that column is ~17cm, so 45% is a ~7.6cm picture. Applied
+   to a 1500px web column the same 45% becomes ~675px — the figure stops being
+   an illustration beside the text and becomes the page, leaving three lines of
+   prose stranded in the gutter.
+   So the fraction is kept as the RATIO but capped in absolute terms, the way
+   Wikipedia caps its thumbnails: floated figures never exceed a size that
+   leaves a readable column beside them, standalone ones stay comfortably
+   inside the measure and centre. Full resolution is one click away — the
+   <img> is wrapped in a link to the file itself. */
 .md-fig {
-  width: var(--fig-w, 100%);
+  width: min(var(--fig-w, 100%), var(--fig-px, 100%), 560px);
   margin: 8px auto 12px;
   text-align: center;
 }
+.md-fig > a { display: block; }
 
 .md-fig img {
   width: 100%;
@@ -610,6 +636,10 @@ a { color: var(--primary-color); }
    audience is mobile-majority on cheap devices, and a figure with nothing to
    wrap around it must never be the one thing stuck alone on its own line. */
 @media (min-width: 640px) {
+  /* 340px is about Wikipedia's upper thumbnail size and leaves >=55% of even
+     a narrow column for the wrapped text. */
+  .md-fig-float-right,
+  .md-fig-float-left { width: min(var(--fig-w, 40%), var(--fig-px, 340px), 340px); }
   .md-fig-float-right { float: right; margin: 4px 0 10px 18px; }
   .md-fig-float-left { float: left; margin: 4px 18px 10px 0; }
 }
@@ -1075,7 +1105,7 @@ mjx-container[display="true"]::-webkit-scrollbar-track { background: transparent
    gains a sidebar/grid when there is room for one.
    ========================================================================== */
 
-.p-shell-wide { max-width: min(1800px, 97vw); padding-bottom: 4px; }
+.p-shell-wide { max-width: min(2400px, 98.5vw); padding-bottom: 4px; }
 
 /* --------------------------------------------------------------- crumbs */
 
@@ -2304,7 +2334,7 @@ a.tp-leaf-name:hover { text-decoration: underline; }
 .md-table { overflow-x: auto; margin: 10px 0 14px; max-width: 100%; }
 .md-table > table, .p-body table, .subq-body table, .intro-card table {
   border-collapse: collapse;
-  border: 2.5px solid var(--text-color);
+  border: 2.5px solid var(--text-primary);
   font-variant-numeric: tabular-nums;
   font-size: 15px;
   background: #fff;
@@ -2313,7 +2343,7 @@ a.tp-leaf-name:hover { text-decoration: underline; }
 .p-body table th, .p-body table td,
 .subq-body table th, .subq-body table td,
 .intro-card table th, .intro-card table td {
-  border: 1px solid var(--text-color);
+  border: 1px solid var(--text-primary);
   padding: 5px 12px;
   line-height: 1.35;
 }
@@ -2450,6 +2480,36 @@ td.md-td-text { text-align: left !important; }
 .lad-rung-band {
   flex: 0 0 auto; padding: 1px 7px; border-radius: 999px;
   font-size: 11.5px; font-weight: 700; font-variant-numeric: tabular-nums;
+}
+
+/* ── Оборудование ────────────────────────────────────────────────────────
+   The equipment line decides whether a student can attempt an experimental
+   problem at all, so it gets its own block and a larger face instead of
+   sitting in body type inside the opening paragraph. Accent rule on the
+   left rather than a filled panel: it should read as important, not as a
+   warning. */
+.equip-card {
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 12px 18px;
+  margin: 0 0 14px;
+}
+.equip-card p { font-size: 17.5px; line-height: 1.55; margin: 0; }
+.equip-card p + p { margin-top: 6px; }
+.equip-card u, .equip-card strong { font-weight: 700; }
+.equip-card ol, .equip-card ul { font-size: 17.5px; margin: 4px 0 0; padding-left: 22px; }
+
+/* «Часть N» heading and the prose under it, when the paper prints one. Sits
+   above that section's sub-question cards; it used to be swallowed into the
+   previous card. */
+.part-section-intro { margin: 2px 0 10px; }
+.part-section-intro p { margin: 0 0 8px; }
+
+@media (max-width: 639.98px) {
+  .equip-card { padding: 10px 13px; }
+  .equip-card p, .equip-card ol, .equip-card ul { font-size: 16px; }
 }
 
 

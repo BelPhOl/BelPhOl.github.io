@@ -69,12 +69,10 @@
       
       
       <nav class="sb-siblings" aria-label="Другие задачи этого тура">
-        <span class="sb-sib-arrow is-disabled" aria-hidden="true">‹</span>
+        
         <span class="sb-sib-list">
           <a class="sb-sib is-current" href="/problems/third/2016/9-e1/" aria-current=&#34;page&#34;>9.1</a><a class="sb-sib" href="/problems/third/2016/9-e2/">9.2</a>
         </span>
-        <a class="sb-sib-arrow" href="/problems/third/2016/9-e2/" aria-label="Следующая задача">›</a>
-        
       </nav>
       
     </div>
@@ -136,9 +134,14 @@
 </div>
 
 
-<section class="intro-card">
+<section class="equip-card" aria-label="Оборудование">
   <p><u>Приборы и оборудование</u>: штатив с лапкой, пластиковая бутылка с завинчивающейся пробкой, в которую вставлены две трубки, секундомер с памятью этапов, мензурка, посуда с водой, линейка.</p>
-<p><em><strong>Рассчитывать погрешности в данной работе не требуется!</strong></em></p>
+</section>
+
+
+
+<section class="intro-card">
+  <p><em><strong>Рассчитывать погрешности в данной работе не требуется!</strong></em></p>
 <p>Каждому приходилось проводить эксперимент по выливанию жидкости из перевернутой бутылки. Течение жидкости в этом случае является крайне регулярным – волны, брызги... и бульканье! Действительно, что бы жидкость вытекала из бутылки, внутрь ее должен попадать воздух. В данной задаче Вам предстоит исследовать регулярное вытекание воды из пластиковой бутылки. Для этого сквозь пробку бутылки пропущены две одинаковые трубки, которые можно передвигать. Бутылка закрепляется вертикально в лапке штатива, для измерения объема используется мензурка, для измерения времени вытекания секундомер.</p>
 <p>В качестве основной характеристики скорости вытекания используется расход жидкости (объем жидкости, вытекающей в единицу времени):</p>
 <p><mjx-container class="MathJax" jax="SVG" display="true" width="full" style="min-width: 18.709ex;"><svg style="vertical-align: -1.798ex; min-width: 18.709ex;" xmlns="http://www.w3.org/2000/svg" width="100%" height="4.726ex" role="img" focusable="false" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(0.0181,-0.0181) translate(0, -1294.5)"><g data-mml-node="math"><g data-mml-node="mtable" transform="translate(2078,0) translate(-2078,0)"><g transform="translate(0 1294.5) matrix(1 0 0 -1 0 0) scale(55.25)"><svg data-table="true" preserveAspectRatio="xMidYMid" viewBox="2056.8 -1294.5 1 2089"><g transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="mlabeledtr" transform="translate(0,-97.5)"><g data-mml-node="mtd"><g data-mml-node="mi"><use data-c="1D45E" xlink:href="#MJX-TEX-I-1D45E"></use></g><g data-mml-node="mo" transform="translate(737.8,0)"><use data-c="3D" xlink:href="#MJX-TEX-N-3D"></use></g><g data-mml-node="mfrac" transform="translate(1793.6,0)"><g data-mml-node="mrow" transform="translate(220,676)"><g data-mml-node="mi"><use data-c="394" xlink:href="#MJX-TEX-N-394"></use></g><g data-mml-node="mi" transform="translate(833,0)"><use data-c="1D449" xlink:href="#MJX-TEX-I-1D449"></use></g></g><g data-mml-node="mrow" transform="translate(424,-686)"><g data-mml-node="mi"><use data-c="394" xlink:href="#MJX-TEX-N-394"></use></g><g data-mml-node="mi" transform="translate(833,0)"><use data-c="1D461" xlink:href="#MJX-TEX-I-1D461"></use></g></g><rect width="1802" height="60" x="120" y="220"></rect></g><g data-mml-node="mo" transform="translate(3835.6,0)"><use data-c="2E" xlink:href="#MJX-TEX-N-2E"></use></g></g></g></g></svg><svg data-labels="true" preserveAspectRatio="xMaxYMid" viewBox="1278 -1294.5 1 2089"><g data-labels="true" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="mtd" id="mjx-eqn:1" transform="translate(0,652.5)"><text data-id-align="true"></text><g data-idbox="true" transform="translate(0,-750)"><g data-mml-node="mtext"><use data-c="28" xlink:href="#MJX-TEX-N-28"></use><use data-c="31" xlink:href="#MJX-TEX-N-31" transform="translate(389,0)"></use><use data-c="29" xlink:href="#MJX-TEX-N-29" transform="translate(889,0)"></use></g></g></g></g></svg></g></g></g></g></svg></mjx-container></p>
@@ -151,6 +154,9 @@
 
 
   
+  
+  <div class="part-section-intro"><p><strong>Часть 1. Закон вытекания.</strong></p>
+<p><em><strong>Измерения в данной части проведите при разности уровней трубок в сосуде</strong></em> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.439ex;" xmlns="http://www.w3.org/2000/svg" width="7.212ex" height="2.009ex" role="img" focusable="false" viewBox="0 -694 3187.6 888" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="210E" xlink:href="#MJX-TEX-I-210E"></use></g><g data-mml-node="mo" transform="translate(853.8,0)"><use data-c="3D" xlink:href="#MJX-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(1909.6,0)"><use data-c="35" xlink:href="#MJX-TEX-N-35"></use></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(2409.6,0)"><g data-mml-node="mo"><use data-c="2C" xlink:href="#MJX-TEX-N-2C"></use></g></g><g data-mml-node="mn" transform="translate(2687.6,0)"><use data-c="35" xlink:href="#MJX-TEX-N-35"></use></g></g></g></svg></mjx-container> см*</p></div>
   
     
 <section class="subq-card" id="part-1-1" data-part="1.1">
@@ -203,8 +209,6 @@
   </header>
   <div class="subq-body subq-body-question">
     <p><span class="subq-num">1.4</span> Дайте качественное объяснение полученной зависимости.</p>
-<p><strong>Часть 2. От чего зависит расход?</strong></p>
-<p>В данной работе используйте основной вывод Части 1, позволяющий рассчитывать расход по «одной точке» - измерять время вытекания <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="0.817ex" height="1.441ex" role="img" focusable="false" viewBox="0 -626 361 637" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D461" xlink:href="#MJX-TEX-I-1D461"></use></g></g></g></svg></mjx-container> фиксированного объема жидкости (например <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.186ex;" xmlns="http://www.w3.org/2000/svg" width="8.151ex" height="1.731ex" role="img" focusable="false" viewBox="0 -683 3602.6 765" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D449" xlink:href="#MJX-TEX-I-1D449"></use></g><g data-mml-node="mo" transform="translate(1046.8,0)"><use data-c="3D" xlink:href="#MJX-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(2102.6,0)"><use data-c="31" xlink:href="#MJX-TEX-N-31"></use><use data-c="30" xlink:href="#MJX-TEX-N-30" transform="translate(500,0)"></use><use data-c="30" xlink:href="#MJX-TEX-N-30" transform="translate(1000,0)"></use></g></g></g></svg></mjx-container> мл).</p>
   </div>
   
 </section>
@@ -212,6 +216,9 @@
   
 
   
+  
+  <div class="part-section-intro"><p><strong>Часть 2. От чего зависит расход?</strong></p>
+<p>В данной работе используйте основной вывод Части 1, позволяющий рассчитывать расход по «одной точке» - измерять время вытекания <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="0.817ex" height="1.441ex" role="img" focusable="false" viewBox="0 -626 361 637" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D461" xlink:href="#MJX-TEX-I-1D461"></use></g></g></g></svg></mjx-container> фиксированного объема жидкости (например <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.186ex;" xmlns="http://www.w3.org/2000/svg" width="8.151ex" height="1.731ex" role="img" focusable="false" viewBox="0 -683 3602.6 765" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D449" xlink:href="#MJX-TEX-I-1D449"></use></g><g data-mml-node="mo" transform="translate(1046.8,0)"><use data-c="3D" xlink:href="#MJX-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(2102.6,0)"><use data-c="31" xlink:href="#MJX-TEX-N-31"></use><use data-c="30" xlink:href="#MJX-TEX-N-30" transform="translate(500,0)"></use><use data-c="30" xlink:href="#MJX-TEX-N-30" transform="translate(1000,0)"></use></g></g></g></svg></mjx-container> мл).</p></div>
   
     
 <section class="subq-card" id="part-2-1" data-part="2.1">
@@ -250,7 +257,7 @@
   </header>
   <div class="subq-body subq-body-question">
     <p><span class="subq-num">2.3</span> Дайте качественное объяснение полученной зависимости и численных значений ее параметров (хотя бы некоторых).</p>
-<p><figure class="md-fig md-fig-float md-fig-float-right" style="--fig-w:22%"><img src="/problems/data/figures/2016-third-exp-9-1/fig1.png" alt="" loading="lazy"></figure></p>
+<p><figure class="md-fig md-fig-float md-fig-float-right" style="--fig-w:22%;--fig-px:277px"><a href="/problems/data/figures/2016-third-exp-9-1/fig1.png" title="Открыть рисунок в полном размере"><img src="/problems/data/figures/2016-third-exp-9-1/fig1.png" alt="" loading="lazy"></a></figure></p>
   </div>
   
 </section>
