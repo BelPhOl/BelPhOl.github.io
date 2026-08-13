@@ -2329,7 +2329,12 @@ td.md-td-text { text-align: left !important; }
    it a «1.» renders outside the card and collides with the accent rule. */
 .intro-card ol, .intro-card ul,
 .subq-body ol, .subq-body ul,
-.p-body ol, .p-body ul { padding-left: 26px; margin: 6px 0 8px; }
+.p-body ol, .p-body ul,
+/* `.hint-body` too: an H3 «Почти решение» is usually a numbered plan, and its
+   markers were drawn in the padding box — i.e. outside the card, sitting on
+   the border. Same defect as the statement cards, different class. */
+.hint-body ol, .hint-body ul,
+.hint-list ol, .hint-list ul { padding-left: 26px; margin: 6px 0 8px; }
 .intro-card li, .subq-body li, .p-body li { margin: 2px 0; }
 
 /* Finder header on one line: title, count, stage links and presets all share a
@@ -2369,6 +2374,16 @@ td.md-td-text { text-align: left !important; }
 .pf-tag-secn { font-style: normal; color: #94a3b8; font-size: 11.5px; }
 .pf-tag-all { font-weight: 600; color: var(--primary-color); }
 .pf-tag-sec .pf-tag-row { padding-left: 12px; }
+
+/* A hint body must clip its own content: a long formula or a wide list should
+   scroll or wrap inside the card, never paint over its border. */
+.hint-body { overflow-wrap: anywhere; }
+.hint-body > * { max-width: 100%; }
+
+/* Belt and braces for the row snippet: even if a long unbreakable token reaches
+   it, break it rather than letting it set the column's minimum width and
+   collapse the text to one word per line. */
+.pr-snippet { overflow-wrap: anywhere; word-break: break-word; min-width: 0; }
 
 
 /* --- MathJax SVG container styles (generated) --- */
