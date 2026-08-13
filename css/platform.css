@@ -2385,6 +2385,62 @@ td.md-td-text { text-align: left !important; }
    collapse the text to one word per line. */
 .pr-snippet { overflow-wrap: anywhere; word-break: break-word; min-width: 0; }
 
+/* =====================================================================
+   Recommendation layer — belpho-rebuild-project item 8.
+   .rec-* : "похожие задачи" + family cross-links (partials/related.ejs,
+            every problem page). .lad-* : per-topic difficulty ladder
+            (templates/topic.ejs). Shared, small, and on every problem page,
+            so it lives in the main sheet rather than a page-scoped file —
+            unlike /problems/study/ and /problems/for-you/, which are their
+            own pages and get their own inlined stylesheets instead.
+   ===================================================================== */
+
+.rec-family {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px;
+  margin: 18px 0 4px; font-size: 13.5px; color: var(--text-secondary);
+}
+.rec-family-label { font-weight: 600; }
+.rec-family-link {
+  display: inline-flex; align-items: center;
+  padding: 3px 9px; border-radius: 999px;
+  background: var(--bg-color); border: 1px solid var(--border-color);
+  color: var(--text-primary); text-decoration: none; font-size: 13px;
+}
+.rec-family-link:hover { border-color: var(--primary-color); color: var(--primary-color); }
+
+.rec-related { margin: 22px 0 8px; }
+.rec-related-h {
+  font-size: 15px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.06em; color: var(--text-secondary); margin: 0 0 12px;
+}
+.rec-related-list { gap: 8px; }
+
+.lad-ladder {
+  margin: 0 0 22px; padding: 14px 16px;
+  background: var(--surface-color); border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+}
+.lad-h { font-size: 17px; font-weight: 700; margin: 0 0 4px; }
+.lad-note { font-size: 13.5px; color: var(--text-secondary); margin: 0 0 12px; }
+.lad-rungs { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 2px; }
+.lad-rung {
+  display: flex; align-items: center; gap: 10px;
+  padding: 7px 6px; border-radius: var(--radius-sm);
+}
+.lad-rung:hover { background: var(--bg-color); }
+.lad-rung-n {
+  flex: 0 0 22px; height: 22px; display: inline-flex; align-items: center; justify-content: center;
+  border-radius: 999px; background: var(--bg-color); border: 1px solid var(--border-color);
+  font-size: 11.5px; font-weight: 700; color: var(--text-secondary);
+}
+.lad-rung-link { flex: 1; min-width: 0; color: var(--text-primary); text-decoration: none; font-weight: 500; }
+.lad-rung-link:hover { color: var(--primary-color); text-decoration: underline; }
+.lad-rung-meta { flex: 0 0 auto; font-size: 12.5px; color: var(--text-secondary); }
+.lad-rung-band {
+  flex: 0 0 auto; padding: 1px 7px; border-radius: 999px;
+  font-size: 11.5px; font-weight: 700; font-variant-numeric: tabular-nums;
+}
+
 
 /* --- MathJax SVG container styles (generated) --- */
 

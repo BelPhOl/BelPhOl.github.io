@@ -8336,6 +8336,11 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://belpho.org/problems/for-you/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://belpho.org/problems/home-lab/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -8356,27 +8361,17 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://belpho.org/problems/izho/2026/e1/edu/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://belpho.org/problems/izho/2026/e1/hints/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://belpho.org/problems/izho/2026/e1/solution/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://belpho.org/problems/izho/2026/e2/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://belpho.org/problems/izho/2026/e3/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://belpho.org/problems/izho/2026/e3/edu/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -8429,6 +8424,41 @@
     <loc>https://belpho.org/problems/izho/2026/t3/solution/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/study/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/study/10-final/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/study/10-third/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/study/11-final/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/study/11-third/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/study/9-final/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/study/9-third/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://belpho.org/problems/third/</loc>
