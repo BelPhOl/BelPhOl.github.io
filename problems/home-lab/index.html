@@ -62,10 +62,25 @@
   padding: 6px 11px; border-radius: 999px; cursor: pointer;
   border: 1px solid var(--border-color);
   background: var(--surface-color); color: var(--text-primary);
-  min-height: 34px;
+  min-height: 36px;          /* comfortable thumb target on a 390px phone */
 }
 .hl-preset:hover { border-color: var(--primary-color); color: var(--primary-color); }
 .hl-preset-clear { color: var(--text-secondary); }
+
+.hl-next { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-top: 12px; }
+.hl-next-label { font-size: 12.5px; font-weight: 700; color: var(--text-secondary); }
+.hl-next-chip {
+  display: inline-flex; align-items: center; gap: 5px;
+  font: inherit; font-size: 13px; cursor: pointer;
+  padding: 5px 10px; border-radius: 999px; min-height: 36px;
+  border: 1px dashed var(--border-color);
+  background: var(--surface-color); color: var(--text-primary);
+}
+.hl-next-chip:hover { border-style: solid; border-color: var(--primary-color); color: var(--primary-color); }
+.hl-next-chip i {
+  font-style: normal; font-weight: 700; font-size: 11.5px;
+  font-variant-numeric: tabular-nums; color: var(--text-secondary);
+}
 
 .hl-group { margin-top: 14px; }
 .hl-group-title {
@@ -255,6 +270,42 @@
     <button type="button" class="hl-preset" data-preset="electro">Электрика</button>
     <button type="button" class="hl-preset" data-preset="optics">Оптика</button>
     <button type="button" class="hl-preset hl-preset-clear" data-preset="clear">Сбросить</button>
+  </div>
+
+  
+  <div class="hl-next" id="hlNext">
+    <span class="hl-next-label">Чаще всего не хватает:</span>
+    
+    <button type="button" class="hl-next-chip" data-add="linejka"
+            title="Линейка">
+      <span class="hl-dot hl-dot-home"></span>Линейка <i>115</i>
+    </button>
+    
+    <button type="button" class="hl-next-chip" data-add="shtativ"
+            title="Чем заменить: край стола + струбцина или стопка книг">
+      <span class="hl-dot hl-dot-buy"></span>Штатив с лапкой <i>88</i>
+    </button>
+    
+    <button type="button" class="hl-next-chip" data-add="sekundomer"
+            title="Чем заменить: секундомер в телефоне">
+      <span class="hl-dot hl-dot-home"></span>Секундомер <i>78</i>
+    </button>
+    
+    <button type="button" class="hl-next-chip" data-add="istochnik"
+            title="Чем заменить: три пальчиковые батарейки в держателе">
+      <span class="hl-dot hl-dot-home"></span>Источник питания 4,5 В <i>58</i>
+    </button>
+    
+    <button type="button" class="hl-next-chip" data-add="provoda"
+            title="Соединительные провода">
+      <span class="hl-dot hl-dot-buy"></span>Соединительные провода <i>53</i>
+    </button>
+    
+    <button type="button" class="hl-next-chip" data-add="voda"
+            title="Вода">
+      <span class="hl-dot hl-dot-home"></span>Вода <i>46</i>
+    </button>
+    
   </div>
 
   
@@ -617,6 +668,12 @@
     <div class="hl-group-title">Стоит купить — недорого</div>
     <div class="hl-checks" data-cls="buy">
       
+      <label class="hl-check" data-key="shtativ" data-label="штатив с лапкой">
+        <input type="checkbox" value="shtativ">
+        <span>Штатив с лапкой</span>
+        <i title="в скольких экспериментальных задачах это выдавали">88</i>
+      </label>
+      
       <label class="hl-check" data-key="provoda" data-label="соединительные провода">
         <input type="checkbox" value="provoda">
         <span>Соединительные провода</span>
@@ -816,12 +873,6 @@
     <div class="hl-group-title">Кабинет физики в школе</div>
     <div class="hl-checks" data-cls="school">
       
-      <label class="hl-check" data-key="shtativ" data-label="штатив с лапкой">
-        <input type="checkbox" value="shtativ">
-        <span>Штатив с лапкой</span>
-        <i title="в скольких экспериментальных задачах это выдавали">88</i>
-      </label>
-      
       <label class="hl-check" data-key="reostat" data-label="реостат (школьный)">
         <input type="checkbox" value="reostat">
         <span>Реостат (школьный)</span>
@@ -944,203 +995,9 @@
   <section class="hl-tier hl-tier-almost" data-tier="almost">
     <div class="hl-tier-head">
       <h2>Не хватает немного</h2>
-      <span class="hl-tier-n" data-tier-count>58 задач</span>
+      <span class="hl-tier-n" data-tier-count>121 задача</span>
     </div>
-    <p class="hl-tier-note">Одна-две вещи из дома или из ближайшего канцелярского — и задача ваша.</p>
-    
-    <div class="hl-cards" data-tier-cards>
-      
-<article class="hl-card">
-  <div class="hl-card-top">
-    <span class="hl-badge">Э1</span>
-    <a class="hl-title" href="/problems/final/2019/11-e1/">Суперконденсатор</a>
-  </div>
-  <div class="hl-meta">
-    <span>2019 · Республиканская · 11 кл.</span>
-    
-    <span class="hl-band" style="background:#800026;color:#fff">Максимальная</span>
-    
-    <span>180 мин</span>
-    <span class="hl-why">график</span><span class="hl-why">погрешности</span><span class="hl-why">8 пунктов</span>
-    <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">70</span>
-  </div>
-  
-  <p class="hl-need">
-    <span class="hl-need-label">Не хватает:</span>
-    <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Конденсатор</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Источник питания 4,5 В</span> <span class="hl-need-sub">(три пальчиковые батарейки в держателе)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Резистор постоянный</span> <span class="hl-need-sub">(набор резисторов — несколько рублей)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Мультиметр</span> <span class="hl-need-sub">(самая полезная покупка — от 15 р.)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Соединительные провода</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Секундомер</span> <span class="hl-need-sub">(секундомер в телефоне)</span>
-  </p>
-  
-</article>
-
-<article class="hl-card">
-  <div class="hl-card-top">
-    <span class="hl-badge">Э1</span>
-    <a class="hl-title" href="/problems/third/2019/11-e1/">Как работает омметр</a>
-  </div>
-  <div class="hl-meta">
-    <span>2019 · Городская · 11 кл.</span>
-    
-    <span class="hl-band" style="background:#e31a1c;color:#fff">Высокая</span>
-    
-    <span>45 мин</span>
-    <span class="hl-why">график</span><span class="hl-why">погрешности</span><span class="hl-why">9 пунктов</span>
-    <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">62</span>
-  </div>
-  
-  <p class="hl-need">
-    <span class="hl-need-label">Не хватает:</span>
-    <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Резистор постоянный</span> <span class="hl-need-sub">(набор резисторов — несколько рублей)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Источник питания 4,5 В</span> <span class="hl-need-sub">(три пальчиковые батарейки в держателе)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Мультиметр</span> <span class="hl-need-sub">(самая полезная покупка — от 15 р.)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Соединительные провода</span>
-  </p>
-  
-</article>
-
-<article class="hl-card">
-  <div class="hl-card-top">
-    <span class="hl-badge">Э2</span>
-    <a class="hl-title" href="/problems/final/2003/11-e2/">Экспериментальная задача 11-2</a>
-  </div>
-  <div class="hl-meta">
-    <span>2003 · Республиканская · 11 кл.</span>
-    
-    <span class="hl-band" style="background:#800026;color:#fff">Максимальная</span>
-    
-    <span>120 мин</span>
-    
-    <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">55</span>
-  </div>
-  
-  <p class="hl-need">
-    <span class="hl-need-label">Не хватает:</span>
-    <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Бумага (листы А4)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Магнит</span> <span class="hl-need-sub">(неодимовые шарики или магнит от динамика)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Линейка</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Подставка / держатель</span> <span class="hl-need-sub">(стопка книг, кусок пластилина)</span>
-  </p>
-  
-</article>
-
-<article class="hl-card">
-  <div class="hl-card-top">
-    <span class="hl-badge">Э1</span>
-    <a class="hl-title" href="/problems/final/2005/10-e1/">Твердость материалов</a>
-  </div>
-  <div class="hl-meta">
-    <span>2005 · Республиканская · 10 кл.</span>
-    
-    <span class="hl-band" style="background:#800026;color:#fff">Максимальная</span>
-    
-    <span>60 мин</span>
-    <span class="hl-why">график</span>
-    <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">63</span>
-  </div>
-  
-  <p class="hl-need">
-    <span class="hl-need-label">Не хватает:</span>
-    <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Пластинка (металл, жесть)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Доска / брусок / рейка</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Книга / учебник</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Цилиндр / шарик</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Бумага (листы А4)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Мерная лента / рулетка</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Штангенциркуль</span> <span class="hl-need-sub">(пластиковый — около 10 р.)</span>
-  </p>
-  
-</article>
-
-<article class="hl-card">
-  <div class="hl-card-top">
-    <span class="hl-badge">Э1</span>
-    <a class="hl-title" href="/problems/third/2021/9-e1/">Катится колесо</a>
-  </div>
-  <div class="hl-meta">
-    <span>2021 · Городская · 9 кл.</span>
-    
-    <span class="hl-band" style="background:#fd8d3c;color:#2d2d2d">Средняя</span>
-    
-    <span>30 мин</span>
-    <span class="hl-why">свой метод</span><span class="hl-why">погрешности</span><span class="hl-why">7 пунктов</span>
-    <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">54</span>
-  </div>
-  
-  <p class="hl-need">
-    <span class="hl-need-label">Не хватает:</span>
-    <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Циркуль</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Ножницы</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Линейка</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Бумага (листы А4)</span>
-  </p>
-  
-</article>
-
-<article class="hl-card">
-  <div class="hl-card-top">
-    <span class="hl-badge">Э2</span>
-    <a class="hl-title" href="/problems/third/2023/10-e2/">Как измерить сопротивление раствора?</a>
-  </div>
-  <div class="hl-meta">
-    <span>2023 · Городская · 10 кл.</span>
-    
-    <span class="hl-band" style="background:#800026;color:#fff">Максимальная</span>
-    
-    <span>30 мин</span>
-    <span class="hl-why">погрешности</span><span class="hl-why">11 пунктов</span>
-    <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">61</span>
-  </div>
-  
-  <p class="hl-need">
-    <span class="hl-need-label">Не хватает:</span>
-    <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Мультиметр</span> <span class="hl-need-sub">(самая полезная покупка — от 15 р.)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Соединительные провода</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Пластинка (металл, жесть)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Цилиндр / шарик</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Линейка</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Стакан / одноразовая посуда</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Соль</span>
-  </p>
-  
-</article>
-
-<article class="hl-card">
-  <div class="hl-card-top">
-    <span class="hl-badge">Э2</span>
-    <a class="hl-title" href="/problems/third/2008/11-e2/">Интерференция на бумаге</a>
-  </div>
-  <div class="hl-meta">
-    <span>2008 · Городская · 11 кл.</span>
-    
-    <span class="hl-band" style="background:#800026;color:#fff">Максимальная</span>
-    
-    <span>40 мин</span>
-    <span class="hl-why">график</span>
-    <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">55</span>
-  </div>
-  
-  <p class="hl-need">
-    <span class="hl-need-label">Не хватает:</span>
-    <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Прозрачная плёнка</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Бумага (листы А4)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Канцелярские кнопки</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Картон / папка</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Линейка</span>
-  </p>
-  
-</article>
-
-<article class="hl-card">
-  <div class="hl-card-top">
-    <span class="hl-badge">Э2</span>
-    <a class="hl-title" href="/problems/third/2015/10-e2/">Тянем резину</a>
-  </div>
-  <div class="hl-meta">
-    <span>2015 · Городская · 10 кл.</span>
-    
-    <span class="hl-band" style="background:#e31a1c;color:#fff">Высокая</span>
-    
-    <span>45 мин</span>
-    <span class="hl-why">график</span><span class="hl-why">6 пунктов</span>
-    <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">51</span>
-  </div>
-  
-  <p class="hl-need">
-    <span class="hl-need-label">Не хватает:</span>
-    <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Резинка / резиновый жгут</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Набор грузов</span> <span class="hl-need-sub">(гайки или монеты, взвешенные на кухонных весах)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Мерная лента / рулетка</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Канцелярские кнопки</span>
-  </p>
-  
-</article>
-
-    </div>
-    
-    <button type="button" class="hl-more" data-tier-more hidden>Показать ещё</button>
-    <p class="hl-tier-note" data-tier-rest>Ещё 50 — включите JavaScript или откройте
-      <a href="/problems/">общий поиск</a>.</p>
-    
-    
-  </section>
-  
-  <section class="hl-tier hl-tier-lab" data-tier="lab">
-    <div class="hl-tier-head">
-      <h2>Нужна школьная лаборатория</h2>
-      <span class="hl-tier-n" data-tier-count>140 задач</span>
-    </div>
-    <p class="hl-tier-note">Попросите кабинет физики: ниже написано, что именно спросить.</p>
+    <p class="hl-tier-note">Всё недостающее — бытовое или копеечное. В списке «не хватает» стоит и то, что вы просто не отметили: отметьте — и задача переедет наверх.</p>
     
     <div class="hl-cards" data-tier-cards>
       
@@ -1159,9 +1016,33 @@
     <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">72</span>
   </div>
   
+  
   <p class="hl-need">
     <span class="hl-need-label">Не хватает:</span>
-    <span class="hl-need-item"><span class="hl-dot hl-dot-school"></span>Штатив с лапкой</span> <span class="hl-need-sub">(край стола + струбцина или стопка книг)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Деревянная палочка / шпажка</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Нитки / леска</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Секундомер</span> <span class="hl-need-sub">(секундомер в телефоне)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Линейка</span>
+    <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Штатив с лапкой</span> <span class="hl-need-sub">(край стола + струбцина или стопка книг)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Деревянная палочка / шпажка</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Нитки / леска</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Секундомер</span> <span class="hl-need-sub">(секундомер в телефоне)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Линейка</span>
+  </p>
+  
+</article>
+
+<article class="hl-card">
+  <div class="hl-card-top">
+    <span class="hl-badge">Э1</span>
+    <a class="hl-title" href="/problems/final/2019/11-e1/">Суперконденсатор</a>
+  </div>
+  <div class="hl-meta">
+    <span>2019 · Республиканская · 11 кл.</span>
+    
+    <span class="hl-band" style="background:#800026;color:#fff">Максимальная</span>
+    
+    <span>180 мин</span>
+    <span class="hl-why">график</span><span class="hl-why">погрешности</span><span class="hl-why">8 пунктов</span>
+    <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">70</span>
+  </div>
+  
+  
+  <p class="hl-need">
+    <span class="hl-need-label">Не хватает:</span>
+    <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Конденсатор</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Резистор постоянный</span> <span class="hl-need-sub">(набор резисторов — несколько рублей)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Мультиметр</span> <span class="hl-need-sub">(самая полезная покупка — от 15 р.)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Соединительные провода</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Источник питания 4,5 В</span> <span class="hl-need-sub">(три пальчиковые батарейки в держателе)</span><span class="hl-need-sub"> и ещё 1</span>
   </p>
   
 </article>
@@ -1181,9 +1062,33 @@
     <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">66</span>
   </div>
   
+  
   <p class="hl-need">
     <span class="hl-need-label">Не хватает:</span>
-    <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Пробирка</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Вода</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Реактив (раствор, кислота)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-school"></span>Штатив с лапкой</span> <span class="hl-need-sub">(край стола + струбцина или стопка книг)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Секундомер</span> <span class="hl-need-sub">(секундомер в телефоне)</span>
+    <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Пробирка</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Реактив (раствор, кислота)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Штатив с лапкой</span> <span class="hl-need-sub">(край стола + струбцина или стопка книг)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Вода</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Секундомер</span> <span class="hl-need-sub">(секундомер в телефоне)</span>
+  </p>
+  
+</article>
+
+<article class="hl-card">
+  <div class="hl-card-top">
+    <span class="hl-badge">Э1</span>
+    <a class="hl-title" href="/problems/third/2019/11-e1/">Как работает омметр</a>
+  </div>
+  <div class="hl-meta">
+    <span>2019 · Городская · 11 кл.</span>
+    
+    <span class="hl-band" style="background:#e31a1c;color:#fff">Высокая</span>
+    
+    <span>45 мин</span>
+    <span class="hl-why">график</span><span class="hl-why">погрешности</span><span class="hl-why">9 пунктов</span>
+    <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">62</span>
+  </div>
+  
+  
+  <p class="hl-need">
+    <span class="hl-need-label">Не хватает:</span>
+    <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Резистор постоянный</span> <span class="hl-need-sub">(набор резисторов — несколько рублей)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Мультиметр</span> <span class="hl-need-sub">(самая полезная покупка — от 15 р.)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Соединительные провода</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Источник питания 4,5 В</span> <span class="hl-need-sub">(три пальчиковые батарейки в держателе)</span>
   </p>
   
 </article>
@@ -1203,9 +1108,10 @@
     <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">75</span>
   </div>
   
+  
   <p class="hl-need">
     <span class="hl-need-label">Не хватает:</span>
-    <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Доска / брусок / рейка</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-school"></span>Штатив с лапкой</span> <span class="hl-need-sub">(край стола + струбцина или стопка книг)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Книга / учебник</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Линейка</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Пробка</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Пробирка</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Соль</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Крупа / песок</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Секундомер</span> <span class="hl-need-sub">(секундомер в телефоне)</span>
+    <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Штатив с лапкой</span> <span class="hl-need-sub">(край стола + струбцина или стопка книг)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Пробирка</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Доска / брусок / рейка</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Книга / учебник</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Линейка</span><span class="hl-need-sub"> и ещё 4</span>
   </p>
   
 </article>
@@ -1225,53 +1131,10 @@
     <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">69</span>
   </div>
   
-  <p class="hl-need">
-    <span class="hl-need-label">Не хватает:</span>
-    <span class="hl-need-item"><span class="hl-dot hl-dot-school"></span>Штатив с лапкой</span> <span class="hl-need-sub">(край стола + струбцина или стопка книг)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Карандаш</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Доска / брусок / рейка</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Цилиндр / шарик</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Бумага (листы А4)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Линейка</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Транспортир / угломерная шкала</span> <span class="hl-need-sub">(распечатать на бумаге)</span>
-  </p>
-  
-</article>
-
-<article class="hl-card">
-  <div class="hl-card-top">
-    <span class="hl-badge">Э2</span>
-    <a class="hl-title" href="/problems/final/2025/10-e2/">Несколько опытов со шприцом</a>
-  </div>
-  <div class="hl-meta">
-    <span>2025 · Республиканская · 10 кл.</span>
-    
-    <span class="hl-band" style="background:#800026;color:#fff">Максимальная</span>
-    
-    <span>90 мин</span>
-    <span class="hl-why">8 пунктов</span>
-    <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">67</span>
-  </div>
   
   <p class="hl-need">
     <span class="hl-need-label">Не хватает:</span>
-    <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Шприц</span> <span class="hl-need-sub">(аптека, меньше рубля)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Термометр</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-school"></span>Калориметр</span> <span class="hl-need-sub">(два стакана и вата)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Стакан / одноразовая посуда</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-school"></span>Штатив с лапкой</span> <span class="hl-need-sub">(край стола + струбцина или стопка книг)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Вода</span>
-  </p>
-  
-</article>
-
-<article class="hl-card">
-  <div class="hl-card-top">
-    <span class="hl-badge">Э1</span>
-    <a class="hl-title" href="/problems/final/2024/9-e1/">Зона застоя</a>
-  </div>
-  <div class="hl-meta">
-    <span>2024 · Республиканская · 9 кл.</span>
-    
-    <span class="hl-band" style="background:#fd8d3c;color:#2d2d2d">Средняя</span>
-    
-    <span>25 мин</span>
-    <span class="hl-why">свой метод</span><span class="hl-why">график</span><span class="hl-why">погрешности</span>
-    <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">49</span>
-  </div>
-  
-  <p class="hl-need">
-    <span class="hl-need-label">Не хватает:</span>
-    <span class="hl-need-item"><span class="hl-dot hl-dot-rig"></span>Готовая установка от организаторов</span>
+    <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Штатив с лапкой</span> <span class="hl-need-sub">(край стола + струбцина или стопка книг)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Карандаш</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Доска / брусок / рейка</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Цилиндр / шарик</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Бумага (листы А4)</span><span class="hl-need-sub"> и ещё 2</span>
   </p>
   
 </article>
@@ -1291,9 +1154,97 @@
     <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">66</span>
   </div>
   
+  
   <p class="hl-need">
     <span class="hl-need-label">Не хватает:</span>
-    <span class="hl-need-item"><span class="hl-dot hl-dot-school"></span>Штатив с лапкой</span> <span class="hl-need-sub">(край стола + струбцина или стопка книг)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Проволока</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Игла / булавка / шило</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Стакан / одноразовая посуда</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Набор грузов</span> <span class="hl-need-sub">(гайки или монеты, взвешенные на кухонных весах)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Транспортир / угломерная шкала</span> <span class="hl-need-sub">(распечатать на бумаге)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Линейка</span>
+    <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Штатив с лапкой</span> <span class="hl-need-sub">(край стола + струбцина или стопка книг)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Проволока</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Набор грузов</span> <span class="hl-need-sub">(гайки или монеты, взвешенные на кухонных весах)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Игла / булавка / шило</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Стакан / одноразовая посуда</span><span class="hl-need-sub"> и ещё 2</span>
+  </p>
+  
+</article>
+
+<article class="hl-card">
+  <div class="hl-card-top">
+    <span class="hl-badge">Э2</span>
+    <a class="hl-title" href="/problems/final/2003/11-e2/">Экспериментальная задача 11-2</a>
+  </div>
+  <div class="hl-meta">
+    <span>2003 · Республиканская · 11 кл.</span>
+    
+    <span class="hl-band" style="background:#800026;color:#fff">Максимальная</span>
+    
+    <span>120 мин</span>
+    
+    <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">55</span>
+  </div>
+  
+  
+  <p class="hl-need">
+    <span class="hl-need-label">Не хватает:</span>
+    <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Магнит</span> <span class="hl-need-sub">(неодимовые шарики или магнит от динамика)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Бумага (листы А4)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Линейка</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Подставка / держатель</span> <span class="hl-need-sub">(стопка книг, кусок пластилина)</span>
+  </p>
+  
+</article>
+
+    </div>
+    
+    <button type="button" class="hl-more" data-tier-more hidden>Показать ещё</button>
+    <p class="hl-tier-note" data-tier-rest>Ещё 113 — включите JavaScript или откройте
+      <a href="/problems/">общий поиск</a>.</p>
+    
+    
+  </section>
+  
+  <section class="hl-tier hl-tier-lab" data-tier="lab">
+    <div class="hl-tier-head">
+      <h2>Нужна школьная лаборатория</h2>
+      <span class="hl-tier-n" data-tier-count>77 задач</span>
+    </div>
+    <p class="hl-tier-note">Нужен прибор из кабинета физики. Он назван на карточке — с этим и подойдите к учителю; часто он же одалживает оборудование на выходные.</p>
+    
+    <div class="hl-cards" data-tier-cards>
+      
+<article class="hl-card">
+  <div class="hl-card-top">
+    <span class="hl-badge">Э2</span>
+    <a class="hl-title" href="/problems/final/2025/10-e2/">Несколько опытов со шприцом</a>
+  </div>
+  <div class="hl-meta">
+    <span>2025 · Республиканская · 10 кл.</span>
+    
+    <span class="hl-band" style="background:#800026;color:#fff">Максимальная</span>
+    
+    <span>90 мин</span>
+    <span class="hl-why">8 пунктов</span>
+    <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">67</span>
+  </div>
+  
+  
+  <p class="hl-need">
+    <span class="hl-need-label">Не хватает:</span>
+    <span class="hl-need-item"><span class="hl-dot hl-dot-school"></span>Калориметр</span> <span class="hl-need-sub">(два стакана и вата)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Шприц</span> <span class="hl-need-sub">(аптека, меньше рубля)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Штатив с лапкой</span> <span class="hl-need-sub">(край стола + струбцина или стопка книг)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Термометр</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Стакан / одноразовая посуда</span><span class="hl-need-sub"> и ещё 1</span>
+  </p>
+  
+</article>
+
+<article class="hl-card">
+  <div class="hl-card-top">
+    <span class="hl-badge">Э1</span>
+    <a class="hl-title" href="/problems/final/2024/9-e1/">Зона застоя</a>
+  </div>
+  <div class="hl-meta">
+    <span>2024 · Республиканская · 9 кл.</span>
+    
+    <span class="hl-band" style="background:#fd8d3c;color:#2d2d2d">Средняя</span>
+    
+    <span>25 мин</span>
+    <span class="hl-why">свой метод</span><span class="hl-why">график</span><span class="hl-why">погрешности</span>
+    <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">49</span>
+  </div>
+  
+  
+  <p class="hl-need">
+    <span class="hl-need-label">Не хватает:</span>
+    <span class="hl-need-item"><span class="hl-dot hl-dot-rig"></span>Готовая установка от организаторов</span>
   </p>
   
 </article>
@@ -1313,9 +1264,125 @@
     <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">58</span>
   </div>
   
+  
   <p class="hl-need">
     <span class="hl-need-label">Не хватает:</span>
-    <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Магнит</span> <span class="hl-need-sub">(неодимовые шарики или магнит от динамика)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-rig"></span>Готовая установка от организаторов</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Секундомер</span> <span class="hl-need-sub">(секундомер в телефоне)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Пластилин</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Гайки, шайбы, болты</span>
+    <span class="hl-need-item"><span class="hl-dot hl-dot-rig"></span>Готовая установка от организаторов</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Магнит</span> <span class="hl-need-sub">(неодимовые шарики или магнит от динамика)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Секундомер</span> <span class="hl-need-sub">(секундомер в телефоне)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Пластилин</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Гайки, шайбы, болты</span>
+  </p>
+  
+</article>
+
+<article class="hl-card">
+  <div class="hl-card-top">
+    <span class="hl-badge">Э1</span>
+    <a class="hl-title" href="/problems/final/2024/10-e1/">Экспериментальная задача 10-1</a>
+  </div>
+  <div class="hl-meta">
+    <span>2024 · Республиканская · 10 кл.</span>
+    
+    <span class="hl-band" style="background:#800026;color:#fff">Максимальная</span>
+    
+    <span>120 мин</span>
+    <span class="hl-why">свой метод</span><span class="hl-why">график</span><span class="hl-why">погрешности</span>
+    <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">69</span>
+  </div>
+  
+  
+  <p class="hl-need">
+    <span class="hl-need-label">Не хватает:</span>
+    <span class="hl-need-item"><span class="hl-dot hl-dot-school"></span>Стеклянная / капиллярная трубка</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Реактив (раствор, кислота)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Проволока</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Мультиметр</span> <span class="hl-need-sub">(самая полезная покупка — от 15 р.)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Переменный резистор</span><span class="hl-need-sub"> и ещё 4</span>
+  </p>
+  
+</article>
+
+<article class="hl-card">
+  <div class="hl-card-top">
+    <span class="hl-badge">Э1</span>
+    <a class="hl-title" href="/problems/final/2016/11-e1/">Двойной маятник</a>
+  </div>
+  <div class="hl-meta">
+    <span>2016 · Республиканская · 11 кл.</span>
+    
+    <span class="hl-band" style="background:#fd8d3c;color:#2d2d2d">Средняя</span>
+    
+    <span>20 мин</span>
+    <span class="hl-why">график</span><span class="hl-why">6 пунктов</span>
+    <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">49</span>
+  </div>
+  
+  
+  <p class="hl-need">
+    <span class="hl-need-label">Не хватает:</span>
+    <span class="hl-need-item"><span class="hl-dot hl-dot-rig"></span>Готовый маятник (установка)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Набор грузов</span> <span class="hl-need-sub">(гайки или монеты, взвешенные на кухонных весах)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Линейка</span>
+  </p>
+  
+</article>
+
+<article class="hl-card">
+  <div class="hl-card-top">
+    <span class="hl-badge">Э1</span>
+    <a class="hl-title" href="/problems/final/2019/10-e1/">Опять трение?!</a>
+  </div>
+  <div class="hl-meta">
+    <span>2019 · Республиканская · 10 кл.</span>
+    
+    <span class="hl-band" style="background:#e31a1c;color:#fff">Высокая</span>
+    
+    <span>30 мин</span>
+    <span class="hl-why">график</span><span class="hl-why">погрешности</span><span class="hl-why">10 пунктов</span>
+    <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">57</span>
+  </div>
+  
+  
+  <p class="hl-need">
+    <span class="hl-need-label">Не хватает:</span>
+    <span class="hl-need-item"><span class="hl-dot hl-dot-school"></span>Динамометр</span> <span class="hl-need-sub">(пружина + известные грузы)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Штатив с лапкой</span> <span class="hl-need-sub">(край стола + струбцина или стопка книг)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Набор грузов</span> <span class="hl-need-sub">(гайки или монеты, взвешенные на кухонных весах)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Миллиметровая бумага</span> <span class="hl-need-sub">(печать сетки на принтере)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Нитки / леска</span><span class="hl-need-sub"> и ещё 1</span>
+  </p>
+  
+</article>
+
+<article class="hl-card">
+  <div class="hl-card-top">
+    <span class="hl-badge">Э1</span>
+    <a class="hl-title" href="/problems/final/2026/10-e1/">Поплавок в трубке</a>
+  </div>
+  <div class="hl-meta">
+    <span>2026 · Республиканская · 10 кл.</span>
+    
+    <span class="hl-band" style="background:#800026;color:#fff">Максимальная</span>
+    
+    <span>45 мин</span>
+    <span class="hl-why">график</span><span class="hl-why">погрешности</span><span class="hl-why">12 пунктов</span>
+    <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">65</span>
+  </div>
+  
+  
+  <p class="hl-need">
+    <span class="hl-need-label">Не хватает:</span>
+    <span class="hl-need-item"><span class="hl-dot hl-dot-school"></span>Стеклянная / капиллярная трубка</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Штатив с лапкой</span> <span class="hl-need-sub">(край стола + струбцина или стопка книг)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Гибкая трубка / шланг</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Секундомер</span> <span class="hl-need-sub">(секундомер в телефоне)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Пластилин</span><span class="hl-need-sub"> и ещё 4</span>
+  </p>
+  
+</article>
+
+<article class="hl-card">
+  <div class="hl-card-top">
+    <span class="hl-badge">Э2</span>
+    <a class="hl-title" href="/problems/final/2019/11-e2/">Оборотный маятник</a>
+  </div>
+  <div class="hl-meta">
+    <span>2019 · Республиканская · 11 кл.</span>
+    
+    <span class="hl-band" style="background:#fd8d3c;color:#2d2d2d">Средняя</span>
+    
+    <span>20 мин</span>
+    <span class="hl-why">график</span><span class="hl-why">погрешности</span><span class="hl-why">9 пунктов</span>
+    <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">49</span>
+  </div>
+  
+  
+  <p class="hl-need">
+    <span class="hl-need-label">Не хватает:</span>
+    <span class="hl-need-item"><span class="hl-dot hl-dot-rig"></span>Готовый маятник (установка)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-buy"></span>Штатив с лапкой</span> <span class="hl-need-sub">(край стола + струбцина или стопка книг)</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Линейка</span>, <span class="hl-need-item"><span class="hl-dot hl-dot-home"></span>Секундомер</span> <span class="hl-need-sub">(секундомер в телефоне)</span>
   </p>
   
 </article>
@@ -1323,7 +1390,7 @@
     </div>
     
     <button type="button" class="hl-more" data-tier-more hidden>Показать ещё</button>
-    <p class="hl-tier-note" data-tier-rest>Ещё 132 — включите JavaScript или откройте
+    <p class="hl-tier-note" data-tier-rest>Ещё 69 — включите JavaScript или откройте
       <a href="/problems/">общий поиск</a>.</p>
     
     
@@ -1356,6 +1423,7 @@
     <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">70</span>
   </div>
   
+  
 </article>
 
 <article class="hl-card">
@@ -1372,6 +1440,7 @@
     <span class="hl-why">погрешности</span><span class="hl-why">13 пунктов</span>
     <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">65</span>
   </div>
+  
   
 </article>
 
@@ -1390,6 +1459,7 @@
     <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">63</span>
   </div>
   
+  
 </article>
 
 <article class="hl-card">
@@ -1406,6 +1476,7 @@
     <span class="hl-why">график</span><span class="hl-why">7 пунктов</span>
     <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">59</span>
   </div>
+  
   
 </article>
 
@@ -1424,6 +1495,7 @@
     <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">56</span>
   </div>
   
+  
 </article>
 
 <article class="hl-card">
@@ -1440,6 +1512,7 @@
     <span class="hl-why">8 пунктов</span>
     <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">55</span>
   </div>
+  
   
 </article>
 
@@ -1458,6 +1531,7 @@
     <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">55</span>
   </div>
   
+  
 </article>
 
 <article class="hl-card">
@@ -1474,6 +1548,7 @@
     
     <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">53</span>
   </div>
+  
   
 </article>
 
@@ -1492,6 +1567,7 @@
     <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">53</span>
   </div>
   
+  
 </article>
 
 <article class="hl-card">
@@ -1508,6 +1584,7 @@
     <span class="hl-why">график</span><span class="hl-why">погрешности</span><span class="hl-why">15 пунктов</span>
     <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">53</span>
   </div>
+  
   
 </article>
 
@@ -1526,6 +1603,7 @@
     <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">51</span>
   </div>
   
+  
 </article>
 
 <article class="hl-card">
@@ -1542,6 +1620,7 @@
     <span class="hl-why">свой метод</span><span class="hl-why">11 пунктов</span>
     <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">46</span>
   </div>
+  
   
 </article>
 
@@ -1560,6 +1639,7 @@
     <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">45</span>
   </div>
   
+  
 </article>
 
 <article class="hl-card">
@@ -1576,6 +1656,7 @@
     <span class="hl-why">график</span><span class="hl-why">погрешности</span>
     <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">40</span>
   </div>
+  
   
 </article>
 
@@ -1594,6 +1675,7 @@
     <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">33</span>
   </div>
   
+  
 </article>
 
 <article class="hl-card">
@@ -1610,6 +1692,7 @@
     <span class="hl-why">график</span><span class="hl-why">погрешности</span><span class="hl-why">12 пунктов</span>
     <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">32</span>
   </div>
+  
   
 </article>
 
@@ -1628,6 +1711,7 @@
     <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">31</span>
   </div>
   
+  
 </article>
 
 <article class="hl-card">
@@ -1644,6 +1728,7 @@
     
     <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">31</span>
   </div>
+  
   
 </article>
 
@@ -1662,6 +1747,7 @@
     <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">28</span>
   </div>
   
+  
 </article>
 
 <article class="hl-card">
@@ -1678,6 +1764,7 @@
     <span class="hl-why">погрешности</span>
     <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">28</span>
   </div>
+  
   
 </article>
 
@@ -1696,6 +1783,7 @@
     <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">27</span>
   </div>
   
+  
 </article>
 
 <article class="hl-card">
@@ -1712,6 +1800,7 @@
     <span class="hl-why">график</span><span class="hl-why">погрешности</span>
     <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">27</span>
   </div>
+  
   
 </article>
 
@@ -1730,6 +1819,7 @@
     <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">27</span>
   </div>
   
+  
 </article>
 
 <article class="hl-card">
@@ -1746,6 +1836,7 @@
     <span class="hl-why">погрешности</span>
     <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">26</span>
   </div>
+  
   
 </article>
 
@@ -1764,6 +1855,7 @@
     <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">23</span>
   </div>
   
+  
 </article>
 
 <article class="hl-card">
@@ -1780,6 +1872,7 @@
     
     <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">22</span>
   </div>
+  
   
 </article>
 
@@ -1798,6 +1891,7 @@
     <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">21</span>
   </div>
   
+  
 </article>
 
 <article class="hl-card">
@@ -1814,6 +1908,7 @@
     <span class="hl-why">график</span>
     <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">20</span>
   </div>
+  
   
 </article>
 
@@ -1832,6 +1927,7 @@
     <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">20</span>
   </div>
   
+  
 </article>
 
 <article class="hl-card">
@@ -1848,6 +1944,7 @@
     <span class="hl-why">график</span>
     <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">19</span>
   </div>
+  
   
 </article>
 
@@ -1866,6 +1963,7 @@
     <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">18</span>
   </div>
   
+  
 </article>
 
 <article class="hl-card">
@@ -1882,6 +1980,7 @@
     
     <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">18</span>
   </div>
+  
   
 </article>
 
@@ -1900,6 +1999,7 @@
     <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">17</span>
   </div>
   
+  
 </article>
 
 <article class="hl-card">
@@ -1916,6 +2016,7 @@
     
     <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">15</span>
   </div>
+  
   
 </article>
 
@@ -1934,6 +2035,7 @@
     <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">15</span>
   </div>
   
+  
 </article>
 
 <article class="hl-card">
@@ -1950,6 +2052,7 @@
     
     <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">13</span>
   </div>
+  
   
 </article>
 
@@ -1968,6 +2071,7 @@
     <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">13</span>
   </div>
   
+  
 </article>
 
 <article class="hl-card">
@@ -1984,6 +2088,7 @@
     
     <span class="hl-score" title="Ценность для обучения, 0–100 — см. «Как это считается»">2</span>
   </div>
+  
   
 </article>
 
