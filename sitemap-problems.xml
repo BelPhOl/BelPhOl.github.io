@@ -3576,6 +3576,11 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://belpho.org/problems/final/2008/10-2-v1/edu/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://belpho.org/problems/final/2008/10-2-v2/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
@@ -11389,11 +11394,6 @@
     <loc>https://belpho.org/problems/third/2014/9-e2/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://belpho.org/problems/third/2014/9-e2/solution/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://belpho.org/problems/third/2015/</loc>
