@@ -1,22 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="81.00pt" height="50.50pt" viewBox="0 0 81.00 50.50">
-<defs><clipPath id="figbox"><rect x="0" y="0" width="81.00" height="50.50"/></clipPath></defs>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="98.20pt" height="36.02pt" viewBox="0 0 98.20 36.02">
+<defs><clipPath id="figbox"><rect x="0" y="0" width="98.20" height="36.02"/></clipPath></defs>
 <g clip-path="url(#figbox)">
-<path d="M0.40,16.40 L24.20,16.40" fill="none" stroke="#000000" stroke-width="0.800" stroke-linecap="butt" stroke-linejoin="miter"/>
-<path d="M25.90,18.40 C27.00,18.40 27.90,17.50 27.90,16.40 C27.90,15.40 27.00,14.50 25.90,14.50 C24.90,14.40 24.00,15.40 24.00,16.40 C23.90,17.50 24.90,18.40 25.90,18.40" fill="#000000" stroke="none" fill-rule="evenodd"/>
-<path d="M39.30,50.10 L39.40,27.00" fill="none" stroke="#000000" stroke-width="0.800" stroke-linecap="butt" stroke-linejoin="miter"/>
-<path d="M41.30,25.30 C41.40,24.30 40.40,23.40 39.40,23.40 C38.30,23.30 37.40,24.30 37.40,25.30 C37.40,26.40 38.30,27.30 39.40,27.30 C40.40,27.30 41.30,26.40 41.30,25.30" fill="#000000" stroke="none" fill-rule="evenodd"/>
-<path d="M80.60,16.30 L53.80,16.40" fill="none" stroke="#000000" stroke-width="0.800" stroke-linecap="butt" stroke-linejoin="miter"/>
-<path d="M52.10,14.40 C51.00,14.40 50.10,15.30 50.10,16.40 C50.10,17.40 51.00,18.40 52.10,18.30 C53.10,18.30 54.10,17.40 54.00,16.40 C54.00,15.30 53.10,14.40 52.10,14.40" fill="#000000" stroke="none" fill-rule="evenodd"/>
-<path d="M39.40,25.40 L25.80,11.80" fill="none" stroke="#000000" stroke-width="1.500" stroke-linecap="butt" stroke-linejoin="miter"/>
-<path d="M39.30,25.30 L39.30,20.10" fill="none" stroke="#000000" stroke-width="0.800" stroke-linecap="butt" stroke-linejoin="miter"/>
-<path d="M39.40,16.10 L39.40,10.90" fill="none" stroke="#000000" stroke-width="0.800" stroke-linecap="butt" stroke-linejoin="miter"/>
-<path d="M39.40,25.40 L43.00,21.50" fill="none" stroke="#000000" stroke-width="0.800" stroke-linecap="butt" stroke-linejoin="miter"/>
-<path d="M45.70,18.70 L49.30,14.80" fill="none" stroke="#000000" stroke-width="0.800" stroke-linecap="butt" stroke-linejoin="miter"/>
-<path d="M52.00,11.90 L52.10,11.80" fill="none" stroke="#000000" stroke-width="0.800" stroke-linecap="butt" stroke-linejoin="miter"/>
-<path d="M41.80,2.80 L41.70,2.80 L41.10,2.60 L40.60,2.50 L40.00,2.40 L39.40,2.40 L38.90,2.40 L38.30,2.40 L37.70,2.40 L37.20,2.50 L36.60,2.60 L36.10,2.70 L35.50,2.80 L35.00,3.00 L34.50,3.20 L34.00,3.40 L33.50,3.60 L33.00,3.80 L32.50,4.10 L32.10,4.40 L31.60,4.70 L31.30,5.10 L30.90,5.40 L30.50,5.80 L30.20,6.20 L29.90,6.50" fill="none" stroke="#000000" stroke-width="0.800" stroke-linecap="butt" stroke-linejoin="miter"/>
-<path d="M46.80,5.20 L40.10,5.40 L43.50,3.70 L42.70,0.00 L46.80,5.20" fill="#000000" stroke="none" fill-rule="evenodd"/>
-<text x="41.40" y="37.90" font-family="'Times New Roman', Georgia, serif" font-size="12.00" fill="#2c2c2c">3</text>
-<text x="17.30" y="28.10" font-family="'Times New Roman', Georgia, serif" font-size="12.00" fill="#2c2c2c">1</text>
-<text x="51.10" y="28.90" font-family="'Times New Roman', Georgia, serif" font-size="12.00" fill="#2c2c2c">2</text>
+<path d="M50.90,9.17 L35.00,9.17 L35.00,0.38 L66.80,0.38 L66.80,9.17 L50.90,9.17" fill="#ffffff" stroke="#000000" fill-rule="evenodd" stroke-width="0.750" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M46.00,26.77 L16.80,26.77 L17.70,5.17 L34.10,5.17" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M16.80,5.17 L16.80,5.17" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M46.00,26.77 L46.00,26.77" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M66.80,5.17 L81.30,5.17 L81.30,25.97 L55.00,25.97" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M55.00,5.17 L55.00,5.17" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M81.40,25.97 L81.40,25.97" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M39.50,35.27 L39.60,28.67" fill="none" stroke="#000000" stroke-width="1.500" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M35.90,31.88 L43.40,31.88" fill="none" stroke="#000000" stroke-width="1.500" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M56.80,31.67 L64.40,31.67" fill="none" stroke="#000000" stroke-width="1.500" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M83.10,15.77 L97.80,15.88" fill="none" stroke="#000000" stroke-width="0.800" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M81.40,13.88 C80.30,13.77 79.40,14.77 79.40,15.77 C79.40,16.88 80.30,17.77 81.40,17.77 C82.40,17.77 83.30,16.88 83.30,15.77 C83.40,14.77 82.40,13.88 81.40,13.88" fill="#000000" stroke="none" fill-rule="evenodd"/>
+<path d="M15.10,15.77 L0.40,15.88" fill="none" stroke="#000000" stroke-width="0.800" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M16.80,17.77 C17.80,17.77 18.80,16.88 18.70,15.77 C18.70,14.77 17.80,13.77 16.80,13.88 C15.70,13.88 14.80,14.77 14.80,15.77 C14.80,16.88 15.70,17.77 16.80,17.77" fill="#000000" stroke="none" fill-rule="evenodd"/>
+<path d="M46.60,33.17 L46.70,17.38" fill="none" stroke="#000000" stroke-width="1.750" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M52.70,33.47 L51.00,33.47 L51.00,18.27 L54.40,18.27 L54.40,33.47 L52.70,33.47" fill="#ffffff" stroke="#000000" fill-rule="evenodd" stroke-width="0.750" stroke-linecap="butt" stroke-linejoin="miter"/>
 </g>
 </svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31.56pt" height="70.56pt" viewBox="0 0 31.56 70.56">
+<defs><clipPath id="figbox"><rect x="0" y="0" width="31.56" height="70.56"/></clipPath></defs>
+<g clip-path="url(#figbox)">
+<path d="M0.00,0.00 L0.48,0.00 L0.48,0.48 L0.00,0.48 Z" fill="#000000" stroke="none"/>
+<path d="M0.00,0.00 L0.48,0.00 L0.48,0.48 L0.00,0.48 Z" fill="#000000" stroke="none"/>
+<path d="M0.48,0.00 L31.08,0.00 L31.08,0.48 L0.48,0.48 Z" fill="#000000" stroke="none"/>
+<path d="M31.08,0.00 L31.56,0.00 L31.56,0.48 L31.08,0.48 Z" fill="#000000" stroke="none"/>
+<path d="M0.00,0.48 L0.48,0.48 L0.48,55.80 L0.00,55.80 Z" fill="#000000" stroke="none"/>
+<path d="M31.08,0.48 L31.56,0.48 L31.56,55.80 L31.08,55.80 Z" fill="#000000" stroke="none"/>
+<path d="M0.00,55.80 L0.48,55.80 L0.48,56.28 L0.00,56.28 Z" fill="#000000" stroke="none"/>
+<path d="M0.48,55.80 L31.08,55.80 L31.08,56.28 L0.48,56.28 Z" fill="#000000" stroke="none"/>
+<path d="M31.08,55.80 L31.56,55.80 L31.56,56.28 L31.08,56.28 Z" fill="#000000" stroke="none"/>
+<path d="M0.00,56.28 L0.48,56.28 L0.48,70.08 L0.00,70.08 Z" fill="#000000" stroke="none"/>
+<path d="M0.00,70.08 L0.48,70.08 L0.48,70.56 L0.00,70.56 Z" fill="#000000" stroke="none"/>
+<path d="M0.00,70.08 L0.48,70.08 L0.48,70.56 L0.00,70.56 Z" fill="#000000" stroke="none"/>
+<path d="M0.48,70.08 L31.08,70.08 L31.08,70.56 L0.48,70.56 Z" fill="#000000" stroke="none"/>
+<path d="M31.08,56.28 L31.56,56.28 L31.56,70.08 L31.08,70.08 Z" fill="#000000" stroke="none"/>
+<path d="M31.08,70.08 L31.56,70.08 L31.56,70.56 L31.08,70.56 Z" fill="#000000" stroke="none"/>
+</g>
+</svg>

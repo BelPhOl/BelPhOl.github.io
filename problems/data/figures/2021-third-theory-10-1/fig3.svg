@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="82.80pt" height="42.00pt" viewBox="0 0 82.80 42.00">
+<defs><clipPath id="figbox"><rect x="0" y="0" width="82.80" height="42.00"/></clipPath></defs>
+<g clip-path="url(#figbox)">
+<path d="M37.68,21.60 L46.32,21.60" fill="none" stroke="#000000" stroke-width="0.501" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M56.40,21.60 L78.00,21.60" fill="none" stroke="#000000" stroke-width="0.501" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M48.48,25.68 L50.16,24.72" fill="none" stroke="#000000" stroke-width="0.501" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M50.16,24.96 L52.32,37.44" fill="none" stroke="#000000" stroke-width="1.001" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M52.56,37.44 L55.44,4.08" fill="none" stroke="#000000" stroke-width="0.501" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M55.44,4.08 L78.96,4.08" fill="none" stroke="#000000" stroke-width="0.501" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M0.00,0.00 L0.48,0.00 L0.48,1.44 L0.00,1.44 Z" fill="#000000" stroke="none"/>
+<path d="M0.00,0.00 L1.44,0.00 L1.44,0.48 L0.00,0.48 Z" fill="#000000" stroke="none"/>
+<path d="M0.96,0.96 L1.44,0.96 L1.44,1.44 L0.96,1.44 Z" fill="#000000" stroke="none"/>
+<path d="M0.96,0.96 L1.44,0.96 L1.44,1.44 L0.96,1.44 Z" fill="#000000" stroke="none"/>
+<path d="M1.44,0.00 L81.36,0.00 L81.36,0.48 L1.44,0.48 Z" fill="#000000" stroke="none"/>
+<path d="M1.44,0.96 L81.36,0.96 L81.36,1.44 L1.44,1.44 Z" fill="#000000" stroke="none"/>
+<path d="M82.32,0.00 L82.80,0.00 L82.80,1.44 L82.32,1.44 Z" fill="#000000" stroke="none"/>
+<path d="M81.36,0.00 L82.80,0.00 L82.80,0.48 L81.36,0.48 Z" fill="#000000" stroke="none"/>
+<path d="M81.36,0.96 L81.84,0.96 L81.84,1.44 L81.36,1.44 Z" fill="#000000" stroke="none"/>
+<path d="M81.36,0.96 L81.84,0.96 L81.84,1.44 L81.36,1.44 Z" fill="#000000" stroke="none"/>
+<path d="M0.00,1.44 L0.48,1.44 L0.48,40.56 L0.00,40.56 Z" fill="#000000" stroke="none"/>
+<path d="M0.96,1.44 L1.44,1.44 L1.44,40.56 L0.96,40.56 Z" fill="#000000" stroke="none"/>
+<path d="M82.32,1.44 L82.80,1.44 L82.80,40.56 L82.32,40.56 Z" fill="#000000" stroke="none"/>
+<path d="M81.36,1.44 L81.84,1.44 L81.84,40.56 L81.36,40.56 Z" fill="#000000" stroke="none"/>
+<path d="M0.00,40.56 L0.48,40.56 L0.48,42.00 L0.00,42.00 Z" fill="#000000" stroke="none"/>
+<path d="M0.00,41.52 L1.44,41.52 L1.44,42.00 L0.00,42.00 Z" fill="#000000" stroke="none"/>
+<path d="M0.96,40.56 L1.44,40.56 L1.44,41.04 L0.96,41.04 Z" fill="#000000" stroke="none"/>
+<path d="M0.96,40.56 L1.44,40.56 L1.44,41.04 L0.96,41.04 Z" fill="#000000" stroke="none"/>
+<path d="M1.44,41.52 L81.36,41.52 L81.36,42.00 L1.44,42.00 Z" fill="#000000" stroke="none"/>
+<path d="M1.44,40.56 L81.36,40.56 L81.36,41.04 L1.44,41.04 Z" fill="#000000" stroke="none"/>
+<path d="M82.32,40.56 L82.80,40.56 L82.80,42.00 L82.32,42.00 Z" fill="#000000" stroke="none"/>
+<path d="M81.36,41.52 L82.80,41.52 L82.80,42.00 L81.36,42.00 Z" fill="#000000" stroke="none"/>
+<path d="M81.36,40.56 L81.84,40.56 L81.84,41.04 L81.36,41.04 Z" fill="#000000" stroke="none"/>
+<path d="M81.36,40.56 L81.84,40.56 L81.84,41.04 L81.36,41.04 Z" fill="#000000" stroke="none"/>
+<text x="69.38" y="36.71" font-family="'Times New Roman', Georgia, serif" font-size="7.02" fill="#000000">0</text>
+<text x="66.50" y="11.75" font-family="'Times New Roman', Georgia, serif" font-size="7.02" fill="#000000">3</text>
+<text x="64.10" y="20.15" font-family="'Times New Roman', Georgia, serif" font-size="7.02" fill="#000000">max</text>
+<text x="11.78" y="27.59" font-family="'Times New Roman', Georgia, serif" font-size="7.02" fill="#000000">max</text>
+<text x="39.12" y="17.04" font-family="'Times New Roman', Georgia, serif" font-size="12.04" fill="#000000">4</text>
+<text x="60.72" y="33.85" font-family="'Times New Roman', Georgia, serif" font-size="12.04" fill="#000000">kl</text>
+<text x="57.60" y="17.04" font-family="'Times New Roman', Georgia, serif" font-size="12.04" fill="#000000">F</text>
+<text x="38.88" y="33.85" font-family="'Times New Roman', Georgia, serif" font-size="12.04" fill="#000000">g</text>
+<text x="3.36" y="24.48" font-family="'Times New Roman', Georgia, serif" font-size="12.04" fill="#000000">m</text>
+<text x="27.84" y="24.48" font-family="'Times New Roman', serif" font-size="12.04" fill="#000000">=</text>
+</g>
+</svg>

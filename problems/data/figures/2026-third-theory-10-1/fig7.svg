@@ -1,13 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="68.08pt" height="22.92pt" viewBox="0 0 68.08 22.92">
-<defs><clipPath id="figbox"><rect x="0" y="0" width="68.08" height="22.92"/></clipPath></defs>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="85.36pt" height="37.20pt" viewBox="0 0 85.36 37.20">
+<defs><clipPath id="figbox"><rect x="0" y="0" width="85.36" height="37.20"/></clipPath></defs>
 <g clip-path="url(#figbox)">
-<image transform="matrix(27.840000,0.000000,-0.000000,14.160000,21.825,3.693)" x="0" y="0" width="1" height="1" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE0AAAAnCAYAAABKZsWMAAAAI0lEQVR4nO3BAQ0AAADCoPdPbQ43oAAAAAAAAAAAAAAA4NIALxMAAWrBZGsAAAAASUVORK5CYII=" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE0AAAAnCAYAAABKZsWMAAAAI0lEQVR4nO3BAQ0AAADCoPdPbQ43oAAAAAAAAAAAAAAA4NIALxMAAWrBZGsAAAAASUVORK5CYII="/>
-<image transform="matrix(27.840000,0.000000,-0.000000,14.040000,0.345,0.093)" x="0" y="0" width="1" height="1" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE0AAAAnCAYAAABKZsWMAAAAI0lEQVR4nO3BAQ0AAADCoPdPbQ43oAAAAAAAAAAAAAAA4NIALxMAAWrBZGsAAAAASUVORK5CYII=" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE0AAAAnCAYAAABKZsWMAAAAI0lEQVR4nO3BAQ0AAADCoPdPbQ43oAAAAAAAAAAAAAAA4NIALxMAAWrBZGsAAAAASUVORK5CYII="/>
-<path d="M0.38,13.83 L21.16,13.83 L21.16,21.82 L0.38,21.82 Z" fill="#bfbfbf" stroke="#000000" fill-rule="evenodd" stroke-width="0.750" stroke-linecap="butt" stroke-linejoin="miter"/>
-<path d="M20.86,14.08 C20.90,14.08 20.96,14.08 21.01,14.08 C23.18,14.08 24.93,15.77 24.93,17.86 C24.93,19.95 23.18,21.65 21.01,21.65 C20.96,21.65 20.90,21.64 20.86,21.64 L20.82,22.53 C20.89,22.54 20.95,22.54 21.01,22.54 C23.68,22.54 25.87,20.44 25.87,17.86 C25.87,15.28 23.68,13.19 21.01,13.19 C20.95,13.19 20.89,13.19 20.82,13.19 L20.86,14.08" fill="#bfbfbf" stroke="#000000" fill-rule="evenodd" stroke-width="0.750" stroke-linecap="butt" stroke-linejoin="miter"/>
-<path d="M25.88,17.68 L62.08,17.72 L62.08,18.22 L25.88,18.18 L25.88,17.68 M62.08,17.97 L58.08,15.97 L68.08,17.98 L58.08,19.97 L62.08,17.97" fill="#000000" stroke="none"/>
-<path d="M52.23,17.98 L97.23,18.03" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="butt" stroke-linejoin="round"/>
-<text x="31.98" y="15.14" font-family="'Times New Roman', serif" font-size="12.02" fill="#000000">𝐴</text>
-<text x="7.62" y="11.42" font-family="'Times New Roman', serif" font-size="12.02" fill="#000000">Л </text>
+<image transform="matrix(49.200001,0.000000,-0.000000,10.800000,36.160,26.400)" x="0" y="0" width="1" height="1" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIgAAAAdCAYAAABxESSiAAAAJklEQVR4nO3BMQEAAADCoPVPbQhfoAAAAAAAAAAAAAAAAAAAALgNPb0AAVqmaXsAAAAASUVORK5CYII=" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIgAAAAdCAYAAABxESSiAAAAJklEQVR4nO3BMQEAAADCoPVPbQhfoAAAAAAAAAAAAAAAAAAAALgNPb0AAVqmaXsAAAAASUVORK5CYII="/>
+<image transform="matrix(22.920000,0.000000,-0.000000,15.240000,16.240,0.000)" x="0" y="0" width="1" height="1" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAqCAYAAAAERIP3AAAAIUlEQVR4nO3BMQEAAADCoPVPbQZ/oAAAAAAAAAAAAAD4DCmCAAEHFNpXAAAAAElFTkSuQmCC" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAqCAYAAAAERIP3AAAAIUlEQVR4nO3BMQEAAADCoPVPbQZ/oAAAAAAAAAAAAAD4DCmCAAEHFNpXAAAAAElFTkSuQmCC"/>
+<path d="M-13.85,17.94 L150.25,17.89" fill="none" stroke="#000000" stroke-width="0.250" stroke-linecap="butt" stroke-linejoin="round" stroke-dasharray="1,.75" stroke-dashoffset="0.00"/>
+<path d="M40.79,16.76 L40.79,17.19 L6.78,17.19 L6.78,18.04 L40.79,18.04 L40.79,18.46 L52.13,17.62 L40.79,16.76" fill="none" stroke="#000000" stroke-width="0.500" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M10.62,15.19 C9.21,12.75 6.09,11.91 3.65,13.32 C1.21,14.73 0.38,17.85 1.78,20.29 C3.19,22.73 6.31,23.57 8.75,22.16 C11.19,20.75 12.03,17.63 10.62,15.19" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="butt" stroke-linejoin="round"/>
+<text x="43.46" y="35.81" font-family="'Times New Roman', Georgia, serif" font-size="9.96" fill="#000000">Рис. 2 </text>
+<text x="23.51" y="12.41" font-family="'Times New Roman', serif" font-size="12.96" fill="#000000">𝜐Ԧ</text>
+<text x="29.90" y="15.05" font-family="'Times New Roman', serif" font-size="9.00" fill="#000000">0</text>
 </g>
 </svg>

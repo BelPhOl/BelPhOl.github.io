@@ -1,12 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="164.35pt" height="35.64pt" viewBox="0 0 164.35 35.64">
-<defs><clipPath id="figbox"><rect x="0" y="0" width="164.35" height="35.64"/></clipPath></defs>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="55.01pt" height="39.56pt" viewBox="0 0 55.01 39.56">
+<defs><clipPath id="figbox"><rect x="0" y="0" width="55.01" height="39.56"/></clipPath></defs>
 <g clip-path="url(#figbox)">
-<image transform="matrix(49.080002,0.000000,-0.000000,10.680000,50.155,24.960)" x="0" y="0" width="1" height="1" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIgAAAAdCAYAAABxESSiAAAAJklEQVR4nO3BMQEAAADCoPVPbQhfoAAAAAAAAAAAAAAAAAAAALgNPb0AAVqmaXsAAAAASUVORK5CYII=" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIgAAAAdCAYAAABxESSiAAAAJklEQVR4nO3BMQEAAADCoPVPbQhfoAAAAAAAAAAAAAAAAAAAALgNPb0AAVqmaXsAAAAASUVORK5CYII="/>
-<image transform="matrix(22.920000,0.000000,-0.000000,13.680000,30.235,0.000)" x="0" y="0" width="1" height="1" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAlCAYAAAD1EjEiAAAAIElEQVR4nO3BMQEAAADCoPVPbQlPoAAAAAAAAAAAAE4GJJEAAavWVsoAAAAASUVORK5CYII=" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAlCAYAAAD1EjEiAAAAIElEQVR4nO3BMQEAAADCoPVPbQlPoAAAAAAAAAAAAE4GJJEAAavWVsoAAAAASUVORK5CYII="/>
-<path d="M0.12,16.40 L164.23,16.35" fill="none" stroke="#000000" stroke-width="0.250" stroke-linecap="butt" stroke-linejoin="round" stroke-dasharray="1,.75" stroke-dashoffset="0.00"/>
-<path d="M54.76,15.22 L54.76,15.65 L20.76,15.65 L20.76,16.50 L54.76,16.50 L54.76,16.92 L66.10,16.08 L54.76,15.22" fill="none" stroke="#000000" stroke-width="0.500" stroke-linecap="butt" stroke-linejoin="miter"/>
-<path d="M24.60,13.65 C23.18,11.21 20.07,10.37 17.62,11.78 C15.18,13.19 14.35,16.31 15.76,18.75 C17.17,21.19 20.29,22.03 22.73,20.62 C25.17,19.21 26.01,16.09 24.60,13.65" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="butt" stroke-linejoin="round"/>
-<text x="57.42" y="34.25" font-family="'Times New Roman', Georgia, serif" font-size="9.96" fill="#000000">Рис. 2 </text>
-<text x="38.35" y="12.41" font-family="'Times New Roman', serif" font-size="12.96" fill="#000000">𝜐Ԧ</text>
+<path d="M4.30,4.13 L4.35,31.18" fill="none" stroke="#000000" stroke-width="0.500" stroke-linecap="butt" stroke-linejoin="round" stroke-dasharray="2,1.5" stroke-dashoffset="0.00"/>
+<path d="M-74.10,15.68 L46.80,15.68" fill="none" stroke="#000000" stroke-width="0.500" stroke-linecap="butt" stroke-linejoin="round" stroke-dasharray="2,1.5" stroke-dashoffset="0.00"/>
+<path d="M49.41,15.68 C51.81,15.68 53.75,17.69 53.75,20.18 C53.75,22.67 51.81,24.68 49.41,24.68 C49.31,24.68 49.20,24.68 49.10,24.67" fill="none" stroke="#000000" stroke-width="0.500" stroke-linecap="butt" stroke-linejoin="round" stroke-dasharray="2,1.5" stroke-dashoffset="0.00"/>
+<path d="M7.55,24.08 L49.10,24.13" fill="none" stroke="#000000" stroke-width="0.500" stroke-linecap="butt" stroke-linejoin="round" stroke-dasharray="2,1.5" stroke-dashoffset="0.00"/>
+<path d="M2.86,21.50 C4.36,20.64 6.27,21.15 7.13,22.64 C7.99,24.14 7.48,26.05 5.99,26.91 C4.49,27.77 2.58,27.26 1.72,25.77 C0.86,24.27 1.37,22.36 2.86,21.50" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4.69,15.03 C5.16,15.00 5.57,15.35 5.60,15.82 C5.63,16.29 5.28,16.70 4.81,16.73 C4.34,16.76 3.93,16.41 3.90,15.94 C3.87,15.47 4.22,15.06 4.69,15.03 M4.72,15.46 C4.49,15.47 4.31,15.68 4.33,15.91 C4.34,16.14 4.55,16.32 4.78,16.30 C5.01,16.29 5.19,16.08 5.17,15.85 C5.16,15.62 4.95,15.44 4.72,15.46" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M53.69,18.93 C54.16,18.90 54.57,19.25 54.60,19.72 C54.63,20.19 54.28,20.60 53.81,20.63 C53.34,20.66 52.93,20.31 52.90,19.84 C52.87,19.37 53.22,18.96 53.69,18.93 M53.72,19.36 C53.49,19.37 53.31,19.58 53.33,19.81 C53.34,20.04 53.55,20.22 53.78,20.20 C54.01,20.19 54.19,19.98 54.17,19.75 C54.16,19.52 53.95,19.34 53.72,19.36" fill="none" stroke="#000000" stroke-width="0.750" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="25.63" y="35.27" font-family="'Times New Roman', serif" font-size="12.00" fill="#000000">𝑆</text>
+<text x="31.51" y="37.67" font-family="'Times New Roman', serif" font-size="8.52" fill="#000000">0</text>
+<text x="23.83" y="9.35" font-family="'Times New Roman', serif" font-size="12.00" fill="#000000">𝑆</text>
+<text x="29.71" y="11.75" font-family="'Times New Roman', serif" font-size="8.52" fill="#000000">0</text>
 </g>
 </svg>
