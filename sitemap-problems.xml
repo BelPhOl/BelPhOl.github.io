@@ -6776,26 +6776,6 @@
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://belpho.org/problems/final/2021/9-e3/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://belpho.org/problems/final/2021/9-e3/edu/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://belpho.org/problems/final/2021/9-e3/hints/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://belpho.org/problems/final/2021/9-e3/solution/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
     <loc>https://belpho.org/problems/final/2022/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
