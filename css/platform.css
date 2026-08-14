@@ -2625,21 +2625,6 @@ td.md-td-text { text-align: left !important; }
 /* Anchored equations and figures need clearance under the sticky rail. */
 .eq-anchor, .md-fig[id] { scroll-margin-top: 16px; }
 
-/* Compact contents in the rail: the sub-question numbers, grouped by section.
-   Two rows of chips instead of a column of headings — the rail is 200px and
-   the reading area is what matters. */
-.sb-toc { display: flex; flex-direction: column; gap: 3px; margin: 2px 0 8px; }
-.sb-toc-row { display: flex; flex-wrap: wrap; gap: 3px; }
-.sb-toc-chip {
-  font-size: 11.5px; line-height: 1; padding: 4px 6px; border-radius: 5px;
-  background: var(--bg-color); color: var(--text-secondary);
-  border: 1px solid var(--border-color); text-decoration: none;
-  font-variant-numeric: tabular-nums;
-}
-.sb-toc-chip:hover, .sb-toc-chip:focus-visible {
-  background: var(--primary-tint); color: var(--primary-dark);
-  border-color: var(--primary-color);
-}
 
 
 /* --- MathJax SVG container styles (generated) --- */
