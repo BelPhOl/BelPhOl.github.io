@@ -607,7 +607,13 @@ a { color: var(--primary-color); }
    inside the measure and centre. Full resolution is one click away — the
    <img> is wrapped in a link to the file itself. */
 .md-fig {
-  width: min(var(--fig-w, 100%), var(--fig-px, 100%), 560px);
+  /* width_frac is the figure's share of the PRINTED column, so rendering it
+     against a fixed reference column reproduces the page: a figure that is
+     twice another on paper is twice it here too. 7px per percent puts a
+     full-width figure at 700px, about an A4 text column on screen. Capping
+     per-figure by pixel count (the previous attempt) broke exactly this —
+     pixel count and printed size are unrelated. */
+  width: min(calc(var(--fig-n, 100) * 7px), 100%);
   margin: 8px auto 12px;
   text-align: center;
 }
@@ -639,7 +645,7 @@ a { color: var(--primary-color); }
   /* 340px is about Wikipedia's upper thumbnail size and leaves >=55% of even
      a narrow column for the wrapped text. */
   .md-fig-float-right,
-  .md-fig-float-left { width: min(var(--fig-w, 40%), var(--fig-px, 340px), 340px); }
+  .md-fig-float-left { width: min(calc(var(--fig-n, 40) * 7px), 46%); }
   .md-fig-float-right { float: right; margin: 4px 0 10px 18px; }
   .md-fig-float-left { float: left; margin: 4px 18px 10px 0; }
 }
@@ -2334,7 +2340,11 @@ a.tp-leaf-name:hover { text-decoration: underline; }
 .md-table { overflow-x: auto; margin: 10px 0 14px; max-width: 100%; }
 .md-table > table, .p-body table, .subq-body table, .intro-card table {
   border-collapse: collapse;
-  border: 2.5px solid var(--text-primary);
+  /* The authors' tables carry a DOUBLE rule around the outside — a thin line,
+     a hairline gap, then the frame — with single rules inside. `double` needs
+     >=3px to resolve into two strokes; 4px gives 1px/2px/1px, which matches
+     the printed weight. */
+  border: 4px double var(--text-primary);
   font-variant-numeric: tabular-nums;
   font-size: 15px;
   background: #fff;
@@ -2344,12 +2354,16 @@ a.tp-leaf-name:hover { text-decoration: underline; }
 .subq-body table th, .subq-body table td,
 .intro-card table th, .intro-card table td {
   border: 1px solid var(--text-primary);
-  padding: 5px 12px;
-  line-height: 1.35;
+  /* Wider cells. The printed tables breathe — a column of three-digit numbers
+     sits in a cell about twice the width of its content — and 12px of side
+     padding made ours look cramped against the same data. */
+  padding: 7px 22px;
+  line-height: 1.4;
+  min-width: 3.2em;
 }
 .md-table > table th, .p-body table th,
 .subq-body table th, .intro-card table th {
-  text-align: center; font-weight: 600; padding: 7px 12px; white-space: nowrap;
+  text-align: center; font-weight: 600; padding: 9px 22px; white-space: nowrap;
 }
 /* Numbers right-align — that is what makes a column of measurements readable,
    and it is what the source PDFs do. Text cells opt back out. */
@@ -2358,12 +2372,12 @@ a.tp-leaf-name:hover { text-decoration: underline; }
 td.md-td-text { text-align: left !important; }
 /* A short table with the same heavy frame as a 17-row one looks clumsy; the
    authors use a lighter rule on small tables. */
-.md-table--sm > table { border-width: 1.5px; font-size: 14.5px; }
-.md-table--sm > table th, .md-table--sm > table td { padding: 3px 9px; }
+.md-table--sm > table { border-width: 3px; font-size: 14.5px; }
+.md-table--sm > table th, .md-table--sm > table td { padding: 5px 14px; min-width: 2.6em; }
 @media (max-width: 639.98px) {
   .md-table > table, .p-body table { font-size: 13.5px; }
   .md-table > table th, .md-table > table td,
-  .p-body table th, .p-body table td { padding: 3px 7px; }
+  .p-body table th, .p-body table td { padding: 5px 10px; min-width: 0; }
 }
 
 /* Lists inside a card: the marker lives in the padding box, so without room for
@@ -2510,6 +2524,34 @@ td.md-td-text { text-align: left !important; }
 @media (max-width: 639.98px) {
   .equip-card { padding: 10px 13px; }
   .equip-card p, .equip-card ol, .equip-card ul { font-size: 16px; }
+}
+
+/* Numbered sub-questions inside a statement or solution. The number is the
+   thing a reader scans for when moving between parts, so it is set bold and
+   given room — the paper prints «1.» in bold for the same reason. */
+.p-body ol > li::marker,
+.intro-card ol > li::marker,
+.subq-body ol > li::marker,
+.part-section-intro ol > li::marker { font-weight: 700; }
+.p-body ol, .intro-card ol, .subq-body ol { padding-left: 26px; }
+.p-body ol > li, .intro-card ol > li, .subq-body ol > li { margin: 6px 0; }
+
+/* «в пункте 1.1» → the card for 1.1. Underlined on hover only: these appear
+   mid-sentence and a permanently decorated number breaks the line's rhythm. */
+.part-ref { color: var(--primary-color); text-decoration: none; font-weight: 600; }
+.part-ref:hover, .part-ref:focus-visible { text-decoration: underline; }
+/* The sticky rail overlaps an anchored card without this. */
+.subq-card { scroll-margin-top: 14px; }
+
+/* A table must be able to sit BESIDE a floated figure. `overflow-x: auto`
+   makes .md-table a block formatting context, and a BFC refuses to overlap a
+   float — so the table was pushed below the figure and the row of white space
+   the paper fills with a graph opened up underneath it. Narrow tables scroll
+   nothing anyway, so they give up the BFC and flow alongside. */
+.md-table--sm { overflow: visible; }
+@media (min-width: 900px) {
+  .md-table { overflow-x: visible; }
+  .md-table > table { max-width: 100%; }
 }
 
 
