@@ -2699,16 +2699,50 @@ p.notice em, p.notice strong { font-style: normal; font-weight: 700; }
 /* The sticky rail overlaps an anchored card without this. */
 .subq-card { scroll-margin-top: 14px; }
 
-/* A table must be able to sit BESIDE a floated figure. `overflow-x: auto`
-   makes .md-table a block formatting context, and a BFC refuses to overlap a
-   float — so the table was pushed below the figure and the row of white space
-   the paper fills with a graph opened up underneath it. Narrow tables scroll
-   nothing anyway, so they give up the BFC and flow alongside. */
-.md-table--sm { overflow: visible; }
+/* A table must be able to sit BESIDE a floated figure, and it must never carry
+   its own text off the side of the screen. Both, not either.
+     `overflow-x: auto` makes .md-table a block formatting context, and a BFC
+   must not overlap a float — which is why this rule used to hand the guard
+   back («.md-table--sm { overflow: visible }») so a short table would flow
+   alongside the figure instead of dropping below it and leaving the paper's
+   graph-sized hole underneath. What that cost: 41 of the 63 pages that scrolled
+   sideways at a 500px viewport did so because a `--sm` table had no guard, the
+   worst by 5748px — text the reader simply cannot reach.
+     A BFC does not have to drop below a float; it may sit in the space beside
+   it, and every current engine does exactly that when the box is free to
+   shrink. So the guard comes back, and `min-width: 0` with an auto width is
+   what keeps it shrinkable: the wrapper takes the width of the slot next to
+   the figure and scrolls whatever is too wide for it. Verified on the 24 pages
+   that put a `--sm` table right after a floated figure — 17 sat beside the
+   figure at 700px and 21 at 1000px before this change, and the same ones after
+   (pipeline/audit geometry probe, Chrome 150).
+     `overflow-y: hidden` because `overflow-x: auto` alone computes overflow-y
+   to `auto` as well, which would hang a vertical scrollbar on a two-row table. */
+.md-table--sm { overflow-x: auto; overflow-y: hidden; min-width: 0; }
 @media (min-width: 900px) {
-  .md-table { overflow-x: visible; }
+  /* Desktop squeezes the table into the measure rather than scrolling it —
+     but `max-width: 100%` cannot squeeze past the content's own minimum, so
+     without the guard 38 pages pushed the whole desktop page sideways (median
+     571px, max 5822px). Keep the squeeze; keep the guard behind it. */
   .md-table > table { max-width: 100%; }
 }
+
+/* A ONE-COLUMN table is markdown-it's answer to a stored line that opens with
+   a bare `|`: it emits a header-only, single-column table and the entire
+   sub-question ends up inside a <th>, which is set `white-space: nowrap` for
+   the sake of «t, с» headers and so runs the sentence off the page. The record
+   is a data defect and is fixed as one; this is the renderer refusing to lose
+   the text either way — a table with one column is prose, so it wraps, aligns
+   left and takes the measure it is given. Same for any header cell long enough
+   to be a sentence rather than a column name (see TH_PROSE_CHARS). */
+.md-table--1col > table { width: 100%; }
+.md-table--1col > table th, .md-table > table th.md-th-text,
+.p-body table th.md-th-text, .subq-body table th.md-th-text,
+.intro-card table th.md-th-text {
+  white-space: normal;
+  min-width: 0;
+}
+.md-table--1col > table th { text-align: left; }
 
 /* The reading surfaces — statement, solution, hints, answer sheet, section
    intros — take the serif and a larger body size. 17.5px/1.62 rather than
