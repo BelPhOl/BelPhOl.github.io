@@ -632,6 +632,11 @@ a { color: var(--primary-color); }
   border-radius: 3px;
   padding: 10px 14px 11px;
   margin-bottom: 0.7em;
+  /* A bordered box beside a float must AVOID the float, not run under it: a
+     block box overlaps a float by default and only its line boxes shorten, so
+     the rule would pass behind the picture. flow-root makes the frame shrink
+     to the space left of it, which is what the paper does. */
+  display: flow-root;
 }
 
 /* The part's own leading number («1.1») inside that framed sentence — see
@@ -666,23 +671,48 @@ a { color: var(--primary-color); }
   width: min(calc(var(--fig-n, 100) * 7px), 100%);
   margin: 8px auto 12px;
   text-align: center;
+  /* The Wikipedia thumbnail box: one thin rule around image AND caption
+     together, so the caption reads as part of the picture rather than as a
+     stray line of small type under it. The rule used to be on the <img>,
+     which left the caption outside the box. */
+  box-sizing: border-box;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  background: var(--surface-color);
+  padding: 6px 6px 2px;
 }
 .md-fig > a { display: block; }
 
 .md-fig img {
+  display: block;
   width: 100%;
   background: #fff;
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-sm);
-  padding: 8px;
+  border-radius: 2px;
 }
 
 .md-fig figcaption {
   font-size: 12.5px;
   color: var(--text-secondary);
-  margin-top: 5px;
+  /* Bottom-LEFT inside the box, the way «Рис. 1.1» is set on the page —
+     centring it under a wide figure separates it from the number it labels. */
+  text-align: left;
+  padding: 4px 2px 3px;
   line-height: 1.45;
 }
+
+/* Two or more figures the paper printed side by side (build.js layoutFigures
+   groups any adjacent run). Each keeps its own --fig-n, so the 56% graph stays
+   visibly larger than the 42% circuit beside it; they wrap to a column when
+   the measure cannot hold them both. */
+.fig-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 12px;
+  margin: 10px 0 14px;
+}
+.fig-row > .md-fig { margin: 0; flex: 0 1 auto; }
 
 /* float_side ('left'/'right', from figures.float_side) drives which way text
    wraps — matches the PDF's own wrapfig placement instead of a width guess.
@@ -700,8 +730,15 @@ a { color: var(--primary-color); }
   .md-fig-float-left { float: left; margin: 4px 18px 10px 0; }
 }
 
+/* Below the breakpoint nothing floats — the float rules above are inside the
+   min-width query — so a figure is a full-width block and the caption gets the
+   whole measure. The audience is mobile-majority on cheap devices: a 30%-wide
+   sliver with three words wrapped beside it is unreadable, and this is the one
+   place where the paper's own geometry has to give way. */
 @media (max-width: 639.98px) {
-  .md-fig { width: min(88%, 340px); }
+  .md-fig { width: min(100%, 480px); float: none; }
+  .fig-row { flex-direction: column; align-items: center; gap: 10px; }
+  .fig-row > .md-fig { width: min(100%, 480px); }
 }
 
 /* Small phones: reclaim horizontal space for the text itself. */
@@ -2559,6 +2596,10 @@ td.md-td-text { text-align: left !important; }
   border-radius: var(--radius);
   padding: 12px 18px;
   margin: 0 0 14px;
+  /* Same reason .intro-card carries it: the equipment card holds the photo of
+     the apparatus, and without a BFC that float escaped the card entirely and
+     landed in the margin beside it (2007-third-exp-10-1). */
+  display: flow-root;
 }
 .equip-card p { font-size: 17.5px; line-height: 1.55; margin: 0; }
 .equip-card p + p { margin-top: 6px; }
@@ -2568,8 +2609,73 @@ td.md-td-text { text-align: left !important; }
 /* «Часть N» heading and the prose under it, when the paper prints one. Sits
    above that section's sub-question cards; it used to be swallowed into the
    previous card. */
-.part-section-intro { margin: 2px 0 10px; }
+.part-section-intro { margin: 2px 0 10px; display: flow-root; }
 .part-section-intro p { margin: 0 0 8px; }
+
+/* ------------------------------------------------------- framed blocks ---
+   The papers rule a box round their standing instructions — «Внимание: время
+   проведения измерений – около одного часа! …», «1. Во всех пунктах задания …»
+   — and set them apart from the prose. build.js frameInstructionBlocks marks
+   them; ONE rule, never two, and it is deliberately not the double rule the
+   sub-question frame uses, so the two never read as the same thing. */
+.md-frame,
+p.notice {
+  border: 1px solid var(--text-primary);
+  border-radius: 3px;
+  padding: 10px 16px;
+  margin: 2px 0 12px;
+  text-align: center;
+  display: flow-root;
+}
+/* The paper sets the whole standing instruction bold; lib/mdRender.js marks it
+   `.notice` (one block corpus-wide qualifies). It is the SAME rule as
+   .md-frame above, never a second frame style. */
+p.notice { font-weight: 700; }
+/* …and if a block ever satisfies both rules, only the OUTER frame is drawn.
+   The user reported a doubled рамка; this is the guard against it. */
+.md-frame p.notice {
+  border: 0; padding: 0; margin: 0 0 0.45em; border-radius: 0;
+}
+.md-frame p { margin: 0 0 0.45em; }
+.md-frame p:last-child { margin-bottom: 0; }
+/* The paper sets the whole block bold; the emphasis inside it is the source's
+   own, so it is kept and the block weight is added on top. */
+.md-frame em, .md-frame strong,
+p.notice em, p.notice strong { font-style: normal; font-weight: 700; }
+
+@media (max-width: 480px) {
+  .md-frame, p.notice { padding: 9px 11px; }
+}
+
+/* ---------------------------------------------- originals in the archive */
+
+/* Every problem page carries the round's own PDFs, deep-linked to the page the
+   problem starts on. It sits at the foot of the page, quiet but present on all
+   of them — statement, solution, hints, разбалловка, тренировка alike. */
+.src-orig {
+  margin: 18px 0 6px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border-color);
+}
+.src-orig-h {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-secondary);
+  margin: 0 0 8px;
+}
+.src-orig-list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 14px; }
+.src-orig-item { display: flex; align-items: baseline; gap: 7px; font-size: 13.5px; min-width: 0; }
+.src-orig-link { display: inline-flex; align-items: baseline; gap: 7px; text-decoration: none; min-width: 0; }
+.src-orig-role { font-weight: 700; color: var(--primary-color); }
+.src-orig-file {
+  color: var(--text-secondary);
+  overflow-wrap: anywhere;
+}
+.src-orig-link:hover .src-orig-file { text-decoration: underline; }
+.src-orig-pg { color: var(--text-secondary); font-size: 12.5px; white-space: nowrap; }
+.src-orig-pg-none { font-style: italic; }
 
 @media (max-width: 639.98px) {
   .equip-card { padding: 10px 13px; }
