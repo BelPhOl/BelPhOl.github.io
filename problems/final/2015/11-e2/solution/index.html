@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Поглощение и люминесценция — решение — BelPhO</title>
+  <meta name="description" content="Поглощение и люминесценция — Республиканская олимпиада 2015, 11 класс, задача Э2. Подробное решение с ответами.">
+  <link rel="canonical" href="https://belpho.org/problems/final/2015/11-e2/solution/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BelPhO">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:url" content="https://belpho.org/problems/final/2015/11-e2/solution/">
+  <meta property="og:title" content="Поглощение и люминесценция — решение — BelPhO">
+  <meta property="og:description" content="Поглощение и люминесценция — Республиканская олимпиада 2015, 11 класс, задача Э2. Подробное решение с ответами.">
+  
+  <meta property="og:image" content="https://belpho.org/problems/thumbs/og/final-2015.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/css/platform.css">
+  
+  
+</head>
+<body>
+<svg id="mjx-glyph-cache" aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden"><defs><path id="MJX-TEX-I-1D467" d="M347 338Q337 338 294 349T231 360Q211 360 197 356T174 346T162 335T155 324L153 320Q150 317 138 317Q117 317 117 325Q117 330 120 339Q133 378 163 406T229 440Q241 442 246 442Q271 442 291 425T329 392T367 375Q389 375 411 408T434 441Q435 442 449 442H462Q468 436 468 434Q468 430 463 420T449 399T432 377T418 358L411 349Q368 298 275 214T160 106L148 94L163 93Q185 93 227 82T290 71Q328 71 360 90T402 140Q406 149 409 151T424 153Q443 153 443 143Q443 138 442 134Q425 72 376 31T278 -11Q252 -11 232 6T193 40T155 57Q111 57 76 -3Q70 -11 59 -11H54H41Q35 -5 35 -2Q35 13 93 84Q132 129 225 214T340 322Q352 338 347 338Z"></path><path id="MJX-TEX-I-1D43C" d="M43 1Q26 1 26 10Q26 12 29 24Q34 43 39 45Q42 46 54 46H60Q120 46 136 53Q137 53 138 54Q143 56 149 77T198 273Q210 318 216 344Q286 624 286 626Q284 630 284 631Q274 637 213 637H193Q184 643 189 662Q193 677 195 680T209 683H213Q285 681 359 681Q481 681 487 683H497Q504 676 504 672T501 655T494 639Q491 637 471 637Q440 637 407 634Q393 631 388 623Q381 609 337 432Q326 385 315 341Q245 65 245 59Q245 52 255 50T307 46H339Q345 38 345 37T342 19Q338 6 332 0H316Q279 2 179 2Q143 2 113 2T65 2T43 1Z"></path><path id="MJX-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJX-TEX-I-1D454" d="M311 43Q296 30 267 15T206 0Q143 0 105 45T66 160Q66 265 143 353T314 442Q361 442 401 394L404 398Q406 401 409 404T418 412T431 419T447 422Q461 422 470 413T480 394Q480 379 423 152T363 -80Q345 -134 286 -169T151 -205Q10 -205 10 -137Q10 -111 28 -91T74 -71Q89 -71 102 -80T116 -111Q116 -121 114 -130T107 -144T99 -154T92 -162L90 -164H91Q101 -167 151 -167Q189 -167 211 -155Q234 -144 254 -122T282 -75Q288 -56 298 -13Q311 35 311 43ZM384 328L380 339Q377 350 375 354T369 368T359 382T346 393T328 402T306 405Q262 405 221 352Q191 313 171 233T151 117Q151 38 213 38Q269 38 323 108L331 118L384 328Z"></path><path id="MJX-TEX-N-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path><path id="MJX-TEX-N-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path><path id="MJX-TEX-N-6C" d="M42 46H56Q95 46 103 60V68Q103 77 103 91T103 124T104 167T104 217T104 272T104 329Q104 366 104 407T104 482T104 542T103 586T103 603Q100 622 89 628T44 637H26V660Q26 683 28 683L38 684Q48 685 67 686T104 688Q121 689 141 690T171 693T182 694H185V379Q185 62 186 60Q190 52 198 49Q219 46 247 46H263V0H255L232 1Q209 2 183 2T145 3T107 3T57 1L34 0H26V46H42Z"></path><path id="MJX-TEX-N-6E" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q450 438 463 329Q464 322 464 190V104Q464 66 466 59T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z"></path><path id="MJX-TEX-N-2061" d=""></path><path id="MJX-TEX-N-22C5" d="M78 250Q78 274 95 292T138 310Q162 310 180 294T199 251Q199 226 182 208T139 190T96 207T78 250Z"></path><path id="MJX-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-TEX-N-65" d="M28 218Q28 273 48 318T98 391T163 433T229 448Q282 448 320 430T378 380T406 316T415 245Q415 238 408 231H126V216Q126 68 226 36Q246 30 270 30Q312 30 342 62Q359 79 369 104L379 128Q382 131 395 131H398Q415 131 415 121Q415 117 412 108Q393 53 349 21T250 -11Q155 -11 92 58T28 218ZM333 275Q322 403 238 411H236Q228 411 220 410T195 402T166 381T143 340T127 274V267H333V275Z"></path><path id="MJX-TEX-N-78" d="M201 0Q189 3 102 3Q26 3 17 0H11V46H25Q48 47 67 52T96 61T121 78T139 96T160 122T180 150L226 210L168 288Q159 301 149 315T133 336T122 351T113 363T107 370T100 376T94 379T88 381T80 383Q74 383 44 385H16V431H23Q59 429 126 429Q219 429 229 431H237V385Q201 381 201 369Q201 367 211 353T239 315T268 274L272 270L297 304Q329 345 329 358Q329 364 327 369T322 376T317 380T310 384L307 385H302V431H309Q324 428 408 428Q487 428 493 431H499V385H492Q443 385 411 368Q394 360 377 341T312 257L296 236L358 151Q424 61 429 57T446 50Q464 46 499 46H516V0H510H502Q494 1 482 1T457 2T432 2T414 3Q403 3 377 3T327 1L304 0H295V46H298Q309 46 320 51T331 63Q331 65 291 120L250 175Q249 174 219 133T185 88Q181 83 181 74Q181 63 188 55T206 46Q208 46 208 23V0H201Z"></path><path id="MJX-TEX-N-70" d="M36 -148H50Q89 -148 97 -134V-126Q97 -119 97 -107T97 -77T98 -38T98 6T98 55T98 106Q98 140 98 177T98 243T98 296T97 335T97 351Q94 370 83 376T38 385H20V408Q20 431 22 431L32 432Q42 433 61 434T98 436Q115 437 135 438T165 441T176 442H179V416L180 390L188 397Q247 441 326 441Q407 441 464 377T522 216Q522 115 457 52T310 -11Q242 -11 190 33L182 40V-45V-101Q182 -128 184 -134T195 -145Q216 -148 244 -148H260V-194H252L228 -193Q205 -192 178 -192T140 -191Q37 -191 28 -194H20V-148H36ZM424 218Q424 292 390 347T305 402Q234 402 182 337V98Q222 26 294 26Q345 26 384 80T424 218Z"></path><path id="MJX-TEX-N-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path><path id="MJX-TEX-I-1D458" d="M121 647Q121 657 125 670T137 683Q138 683 209 688T282 694Q294 694 294 686Q294 679 244 477Q194 279 194 272Q213 282 223 291Q247 309 292 354T362 415Q402 442 438 442Q468 442 485 423T503 369Q503 344 496 327T477 302T456 291T438 288Q418 288 406 299T394 328Q394 353 410 369T442 390L458 393Q446 405 434 405H430Q398 402 367 380T294 316T228 255Q230 254 243 252T267 246T293 238T320 224T342 206T359 180T365 147Q365 130 360 106T354 66Q354 26 381 26Q429 26 459 145Q461 153 479 153H483Q499 153 499 144Q499 139 496 130Q455 -11 378 -11Q333 -11 305 15T277 90Q277 108 280 121T283 145Q283 167 269 183T234 206T200 217T182 220H180Q168 178 159 139T145 81T136 44T129 20T122 7T111 -2Q98 -11 83 -11Q66 -11 57 -1T48 16Q48 26 85 176T158 471L195 616Q196 629 188 632T149 637H144Q134 637 131 637T124 640T121 647Z"></path><path id="MJX-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJX-TEX-N-33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path><path id="MJX-TEX-N-2248" d="M55 319Q55 360 72 393T114 444T163 472T205 482Q207 482 213 482T223 483Q262 483 296 468T393 413L443 381Q502 346 553 346Q609 346 649 375T694 454Q694 465 698 474T708 483Q722 483 722 452Q722 386 675 338T555 289Q514 289 468 310T388 357T308 404T224 426Q164 426 125 393T83 318Q81 289 69 289Q55 289 55 319ZM55 85Q55 126 72 159T114 210T163 238T205 248Q207 248 213 248T223 249Q262 249 296 234T393 179L443 147Q502 112 553 112Q609 112 649 141T694 220Q694 249 708 249T722 217Q722 153 675 104T555 55Q514 55 468 76T388 123T308 170T224 192Q164 192 125 159T83 84Q80 55 69 55Q55 55 55 85Z"></path><path id="MJX-TEX-N-2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path><path id="MJX-TEX-N-36" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z"></path></defs></svg>
+<header class="site-header">
+  <div class="container header-content">
+    <a href="/" class="logo">
+      <img src="/img/logo.png" alt="BelPhO" class="logo-img" width="36" height="36">
+      <span>BelPhO</span>
+    </a>
+    <nav class="site-nav" aria-label="Основная навигация">
+      <ul class="nav-links">
+        <li><a href="/">Главная</a></li>
+        <li><a href="/problems/" class="active">Задачи</a></li>
+        <li><a href="/books/">Книги</a></li>
+        <li><a href="/training-program.html">Подготовка</a></li>
+        <li><a href="/alumni.html">Выпускники</a></li>
+        <li><a href="/news/">Новости</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<main class="p-shell">
+  <div class="p-layout">
+    
+<aside class="p-sidebar" id="p-sidebar" data-problem-id="2015-final-exp-11-2">
+  <div class="sb-card">
+    <div class="sb-head">
+      <div class="sb-crumb"><a href="/problems/final/">Республиканская</a>&#8195;<a href="/problems/final/2015/">2015</a></div>
+      <h1 class="sb-title">Поглощение и люминесценция</h1>
+      <div class="sb-meta">
+        <span class="sb-chip">11 класс</span>
+        <span class="sb-chip sb-chip-num">№ Э2</span>
+        
+        
+        
+        
+        
+      </div>
+      
+      
+      <nav class="sb-siblings" aria-label="Другие задачи этого тура">
+        
+        <span class="sb-sib-list">
+          <a class="sb-sib" href="/problems/final/2015/11-e1/">11.1</a><a class="sb-sib is-current" href="/problems/final/2015/11-e2/" aria-current=&#34;page&#34;>11.2</a>
+        </span>
+      </nav>
+      
+    </div>
+    <nav class="sb-nav" aria-label="Разделы задачи">
+      
+      <a class="sb-item" href="/problems/final/2015/11-e2/"
+         >
+        <span class="sb-glyph sb-glyph-t">T</span>
+        <span>Условие</span>
+      </a>
+      
+      <a class="sb-item on" href="/problems/final/2015/11-e2/solution/"
+         aria-current=&#34;page&#34;>
+        <span class="sb-glyph sb-glyph-s">S</span>
+        <span>Решение</span>
+      </a>
+      
+      
+      <details class="sb-files" id="sb-files">
+        <summary class="sb-item sb-item-files">
+          <span class="sb-glyph sb-glyph-f">▾</span><span>Файлы</span>
+        </summary>
+        <div class="sb-files-menu">
+          
+          <a href="/problems/final/2015/11-e2/solution.pdf" class="sb-file">Решения (PDF)</a>
+          
+          <a href="/problems/final/2015_experimental_solutions.pdf#page=15" class="sb-file">Решение (Оригинал)</a>
+          
+          <a href="/problems/final/2015/11-e2/source.tar.gz" class="sb-file">TeX версия</a>
+          
+          
+        </div>
+      </details>
+    </nav>
+    
+  </div>
+</aside>
+
+    <div class="p-main" id="p-main">
+      <div class="page-head">
+  <h2 class="page-title">Решение</h2>
+  <span class="page-sub">Республиканская олимпиада&#8195;2015&#8195;11 класс&#8195;№ Э2</span>
+</div>
+
+
+
+<section class="intro-card">
+  <p>Результаты измерений зависимости интенсивности люминесценции от расстояния до края раствора приведены в Таблице. Ниже показан график полученной зависимости.</p>
+<p><u>Таблица результатов измерений и расчетов.</u></p>
+<div class="md-table"><table>
+<thead>
+<tr>
+<th align="center"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="1.052ex" height="1.025ex" role="img" focusable="false" viewBox="0 -442 465 453" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D467" xlink:href="#MJX-TEX-I-1D467"></use></g></g></g></svg></mjx-container>, мм</th>
+<th align="center"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.72ex;" xmlns="http://www.w3.org/2000/svg" width="4.063ex" height="2.265ex" role="img" focusable="false" viewBox="0 -683 1795.8 1001.2" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D43C" xlink:href="#MJX-TEX-I-1D43C"></use></g><g data-mml-node="TeXAtom" transform="translate(473,-176.7) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mtext"><text data-variant="normal"  font-size="884px" font-family="serif" transform="scale(1,-1)" textLength="1800" lengthAdjust="spacingAndGlyphs">люм</text></g></g></g></g></g></svg></mjx-container></th>
+<th align="center"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.375ex;" xmlns="http://www.w3.org/2000/svg" width="1.983ex" height="1.92ex" role="img" focusable="false" viewBox="0 -683 876.6 848.6" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D43C" xlink:href="#MJX-TEX-I-1D43C"></use></g><g data-mml-node="mn" transform="translate(473,-150) scale(0.707)"><use data-c="30" xlink:href="#MJX-TEX-N-30"></use></g></g></g></g></svg></mjx-container></th>
+<th align="center"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.566ex;" xmlns="http://www.w3.org/2000/svg" width="3.891ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 1720 1000" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D454" xlink:href="#MJX-TEX-I-1D454"></use></g><g data-mml-node="mo" transform="translate(477,0)"><use data-c="28" xlink:href="#MJX-TEX-N-28"></use></g><g data-mml-node="mi" transform="translate(866,0)"><use data-c="1D467" xlink:href="#MJX-TEX-I-1D467"></use></g><g data-mml-node="mo" transform="translate(1331,0)"><use data-c="29" xlink:href="#MJX-TEX-N-29"></use></g></g></g></svg></mjx-container></th>
+<th align="center"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -2.406ex;" xmlns="http://www.w3.org/2000/svg" width="14.893ex" height="5.712ex" role="img" focusable="false" viewBox="0 -1461.2 6582.6 2524.7" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="6C" xlink:href="#MJX-TEX-N-6C"></use><use data-c="6E" xlink:href="#MJX-TEX-N-6E" transform="translate(278,0)"></use></g><g data-mml-node="mo" transform="translate(834,0)"><use data-c="2061" xlink:href="#MJX-TEX-N-2061"></use></g><g data-mml-node="mstyle" transform="translate(1000.7,0)"><g data-mml-node="mfrac"><g data-mml-node="msub" transform="translate(1893.1,778.2)"><g data-mml-node="mi"><use data-c="1D43C" xlink:href="#MJX-TEX-I-1D43C"></use></g><g data-mml-node="TeXAtom" transform="translate(473,-176.7) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mtext"><text data-variant="normal"  font-size="884px" font-family="serif" transform="scale(1,-1)" textLength="1800" lengthAdjust="spacingAndGlyphs">люм</text></g></g></g><g data-mml-node="mrow" transform="translate(220,-710)"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D43C" xlink:href="#MJX-TEX-I-1D43C"></use></g><g data-mml-node="TeXAtom" transform="translate(473,-176.7) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mtext"><text data-variant="normal"  font-size="884px" font-family="serif" transform="scale(1,-1)" textLength="1800" lengthAdjust="spacingAndGlyphs">люм</text></g><g data-mml-node="mo" transform="translate(1800,0)"><use data-c="28" xlink:href="#MJX-TEX-N-28"></use></g><g data-mml-node="mn" transform="translate(2189,0)"><use data-c="30" xlink:href="#MJX-TEX-N-30"></use></g><g data-mml-node="mo" transform="translate(2689,0)"><use data-c="29" xlink:href="#MJX-TEX-N-29"></use></g></g></g><g data-mml-node="mo" transform="translate(2921.7,0)"><use data-c="22C5" xlink:href="#MJX-TEX-N-22C5"></use></g><g data-mml-node="mi" transform="translate(3421.9,0)"><use data-c="1D454" xlink:href="#MJX-TEX-I-1D454"></use></g><g data-mml-node="mo" transform="translate(3898.9,0)"><use data-c="28" xlink:href="#MJX-TEX-N-28"></use></g><g data-mml-node="mi" transform="translate(4287.9,0)"><use data-c="1D467" xlink:href="#MJX-TEX-I-1D467"></use></g><g data-mml-node="mo" transform="translate(4752.9,0)"><use data-c="29" xlink:href="#MJX-TEX-N-29"></use></g></g><rect width="5341.9" height="60" x="120" y="220"></rect></g></g></g></g></svg></mjx-container></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">0</td>
+<td align="center">51,5</td>
+<td align="center">458</td>
+<td align="center">1,00</td>
+<td align="center">0,00</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">38,4</td>
+<td align="center">449</td>
+<td align="center">0,98</td>
+<td align="center">-0,27</td>
+</tr>
+<tr>
+<td align="center">10</td>
+<td align="center">24,7</td>
+<td align="center">439</td>
+<td align="center">0,96</td>
+<td align="center">-0,69</td>
+</tr>
+<tr>
+<td align="center">15</td>
+<td align="center">19,6</td>
+<td align="center">431</td>
+<td align="center">0,94</td>
+<td align="center">-0,91</td>
+</tr>
+<tr>
+<td align="center">20</td>
+<td align="center">14,7</td>
+<td align="center">424</td>
+<td align="center">0,93</td>
+<td align="center">-1,18</td>
+</tr>
+<tr>
+<td align="center">25</td>
+<td align="center">9,8</td>
+<td align="center">416</td>
+<td align="center">0,91</td>
+<td align="center">-1,56</td>
+</tr>
+<tr>
+<td align="center">30</td>
+<td align="center">7,4</td>
+<td align="center">410</td>
+<td align="center">0,90</td>
+<td align="center">-1,83</td>
+</tr>
+<tr>
+<td align="center">35</td>
+<td align="center">5,9</td>
+<td align="center">403</td>
+<td align="center">0,88</td>
+<td align="center">-2,04</td>
+</tr>
+<tr>
+<td align="center">40</td>
+<td align="center">5</td>
+<td align="center">398</td>
+<td align="center">0,87</td>
+<td align="center">-2,19</td>
+</tr>
+<tr>
+<td align="center">45</td>
+<td align="center">4,2</td>
+<td align="center">393</td>
+<td align="center">0,86</td>
+<td align="center">-2,35</td>
+</tr>
+<tr>
+<td align="center">50</td>
+<td align="center">3,9</td>
+<td align="center">386</td>
+<td align="center">0,84</td>
+<td align="center">-2,41</td>
+</tr>
+<tr>
+<td align="center">55</td>
+<td align="center">3,4</td>
+<td align="center">381</td>
+<td align="center">0,83</td>
+<td align="center">-2,53</td>
+</tr>
+<tr>
+<td align="center">60</td>
+<td align="center">3</td>
+<td align="center">378</td>
+<td align="center">0,83</td>
+<td align="center">-2,65</td>
+</tr>
+<tr>
+<td align="center">65</td>
+<td align="center">2,7</td>
+<td align="center">373</td>
+<td align="center">0,81</td>
+<td align="center">-2,74</td>
+</tr>
+</tbody></table></div>
+<p>Также в таблице приведены результаты измерений зависимости интенсивности света <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.566ex;" xmlns="http://www.w3.org/2000/svg" width="4.795ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 2119.6 1000" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D43C" xlink:href="#MJX-TEX-I-1D43C"></use></g><g data-mml-node="mn" transform="translate(473,-150) scale(0.707)"><use data-c="30" xlink:href="#MJX-TEX-N-30"></use></g></g><g data-mml-node="mo" transform="translate(876.6,0)"><use data-c="28" xlink:href="#MJX-TEX-N-28"></use></g><g data-mml-node="mi" transform="translate(1265.6,0)"><use data-c="1D467" xlink:href="#MJX-TEX-I-1D467"></use></g><g data-mml-node="mo" transform="translate(1730.6,0)"><use data-c="29" xlink:href="#MJX-TEX-N-29"></use></g></g></g></svg></mjx-container> от расстояния до источника без поглощающей среды. Для расчета коэффициента поглощения раствора следует учесть 2 фактора, приводящие к уменьшению интенсивности:</p>
+<p>геометрический <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.566ex;" xmlns="http://www.w3.org/2000/svg" width="3.891ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 1720 1000" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D454" xlink:href="#MJX-TEX-I-1D454"></use></g><g data-mml-node="mo" transform="translate(477,0)"><use data-c="28" xlink:href="#MJX-TEX-N-28"></use></g><g data-mml-node="mi" transform="translate(866,0)"><use data-c="1D467" xlink:href="#MJX-TEX-I-1D467"></use></g><g data-mml-node="mo" transform="translate(1331,0)"><use data-c="29" xlink:href="#MJX-TEX-N-29"></use></g></g></g></svg></mjx-container>, связанный с расходимостью светового пучка, и поглощение света. Из формулы приведенной в условии задачи следует, что зависимость интенсивности люминесценции от расстояния имеет вид
+<span class="eq-anchor" id="eq-1"><mjx-container class="MathJax" jax="SVG" display="true" width="full" style="min-width: 38.879ex;"><svg style="vertical-align: -0.683ex; min-width: 38.879ex;" xmlns="http://www.w3.org/2000/svg" width="100%" height="2.497ex" role="img" focusable="false" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(0.0181,-0.0181) translate(0, -801.8)"><g data-mml-node="math"><g data-mml-node="mtable" transform="translate(2078,0) translate(-2078,0)"><g transform="translate(0 801.8) matrix(1 0 0 -1 0 0) scale(55.25)"><svg data-table="true" preserveAspectRatio="xMidYMid" viewBox="6514.2 -801.8 1 1103.5"><g transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="mlabeledtr" transform="translate(0,51.8)"><g data-mml-node="mtd"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D43C" xlink:href="#MJX-TEX-I-1D43C"></use></g><g data-mml-node="TeXAtom" transform="translate(473,-176.7) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mtext"><text data-variant="normal"  font-size="884px" font-family="serif" transform="scale(1,-1)" textLength="1800" lengthAdjust="spacingAndGlyphs">люм</text></g></g></g><g data-mml-node="mo" transform="translate(1795.8,0)"><use data-c="28" xlink:href="#MJX-TEX-N-28"></use></g><g data-mml-node="mi" transform="translate(2184.8,0)"><use data-c="1D467" xlink:href="#MJX-TEX-I-1D467"></use></g><g data-mml-node="mo" transform="translate(2649.8,0)"><use data-c="29" xlink:href="#MJX-TEX-N-29"></use></g><g data-mml-node="mo" transform="translate(3316.6,0)"><use data-c="3D" xlink:href="#MJX-TEX-N-3D"></use></g><g data-mml-node="msub" transform="translate(4372.3,0)"><g data-mml-node="mi"><use data-c="1D43C" xlink:href="#MJX-TEX-I-1D43C"></use></g><g data-mml-node="TeXAtom" transform="translate(473,-176.7) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mtext"><text data-variant="normal"  font-size="884px" font-family="serif" transform="scale(1,-1)" textLength="1800" lengthAdjust="spacingAndGlyphs">люм</text></g><g data-mml-node="mo" transform="translate(1800,0)"><use data-c="28" xlink:href="#MJX-TEX-N-28"></use></g><g data-mml-node="mn" transform="translate(2189,0)"><use data-c="30" xlink:href="#MJX-TEX-N-30"></use></g><g data-mml-node="mo" transform="translate(2689,0)"><use data-c="29" xlink:href="#MJX-TEX-N-29"></use></g></g></g><g data-mml-node="mi" transform="translate(7071.8,0)"><use data-c="1D454" xlink:href="#MJX-TEX-I-1D454"></use></g><g data-mml-node="mo" transform="translate(7548.8,0)"><use data-c="28" xlink:href="#MJX-TEX-N-28"></use></g><g data-mml-node="mi" transform="translate(7937.8,0)"><use data-c="1D467" xlink:href="#MJX-TEX-I-1D467"></use></g><g data-mml-node="mo" transform="translate(8402.8,0)"><use data-c="29" xlink:href="#MJX-TEX-N-29"></use></g><g data-mml-node="mi" transform="translate(8958.5,0)"><use data-c="65" xlink:href="#MJX-TEX-N-65"></use><use data-c="78" xlink:href="#MJX-TEX-N-78" transform="translate(444,0)"></use><use data-c="70" xlink:href="#MJX-TEX-N-70" transform="translate(972,0)"></use></g><g data-mml-node="mo" transform="translate(10486.5,0)"><use data-c="2061" xlink:href="#MJX-TEX-N-2061"></use></g><g data-mml-node="mo" transform="translate(10486.5,0)"><use data-c="28" xlink:href="#MJX-TEX-N-28"></use></g><g data-mml-node="mo" transform="translate(10875.5,0)"><use data-c="2212" xlink:href="#MJX-TEX-N-2212"></use></g><g data-mml-node="mi" transform="translate(11653.5,0)"><use data-c="1D458" xlink:href="#MJX-TEX-I-1D458"></use></g><g data-mml-node="mi" transform="translate(12174.5,0)"><use data-c="1D467" xlink:href="#MJX-TEX-I-1D467"></use></g><g data-mml-node="mo" transform="translate(12639.5,0)"><use data-c="29" xlink:href="#MJX-TEX-N-29"></use></g></g></g></g></svg><svg data-labels="true" preserveAspectRatio="xMaxYMid" viewBox="1278 -801.8 1 1103.5"><g data-labels="true" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="mtd" id="mjx-eqn:1" transform="translate(0,801.8)"><text data-id-align="true"></text><g data-idbox="true" transform="translate(0,-750)"><g data-mml-node="mtext"><use data-c="28" xlink:href="#MJX-TEX-N-28"></use><use data-c="31" xlink:href="#MJX-TEX-N-31" transform="translate(389,0)"></use><use data-c="29" xlink:href="#MJX-TEX-N-29" transform="translate(889,0)"></use></g></g></g></g></svg></g></g></g></g></svg></mjx-container></span>
+Геометрический фактор можно найти по измеренной зависимости интенсивности света от источника без поглощения:
+<span class="eq-anchor" id="eq-2"><mjx-container class="MathJax" jax="SVG" display="true" width="full" style="min-width: 22.181ex;"><svg style="vertical-align: -2.172ex; min-width: 22.181ex;" xmlns="http://www.w3.org/2000/svg" width="100%" height="5.475ex" role="img" focusable="false" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(0.0181,-0.0181) translate(0, -1460)"><g data-mml-node="math"><g data-mml-node="mtable" transform="translate(2078,0) translate(-2078,0)"><g transform="translate(0 1460) matrix(1 0 0 -1 0 0) scale(55.25)"><svg data-table="true" preserveAspectRatio="xMidYMid" viewBox="2824.1 -1460 1 2420"><g transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="mlabeledtr"><g data-mml-node="mtd"><g data-mml-node="mi"><use data-c="1D454" xlink:href="#MJX-TEX-I-1D454"></use></g><g data-mml-node="mo" transform="translate(477,0)"><use data-c="28" xlink:href="#MJX-TEX-N-28"></use></g><g data-mml-node="mi" transform="translate(866,0)"><use data-c="1D467" xlink:href="#MJX-TEX-I-1D467"></use></g><g data-mml-node="mo" transform="translate(1331,0)"><use data-c="29" xlink:href="#MJX-TEX-N-29"></use></g><g data-mml-node="mo" transform="translate(1997.8,0)"><use data-c="3D" xlink:href="#MJX-TEX-N-3D"></use></g><g data-mml-node="mfrac" transform="translate(3053.6,0)"><g data-mml-node="mrow" transform="translate(237.5,710)"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D43C" xlink:href="#MJX-TEX-I-1D43C"></use></g><g data-mml-node="mn" transform="translate(473,-150) scale(0.707)"><use data-c="30" xlink:href="#MJX-TEX-N-30"></use></g></g><g data-mml-node="mo" transform="translate(876.6,0)"><use data-c="28" xlink:href="#MJX-TEX-N-28"></use></g><g data-mml-node="mi" transform="translate(1265.6,0)"><use data-c="1D467" xlink:href="#MJX-TEX-I-1D467"></use></g><g data-mml-node="mo" transform="translate(1730.6,0)"><use data-c="29" xlink:href="#MJX-TEX-N-29"></use></g></g><g data-mml-node="mrow" transform="translate(220,-710)"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D43C" xlink:href="#MJX-TEX-I-1D43C"></use></g><g data-mml-node="mn" transform="translate(473,-150) scale(0.707)"><use data-c="30" xlink:href="#MJX-TEX-N-30"></use></g></g><g data-mml-node="mo" transform="translate(876.6,0)"><use data-c="28" xlink:href="#MJX-TEX-N-28"></use></g><g data-mml-node="mn" transform="translate(1265.6,0)"><use data-c="30" xlink:href="#MJX-TEX-N-30"></use></g><g data-mml-node="mo" transform="translate(1765.6,0)"><use data-c="29" xlink:href="#MJX-TEX-N-29"></use></g></g><rect width="2354.6" height="60" x="120" y="220"></rect></g></g></g></g></svg><svg data-labels="true" preserveAspectRatio="xMaxYMid" viewBox="1278 -1460 1 2420"><g data-labels="true" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="mtd" id="mjx-eqn:2"><g data-mml-node="mtext"><use data-c="28" xlink:href="#MJX-TEX-N-28"></use><use data-c="32" xlink:href="#MJX-TEX-N-32" transform="translate(389,0)"></use><use data-c="29" xlink:href="#MJX-TEX-N-29" transform="translate(889,0)"></use></g></g></g></svg></g></g></g></g></svg></mjx-container></span>
+Зависимость (<a class="part-ref" href="#eq-1">1</a>) является линейной, если ее представить в полулогарифмическом масштабе
+<span class="eq-anchor" id="eq-3"><mjx-container class="MathJax" jax="SVG" display="true" width="full" style="min-width: 31.303ex;"><svg style="vertical-align: -2.29ex; min-width: 31.303ex;" xmlns="http://www.w3.org/2000/svg" width="100%" height="5.712ex" role="img" focusable="false" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(0.0181,-0.0181) translate(0, -1512.3)"><g data-mml-node="math"><g data-mml-node="mtable" transform="translate(2078,0) translate(-2078,0)"><g transform="translate(0 1512.3) matrix(1 0 0 -1 0 0) scale(55.25)"><svg data-table="true" preserveAspectRatio="xMidYMid" viewBox="4840.1 -1512.3 1 2524.7"><g transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="mlabeledtr" transform="translate(0,51.2)"><g data-mml-node="mtd"><g data-mml-node="mi"><use data-c="6C" xlink:href="#MJX-TEX-N-6C"></use><use data-c="6E" xlink:href="#MJX-TEX-N-6E" transform="translate(278,0)"></use></g><g data-mml-node="mo" transform="translate(834,0)"><use data-c="2061" xlink:href="#MJX-TEX-N-2061"></use></g><g data-mml-node="mfrac" transform="translate(1000.7,0)"><g data-mml-node="msub" transform="translate(1893.1,778.2)"><g data-mml-node="mi"><use data-c="1D43C" xlink:href="#MJX-TEX-I-1D43C"></use></g><g data-mml-node="TeXAtom" transform="translate(473,-176.7) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mtext"><text data-variant="normal"  font-size="884px" font-family="serif" transform="scale(1,-1)" textLength="1800" lengthAdjust="spacingAndGlyphs">люм</text></g></g></g><g data-mml-node="mrow" transform="translate(220,-710)"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D43C" xlink:href="#MJX-TEX-I-1D43C"></use></g><g data-mml-node="TeXAtom" transform="translate(473,-176.7) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mtext"><text data-variant="normal"  font-size="884px" font-family="serif" transform="scale(1,-1)" textLength="1800" lengthAdjust="spacingAndGlyphs">люм</text></g><g data-mml-node="mo" transform="translate(1800,0)"><use data-c="28" xlink:href="#MJX-TEX-N-28"></use></g><g data-mml-node="mn" transform="translate(2189,0)"><use data-c="30" xlink:href="#MJX-TEX-N-30"></use></g><g data-mml-node="mo" transform="translate(2689,0)"><use data-c="29" xlink:href="#MJX-TEX-N-29"></use></g></g></g><g data-mml-node="mo" transform="translate(2921.7,0)"><use data-c="22C5" xlink:href="#MJX-TEX-N-22C5"></use></g><g data-mml-node="mi" transform="translate(3421.9,0)"><use data-c="1D454" xlink:href="#MJX-TEX-I-1D454"></use></g><g data-mml-node="mo" transform="translate(3898.9,0)"><use data-c="28" xlink:href="#MJX-TEX-N-28"></use></g><g data-mml-node="mi" transform="translate(4287.9,0)"><use data-c="1D467" xlink:href="#MJX-TEX-I-1D467"></use></g><g data-mml-node="mo" transform="translate(4752.9,0)"><use data-c="29" xlink:href="#MJX-TEX-N-29"></use></g></g><rect width="5341.9" height="60" x="120" y="220"></rect></g><g data-mml-node="mo" transform="translate(6860.4,0)"><use data-c="3D" xlink:href="#MJX-TEX-N-3D"></use></g><g data-mml-node="mo" transform="translate(7916.1,0)"><use data-c="2212" xlink:href="#MJX-TEX-N-2212"></use></g><g data-mml-node="mi" transform="translate(8694.1,0)"><use data-c="1D458" xlink:href="#MJX-TEX-I-1D458"></use></g><g data-mml-node="mi" transform="translate(9215.1,0)"><use data-c="1D467" xlink:href="#MJX-TEX-I-1D467"></use></g></g></g></g></svg><svg data-labels="true" preserveAspectRatio="xMaxYMid" viewBox="1278 -1512.3 1 2524.7"><g data-labels="true" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="mtd" id="mjx-eqn:3" transform="translate(0,801.2)"><text data-id-align="true"></text><g data-idbox="true" transform="translate(0,-750)"><g data-mml-node="mtext"><use data-c="28" xlink:href="#MJX-TEX-N-28"></use><use data-c="33" xlink:href="#MJX-TEX-N-33" transform="translate(389,0)"></use><use data-c="29" xlink:href="#MJX-TEX-N-29" transform="translate(889,0)"></use></g></g></g></g></svg></g></g></g></g></svg></mjx-container></span></p>
+<p>На рисунке показан график этой зависимости.
+Видно, что начальный участок графика является линейным (как впрочем, и конечный). Коэффициент наклона графика дает значение коэффициента поглощения, который оказался равным <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.452ex;" xmlns="http://www.w3.org/2000/svg" width="13.544ex" height="2.597ex" role="img" focusable="false" viewBox="0 -948 5986.2 1148" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D458" xlink:href="#MJX-TEX-I-1D458"></use></g><g data-mml-node="mo" transform="translate(798.8,0)"><use data-c="2248" xlink:href="#MJX-TEX-N-2248"></use></g><g data-mml-node="mn" transform="translate(1854.6,0)"><use data-c="30" xlink:href="#MJX-TEX-N-30"></use></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(2354.6,0)"><g data-mml-node="mo"><use data-c="2C" xlink:href="#MJX-TEX-N-2C"></use></g></g><g data-mml-node="mn" transform="translate(2632.6,0)"><use data-c="30" xlink:href="#MJX-TEX-N-30"></use><use data-c="36" xlink:href="#MJX-TEX-N-36" transform="translate(500,0)"></use></g><g data-mml-node="mstyle" transform="translate(3632.6,0)"><g data-mml-node="mspace"></g></g><g data-mml-node="msup" transform="translate(3799.6,0)"><g data-mml-node="mtext"><text data-variant="normal"  font-size="884px" font-family="serif" transform="scale(1,-1)" textLength="1200" lengthAdjust="spacingAndGlyphs">мм</text></g><g data-mml-node="TeXAtom" transform="translate(1233,477.1) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mo"><use data-c="2212" xlink:href="#MJX-TEX-N-2212"></use></g><g data-mml-node="mn" transform="translate(778,0)"><use data-c="31" xlink:href="#MJX-TEX-N-31"></use></g></g></g></g></g></svg></mjx-container>.
+Погрешность данного коэффициента может быть оценена по методу наименьших квадратов.
+Нижнему участку графика доверия меньше, так как в этом диапазоне интенсивность люминесценции оказывается малой, поэтому существенную роль играю погрешности измерений (главным образом постоянная засветка).</p>
+<div class="fig-row"><figure class="md-fig" id="fig-1" style="--fig-w:100%;--fig-n:100"><a href="/problems/data/figures/2015-final-exp-11-2/fig1.png" title="Открыть рисунок в полном размере"><img src="/problems/data/figures/2015-final-exp-11-2/fig1.png" alt="" loading="lazy"></a></figure><figure class="md-fig" id="fig-2" style="--fig-w:64%;--fig-n:64"><a href="/problems/data/figures/2015-final-exp-11-2/fig2.png" title="Открыть рисунок в полном размере"><img src="/problems/data/figures/2015-final-exp-11-2/fig2.png" alt="" loading="lazy"></a></figure></div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="page-next">
+  <a class="btn btn-ghost" href="/problems/final/2015/11-e2/">← Условие</a>
+  
+</div>
+
+
+
+      
+
+<section class="src-orig" aria-label="Оригинальные документы олимпиады">
+  <h2 class="src-orig-h">Оригинал в архиве олимпиады</h2>
+  <ul class="src-orig-list">
+    
+    <li class="src-orig-item">
+      <a class="src-orig-link" href="/problems/final/2015_experimental_solutions.pdf#page=15">
+        <span class="src-orig-role">Решение</span>
+        <span class="src-orig-file">2015_experimental_solutions.pdf</span>
+      </a>
+      <span class="src-orig-pg">с.&nbsp;15</span>
+      
+    </li>
+    
+  </ul>
+</section>
+
+
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© 2026 BelPhO — Белорусские физические олимпиады</span>
+    <span class="footer-links">
+      <a href="/problems/">Задачи</a>
+      <a href="https://t.me/belpho_by" rel="noopener">Telegram</a>
+    </span>
+  </div>
+</footer>
+
+
+<script type="module" src="/js/site/problem-page.js"></script>
+
+</body>
+</html>
