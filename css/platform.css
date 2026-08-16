@@ -699,6 +699,11 @@ a { color: var(--primary-color); }
   padding: 4px 2px 3px;
   line-height: 1.45;
 }
+/* The SECOND label of a two-panel image (lib/mdRender.js foldCaptions): the
+   asset holds both diagrams, so both labels belong on its caption line, set
+   apart from each other rather than stacked as two stray paragraphs below a
+   picture that no longer has anything to do with them. */
+.md-fig figcaption .figcap-2 { display: inline-block; margin-left: 2.2em; }
 
 /* Two or more figures the paper printed side by side (build.js layoutFigures
    groups any adjacent run). Each keeps its own --fig-n, so the 56% graph stays
@@ -805,7 +810,17 @@ a { color: var(--primary-color); }
   margin-bottom: 8px;
 }
 
-.footnotes-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.footnotes-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  /* <ol>'s own 40px inline start padding, which `list-style:none` does not
+     remove; the marker column below replaces it. */
+  padding-left: 0;
+  margin: 0;
+  min-width: 0;
+}
 
 .footnote-item {
   display: flex;
@@ -818,8 +833,22 @@ a { color: var(--primary-color); }
 }
 .footnote-marker { flex-shrink: 0; font-weight: 600; }
 
-.footnote-body { flex: 1; min-width: 0; }
+/* A note carries formulas — «символ $\tau$, чтобы не путать с температурой» —
+   and half of the corpus's footnotes are the author explaining a symbol. The
+   note's `<p>` is inline, so a wide `mjx-container` inside it had no block box
+   to be clamped against and pushed the WHOLE PAGE sideways: with the notes
+   rendering for the first time this was the single largest remaining cause of
+   horizontal scroll at 390px. The formula scrolls inside the note instead. */
+.footnote-body {
+  flex: 1 1 auto;
+  min-width: 0;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-wrap: anywhere;
+}
 .footnote-body p { display: inline; margin: 0; }
+.footnote-body mjx-container { max-width: 100%; }
+.footnote-body mjx-container[display="true"] { display: inline-block; margin: 0 !important; }
 
 .fn-back {
   flex-shrink: 0;
@@ -1610,6 +1639,7 @@ mjx-container[display="true"]::-webkit-scrollbar-track { background: transparent
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  min-width: 0;               /* a grid item's automatic minimum is min-content */
   gap: 4px 8px;
   margin-top: 4px;
   font-size: 12px;
@@ -1626,13 +1656,27 @@ mjx-container[display="true"]::-webkit-scrollbar-track { background: transparent
 }
 .pr-meta > .pr-tag + .pr-tag::before, .pr-meta > span + .pr-tag::before { content: none; margin: 0; }
 
+/* The chip carries a full taxonomy label — «Кинематические связи: нити, блоки,
+   поршни и жёсткие механизмы» is 52 characters and 430px wide. `nowrap` made
+   that its MINIMUM width: as a flex item its automatic minimum is its
+   min-content size, so the row could not shrink. Honest measurement: on the
+   compact recommendation card `.pr-meta` clips its overflow, so this was NOT
+   what made 47 pages scroll sideways (the footnotes block was — see below);
+   removing it changed the page count by one. It is kept because an
+   unshrinkable flex item is a standing overflow hazard in every list where
+   `.pr-meta` does NOT clip, and because a chip that wraps beats a chip sliced
+   mid-word: «Кинематические связи: нити, бло». With `flex: 0 1 auto` it still
+   sits on one line wherever there is room. */
 .pr-tag {
   padding: 1px 8px;
   border-radius: 999px;
   background: var(--bg-color);
   border: 1px solid var(--border-color);
   font-size: 11.5px;
-  white-space: nowrap;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .pr-right {
@@ -2646,6 +2690,15 @@ p.notice em, p.notice strong { font-style: normal; font-weight: 700; }
 @media (max-width: 480px) {
   .md-frame, p.notice { padding: 9px 11px; }
 }
+
+/* A standing instruction the paper CENTRES but does not box — «Расчет
+   погрешностей в данной работе не требуется!», «Включайте цепь только во время
+   проведения измерений!». lib/mdRender.js markCentred marks them. Centring and
+   nothing else: the emphasis is the source's own, and the ruled box above stays
+   reserved for the «Внимание…» blocks the paper really does frame, so this can
+   never read as a second frame style. Inside a frame the frame centres already
+   and this is a no-op. */
+p.md-center { text-align: center; }
 
 /* ---------------------------------------------- originals in the archive */
 

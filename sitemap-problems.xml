@@ -2221,6 +2221,16 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://belpho.org/problems/final/2000/11-4/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/final/2000/11-4/solution/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://belpho.org/problems/final/2000/9-1/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
@@ -2962,6 +2972,16 @@
   </url>
   <url>
     <loc>https://belpho.org/problems/final/2004/11-2/solution/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/final/2004/11-3/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/final/2004/11-3/solution/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -3946,6 +3966,21 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://belpho.org/problems/final/2010/10-e2/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/final/2010/10-e2/hints/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/final/2010/10-e2/solution/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://belpho.org/problems/final/2010/11-1/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
@@ -3992,6 +4027,21 @@
   </url>
   <url>
     <loc>https://belpho.org/problems/final/2010/11-e1/solution/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/final/2010/11-e2/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/final/2010/11-e2/hints/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/final/2010/11-e2/solution/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -4057,6 +4107,16 @@
   </url>
   <url>
     <loc>https://belpho.org/problems/final/2010/9-e1/solution/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/final/2010/9-e2/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/final/2010/9-e2/solution/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -4761,6 +4821,16 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://belpho.org/problems/final/2013/11-e2/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/final/2013/11-e2/solution/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://belpho.org/problems/final/2013/9-1/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
@@ -5287,6 +5357,26 @@
   </url>
   <url>
     <loc>https://belpho.org/problems/final/2015/11-3/solution/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/final/2015/11-e1/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/final/2015/11-e1/solution/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/final/2015/11-e2/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/final/2015/11-e2/solution/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -6737,6 +6827,21 @@
   </url>
   <url>
     <loc>https://belpho.org/problems/final/2021/9-e2/solution/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/final/2021/9-e3/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/final/2021/9-e3/hints/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/final/2021/9-e3/solution/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -8627,6 +8732,16 @@
   </url>
   <url>
     <loc>https://belpho.org/problems/third/2001/9-2/solution/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/third/2001/9-3/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/third/2001/9-3/solution/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -10526,6 +10641,26 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://belpho.org/problems/third/2012/10-e1/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/third/2012/10-e1/solution/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/third/2012/10-e2/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/third/2012/10-e2/solution/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://belpho.org/problems/third/2012/11-1/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
@@ -10552,6 +10687,16 @@
   </url>
   <url>
     <loc>https://belpho.org/problems/third/2012/11-2/solution/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/third/2012/11-e1/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/third/2012/11-e1/solution/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -10612,6 +10757,16 @@
   </url>
   <url>
     <loc>https://belpho.org/problems/third/2012/9-3/solution/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/third/2012/9-e1/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/third/2012/9-e1/solution/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -11357,6 +11512,16 @@
   </url>
   <url>
     <loc>https://belpho.org/problems/third/2015/10-e2/solution/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/third/2015/11-1/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/third/2015/11-1/solution/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -12612,6 +12777,36 @@
   </url>
   <url>
     <loc>https://belpho.org/problems/third/2020/10-2/solution/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/third/2020/10-3-v1/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/third/2020/10-3-v1/edu/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/third/2020/10-3-v2/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/third/2020/10-3-v2/edu/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/third/2020/10-3/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/third/2020/10-3/solution/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -14097,6 +14292,141 @@
   </url>
   <url>
     <loc>https://belpho.org/problems/third/2024/9-e2/solution/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/third/2025/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/third/2025/10-1/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/third/2025/10-1/solution/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/third/2025/10-2/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/third/2025/10-2/solution/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/third/2025/10-3/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/third/2025/10-3/solution/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/third/2025/10-e1/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/third/2025/10-e1/solution/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/third/2025/10-e2/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/third/2025/10-e2/solution/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/third/2025/11-1/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/third/2025/11-1/solution/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/third/2025/11-2/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/third/2025/11-2/solution/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/third/2025/11-e1/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/third/2025/11-e1/solution/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/third/2025/9-1/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/third/2025/9-1/solution/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/third/2025/9-2/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/third/2025/9-2/solution/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/third/2025/9-3/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/third/2025/9-3/solution/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/third/2025/9-e1/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/third/2025/9-e1/solution/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/third/2025/9-e2/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://belpho.org/problems/third/2025/9-e2/solution/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>

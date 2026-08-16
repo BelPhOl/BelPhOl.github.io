@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="236.50pt" height="173.10pt" viewBox="0 0 236.50 173.10">
+<defs><clipPath id="figbox"><rect x="0" y="0" width="236.50" height="173.10"/></clipPath></defs>
+<g clip-path="url(#figbox)">
+<path d="M19.79,136.23 L222.85,136.23 M19.79,122.91 L222.85,122.91 M19.79,109.59 L222.85,109.59 M19.79,96.64 L222.85,96.64 M19.79,83.32 L222.85,83.32 M19.79,69.99 L222.85,69.99 M19.79,56.67 L222.85,56.67 M19.79,43.35 L222.85,43.35 M19.79,30.15 L222.85,30.15" fill="none" stroke="#7f7f7f" stroke-width="0.500" stroke-linecap="butt" stroke-linejoin="round" stroke-dasharray="1.5,.5" stroke-dashoffset="0.00"/>
+<path d="M42.18,30.15 L42.18,149.52 M64.86,30.15 L64.86,149.52 M87.54,30.15 L87.54,149.52 M109.86,30.15 L109.86,149.52 M132.54,30.15 L132.54,149.52 M155.22,30.15 L155.22,149.52 M177.90,30.15 L177.90,149.52 M200.22,30.15 L200.22,149.52 M222.85,30.15 L222.85,149.52" fill="none" stroke="#7f7f7f" stroke-width="0.750" stroke-linecap="butt" stroke-linejoin="round" stroke-dasharray="2.25,.75" stroke-dashoffset="0.00"/>
+<path d="M19.15,149.52 L19.15,36.15 L20.40,36.15 L20.40,149.52 L19.15,149.52 M19.79,36.15 L17.79,40.15 L19.79,30.15 L21.79,40.15 L19.79,36.15" fill="#000000" stroke="none"/>
+<path d="M19.79,148.90 L19.79,150.15 L216.85,150.15 L216.85,148.90 Z M216.85,149.52 L212.85,147.52 L222.85,149.52 L212.85,151.52 L216.85,149.52" fill="#000000" stroke="none"/>
+<path d="M19.79,43.40 C23.55,49.62 27.31,56.26 31.07,62.05 C34.83,67.86 38.59,73.26 42.35,78.22 C46.11,83.21 49.87,87.77 53.62,91.90 C57.39,96.05 61.15,99.78 64.90,103.09 C68.67,106.41 72.43,109.32 76.20,111.80 C79.96,114.29 83.72,116.36 87.48,118.02 C91.24,119.68 95.00,120.92 98.76,121.76 C102.52,122.58 106.28,122.99 110.04,122.99 C113.80,122.99 117.56,122.58 121.32,121.76 C125.08,120.92 128.84,119.68 132.60,118.02 C136.36,116.36 140.12,114.29 143.88,111.80 C147.64,109.32 151.40,106.41 155.15,103.09 C158.92,99.78 162.68,96.05 166.43,91.90 C170.20,87.77 173.97,83.21 177.73,78.22 C181.49,73.26 185.24,67.86 189.01,62.05 C192.77,56.26 196.53,49.62 200.29,43.40" fill="none" stroke="#000000" stroke-width="0.360" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M20.36,43.21 C20.36,43.71 19.96,44.11 19.46,44.11 C18.96,44.11 18.56,43.71 18.56,43.21 C18.56,42.71 18.96,42.32 19.46,42.32 C19.96,42.32 20.36,42.71 20.36,43.21" fill="#7f7f7f" stroke="#000000" stroke-width="0.360" stroke-linecap="square" stroke-linejoin="round"/>
+<path d="M31.88,61.58 C31.88,62.08 31.48,62.47 30.98,62.47 C30.48,62.47 30.08,62.08 30.08,61.58 C30.08,61.08 30.48,60.67 30.98,60.67 C31.48,60.67 31.88,61.08 31.88,61.58" fill="#7f7f7f" stroke="#000000" stroke-width="0.360" stroke-linecap="square" stroke-linejoin="round"/>
+<path d="M43.04,77.77 C43.04,78.27 42.64,78.67 42.14,78.67 C41.64,78.67 41.24,78.27 41.24,77.77 C41.24,77.27 41.64,76.88 42.14,76.88 C42.64,76.88 43.04,77.27 43.04,77.77" fill="#7f7f7f" stroke="#000000" stroke-width="0.360" stroke-linecap="square" stroke-linejoin="round"/>
+<path d="M54.20,91.46 C54.20,91.96 53.80,92.35 53.30,92.35 C52.80,92.35 52.40,91.96 52.40,91.46 C52.40,90.96 52.80,90.55 53.30,90.55 C53.80,90.55 54.20,90.96 54.20,91.46" fill="#7f7f7f" stroke="#000000" stroke-width="0.360" stroke-linecap="square" stroke-linejoin="round"/>
+<path d="M65.72,102.61 C65.72,103.11 65.32,103.52 64.82,103.52 C64.32,103.52 63.92,103.11 63.92,102.61 C63.92,102.11 64.32,101.71 64.82,101.71 C65.32,101.71 65.72,102.11 65.72,102.61" fill="#7f7f7f" stroke="#000000" stroke-width="0.360" stroke-linecap="square" stroke-linejoin="round"/>
+<path d="M76.88,111.61 C76.88,112.11 76.48,112.52 75.98,112.52 C75.48,112.52 75.08,112.11 75.08,111.61 C75.08,111.11 75.48,110.71 75.98,110.71 C76.48,110.71 76.88,111.11 76.88,111.61" fill="#7f7f7f" stroke="#000000" stroke-width="0.360" stroke-linecap="square" stroke-linejoin="round"/>
+<path d="M88.04,117.73 C88.04,118.23 87.64,118.64 87.14,118.64 C86.64,118.64 86.24,118.23 86.24,117.73 C86.24,117.23 86.64,116.83 87.14,116.83 C87.64,116.83 88.04,117.23 88.04,117.73" fill="#7f7f7f" stroke="#000000" stroke-width="0.360" stroke-linecap="square" stroke-linejoin="round"/>
+<path d="M99.56,121.33 C99.56,121.83 99.15,122.23 98.65,122.23 C98.15,122.23 97.76,121.83 97.76,121.33 C97.76,120.83 98.15,120.43 98.65,120.43 C99.15,120.43 99.56,120.83 99.56,121.33" fill="#7f7f7f" stroke="#000000" stroke-width="0.360" stroke-linecap="square" stroke-linejoin="round"/>
+<path d="M110.72,122.77 C110.72,123.27 110.32,123.67 109.82,123.67 C109.32,123.67 108.92,123.27 108.92,122.77 C108.92,122.27 109.32,121.88 109.82,121.88 C110.32,121.88 110.72,122.27 110.72,122.77" fill="#7f7f7f" stroke="#000000" stroke-width="0.360" stroke-linecap="square" stroke-linejoin="round"/>
+<path d="M121.88,121.33 C121.88,121.83 121.48,122.23 120.98,122.23 C120.48,122.23 120.08,121.83 120.08,121.33 C120.08,120.83 120.48,120.43 120.98,120.43 C121.48,120.43 121.88,120.83 121.88,121.33" fill="#7f7f7f" stroke="#000000" stroke-width="0.360" stroke-linecap="square" stroke-linejoin="round"/>
+<path d="M133.40,117.73 C133.40,118.23 133.00,118.64 132.50,118.64 C132.00,118.64 131.60,118.23 131.60,117.73 C131.60,117.23 132.00,116.83 132.50,116.83 C133.00,116.83 133.40,117.23 133.40,117.73" fill="#7f7f7f" stroke="#000000" stroke-width="0.360" stroke-linecap="square" stroke-linejoin="round"/>
+<path d="M144.56,111.61 C144.56,112.11 144.15,112.52 143.65,112.52 C143.15,112.52 142.76,112.11 142.76,111.61 C142.76,111.11 143.15,110.71 143.65,110.71 C144.15,110.71 144.56,111.11 144.56,111.61" fill="#7f7f7f" stroke="#000000" stroke-width="0.360" stroke-linecap="square" stroke-linejoin="round"/>
+<path d="M155.72,102.61 C155.72,103.11 155.32,103.52 154.82,103.52 C154.32,103.52 153.92,103.11 153.92,102.61 C153.92,102.11 154.32,101.71 154.82,101.71 C155.32,101.71 155.72,102.11 155.72,102.61" fill="#7f7f7f" stroke="#000000" stroke-width="0.360" stroke-linecap="square" stroke-linejoin="round"/>
+<path d="M167.24,91.46 C167.24,91.96 166.84,92.35 166.34,92.35 C165.84,92.35 165.43,91.96 165.43,91.46 C165.43,90.96 165.84,90.55 166.34,90.55 C166.84,90.55 167.24,90.96 167.24,91.46" fill="#7f7f7f" stroke="#000000" stroke-width="0.360" stroke-linecap="square" stroke-linejoin="round"/>
+<path d="M178.40,77.77 C178.40,78.27 178.00,78.67 177.50,78.67 C177.00,78.67 176.60,78.27 176.60,77.77 C176.60,77.27 177.00,76.88 177.50,76.88 C178.00,76.88 178.40,77.27 178.40,77.77" fill="#7f7f7f" stroke="#000000" stroke-width="0.360" stroke-linecap="square" stroke-linejoin="round"/>
+<path d="M189.55,61.58 C189.55,62.08 189.16,62.47 188.66,62.47 C188.16,62.47 187.76,62.08 187.76,61.58 C187.76,61.08 188.16,60.67 188.66,60.67 C189.16,60.67 189.55,61.08 189.55,61.58" fill="#7f7f7f" stroke="#000000" stroke-width="0.360" stroke-linecap="square" stroke-linejoin="round"/>
+<path d="M201.08,43.21 C201.08,43.71 200.67,44.11 200.17,44.11 C199.67,44.11 199.28,43.71 199.28,43.21 C199.28,42.71 199.67,42.32 200.17,42.32 C200.67,42.32 201.08,42.71 201.08,43.21" fill="#7f7f7f" stroke="#000000" stroke-width="0.360" stroke-linecap="square" stroke-linejoin="round"/>
+<path d="M0.38,0.38 L236.12,0.38 L236.12,172.72 L0.38,172.72 Z" fill="none" stroke="#868686" stroke-width="0.750" stroke-linecap="butt" stroke-linejoin="round"/>
+<text x="7.09" y="152.32" font-family="Arial, Helvetica, sans-serif" font-size="9.00" fill="#595959">0</text>
+<text x="7.09" y="139.04" font-family="Arial, Helvetica, sans-serif" font-size="9.00" fill="#595959">1</text>
+<text x="7.09" y="125.77" font-family="Arial, Helvetica, sans-serif" font-size="9.00" fill="#595959">2</text>
+<text x="7.09" y="112.49" font-family="Arial, Helvetica, sans-serif" font-size="9.00" fill="#595959">3</text>
+<text x="7.09" y="99.22" font-family="Arial, Helvetica, sans-serif" font-size="9.00" fill="#595959">4</text>
+<text x="7.09" y="85.96" font-family="Arial, Helvetica, sans-serif" font-size="9.00" fill="#595959">5</text>
+<text x="7.09" y="72.68" font-family="Arial, Helvetica, sans-serif" font-size="9.00" fill="#595959">6</text>
+<text x="7.09" y="59.41" font-family="Arial, Helvetica, sans-serif" font-size="9.00" fill="#595959">7</text>
+<text x="7.09" y="46.14" font-family="Arial, Helvetica, sans-serif" font-size="9.00" fill="#595959">8</text>
+<text x="7.09" y="32.86" font-family="Arial, Helvetica, sans-serif" font-size="9.00" fill="#595959">9</text>
+<text x="17.72" y="164.02" font-family="Arial, Helvetica, sans-serif" font-size="9.00" fill="#595959">0</text>
+<text x="40.31" y="164.02" font-family="Arial, Helvetica, sans-serif" font-size="9.00" fill="#595959">1</text>
+<text x="62.87" y="164.02" font-family="Arial, Helvetica, sans-serif" font-size="9.00" fill="#595959">2</text>
+<text x="85.45" y="164.02" font-family="Arial, Helvetica, sans-serif" font-size="9.00" fill="#595959">3</text>
+<text x="108.04" y="164.02" font-family="Arial, Helvetica, sans-serif" font-size="9.00" fill="#595959">4</text>
+<text x="130.60" y="164.02" font-family="Arial, Helvetica, sans-serif" font-size="9.00" fill="#595959">5</text>
+<text x="153.18" y="164.02" font-family="Arial, Helvetica, sans-serif" font-size="9.00" fill="#595959">6</text>
+<text x="175.76" y="164.02" font-family="Arial, Helvetica, sans-serif" font-size="9.00" fill="#595959">7</text>
+<text x="198.32" y="164.02" font-family="Arial, Helvetica, sans-serif" font-size="9.00" fill="#595959">8</text>
+<text x="220.91" y="164.02" font-family="Arial, Helvetica, sans-serif" font-size="9.00" fill="#595959">9</text>
+<text x="200.23" y="18.57" font-family="Arial, Helvetica, sans-serif" font-size="7.92" fill="#000000">Рис. 10</text>
+<text x="18.92" y="25.65" font-family="'Times New Roman', serif" font-size="11.16" fill="#000000">𝐸</text>
+<text x="25.04" y="27.80" font-family="'Times New Roman', serif" font-size="8.28" fill="#000000">к</text>
+<text x="30.11" y="25.65" font-family="'Times New Roman', serif" font-size="11.16" fill="#000000">/𝐸</text>
+<text x="41.62" y="27.80" font-family="'Times New Roman', serif" font-size="8.28" fill="#000000">0</text>
+<text x="202.07" y="142.82" font-family="'Times New Roman', serif" font-size="11.18" fill="#000000">𝑙/𝑙</text>
+<text x="214.67" y="144.99" font-family="'Times New Roman', serif" font-size="8.28" fill="#000000">0</text>
+<text x="105.12" y="135.45" font-family="'Times New Roman', serif" font-size="12.96" font-style="italic" fill="#000000">B</text>
+<text x="24.01" y="45.21" font-family="'Times New Roman', serif" font-size="12.96" font-style="italic" fill="#000000">A</text>
+<text x="190.42" y="41.15" font-family="'Times New Roman', serif" font-size="12.96" font-style="italic" fill="#000000">C</text>
+</g>
+</svg>

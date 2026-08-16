@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Экспериментальная задача 11-1 — решение — BelPhO</title>
+  <meta name="description" content="Экспериментальная задача 11-1 — Городская олимпиада (3-й этап) 2012, 11 класс, задача Э1. Подробное решение с ответами.">
+  <link rel="canonical" href="https://belpho.org/problems/third/2012/11-e1/solution/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BelPhO">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:url" content="https://belpho.org/problems/third/2012/11-e1/solution/">
+  <meta property="og:title" content="Экспериментальная задача 11-1 — решение — BelPhO">
+  <meta property="og:description" content="Экспериментальная задача 11-1 — Городская олимпиада (3-й этап) 2012, 11 класс, задача Э1. Подробное решение с ответами.">
+  
+  <meta property="og:image" content="https://belpho.org/problems/thumbs/og/third-2012.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/css/platform.css">
+  
+  
+</head>
+<body>
+<svg id="mjx-glyph-cache" aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden"><defs><path id="MJX-TEX-I-1D439" d="M48 1Q31 1 31 11Q31 13 34 25Q38 41 42 43T65 46Q92 46 125 49Q139 52 144 61Q146 66 215 342T285 622Q285 629 281 629Q273 632 228 634H197Q191 640 191 642T193 659Q197 676 203 680H742Q749 676 749 669Q749 664 736 557T722 447Q720 440 702 440H690Q683 445 683 453Q683 454 686 477T689 530Q689 560 682 579T663 610T626 626T575 633T503 634H480Q398 633 393 631Q388 629 386 623Q385 622 352 492L320 363H375Q378 363 398 363T426 364T448 367T472 374T489 386Q502 398 511 419T524 457T529 475Q532 480 548 480H560Q567 475 567 470Q567 467 536 339T502 207Q500 200 482 200H470Q463 206 463 212Q463 215 468 234T473 274Q473 303 453 310T364 317H309L277 190Q245 66 245 60Q245 46 334 46H359Q365 40 365 39T363 19Q359 6 353 0H336Q295 2 185 2Q120 2 86 2T48 1Z"></path><path id="MJX-TEX-I-1D459" d="M117 59Q117 26 142 26Q179 26 205 131Q211 151 215 152Q217 153 225 153H229Q238 153 241 153T246 151T248 144Q247 138 245 128T234 90T214 43T183 6T137 -11Q101 -11 70 11T38 85Q38 97 39 102L104 360Q167 615 167 623Q167 626 166 628T162 632T157 634T149 635T141 636T132 637T122 637Q112 637 109 637T101 638T95 641T94 647Q94 649 96 661Q101 680 107 682T179 688Q194 689 213 690T243 693T254 694Q266 694 266 686Q266 675 193 386T118 83Q118 81 118 75T117 65V59Z"></path><path id="MJX-TEX-N-63" d="M370 305T349 305T313 320T297 358Q297 381 312 396Q317 401 317 402T307 404Q281 408 258 408Q209 408 178 376Q131 329 131 219Q131 137 162 90Q203 29 272 29Q313 29 338 55T374 117Q376 125 379 127T395 129H409Q415 123 415 120Q415 116 411 104T395 71T366 33T318 2T249 -11Q163 -11 99 53T34 214Q34 318 99 383T250 448T370 421T404 357Q404 334 387 320Z"></path><path id="MJX-TEX-N-6F" d="M28 214Q28 309 93 378T250 448Q340 448 405 380T471 215Q471 120 407 55T250 -10Q153 -10 91 57T28 214ZM250 30Q372 30 372 193V225V250Q372 272 371 288T364 326T348 362T317 390T268 410Q263 411 252 411Q222 411 195 399Q152 377 139 338T126 246V226Q126 130 145 91Q177 30 250 30Z"></path><path id="MJX-TEX-N-73" d="M295 316Q295 356 268 385T190 414Q154 414 128 401Q98 382 98 349Q97 344 98 336T114 312T157 287Q175 282 201 278T245 269T277 256Q294 248 310 236T342 195T359 133Q359 71 321 31T198 -10H190Q138 -10 94 26L86 19L77 10Q71 4 65 -1L54 -11H46H42Q39 -11 33 -5V74V132Q33 153 35 157T45 162H54Q66 162 70 158T75 146T82 119T101 77Q136 26 198 26Q295 26 295 104Q295 133 277 151Q257 175 194 187T111 210Q75 227 54 256T33 318Q33 357 50 384T93 424T143 442T187 447H198Q238 447 268 432L283 424L292 431Q302 440 314 448H322H326Q329 448 335 442V310L329 304H301Q295 310 295 316Z"></path><path id="MJX-TEX-N-2061" d=""></path><path id="MJX-TEX-N-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path><path id="MJX-TEX-I-1D6FC" d="M34 156Q34 270 120 356T309 442Q379 442 421 402T478 304Q484 275 485 237V208Q534 282 560 374Q564 388 566 390T582 393Q603 393 603 385Q603 376 594 346T558 261T497 161L486 147L487 123Q489 67 495 47T514 26Q528 28 540 37T557 60Q559 67 562 68T577 70Q597 70 597 62Q597 56 591 43Q579 19 556 5T512 -10H505Q438 -10 414 62L411 69L400 61Q390 53 370 41T325 18T267 -2T203 -11Q124 -11 79 39T34 156ZM208 26Q257 26 306 47T379 90L403 112Q401 255 396 290Q382 405 304 405Q235 405 183 332Q156 292 139 224T121 120Q121 71 146 49T208 26Z"></path><path id="MJX-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJX-TEX-N-2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path><path id="MJX-TEX-I-1D711" d="M92 210Q92 176 106 149T142 108T185 85T220 72L235 70L237 71L250 112Q268 170 283 211T322 299T370 375T429 423T502 442Q547 442 582 410T618 302Q618 224 575 152T457 35T299 -10Q273 -10 273 -12L266 -48Q260 -83 252 -125T241 -179Q236 -203 215 -212Q204 -218 190 -218Q159 -215 159 -185Q159 -175 214 -2L209 0Q204 2 195 5T173 14T147 28T120 46T94 71T71 103T56 142T50 190Q50 238 76 311T149 431H162Q183 431 183 423Q183 417 175 409Q134 361 114 300T92 210ZM574 278Q574 320 550 344T486 369Q437 369 394 329T323 218Q309 184 295 109L286 64Q304 62 306 62Q423 62 498 131T574 278Z"></path><path id="MJX-TEX-N-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path><path id="MJX-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-TEX-I-1D440" d="M289 629Q289 635 232 637Q208 637 201 638T194 648Q194 649 196 659Q197 662 198 666T199 671T201 676T203 679T207 681T212 683T220 683T232 684Q238 684 262 684T307 683Q386 683 398 683T414 678Q415 674 451 396L487 117L510 154Q534 190 574 254T662 394Q837 673 839 675Q840 676 842 678T846 681L852 683H948Q965 683 988 683T1017 684Q1051 684 1051 673Q1051 668 1048 656T1045 643Q1041 637 1008 637Q968 636 957 634T939 623Q936 618 867 340T797 59Q797 55 798 54T805 50T822 48T855 46H886Q892 37 892 35Q892 19 885 5Q880 0 869 0Q864 0 828 1T736 2Q675 2 644 2T609 1Q592 1 592 11Q592 13 594 25Q598 41 602 43T625 46Q652 46 685 49Q699 52 704 61Q706 65 742 207T813 490T848 631L654 322Q458 10 453 5Q451 4 449 3Q444 0 433 0Q418 0 415 7Q413 11 374 317L335 624L267 354Q200 88 200 79Q206 46 272 46H282Q288 41 289 37T286 19Q282 3 278 1Q274 0 267 0Q265 0 255 0T221 1T157 2Q127 2 95 1T58 0Q43 0 39 2T35 11Q35 13 38 25T43 40Q45 46 65 46Q135 46 154 86Q158 92 223 354T289 629Z"></path><path id="MJX-TEX-I-1D44E" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path><path id="MJX-TEX-N-69" d="M69 609Q69 637 87 653T131 669Q154 667 171 652T188 609Q188 579 171 564T129 549Q104 549 87 564T69 609ZM247 0Q232 3 143 3Q132 3 106 3T56 1L34 0H26V46H42Q70 46 91 49Q100 53 102 60T104 102V205V293Q104 345 102 359T88 378Q74 385 41 385H30V408Q30 431 32 431L42 432Q52 433 70 434T106 436Q123 437 142 438T171 441T182 442H185V62Q190 52 197 50T232 46H255V0H247Z"></path><path id="MJX-TEX-N-6E" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q450 438 463 329Q464 322 464 190V104Q464 66 466 59T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z"></path><path id="MJX-TEX-I-1D707" d="M58 -216Q44 -216 34 -208T23 -186Q23 -176 96 116T173 414Q186 442 219 442Q231 441 239 435T249 423T251 413Q251 401 220 279T187 142Q185 131 185 107V99Q185 26 252 26Q261 26 270 27T287 31T302 38T315 45T327 55T338 65T348 77T356 88T365 100L372 110L408 253Q444 395 448 404Q461 431 491 431Q504 431 512 424T523 412T525 402L449 84Q448 79 448 68Q448 43 455 35T476 26Q485 27 496 35Q517 55 537 131Q543 151 547 152Q549 153 557 153H561Q580 153 580 144Q580 138 575 117T555 63T523 13Q510 0 491 -8Q483 -10 467 -10Q446 -10 429 -4T402 11T385 29T376 44T374 51L368 45Q362 39 350 30T324 12T288 -4T246 -11Q199 -11 153 12L129 -85Q108 -167 104 -180T92 -202Q76 -216 58 -216Z"></path><path id="MJX-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-TEX-N-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path><path id="MJX-TEX-N-22C5" d="M78 250Q78 274 95 292T138 310Q162 310 180 294T199 251Q199 226 182 208T139 190T96 207T78 250Z"></path><path id="MJX-TEX-I-1D450" d="M34 159Q34 268 120 355T306 442Q362 442 394 418T427 355Q427 326 408 306T360 285Q341 285 330 295T319 325T330 359T352 380T366 386H367Q367 388 361 392T340 400T306 404Q276 404 249 390Q228 381 206 359Q162 315 142 235T121 119Q121 73 147 50Q169 26 205 26H209Q321 26 394 111Q403 121 406 121Q410 121 419 112T429 98T420 83T391 55T346 25T282 0T202 -11Q127 -11 81 37T34 159Z"></path><path id="MJX-TEX-I-1D461" d="M26 385Q19 392 19 395Q19 399 22 411T27 425Q29 430 36 430T87 431H140L159 511Q162 522 166 540T173 566T179 586T187 603T197 615T211 624T229 626Q247 625 254 615T261 596Q261 589 252 549T232 470L222 433Q222 431 272 431H323Q330 424 330 420Q330 398 317 385H210L174 240Q135 80 135 68Q135 26 162 26Q197 26 230 60T283 144Q285 150 288 151T303 153H307Q322 153 322 145Q322 142 319 133Q314 117 301 95T267 48T216 6T155 -11Q125 -11 98 4T59 56Q57 64 57 83V101L92 241Q127 382 128 383Q128 385 77 385H26Z"></path><path id="MJX-TEX-I-1D454" d="M311 43Q296 30 267 15T206 0Q143 0 105 45T66 160Q66 265 143 353T314 442Q361 442 401 394L404 398Q406 401 409 404T418 412T431 419T447 422Q461 422 470 413T480 394Q480 379 423 152T363 -80Q345 -134 286 -169T151 -205Q10 -205 10 -137Q10 -111 28 -91T74 -71Q89 -71 102 -80T116 -111Q116 -121 114 -130T107 -144T99 -154T92 -162L90 -164H91Q101 -167 151 -167Q189 -167 211 -155Q234 -144 254 -122T282 -75Q288 -56 298 -13Q311 35 311 43ZM384 328L380 339Q377 350 375 354T369 368T359 382T346 393T328 402T306 405Q262 405 221 352Q191 313 171 233T151 117Q151 38 213 38Q269 38 323 108L331 118L384 328Z"></path><path id="MJX-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJX-TEX-I-1D441" d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z"></path><path id="MJX-TEX-N-33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path><path id="MJX-TEX-N-394" d="M51 0Q46 4 46 7Q46 9 215 357T388 709Q391 716 416 716Q439 716 444 709Q447 705 616 357T786 7Q786 4 781 0H51ZM507 344L384 596L137 92L383 91H630Q630 93 507 344Z"></path><path id="MJX-TEX-I-1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path><path id="MJX-TEX-N-2E" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z"></path><path id="MJX-TEX-N-34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"></path><path id="MJX-TEX-N-74" d="M27 422Q80 426 109 478T141 600V615H181V431H316V385H181V241Q182 116 182 100T189 68Q203 29 238 29Q282 29 292 100Q293 108 293 146V181H333V146V134Q333 57 291 17Q264 -10 221 -10Q187 -10 162 2T124 33T105 68T98 100Q97 107 97 248V385H18V422H27Z"></path><path id="MJX-TEX-N-67" d="M329 409Q373 453 429 453Q459 453 472 434T485 396Q485 382 476 371T449 360Q416 360 412 390Q410 404 415 411Q415 412 416 414V415Q388 412 363 393Q355 388 355 386Q355 385 359 381T368 369T379 351T388 325T392 292Q392 230 343 187T222 143Q172 143 123 171Q112 153 112 133Q112 98 138 81Q147 75 155 75T227 73Q311 72 335 67Q396 58 431 26Q470 -13 470 -72Q470 -139 392 -175Q332 -206 250 -206Q167 -206 107 -175Q29 -140 29 -75Q29 -39 50 -15T92 18L103 24Q67 55 67 108Q67 155 96 193Q52 237 52 292Q52 355 102 398T223 442Q274 442 318 416L329 409ZM299 343Q294 371 273 387T221 404Q192 404 171 388T145 343Q142 326 142 292Q142 248 149 227T179 192Q196 182 222 182Q244 182 260 189T283 207T294 227T299 242Q302 258 302 292T299 343ZM403 -75Q403 -50 389 -34T348 -11T299 -2T245 0H218Q151 0 138 -6Q118 -15 107 -34T95 -74Q95 -84 101 -97T122 -127T170 -155T250 -167Q319 -167 361 -139T403 -75Z"></path><path id="MJX-TEX-N-2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path></defs></svg>
+<header class="site-header">
+  <div class="container header-content">
+    <a href="/" class="logo">
+      <img src="/img/logo.png" alt="BelPhO" class="logo-img" width="36" height="36">
+      <span>BelPhO</span>
+    </a>
+    <nav class="site-nav" aria-label="Основная навигация">
+      <ul class="nav-links">
+        <li><a href="/">Главная</a></li>
+        <li><a href="/problems/" class="active">Задачи</a></li>
+        <li><a href="/books/">Книги</a></li>
+        <li><a href="/training-program.html">Подготовка</a></li>
+        <li><a href="/alumni.html">Выпускники</a></li>
+        <li><a href="/news/">Новости</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<main class="p-shell">
+  <div class="p-layout">
+    
+<aside class="p-sidebar" id="p-sidebar" data-problem-id="2012-third-exp-11-1">
+  <div class="sb-card">
+    <div class="sb-head">
+      <div class="sb-crumb"><a href="/problems/third/">Городская</a>&#8195;<a href="/problems/third/2012/">2012</a></div>
+      <h1 class="sb-title">Экспериментальная задача 11-1</h1>
+      <div class="sb-meta">
+        <span class="sb-chip">11 класс</span>
+        <span class="sb-chip sb-chip-num">№ Э1</span>
+        
+        
+        
+        
+        
+      </div>
+      
+      
+    </div>
+    <nav class="sb-nav" aria-label="Разделы задачи">
+      
+      <a class="sb-item" href="/problems/third/2012/11-e1/"
+         >
+        <span class="sb-glyph sb-glyph-t">T</span>
+        <span>Условие</span>
+      </a>
+      
+      <a class="sb-item on" href="/problems/third/2012/11-e1/solution/"
+         aria-current=&#34;page&#34;>
+        <span class="sb-glyph sb-glyph-s">S</span>
+        <span>Решение</span>
+      </a>
+      
+      
+      <details class="sb-files" id="sb-files">
+        <summary class="sb-item sb-item-files">
+          <span class="sb-glyph sb-glyph-f">▾</span><span>Файлы</span>
+        </summary>
+        <div class="sb-files-menu">
+          
+          <a href="/problems/third/2012/11-e1/solution.pdf" class="sb-file">Решения (PDF)</a>
+          
+          <a href="/problems/third/3_etap_2012_experimental_solutions.pdf#page=11" class="sb-file">Решение (Оригинал)</a>
+          
+          <a href="/problems/third/2012/11-e1/source.tar.gz" class="sb-file">TeX версия</a>
+          
+          
+        </div>
+      </details>
+    </nav>
+    
+  </div>
+</aside>
+
+    <div class="p-main" id="p-main">
+      <div class="page-head">
+  <h2 class="page-title">Решение</h2>
+  <span class="page-sub">Городская олимпиада (3-й этап)&#8195;2012&#8195;11 класс&#8195;№ Э1</span>
+</div>
+
+
+
+<section class="intro-card">
+  <p><strong>Часть Теоретическая.</strong></p>
+<p>На рисунке изображены силы, действующие на весы с подвешенным грузом. Силу тяжести самих весов можно приложить к их центру тяжести. Условия равновесия весов имеют вид</p>
+<p><span class="eq-anchor" id="eq-1"><mjx-container class="MathJax" jax="SVG" display="true" width="full" style="min-width: 44.614ex;"><svg style="vertical-align: -0.566ex; min-width: 44.614ex;" xmlns="http://www.w3.org/2000/svg" width="100%" height="2.262ex" role="img" focusable="false" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(0.0181,-0.0181) translate(0, -750)"><g data-mml-node="math"><g data-mml-node="mtable" transform="translate(2078,0) translate(-2078,0)"><g transform="translate(0 750) matrix(1 0 0 -1 0 0) scale(55.25)"><svg data-table="true" preserveAspectRatio="xMidYMid" viewBox="7781.7 -750 1 1000"><g transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="mlabeledtr"><g data-mml-node="mtd"><g data-mml-node="mi"><use data-c="1D439" xlink:href="#MJX-TEX-I-1D439"></use></g><g data-mml-node="mi" transform="translate(749,0)"><use data-c="1D459" xlink:href="#MJX-TEX-I-1D459"></use></g><g data-mml-node="mi" transform="translate(1213.7,0)"><use data-c="63" xlink:href="#MJX-TEX-N-63"></use><use data-c="6F" xlink:href="#MJX-TEX-N-6F" transform="translate(444,0)"></use><use data-c="73" xlink:href="#MJX-TEX-N-73" transform="translate(944,0)"></use></g><g data-mml-node="mo" transform="translate(2551.7,0)"><use data-c="2061" xlink:href="#MJX-TEX-N-2061"></use></g><g data-mml-node="mo" transform="translate(2551.7,0)"><use data-c="28" xlink:href="#MJX-TEX-N-28"></use></g><g data-mml-node="msub" transform="translate(2940.7,0)"><g data-mml-node="mi"><use data-c="1D6FC" xlink:href="#MJX-TEX-I-1D6FC"></use></g><g data-mml-node="mn" transform="translate(673,-150) scale(0.707)"><use data-c="30" xlink:href="#MJX-TEX-N-30"></use></g></g><g data-mml-node="mo" transform="translate(4239.4,0)"><use data-c="2B" xlink:href="#MJX-TEX-N-2B"></use></g><g data-mml-node="mi" transform="translate(5239.7,0)"><use data-c="1D711" xlink:href="#MJX-TEX-I-1D711"></use></g><g data-mml-node="mo" transform="translate(5893.7,0)"><use data-c="29" xlink:href="#MJX-TEX-N-29"></use></g><g data-mml-node="mo" transform="translate(6560.4,0)"><use data-c="3D" xlink:href="#MJX-TEX-N-3D"></use></g><g data-mml-node="mi" transform="translate(7616.2,0)"><use data-c="1D440" xlink:href="#MJX-TEX-I-1D440"></use></g><g data-mml-node="mi" transform="translate(8667.2,0)"><use data-c="1D44E" xlink:href="#MJX-TEX-I-1D44E"></use></g><g data-mml-node="mi" transform="translate(9362.9,0)"><use data-c="73" xlink:href="#MJX-TEX-N-73"></use><use data-c="69" xlink:href="#MJX-TEX-N-69" transform="translate(394,0)"></use><use data-c="6E" xlink:href="#MJX-TEX-N-6E" transform="translate(672,0)"></use></g><g data-mml-node="mo" transform="translate(10590.9,0)"><use data-c="2061" xlink:href="#MJX-TEX-N-2061"></use></g><g data-mml-node="mi" transform="translate(10757.6,0)"><use data-c="1D711" xlink:href="#MJX-TEX-I-1D711"></use></g><g data-mml-node="mo" transform="translate(11689.3,0)"><use data-c="3D" xlink:href="#MJX-TEX-N-3D"></use></g><g data-mml-node="mi" transform="translate(12745.1,0)"><use data-c="1D707" xlink:href="#MJX-TEX-I-1D707"></use></g><g data-mml-node="mi" transform="translate(13514.8,0)"><use data-c="73" xlink:href="#MJX-TEX-N-73"></use><use data-c="69" xlink:href="#MJX-TEX-N-69" transform="translate(394,0)"></use><use data-c="6E" xlink:href="#MJX-TEX-N-6E" transform="translate(672,0)"></use></g><g data-mml-node="mo" transform="translate(14742.8,0)"><use data-c="2061" xlink:href="#MJX-TEX-N-2061"></use></g><g data-mml-node="mi" transform="translate(14909.4,0)"><use data-c="1D711" xlink:href="#MJX-TEX-I-1D711"></use></g></g></g></g></svg><svg data-labels="true" preserveAspectRatio="xMaxYMid" viewBox="1278 -750 1 1000"><g data-labels="true" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="mtd" id="mjx-eqn:1"><g data-mml-node="mtext"><use data-c="28" xlink:href="#MJX-TEX-N-28"></use><use data-c="31" xlink:href="#MJX-TEX-N-31" transform="translate(389,0)"></use><use data-c="29" xlink:href="#MJX-TEX-N-29" transform="translate(889,0)"></use></g></g></g></svg></g></g></g></g></svg></mjx-container></span></p>
+<p>Используя формулу для косинуса суммы,</p>
+<p><mjx-container class="MathJax" jax="SVG" display="true"><svg style="vertical-align: -0.566ex;" xmlns="http://www.w3.org/2000/svg" width="37.992ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 16792.4 1000" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D439" xlink:href="#MJX-TEX-I-1D439"></use></g><g data-mml-node="mi" transform="translate(749,0)"><use data-c="1D459" xlink:href="#MJX-TEX-I-1D459"></use></g><g data-mml-node="mo" transform="translate(1047,0)"><use data-c="28" xlink:href="#MJX-TEX-N-28"></use></g><g data-mml-node="mi" transform="translate(1436,0)"><use data-c="63" xlink:href="#MJX-TEX-N-63"></use><use data-c="6F" xlink:href="#MJX-TEX-N-6F" transform="translate(444,0)"></use><use data-c="73" xlink:href="#MJX-TEX-N-73" transform="translate(944,0)"></use></g><g data-mml-node="mo" transform="translate(2774,0)"><use data-c="2061" xlink:href="#MJX-TEX-N-2061"></use></g><g data-mml-node="msub" transform="translate(2940.7,0)"><g data-mml-node="mi"><use data-c="1D6FC" xlink:href="#MJX-TEX-I-1D6FC"></use></g><g data-mml-node="mn" transform="translate(673,-150) scale(0.707)"><use data-c="30" xlink:href="#MJX-TEX-N-30"></use></g></g><g data-mml-node="mi" transform="translate(4183.9,0)"><use data-c="63" xlink:href="#MJX-TEX-N-63"></use><use data-c="6F" xlink:href="#MJX-TEX-N-6F" transform="translate(444,0)"></use><use data-c="73" xlink:href="#MJX-TEX-N-73" transform="translate(944,0)"></use></g><g data-mml-node="mo" transform="translate(5521.9,0)"><use data-c="2061" xlink:href="#MJX-TEX-N-2061"></use></g><g data-mml-node="mi" transform="translate(5688.6,0)"><use data-c="1D711" xlink:href="#MJX-TEX-I-1D711"></use></g><g data-mml-node="mo" transform="translate(6564.8,0)"><use data-c="2212" xlink:href="#MJX-TEX-N-2212"></use></g><g data-mml-node="mi" transform="translate(7565,0)"><use data-c="73" xlink:href="#MJX-TEX-N-73"></use><use data-c="69" xlink:href="#MJX-TEX-N-69" transform="translate(394,0)"></use><use data-c="6E" xlink:href="#MJX-TEX-N-6E" transform="translate(672,0)"></use></g><g data-mml-node="mo" transform="translate(8793,0)"><use data-c="2061" xlink:href="#MJX-TEX-N-2061"></use></g><g data-mml-node="msub" transform="translate(8959.7,0)"><g data-mml-node="mi"><use data-c="1D6FC" xlink:href="#MJX-TEX-I-1D6FC"></use></g><g data-mml-node="mn" transform="translate(673,-150) scale(0.707)"><use data-c="30" xlink:href="#MJX-TEX-N-30"></use></g></g><g data-mml-node="mi" transform="translate(10202.9,0)"><use data-c="73" xlink:href="#MJX-TEX-N-73"></use><use data-c="69" xlink:href="#MJX-TEX-N-69" transform="translate(394,0)"></use><use data-c="6E" xlink:href="#MJX-TEX-N-6E" transform="translate(672,0)"></use></g><g data-mml-node="mo" transform="translate(11430.9,0)"><use data-c="2061" xlink:href="#MJX-TEX-N-2061"></use></g><g data-mml-node="mi" transform="translate(11597.6,0)"><use data-c="1D711" xlink:href="#MJX-TEX-I-1D711"></use></g><g data-mml-node="mo" transform="translate(12251.6,0)"><use data-c="29" xlink:href="#MJX-TEX-N-29"></use></g><g data-mml-node="mo" transform="translate(12918.3,0)"><use data-c="3D" xlink:href="#MJX-TEX-N-3D"></use></g><g data-mml-node="mi" transform="translate(13974.1,0)"><use data-c="1D707" xlink:href="#MJX-TEX-I-1D707"></use></g><g data-mml-node="mi" transform="translate(14743.8,0)"><use data-c="73" xlink:href="#MJX-TEX-N-73"></use><use data-c="69" xlink:href="#MJX-TEX-N-69" transform="translate(394,0)"></use><use data-c="6E" xlink:href="#MJX-TEX-N-6E" transform="translate(672,0)"></use></g><g data-mml-node="mo" transform="translate(15971.8,0)"><use data-c="2061" xlink:href="#MJX-TEX-N-2061"></use></g><g data-mml-node="mi" transform="translate(16138.4,0)"><use data-c="1D711" xlink:href="#MJX-TEX-I-1D711"></use></g></g></g></svg></mjx-container>
+<mjx-container class="MathJax" jax="SVG" display="true"><svg style="vertical-align: -0.566ex;" xmlns="http://www.w3.org/2000/svg" width="28.697ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 12683.9 1000" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D439" xlink:href="#MJX-TEX-I-1D439"></use></g><g data-mml-node="mi" transform="translate(749,0)"><use data-c="1D459" xlink:href="#MJX-TEX-I-1D459"></use></g><g data-mml-node="mo" transform="translate(1047,0)"><use data-c="28" xlink:href="#MJX-TEX-N-28"></use></g><g data-mml-node="mi" transform="translate(1436,0)"><use data-c="63" xlink:href="#MJX-TEX-N-63"></use><use data-c="6F" xlink:href="#MJX-TEX-N-6F" transform="translate(444,0)"></use><use data-c="73" xlink:href="#MJX-TEX-N-73" transform="translate(944,0)"></use></g><g data-mml-node="mo" transform="translate(2774,0)"><use data-c="2061" xlink:href="#MJX-TEX-N-2061"></use></g><g data-mml-node="msub" transform="translate(2940.7,0)"><g data-mml-node="mi"><use data-c="1D6FC" xlink:href="#MJX-TEX-I-1D6FC"></use></g><g data-mml-node="mn" transform="translate(673,-150) scale(0.707)"><use data-c="30" xlink:href="#MJX-TEX-N-30"></use></g></g><g data-mml-node="mo" transform="translate(4239.4,0)"><use data-c="22C5" xlink:href="#MJX-TEX-N-22C5"></use></g><g data-mml-node="mi" transform="translate(4739.7,0)"><use data-c="1D450" xlink:href="#MJX-TEX-I-1D450"></use></g><g data-mml-node="mi" transform="translate(5172.7,0)"><use data-c="1D461" xlink:href="#MJX-TEX-I-1D461"></use></g><g data-mml-node="mi" transform="translate(5533.7,0)"><use data-c="1D454" xlink:href="#MJX-TEX-I-1D454"></use></g><g data-mml-node="mi" transform="translate(6010.7,0)"><use data-c="1D711" xlink:href="#MJX-TEX-I-1D711"></use></g><g data-mml-node="mo" transform="translate(6886.9,0)"><use data-c="2212" xlink:href="#MJX-TEX-N-2212"></use></g><g data-mml-node="mi" transform="translate(7887.1,0)"><use data-c="73" xlink:href="#MJX-TEX-N-73"></use><use data-c="69" xlink:href="#MJX-TEX-N-69" transform="translate(394,0)"></use><use data-c="6E" xlink:href="#MJX-TEX-N-6E" transform="translate(672,0)"></use></g><g data-mml-node="mo" transform="translate(9115.1,0)"><use data-c="2061" xlink:href="#MJX-TEX-N-2061"></use></g><g data-mml-node="msub" transform="translate(9281.8,0)"><g data-mml-node="mi"><use data-c="1D6FC" xlink:href="#MJX-TEX-I-1D6FC"></use></g><g data-mml-node="mn" transform="translate(673,-150) scale(0.707)"><use data-c="30" xlink:href="#MJX-TEX-N-30"></use></g></g><g data-mml-node="mo" transform="translate(10358.3,0)"><use data-c="29" xlink:href="#MJX-TEX-N-29"></use></g><g data-mml-node="mo" transform="translate(11025.1,0)"><use data-c="3D" xlink:href="#MJX-TEX-N-3D"></use></g><g data-mml-node="mi" transform="translate(12080.9,0)"><use data-c="1D707" xlink:href="#MJX-TEX-I-1D707"></use></g></g></g></svg></mjx-container></p>
+<p>эту формулу можно преобразовать к виду</p>
+<p><span class="eq-anchor" id="eq-2"><mjx-container class="MathJax" jax="SVG" display="true" width="full" style="min-width: 50.182ex;"><svg style="vertical-align: -1.947ex; min-width: 50.182ex;" xmlns="http://www.w3.org/2000/svg" width="100%" height="5.026ex" role="img" focusable="false" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(0.0181,-0.0181) translate(0, -1360.8)"><g data-mml-node="math"><g data-mml-node="mtable" transform="translate(2078,0) translate(-2078,0)"><g transform="translate(0 1360.8) matrix(1 0 0 -1 0 0) scale(55.25)"><svg data-table="true" preserveAspectRatio="xMidYMid" viewBox="9012.2 -1360.8 1 2221.6"><g transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="mlabeledtr" transform="translate(0,-9.2)"><g data-mml-node="mtd"><g data-mml-node="mi"><use data-c="1D450" xlink:href="#MJX-TEX-I-1D450"></use></g><g data-mml-node="mi" transform="translate(433,0)"><use data-c="1D461" xlink:href="#MJX-TEX-I-1D461"></use></g><g data-mml-node="mi" transform="translate(794,0)"><use data-c="1D454" xlink:href="#MJX-TEX-I-1D454"></use></g><g data-mml-node="mi" transform="translate(1271,0)"><use data-c="1D711" xlink:href="#MJX-TEX-I-1D711"></use></g><g data-mml-node="mo" transform="translate(2202.8,0)"><use data-c="3D" xlink:href="#MJX-TEX-N-3D"></use></g><g data-mml-node="mfrac" transform="translate(3258.6,0)"><g data-mml-node="mrow" transform="translate(220,676)"><g data-mml-node="mi"><use data-c="1D439" xlink:href="#MJX-TEX-I-1D439"></use></g><g data-mml-node="mi" transform="translate(749,0)"><use data-c="1D459" xlink:href="#MJX-TEX-I-1D459"></use></g><g data-mml-node="mi" transform="translate(1213.7,0)"><use data-c="63" xlink:href="#MJX-TEX-N-63"></use><use data-c="6F" xlink:href="#MJX-TEX-N-6F" transform="translate(444,0)"></use><use data-c="73" xlink:href="#MJX-TEX-N-73" transform="translate(944,0)"></use></g><g data-mml-node="mo" transform="translate(2551.7,0)"><use data-c="2061" xlink:href="#MJX-TEX-N-2061"></use></g><g data-mml-node="msub" transform="translate(2718.3,0)"><g data-mml-node="mi"><use data-c="1D6FC" xlink:href="#MJX-TEX-I-1D6FC"></use></g><g data-mml-node="mn" transform="translate(673,-150) scale(0.707)"><use data-c="30" xlink:href="#MJX-TEX-N-30"></use></g></g><g data-mml-node="mo" transform="translate(4017.1,0)"><use data-c="2212" xlink:href="#MJX-TEX-N-2212"></use></g><g data-mml-node="mi" transform="translate(5017.3,0)"><use data-c="1D707" xlink:href="#MJX-TEX-I-1D707"></use></g></g><g data-mml-node="mrow" transform="translate(1132.7,-686)"><g data-mml-node="mi"><use data-c="1D439" xlink:href="#MJX-TEX-I-1D439"></use></g><g data-mml-node="mi" transform="translate(749,0)"><use data-c="1D459" xlink:href="#MJX-TEX-I-1D459"></use></g><g data-mml-node="mi" transform="translate(1213.7,0)"><use data-c="63" xlink:href="#MJX-TEX-N-63"></use><use data-c="6F" xlink:href="#MJX-TEX-N-6F" transform="translate(444,0)"></use><use data-c="73" xlink:href="#MJX-TEX-N-73" transform="translate(944,0)"></use></g><g data-mml-node="mo" transform="translate(2551.7,0)"><use data-c="2061" xlink:href="#MJX-TEX-N-2061"></use></g><g data-mml-node="msub" transform="translate(2718.3,0)"><g data-mml-node="mi"><use data-c="1D6FC" xlink:href="#MJX-TEX-I-1D6FC"></use></g><g data-mml-node="mn" transform="translate(673,-150) scale(0.707)"><use data-c="30" xlink:href="#MJX-TEX-N-30"></use></g></g></g><rect width="5820.3" height="60" x="120" y="220"></rect></g><g data-mml-node="mo" transform="translate(9596.7,0)"><use data-c="3D" xlink:href="#MJX-TEX-N-3D"></use></g><g data-mml-node="mi" transform="translate(10652.4,0)"><use data-c="1D461" xlink:href="#MJX-TEX-I-1D461"></use></g><g data-mml-node="mi" transform="translate(11013.4,0)"><use data-c="1D454" xlink:href="#MJX-TEX-I-1D454"></use></g><g data-mml-node="msub" transform="translate(11490.4,0)"><g data-mml-node="mi"><use data-c="1D6FC" xlink:href="#MJX-TEX-I-1D6FC"></use></g><g data-mml-node="mn" transform="translate(673,-150) scale(0.707)"><use data-c="30" xlink:href="#MJX-TEX-N-30"></use></g></g><g data-mml-node="mo" transform="translate(12789.2,0)"><use data-c="2B" xlink:href="#MJX-TEX-N-2B"></use></g><g data-mml-node="mfrac" transform="translate(13789.4,0)"><g data-mml-node="mi" transform="translate(1815.9,676)"><use data-c="1D707" xlink:href="#MJX-TEX-I-1D707"></use></g><g data-mml-node="mrow" transform="translate(220,-686)"><g data-mml-node="mi"><use data-c="1D439" xlink:href="#MJX-TEX-I-1D439"></use></g><g data-mml-node="mi" transform="translate(749,0)"><use data-c="1D459" xlink:href="#MJX-TEX-I-1D459"></use></g><g data-mml-node="mi" transform="translate(1213.7,0)"><use data-c="63" xlink:href="#MJX-TEX-N-63"></use><use data-c="6F" xlink:href="#MJX-TEX-N-6F" transform="translate(444,0)"></use><use data-c="73" xlink:href="#MJX-TEX-N-73" transform="translate(944,0)"></use></g><g data-mml-node="mo" transform="translate(2551.7,0)"><use data-c="2061" xlink:href="#MJX-TEX-N-2061"></use></g><g data-mml-node="msub" transform="translate(2718.3,0)"><g data-mml-node="mi"><use data-c="1D6FC" xlink:href="#MJX-TEX-I-1D6FC"></use></g><g data-mml-node="mn" transform="translate(673,-150) scale(0.707)"><use data-c="30" xlink:href="#MJX-TEX-N-30"></use></g></g></g><rect width="3994.9" height="60" x="120" y="220"></rect></g></g></g></g></svg><svg data-labels="true" preserveAspectRatio="xMaxYMid" viewBox="1278 -1360.8 1 2221.6"><g data-labels="true" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="mtd" id="mjx-eqn:2" transform="translate(0,740.8)"><text data-id-align="true"></text><g data-idbox="true" transform="translate(0,-750)"><g data-mml-node="mtext"><use data-c="28" xlink:href="#MJX-TEX-N-28"></use><use data-c="32" xlink:href="#MJX-TEX-N-32" transform="translate(389,0)"></use><use data-c="29" xlink:href="#MJX-TEX-N-29" transform="translate(889,0)"></use></g></g></g></g></svg></g></g></g></g></svg></mjx-container></span></p>
+<p>Эта формула допускает простую экспериментальную проверку. Необходимо измерить зависимость угла отклонения весов от числа подвешенных скрепок <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="2.009ex" height="1.545ex" role="img" focusable="false" viewBox="0 -683 888 683" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D441" xlink:href="#MJX-TEX-I-1D441"></use></g></g></g></svg></mjx-container>. Тогда зависимость угла отклонения от <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.364ex" height="1.887ex" role="img" focusable="false" viewBox="0 -833.9 1928.9 833.9" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msup"><g data-mml-node="mi"><use data-c="1D441" xlink:href="#MJX-TEX-I-1D441"></use></g><g data-mml-node="TeXAtom" transform="translate(975.3,363) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mo"><use data-c="2212" xlink:href="#MJX-TEX-N-2212"></use></g><g data-mml-node="mn" transform="translate(778,0)"><use data-c="31" xlink:href="#MJX-TEX-N-31"></use></g></g></g></g></g></svg></mjx-container> должна быть линейна. Причем коэффициент наклона ее должен возрастать при уменьшении угла между спицами (т.к. при увеличении этого угла опускается центр масс спиц).</p>
+<p>Самый простой вид формула (<a class="part-ref" href="#eq-2">2</a>) приобретает при <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.375ex;" xmlns="http://www.w3.org/2000/svg" width="6.584ex" height="1.881ex" role="img" focusable="false" viewBox="0 -666 2910.1 831.6" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D6FC" xlink:href="#MJX-TEX-I-1D6FC"></use></g><g data-mml-node="mn" transform="translate(673,-150) scale(0.707)"><use data-c="30" xlink:href="#MJX-TEX-N-30"></use></g></g><g data-mml-node="mo" transform="translate(1354.3,0)"><use data-c="3D" xlink:href="#MJX-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(2410.1,0)"><use data-c="30" xlink:href="#MJX-TEX-N-30"></use></g></g></g></svg></mjx-container>, т.е. когда спица, на которую действует измеряемая сила, в положении равновесия расположена горизонтально. В этом случае связь между силой и углом отклонения имеет вид:</p>
+<p><span class="eq-anchor" id="eq-3"><mjx-container class="MathJax" jax="SVG" display="true" width="full" style="min-width: 19.85ex;"><svg style="vertical-align: -2.005ex; min-width: 19.85ex;" xmlns="http://www.w3.org/2000/svg" width="100%" height="5.14ex" role="img" focusable="false" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(0.0181,-0.0181) translate(0, -1386)"><g data-mml-node="math"><g data-mml-node="mtable" transform="translate(2078,0) translate(-2078,0)"><g transform="translate(0 1386) matrix(1 0 0 -1 0 0) scale(55.25)"><svg data-table="true" preserveAspectRatio="xMidYMid" viewBox="2308.8 -1386 1 2272"><g transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="mlabeledtr" transform="translate(0,16)"><g data-mml-node="mtd"><g data-mml-node="mi"><use data-c="1D461" xlink:href="#MJX-TEX-I-1D461"></use></g><g data-mml-node="mi" transform="translate(361,0)"><use data-c="1D454" xlink:href="#MJX-TEX-I-1D454"></use></g><g data-mml-node="mi" transform="translate(838,0)"><use data-c="1D711" xlink:href="#MJX-TEX-I-1D711"></use></g><g data-mml-node="mo" transform="translate(1769.8,0)"><use data-c="3D" xlink:href="#MJX-TEX-N-3D"></use></g><g data-mml-node="mfrac" transform="translate(2825.6,0)"><g data-mml-node="mi" transform="translate(372.5,676)"><use data-c="1D459" xlink:href="#MJX-TEX-I-1D459"></use></g><g data-mml-node="mi" transform="translate(220,-686)"><use data-c="1D707" xlink:href="#MJX-TEX-I-1D707"></use></g><rect width="803" height="60" x="120" y="220"></rect></g><g data-mml-node="mi" transform="translate(3868.6,0)"><use data-c="1D439" xlink:href="#MJX-TEX-I-1D439"></use></g></g></g></g></svg><svg data-labels="true" preserveAspectRatio="xMaxYMid" viewBox="1278 -1386 1 2272"><g data-labels="true" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="mtd" id="mjx-eqn:3" transform="translate(0,766)"><text data-id-align="true"></text><g data-idbox="true" transform="translate(0,-750)"><g data-mml-node="mtext"><use data-c="28" xlink:href="#MJX-TEX-N-28"></use><use data-c="33" xlink:href="#MJX-TEX-N-33" transform="translate(389,0)"></use><use data-c="29" xlink:href="#MJX-TEX-N-29" transform="translate(889,0)"></use></g></g></g></g></svg></g></g></g></g></svg></mjx-container></span></p>
+<p>Наиболее простой способ измерения угла отклонение – по смещению спицы, измеренному по линейке, которая расположена перпендикулярно спице в положении равновесия. Тогда</p>
+<p><span class="eq-anchor" id="eq-4"><mjx-container class="MathJax" jax="SVG" display="true" width="full" style="min-width: 20.599ex;"><svg style="vertical-align: -1.972ex; min-width: 20.599ex;" xmlns="http://www.w3.org/2000/svg" width="100%" height="5.076ex" role="img" focusable="false" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(0.0181,-0.0181) translate(0, -1371.8)"><g data-mml-node="math"><g data-mml-node="mtable" transform="translate(2078,0) translate(-2078,0)"><g transform="translate(0 1371.8) matrix(1 0 0 -1 0 0) scale(55.25)"><svg data-table="true" preserveAspectRatio="xMidYMid" viewBox="2474.3 -1371.8 1 2243.6"><g transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="mlabeledtr" transform="translate(0,-20.2)"><g data-mml-node="mtd"><g data-mml-node="mi"><use data-c="1D461" xlink:href="#MJX-TEX-I-1D461"></use></g><g data-mml-node="mi" transform="translate(361,0)"><use data-c="1D454" xlink:href="#MJX-TEX-I-1D454"></use></g><g data-mml-node="mi" transform="translate(838,0)"><use data-c="1D711" xlink:href="#MJX-TEX-I-1D711"></use></g><g data-mml-node="mo" transform="translate(1769.8,0)"><use data-c="3D" xlink:href="#MJX-TEX-N-3D"></use></g><g data-mml-node="mfrac" transform="translate(2825.6,0)"><g data-mml-node="mrow" transform="translate(220,676)"><g data-mml-node="mi"><use data-c="394" xlink:href="#MJX-TEX-N-394"></use></g><g data-mml-node="mi" transform="translate(833,0)"><use data-c="1D465" xlink:href="#MJX-TEX-I-1D465"></use></g></g><g data-mml-node="msub" transform="translate(555.2,-686)"><g data-mml-node="mi"><use data-c="1D459" xlink:href="#MJX-TEX-I-1D459"></use></g><g data-mml-node="mn" transform="translate(331,-150) scale(0.707)"><use data-c="30" xlink:href="#MJX-TEX-N-30"></use></g></g><rect width="1605" height="60" x="120" y="220"></rect></g><g data-mml-node="mo" transform="translate(4670.6,0)"><use data-c="2E" xlink:href="#MJX-TEX-N-2E"></use></g></g></g></g></svg><svg data-labels="true" preserveAspectRatio="xMaxYMid" viewBox="1278 -1371.8 1 2243.6"><g data-labels="true" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="mtd" id="mjx-eqn:4" transform="translate(0,729.8)"><text data-id-align="true"></text><g data-idbox="true" transform="translate(0,-750)"><g data-mml-node="mtext"><use data-c="28" xlink:href="#MJX-TEX-N-28"></use><use data-c="34" xlink:href="#MJX-TEX-N-34" transform="translate(389,0)"></use><use data-c="29" xlink:href="#MJX-TEX-N-29" transform="translate(889,0)"></use></g></g></g></g></svg></g></g></g></g></svg></mjx-container></span></p>
+<p><strong>Часть 1. Градуировка и чувствительность.</strong></p>
+<p>В таблице приведены результаты измерений отклонения от числа подвешенных скрепок для двух примерно симметричных весов – с углом близким к прямому и углом близки к развернутому. Там же приведены расчетные данные, необходимые для проверки соотношения (<a class="part-ref" href="#eq-2">2</a>).</p>
+<div class="md-table"><table>
+<thead>
+<tr>
+<th align="center"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="2.009ex" height="1.545ex" role="img" focusable="false" viewBox="0 -683 888 683" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D441" xlink:href="#MJX-TEX-I-1D441"></use></g></g></g></svg></mjx-container></th>
+<th align="center"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="4.364ex" height="1.887ex" role="img" focusable="false" viewBox="0 -833.9 1928.9 833.9" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msup"><g data-mml-node="mi"><use data-c="1D441" xlink:href="#MJX-TEX-I-1D441"></use></g><g data-mml-node="TeXAtom" transform="translate(975.3,363) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mo"><use data-c="2212" xlink:href="#MJX-TEX-N-2212"></use></g><g data-mml-node="mn" transform="translate(778,0)"><use data-c="31" xlink:href="#MJX-TEX-N-31"></use></g></g></g></g></g></svg></mjx-container></th>
+<th align="center">«прямой» угол</th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center">«развернутый» угол</th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="3.179ex" height="1.645ex" role="img" focusable="false" viewBox="0 -716 1405 727" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="394" xlink:href="#MJX-TEX-N-394"></use></g><g data-mml-node="mi" transform="translate(833,0)"><use data-c="1D465" xlink:href="#MJX-TEX-I-1D465"></use></g></g></g></svg></mjx-container>, см</td>
+<td align="center"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.493ex;" xmlns="http://www.w3.org/2000/svg" width="3.868ex" height="1.885ex" role="img" focusable="false" viewBox="0 -615 1709.7 833" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="74" xlink:href="#MJX-TEX-N-74"></use><use data-c="67" xlink:href="#MJX-TEX-N-67" transform="translate(389,0)"></use></g><g data-mml-node="mi" transform="translate(1055.7,0)"><use data-c="1D711" xlink:href="#MJX-TEX-I-1D711"></use></g></g></g></svg></mjx-container></td>
+<td align="center"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.493ex;" xmlns="http://www.w3.org/2000/svg" width="4.873ex" height="1.885ex" role="img" focusable="false" viewBox="0 -615 2153.7 833" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="63" xlink:href="#MJX-TEX-N-63"></use><use data-c="74" xlink:href="#MJX-TEX-N-74" transform="translate(444,0)"></use><use data-c="67" xlink:href="#MJX-TEX-N-67" transform="translate(833,0)"></use></g><g data-mml-node="mi" transform="translate(1499.7,0)"><use data-c="1D711" xlink:href="#MJX-TEX-I-1D711"></use></g></g></g></svg></mjx-container></td>
+<td align="center"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="3.179ex" height="1.645ex" role="img" focusable="false" viewBox="0 -716 1405 727" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="394" xlink:href="#MJX-TEX-N-394"></use></g><g data-mml-node="mi" transform="translate(833,0)"><use data-c="1D465" xlink:href="#MJX-TEX-I-1D465"></use></g></g></g></svg></mjx-container>, см</td>
+<td align="center"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.493ex;" xmlns="http://www.w3.org/2000/svg" width="3.868ex" height="1.885ex" role="img" focusable="false" viewBox="0 -615 1709.7 833" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="74" xlink:href="#MJX-TEX-N-74"></use><use data-c="67" xlink:href="#MJX-TEX-N-67" transform="translate(389,0)"></use></g><g data-mml-node="mi" transform="translate(1055.7,0)"><use data-c="1D711" xlink:href="#MJX-TEX-I-1D711"></use></g></g></g></svg></mjx-container></td>
+<td align="center"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.493ex;" xmlns="http://www.w3.org/2000/svg" width="4.873ex" height="1.885ex" role="img" focusable="false" viewBox="0 -615 2153.7 833" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="63" xlink:href="#MJX-TEX-N-63"></use><use data-c="74" xlink:href="#MJX-TEX-N-74" transform="translate(444,0)"></use><use data-c="67" xlink:href="#MJX-TEX-N-67" transform="translate(833,0)"></use></g><g data-mml-node="mi" transform="translate(1499.7,0)"><use data-c="1D711" xlink:href="#MJX-TEX-I-1D711"></use></g></g></g></svg></mjx-container></td>
+</tr>
+<tr>
+<td align="center">0</td>
+<td align="center"></td>
+<td align="center">0,0</td>
+<td align="center">0,000</td>
+<td align="center"></td>
+<td align="center">0,0</td>
+<td align="center">0,000</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">1,000</td>
+<td align="center">1,3</td>
+<td align="center">0,052</td>
+<td align="center">19,231</td>
+<td align="center">2,5</td>
+<td align="center">0,114</td>
+<td align="center">8,800</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">0,500</td>
+<td align="center">2,4</td>
+<td align="center">0,096</td>
+<td align="center">10,417</td>
+<td align="center">4,6</td>
+<td align="center">0,209</td>
+<td align="center">4,783</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">0,333</td>
+<td align="center">3,5</td>
+<td align="center">0,140</td>
+<td align="center">7,143</td>
+<td align="center">6,1</td>
+<td align="center">0,277</td>
+<td align="center">3,607</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">0,250</td>
+<td align="center">4,6</td>
+<td align="center">0,184</td>
+<td align="center">5,435</td>
+<td align="center">7,8</td>
+<td align="center">0,355</td>
+<td align="center">2,821</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">0,200</td>
+<td align="center">5,3</td>
+<td align="center">0,212</td>
+<td align="center">4,717</td>
+<td align="center">9,4</td>
+<td align="center">0,427</td>
+<td align="center">2,340</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">0,167</td>
+<td align="center">6,0</td>
+<td align="center">0,240</td>
+<td align="center">4,167</td>
+<td align="center">11,2</td>
+<td align="center">0,509</td>
+<td align="center">1,964</td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td align="center">0,143</td>
+<td align="center">6,7</td>
+<td align="center">0,268</td>
+<td align="center">3,731</td>
+<td align="center">12,6</td>
+<td align="center">0,573</td>
+<td align="center">1,746</td>
+</tr>
+<tr>
+<td align="center">8</td>
+<td align="center">0,125</td>
+<td align="center">7,3</td>
+<td align="center">0,292</td>
+<td align="center">3,425</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">9</td>
+<td align="center">0,111</td>
+<td align="center">7,8</td>
+<td align="center">0,312</td>
+<td align="center">3,205</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">10</td>
+<td align="center">0,100</td>
+<td align="center">8,4</td>
+<td align="center">0,336</td>
+<td align="center">2,976</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody></table></div>
+<p>На рисунках показаны полученные зависимости. Графики однозначно свидетельствуют о выполнимости соотношения (<a class="part-ref" href="#eq-2">2</a>):</p>
+<ul>
+<li>обратная зависимость линейна;</li>
+<li>коэффициенты наклона для разных углов между спицами соответствую приведенным соотношениям.</li>
+</ul>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.493ex;" xmlns="http://www.w3.org/2000/svg" width="4.355ex" height="1.91ex" role="img" focusable="false" viewBox="0 -626 1925 844" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D450" xlink:href="#MJX-TEX-I-1D450"></use></g><g data-mml-node="mi" transform="translate(433,0)"><use data-c="1D461" xlink:href="#MJX-TEX-I-1D461"></use></g><g data-mml-node="mi" transform="translate(794,0)"><use data-c="1D454" xlink:href="#MJX-TEX-I-1D454"></use></g><g data-mml-node="mi" transform="translate(1271,0)"><use data-c="1D711" xlink:href="#MJX-TEX-I-1D711"></use></g></g></g></svg></mjx-container></p>
+<p>Естественно, чувствительность весов возрастает при увеличении угла между спицами, но при этом уменьшается диапазон измерения.</p>
+<p><strong>Часть 2. Закон Архимеда.</strong></p>
+<p>Для проверки закона Архимеда и измерения массы скрепки удобнее использовать оптимальную схему с горизонтальным плечом. К одному из плеч подвязывается гвоздь, ко второму такой кусок пластилина, чтобы уравновесить гвоздь и расположить первое плечо горизонтально.</p>
+<p>Далее необходимо провести две серии измерений зависимости угла отклонения от числа подвешенных скрепок: первая без воды, вторая с погружением в воду. Обе зависимости оказываются линейными (коэффициенты наклона которых зависят угла между спицами, точек подвеса и т.д.)</p>
+<p>По изменению коэффициента наклона можно определить массу одной скрепки, которая оказывается равной примерно <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.439ex;" xmlns="http://www.w3.org/2000/svg" width="2.891ex" height="1.946ex" role="img" focusable="false" viewBox="0 -666 1278 860" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><use data-c="30" xlink:href="#MJX-TEX-N-30"></use></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(500,0)"><g data-mml-node="mo"><use data-c="2C" xlink:href="#MJX-TEX-N-2C"></use></g></g><g data-mml-node="mn" transform="translate(778,0)"><use data-c="33" xlink:href="#MJX-TEX-N-33"></use></g></g></g></svg></mjx-container> г.</p>
+<p><strong>Части 3 и 4</strong> Выполняются аналогично. Результаты сильно зависят от конструкции, кроме того, возможны различные варианты установок – в любом случае оценивание тких работ требует внимательного рассмотрения!</p>
+<div class="fig-row"><figure class="md-fig" id="fig-1" style="--fig-w:51%;--fig-n:51"><a href="/problems/data/figures/2012-third-exp-11-1/fig1.png" title="Открыть рисунок в полном размере"><img src="/problems/data/figures/2012-third-exp-11-1/fig1.png" alt="" loading="lazy"></a></figure><figure class="md-fig" id="fig-2" style="--fig-w:56%;--fig-n:56"><a href="/problems/data/figures/2012-third-exp-11-1/fig2.png" title="Открыть рисунок в полном размере"><img src="/problems/data/figures/2012-third-exp-11-1/fig2.png" alt="" loading="lazy"></a></figure><figure class="md-fig" id="fig-3" style="--fig-w:100%;--fig-n:100"><a href="/problems/data/figures/2012-third-exp-11-1/fig3.png" title="Открыть рисунок в полном размере"><img src="/problems/data/figures/2012-third-exp-11-1/fig3.png" alt="" loading="lazy"></a></figure><figure class="md-fig" id="fig-4" style="--fig-w:100%;--fig-n:100"><a href="/problems/data/figures/2012-third-exp-11-1/fig4.png" title="Открыть рисунок в полном размере"><img src="/problems/data/figures/2012-third-exp-11-1/fig4.png" alt="" loading="lazy"></a></figure></div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="page-next">
+  <a class="btn btn-ghost" href="/problems/third/2012/11-e1/">← Условие</a>
+  
+</div>
+
+
+
+      
+
+<section class="src-orig" aria-label="Оригинальные документы олимпиады">
+  <h2 class="src-orig-h">Оригинал в архиве олимпиады</h2>
+  <ul class="src-orig-list">
+    
+    <li class="src-orig-item">
+      <a class="src-orig-link" href="/problems/third/3_etap_2012_experimental_solutions.pdf#page=11">
+        <span class="src-orig-role">Решение</span>
+        <span class="src-orig-file">3_etap_2012_experimental_solutions.pdf</span>
+      </a>
+      <span class="src-orig-pg">с.&nbsp;11</span>
+      
+    </li>
+    
+  </ul>
+</section>
+
+
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© 2026 BelPhO — Белорусские физические олимпиады</span>
+    <span class="footer-links">
+      <a href="/problems/">Задачи</a>
+      <a href="https://t.me/belpho_by" rel="noopener">Telegram</a>
+    </span>
+  </div>
+</footer>
+
+
+<script type="module" src="/js/site/problem-page.js"></script>
+
+</body>
+</html>
