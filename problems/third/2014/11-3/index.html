@@ -141,43 +141,45 @@
 
 
 <section class="intro-card">
-  <p>В данной задаче вам предлагается оценить расход топлива для различных видов движения автомобиля. Здесь мы будем рассматривать движение и потребление топлива автомобилем в рамках довольно упрощенной модели, описывающей, однако, основные связи между ключевыми величинами, определяющими данные процессы.</p>
+  <figure class="md-fig md-fig-float md-fig-float-right" id="fig-1" style="--fig-w:26%;--fig-n:26"><a href="/problems/data/figures/2014-third-theory-11-3/fig1.png" title="Открыть рисунок в полном размере"><img src="/problems/data/figures/2014-third-theory-11-3/fig1.png" alt="" loading="lazy"></a></figure>
+<p>В данной задаче вам предлагается оценить расход топлива для различных видов движения автомобиля. Здесь мы будем рассматривать движение и потребление топлива автомобилем в рамках довольно упрощенной модели, описывающей, однако, основные связи между ключевыми величинами, определяющими данные процессы.</p>
 <p>Будем изучать легковой автомобиль массы <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.439ex;" xmlns="http://www.w3.org/2000/svg" width="7.895ex" height="1.946ex" role="img" focusable="false" viewBox="0 -666 3489.6 860" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D45A" xlink:href="#MJX-TEX-I-1D45A"></use></g><g data-mml-node="mo" transform="translate(1155.8,0)"><use data-c="3D" xlink:href="#MJX-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(2211.6,0)"><use data-c="31" xlink:href="#MJX-TEX-N-31"></use></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(2711.6,0)"><g data-mml-node="mo"><use data-c="2C" xlink:href="#MJX-TEX-N-2C"></use></g></g><g data-mml-node="mn" transform="translate(2989.6,0)"><use data-c="35" xlink:href="#MJX-TEX-N-35"></use></g></g></g></svg></mjx-container> т, потребляющий топливо плотностью <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.489ex;" xmlns="http://www.w3.org/2000/svg" width="7.58ex" height="2.018ex" role="img" focusable="false" viewBox="0 -676 3350.6 892" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D70C" xlink:href="#MJX-TEX-I-1D70C"></use></g><g data-mml-node="mo" transform="translate(794.8,0)"><use data-c="3D" xlink:href="#MJX-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(1850.6,0)"><use data-c="37" xlink:href="#MJX-TEX-N-37"></use><use data-c="31" xlink:href="#MJX-TEX-N-31" transform="translate(500,0)"></use><use data-c="30" xlink:href="#MJX-TEX-N-30" transform="translate(1000,0)"></use></g></g></g></svg></mjx-container> кг/м<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="0.988ex" height="1.885ex" role="img" focusable="false" viewBox="0 -833.2 436.6 833.2" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msup"><g data-mml-node="mi"></g><g data-mml-node="mn" transform="translate(33,363) scale(0.707)"><use data-c="33" xlink:href="#MJX-TEX-N-33"></use></g></g></g></g></svg></mjx-container> и удельной теплотой сгорания <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.439ex;" xmlns="http://www.w3.org/2000/svg" width="6.32ex" height="1.971ex" role="img" focusable="false" viewBox="0 -677 2793.6 871" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D45E" xlink:href="#MJX-TEX-I-1D45E"></use></g><g data-mml-node="mo" transform="translate(737.8,0)"><use data-c="3D" xlink:href="#MJX-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(1793.6,0)"><use data-c="34" xlink:href="#MJX-TEX-N-34"></use><use data-c="34" xlink:href="#MJX-TEX-N-34" transform="translate(500,0)"></use></g></g></g></svg></mjx-container> МДж/кг.</p>
-<figure class="md-fig md-fig-float md-fig-float-right" id="fig-1" style="--fig-w:26%;--fig-n:26"><a href="/problems/data/figures/2014-third-theory-11-3/fig1.png" title="Открыть рисунок в полном размере"><img src="/problems/data/figures/2014-third-theory-11-3/fig1.png" alt="" loading="lazy"></a></figure>
 <p>В рамках рассматриваемой модели будем считать КПД постоянным и равным <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.489ex;" xmlns="http://www.w3.org/2000/svg" width="8.289ex" height="2.186ex" role="img" focusable="false" viewBox="0 -750 3663.6 966" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D702" xlink:href="#MJX-TEX-I-1D702"></use></g><g data-mml-node="mo" transform="translate(774.8,0)"><use data-c="3D" xlink:href="#MJX-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(1830.6,0)"><use data-c="31" xlink:href="#MJX-TEX-N-31"></use><use data-c="35" xlink:href="#MJX-TEX-N-35" transform="translate(500,0)"></use></g><g data-mml-node="mi" transform="translate(2830.6,0)"><use data-c="25" xlink:href="#MJX-TEX-N-25"></use></g></g></g></svg></mjx-container>. Под КПД здесь понимаем долю от энергии, выделившейся при сгорании топлива, которая преобразована двигателем в механическую энергию, затраченную разгон автомобиля, преодоление сопротивления воздуха, обеспечение работы автомобиля, например, электроснабжение (считайте, что на все подобные цели расходуется постоянная мощность <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.439ex;" xmlns="http://www.w3.org/2000/svg" width="8.349ex" height="1.984ex" role="img" focusable="false" viewBox="0 -683 3690.1 877" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D443" xlink:href="#MJX-TEX-I-1D443"></use></g><g data-mml-node="mn" transform="translate(675,-150) scale(0.707)"><use data-c="31" xlink:href="#MJX-TEX-N-31"></use></g></g><g data-mml-node="mo" transform="translate(1356.3,0)"><use data-c="3D" xlink:href="#MJX-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(2412.1,0)"><use data-c="31" xlink:href="#MJX-TEX-N-31"></use></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(2912.1,0)"><g data-mml-node="mo"><use data-c="2C" xlink:href="#MJX-TEX-N-2C"></use></g></g><g data-mml-node="mn" transform="translate(3190.1,0)"><use data-c="30" xlink:href="#MJX-TEX-N-30"></use></g></g></g></svg></mjx-container> кВт)</p>
 <p>Силу сопротивления воздуха в данной задаче предлагаем упрощенно считать прямо пропорциональной скорости транспорта <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.375ex;" xmlns="http://www.w3.org/2000/svg" width="8.151ex" height="1.945ex" role="img" focusable="false" viewBox="0 -694 3603 859.6" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D439" xlink:href="#MJX-TEX-I-1D439"></use></g><g data-mml-node="mi" transform="translate(676,-150) scale(0.707)"><use data-c="1D436" xlink:href="#MJX-TEX-I-1D436"></use></g></g><g data-mml-node="mo" transform="translate(1541.2,0)"><use data-c="3D" xlink:href="#MJX-TEX-N-3D"></use></g><g data-mml-node="mi" transform="translate(2597,0)"><use data-c="1D458" xlink:href="#MJX-TEX-I-1D458"></use></g><g data-mml-node="mi" transform="translate(3118,0)"><use data-c="1D463" xlink:href="#MJX-TEX-I-1D463"></use></g></g></g></svg></mjx-container>, где <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="1.179ex" height="1.595ex" role="img" focusable="false" viewBox="0 -694 521 705" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D458" xlink:href="#MJX-TEX-I-1D458"></use></g></g></g></svg></mjx-container> – размерный коэффициент, который следует принять равным <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -1.158ex;" xmlns="http://www.w3.org/2000/svg" width="9.818ex" height="3.447ex" role="img" focusable="false" viewBox="0 -1011.8 4339.7 1523.5" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D458" xlink:href="#MJX-TEX-I-1D458"></use></g><g data-mml-node="mo" transform="translate(798.8,0)"><use data-c="3D" xlink:href="#MJX-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(1854.6,0)"><use data-c="31" xlink:href="#MJX-TEX-N-31"></use><use data-c="35" xlink:href="#MJX-TEX-N-35" transform="translate(500,0)"></use></g><g data-mml-node="mfrac" transform="translate(2854.6,0)"><g data-mml-node="mrow" transform="translate(220,481.4) scale(0.707)"><g data-mml-node="mtext"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">Н</text></g><g data-mml-node="mo" transform="translate(600,0)"><use data-c="22C5" xlink:href="#MJX-TEX-N-22C5"></use></g><g data-mml-node="mtext" transform="translate(878,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">с</text></g></g><g data-mml-node="mtext" transform="translate(530.4,-370.3) scale(0.707)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">м</text></g><rect width="1245.1" height="60" x="120" y="220"></rect></g></g></g></svg></mjx-container>.</p>
 <p>Основной изучаемой характеристикой в задаче является расход топлива, который будем обозначать символом <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.462ex;" xmlns="http://www.w3.org/2000/svg" width="1.416ex" height="1.462ex" role="img" focusable="false" viewBox="0 -442 626 646" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D712" xlink:href="#MJX-TEX-I-1D712"></use></g></g></g></svg></mjx-container>. Под расходом понимается объём топлива, требуемый для преодоления некоторой единицы расстояния <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.781ex;" xmlns="http://www.w3.org/2000/svg" width="6.659ex" height="2.765ex" role="img" focusable="false" viewBox="0 -877 2943.3 1222" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D712" xlink:href="#MJX-TEX-I-1D712"></use></g><g data-mml-node="mo" transform="translate(903.8,0)"><use data-c="3D" xlink:href="#MJX-TEX-N-3D"></use></g><g data-mml-node="mfrac" transform="translate(1959.6,0)"><g data-mml-node="mi" transform="translate(220,394) scale(0.707)"><use data-c="1D449" xlink:href="#MJX-TEX-I-1D449"></use></g><g data-mml-node="mi" transform="translate(251.1,-345) scale(0.707)"><use data-c="1D43F" xlink:href="#MJX-TEX-I-1D43F"></use></g><rect width="743.8" height="60" x="120" y="220"></rect></g></g></g></svg></mjx-container>, где <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="1.74ex" height="1.595ex" role="img" focusable="false" viewBox="0 -683 769 705" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D449" xlink:href="#MJX-TEX-I-1D449"></use></g></g></g></svg></mjx-container> – объем использованного топлива, <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="1.541ex" height="1.545ex" role="img" focusable="false" viewBox="0 -683 681 683" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D43F" xlink:href="#MJX-TEX-I-1D43F"></use></g></g></g></svg></mjx-container> – пройденный путь. Автомобилисты обычно измеряют расход в «литрах на сотню километров» (<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -1.158ex;" xmlns="http://www.w3.org/2000/svg" width="5.693ex" height="3.447ex" role="img" focusable="false" viewBox="0 -1011.8 2516.2 1523.5" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mfrac"><g data-mml-node="mtext" transform="translate(1046,481.4) scale(0.707)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">л</text></g><g data-mml-node="mrow" transform="translate(220,-370.3) scale(0.707)"><g data-mml-node="mn"><use data-c="31" xlink:href="#MJX-TEX-N-31"></use><use data-c="30" xlink:href="#MJX-TEX-N-30" transform="translate(500,0)"></use><use data-c="30" xlink:href="#MJX-TEX-N-30" transform="translate(1000,0)"></use></g><g data-mml-node="mstyle" transform="translate(1500,0) scale(1.414)"><g data-mml-node="mspace"></g></g><g data-mml-node="mtext" transform="translate(1736.2,0)"><text data-variant="normal"  font-size="884px" font-family="serif" transform="scale(1,-1)" textLength="1200" lengthAdjust="spacingAndGlyphs">км</text></g></g><rect width="2276.2" height="60" x="120" y="220"></rect></g></g></g></svg></mjx-container>) – все рассчитанные значения <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.462ex;" xmlns="http://www.w3.org/2000/svg" width="1.416ex" height="1.462ex" role="img" focusable="false" viewBox="0 -442 626 646" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D712" xlink:href="#MJX-TEX-I-1D712"></use></g></g></g></svg></mjx-container> вам необходимо указать в данной единице измерения.</p>
+<figure class="md-fig md-fig-float md-fig-float-right" id="fig-2" style="--fig-w:22%;--fig-n:22"><a href="/problems/data/figures/2014-third-theory-11-3/fig2.png" title="Открыть рисунок в полном размере"><img src="/problems/data/figures/2014-third-theory-11-3/fig2.png" alt="" loading="lazy"></a></figure>
 <p><strong>1. Простая поездка</strong></p>
 <p>Автомобиль движется по прямой горизонтальной дороге с постоянной скоростью.</p>
 </section>
 
 
 
+
   
   
   
-  
+  <section class="qgroup qgroup-banded">
     
-<section class="subq-card" id="part-1-1" data-part="1.1">
+    <h3 class="qgroup-band"><span class="subq-pill">1</span></h3>
+    
+    
+    <div class="qgroup-items">
+      
+        
+<section class="subq-card subq-card-framed" id="part-1-1" data-part="1.1" data-depth="2">
   
-  <header class="subq-head subq-head-split">
-    
-    
-  </header>
+  
   <div class="subq-body subq-body-question">
     <p><span class="subq-num">1.1</span>. Расчитайте расход топлива, если скорость автомобиля <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.186ex;" xmlns="http://www.w3.org/2000/svg" width="6.377ex" height="1.692ex" role="img" focusable="false" viewBox="0 -666 2818.6 748" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D463" xlink:href="#MJX-TEX-I-1D463"></use></g><g data-mml-node="mo" transform="translate(762.8,0)"><use data-c="3D" xlink:href="#MJX-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(1818.6,0)"><use data-c="38" xlink:href="#MJX-TEX-N-38"></use><use data-c="30" xlink:href="#MJX-TEX-N-30" transform="translate(500,0)"></use></g></g></g></svg></mjx-container> км/ч.</p>
   </div>
   
 </section>
 
+      
+        
+<section class="subq-card subq-card-framed" id="part-1-2" data-part="1.2" data-depth="2">
   
-    
-<section class="subq-card" id="part-1-2" data-part="1.2">
   
-  <header class="subq-head subq-head-split">
-    
-    
-  </header>
   <div class="subq-body subq-body-question">
     <p><span class="subq-num">1.2</span>. Оказывается, что при некотором значении скорости расход топлива оказывается минимально возможным. Найдите это значение скорости <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.375ex;" xmlns="http://www.w3.org/2000/svg" width="2.085ex" height="1.377ex" role="img" focusable="false" viewBox="0 -443 921.6 608.6" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D463" xlink:href="#MJX-TEX-I-1D463"></use></g><g data-mml-node="mn" transform="translate(518,-150) scale(0.707)"><use data-c="30" xlink:href="#MJX-TEX-N-30"></use></g></g></g></g></svg></mjx-container>, а также минимальный расход <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.462ex;" xmlns="http://www.w3.org/2000/svg" width="4.271ex" height="1.462ex" role="img" focusable="false" viewBox="0 -442 1887.7 646" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D712" xlink:href="#MJX-TEX-I-1D712"></use></g><g data-mml-node="TeXAtom" transform="translate(659,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mo"><use data-c="6D" xlink:href="#MJX-TEX-N-6D"></use><use data-c="69" xlink:href="#MJX-TEX-N-69" transform="translate(833,0)"></use><use data-c="6E" xlink:href="#MJX-TEX-N-6E" transform="translate(1111,0)"></use></g></g></g></g></g></svg></mjx-container>.</p>
 <p><strong>2. Разгон</strong></p>
@@ -186,19 +188,24 @@
   
 </section>
 
-  
+      
+    </div>
+  </section>
 
   
   
   
+  <section class="qgroup qgroup-banded">
+    
+    <h3 class="qgroup-band"><span class="subq-pill">2</span></h3>
+    
+    
+    <div class="qgroup-items">
+      
+        
+<section class="subq-card subq-card-framed" id="part-2-1" data-part="2.1" data-depth="2">
   
-    
-<section class="subq-card" id="part-2-1" data-part="2.1">
   
-  <header class="subq-head subq-head-split">
-    
-    
-  </header>
   <div class="subq-body subq-body-question">
     <p><span class="subq-num">2.1</span>. Найдите зависимость расхода топлива от времени <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.566ex;" xmlns="http://www.w3.org/2000/svg" width="3.993ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 1765 1000" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D712" xlink:href="#MJX-TEX-I-1D712"></use></g><g data-mml-node="mo" transform="translate(626,0)"><use data-c="28" xlink:href="#MJX-TEX-N-28"></use></g><g data-mml-node="mi" transform="translate(1015,0)"><use data-c="1D461" xlink:href="#MJX-TEX-I-1D461"></use></g><g data-mml-node="mo" transform="translate(1376,0)"><use data-c="29" xlink:href="#MJX-TEX-N-29"></use></g></g></g></svg></mjx-container> во время разгона.</p>
 <p>В этом пункте будет также полезным посчитать количество топлива, расходуемое в единицу времени <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.801ex;" xmlns="http://www.w3.org/2000/svg" width="8.048ex" height="2.838ex" role="img" focusable="false" viewBox="0 -900.3 3557.3 1254.4" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D713" xlink:href="#MJX-TEX-I-1D713"></use></g><g data-mml-node="mo" transform="translate(928.8,0)"><use data-c="3D" xlink:href="#MJX-TEX-N-3D"></use></g><g data-mml-node="mfrac" transform="translate(1984.6,0)"><g data-mml-node="mrow" transform="translate(220,394) scale(0.707)"><g data-mml-node="mi"><use data-c="394" xlink:href="#MJX-TEX-N-394"></use></g><g data-mml-node="mi" transform="translate(833,0)"><use data-c="1D449" xlink:href="#MJX-TEX-I-1D449"></use></g></g><g data-mml-node="mrow" transform="translate(364.2,-346.3) scale(0.707)"><g data-mml-node="mi"><use data-c="394" xlink:href="#MJX-TEX-N-394"></use></g><g data-mml-node="mi" transform="translate(833,0)"><use data-c="1D461" xlink:href="#MJX-TEX-I-1D461"></use></g></g><rect width="1332.8" height="60" x="120" y="220"></rect></g></g></g></svg></mjx-container>. Назовём эту величину <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.464ex;" xmlns="http://www.w3.org/2000/svg" width="1.473ex" height="2.034ex" role="img" focusable="false" viewBox="0 -694 651 899" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D713" xlink:href="#MJX-TEX-I-1D713"></use></g></g></g></svg></mjx-container> «временным расходом топлива», и будем ее измерять в <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -1.158ex;" xmlns="http://www.w3.org/2000/svg" width="1.955ex" height="3.447ex" role="img" focusable="false" viewBox="0 -1011.8 864.3 1523.5" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mfrac"><g data-mml-node="mtext" transform="translate(220,481.4) scale(0.707)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">л</text></g><g data-mml-node="mtext" transform="translate(220,-370.3) scale(0.707)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">с</text></g><rect width="624.3" height="60" x="120" y="220"></rect></g></g></g></svg></mjx-container> (литрах в секунду).</p>
@@ -206,45 +213,36 @@
   
 </section>
 
+      
+        
+<section class="subq-card subq-card-framed" id="part-2-2" data-part="2.2" data-depth="2">
   
-    
-<section class="subq-card" id="part-2-2" data-part="2.2">
   
-  <header class="subq-head subq-head-split">
-    
-    
-  </header>
   <div class="subq-body subq-body-question">
     <p><span class="subq-num">2.2</span>. Найдите зависимость временного расхода топлива от времени <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.566ex;" xmlns="http://www.w3.org/2000/svg" width="4.05ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 1790 1000" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D713" xlink:href="#MJX-TEX-I-1D713"></use></g><g data-mml-node="mo" transform="translate(651,0)"><use data-c="28" xlink:href="#MJX-TEX-N-28"></use></g><g data-mml-node="mi" transform="translate(1040,0)"><use data-c="1D461" xlink:href="#MJX-TEX-I-1D461"></use></g><g data-mml-node="mo" transform="translate(1401,0)"><use data-c="29" xlink:href="#MJX-TEX-N-29"></use></g></g></g></svg></mjx-container>.</p>
   </div>
   
 </section>
 
+      
+        
+<section class="subq-card subq-card-framed" id="part-2-3" data-part="2.3" data-depth="2">
   
-    
-<section class="subq-card" id="part-2-3" data-part="2.3">
   
-  <header class="subq-head subq-head-split">
-    
-    
-  </header>
   <div class="subq-body subq-body-question">
     <p><span class="subq-num">2.3</span>. Оцените средний временной расход топлива за весь промежуток времени <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.701ex" height="1.645ex" role="img" focusable="false" viewBox="0 -716 1194 727" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="394" xlink:href="#MJX-TEX-N-394"></use></g><g data-mml-node="mi" transform="translate(833,0)"><use data-c="1D461" xlink:href="#MJX-TEX-I-1D461"></use></g></g></g></svg></mjx-container>.</p>
   </div>
   
 </section>
 
+      
+        
+<section class="subq-card subq-card-framed" id="part-2-4" data-part="2.4" data-depth="2">
   
-    
-<section class="subq-card" id="part-2-4" data-part="2.4">
   
-  <header class="subq-head subq-head-split">
-    
-    
-  </header>
   <div class="subq-body subq-body-question">
     <p><span class="subq-num">2.4</span>. Оцените средний расход топлива на всем пройденном пути <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.566ex;" xmlns="http://www.w3.org/2000/svg" width="3.176ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 1404 1000" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><use data-c="27E8" xlink:href="#MJX-TEX-N-27E8"></use></g><g data-mml-node="mi" transform="translate(389,0)"><use data-c="1D712" xlink:href="#MJX-TEX-I-1D712"></use></g><g data-mml-node="mo" transform="translate(1015,0)"><use data-c="27E9" xlink:href="#MJX-TEX-N-27E9"></use></g></g></g></svg></mjx-container> (в <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -1.158ex;" xmlns="http://www.w3.org/2000/svg" width="5.693ex" height="3.447ex" role="img" focusable="false" viewBox="0 -1011.8 2516.2 1523.5" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mfrac"><g data-mml-node="mtext" transform="translate(1046,481.4) scale(0.707)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">л</text></g><g data-mml-node="mrow" transform="translate(220,-370.3) scale(0.707)"><g data-mml-node="mn"><use data-c="31" xlink:href="#MJX-TEX-N-31"></use><use data-c="30" xlink:href="#MJX-TEX-N-30" transform="translate(500,0)"></use><use data-c="30" xlink:href="#MJX-TEX-N-30" transform="translate(1000,0)"></use></g><g data-mml-node="mstyle" transform="translate(1500,0) scale(1.414)"><g data-mml-node="mspace"></g></g><g data-mml-node="mtext" transform="translate(1736.2,0)"><text data-variant="normal"  font-size="884px" font-family="serif" transform="scale(1,-1)" textLength="1200" lengthAdjust="spacingAndGlyphs">км</text></g></g><rect width="2276.2" height="60" x="120" y="220"></rect></g></g></g></svg></mjx-container>).</p>
-<div class="fig-row"><figure class="md-fig" id="fig-2" style="--fig-w:22%;--fig-n:22"><a href="/problems/data/figures/2014-third-theory-11-3/fig2.png" title="Открыть рисунок в полном размере"><img src="/problems/data/figures/2014-third-theory-11-3/fig2.png" alt="" loading="lazy"></a></figure></div>
+
 
 <p><strong>3. Подъём в гору</strong></p>
 <p>При подъёме в гору даже малого уклона, расход топлива значительно возрастает. Автомобиль поднимается в гору с постоянной скоростью по прямой дороге, образующей угол <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.186ex;" xmlns="http://www.w3.org/2000/svg" width="6.584ex" height="1.717ex" role="img" focusable="false" viewBox="0 -677 2910.1 759" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D6FC" xlink:href="#MJX-TEX-I-1D6FC"></use></g><g data-mml-node="mo" transform="translate(917.8,0)"><use data-c="3D" xlink:href="#MJX-TEX-N-3D"></use></g><g data-mml-node="msup" transform="translate(1973.6,0)"><g data-mml-node="mn"><use data-c="33" xlink:href="#MJX-TEX-N-33"></use></g><g data-mml-node="mo" transform="translate(533,363) scale(0.707)"><use data-c="2218" xlink:href="#MJX-TEX-N-2218"></use></g></g></g></g></svg></mjx-container> с горизонтом.</p>
@@ -252,33 +250,35 @@
   
 </section>
 
-  
+      
+    </div>
+  </section>
 
   
   
   
+  <section class="qgroup qgroup-banded">
+    
+    <h3 class="qgroup-band"><span class="subq-pill">3</span></h3>
+    
+    
+    <div class="qgroup-items">
+      
+        
+<section class="subq-card subq-card-framed" id="part-3-1" data-part="3.1" data-depth="2">
   
-    
-<section class="subq-card" id="part-3-1" data-part="3.1">
   
-  <header class="subq-head subq-head-split">
-    
-    
-  </header>
   <div class="subq-body subq-body-question">
     <p><span class="subq-num">3.1</span>. Расчитайте расход топлива, если скорость автомобиля <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.186ex;" xmlns="http://www.w3.org/2000/svg" width="6.501ex" height="1.692ex" role="img" focusable="false" viewBox="0 -666 2873.6 748" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D710" xlink:href="#MJX-TEX-I-1D710"></use></g><g data-mml-node="mo" transform="translate(817.8,0)"><use data-c="3D" xlink:href="#MJX-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(1873.6,0)"><use data-c="38" xlink:href="#MJX-TEX-N-38"></use><use data-c="30" xlink:href="#MJX-TEX-N-30" transform="translate(500,0)"></use></g></g></g></svg></mjx-container> км/ч.</p>
   </div>
   
 </section>
 
+      
+        
+<section class="subq-card subq-card-framed" id="part-3-2" data-part="3.2" data-depth="2">
   
-    
-<section class="subq-card" id="part-3-2" data-part="3.2">
   
-  <header class="subq-head subq-head-split">
-    
-    
-  </header>
   <div class="subq-body subq-body-question">
     <p><span class="subq-num">3.2</span>. При какой скорости <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.375ex;" xmlns="http://www.w3.org/2000/svg" width="2.209ex" height="1.377ex" role="img" focusable="false" viewBox="0 -443 976.6 608.6" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D710" xlink:href="#MJX-TEX-I-1D710"></use></g><g data-mml-node="mn" transform="translate(573,-150) scale(0.707)"><use data-c="30" xlink:href="#MJX-TEX-N-30"></use></g></g></g></g></svg></mjx-container> расход топлива минимален и чему он равен?</p>
 <figure class="md-fig md-fig-float md-fig-float-right" id="fig-3" style="--fig-w:19%;--fig-n:19"><a href="/problems/data/figures/2014-third-theory-11-3/fig3.png" title="Открыть рисунок в полном размере"><img src="/problems/data/figures/2014-third-theory-11-3/fig3.png" alt="" loading="lazy"></a></figure>
@@ -288,19 +288,24 @@
   
 </section>
 
-  
+      
+    </div>
+  </section>
 
   
   
   
+  <section class="qgroup qgroup-banded">
+    
+    <h3 class="qgroup-band"><span class="subq-pill">4</span></h3>
+    
+    
+    <div class="qgroup-items">
+      
+        
+<section class="subq-card subq-card-framed" id="part-4-1" data-part="4.1" data-depth="2">
   
-    
-<section class="subq-card" id="part-4-1" data-part="4.1">
   
-  <header class="subq-head subq-head-split">
-    
-    
-  </header>
   <div class="subq-body subq-body-question">
     <p><span class="subq-num">4.1</span>. Оцените время, которое понадобится автомобилю, чтобы попасть из пункта А в пункт В.</p>
 <figure class="md-fig" id="fig-4" style="--fig-w:100%;--fig-n:100"><a href="/problems/data/figures/2014-third-theory-11-3/fig4.png" title="Открыть рисунок в полном размере"><img src="/problems/data/figures/2014-third-theory-11-3/fig4.png" alt="" loading="lazy"></a><figcaption>Рисунок 2 - График зависимости высоты уровня дороги от горизонтальной координаты (профиль дороги)</figcaption></figure>
@@ -310,26 +315,33 @@
   
 </section>
 
-  
+      
+    </div>
+  </section>
 
   
   
   
+  <section class="qgroup qgroup-banded">
+    
+    <h3 class="qgroup-band"><span class="subq-pill">5</span></h3>
+    
+    
+    <div class="qgroup-items">
+      
+        
+<section class="subq-card subq-card-framed" id="part-5-1" data-part="5.1" data-depth="2">
   
-    
-<section class="subq-card" id="part-5-1" data-part="5.1">
   
-  <header class="subq-head subq-head-split">
-    
-    
-  </header>
   <div class="subq-body subq-body-question">
     <p><span class="subq-num">5.1</span> Покажите, какую именно площадь описывает величина расхода топлива, выраженная в единицах СИ (<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.452ex;" xmlns="http://www.w3.org/2000/svg" width="2.345ex" height="2.597ex" role="img" focusable="false" viewBox="0 -948 1036.6 1148" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msup"><g data-mml-node="mtext"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">м</text></g><g data-mml-node="mn" transform="translate(633,477.1) scale(0.707)"><use data-c="32" xlink:href="#MJX-TEX-N-32"></use></g></g></g></g></svg></mjx-container>).</p>
   </div>
   
 </section>
 
-  
+      
+    </div>
+  </section>
 
 
 
@@ -355,8 +367,8 @@
     
     <span class="pr-title pr-title-num">Задача 10-3</span>
     <span class="pr-snippet"><p>Задача 10.3 «На автопилоте»
-В данной задаче вам предстоит проанализировать различные аспекты управления автомобилем.
-В качестве типичных взяты<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="0.988ex" height="1.887ex" role="img" focusable="false" viewBox="0 -833.9 436.6 833.9" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msup"><g data-mml-node="mi"></g><g data-mml-node="TeXAtom" transform="translate(33,363) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><use data-c="31" xlink:href="#MJX-TEX-N-31"></use></g></g></g></g></g></svg></mjx-container> …</p></span>
+В данной задаче вам предстоит проанализировать различные аспекты управления автомобилем.</p>
+<p>В качестве типичных взяты …</p></span>
     <span class="pr-meta">
       <span class="pr-where"><b>Республиканская</b><i>Респ.</i>&#8195;2005</span>
       <span class="pr-grade">10 кл.</span>
