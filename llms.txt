@@ -4,7 +4,7 @@
 
 ## Primary content
 
-- [Problem finder](https://belpho.org/problems/): searchable/filterable archive of 890 olympiad problems across four stages — Республиканская (republican final), Городская/3rd stage (city), Сборы (training camps) and IZhO (Zhautykov Olympiad) — spanning multiple decades, each with statement, solution, marking scheme and hints where available.
+- [Problem finder](https://belpho.org/problems/): searchable/filterable archive of 888 olympiad problems across four stages — Республиканская (republican final), Городская/3rd stage (city), Сборы (training camps) and IZhO (Zhautykov Olympiad) — spanning multiple decades, each with statement, solution, marking scheme and hints where available.
 - [Topics syllabus](https://belpho.org/problems/topics/): the physics taxonomy the problems are organized against.
 - [Alumni](https://belpho.org/alumni): Belarusian IPhO team results and profiles since 1995.
 - [Library](https://belpho.org/books/): textbooks and problem collections, principally А. И. Слободянюк's «Физика для любознательных».
