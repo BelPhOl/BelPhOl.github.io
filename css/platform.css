@@ -649,6 +649,73 @@ a { color: var(--primary-color); }
   .subq-body-question > p:first-of-type { padding: 8px 10px 9px; }
 }
 
+/* ------------------------------------------- one frame, children under one */
+
+/* ONE FRAME PER SUB-QUESTION. A framed question already has its frame; the
+   rounded panel around it drew a second box around the same sentence, and the
+   pair — panel padding, panel margin, panel padding, plus a header left empty
+   once the pill moved inside the frame — held consecutive questions ~42px
+   apart. A page of sub-questions read as a ladder of near-empty boxes instead
+   of as a list. The panel goes and the author's own double rule stays, which
+   is the frame that carries meaning. .subq-card keeps its chrome everywhere it
+   is the ONLY frame: solutions, hints, the marking table, /edu/. */
+.subq-card.subq-card-framed {
+  background: none;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+  margin-bottom: 12px;
+}
+
+/* With no panel padding beneath it, a frame that IS the whole body must not
+   keep the 0.7em that exists to separate it from prose following it. */
+.subq-card-framed .subq-body-question > p:only-child { margin-bottom: 0; }
+
+/* THE PARENT AS A SECTION BAND. build.js already groups the parts by the
+   number before the dot, but only the three lettered rounds carry a printed
+   `title`, so on every other page the grouping was invisible: «2.1»…«2.5» were
+   drawn as five equal panels while their parent «2.» stayed plain prose in the
+   lead-in — the child level carrying more weight than the level above it.
+   The band restores the order using the pill the sub-questions gave up (the
+   number now prints inside the frame, .subq-num), plus air above it and a
+   hairline across. templates/problem.ejs decides when it says something. */
+.qgroup { display: flow-root; }
+
+.qgroup-band {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 26px 0 12px;
+  font-size: inherit;
+  font-weight: 400;
+}
+.qgroup-band::after {
+  content: '';
+  flex: 1 1 auto;
+  height: 1px;
+  background: var(--border-color);
+}
+
+/* …and the children ranged beneath it. The same left rule .intro-card carries,
+   in the border colour, so the grouping costs no new colour and no new box. */
+.qgroup-banded > .qgroup-items {
+  border-left: 2px solid var(--border-color);
+  padding-left: 14px;
+  margin-left: 7px;
+}
+
+/* A third level of numbering («1.2.1» under «1.2») steps in once more. */
+.qgroup .subq-card[data-depth="3"],
+.qgroup .subq-card[data-depth="4"] { margin-left: 16px; }
+
+@media (max-width: 639.98px) {
+  .qgroup-band { margin: 20px 0 10px; }
+  .qgroup-banded > .qgroup-items { padding-left: 9px; margin-left: 3px; }
+  .qgroup .subq-card[data-depth="3"],
+  .qgroup .subq-card[data-depth="4"] { margin-left: 10px; }
+}
+
 /* ---------------------------------------------------------------- figures */
 
 /* --fig-w is the figure's width as a FRACTION OF THE PRINTED COLUMN, measured
