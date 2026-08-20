@@ -1,31 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="124.10pt" height="50.06pt" viewBox="0 0 124.10 50.06">
-<defs><clipPath id="figbox"><rect x="0" y="0" width="124.10" height="50.06"/></clipPath></defs>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="141.38pt" height="79.14pt" viewBox="0 0 141.38 79.14">
+<defs><clipPath id="figbox"><rect x="0" y="0" width="141.38" height="79.14"/></clipPath></defs>
 <g clip-path="url(#figbox)">
-<path d="M58.33,34.33 L65.53,34.33" fill="none" stroke="#000000" stroke-width="0.248" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M8.17,17.77 L122.89,17.77" fill="none" stroke="#000000" stroke-width="0.495" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M0.25,31.45 L1.81,30.61" fill="none" stroke="#000000" stroke-width="0.495" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M1.81,30.85 L4.09,49.57" fill="none" stroke="#000000" stroke-width="0.991" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M4.33,49.57 L7.21,0.25" fill="none" stroke="#000000" stroke-width="0.495" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M7.21,0.25 L123.85,0.25" fill="none" stroke="#000000" stroke-width="0.495" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="83.53" y="37.33" font-family="'Times New Roman', serif" font-size="13.68" fill="#000000">(</text>
-<text x="113.77" y="37.33" font-family="'Times New Roman', serif" font-size="13.68" fill="#000000">)</text>
-<text x="106.21" y="37.45" font-family="'Times New Roman', serif" font-size="11.99" fill="#000000">γ</text>
-<text x="86.41" y="37.45" font-family="'Times New Roman', serif" font-size="11.99" fill="#000000">α</text>
-<text x="117.85" y="38.41" font-family="'Times New Roman', serif" font-size="11.99" fill="#000000"></text>
-<text x="117.85" y="48.25" font-family="'Times New Roman', serif" font-size="11.99" fill="#000000"></text>
-<text x="117.85" y="30.73" font-family="'Times New Roman', serif" font-size="11.99" fill="#000000"></text>
-<text x="14.05" y="38.41" font-family="'Times New Roman', serif" font-size="11.99" fill="#000000"></text>
-<text x="14.05" y="48.25" font-family="'Times New Roman', serif" font-size="11.99" fill="#000000"></text>
-<text x="14.05" y="30.73" font-family="'Times New Roman', serif" font-size="11.99" fill="#000000"></text>
-<text x="97.69" y="37.45" font-family="'Times New Roman', serif" font-size="11.99" fill="#000000">+</text>
-<text x="32.05" y="37.45" font-family="'Times New Roman', serif" font-size="11.99" fill="#000000">−</text>
-<text x="67.45" y="37.45" font-family="'Times New Roman', Georgia, serif" font-size="11.99" fill="#000000">cos</text>
-<text x="59.17" y="46.81" font-family="'Times New Roman', Georgia, serif" font-size="11.99" fill="#000000">2</text>
-<text x="8.65" y="37.45" font-family="'Times New Roman', Georgia, serif" font-size="11.99" fill="#000000">3</text>
-<text x="69.97" y="7.93" font-family="'Times New Roman', Georgia, serif" font-size="6.99" fill="#000000">2</text>
-<text x="59.89" y="29.89" font-family="'Times New Roman', Georgia, serif" font-size="11.99" font-style="italic" fill="#000000">l</text>
-<text x="41.05" y="37.45" font-family="'Times New Roman', Georgia, serif" font-size="11.99" font-style="italic" fill="#000000">mg</text>
-<text x="20.41" y="37.45" font-family="'Times New Roman', Georgia, serif" font-size="11.99" font-style="italic" fill="#000000">K</text>
-<text x="56.29" y="13.21" font-family="'Times New Roman', Georgia, serif" font-size="11.99" font-style="italic" fill="#000000">ml</text>
+<path d="M31.69,48.61 L38.89,48.61" fill="none" stroke="#000000" stroke-width="0.248" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M64.81,64.21 L72.13,64.21" fill="none" stroke="#000000" stroke-width="0.248" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M46.81,48.61 L73.09,48.61" fill="none" stroke="#000000" stroke-width="0.248" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.17,17.77 L140.17,17.77" fill="none" stroke="#000000" stroke-width="0.495" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M0.25,48.61 L1.81,47.77" fill="none" stroke="#000000" stroke-width="0.495" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1.81,48.01 L3.97,78.13" fill="none" stroke="#000000" stroke-width="0.991" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4.21,78.13 L7.21,0.25" fill="none" stroke="#000000" stroke-width="0.495" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7.21,0.25 L141.13,0.25" fill="none" stroke="#000000" stroke-width="0.495" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="100.81" y="51.61" font-family="'Times New Roman', serif" font-size="13.68" fill="#000000">(</text>
+<text x="131.05" y="51.61" font-family="'Times New Roman', serif" font-size="13.68" fill="#000000">)</text>
+<text x="123.61" y="51.61" font-family="'Times New Roman', serif" font-size="11.99" fill="#000000">γ</text>
+<text x="103.69" y="51.61" font-family="'Times New Roman', serif" font-size="11.99" fill="#000000">α</text>
+<text x="135.13" y="69.01" font-family="'Times New Roman', serif" font-size="11.99" fill="#000000"></text>
+<text x="135.13" y="61.45" font-family="'Times New Roman', serif" font-size="11.99" fill="#000000"></text>
+<text x="135.13" y="49.93" font-family="'Times New Roman', serif" font-size="11.99" fill="#000000"></text>
+<text x="135.13" y="38.41" font-family="'Times New Roman', serif" font-size="11.99" fill="#000000"></text>
+<text x="135.13" y="76.69" font-family="'Times New Roman', serif" font-size="11.99" fill="#000000"></text>
+<text x="135.13" y="30.73" font-family="'Times New Roman', serif" font-size="11.99" fill="#000000"></text>
+<text x="40.69" y="69.01" font-family="'Times New Roman', serif" font-size="11.99" fill="#000000"></text>
+<text x="40.69" y="61.45" font-family="'Times New Roman', serif" font-size="11.99" fill="#000000"></text>
+<text x="40.69" y="49.93" font-family="'Times New Roman', serif" font-size="11.99" fill="#000000"></text>
+<text x="40.69" y="38.41" font-family="'Times New Roman', serif" font-size="11.99" fill="#000000"></text>
+<text x="40.69" y="76.69" font-family="'Times New Roman', serif" font-size="11.99" fill="#000000"></text>
+<text x="40.69" y="30.73" font-family="'Times New Roman', serif" font-size="11.99" fill="#000000"></text>
+<text x="114.97" y="51.61" font-family="'Times New Roman', serif" font-size="11.99" fill="#000000">+</text>
+<text x="75.97" y="51.61" font-family="'Times New Roman', serif" font-size="11.99" fill="#000000">−</text>
+<text x="84.73" y="51.61" font-family="'Times New Roman', Georgia, serif" font-size="11.99" fill="#000000">cos</text>
+<text x="65.65" y="76.69" font-family="'Times New Roman', Georgia, serif" font-size="11.99" fill="#000000">2</text>
+<text x="32.53" y="61.09" font-family="'Times New Roman', Georgia, serif" font-size="11.99" fill="#000000">2</text>
+<text x="8.65" y="51.61" font-family="'Times New Roman', Georgia, serif" font-size="11.99" fill="#000000">3</text>
+<text x="78.61" y="7.93" font-family="'Times New Roman', Georgia, serif" font-size="6.99" fill="#000000">2</text>
+<text x="66.49" y="59.77" font-family="'Times New Roman', Georgia, serif" font-size="11.99" font-style="italic" fill="#000000">l</text>
+<text x="47.65" y="67.33" font-family="'Times New Roman', Georgia, serif" font-size="11.99" font-style="italic" fill="#000000">mg</text>
+<text x="55.69" y="44.05" font-family="'Times New Roman', Georgia, serif" font-size="11.99" font-style="italic" fill="#000000">K</text>
+<text x="33.25" y="44.05" font-family="'Times New Roman', Georgia, serif" font-size="11.99" font-style="italic" fill="#000000">l</text>
+<text x="14.41" y="51.61" font-family="'Times New Roman', Georgia, serif" font-size="11.99" font-style="italic" fill="#000000">mg</text>
+<text x="64.93" y="13.21" font-family="'Times New Roman', Georgia, serif" font-size="11.99" font-style="italic" fill="#000000">ml</text>
 </g>
 </svg>
